@@ -5,8 +5,8 @@ external_id: "7671505270237023509"
 canonical_url: "https://www.tiktok.com/@edusantdev/video/7671505270237023509"
 channel: "Eduardo Santana"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["landing-page-cro", "seo-tecnico", "json-ld", "web-performance", "google-analytics", "microsoft-clarity", "schema-markup"]
 applicability:
   saas_pessoal: alta
