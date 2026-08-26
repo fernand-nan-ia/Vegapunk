@@ -5,8 +5,8 @@ external_id: "7672502144024595732"
 canonical_url: "https://www.tiktok.com/@orbitt.ia/photo/7672502144024595732"
 channel: "Orbit"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["ui-design", "branding", "design-assets", "ia-generativa", "mockups", "vetorizacao", "color-palette"]
 applicability:
   saas_pessoal: media
