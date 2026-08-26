@@ -22,7 +22,7 @@ class Settings:
     whisper_model: str = os.environ.get("VEGAPUNK_WHISPER_MODEL", "small")
     git_commit: bool = os.environ.get("VEGAPUNK_GIT_COMMIT", "true").lower() == "true"
     git_push: bool = os.environ.get("VEGAPUNK_GIT_PUSH", "false").lower() == "true"
-    cookies_file: str = os.environ.get("VEGAPUNK_COOKIES_FILE", "")
+    cookies_file: str = os.environ.get("VEGAPUNK_COOKIES_FILE", "").split("#")[0].strip()
     db_path: Path = ROOT / os.environ.get("VEGAPUNK_DB_PATH", "data/vegapunk.db")
     vault_dir: Path = ROOT / os.environ.get("VEGAPUNK_VAULT_DIR", "knowledge")
     tmp_dir: Path = ROOT / "tmp"

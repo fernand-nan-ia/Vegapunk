@@ -2,6 +2,7 @@
 import asyncio
 import logging
 
+from telegram.error import NetworkError
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, filters
@@ -110,6 +111,14 @@ def build_app(db: Database) -> Application:
             except Exception:
                 log.exception("edit_message falhou")
 
+    async def on_error(update, context):
+        err = context.error
+        if isinstance(err, NetworkError):
+            log.warning("rede Telegram: %s (polling continua)", err)
+        else:
+            log.error("erro não tratado", exc_info=err)
+
+    app.add_error_handler(on_error)
     app.add_handler(CommandHandler("id", cmd_id))
     app.add_handler(CommandHandler(["start", "help"], cmd_start))
     app.add_handler(CommandHandler("stats", cmd_stats))

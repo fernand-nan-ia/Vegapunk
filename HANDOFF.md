@@ -1,6 +1,11 @@
-# HANDOFF — Vegapunk (escrito em 2026-08-26, fim da sessão 1)
+# HANDOFF — Vegapunk (atualizado em 2026-08-26, sessão 2)
 
-## Estado atual: MVP construído, bot ONLINE, nenhum link real processado ainda
+## Estado atual: MVP validado end-to-end (YouTube + TikTok)
+
+Sessão 2 (2026-08-26): YouTube (legenda) e TikTok (áudio → Whisper) processados, triados via botão, vault + INDEX + commits automáticos conferidos. Fluxo de falha → `_pending/` → `/reprocess` também validado. Instagram ainda não testado (baixa prioridade: uso real é YouTube + TikTok).
+
+Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--extractor-retries 5` no yt-dlp, error handler de rede no bot (`NetworkError` não derruba mais o polling).
+
 
 - Container `vegapunk-vegapunk-1` rodando (`docker compose ps`), com token novo do BotFather, `OPENROUTER_API_KEY` e `TELEGRAM_ALLOWED_CHAT_IDS` preenchidos no `.env`.
 - Modelo: `google/gemini-3.7-flash` via OpenRouter. Whisper local `small` (baixa ~500 MB no 1º vídeo sem legenda).
@@ -31,6 +36,8 @@
 - Vault `knowledge/` é projeção do SQLite; só `## Notas manuais` é editável à mão.
 
 ## Armadilhas conhecidas
+- **`.env`: NUNCA comentário na mesma linha do valor.** Docker `env_file` não trata `#` como comentário → o valor vira `# texto...`. Foi isso que quebrou o TikTok (yt-dlp recebeu `--cookies "# cookies.txt..."`, criou um cookie jar na raiz e reusou cookies queimados → 403 em todas as tentativas). `config.py` agora corta em `#` por defesa, mas mantenha o `.env` limpo.
+- Se aparecer um arquivo `# cookies.txt (Netscape)...` na raiz, é sintoma desse bug — apague e verifique o `.env`.
 - TikTok: erro "Unable to extract universal data for rehydration" é intermitente → pipeline tenta 4x com espera crescente.
 - YouTube legendas: nunca usar `pt.*` em `--sub-langs` (puxa auto-traduções e dá HTTP 429). Se legenda falhar, cai para áudio+Whisper.
 - Item com `extraction_failed`/`pending_manual` vai para `knowledge/_pending/`; colar o texto em "Notas manuais" e `/reprocess <id>`.
@@ -40,6 +47,9 @@
 `src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper), `enrich.py` (OpenRouter), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
 
 ## Ideias para depois (não iniciadas)
+- Resposta do botão de triagem mostra o nome interno (`✔ apply_saas`); trocar por rótulo amigável.
+- Parser do enrich mais tolerante (extrair `{...}` do texto): Gemini às vezes responde vazio na 1ª tentativa; o retry resolve, mas custa uma chamada.
+- Instagram: post carrossel de imagens (`/p/`) só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
 - Healthcheck diário no Telegram (itens presos, falhas 24h).
 - Push automático (`VEGAPUNK_GIT_PUSH=true` + montar `~/.ssh` no compose).
 - Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para a skill `/vegapunk`.

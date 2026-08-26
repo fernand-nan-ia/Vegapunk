@@ -50,7 +50,7 @@ def clean_vtt(raw: str) -> str:
 
 # ── yt-dlp ────────────────────────────────────────────────────
 def _ytdlp(*args: str, timeout: int = 600) -> subprocess.CompletedProcess:
-    cmd = ["yt-dlp", "--no-playlist", "--no-warnings"]
+    cmd = ["yt-dlp", "--no-playlist", "--no-warnings", "--extractor-retries", "5", "--retry-sleep", "extractor:5"]
     if settings.cookies_file:
         cmd += ["--cookies", settings.cookies_file]
     cmd += list(args)
@@ -65,7 +65,7 @@ def _classify(stderr: str) -> ExtractionError:
 
 
 def fetch_metadata(url: str) -> dict:
-    r = _ytdlp("-j", url, timeout=120)
+    r = _ytdlp("-j", "--ignore-no-formats-error", url, timeout=120)
     if r.returncode != 0:
         raise _classify(r.stderr)
     try:
