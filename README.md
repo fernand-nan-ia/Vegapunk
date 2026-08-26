@@ -4,13 +4,13 @@ Bot pessoal de Telegram que transforma links (YouTube, TikTok, Instagram) em mem
 consumível pelo Claude Code via skill `/vegapunk`.
 
 ```
-link no Telegram → extrai texto (legenda ou áudio→Whisper) → Claude resume/classifica → knowledge/*.md → git → botões de triagem
+link no Telegram → extrai texto (legenda ou áudio→Whisper) → LLM (OpenRouter) resume/classifica → knowledge/*.md → git → botões de triagem
 ```
 
 ## Setup (uma vez)
 
 1. Crie o bot no [@BotFather](https://t.me/BotFather) e copie o token.
-2. `cp .env.example .env` e preencha `TELEGRAM_BOT_TOKEN` e `ANTHROPIC_API_KEY`.
+2. `cp .env.example .env` e preencha `TELEGRAM_BOT_TOKEN` e `OPENROUTER_API_KEY`.
 3. `docker compose up -d --build` (a 1ª build baixa ffmpeg + libs; o modelo Whisper baixa no 1º vídeo sem legenda).
 4. Mande `/id` ao bot, cole o número em `TELEGRAM_ALLOWED_CHAT_IDS` no `.env`, e `docker compose restart`.
 5. Mande um link. 🎉
@@ -52,3 +52,7 @@ Em qualquer projeto: `/vegapunk <pergunta ou tema>`. A skill lê `knowledge/INDE
 ## Testes
 
 `PYTHONPATH=src .venv/bin/python -m pytest`
+
+## Modelo LLM
+
+Via OpenRouter (`VEGAPUNK_MODEL`). Padrão `google/gemini-3.7-flash` (~US$0,006/vídeo). Econômico: `deepseek/deepseek-v4-flash` (~US$0,001/vídeo). Qualquer modelo com suporte a `response_format` funciona.

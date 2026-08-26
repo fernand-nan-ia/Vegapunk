@@ -5,7 +5,7 @@ description = "Telegram knowledge bot: links de YouTube/TikTok/Instagram viram m
 requires-python = ">=3.11"
 dependencies = [
   "python-telegram-bot>=21.0",
-  "anthropic>=1.0",
+  "openai>=1.50",
   "pydantic>=2.0",
   "yt-dlp>=2025.1.1",
   "faster-whisper>=1.1.0",

@@ -17,7 +17,8 @@ def _ids(raw: str) -> set[int]:
 class Settings:
     bot_token: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     allowed_chat_ids: set[int] = field(default_factory=lambda: _ids(os.environ.get("TELEGRAM_ALLOWED_CHAT_IDS", "")))
-    model: str = os.environ.get("VEGAPUNK_MODEL", "claude-opus-5")
+    openrouter_api_key: str = os.environ.get("OPENROUTER_API_KEY", "")
+    model: str = os.environ.get("VEGAPUNK_MODEL", "google/gemini-3.7-flash")
     whisper_model: str = os.environ.get("VEGAPUNK_WHISPER_MODEL", "small")
     git_commit: bool = os.environ.get("VEGAPUNK_GIT_COMMIT", "true").lower() == "true"
     git_push: bool = os.environ.get("VEGAPUNK_GIT_PUSH", "false").lower() == "true"
