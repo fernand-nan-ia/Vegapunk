@@ -5,8 +5,8 @@ external_id: "7665683581271821589"
 canonical_url: "https://www.tiktok.com/@ot.oliver/video/7665683581271821589"
 channel: "Ot Oliver"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["claude", "arquitetura-de-software", "context-window", "ai-agents", "documentacao"]
 applicability:
   saas_pessoal: alta
