@@ -5,8 +5,8 @@ external_id: "7678013013223361800"
 canonical_url: "https://www.tiktok.com/@mxc_digital/video/7678013013223361800"
 channel: "MXC Digital"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["lgpd", "politica-de-privacidade", "cookie-banner", "acessibilidade-web", "a11y", "compliance-digital"]
 applicability:
   saas_pessoal: alta
