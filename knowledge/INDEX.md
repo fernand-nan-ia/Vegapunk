@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-26 · youtube · [Como Engenheiros Sênior Constroem com IA: Spec-Driven Development e MCPs](youtube/2026-08-26_como-engenheiros-senior-constroem-com-ia-spec-driven-develop_c0ab8leJDrc.md) · `spec-driven-development` `context-management` `claude-code` `mcp` `system-design` `prompt-engineering` · alta/alta/alta · —
 - 2026-08-26 · tiktok · [5 Projetos Práticos de IA e Full Stack para Construir no Fim de Semana](tiktok/2026-08-26_5-projetos-praticos-de-ia-e-full-stack-para-construir-no-fim_7677919605557333269.md) · `llm-scratch` `lstm-pytorch` `nextjs-15` `ai-agents` `mem0` `fullstack-saas` `deep-learning` · media/baixa/alta · archive
 - 2026-08-26 · tiktok · [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md) · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao` `supabase` · media/media/alta · apply_client
 - 2026-08-26 · tiktok · [Micro-SaaS B2B para Gestão de Resíduos Biológicos e Conformidade Sanitária](tiktok/2026-08-26_micro-saas-b2b-para-gestao-de-residuos-biologicos-e-conformi_7676611889853484295.md) · `micro-saas` `b2b-saas` `compliance` `gestao-residuos` `vigilancia-sanitaria` `ideacao-de-produto` · media/baixa/alta · archive
