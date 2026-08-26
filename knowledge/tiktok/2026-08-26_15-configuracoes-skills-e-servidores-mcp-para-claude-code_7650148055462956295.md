@@ -5,8 +5,8 @@ external_id: "7650148055462956295"
 canonical_url: "https://www.tiktok.com/@samuelmaggioficial/photo/7650148055462956295"
 channel: "samuelmaggioficial"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["claude-code", "mcp-servers", "token-optimization", "prompt-engineering", "supabase", "playwright"]
 applicability:
   saas_pessoal: alta
