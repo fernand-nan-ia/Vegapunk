@@ -61,7 +61,8 @@ Regras:
 - summary em pt-BR, 2-4 frases, direto e agradável de ler: abre com o gancho/problema e fecha com a ideia central. Não extrapole nem invente.
 - topics: se o conteúdo cobre vários subtemas (ex.: "5 falhas de segurança"), liste cada um com nome curto e 1-2 frases. Se é um assunto só, deixe vazio.
 - tools: toda ferramenta, serviço, biblioteca ou produto citado nominalmente (ex.: Supabase, Claude Code, gitleaks), com o papel que tem no conteúdo. Vazio se nenhum.
-- key_points: afirmações acionáveis ou fatos centrais, nunca títulos vagos; não repita o que já está em topics.
+- topics e tools não devem se repetir: se o conteúdo é essencialmente uma lista de ferramentas ("5 sites para X"), preencha só tools e deixe topics vazio; use topics para subtemas conceituais.
+- key_points: afirmações acionáveis ou fatos centrais, nunca títulos vagos; não repita o que já está em topics ou tools.
 - tags: kebab-case, minúsculas, específicas ("prompt-caching", "landing-page-cro"); nunca genéricas ("tecnologia").
 - how_to_apply: concreto, referindo o SaaS ou o site do cliente quando fizer sentido.
 - confidence reflete a qualidade do texto de entrada (transcrição automática ruidosa ou truncada => "baixa").
