@@ -5,8 +5,8 @@ external_id: "c0ab8leJDrc"
 canonical_url: "https://www.youtube.com/watch?v=c0ab8leJDrc"
 channel: "Omatsola Dev"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["spec-driven-development", "context-management", "claude-code", "mcp", "system-design", "prompt-engineering"]
 applicability:
   saas_pessoal: alta
