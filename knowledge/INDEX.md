@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-26 · tiktok · [15 Configurações, Skills e Servidores MCP para Claude Code](tiktok/2026-08-26_15-configuracoes-skills-e-servidores-mcp-para-claude-code_7650148055462956295.md) · `claude-code` `mcp-servers` `token-optimization` `prompt-engineering` `supabase` `playwright` · alta/alta/alta · —
 - 2026-08-26 · tiktok · [Checklist de 7 configurações essenciais para landing pages feitas com IA](tiktok/2026-08-26_checklist-de-7-configuracoes-essenciais-para-landing-pages-f_7671505270237023509.md) · `landing-page-cro` `seo-tecnico` `json-ld` `web-performance` `google-analytics` `microsoft-clarity` `schema-markup` · alta/alta/media · archive
 - 2026-08-26 · tiktok · [Mapeando a Arquitetura da Aplicação em HTML e JSON com Claude](tiktok/2026-08-26_mapeando-a-arquitetura-da-aplicacao-em-html-e-json-com-claud_7665683581271821589.md) · `claude` `arquitetura-de-software` `context-window` `ai-agents` `documentacao` · alta/alta/alta · apply_saas
 - 2026-08-26 · tiktok · [5 sites úteis de design para identidade visual, assets e mockups](tiktok/2026-08-26_5-sites-uteis-de-design-para-identidade-visual-assets-e-mock_7672502144024595732.md) · `ui-design` `branding` `design-assets` `ia-generativa` `mockups` `vetorizacao` `color-palette` · media/alta/media · archive
