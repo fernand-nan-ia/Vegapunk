@@ -5,8 +5,8 @@ external_id: "7677919605557333269"
 canonical_url: "https://www.tiktok.com/@devlguedes/photo/7677919605557333269"
 channel: "devguedes"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["llm-scratch", "lstm-pytorch", "nextjs-15", "ai-agents", "mem0", "fullstack-saas", "deep-learning"]
 applicability:
   saas_pessoal: media
