@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-26 · tiktok · [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md) · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao` `supabase` · media/media/alta · —
 - 2026-08-26 · tiktok · [Micro-SaaS B2B para Gestão de Resíduos Biológicos e Conformidade Sanitária](tiktok/2026-08-26_micro-saas-b2b-para-gestao-de-residuos-biologicos-e-conformi_7676611889853484295.md) · `micro-saas` `b2b-saas` `compliance` `gestao-residuos` `vigilancia-sanitaria` `ideacao-de-produto` · media/baixa/alta · archive
 - 2026-08-26 · tiktok · [7 lições práticas após faturar R$ 7 mil/mês com SaaS sem tráfego pago](tiktok/2026-08-26_7-licoes-praticas-apos-faturar-r-7-mil-mes-com-saas-sem-traf_7678163901342698760.md) · `bootstrapping-saas` `aquisicao-organica` `validacao-de-produto` `retencao-saas` `marketing-de-conteudo` `micro-saas` · alta/baixa/alta · apply_saas
 - 2026-08-26 · tiktok · [Estratégia de Prospecção Ativa Internacional para Criação de Sites](tiktok/2026-08-26_estrategia-de-prospeccao-ativa-internacional-para-criacao-de_7678376368752692487.md) · `cold-outreach` `lead-generation` `google-maps-scraping` `freelance-sales` `web-development-sales` · baixa/alta/media · apply_client
