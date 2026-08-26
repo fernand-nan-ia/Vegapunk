@@ -2,7 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
-- 2026-08-26 · tiktok · [5 Sites Gratuitos para Acelerar a Carreira e o Aprendizado em Programação](tiktok/2026-08-26_5-sites-gratuitos-para-acelerar-a-carreira-e-o-aprendizado-e_7666208793914576146.md) · `aprendizado-dev` `estudos-programacao` `trilha-fullstack` `sql` `repeticao-espacada` `roadmap-tecnico` · baixa/baixa/alta · —
+- 2026-08-26 · tiktok · [5 Sites Gratuitos para Acelerar a Carreira e o Aprendizado em Programação](tiktok/2026-08-26_5-sites-gratuitos-para-acelerar-a-carreira-e-o-aprendizado-e_7666208793914576146.md) · `aprendizado-dev` `estudos-programacao` `trilha-fullstack` `sql` `repeticao-espacada` `roadmap-tecnico` · baixa/baixa/alta · archive
 - 2026-08-26 · tiktok · [Automação de busca de emprego e preparação com Claude e AI Job Search](tiktok/2026-08-26_automacao-de-busca-de-emprego-e-preparacao-com-claude-e-ai-j_7661231446069103880.md) · `job-automation` `claude` `cli-tools` `resume-parser` `interview-prep` `web-scraping` · baixa/nenhuma/media · —
 - 2026-08-26 · tiktok · [Chamada para habilidades de design no front-end](tiktok/2026-08-26_chamada-para-habilidades-de-design-no-front-end_7658016248529177873.md) · `front-end-design` `ui-design` `habilidades-frontend` · baixa/baixa/baixa · —
 - 2026-08-26 · tiktok · [15 Configurações, Skills e Servidores MCP para Claude Code](tiktok/2026-08-26_15-configuracoes-skills-e-servidores-mcp-para-claude-code_7650148055462956295.md) · `claude-code` `mcp-servers` `token-optimization` `prompt-engineering` `supabase` `playwright` · alta/alta/alta · archive

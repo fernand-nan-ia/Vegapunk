@@ -5,8 +5,8 @@ external_id: "7666208793914576146"
 canonical_url: "https://www.tiktok.com/@luiz.k.alencar/photo/7666208793914576146"
 channel: "Luiz Alencar"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["aprendizado-dev", "estudos-programacao", "trilha-fullstack", "sql", "repeticao-espacada", "roadmap-tecnico"]
 applicability:
   saas_pessoal: baixa
