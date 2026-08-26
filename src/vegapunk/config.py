@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.environ.get("VEGAPUNK_ROOT", os.getcwd())).resolve()
 
 
 def _ids(raw: str) -> set[int]:

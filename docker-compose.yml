@@ -12,4 +12,6 @@ services:
       # - ~/.ssh:/home/vegapunk/.ssh:ro
     environment:
       - HOME=/tmp
+      - PYTHONPATH=/app/src
+      - VEGAPUNK_ROOT=/app
     restart: unless-stopped
