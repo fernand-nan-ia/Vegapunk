@@ -5,8 +5,8 @@ external_id: "7678415963133381908"
 canonical_url: "https://www.tiktok.com/@wadhah_the_uxer/photo/7678415963133381908"
 channel: "Wadhah Aloui | UX/UI Designer"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["ui-design", "ux-design", "design-system", "form-design", "border-radius", "usabilidade"]
 applicability:
   saas_pessoal: alta

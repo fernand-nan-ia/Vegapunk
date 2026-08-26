@@ -2,7 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
-- 2026-08-26 · tiktok · [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md) · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade` · alta/alta/media · —
+- 2026-08-26 · tiktok · [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md) · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade` · alta/alta/media · apply_saas
 - 2026-08-26 · youtube · [Como Engenheiros Sênior Constroem com IA: Spec-Driven Development e MCPs](youtube/2026-08-26_como-engenheiros-senior-constroem-com-ia-spec-driven-develop_c0ab8leJDrc.md) · `spec-driven-development` `context-management` `claude-code` `mcp` `system-design` `prompt-engineering` · alta/alta/alta · archive
 - 2026-08-26 · tiktok · [5 Projetos Práticos de IA e Full Stack para Construir no Fim de Semana](tiktok/2026-08-26_5-projetos-praticos-de-ia-e-full-stack-para-construir-no-fim_7677919605557333269.md) · `llm-scratch` `lstm-pytorch` `nextjs-15` `ai-agents` `mem0` `fullstack-saas` `deep-learning` · media/baixa/alta · archive
 - 2026-08-26 · tiktok · [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md) · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao` `supabase` · media/media/alta · apply_client
