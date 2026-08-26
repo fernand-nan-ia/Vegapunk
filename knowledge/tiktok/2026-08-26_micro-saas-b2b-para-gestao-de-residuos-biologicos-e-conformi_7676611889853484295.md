@@ -5,8 +5,8 @@ external_id: "7676611889853484295"
 canonical_url: "https://www.tiktok.com/@purevibecoding/video/7676611889853484295"
 channel: "Vibecoding"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["micro-saas", "b2b-saas", "compliance", "gestao-residuos", "vigilancia-sanitaria", "ideacao-de-produto"]
 applicability:
   saas_pessoal: media
