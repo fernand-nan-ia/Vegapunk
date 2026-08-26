@@ -5,8 +5,8 @@ external_id: "6DJFl-g83dM"
 canonical_url: "https://www.youtube.com/watch?v=6DJFl-g83dM"
 channel: "mano deyvin"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["seguranca-saas", "vibe-coding", "claude-code", "supabase-rls", "idor", "xss", "gitleaks", "owasp-zap"]
 applicability:
   saas_pessoal: alta
