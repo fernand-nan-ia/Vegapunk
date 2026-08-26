@@ -1,0 +1,31 @@
+import os
+from dataclasses import dataclass, field
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def _ids(raw: str) -> set[int]:
+    return {int(x) for x in raw.replace(";", ",").split(",") if x.strip()}
+
+
+@dataclass
+class Settings:
+    bot_token: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    allowed_chat_ids: set[int] = field(default_factory=lambda: _ids(os.environ.get("TELEGRAM_ALLOWED_CHAT_IDS", "")))
+    model: str = os.environ.get("VEGAPUNK_MODEL", "claude-opus-5")
+    whisper_model: str = os.environ.get("VEGAPUNK_WHISPER_MODEL", "small")
+    git_commit: bool = os.environ.get("VEGAPUNK_GIT_COMMIT", "true").lower() == "true"
+    git_push: bool = os.environ.get("VEGAPUNK_GIT_PUSH", "false").lower() == "true"
+    cookies_file: str = os.environ.get("VEGAPUNK_COOKIES_FILE", "")
+    db_path: Path = ROOT / os.environ.get("VEGAPUNK_DB_PATH", "data/vegapunk.db")
+    vault_dir: Path = ROOT / os.environ.get("VEGAPUNK_VAULT_DIR", "knowledge")
+    tmp_dir: Path = ROOT / "tmp"
+    max_transcript_chars: int = 60_000
+
+
+settings = Settings()

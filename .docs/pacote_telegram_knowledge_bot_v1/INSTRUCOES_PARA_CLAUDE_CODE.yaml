@@ -1,0 +1,129 @@
+# INSTRUCOES_PARA_CLAUDE_CODE.yaml
+# Prompt-spec determinístico — Telegram Knowledge Bot, Fase 1
+# Executar as fases EM ORDEM. Cada fase tem critério de saída explícito.
+
+meta:
+  package: telegram_knowledge_bot
+  version: "1.0.0"
+  target_stack: [ruby-on-rails, postgresql, sidekiq, yt-dlp, anthropic-api]
+  operator_model: >
+    O operador dirige agentes; não escreve código manualmente. Toda decisão
+    ambígua deve ser registrada como pergunta no relatório final, nunca
+    resolvida silenciosamente com suposição.
+  authority_order:
+    - "Docs oficiais (F001-F005 do INDICE_DE_FONTES.md)"
+    - "Este pacote (01_ a 07_)"
+    - "Convenções do repositório existente"
+  conflict_rule: >
+    Em conflito entre pacote e doc oficial: seguir a doc oficial e reportar
+    a divergência no relatório da fase validation.
+
+phases:
+
+  # ─────────────────────────────────────────────
+  phase_1_recognition:
+    goal: "Mapear o terreno antes de qualquer escrita."
+    steps:
+      - "Ler README.md e todos os .md nas pastas 01_ a 07_, na ordem da tabela 'Prioridade de Ingestão'."
+      - "Inspecionar o repositório alvo: versão do Rails, versão do Ruby, presença de Sidekiq/Redis, estrutura de jobs existente, padrão de credentials."
+      - "Verificar disponibilidade de: yt-dlp no PATH, Redis, variáveis TELEGRAM_BOT_TOKEN / TELEGRAM_WEBHOOK_SECRET / TELEGRAM_ALLOWED_CHAT_IDS / ANTHROPIC_API_KEY."
+    must:
+      - "Produzir um arquivo RECOGNITION_REPORT.md com: versões detectadas, lacunas de ambiente, e lista de perguntas abertas (se houver)."
+    must_not:
+      - "Escrever qualquer código nesta fase."
+      - "Assumir versões não verificadas."
+    exit_criteria: "RECOGNITION_REPORT.md existe e lacunas de ambiente estão listadas ou vazias."
+
+  # ─────────────────────────────────────────────
+  phase_2_download:
+    goal: "Obter fontes de verdade externas."
+    steps:
+      - "Executar bash download_all.sh."
+      - "Para fontes que exigem navegação (F004), consultar a doc online e extrair apenas as seções pertinentes (Messages endpoint, campo usage)."
+    must:
+      - "Registrar em DOWNLOAD_REPORT.md o status de cada fonte (ok/falhou) e checksums dos arquivos baixados."
+    must_not:
+      - "Prosseguir para ingestion se F001 (Telegram Bot API) falhou — é bloqueante."
+    exit_criteria: "F001, F003 e F005 disponíveis localmente; demais com status registrado."
+
+  # ─────────────────────────────────────────────
+  phase_3_ingestion:
+    goal: "Cruzar o pacote com as fontes oficiais e fixar o contrato."
+    steps:
+      - "Validar contra F001: campos do update usados em T001, limite de callback_data, contrato do setWebhook e do answerCallbackQuery."
+      - "Validar contra F003: flags de legendas do comando em X001 (nomes exatos, comportamento de --write-auto-subs)."
+      - "Validar contra F005: semântica de sidekiq_retries_exhausted e classes não-retryable usadas em B001."
+    must:
+      - "Produzir INGESTION_NOTES.md listando cada validação com veredito: confirmado | divergente (com correção proposta)."
+    must_not:
+      - "Alterar decisões dos ADRs (A002) — divergência de ADR vira pergunta, não mudança."
+    exit_criteria: "Todas as validações com veredito; zero divergências não endereçadas."
+
+  # ─────────────────────────────────────────────
+  phase_4_skill_construction:
+    goal: "Implementar a Fase 1 do pipeline no repositório alvo."
+    build_order:
+      - "1. Migrations: knowledge_items + item_events exatamente como D001 (incluindo CHECKs e índices)."
+      - "2. Model KnowledgeItem com transition_to!(new_status, actor:, metadata:) implementando a tabela de transições de D001; transição inválida => InvalidTransitionError."
+      - "3. Controller do webhook (T001): validação de secret, allowlist, parsing de entities, resposta 200 imediata, enfileiramento."
+      - "4. NormalizeItemJob: resolução de shortlink, parsing de videoId (todos os formatos de X001), dedup (REQ-003)."
+      - "5. ExtractContentJob: Open3 + yt-dlp, limpeza de VTT, mapa de erros ERR-003/004/005, fila 'extraction' conc. 1."
+      - "6. EnrichItemJob: prompt de E001, validação json_schemer, retry-com-feedback, fila 'enrichment' conc. 1."
+      - "7. PersistAndNotifyJob: escrita do .md (template O001), git commit, mensagem Telegram com teclado inline."
+      - "8. Callback de triagem (T001 REQ-T04/T05/T06)."
+      - "9. Rake tasks: kb:reprocess, kb:stats, vault:rebuild (preservando '## Notas manuais')."
+      - "10. Healthcheck diário (B001 REQ-B03) e Sidekiq Web autenticado."
+    must:
+      - "Testes para: máquina de estados (transições válidas e inválidas), dedup, limpeza de VTT (fixture com duplicatas de auto-legenda), validação de schema do enriquecimento (fixture válida e inválida), parsing dos 4 formatos de URL do YouTube."
+      - "Todo acesso a status via transition_to!; proibido update(status:) direto (verificar com grep no diff)."
+      - "Segredos exclusivamente via ENV/credentials."
+    must_not:
+      - "Implementar TikTok, Instagram, Whisper, embeddings ou MCP (fases futuras)."
+      - "Baixar arquivos de vídeo (ADR-004)."
+      - "Expor Sidekiq Web sem autenticação."
+      - "Interpolar campos do enriquecimento em comandos shell ou SQL cru (REQ-E02)."
+    exit_criteria: "Suite de testes verde; os 10 itens do build_order entregues."
+
+  # ─────────────────────────────────────────────
+  phase_5_validation:
+    goal: "Prova de funcionamento ponta a ponta + checklist de aceite."
+    test_cases:
+      - id: TC-01
+        given: "URL https://youtu.be/ABC123def45?si=xyz enviada ao webhook (chat na allowlist)"
+        expect: "Item captured => normalized com external_id=ABC123def45; canonical_url sem params de tracking; resposta '✅ Capturado' em < 2s"
+      - id: TC-02
+        given: "Mesma URL reenviada em formato youtube.com/watch?v=ABC123def45"
+        expect: "Nenhum registro novo; shared_count=2; bot responde '♻️ Já capturado'"
+      - id: TC-03
+        given: "Vídeo real com auto-legenda pt"
+        expect: "raw_content limpo (sem timestamps/duplicatas), content_lang=pt, status=extracted => enriched, enrichment válido contra o schema, .md criado com frontmatter correto, mensagem com 4 botões"
+      - id: TC-04
+        given: "Vídeo sem nenhuma legenda"
+        expect: "status=extraction_failed, error_code=ERR-004, SEM retries, usuário notificado"
+      - id: TC-05
+        given: "Clique em '🚀 SaaS' num item enriched"
+        expect: "status=applied_saas, frontmatter atualizado (triage + status), teclado removido, mensagem editada com '✔'"
+      - id: TC-06
+        given: "Segundo clique no mesmo teclado"
+        expect: "answerCallbackQuery 'Já triado'; nenhuma transição; nenhum erro"
+      - id: TC-07
+        given: "Webhook sem header X-Telegram-Bot-Api-Secret-Token correto"
+        expect: "403; nada persistido; nada enfileirado"
+      - id: TC-08
+        given: "Link do Instagram enviado"
+        expect: "status=pending_manual; stub em _pending/; bot responde '📥 Salvo como pendente'"
+      - id: TC-09
+        given: "Mock da Claude API retornando JSON sem o campo 'tags' duas vezes"
+        expect: "1 retry com feedback de validação; depois enrichment_failed com ERR-007; output bruto em error_detail"
+      - id: TC-10
+        given: "rake vault:rebuild com um .md contendo texto em '## Notas manuais'"
+        expect: "Arquivo regenerado; notas manuais preservadas byte a byte"
+    final_checklist:
+      - "[ ] TC-01 a TC-10 executados e verdes (reais ou com mocks documentados)"
+      - "[ ] item_events registra toda transição com actor correto"
+      - "[ ] Logs em JSON sem raw_content completo e sem segredos"
+      - "[ ] Retries com teto 5; retries_exhausted transiciona e notifica"
+      - "[ ] grep confirma zero 'update(status' fora de transition_to!"
+      - "[ ] README do repositório atualizado com setup (ENV vars, setWebhook, deps)"
+      - "[ ] VALIDATION_REPORT.md com resultado de cada TC, divergências de doc oficial e perguntas abertas"
+    exit_criteria: "Checklist 100% marcado; VALIDATION_REPORT.md entregue ao operador."

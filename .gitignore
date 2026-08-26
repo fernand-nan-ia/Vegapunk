@@ -1,0 +1,10 @@
+.env
+.venv/
+data/
+tmp/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+*:Zone.Identifier
+whisper-cache/

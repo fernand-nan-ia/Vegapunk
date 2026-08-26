@@ -1,0 +1,15 @@
+services:
+  vegapunk:
+    build: .
+    env_file: .env
+    # roda como seu usuário para os arquivos do vault/git não ficarem como root
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/app                       # repo inteiro: knowledge/, data/, .git
+      - ./whisper-cache:/app/whisper-cache
+      - ~/.gitconfig:/etc/gitconfig:ro
+      # descomente para push automático via SSH:
+      # - ~/.ssh:/home/vegapunk/.ssh:ro
+    environment:
+      - HOME=/tmp
+    restart: unless-stopped
