@@ -1,13 +1,13 @@
 # vegapunk
 
-Consulta a memória de conhecimento do Vegapunk (links de YouTube/TikTok/Instagram já extraídos e resumidos) para responder perguntas, deduzir recomendações ou trazer contexto para o projeto atual.
+Consulta a memória de conhecimento do Vegapunk (vídeos e carrosséis de YouTube/TikTok já extraídos e resumidos) para responder perguntas, deduzir recomendações ou trazer contexto para o projeto atual.
 
 ## Fonte
 
 Vault: `/home/crazu/projetos/vegapunk/knowledge/`
 
 - `INDEX.md` — uma linha por item: data · plataforma · título (link relativo) · tags · aplicabilidade `saas/cliente/estudo` · triagem
-- `<plataforma>/*.md` — frontmatter YAML (`tags`, `applicability`, `triage`, `confidence`) + `## Resumo`, `## Pontos-chave`, `## Como aplicar`, `## Notas manuais`
+- `<plataforma>/*.md` — frontmatter YAML (`tags`, `applicability`, `triage`, `confidence`) + `## Resumo`, `## Tópicos` (subtemas, quando há), `## Ferramentas citadas` (nome: papel), `## Pontos-chave`, `## Como aplicar`, `## Notas manuais`. `content_type: slides` = texto lido das imagens de um carrossel do TikTok
 - `_pending/` — itens sem extração; ignorar salvo pedido explícito
 
 ## Procedimento
