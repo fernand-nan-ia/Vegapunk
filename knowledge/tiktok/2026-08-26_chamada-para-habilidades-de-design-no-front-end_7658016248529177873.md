@@ -5,8 +5,8 @@ external_id: "7658016248529177873"
 canonical_url: "https://www.tiktok.com/@_eduardojcruz/video/7658016248529177873"
 channel: "_eduardojcruz"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["front-end-design", "ui-design", "habilidades-frontend"]
 applicability:
   saas_pessoal: baixa
