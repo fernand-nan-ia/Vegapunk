@@ -1,4 +1,4 @@
-"""Extração de texto: legendas (yt-dlp) ou áudio → Whisper. Nunca guarda vídeo."""
+"""Extração de texto: legendas (yt-dlp), áudio → Whisper, ou slides de imagem → modelo de visão. Nunca guarda vídeo."""
 import json
 import logging
 import re
@@ -24,7 +24,7 @@ class Extracted:
     channel: str
     duration: int | None
     description: str
-    content_type: str   # transcript | caption | whisper
+    content_type: str   # transcript | caption | whisper | slides | manual
     text: str
     lang: str | None
 
@@ -132,11 +132,85 @@ def transcribe(audio: Path) -> tuple[str, str]:
     return re.sub(r"\s+", " ", text).strip(), info.language
 
 
+# ── TikTok photo posts (slideshow) ────────────────────────────
+TT_PHOTO = re.compile(r"tiktok\.com/@([^/]+)/photo/(\d+)")
+_IMG_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+                "Referer": "https://www.tiktok.com/"}
+
+
+def _tiktok_web_data(video_url: str, video_id: str) -> dict:
+    """JSON bruto do post via extrator do yt-dlp (resolve o desafio anti-bot). API privada: pode mudar em updates."""
+    import yt_dlp
+    from yt_dlp.extractor.tiktok import TikTokIE
+
+    with yt_dlp.YoutubeDL({"quiet": True, "no_warnings": True}) as ydl:
+        data, _status = TikTokIE(ydl)._extract_web_data_and_status(video_url, video_id)
+    return data or {}
+
+
+def _download_images(urls: list[str]) -> list[bytes]:
+    import urllib.request
+
+    out = []
+    for u in urls:
+        req = urllib.request.Request(u, headers=_IMG_HEADERS)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            out.append(r.read())
+    return out
+
+
+def extract_tiktok_slides(url: str, workdir: Path) -> Extracted:
+    from .enrich import EnrichmentError, read_slides
+
+    m = TT_PHOTO.search(url)
+    if not m:
+        raise ExtractionError("ERR-003", f"URL de photo não reconhecida: {url}")
+    user, vid = m.group(1), m.group(2)
+    video_url = f"https://www.tiktok.com/@{user}/video/{vid}"
+    try:
+        data = _tiktok_web_data(video_url, vid)
+    except Exception as e:
+        raise ExtractionError("ERR-003", f"tiktok web data: {str(e)[:300]}", retryable=True)
+    images = [im["imageURL"]["urlList"][0] for im in (data.get("imagePost") or {}).get("images", [])
+              if im.get("imageURL", {}).get("urlList")]
+    if not images:
+        raise ExtractionError("ERR-008", "post de imagens sem slides acessíveis", retryable=False)
+    try:
+        blobs = _download_images(images)
+    except Exception as e:
+        raise ExtractionError("ERR-003", f"download de slides: {str(e)[:300]}", retryable=True)
+    try:
+        slides_text = read_slides(blobs)
+    except EnrichmentError as e:
+        raise ExtractionError(e.code, f"leitura de slides: {e.detail}", retryable=e.code == "ERR-006")
+    log.info("tiktok slides: %s imagens, %s chars", len(images), len(slides_text))
+
+    # narração opcional: só se o áudio é original do autor (música de biblioteca não vale transcrever)
+    narration, lang = "", "und"
+    music = data.get("music") or {}
+    if music.get("original"):
+        try:
+            narration, lang = transcribe(fetch_audio(video_url, workdir))
+        except Exception as e:  # narração é bônus; slides já bastam
+            log.warning("narração do slideshow ignorada: %s", str(e)[:200])
+    text = f"[SLIDES: {len(images)}]\n{slides_text}"
+    if len(narration) >= 50:
+        text += f"\n\n[NARRAÇÃO/ÁUDIO]\n{narration}"
+    desc = (data.get("desc") or "").strip()
+    author = data.get("author") or {}
+    channel = author.get("nickname") or author.get("uniqueId") or user
+    title = (desc.split("\n")[0][:200] if desc else f"TikTok slides de @{user}")
+    duration = int(music["duration"]) if music.get("duration") else None
+    return Extracted(title, channel, duration, desc[:3000], "slides", text[: settings.max_transcript_chars], lang)
+
+
 # ── Orquestração ──────────────────────────────────────────────
 def extract(url: str, platform: str, item_id: str) -> Extracted:
     workdir = settings.tmp_dir / item_id
     workdir.mkdir(parents=True, exist_ok=True)
     try:
+        if platform == "tiktok" and TT_PHOTO.search(url):
+            return extract_tiktok_slides(url, workdir)
         meta = fetch_metadata(url)
         title = meta.get("title") or meta.get("fulltitle") or url
         channel = meta.get("channel") or meta.get("uploader") or ""

@@ -102,6 +102,36 @@ def _client() -> openai.OpenAI:
     )
 
 
+SLIDES_PROMPT = ("Estes são os slides, em ordem, de um post de carrossel. Transcreva fielmente TODO o texto de cada "
+                 "slide (mantenha o idioma original), no formato:\n[Slide N]\n<texto>\n"
+                 "Não resuma, não comente, não invente. Ignore marcas d'água e handles repetidos.")
+
+
+def read_slides(images: list[bytes], mime: str = "image/jpeg") -> str:
+    """Transcreve o texto de imagens (carrossel/slideshow) via modelo multimodal. Sem OCR local."""
+    import base64
+    client = _client()
+    content = [{"type": "text", "text": SLIDES_PROMPT}] + [
+        {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{base64.b64encode(b).decode()}"}}
+        for b in images
+    ]
+    try:
+        resp = client.chat.completions.create(
+            model=settings.model, messages=[{"role": "user", "content": content}],
+            max_tokens=4000, temperature=0,
+        )
+    except openai.RateLimitError as e:
+        raise EnrichmentError("ERR-006", f"rate limit: {e}")
+    except openai.APIStatusError as e:
+        raise EnrichmentError("ERR-006" if e.status_code >= 500 else "ERR-007", f"api {e.status_code}: {e.message}")
+    except openai.APIConnectionError as e:
+        raise EnrichmentError("ERR-006", f"conexão: {e}")
+    text = (resp.choices[0].message.content or "").strip() if resp.choices else ""
+    if resp.usage:
+        log.info("slides lidos: %s imagens, %s in / %s out tokens", len(images), resp.usage.prompt_tokens, resp.usage.completion_tokens)
+    return text
+
+
 def enrich(item: dict, text: str) -> tuple[Enrichment, dict]:
     client = _client()
     user = (

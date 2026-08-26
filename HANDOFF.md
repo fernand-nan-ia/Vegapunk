@@ -44,12 +44,12 @@ Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--ext
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
 
 ## Mapa do código
-`src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper), `enrich.py` (OpenRouter; schema com topics/tools), `format_summary` em `pipeline.py` (mensagem Telegram), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
+`src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema com topics/tools; `read_slides` visão), `format_summary` em `pipeline.py` (mensagem Telegram), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
 
 ## Ideias para depois (não iniciadas)
 
 - Parser do enrich mais tolerante (extrair `{...}` do texto): Gemini às vezes responde vazio na 1ª tentativa; o retry resolve, mas custa uma chamada.
-- Posts de imagens (TikTok `/photo/`, Instagram carrossel `/p/`) falham rápido com ERR-008 e mensagem 📷; conteúdo em imagem precisaria de OCR (ideia: tesseract sobre os frames). Instagram só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
+- **TikTok slideshow (`/photo/`) é suportado**: `extract_tiktok_slides` usa `TikTokIE._extract_web_data_and_status` (API privada do yt-dlp — se um update quebrar, `tests/test_slides.py` não pega, o log mostra `tiktok web data:`), baixa `imagePost.images`, o Gemini lê as imagens (`enrich.read_slides`, sem OCR local) e, se `music.original`, transcreve a narração com Whisper. `content_type: slides`. Instagram carrossel continua ERR-008 (exige login); só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
 - Healthcheck diário no Telegram (itens presos, falhas 24h).
 - Push automático (`VEGAPUNK_GIT_PUSH=true` + montar `~/.ssh` no compose).
 - Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para a skill `/vegapunk`.
