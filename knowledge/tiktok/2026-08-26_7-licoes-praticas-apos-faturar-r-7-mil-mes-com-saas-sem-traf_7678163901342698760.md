@@ -5,8 +5,8 @@ external_id: "7678163901342698760"
 canonical_url: "https://www.tiktok.com/@eudanielbusiness3/photo/7678163901342698760"
 channel: "Daniel"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["bootstrapping-saas", "aquisicao-organica", "validacao-de-produto", "retencao-saas", "marketing-de-conteudo", "micro-saas"]
 applicability:
   saas_pessoal: alta
