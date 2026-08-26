@@ -121,13 +121,16 @@ class Pipeline:
 
     async def _pending(self, item_id: str, code: str, detail: str) -> bool:
         item = self.db.get(item_id)
-        status = "extraction_failed" if code in ("ERR-003", "ERR-004", "ERR-005") else "pending_manual"
+        status = "extraction_failed" if code in ("ERR-003", "ERR-004", "ERR-005", "ERR-008") else "pending_manual"
         self.db.transition_to(item_id, status, "extract_job", {"error": code}, error_code=code, error_detail=detail)
         item = self.db.get(item_id)
         path = await asyncio.to_thread(vault.write_item, dict(item))
         self.db.update(item_id, vault_path=str(path))
         await asyncio.to_thread(vault.git_commit, f"kb: pending {item['platform']}/{item['external_id']}")
         msg = ("📥 Salvo como pendente (plataforma não suportada)." if code == "ERR-002"
+               else f"📷 Post de imagens (slideshow/carrossel) — não tem áudio nem vídeo para eu transcrever. "
+                    f"Link salvo em _pending/. Se quiser guardar, cole o texto das imagens em 'Notas manuais' "
+                    f"e mande /reprocess {item_id[:8]}." if code == "ERR-008"
                else f"⚠️ Não consegui extrair o conteúdo ({code}). Link salvo em _pending/. "
                     f"Cole o texto em 'Notas manuais' e mande /reprocess {item_id[:8]}.")
         await self.notify(item["telegram_chat_id"], msg, reply_to=item["telegram_message_id"])

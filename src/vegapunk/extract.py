@@ -59,6 +59,8 @@ def _ytdlp(*args: str, timeout: int = 600) -> subprocess.CompletedProcess:
 
 def _classify(stderr: str) -> ExtractionError:
     s = stderr.lower()
+    if "unsupported url" in s and "/photo/" in s or "no video formats found" in s:
+        return ExtractionError("ERR-008", "post de imagens (slideshow/carrossel): sem áudio ou vídeo para transcrever", retryable=False)
     if any(k in s for k in ("private video", "video unavailable", "not available in your country", "removed", "login required", "requested content is not available")):
         return ExtractionError("ERR-005", stderr, retryable=False)
     return ExtractionError("ERR-003", stderr, retryable=True)

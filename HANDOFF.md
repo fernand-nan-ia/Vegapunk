@@ -49,7 +49,7 @@ Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--ext
 ## Ideias para depois (não iniciadas)
 
 - Parser do enrich mais tolerante (extrair `{...}` do texto): Gemini às vezes responde vazio na 1ª tentativa; o retry resolve, mas custa uma chamada.
-- Instagram: post carrossel de imagens (`/p/`) só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
+- Posts de imagens (TikTok `/photo/`, Instagram carrossel `/p/`) falham rápido com ERR-008 e mensagem 📷; conteúdo em imagem precisaria de OCR (ideia: tesseract sobre os frames). Instagram só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
 - Healthcheck diário no Telegram (itens presos, falhas 24h).
 - Push automático (`VEGAPUNK_GIT_PUSH=true` + montar `~/.ssh` no compose).
 - Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para a skill `/vegapunk`.
