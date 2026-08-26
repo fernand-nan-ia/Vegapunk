@@ -2,7 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
-- 2026-08-26 · tiktok · [Estratégia de Prospecção Ativa Internacional para Criação de Sites](tiktok/2026-08-26_estrategia-de-prospeccao-ativa-internacional-para-criacao-de_7678376368752692487.md) · `cold-outreach` `lead-generation` `google-maps-scraping` `freelance-sales` `web-development-sales` · baixa/alta/media · —
+- 2026-08-26 · tiktok · [Estratégia de Prospecção Ativa Internacional para Criação de Sites](tiktok/2026-08-26_estrategia-de-prospeccao-ativa-internacional-para-criacao-de_7678376368752692487.md) · `cold-outreach` `lead-generation` `google-maps-scraping` `freelance-sales` `web-development-sales` · baixa/alta/media · apply_client
 - 2026-08-26 · tiktok · [5 Sites Gratuitos para Acelerar a Carreira e o Aprendizado em Programação](tiktok/2026-08-26_5-sites-gratuitos-para-acelerar-a-carreira-e-o-aprendizado-e_7666208793914576146.md) · `aprendizado-dev` `estudos-programacao` `trilha-fullstack` `sql` `repeticao-espacada` `roadmap-tecnico` · baixa/baixa/alta · archive
 - 2026-08-26 · tiktok · [Automação de busca de emprego e preparação com Claude e AI Job Search](tiktok/2026-08-26_automacao-de-busca-de-emprego-e-preparacao-com-claude-e-ai-j_7661231446069103880.md) · `job-automation` `claude` `cli-tools` `resume-parser` `interview-prep` `web-scraping` · baixa/nenhuma/media · archive
 - 2026-08-26 · tiktok · [Chamada para habilidades de design no front-end](tiktok/2026-08-26_chamada-para-habilidades-de-design-no-front-end_7658016248529177873.md) · `front-end-design` `ui-design` `habilidades-frontend` · baixa/baixa/baixa · discard
