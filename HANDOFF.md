@@ -44,10 +44,10 @@ Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--ext
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
 
 ## Mapa do código
-`src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper), `enrich.py` (OpenRouter), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
+`src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper), `enrich.py` (OpenRouter; schema com topics/tools), `format_summary` em `pipeline.py` (mensagem Telegram), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
 
 ## Ideias para depois (não iniciadas)
-- Resposta do botão de triagem mostra o nome interno (`✔ apply_saas`); trocar por rótulo amigável.
+
 - Parser do enrich mais tolerante (extrair `{...}` do texto): Gemini às vezes responde vazio na 1ª tentativa; o retry resolve, mas custa uma chamada.
 - Instagram: post carrossel de imagens (`/p/`) só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
 - Healthcheck diário no Telegram (itens presos, falhas 24h).

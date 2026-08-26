@@ -19,9 +19,23 @@ class Applicability(BaseModel):
     estudo_geral: Level
 
 
+class Topic(BaseModel):
+    name: str = Field(max_length=80, description="nome curto do tópico")
+    detail: str = Field(max_length=300, description="1-2 frases: o que o conteúdo diz sobre esse tópico")
+
+
+class Tool(BaseModel):
+    name: str = Field(max_length=60)
+    role: str = Field(max_length=200, description="para que a ferramenta é usada/citada no conteúdo")
+
+
 class Enrichment(BaseModel):
     title: str = Field(max_length=200)
-    summary: str = Field(description="pt-BR, 3-6 frases, fiel ao conteúdo")
+    summary: str = Field(description="pt-BR, 2-4 frases, gancho + ideia central; fiel ao conteúdo")
+    topics: list[Topic] = Field(default_factory=list, max_length=7,
+                                description="subtemas do conteúdo, na ordem em que aparecem; vazio se o conteúdo é um único assunto")
+    tools: list[Tool] = Field(default_factory=list, max_length=10,
+                              description="ferramentas, serviços, libs ou produtos citados; vazio se nenhum")
     key_points: list[str] = Field(min_length=1, max_length=10)
     tags: list[str] = Field(min_length=1, max_length=8, description="kebab-case, específicas")
     applicability: Applicability
@@ -44,8 +58,10 @@ ambos construídos com Claude Code. A matriz "applicability" avalia relevância 
 
 Regras:
 - Responda APENAS com o objeto JSON pedido, sem texto em volta.
-- summary em pt-BR, fiel ao conteúdo; não extrapole nem invente.
-- key_points: afirmações acionáveis ou fatos centrais, nunca títulos vagos.
+- summary em pt-BR, 2-4 frases, direto e agradável de ler: abre com o gancho/problema e fecha com a ideia central. Não extrapole nem invente.
+- topics: se o conteúdo cobre vários subtemas (ex.: "5 falhas de segurança"), liste cada um com nome curto e 1-2 frases. Se é um assunto só, deixe vazio.
+- tools: toda ferramenta, serviço, biblioteca ou produto citado nominalmente (ex.: Supabase, Claude Code, gitleaks), com o papel que tem no conteúdo. Vazio se nenhum.
+- key_points: afirmações acionáveis ou fatos centrais, nunca títulos vagos; não repita o que já está em topics.
 - tags: kebab-case, minúsculas, específicas ("prompt-caching", "landing-page-cro"); nunca genéricas ("tecnologia").
 - how_to_apply: concreto, referindo o SaaS ou o site do cliente quando fizer sentido.
 - confidence reflete a qualidade do texto de entrada (transcrição automática ruidosa ou truncada => "baixa").
@@ -59,6 +75,8 @@ def _schema() -> dict:
         if isinstance(node, dict):
             if node.get("type") == "object":
                 node["additionalProperties"] = False
+                if "properties" in node:
+                    node["required"] = list(node["properties"])
             for v in node.values():
                 harden(v)
     harden(s)

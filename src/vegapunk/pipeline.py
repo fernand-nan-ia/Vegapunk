@@ -17,6 +17,37 @@ enrich_lock = asyncio.Lock()
 MAX_RETRIES = 4
 
 
+LEVEL_ICON = {"alta": "🟢", "media": "🟡", "baixa": "🟠", "nenhuma": "⚪"}
+
+
+def format_summary(e: dict, limit: int = 3900) -> str:
+    """Mensagem Telegram (HTML) do resumo enriquecido. Seções opcionais só aparecem se houver conteúdo."""
+    a = e["applicability"]
+    parts = [f"🧠 <b>{esc(e['title'])}</b>", "", esc(e["summary"])]
+    if e.get("topics"):
+        parts += ["", "📚 <b>Tópicos</b>"]
+        parts += [f"• <b>{esc(t['name'])}</b> — {esc(t['detail'])}" for t in e["topics"]]
+    if e.get("tools"):
+        parts += ["", "🛠 <b>Ferramentas citadas</b>"]
+        parts += [f"• <b>{esc(t['name'])}</b>: {esc(t['role'])}" for t in e["tools"]]
+    if e.get("key_points"):
+        parts += ["", "✅ <b>Pontos-chave</b>"]
+        parts += [f"• {esc(p)}" for p in e["key_points"][:6]]
+    if e.get("how_to_apply"):
+        parts += ["", f"💡 <b>Como aplicar:</b> {esc(e['how_to_apply'])}"]
+    parts += ["",
+              f"📌 SaaS {LEVEL_ICON.get(a['saas_pessoal'], '')} {a['saas_pessoal']} · "
+              f"Cliente {LEVEL_ICON.get(a['projeto_cliente'], '')} {a['projeto_cliente']} · "
+              f"Estudo {LEVEL_ICON.get(a['estudo_geral'], '')} {a['estudo_geral']}",
+              f"🎯 Confiança: {e['confidence']}",
+              f"🏷 {esc(' '.join('#' + t.replace('-', '_') for t in e['tags']))}"]
+    text = "\n".join(parts)
+    if len(text) > limit:
+        # corta no fim de uma linha para não quebrar tag HTML
+        text = text[:limit].rsplit("\n", 1)[0] + "\n…"
+    return text
+
+
 class Pipeline:
     def __init__(self, db: Database, notify):
         """notify(chat_id, text, reply_to=None, item_id=None) -> awaitable. item_id != None => teclado de triagem."""
@@ -131,12 +162,7 @@ class Pipeline:
         self.db.update(item_id, vault_path=str(path))
         await asyncio.to_thread(vault.write_index, [dict(r) for r in self.db.all_with_enrichment()])
         await asyncio.to_thread(vault.git_commit, f"kb: add {item['platform']}/{item['external_id']}")
-        e = json.loads(item["enrichment"])
-        a = e["applicability"]
-        text = (f"🧠 <b>{esc(e['title'])}</b>\n\n{esc(e['summary'][:900])}\n\n"
-                f"🏷 {esc(' '.join('#' + t.replace('-', '_') for t in e['tags']))}\n"
-                f"📌 SaaS: {a['saas_pessoal']} · Cliente: {a['projeto_cliente']} · Estudo: {a['estudo_geral']}\n"
-                f"🎯 Confiança: {e['confidence']}")
+        text = format_summary(json.loads(item["enrichment"]))
         await self.notify(item["telegram_chat_id"], text, reply_to=item["telegram_message_id"], item_id=item_id)
 
     # ── triagem ─────────────────────────────────────────────
@@ -145,14 +171,15 @@ class Pipeline:
         if item is None:
             return "Item não encontrado"
         if item["status"] != "enriched":
-            return f"Já triado como {item['triage_decision'] or item['status']}"
+            prev = item["triage_decision"]
+            return f"Já triado: {vault.TRIAGE_HUMAN.get(prev, prev or item['status'])}"
         self.db.transition_to(item_id, vault.TRIAGE_LABEL[decision], "user_triage", {},
                               triage_decision=decision, triaged_at=vault_now())
         item = dict(self.db.get(item_id))
         await asyncio.to_thread(vault.write_item, item)
         await asyncio.to_thread(vault.write_index, [dict(r) for r in self.db.all_with_enrichment()])
         await asyncio.to_thread(vault.git_commit, f"kb: triage {decision} {item['platform']}/{item['external_id']}")
-        return f"✔ {decision}"
+        return f"✔ {vault.TRIAGE_HUMAN[decision]}"
 
     async def reprocess(self, item_id: str) -> str:
         item = self.db.get(item_id)

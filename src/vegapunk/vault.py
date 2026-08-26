@@ -13,6 +13,8 @@ log = logging.getLogger("vegapunk.vault")
 
 SENTINEL = "## Notas manuais"
 TRIAGE_LABEL = {"archive": "archived", "apply_saas": "applied_saas", "apply_client": "applied_client", "discard": "discarded"}
+TRIAGE_HUMAN = {"archive": "📁 Arquivado", "apply_saas": "🚀 Marcado para SaaS",
+                "apply_client": "👤 Marcado para Cliente", "discard": "🗑 Descartado"}
 
 
 def _yaml_str(s) -> str:
@@ -61,7 +63,12 @@ def render(item: dict, manual_notes: str = "") -> str:
     title = (e["title"] if e else item.get("title")) or item["canonical_url"]
     body = [f"# {title}", "", f"🔗 {item['canonical_url']}", ""]
     if e:
-        body += ["## Resumo", "", e["summary"], "", "## Pontos-chave", ""]
+        body += ["## Resumo", "", e["summary"]]
+        if e.get("topics"):
+            body += ["", "## Tópicos", ""] + [f"- **{t['name']}** — {t['detail']}" for t in e["topics"]]
+        if e.get("tools"):
+            body += ["", "## Ferramentas citadas", ""] + [f"- **{t['name']}**: {t['role']}" for t in e["tools"]]
+        body += ["", "## Pontos-chave", ""]
         body += [f"- {p}" for p in e["key_points"]]
         if e.get("how_to_apply"):
             body += ["", "## Como aplicar", "", e["how_to_apply"]]

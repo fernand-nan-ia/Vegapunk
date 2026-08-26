@@ -19,3 +19,14 @@ def test_schema_is_strict():
     s = _schema()
     assert s["additionalProperties"] is False
     assert s["$defs"]["Applicability"]["additionalProperties"] is False
+
+
+def test_schema_requires_all_fields_for_strict_mode():
+    s = _schema()
+    assert set(s["required"]) == set(s["properties"])
+    assert set(s["$defs"]["Topic"]["required"]) == {"name", "detail"}
+
+
+def test_parse_defaults_topics_and_tools():
+    e = parse_output(json.dumps(GOOD))
+    assert e.topics == [] and e.tools == []
