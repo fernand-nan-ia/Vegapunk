@@ -5,8 +5,8 @@ external_id: "7661231446069103880"
 canonical_url: "https://www.tiktok.com/@gus_.ai/video/7661231446069103880"
 channel: "Gus AI"
 captured_at: 2026-08-26
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["job-automation", "claude", "cli-tools", "resume-parser", "interview-prep", "web-scraping"]
 applicability:
   saas_pessoal: baixa
