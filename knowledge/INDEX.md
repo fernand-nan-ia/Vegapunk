@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-26 · tiktok · [Checklist de 7 configurações essenciais para landing pages feitas com IA](tiktok/2026-08-26_checklist-de-7-configuracoes-essenciais-para-landing-pages-f_7671505270237023509.md) · `landing-page-cro` `seo-tecnico` `json-ld` `web-performance` `google-analytics` `microsoft-clarity` `schema-markup` · alta/alta/media · —
 - 2026-08-26 · tiktok · [Mapeando a Arquitetura da Aplicação em HTML e JSON com Claude](tiktok/2026-08-26_mapeando-a-arquitetura-da-aplicacao-em-html-e-json-com-claud_7665683581271821589.md) · `claude` `arquitetura-de-software` `context-window` `ai-agents` `documentacao` · alta/alta/alta · apply_saas
 - 2026-08-26 · tiktok · [5 sites úteis de design para identidade visual, assets e mockups](tiktok/2026-08-26_5-sites-uteis-de-design-para-identidade-visual-assets-e-mock_7672502144024595732.md) · `ui-design` `branding` `design-assets` `ia-generativa` `mockups` `vetorizacao` `color-palette` · media/alta/media · archive
 - 2026-08-26 · tiktok · [Três Requisitos Legais Essenciais para Sites: Privacidade, Cookies e Acessibilidade](tiktok/2026-08-26_tres-requisitos-legais-essenciais-para-sites-privacidade-coo_7678013013223361800.md) · `lgpd` `politica-de-privacidade` `cookie-banner` `acessibilidade-web` `a11y` `compliance-digital` · alta/alta/media · apply_saas
