@@ -87,10 +87,26 @@ def _pick_sub_file(workdir: Path) -> tuple[Path, str] | None:
     return (files[0], "und") if files else None
 
 
-def fetch_subtitles(url: str, workdir: Path) -> tuple[str, str] | None:
+PREF_LANGS = ("pt", "en", "es")
+
+
+def choose_sub_langs(meta: dict) -> tuple[list[str], bool]:
+    """(idiomas a pedir, é_auto). Manuais em pt/en/es primeiro; senão a legenda automática ORIGINAL (*-orig).
+    Nunca pede auto-legenda traduzida: o YouTube traduz sob demanda e responde 429."""
+    manual = [l for l in (meta.get("subtitles") or {}) if l.split("-")[0] in PREF_LANGS]
+    if manual:
+        return manual, False
+    orig = [l for l in (meta.get("automatic_captions") or {}) if l.endswith("-orig")]
+    return orig, True
+
+
+def fetch_subtitles(url: str, workdir: Path, meta: dict) -> tuple[str, str] | None:
+    langs, is_auto = choose_sub_langs(meta)
+    if not langs:
+        return None
     r = _ytdlp(
-        "--skip-download", "--write-subs", "--write-auto-subs",
-        "--sub-langs", "pt,pt-BR,pt-PT,en,en-US,en-GB", "--sub-format", "vtt", "--sleep-subtitles", "1",
+        "--skip-download", "--write-auto-subs" if is_auto else "--write-subs",
+        "--sub-langs", ",".join(langs), "--sub-format", "vtt", "--sleep-subtitles", "1",
         "-o", str(workdir / "%(id)s.%(ext)s"), url,
     )
     picked = _pick_sub_file(workdir)
@@ -127,7 +143,11 @@ def transcribe(audio: Path) -> tuple[str, str]:
     if _whisper is None:
         log.info("carregando whisper model=%s", settings.whisper_model)
         _whisper = WhisperModel(settings.whisper_model, device="cpu", compute_type="int8")
-    segments, info = _whisper.transcribe(str(audio), vad_filter=True)
+    segments, info = _whisper.transcribe(str(audio), vad_filter=True,
+                                         language_detection_segments=4, language_detection_threshold=0.6)
+    if (info.duration_after_vad or 0) < 3:  # só música/silêncio: não transcrever (evita alucinação)
+        log.info("whisper: sem fala detectável (%.1fs após VAD), pulando", info.duration_after_vad or 0)
+        return "", "und"
     text = " ".join(s.text.strip() for s in segments)
     return re.sub(r"\s+", " ", text).strip(), info.language
 
@@ -186,16 +206,17 @@ def extract_tiktok_slides(url: str, workdir: Path) -> Extracted:
     log.info("tiktok slides: %s imagens, %s chars", len(images), len(slides_text))
 
     # narração opcional: só se o áudio é original do autor (música de biblioteca não vale transcrever)
-    narration, lang = "", "und"
+    narration, lang, nar_lang = "", "und", "und"
     music = data.get("music") or {}
     if music.get("original"):
         try:
-            narration, lang = transcribe(fetch_audio(video_url, workdir))
+            narration, nar_lang = transcribe(fetch_audio(video_url, workdir))
         except Exception as e:  # narração é bônus; slides já bastam
             log.warning("narração do slideshow ignorada: %s", str(e)[:200])
     text = f"[SLIDES: {len(images)}]\n{slides_text}"
     if len(narration) >= 50:
         text += f"\n\n[NARRAÇÃO/ÁUDIO]\n{narration}"
+        lang = nar_lang
     desc = (data.get("desc") or "").strip()
     author = data.get("author") or {}
     channel = author.get("nickname") or author.get("uniqueId") or user
@@ -220,7 +241,7 @@ def extract(url: str, platform: str, item_id: str) -> Extracted:
         text, lang, ctype = "", None, ""
         has_subs = bool(meta.get("subtitles") or meta.get("automatic_captions"))
         if platform == "youtube" and has_subs:
-            got = fetch_subtitles(url, workdir)
+            got = fetch_subtitles(url, workdir, meta)
             if got:
                 text, lang, ctype = got[0], got[1], "transcript"
         if len(text) < 200:

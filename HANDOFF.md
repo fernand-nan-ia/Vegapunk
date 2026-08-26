@@ -38,8 +38,9 @@ Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--ext
 ## Armadilhas conhecidas
 - **`.env`: NUNCA comentário na mesma linha do valor.** Docker `env_file` não trata `#` como comentário → o valor vira `# texto...`. Foi isso que quebrou o TikTok (yt-dlp recebeu `--cookies "# cookies.txt..."`, criou um cookie jar na raiz e reusou cookies queimados → 403 em todas as tentativas). `config.py` agora corta em `#` por defesa, mas mantenha o `.env` limpo.
 - Se aparecer um arquivo `# cookies.txt (Netscape)...` na raiz, é sintoma desse bug — apague e verifique o `.env`.
-- TikTok: erro "Unable to extract universal data for rehydration" é intermitente → pipeline tenta 4x com espera crescente.
-- YouTube legendas: nunca usar `pt.*` em `--sub-langs` (puxa auto-traduções e dá HTTP 429). Se legenda falhar, cai para áudio+Whisper.
+- TikTok: erro "Unable to extract universal data for rehydration" é intermitente (~40% por tentativa) → pipeline tenta 6x com espera crescente (15 s × n).
+- YouTube legendas: `choose_sub_langs(meta)` pede só manuais (pt/en/es) ou a auto-legenda ORIGINAL (`*-orig`). Nunca pedir `pt` de auto-caption: o YouTube traduz sob demanda → HTTP 429 → caía em 33 min de Whisper (aconteceu 2026-08-26). Se legenda falhar, cai para áudio+Whisper.
+- Whisper: `language_detection_segments=4` (rótulo de idioma errava, ex. 'yo' num vídeo em inglês); áudio com <3 s de fala após VAD é pulado (música de slideshow).
 - Item com `extraction_failed`/`pending_manual` vai para `knowledge/_pending/`; colar o texto em "Notas manuais" e `/reprocess <id>`.
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
 

@@ -27,3 +27,10 @@ def test_classify_image_posts_not_retryable():
     e = _classify("ERROR: [Instagram] abc: No video formats found!")
     assert e.code == "ERR-008" and not e.retryable
     assert _classify("ERROR: [TikTok] 1: Unable to download webpage: HTTP Error 403").retryable
+
+
+def test_choose_sub_langs_prefers_manual_then_orig_never_translated():
+    from vegapunk.extract import choose_sub_langs
+    assert choose_sub_langs({"subtitles": {"pt-BR": [], "fr": []}, "automatic_captions": {"en-orig": [], "pt": []}}) == (["pt-BR"], False)
+    assert choose_sub_langs({"subtitles": {}, "automatic_captions": {"en-orig": [], "pt": [], "en": []}}) == (["en-orig"], True)
+    assert choose_sub_langs({"subtitles": {"ja": []}, "automatic_captions": {"pt": []}}) == ([], True)

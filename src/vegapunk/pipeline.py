@@ -14,7 +14,7 @@ log = logging.getLogger("vegapunk.pipeline")
 
 extract_lock = asyncio.Lock()
 enrich_lock = asyncio.Lock()
-MAX_RETRIES = 4
+MAX_RETRIES = 6
 
 
 LEVEL_ICON = {"alta": "🟢", "media": "🟡", "baixa": "🟠", "nenhuma": "⚪"}
