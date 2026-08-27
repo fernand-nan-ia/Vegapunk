@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — trocar o e-mail da conta: dupla confirmação (novo e atual)](../article/2026-08-27_resend-trocar-o-e-mail-da-conta-dupla-confirmacao-novo-e-atu_304e119d4601.md)
+2026-08-27 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `resend` `conta` `seguranca`
+
+Trocar e-mail da conta Resend exige confirmar nos dois endereços (novo e atual).
 
 ## [Registro.br — contrato para registro de nome de domínio sob o .br (cláusulas essenciais)](../article/2026-08-27_registro-br-contrato-para-registro-de-nome-de-dominio-sob-o_38a4f6ec1881.md)
 2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `contrato` `dominio-br` `lgpd` `whois` `saci-adm`
