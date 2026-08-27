@@ -5,8 +5,8 @@ external_id: "8449d3c9e81a"
 canonical_url: "https://docs.claude.com/en/docs/claude-code/memory"
 channel: "Claude Code Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["claude-code", "claude-md", "auto-memory", "claude-rules", "context-management", "configuracao-de-agentes"]
 applicability:
   saas_pessoal: alta

@@ -15,7 +15,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
-- 2026-08-27 · article · [Memória do Claude Code: CLAUDE.md, regras por caminho e auto memory](article/2026-08-27_memoria-do-claude-code-claude-md-regras-por-caminho-e-auto-m_8449d3c9e81a.md) · `claude-code` `claude-md` `auto-memory` `claude-rules` `context-management` `configuracao-de-agentes` · alta/alta/alta · —
+- 2026-08-27 · article · [Memória do Claude Code: CLAUDE.md, regras por caminho e auto memory](article/2026-08-27_memoria-do-claude-code-claude-md-regras-por-caminho-e-auto-m_8449d3c9e81a.md) · `claude-code` `claude-md` `auto-memory` `claude-rules` `context-management` `configuracao-de-agentes` · alta/alta/alta · archive
 - 2026-08-27 · article · [Firecrawl CLI: Documentação de Skills e Linha de Comando para Agentes de IA](article/2026-08-27_firecrawl-cli-documentacao-de-skills-e-linha-de-comando-para_753e9bd5df87.md) · `firecrawl` `web-scraping` `claude-code` `cli` `ai-agents` `crawling` `developer-tools` · alta/media/alta · archive
 - 2026-08-27 · article · [Introdução ao Firecrawl: API de Web Scraping, Busca e Interação para LLMs](article/2026-08-27_introducao-ao-firecrawl-api-de-web-scraping-busca-e-interaca_b0a8cad5a786.md) · `firecrawl` `web-scraping` `mcp` `llm-ready` `extracao-de-dados` `automacao-web` `agentic-ai` · alta/media/alta · archive
 - 2026-08-27 · article · [Hot take: Harness, Loop Engineering, Graph Engineering são Bullshit](article/2026-08-27_hot-take-harness-loop-engineering-graph-engineering-sao-bull_653ea1860c62.md) · `ai-agents` `prompt-caching` `extreme-programming` `benchmarking` `context-engineering` `software-architecture` · alta/alta/alta · archive
