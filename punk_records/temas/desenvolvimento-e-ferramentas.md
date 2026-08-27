@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 48 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 49 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [MapTiler Cloud — API de mapas para web e mobile: estilos customizados, hospedagem de geodados, geocoding, mapas estáticos, coordenadas e IP geolocation](../article/2026-08-27_maptiler-cloud-api-de-mapas-para-web-e-mobile-estilos-custom_48d744ad5a68.md)
+2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff`
+
+MapTiler Cloud: mapas com estilo próprio, hospedagem de GeoTIFF/GeoJSON/Shapefile, geocoding, mapas estáticos, WMTS para QGIS e API de conversão de coordenadas (EPSG).
 
 ## [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](../article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos`

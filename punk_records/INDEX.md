@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 48 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 49 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 11 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [MapTiler Cloud — API de mapas para web e mobile: estilos customizados, hospedagem de geodados, geocoding, mapas estáticos, coordenadas e IP geolocation](article/2026-08-27_maptiler-cloud-api-de-mapas-para-web-e-mobile-estilos-custom_48d744ad5a68.md) · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff` `epsg` · media/media/media · —
 - 2026-08-27 · article · [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md) · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos` · alta/media/media · —
 - 2026-08-27 · article · [Nominatim — documentação oficial: estrutura (API, administração, customização, biblioteca Python, desenvolvimento)](article/2026-08-27_nominatim-documentacao-oficial-estrutura-api-administracao-c_1f2983dfea42.md) · `nominatim` `documentacao` `geocoding` `python` `openstreetmap` · media/media/media · —
 - 2026-08-27 · article · [UptimeRobot — API REST v3: monitores, contatos, manutenção e status pages; rate limits; três tipos de chave](article/2026-08-27_uptimerobot-api-rest-v3-monitores-contatos-manutencao-e-stat_0df3a8ca9ce9.md) · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck` · alta/media/media · —
