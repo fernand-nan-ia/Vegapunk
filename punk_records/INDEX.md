@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 24 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 25 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -34,6 +34,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 2026-08-27 · article · [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md) · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates` · alta/media/media · —
 - 2026-08-27 · article · [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md) · `resend` `logs` `observabilidade` `debug` `api` · alta/media/media · —
+- 2026-08-27 · article · [Resend — domínios verificados: por que subdomínios, tracking, TLS forçado, região, DMARC e BIMI](article/2026-08-27_resend-dominios-verificados-por-que-subdominios-tracking-tls_a71249354370.md) · `resend` `dominio` `subdominio` `reputacao` `dmarc` `bimi` `tls` · alta/media/media · —
 - 2026-08-27 · article · [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md) · `resend` `dominio` `dns` `dkim` `spf` `dmarc` `entregabilidade` · alta/media/media · —
 - 2026-08-27 · article · [Resend — gerenciar domínios: status de verificação, registros DNS, configuração e exclusão](article/2026-08-27_resend-gerenciar-dominios-status-de-verificacao-registros-dn_91fcf31821fd.md) · `resend` `dominio` `dns` `status` `dkim` `spf` · alta/media/media · —
 - 2026-08-27 · article · [Resend — webhooks: receber eventos de e-mail em tempo real, testar localmente, retentativas e IPs](article/2026-08-27_resend-webhooks-receber-eventos-de-e-mail-em-tempo-real-test_0fd780231949.md) · `resend` `webhooks` `eventos-de-email` `bounce` `inbound` `observabilidade` · alta/media/media · —

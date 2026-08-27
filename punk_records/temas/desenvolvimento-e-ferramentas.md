@@ -1,6 +1,6 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
@@ -11,6 +11,11 @@ Automations = fluxos 'quando acontecer X, mande Y depois de Z': gatilho por even
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `logs` `observabilidade` `debug` `api`
 
 Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtro por erro/chave/SDK, link para o e-mail gerado e botão 'Help me fix' para erros comuns.
+
+## [Resend — domínios verificados: por que subdomínios, tracking, TLS forçado, região, DMARC e BIMI](../article/2026-08-27_resend-dominios-verificados-por-que-subdominios-tracking-tls_a71249354370.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `subdominio` `reputacao` `dmarc` `bimi`
+
+Envie de subdomínios separados por finalidade (newsletter com tracking, transacional sem), com TLS forçado, região próxima e DMARC/BIMI para reputação.
 
 ## [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](../article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
