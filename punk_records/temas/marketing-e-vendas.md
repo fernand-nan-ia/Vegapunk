@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Shopify — registro de domínios integrado à loja (hospedagem inclusa, DNS automático)](../article/2026-08-27_shopify-registro-de-dominios-integrado-a-loja-hospedagem-inc_a795094ef99d.md)
+2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `shopify` `dominios` `registro-de-dominio` `dns` `e-commerce`
+
+Domínio comprado pela Shopify conecta sozinho à loja: DNS automático, hospedagem inclusa, SSL e WHOIS grátis, até 20 domínios por loja, encaminhamento de e-mail.
 
 ## [Hostinger Reach — e-mail marketing com IA: modelo de cobrança e recursos](../article/2026-08-27_hostinger-reach-e-mail-marketing-com-ia-modelo-de-cobranca-e_ac7e6223fff2.md)
 2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `hostinger` `email-marketing` `reach` `lgpd` `automacao-de-marketing` `precos`
