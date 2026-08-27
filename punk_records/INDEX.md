@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 46 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 47 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 11 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md) · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos` · alta/media/media · —
 - 2026-08-27 · article · [UptimeRobot — API REST v3: monitores, contatos, manutenção e status pages; rate limits; três tipos de chave](article/2026-08-27_uptimerobot-api-rest-v3-monitores-contatos-manutencao-e-stat_0df3a8ca9ce9.md) · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare R2 — preços: armazenamento por GB-mês, operações classe A/B, Infrequent Access, cota grátis (10 GB, 1 M A, 10 M B) e egress zero](article/2026-08-27_cloudflare-r2-precos-armazenamento-por-gb-mes-operacoes-clas_cee070dc634d.md) · `cloudflare` `r2` `precos` `storage` `egress` `gb-mes` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare R2 — como funciona: compatível com S3, consistência forte, arquitetura (Gateway, Metadata em Durable Objects, cache em camadas, storage distribuído) e fluxo de escrita/leitura](article/2026-08-27_cloudflare-r2-como-funciona-compativel-com-s3-consistencia-f_b44a7bafcca9.md) · `cloudflare` `r2` `s3` `arquitetura` `consistencia` `durable-objects` · alta/media/media · —
