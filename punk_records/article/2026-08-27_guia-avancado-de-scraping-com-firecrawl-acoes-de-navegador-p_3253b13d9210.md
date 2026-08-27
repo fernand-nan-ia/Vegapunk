@@ -5,8 +5,8 @@ external_id: "3253b13d9210"
 canonical_url: "https://docs.firecrawl.dev/advanced-scraping-guide"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "web-crawling", "ocr-pdf", "browser-actions", "data-extraction"]
 applicability:
   saas_pessoal: alta
