@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 46 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 10 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 11 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 13 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -81,6 +81,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-08-27 · article · [reCAPTCHA v3 — pontuação sem atrito: carregar o script, vincular a botão ou executar programaticamente, interpretar a pontuação](article/2026-08-27_recaptcha-v3-pontuacao-sem-atrito-carregar-o-script-vincular_8b722ef0051f.md) · `recaptcha` `recaptcha-v3` `anti-bot` `formularios` `seguranca` `javascript` · alta/media/media · —
 - 2026-08-27 · article · [Resend — ativar MFA na conta com app autenticador (e como desativar)](article/2026-08-27_resend-ativar-mfa-na-conta-com-app-autenticador-e-como-desat_83891a9d3985.md) · `resend` `mfa` `seguranca` `conta` · alta/media/baixa · —
 - 2026-08-27 · article · [Resend — trocar o e-mail da conta: dupla confirmação (novo e atual)](article/2026-08-27_resend-trocar-o-e-mail-da-conta-dupla-confirmacao-novo-e-atu_304e119d4601.md) · `resend` `conta` `seguranca` · baixa/baixa/baixa · —
 - 2026-08-27 · article · [Registro.br — contrato para registro de nome de domínio sob o .br (cláusulas essenciais)](article/2026-08-27_registro-br-contrato-para-registro-de-nome-de-dominio-sob-o_38a4f6ec1881.md) · `registro-br` `contrato` `dominio-br` `lgpd` `whois` `saci-adm` · media/alta/media · —

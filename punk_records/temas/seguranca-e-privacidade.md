@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [reCAPTCHA v3 — pontuação sem atrito: carregar o script, vincular a botão ou executar programaticamente, interpretar a pontuação](../article/2026-08-27_recaptcha-v3-pontuacao-sem-atrito-carregar-o-script-vincular_8b722ef0051f.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `recaptcha` `recaptcha-v3` `anti-bot` `formularios` `seguranca` `javascript`
+
+reCAPTCHA v3 dá uma nota de 0 a 1 sem desafio: coloque o script, chame grecaptcha.execute na ação, mande o token ao backend e decida por limiar (ex.: < 0,5 = pedir e-mail de confirmação ou bloquear).
 
 ## [Resend — ativar MFA na conta com app autenticador (e como desativar)](../article/2026-08-27_resend-ativar-mfa-na-conta-com-app-autenticador-e-como-desat_83891a9d3985.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `resend` `mfa` `seguranca` `conta`
