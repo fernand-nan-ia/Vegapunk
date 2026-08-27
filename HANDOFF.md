@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 3)
+# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 4)
 
 ## TL;DR — o que existe hoje
 
@@ -9,9 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **41/41 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `fe63b19` (sessão 3 commitada e pushada, 116 arquivos) e FURY em `6ee82c0` (espelho do squad). Working tree limpa.
-
-## Git — como commitar (Fernando faz; agentes nunca fazem)
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **42/42 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `40fec7d` (v1.1.0, sessão 4); agentes nunca fazem)
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -45,7 +43,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 
 **Pasta renomeada: `knowledge/` → `punk_records/`** (tema; underscore em vez de espaço para não quebrar shell/Docker/links). Trocado em `config.py` (default), `.env`/`.env.example` (`VEGAPUNK_VAULT_DIR=punk_records`), teste, 7 agentes + `vegapunk.md`, plugin, `squads/vegapunk/`, README. Links do INDEX são relativos — não mudam. Container recriado com `--force-recreate`. A cópia global em `~/.claude/commands` ainda diz `knowledge/` até rodar o sync.
 
-**Pendente (bloqueado por permissão na sessão):** rodar `scripts/sync_agents.sh` (global + FURY + plugin), depois commitar Vegapunk e FURY.
+**Release v1.1.0 feita pela Stella (teste do `*release`, 2026-08-27):** Lilith achou que o SQLite guardava `vault_path` absoluto com `/app/knowledge/` (21 linhas) → migrado (backup `data/vegapunk.db.bak-rename-20260827`) + `vault._rel_to_vault` tolerante + teste; 42/42; sync rodado; Vegapunk `40fec7d` tag `v1.1.0` pushado; FURY pushado. Sem pendências.
 
 ## Os 7 Satélites — mapa completo
 
