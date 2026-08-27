@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — como funciona a cobrança: por e-mail enviado/recebido, destinatários contam separado, Free 100/dia, Enterprise a partir de 3 milhões/mês](../article/2026-08-27_resend-como-funciona-a-cobranca-por-e-mail-enviado-recebido_5d5650b51412.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `cobranca` `email-transacional`
+
+Cada destinatário conta como um e-mail (To/CC/BCC); Free 100/dia; pagos cobram excedente só acima do volume mensal; Enterprise a partir de 3 milhões/mês.
 
 ## [Resend — cobrança: assinatura, e-mail de faturamento único, cartão, endereço, tax ID, faturas e cancelamento](../article/2026-08-27_resend-cobranca-assinatura-e-mail-de-faturamento-unico-carta_fcde67aa166b.md)
 2026-08-27 · article · SaaS media · cliente baixa · estudo baixa · triagem — · `resend` `billing` `faturas` `assinatura`
