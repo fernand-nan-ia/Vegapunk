@@ -5,8 +5,8 @@ external_id: "eb9b588141e8"
 canonical_url: "https://akitaonrails.com/2026/08/13/entendendo-a-censura-ao-discord-e-a-eca-digital"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["eca-digital", "anpd", "criptografia-ponta-a-ponta", "lgpd", "regulacao-de-plataformas", "privacidade-digital", "vpn", "marco-civil-da-internet"]
 applicability:
   saas_pessoal: media
