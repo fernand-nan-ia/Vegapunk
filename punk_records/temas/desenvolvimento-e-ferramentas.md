@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Rate Limits e Concorrência na API do Firecrawl](../article/2026-08-27_rate-limits-e-concorrencia-na-api-do-firecrawl_552467ff860e.md)
+2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `firecrawl` `web-scraping` `rate-limits` `api` `mcp` `llm-tools`
+
+Guia oficial com os limites de concorrência de navegadores e requisições por minuto (RPM) da API do Firecrawl.
 
 ## [Documentação de Cobrança e Créditos do Firecrawl](../article/2026-08-27_documentacao-de-cobranca-e-creditos-do-firecrawl_363d9da06ada.md)
 2026-08-27 · article · SaaS media · cliente alta · estudo alta · triagem — · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe`

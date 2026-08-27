@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 9 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 5 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 6 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 3 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 2 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -27,6 +27,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Rate Limits e Concorrência na API do Firecrawl](article/2026-08-27_rate-limits-e-concorrencia-na-api-do-firecrawl_552467ff860e.md) · `firecrawl` `web-scraping` `rate-limits` `api` `mcp` `llm-tools` · media/media/alta · —
 - 2026-08-27 · article · [Documentação de Cobrança e Créditos do Firecrawl](article/2026-08-27_documentacao-de-cobranca-e-creditos-do-firecrawl_363d9da06ada.md) · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe` · media/alta/alta · —
 - 2026-08-27 · article · [Guia Avançado de Scraping com Firecrawl: Ações de Navegador, PDFs e Crawling Assíncrono](article/2026-08-27_guia-avancado-de-scraping-com-firecrawl-acoes-de-navegador-p_3253b13d9210.md) · `firecrawl` `web-scraping` `web-crawling` `ocr-pdf` `browser-actions` `data-extraction` · alta/alta/alta · archive
 - 2026-08-27 · article · [Usando IA pra resolver meus probleminhas do dia-a-dia](article/2026-08-27_usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia_845d0abef4b6.md) · `personal-software` `local-ai` `distrobox` `ansible` `tauri` `terminal-ui` `docker` `local-first` · baixa/baixa/alta · archive
