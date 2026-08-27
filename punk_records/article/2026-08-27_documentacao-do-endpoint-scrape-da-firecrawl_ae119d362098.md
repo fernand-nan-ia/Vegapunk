@@ -5,8 +5,8 @@ external_id: "ae119d362098"
 canonical_url: "https://docs.firecrawl.dev/features/scrape"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "llm-tools", "data-extraction", "json-schema", "api"]
 applicability:
   saas_pessoal: alta

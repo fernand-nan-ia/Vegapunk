@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Documentação do Endpoint /scrape da Firecrawl](../article/2026-08-27_documentacao-do-endpoint-scrape-da-firecrawl_ae119d362098.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem — · `firecrawl` `web-scraping` `llm-tools` `data-extraction` `json-schema` `api`
+2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem archive · `firecrawl` `web-scraping` `llm-tools` `data-extraction` `json-schema` `api`
 
 Documentação completa do endpoint `/scrape` da Firecrawl para extração de páginas web em Markdown, JSON e dados estruturados determinísticos.
 
