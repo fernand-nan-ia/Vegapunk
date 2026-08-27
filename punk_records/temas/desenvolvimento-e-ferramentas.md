@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend MCP Server — remoto (OAuth/Bearer) e local (npx, stdio/HTTP): opções e ferramentas para agentes](../article/2026-08-27_resend-mcp-server-remoto-oauth-bearer-e-local-npx-stdio-http_2791bb5fe7ab.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `mcp` `claude-code` `agentes` `automacao`
+
+MCP do Resend: remoto (OAuth no Claude Code via /mcp) ou local via npx (stdio/HTTP), com remetente padrão configurável; dá ao agente acesso a e-mails, domínios e contatos por linguagem natural.
 
 ## [Resend CLI — instalação, login/perfis e comandos (emails, batch, domínios, contatos, templates, logs, webhooks)](../article/2026-08-27_resend-cli-instalacao-login-perfis-e-comandos-emails-batch-d_a3f11566dbf6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cli` `automacao` `scripts` `terminal`
