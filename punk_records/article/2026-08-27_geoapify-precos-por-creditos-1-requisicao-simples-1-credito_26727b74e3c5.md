@@ -116,3 +116,6 @@ Sure, on request we can offer a one-time fee or metered plans. Contact us and we
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- Cotas e preços que a página não renderizou (site, 27/08/2026): **Free = 3.000 créditos/dia (~90k/mês), uso comercial permitido com atribuição · API 10 = US$ 59/mês**. 1 crédito por geocode; uma pesquisa do CalcImov gasta ~30 créditos.
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

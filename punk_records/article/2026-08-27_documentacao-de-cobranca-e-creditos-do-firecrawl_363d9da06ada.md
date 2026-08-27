@@ -255,3 +255,6 @@ For example, processing a typical post or thread request costs
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- ⚠️ 'Hobby 6.5k (US$ 28)' e 'Hobby 8k (US$ 37)' são **sub-degraus do Smart Upgrade**, não o plano Hobby base. O Hobby base custa **US$ 16/mês por 5.000 créditos** (site, 27/08/2026). Decisão CalcImov: assinar Hobby US$ 16 e deixar Smart Upgrade OFF.
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

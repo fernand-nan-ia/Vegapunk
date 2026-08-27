@@ -169,3 +169,6 @@ What's your refund policy?
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- Preços em US$ que a página não renderizou (site, 27/08/2026): **Starter US$ 25 = 1.000 buscas/mês · Developer US$ 75 = 5.000 · Production US$ 150 = 15.000 (inclui Legal Shield)**. Free = 250/mês.
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

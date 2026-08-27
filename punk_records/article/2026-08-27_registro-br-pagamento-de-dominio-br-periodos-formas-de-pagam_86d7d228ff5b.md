@@ -56,3 +56,6 @@ Registrado o que a página diz e marcada a lacuna: a tabela de preços vive numa
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- Valor que a tabela dinâmica não trouxe (site, 27/08/2026): **domínio .br = R$ 40,00/ano** (≈ R$ 3,33/mês).
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

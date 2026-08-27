@@ -408,3 +408,6 @@ We charge based on the number of requests, so you pay only for what you use. A s
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- Preço que a página não renderizou (site, 27/08/2026): **Flex = US$ 30/mês, inclui 25.000 sessões de mapa**. Alternativa sem custo: tiles via Geoapify Free (mesma conta do geocoding).
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

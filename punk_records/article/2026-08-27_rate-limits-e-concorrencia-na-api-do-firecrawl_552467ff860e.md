@@ -122,3 +122,7 @@ The browser sandbox endpoints have per-plan rate limits that scale with your sub
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- ⚠️ Discrepância de fontes (27/08/2026): esta doc diz **Standard = 50 browsers concorrentes**; a página de preços firecrawl.dev/pricing diz **25**. Tratar 25 como o número comercial vigente até confirmar.
+- Tabela oficial de planos (site, 27/08): Free 1.000 cr (one-shot) · **Hobby US$ 16/mês, 5.000 cr, 5 browsers** · Standard US$ 83, 100k cr, 25 browsers · Growth US$ 333, 500k cr · Scale US$ 599, 1M cr. 1 crédito por página (rawHtml).
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).

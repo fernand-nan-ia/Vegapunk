@@ -146,3 +146,6 @@ Start with 10,000 Automation Runs for free, and scale as you need. Resend automa
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+- Preços em US$ que a página não renderizou (site, 27/08/2026): **Free 3.000 e-mails/mês (100/dia) · Pro US$ 20 = 50.000/mês · US$ 35 = 100.000/mês · Scale a partir de US$ 90**. Cada destinatário conta como um e-mail.
+- Fonte: CalcImov `tmp/estrutura-precos-v2-2026-08-27.md` — valores conferidos no site oficial em 27/08/2026 (câmbio assumido R$ 5,50/USD).
