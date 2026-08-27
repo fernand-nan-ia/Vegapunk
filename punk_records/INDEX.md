@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 30 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 31 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Resend — cabeçalhos customizados: X-Entity-Ref-ID (evitar agrupamento no Gmail) e List-Unsubscribe](article/2026-08-27_resend-cabecalhos-customizados-x-entity-ref-id-evitar-agrupa_936685d222df.md) · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional` · alta/media/media · —
 - 2026-08-27 · article · [Resend — anexos: arquivo remoto (path) ou local (Base64), CID, download via API e limites (40 MB, sem lote)](article/2026-08-27_resend-anexos-arquivo-remoto-path-ou-local-base64-cid-downlo_5db57f423da9.md) · `resend` `anexos` `base64` `api` `limites` · alta/media/media · —
 - 2026-08-27 · article · [Resend — imagens embutidas (CID) em e-mails: HTML com cid: e anexo com content_id (exemplos em várias linguagens)](article/2026-08-27_resend-imagens-embutidas-cid-em-e-mails-html-com-cid-e-anexo_119ad20aa1ad.md) · `resend` `cid` `imagens-inline` `anexos` `html-email` `python` · alta/media/media · —
 - 2026-08-27 · article · [Resend — envio em lote: até 100 e-mails por chamada, resposta indexada e limitações](article/2026-08-27_resend-envio-em-lote-ate-100-e-mails-por-chamada-resposta-in_ef20b9a5b602.md) · `resend` `batch` `email-transacional` `api` `limites` · alta/media/media · —

@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — cabeçalhos customizados: X-Entity-Ref-ID (evitar agrupamento no Gmail) e List-Unsubscribe](../article/2026-08-27_resend-cabecalhos-customizados-x-entity-ref-id-evitar-agrupa_936685d222df.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional`
+
+headers: {'X-Entity-Ref-ID': id-único} evita que o Gmail empilhe seus e-mails numa thread; List-Unsubscribe dá descadastro em um clique.
 
 ## [Resend — anexos: arquivo remoto (path) ou local (Base64), CID, download via API e limites (40 MB, sem lote)](../article/2026-08-27_resend-anexos-arquivo-remoto-path-ou-local-base64-cid-downlo_5db57f423da9.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `anexos` `base64` `api` `limites`
