@@ -7,7 +7,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🤖 IA e agentes — 11 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 8 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
-- 🚀 Produto e SaaS — 3 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
+- 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 2 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 2 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
@@ -50,6 +50,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🚀 Produto e SaaS
 
+- 2026-08-27 · article · [Hostinger Horizons (AI Builder) — planos, créditos de IA e regras de uso](article/2026-08-27_hostinger-horizons-ai-builder-planos-creditos-de-ia-e-regras_353396508dae.md) · `hostinger` `ai-builder` `criador-de-sites-ia` `vibecoding` `precos` `creditos-de-ia` · media/alta/media · —
 - 2026-08-26 · tiktok · [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md) · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao` `supabase` · media/media/alta · apply_client
 - 2026-08-26 · tiktok · [Micro-SaaS B2B para Gestão de Resíduos Biológicos e Conformidade Sanitária](tiktok/2026-08-26_micro-saas-b2b-para-gestao-de-residuos-biologicos-e-conformi_7676611889853484295.md) · `micro-saas` `b2b-saas` `compliance` `gestao-residuos` `vigilancia-sanitaria` `ideacao-de-produto` · media/baixa/alta · archive
 - 2026-08-26 · tiktok · [7 lições práticas após faturar R$ 7 mil/mês com SaaS sem tráfego pago](tiktok/2026-08-26_7-licoes-praticas-apos-faturar-r-7-mil-mes-com-saas-sem-traf_7678163901342698760.md) · `bootstrapping-saas` `aquisicao-organica` `validacao-de-produto` `retencao-saas` `marketing-de-conteudo` `micro-saas` · alta/baixa/alta · apply_saas

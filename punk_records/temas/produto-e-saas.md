@@ -1,6 +1,11 @@
 # 🚀 Produto e SaaS
 
-_micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Hostinger Horizons (AI Builder) — planos, créditos de IA e regras de uso](../article/2026-08-27_hostinger-horizons-ai-builder-planos-creditos-de-ia-e-regras_353396508dae.md)
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `hostinger` `ai-builder` `criador-de-sites-ia` `vibecoding` `precos` `creditos-de-ia`
+
+Criador de sites/apps com IA da Hostinger: planos de R$ 38,99 a R$ 129,99/mês na renovação, cobrados por créditos de IA (uma mensagem = um crédito; app publicado também consome).
 
 ## [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](../tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md)
 2026-08-26 · tiktok · SaaS media · cliente media · estudo alta · triagem apply_client · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao`
