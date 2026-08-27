@@ -37,7 +37,8 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 - Extrai o texto pelo melhor caminho disponível: legenda manual → legenda automática original → **áudio transcrito com Whisper** (faster-whisper local) → descrição/caption. Slideshows do TikTok são lidos imagem a imagem por um modelo com visão. **Artigos** são extraídos com trafilatura (título, autor, data, texto principal em Markdown) e guardados **por inteiro** no vault, além do resumo — fonte robusta merece o texto completo.
 - Resume, extrai pontos-chave, ferramentas citadas, "como aplicar", tags, tipo de conteúdo, **confiança** na fonte e **aplicabilidade** para cada projeto seu (SaaS pessoal / projeto de cliente / estudo geral) — tudo com saída estruturada (JSON schema estrito + validação Pydantic).
 - Grava no SQLite (fonte da verdade), projeta em Markdown em `punk_records/`, atualiza o `INDEX.md` e **faz commit automático**.
-- Cada resultado chega **na voz de um Satélite**: o modelo escolhe quem apresenta (legal/risco → Shaka, hype → Lilith, artigo denso → Pythagoras, tutorial → Atlas, produto → Edison, dinheiro → York, visão → Stella) e fecha com um comentário em personagem. As mensagens de captura, duplicata e erro também são deles ("🔧 Atlas: Passo 1 de 3: 2 links na bancada…").
+- **Cada lote de links tem um Satélite dono.** Ele é sorteado na captura e anuncia ("🔧 **Atlas** · Punk-05: Passo 1 de 3: 2 links na bancada…"), e é **ele mesmo** quem apresenta o resultado, avisa duplicata ("esse link já está no Punk Records — nada novo para apresentar") ou falha. O cabeçalho é sempre `ícone Nome · Punk-NN`, para não restar dúvida de quem fala.
+- **Dois níveis de resumo**: no Telegram vai o essencial (2–3 frases, 3 pontos-chave, aplicabilidade, tags e o comentário do Satélite em personagem — curto, nunca cortado); no Punk Records vai o completo (resumo de 4–10 frases, todos os tópicos, ferramentas citadas e, para artigos, o texto integral).
 - Botões de **triagem** direto no Telegram: arquivar, aplicar no SaaS, aplicar no cliente, descartar.
 - Retenta falhas intermitentes (TikTok, 429), enfileira o que chegou enquanto estava offline, e manda para `_pending/` o que não conseguiu extrair — você cola o texto em "Notas manuais" e pede `/reprocess`.
 
@@ -123,9 +124,10 @@ Há também um plugin em `plugin/vegapunk-satellites/` (mesmas skills no formato
 
 | Você manda | O bot faz |
 |---|---|
-| um ou mais links (vídeo ou artigo) | captura e processa cada um; responde na voz de um Satélite com resumo, tópicos, pontos-chave e botões |
+| um ou mais links (vídeo ou artigo) | um Satélite assume o lote, anuncia e depois apresenta cada item: resumo curto, 3 pontos-chave, aplicabilidade, comentário em personagem e botões de triagem |
 | botões 📁 🚀 👤 🗑 | triagem: **arquivar** / **aplicar no SaaS** / **aplicar no cliente** / **descartar** — atualiza o `.md`, o INDEX e commita |
 | `/pending` | itens sem triagem ou com falha de extração |
+| link repetido (mesmo com `?utm_…`) | o dono do lote avisa que já está no Punk Records (contador de vezes) |
 | `/reprocess <id>` | tenta de novo (ou processa o texto que você colou em "Notas manuais" de um item em `_pending/`) |
 | `/stats` | contagem por estado |
 | `/id` | seu chat id (para o `.env`) |
