@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — envio em lote: até 100 e-mails por chamada, resposta indexada e limitações](../article/2026-08-27_resend-envio-em-lote-ate-100-e-mails-por-chamada-resposta-in_ef20b9a5b602.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `batch` `email-transacional` `api` `limites`
+
+Até 100 e-mails por chamada, cada um diferente; resposta na mesma ordem; um inválido derruba o lote; sem anexos em lote.
 
 ## [Resend — ver e gerenciar e-mails enviados: eventos (bounced, delivered, complained…), link público e logs](../article/2026-08-27_resend-ver-e-gerenciar-e-mails-enviados-eventos-bounced-deli_9a66f05f6a14.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `eventos-de-email` `bounce` `suppression-list` `painel`
