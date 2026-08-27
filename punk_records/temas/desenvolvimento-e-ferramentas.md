@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 43 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 44 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cloudflare R2 — como funciona: compatível com S3, consistência forte, arquitetura (Gateway, Metadata em Durable Objects, cache em camadas, storage distribuído) e fluxo de escrita/leitura](../article/2026-08-27_cloudflare-r2-como-funciona-compativel-com-s3-consistencia-f_b44a7bafcca9.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `s3` `arquitetura` `consistencia` `durable-objects`
+
+R2 é S3-compatível, fortemente consistente e cifrado; escrita só responde 200 depois do commit de metadados (sem gravação perdida); leituras passam por cache em camadas perto do cliente.
 
 ## [Cloudflare R2 — visão geral: armazenamento de objetos sem taxa de egress, casos de uso e recursos (location hints, CORS, buckets públicos, tokens, Data Catalog)](../article/2026-08-27_cloudflare-r2-visao-geral-armazenamento-de-objetos-sem-taxa_a955751d328b.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `object-storage` `s3` `egress` `storage`
