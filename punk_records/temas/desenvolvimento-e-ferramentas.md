@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — imagens embutidas (CID) em e-mails: HTML com cid: e anexo com content_id (exemplos em várias linguagens)](../article/2026-08-27_resend-imagens-embutidas-cid-em-e-mails-html-com-cid-e-anexo_119ad20aa1ad.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cid` `imagens-inline` `anexos` `html-email` `python`
+
+Imagem dentro do e-mail: <img src="cid:x"> no HTML + anexo com content_id 'x' (URL ou Base64).
 
 ## [Resend — envio em lote: até 100 e-mails por chamada, resposta indexada e limitações](../article/2026-08-27_resend-envio-em-lote-ate-100-e-mails-por-chamada-resposta-in_ef20b9a5b602.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `batch` `email-transacional` `api` `limites`
