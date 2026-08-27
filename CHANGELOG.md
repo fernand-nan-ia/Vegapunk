@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5.0 — 2026-08-27
+### Corrigido
+- `docker-compose.yml`: `stop_grace_period: 30s` (restart matava o bot em 10 s → exit 137 e task em voo perdida). `Tool.name` até 100 chars (evita retry pago no enriquecimento).
+### Adicionado
+- `scripts/capture.py` + Stella `*capture`: alimentar o Punk Records a partir do Claude Code sem OpenRouter — `extract` (local, sem LLM, gera `tmp/capture/<id>.md` com texto + contrato), a sessão escreve o JSON, `enrich` valida com o Pydantic do bot e persiste (`model_used=claude-code`, ator `claude_code`), `auto` (pipeline via OpenRouter), `pending`. Task `squads/vegapunk/tasks/stella-capture.md`.
+### Gate: Shaka PASS · Verify: Lilith ✓ (capture testado em produção: doc de memória do Claude Code, model_used=claude-code) · Testes: 70/70
+
 ## v1.4.0 — 2026-08-27
 ### Adicionado
 - **Documentos pelo Telegram**: PDF, DOCX, XLSX/XLSM, TXT/MD/CSV (≤ 20 MB) → `platform: document`, texto integral no vault (`punk_records/document/`), duplicata por hash do conteúdo, links na legenda também capturados. `extract_document` (pypdf + `pdftotext` de reserva, python-docx com títulos/tabelas, openpyxl por aba com teto de 300 linhas).

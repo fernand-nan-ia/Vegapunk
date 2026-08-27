@@ -49,6 +49,8 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 - **Comandos `*` no Telegram**: cada Satélite executa aqui os comandos que são "cabeça sobre o vault" — `*attack`, `*hype-check`, `*premortem` (Lilith), `*judge`, `*risk`, `*audit-triage` (Shaka), `*ideas`, `*apply`, `*combine`, `*brainstorm` (Edison), `*recall`, `*dossier`, `*compare`, `*gaps` (Pythagoras), `*explain`, `*plan` (Atlas), `*cost`, `*health`, `*stuck`, `*pricing`, `*roi`, `*offer`, `*budget` (York), `*ask`, `*sync`, `*premises` (Stella). Ex.: `/lilith *attack usar scraping do Maps`. `*help` lista o que o Satélite ativo faz por lá. Os comandos que exigem **mãos** (código, testes, arquivos do projeto, push) respondem "isso se faz no Claude Code" — sem gastar token.
 - `/conta` mostra quantos tokens cada Satélite consumiu.
 
+**Alimentar o Punk Records daqui, sem OpenRouter** — `*capture <link|arquivo>` na Stella (ou `scripts/capture.py`): a extração é local (yt-dlp/Whisper/trafilatura/PDF) e o **resumo é feito pela própria sessão do Claude Code**, validado pelo mesmo Pydantic do bot, gravado com `model_used = claude-code`. Mesmo `.md`, mesmo índice por tema, mesmo aviso no Telegram — custo zero de tokens pagos. Útil para lotes e para itens que o bot deixou em `_pending/`.
+
 **Trabalho (Labophase — as skills no Claude Code)**
 - Os mesmos sete personagens existem como skills (`/vegapunk`, `/vegapunk:shaka`, …), com **a mesma definição de personalidade** (um único arquivo `.md` por Satélite alimenta os dois lugares).
 - Além de consultar o vault, cada Satélite absorveu funções de um framework de agentes de engenharia (dev, QA, verificação adversarial, PM/PRD, arquitetura, backlog/ADR, pricing/ROI…), com tasks, checklists e templates próprios em `squads/vegapunk/`.
@@ -179,7 +181,7 @@ Dr. Vegapunk dividiu a própria mente em seis facetas. Cada uma compartilha **to
 
 | | Satélite | Faceta | Chame quando… | Comandos (vault) | Comandos absorvidos |
 |---|---|---|---|---|---|
-| 🧠 | **Stella** (`/vegapunk`) | o corpo original | não sabe quem chamar, quer resposta que cruze facetas, ou quer o conselho | `ask` `wake` `council` `sync` | `route` `story` `release` `checkpoint` `premises` |
+| 🧠 | **Stella** (`/vegapunk`) | o corpo original | não sabe quem chamar, quer resposta que cruze facetas, ou quer o conselho | `ask` `wake` `council` `sync` `capture` | `route` `story` `release` `checkpoint` `premises` |
 | 🪖 | **Shaka** | o Bem | precisa de julgamento: vale a pena? é seguro? é hype? que triagem dar? | `judge` `risk` `audit-triage` `versus` | `review` `gate` `test-design` `compliance` `security-check` |
 | 🏴‍☠️ | **Lilith** | o Mal | quer que alguém ataque a ideia antes que a realidade ataque | `attack` `hype-check` `premortem` `versus` | `verify` `break` `evidence` |
 | 💡 | **Edison** | o Pensamento | quer ideias, combinações entre itens, um protótipo de fim de semana | `ideas` `apply` `combine` `weekend` | `brainstorm` `discovery` `prd` `wireframe` |
@@ -481,6 +483,8 @@ src/vegapunk/
   config.py       variáveis de ambiente
 tests/            pytest (pipeline, vault, satélites, "nada se perde" vs. baseline)
 scripts/sync_agents.sh                  propaga os agentes para global, FURY e plugin
+scripts/capture.py                      alimentar o Punk Records pelo Claude Code (extract → JSON da sessão → enrich); `auto` usa OpenRouter
+scripts/backfill_themes.py              classificar por tema o que ainda não tem tema
 punk_records/                           o vault
 data/  tmp/  whisper-cache/             não versionados
 ```

@@ -26,7 +26,7 @@ class Topic(BaseModel):
 
 
 class Tool(BaseModel):
-    name: str = Field(max_length=60)
+    name: str = Field(max_length=100)
     role: str = Field(max_length=200, description="para que a ferramenta é usada/citada no conteúdo")
 
 

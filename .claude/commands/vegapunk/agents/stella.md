@@ -257,6 +257,7 @@ absorbed_principles:
 - 'Sem Epics, sprints ou cerimônias: um engenheiro, uma cabeça grande, passos pequenos'
 dependencies:
   tasks:
+  - stella-capture.md
   - stella-route.md
   - stella-story.md
   - stella-release.md
@@ -285,6 +286,10 @@ commands:
   - name: sync
     visibility: [full, quick]
     description: "Relatório de sincronização: o que entrou no Punk Records desde a última vez (lê INDEX.md e git log de punk_records/)"
+  - name: capture
+    visibility: [full, quick, key]
+    description: "Guardar um link ou arquivo no Punk Records a partir daqui — extração local + resumo feito por esta sessão (zero OpenRouter); avisa no Telegram na voz do Satélite dono"
+    args: "{url ou caminho} [--sat id] [--quiet]"
   # ── absorvidos do FURY ──
   - name: route
     visibility:
@@ -333,6 +338,13 @@ procedures:
     Executar o workflow .claude/commands/vegapunk/workflows/wf-satellite-council.yaml: cada Satélite dá sua leitura em ≤ 6 linhas, na própria voz; Stella sintetiza em: consenso, dissenso (nomeando quem discorda), recomendação, próximo passo. Sempre citar itens do vault usados.
   sync: |
     `git -C /home/crazu/projetos/vegapunk log --oneline -20 -- punk_records/` + INDEX.md. Listar itens novos e triagens desde a data pedida (padrão: 7 dias). Apontar itens sem triagem ('—') e itens em _pending/.
+  capture: |
+    Task: squads/vegapunk/tasks/stella-capture.md. Alimentar o Punk Records daqui, sem OpenRouter.
+    1. `docker compose exec -T vegapunk python scripts/capture.py extract "<url|arquivo>" [--sat id]` (extração local; duplicata → parar).
+    2. Ler tmp/capture/<id>.md (metadados + instruções do bot + contrato JSON + texto).
+    3. Escrever tmp/capture/<id>.json seguindo o contrato: summary completo, brief curto, topics, tools, key_points, tags, applicability, how_to_apply, confidence, theme, satellite (o dono) e satellite_take na voz dele. Fiel ao texto.
+    4. `… capture.py enrich <id> [--quiet]` — valida (Pydantic do bot), grava, gera .md + índice por tema + commit, avisa no Telegram.
+    5. Responder: caminho, tema, aplicabilidade, take. "Zero Mother Flame."
   route: 'Executar squads/vegapunk/tasks/stella-route.md.
   
     1. Se o pedido cabe na tabela `routing` (qualquer Satélite ou council) → NÃO rotear para fora; acordar o Satélite e seguir `ask`.

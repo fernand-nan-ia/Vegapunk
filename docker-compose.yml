@@ -14,4 +14,5 @@ services:
       - HOME=/tmp
       - PYTHONPATH=/app/src
       - VEGAPUNK_ROOT=/app
+    stop_grace_period: 30s          # deixa o bot fechar tarefas em voo; sem isso o Docker mata em 10 s (exit 137)
     restart: unless-stopped
