@@ -5,8 +5,8 @@ external_id: "753e9bd5df87"
 canonical_url: "https://docs.firecrawl.dev/sdks/cli"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "claude-code", "cli", "ai-agents", "crawling", "developer-tools"]
 applicability:
   saas_pessoal: alta

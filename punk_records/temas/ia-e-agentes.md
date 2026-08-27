@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Firecrawl CLI: Documentação de Skills e Linha de Comando para Agentes de IA](../article/2026-08-27_firecrawl-cli-documentacao-de-skills-e-linha-de-comando-para_753e9bd5df87.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem — · `firecrawl` `web-scraping` `claude-code` `cli` `ai-agents` `crawling`
+2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem archive · `firecrawl` `web-scraping` `claude-code` `cli` `ai-agents` `crawling`
 
 Documentação da CLI do Firecrawl projetada para agentes como Claude Code.
 
