@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 49 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 50 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Geoapify — plataforma de localização com dados abertos: geocoding, rotas, lugares, isócronas; licença permissiva (pode guardar resultados)](../article/2026-08-27_geoapify-plataforma-de-localizacao-com-dados-abertos-geocodi_cf121d534817.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca`
+
+Geoapify: geocoding, rotas, lugares e isócronas sobre OSM/OpenAddresses; a diferença é a licença — você pode guardar e reutilizar os resultados (montar sua base de endereços), e o Free vale para uso comercial com atribui
 
 ## [MapTiler Cloud — API de mapas para web e mobile: estilos customizados, hospedagem de geodados, geocoding, mapas estáticos, coordenadas e IP geolocation](../article/2026-08-27_maptiler-cloud-api-de-mapas-para-web-e-mobile-estilos-custom_48d744ad5a68.md)
 2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff`
