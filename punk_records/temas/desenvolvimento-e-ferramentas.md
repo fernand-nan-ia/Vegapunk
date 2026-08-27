@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](../article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
+
+Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, cole os registros DKIM/SPF exatamente no DNS, espere a verificação (15 min a 72 h) e depois configure DMARC.
 
 ## [Resend — criar uma chave de API: permissões, restrição por domínio e uso via variável de ambiente](../article/2026-08-27_resend-criar-uma-chave-de-api-permissoes-restricao-por-domin_d1be3efca69b.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas`
