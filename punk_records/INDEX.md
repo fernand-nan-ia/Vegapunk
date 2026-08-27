@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 12 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 12 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 7 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 5 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -46,6 +46,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-08-27 · article · [Registro.br — DNS e DNSSEC: o que é, quando é obrigatório, records e erros comuns](article/2026-08-27_registro-br-dns-e-dnssec-o-que-e-quando-e-obrigatorio-record_c8ea90c3b97b.md) · `registro-br` `dnssec` `dns` `seguranca-de-dominio` `records-ds` `bind` · media/media/alta · —
 - 2026-08-27 · article · [Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)](article/2026-08-27_lei-geral-de-protecao-de-dados-pessoais-lgpd-lei-no-13-709-2_738beed144b7.md) · `lgpd` `privacidade-de-dados` `conformidade-legal` `seguranca-da-informacao` `anpd` `privacy-by-design` · alta/alta/alta · apply_saas
 - 2026-08-27 · article · [Visão Geral e Fundamentos da Lei Geral de Proteção de Dados (LGPD)](article/2026-08-27_visao-geral-e-fundamentos-da-lei-geral-de-protecao-de-dados_f3323dda928b.md) · `lgpd` `privacidade` `protecao-de-dados` `compliance` `seguranca-da-informacao` `direito-digital` `governanca` · alta/alta/alta · apply_saas
 - 2026-08-27 · article · [Entendendo a censura ao Discord e a ECA digital](article/2026-08-27_entendendo-a-censura-ao-discord-e-a-eca-digital_eb9b588141e8.md) · `eca-digital` `anpd` `criptografia-ponta-a-ponta` `lgpd` `regulacao-de-plataformas` `privacidade-digital` `vpn` `marco-civil-da-internet` · media/baixa/alta · archive

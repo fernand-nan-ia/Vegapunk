@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Registro.br — DNS e DNSSEC: o que é, quando é obrigatório, records e erros comuns](../article/2026-08-27_registro-br-dns-e-dnssec-o-que-e-quando-e-obrigatorio-record_c8ea90c3b97b.md)
+2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `registro-br` `dnssec` `dns` `seguranca-de-dominio` `records-ds` `bind`
+
+DNSSEC no .br: opcional (obrigatório só em b/bet/def/jus/leg/mp/tc.br) e automático se você usa o DNS do Registro.br.
 
 ## [Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)](../article/2026-08-27_lei-geral-de-protecao-de-dados-pessoais-lgpd-lei-no-13-709-2_738beed144b7.md)
 2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem apply_saas · `lgpd` `privacidade-de-dados` `conformidade-legal` `seguranca-da-informacao` `anpd` `privacy-by-design`
