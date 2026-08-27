@@ -5,8 +5,8 @@ external_id: "19c7c0a3eaa2"
 canonical_url: "https://docs.claude.com/en/docs/claude-code/overview"
 channel: "Claude Code Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["claude-code", "agentic-coding", "mcp", "cli-automation", "subagents", "claude-md", "developer-tools", "ci-cd"]
 applicability:
   saas_pessoal: alta

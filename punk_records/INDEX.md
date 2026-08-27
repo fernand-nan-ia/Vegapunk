@@ -2,7 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
-- 2026-08-27 · article · [Visão Geral do Claude Code: Instalação, Recursos e Automação Agêntica](article/2026-08-27_visao-geral-do-claude-code-instalacao-recursos-e-automacao-a_19c7c0a3eaa2.md) · `claude-code` `agentic-coding` `mcp` `cli-automation` `subagents` `claude-md` `developer-tools` `ci-cd` · alta/alta/alta · —
+- 2026-08-27 · article · [Visão Geral do Claude Code: Instalação, Recursos e Automação Agêntica](article/2026-08-27_visao-geral-do-claude-code-instalacao-recursos-e-automacao-a_19c7c0a3eaa2.md) · `claude-code` `agentic-coding` `mcp` `cli-automation` `subagents` `claude-md` `developer-tools` `ci-cd` · alta/alta/alta · apply_saas
 - 2026-08-27 · article · [Entendendo a censura ao Discord e a ECA digital](article/2026-08-27_entendendo-a-censura-ao-discord-e-a-eca-digital_eb9b588141e8.md) · `eca-digital` `anpd` `criptografia-ponta-a-ponta` `lgpd` `regulacao-de-plataformas` `privacidade-digital` `vpn` `marco-civil-da-internet` · media/baixa/alta · archive
 - 2026-08-27 · article · [Novo LLM Benchmark v2: Metodologia, Harnesses Nativos e Comparativo de 31 Modelos para Programação](article/2026-08-27_novo-llm-benchmark-v2-metodologia-harnesses-nativos-e-compar_8394d6f042c1.md) · `llm-benchmark` `claude-code` `ai-coding-agents` `model-evaluation` `prompt-caching` `software-engineering` · alta/alta/alta · —
 - 2026-08-27 · tiktok · [#ad to amando aprender sobre IA](tiktok/2026-08-27_ad-to-amando-aprender-sobre-ia_7659911795506744596.md) · `claude-code` `inteligencia-artificial` `video-curto` · nenhuma/nenhuma/nenhuma · discard
