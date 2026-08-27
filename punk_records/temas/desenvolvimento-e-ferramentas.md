@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [SerpApi — referência da Google Search Engine Results API: parâmetros, tipos de busca e estrutura do JSON](../article/2026-08-27_serpapi-referencia-da-google-search-engine-results-api-param_095ffd77aa1a.md)
+2026-08-27 · article · SaaS alta · cliente baixa · estudo media · triagem — · `serpapi` `api-reference` `google-search` `parametros` `json` `documentacao`
+
+Referência do endpoint de busca do Google na SerpApi: q com operadores, localização por cidade/uule/lat-lon, gl/hl para país e idioma, tbm para imagens/local/notícias/shopping, device e no_cache.
 
 ## [SerpApi — Google Search API: o que faz, localização, tipos de resultado, SLA e Legal Shield](../article/2026-08-27_serpapi-google-search-api-o-que-faz-localizacao-tipos-de-res_42c16f44651b.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api`
