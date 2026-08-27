@@ -5,8 +5,8 @@ external_id: "7656153667501870358"
 canonical_url: "https://www.tiktok.com/@sabbb.md/photo/7656153667501870358"
 channel: "sabsab"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["vibecoding", "code-quality", "dead-code-removal", "security-scanner", "code-audit", "github-repos"]
 applicability:
   saas_pessoal: alta
