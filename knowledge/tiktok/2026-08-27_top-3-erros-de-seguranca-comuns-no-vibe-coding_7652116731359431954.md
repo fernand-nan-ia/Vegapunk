@@ -5,8 +5,8 @@ external_id: "7652116731359431954"
 canonical_url: "https://www.tiktok.com/@gabmirandamkt/video/7652116731359431954"
 channel: "gabmirandamkt"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["vibe-coding", "supabase-rls", "edge-functions", "env-leaks", "security-audit", "app-security", "claude-code"]
 applicability:
   saas_pessoal: alta
