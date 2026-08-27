@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [SerpApi — Google AI Overview Results API: como extrair o bloco de IA do Google em JSON](../article/2026-08-27_serpapi-google-ai-overview-results-api-como-extrair-o-bloco_dae2c368a9ab.md)
+2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao`
+
+A SerpApi devolve o AI Overview do Google como JSON estruturado (parágrafos, títulos, listas e referências com links).
 
 ## [Hostinger — hospedagem gerenciada de n8n, OpenClaw e Hermes Agent (automação com IA)](../article/2026-08-27_hostinger-hospedagem-gerenciada-de-n8n-openclaw-e-hermes-age_1a6de9d5c684.md)
 2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `hostinger` `n8n` `openclaw` `hermes-agent` `automacao-com-ia` `hospedagem-gerenciada`
