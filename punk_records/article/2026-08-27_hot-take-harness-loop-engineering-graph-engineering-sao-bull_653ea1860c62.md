@@ -5,8 +5,8 @@ external_id: "653ea1860c62"
 canonical_url: "https://akitaonrails.com/2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["ai-agents", "prompt-caching", "extreme-programming", "benchmarking", "context-engineering", "software-architecture"]
 applicability:
   saas_pessoal: alta
