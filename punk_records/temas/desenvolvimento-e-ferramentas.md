@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 35 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — exemplos de código por framework (Next.js, Express, Hono, FastAPI/Flask/Django, Rails, Go…) e por recurso](../article/2026-08-27_resend-exemplos-de-codigo-por-framework-next-js-express-hono_056725bb2ef3.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `exemplos` `fastapi` `django` `nextjs` `double-opt-in`
+
+Exemplos prontos por framework (inclui FastAPI, Flask e Django) e por recurso: envio, anexos, CID, templates, agendamento, formulário de contato, double opt-in, inbound, automations, Better Auth.
 
 ## [Resend — integrações: agentes de código, ferramentas de IA, no-code (n8n, Zapier, Make), notificações, CMS e dev tools](../article/2026-08-27_resend-integracoes-agentes-de-codigo-ferramentas-de-ia-no-co_945d75b18fb6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `integracoes` `n8n` `zapier` `wordpress` `claude-code`
