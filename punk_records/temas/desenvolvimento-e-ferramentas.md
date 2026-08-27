@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 37 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cloudflare Workers — conectar a bancos de dados: D1, Postgres/MySQL via Hyperdrive, Supabase/Neon/PlanetScale, drivers serverless](../article/2026-08-27_cloudflare-workers-conectar-a-bancos-de-dados-d1-postgres-my_899edaad2043.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase`
+
+Do Worker dá para falar com D1 (SQL da Cloudflare, bancos de 10 GB por tenant), Postgres/MySQL e Supabase/Neon via drivers TCP com Hyperdrive (pool + cache de conexão), ou drivers HTTP.
 
 ## [Resend — exemplos de código por framework (Next.js, Express, Hono, FastAPI/Flask/Django, Rails, Go…) e por recurso](../article/2026-08-27_resend-exemplos-de-codigo-por-framework-next-js-express-hono_056725bb2ef3.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `exemplos` `fastapi` `django` `nextjs` `double-opt-in`
