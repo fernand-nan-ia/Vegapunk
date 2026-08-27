@@ -1,0 +1,184 @@
+{
+ "atlas": {
+  "commands": [
+   "help",
+   "build",
+   "plan",
+   "explain",
+   "fix",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "build_rules",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "edison": {
+  "commands": [
+   "help",
+   "ideas",
+   "apply",
+   "combine",
+   "weekend",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "ideation_rules",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "lilith": {
+  "commands": [
+   "help",
+   "attack",
+   "hype-check",
+   "premortem",
+   "versus",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "attack_patterns",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "pythagoras": {
+  "commands": [
+   "help",
+   "recall",
+   "dossier",
+   "compare",
+   "gaps",
+   "tags",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "shaka": {
+  "commands": [
+   "help",
+   "judge",
+   "risk",
+   "audit-triage",
+   "versus",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "judgement_rubric",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "stella": {
+  "commands": [
+   "help",
+   "ask",
+   "wake",
+   "council",
+   "sync",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "routing",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ },
+ "york": {
+  "commands": [
+   "help",
+   "health",
+   "cost",
+   "stuck",
+   "worth-it",
+   "exit"
+  ],
+  "sections": [
+   "agent",
+   "persona_profile",
+   "persona",
+   "vault",
+   "user_context",
+   "ops",
+   "mind",
+   "relationships",
+   "conversation",
+   "quirks",
+   "examples",
+   "memory",
+   "commands",
+   "procedures"
+  ]
+ }
+}

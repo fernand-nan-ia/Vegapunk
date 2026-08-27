@@ -7,16 +7,32 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, filters
 
+from . import satellites
+from .chat import Chat
 from .config import settings
 from .db import Database
+from .enrich import EnrichmentError
 from .normalize import extract_urls
 from .pipeline import Pipeline
 
 log = logging.getLogger("vegapunk.bot")
 
-HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok ou Instagram e eu extraio, resumo e guardo na memória.\n\n"
+HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok ou Instagram e eu extraio, resumo e guardo na memória.\n"
+        "Texto sem link é conversa com o Satélite ativo (Stella por padrão).\n\n"
+        "<b>Satélites:</b> /stella 🧠 · /shaka 🪖 · /lilith 🏴‍☠️ · /edison 💡 · /pythagoras 📚 · /atlas 🔧 · /york 🍩\n"
+        "/quem — quem está acordado · /dormir — ninguém responde texto · /esquecer — apaga o histórico da conversa\n\n"
         "/stats — contagem por estado\n/pending — itens sem triagem ou com falha\n"
         "/reprocess &lt;id&gt; — tenta de novo um item com falha\n/id — mostra o id deste chat")
+TG_MAX = 4000
+
+
+def chunks(text: str, size: int = TG_MAX) -> list[str]:
+    out = []
+    while len(text) > size:
+        cut = text.rfind("\n", 0, size)
+        cut = cut if cut > size // 2 else size
+        out.append(text[:cut]); text = text[cut:].lstrip("\n")
+    return out + [text]
 
 
 def keyboard(item_id: str) -> InlineKeyboardMarkup:
@@ -41,6 +57,8 @@ def build_app(db: Database) -> Application:
 
     pipeline = Pipeline(db, notify)
     app.bot_data["pipeline"] = pipeline
+    chat = Chat(db)
+    app.bot_data["chat"] = chat
 
     def allowed(update: Update) -> bool:
         chat = update.effective_chat
@@ -79,6 +97,71 @@ def build_app(db: Database) -> Application:
         row = db.conn.execute("SELECT id FROM knowledge_items WHERE id LIKE ?", (prefix + "%",)).fetchone()
         await update.message.reply_text(await pipeline.reprocess(row["id"]) if row else "Item não encontrado")
 
+    # ── Satélites ─────────────────────────────────────────
+    def make_wake(sat_id: str):
+        async def cmd_wake(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+            if not allowed(update):
+                return
+            try:
+                sat = chat.wake(update.effective_chat.id, sat_id)
+            except Exception:
+                log.exception("falha ao carregar satélite %s", sat_id)
+                await update.message.reply_text(f"Não consegui acordar {sat_id} (veja os logs).")
+                return
+            if ctx.args:  # /lilith <mensagem> → acorda e já responde
+                await talk(update, " ".join(ctx.args))
+            else:
+                await update.message.reply_text(f"{sat.icon} <b>{sat.name}</b> acordou.\n<i>{sat.role}</i>\n\nPode falar.",
+                                                parse_mode=ParseMode.HTML)
+        return cmd_wake
+
+    async def cmd_quem(update: Update, _):
+        if not allowed(update):
+            return
+        sat_id = chat.active(update.effective_chat.id)
+        if not sat_id:
+            await update.message.reply_text("Ninguém acordado. Texto sem link vai para Stella; ou chame /shaka, /lilith…")
+            return
+        sat = satellites.load(sat_id)
+        await update.message.reply_text(f"{sat.icon} {sat.name} está acordado(a). /dormir para silenciar, /esquecer para zerar o histórico.")
+
+    async def cmd_dormir(update: Update, _):
+        if not allowed(update):
+            return
+        chat.sleep(update.effective_chat.id)
+        await update.message.reply_text("Todos dormindo. Texto sem link volta a acordar Stella; links continuam sendo capturados.")
+
+    async def cmd_esquecer(update: Update, _):
+        if not allowed(update):
+            return
+        n = chat.forget(update.effective_chat.id, chat.active(update.effective_chat.id))
+        await update.message.reply_text(f"Histórico apagado ({n} mensagens). O diário em squads/vegapunk/memory/ não muda.")
+
+    async def cmd_conta(update: Update, _):
+        if not allowed(update):
+            return
+        rows = chat.cost_rows(update.effective_chat.id)
+        if not rows:
+            await update.message.reply_text("Nenhuma conversa ainda. York aprova: custo zero.")
+            return
+        await update.message.reply_text("🍩 tokens por Satélite (respostas · in · out):\n" +
+                                        "\n".join(f"{s}: {n} · {i} · {o}" for s, n, i, o in rows))
+
+    async def talk(update: Update, text: str):
+        msg = update.message
+        await msg.chat.send_action("typing")
+        try:
+            sat, answer = await asyncio.to_thread(chat.reply, msg.chat_id, text)
+        except EnrichmentError as e:
+            await msg.reply_text(f"⚠️ {e.code}: {e.detail[:300]}")
+            return
+        except Exception:
+            log.exception("chat falhou")
+            await msg.reply_text("⚠️ Falha na conversa (veja os logs).")
+            return
+        for part in chunks(f"{sat.icon} {answer}"):
+            await msg.reply_text(part)
+
     async def on_message(update: Update, _):
         if not allowed(update):
             log.info("chat não autorizado: %s", update.effective_chat.id)
@@ -86,7 +169,7 @@ def build_app(db: Database) -> Application:
         msg = update.message
         urls = extract_urls(msg.text or msg.caption or "")
         if not urls:
-            await msg.reply_text("Me envie um link de YouTube, TikTok ou Instagram.")
+            await talk(update, msg.text or msg.caption or "")
             return
         for url in urls:
             item_id = db.create_item(url, msg.chat_id, msg.message_id)
@@ -124,6 +207,12 @@ def build_app(db: Database) -> Application:
     app.add_handler(CommandHandler("stats", cmd_stats))
     app.add_handler(CommandHandler("pending", cmd_pending))
     app.add_handler(CommandHandler("reprocess", cmd_reprocess))
+    for sat_id in satellites.IDS:
+        app.add_handler(CommandHandler([sat_id] + (["vegapunk"] if sat_id == "stella" else []), make_wake(sat_id)))
+    app.add_handler(CommandHandler("quem", cmd_quem))
+    app.add_handler(CommandHandler("dormir", cmd_dormir))
+    app.add_handler(CommandHandler("esquecer", cmd_esquecer))
+    app.add_handler(CommandHandler("conta", cmd_conta))
     app.add_handler(CallbackQueryHandler(on_callback, pattern=r"^triage:"))
     app.add_handler(MessageHandler(filters.TEXT | filters.CAPTION, on_message))
     return app

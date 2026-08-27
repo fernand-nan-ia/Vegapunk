@@ -1,62 +1,138 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-26, sessão 2)
+# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 3)
 
-## Estado atual: MVP validado end-to-end (YouTube + TikTok)
+## TL;DR — o que existe hoje
 
-Sessão 2 (2026-08-26): YouTube (legenda) e TikTok (áudio → Whisper) processados, triados via botão, vault + INDEX + commits automáticos conferidos. Fluxo de falha → `_pending/` → `/reprocess` também validado. Instagram ainda não testado (baixa prioridade: uso real é YouTube + TikTok).
+Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
-Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--extractor-retries 5` no yt-dlp, error handler de rede no bot (`NetworkError` não derruba mais o polling).
+1. **Fabriophase (bot Telegram)** — captura links (YouTube/TikTok/Instagram) → extrai → resume via OpenRouter → guarda no SQLite → projeta em `knowledge/` (o Punk Records, versionado) → commit automático. **E agora conversa**: os 7 Satélites respondem no Telegram em personagem (`/stella`, `/shaka`, …).
+2. **Labophase (Claude Code)** — os 7 Satélites como skills (`/vegapunk`, `/vegapunk:lilith`, …), cada um com personalidade completa **e** funções absorvidas do FURY (dev, qa, smith, pm, po, mifune…), autossuficientes em `squads/vegapunk/`.
 
+Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-- Container `vegapunk-vegapunk-1` rodando (`docker compose ps`), com token novo do BotFather, `OPENROUTER_API_KEY` e `TELEGRAM_ALLOWED_CHAT_IDS` preenchidos no `.env`.
-- Modelo: `google/gemini-3.7-flash` via OpenRouter. Whisper local `small` (baixa ~500 MB no 1º vídeo sem legenda).
-- GitHub `fernand-nan-ia/Vegapunk` em `37d89bf`, histórico limpo (um token vazou num commit anterior; foi reescrito e o token revogado).
-- Testes: 16/16 verdes (`PYTHONPATH=src .venv/bin/python -m pytest`).
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **41/41 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `1bfb2fb` = só commits `kb:` do bot — **todo o trabalho da sessão 3 está SEM COMMIT** (58 arquivos; ver "Git" abaixo).
 
-## Primeira coisa a fazer amanhã
+## Git — o que commitar (Fernando faz; agentes nunca fazem)
 
-1. Fernando manda um link de YouTube ao bot → verificar: resposta "✅ Capturado", resumo com 4 botões, arquivo em `knowledge/youtube/`, `knowledge/INDEX.md`, commit automático (`git log`).
-2. Depois um TikTok e um Reel do Instagram (caminho áudio → Whisper). Instagram pode exigir cookies (`VEGAPUNK_COOKIES_FILE`).
-3. Avaliar qualidade do resumo do Gemini; ajustar `SYSTEM` em `src/vegapunk/enrich.py` se preciso. Trocar de modelo = mudar `VEGAPUNK_MODEL` no `.env` + `docker compose up -d --force-recreate`.
-4. Testar a skill `/vegapunk <pergunta>` de dentro de outro projeto (existe em `~/.claude/commands/`, FURY e aqui).
+**Repo Vegapunk** (58 arquivos modificados/novos, tudo intencional):
+```bash
+git add -A
+git commit -m "feat: Satélites com personalidade + funções do FURY (autossuficientes) + conversa no Telegram"
+git push
+```
+Inclui: 7 agentes + `vegapunk.md` + plugin (personalidade e absorção), `src/vegapunk/{chat,satellites}.py`, `bot.py`, `pyproject.toml` (+pyyaml), `tests/{test_satellites.py,satellites_baseline.json}`, `scripts/sync_agents.sh`, `squads/vegapunk/{tasks,checklists,templates,memory,avaliacao-imoveis}/`, este HANDOFF. `.env`, `data/`, `tmp/`, `whisper-cache/` continuam no `.gitignore` (conferido).
 
-## Satélites (sessão 2, noite)
-Squad `vegapunk` no padrão FURY: `.claude/commands/vegapunk/agents/{stella,shaka,lilith,edison,pythagoras,atlas,york}.md` (+ `workflows/wf-satellite-council.yaml`, `squads/vegapunk/`). `/vegapunk` = Stella. Espelhado em `~/.claude/commands` e no FURY. Plugin instalável em `plugin/vegapunk-satellites/` (skills/<id>/SKILL.md) + `.claude-plugin/marketplace.json` na raiz: `claude plugin marketplace add fernand-nan-ia/Vegapunk` → `/plugin install vegapunk@vegapunk-marketplace`. Ao editar um agente, editar em `.claude/commands/vegapunk/agents/` e regenerar as cópias (global, FURY, plugin) — a fonte da verdade é a do projeto.
-Próximo passo combinado: dar a voz do Stella ao bot do Telegram (prompt em `enrich.py` + mensagens em `pipeline.py`).
+**Repo FURY** (`/home/crazu/projetos/FURY`, 3 entradas novas: `.claude/commands/vegapunk.md`, `.claude/commands/vegapunk/`, `squads/vegapunk/`): é o espelho do squad, exigido pela regra global. Commitar lá também:
+```bash
+git -C /home/crazu/projetos/FURY add -A && git -C /home/crazu/projetos/FURY commit -m "squad vegapunk: 7 Satélites (personalidade + funções absorvidas) e squads/vegapunk autossuficiente" && git -C /home/crazu/projetos/FURY push
+```
+
+Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal.
+
+## Primeira coisa a fazer na próxima sessão
+
+1. **Commitar os dois repos** (acima). Sem isso, um `git checkout` acidental apaga a sessão inteira.
+2. **Testar um Satélite no Claude Code com função absorvida**: `/vegapunk:lilith` → `*verify src/vegapunk/chat.py`. Esperado: ela lê `squads/vegapunk/tasks/lilith-verify-delivery.md` e a checklist, entrega findings com Onde/Por quê/Como corrigir e um veredito (AFUNDOU / ÁGUA NO PORÃO / FLUTUA COM REMENDO / AGUENTOU). Se ela não achar a task, o problema é a diretiva `ABSORBED CAPABILITIES` (caminho absoluto).
+3. **Testar o ciclo completo numa feature pequena**: Edison `*prd` → Stella `*story` → Atlas `*develop` → Lilith `*verify` → Shaka `*gate` → Stella `*release` (ela deve PARAR e pedir "push" explícito).
+4. **Telegram**: mandar "oi" a `/york` e perguntar "quanto cobrar pelo meu SaaS?" — ela deve responder em personagem e dizer que `*pricing` completo é no Claude Code (no Telegram não há ferramentas).
+5. Se algum agente parecer "esquecer" a personalidade quando executa um comando absorvido: a causa provável é o tamanho do arquivo (290–400 linhas). Solução prevista: mover `examples` para um arquivo à parte lido na ativação — **não** cortar seções.
+
+## Os 7 Satélites — mapa completo
+
+| Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
+|---|---|---|---|---|
+| 🧠 Stella (`/vegapunk`) | soma / roteador | `ask`, `wake`, `council`, `sync` | fury-master, hamann, checkpoint, devops, sm | `route`, `story`, `release`, `checkpoint`, `premises` |
+| 🪖 Shaka | juiz, risco, triagem | `judge`, `risk`, `audit-triage`, `versus` | qa, seraph, compliance do content-reviewer | `review`, `gate` (PASS/CONCERNS/FAIL/WAIVED), `test-design`, `compliance`, `security-check` |
+| 🏴‍☠️ Lilith | red team, hype | `attack`, `hype-check`, `premortem`, `versus` | smith | `verify`, `break`, `evidence` |
+| 💡 Edison | ideias → protótipo | `ideas`, `apply`, `combine`, `weekend` | analyst, pm, ux-design-expert | `brainstorm`, `discovery`, `prd`, `wireframe` |
+| 📚 Pythagoras | arquivista do vault | `recall`, `dossier`, `compare`, `gaps`, `tags` | content-researcher, architect, po | `research`, `architecture`, `backlog`, `decision` (ADR) |
+| 🔧 Atlas | implementa | `build`, `plan`, `explain`, `fix` | dev, data-engineer + **master do squad `avaliacao-imoveis`** | `develop`, `undo`, `run-tests`, `dod`, `critique`, `schema`, `rls`, `migration`, `avaliar` |
+| 🍩 York | custo, saúde, retorno | `health`, `cost`, `stuck`, `worth-it` | mifune, budget/ROI do traffic-manager | `pricing`, `offer`, `roi`, `budget`, `launch` |
+
+**Regras de relação codificadas nas procedures** (não mudar sem revisar as tasks):
+- Só **Stella** faz `git push`, e só após `gate` do Shaka com PASS (ou CONCERNS/WAIVED aceito) **e** com Fernando escrevendo literalmente "push" na sessão. Todos os outros: nunca `git add/commit/push`.
+- Lilith `verify` antes do `gate` em risco alto. Atlas para e chama Shaka quando o pedido exige decisão de valor/risco. Edison pergunta a York "coxinha ou jantar?" antes de propor algo caro. York dá `roi` antes de Atlas gastar Mother Flame.
+- Ciclo padrão: **Edison `prd` → Stella `story` → Atlas `develop` → Lilith `verify` → Shaka `gate` → Stella `release`**.
+- Fora do laboratório (marketing, copy, brand, tráfego, storytelling): Stella `route` aponta o squad do FURY instalado em `~/.claude/commands/<squad>/agents/`.
+
+## Anatomia de um agente `.md` (ordem das seções no YAML)
+
+`activation-instructions` (prosa; inclui CONVERSATION MODE, PERSONAL MEMORY, ABSORBED CAPABILITIES, SOURCE DISCIPLINE, VAULT IS READ-ONLY) → `agent` → `persona_profile` (canon, tom, greeting_anchor, signature_phrases) → `persona` → `vault` → `user_context` → seção própria (`judgement_rubric` Shaka / `attack_patterns` Lilith / `ideation_rules` Edison / `build_rules` Atlas / `ops` York / `routing` Stella) → **`mind`, `relationships`, `conversation`, `quirks`, `examples`, `memory`** (personalidade, sessão 3) → **`absorbed_from`, `absorbed_principles`, `dependencies`** (absorção, sessão 3) → `commands` (originais, depois `# ── absorvidos do FURY ──`, depois `exit`) → `procedures` (originais + absorvidas no fim).
+
+- **Parser**: `activation-instructions` NÃO é YAML válido (prosa com `:`); o bot e os testes parseiam a partir de `\nagent:`. Ao editar, manter strings com `:`/`→` entre aspas — `tests/test_satellites.py::test_load_all_satellites` quebra se o YAML quebrar.
+- **Editar um agente** = editar a fonte, rodar `PYTHONPATH=src .venv/bin/python -m pytest -q tests/test_satellites.py`, rodar `scripts/sync_agents.sh`. Nunca editar as cópias (global/FURY/plugin) diretamente.
+- **Nada se perde**: `tests/satellites_baseline.json` guarda seções e comandos anteriores à absorção; `test_nothing_lost_vs_baseline` falha se algum sumir. Se adicionar comandos novos de propósito, regenerar o baseline (script inline no histórico da sessão 3; ou simplesmente editar o JSON).
+- **Dependências existem**: `test_dependencies_exist_when_absorbed` confere que cada task/checklist/template/squad citado em `dependencies` existe em `squads/vegapunk/`.
+
+## `squads/vegapunk/` — autossuficiente (não depende do FURY)
+
+```
+squads/vegapunk/
+  memory/<id>.md            diário de cada Satélite (relacionamento; NÃO é vault). Lido na ativação e pelo bot.
+  tasks/<id>-*.md           procedimentos passo a passo das funções absorvidas (63 arquivos no total com os abaixo)
+  checklists/<id>-*.md      DoD, gate, segurança, compliance, vereditos da Lilith, dinheiro da York…
+  templates/<id>-*.md       PRD (Edison), research/architecture/backlog/ADR (Pythagoras), pricing/ROI (York)
+  avaliacao-imoveis/        squad de laudos NBR 14653 copiado do FURY (agents em commands/agents/, tasks, checklists, workflows, squad.yaml). Atlas = master via *avaliar.
+  squad.yaml, README.md, tasks/ (originais do squad)
+```
+As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinham procedimentos inline — as tasks que eles referenciam não existem como arquivos no FURY). Adaptadas ao contexto: Fernando engenheiro civil, SaaS pessoal para vender, site de cliente, Claude Code + Docker + OpenRouter + SQLite/Supabase. Sem Epics/ADE/WIS.
+
+**Limitação conhecida**: a diretiva `ABSORBED CAPABILITIES` usa caminho absoluto `/home/crazu/projetos/vegapunk/squads/vegapunk/`. Funciona de qualquer projeto nesta máquina; o plugin instalado em outra máquina precisa desse diretório (ou trocar por caminho relativo ao plugin — o plugin já recebe `squads/vegapunk/` pelo sync? **NÃO**: o sync copia agentes para `plugin/.../skills/<id>/SKILL.md`; as tasks não vão para o plugin ainda. Tarefa pendente se o plugin for usado fora daqui).
+
+## Satélites no Telegram
+
+- `src/vegapunk/satellites.py`: `load(id)` lê o `.md` da fonte (YAML de `agent:` em diante); `build_system_prompt` = seções `PROMPT_SECTIONS` (agent, persona_profile, persona, mind, relationships, conversation, quirks, examples, absorbed_from, absorbed_principles) + diário + `INDEX.md`; `pick_vault_items` anexa até 3 itens do vault por palavras-chave do título/tags (sem tool calls).
+- `src/vegapunk/chat.py`: tabelas `chat_state` (Satélite ativo por chat) e `chat_messages` (histórico; 12 últimas ao modelo; tokens por resposta). `Chat.reply()` é síncrono, chamado via `asyncio.to_thread`.
+- `bot.py`: `/stella` (= `/vegapunk`), `/shaka`, `/lilith`, `/edison`, `/pythagoras`, `/atlas`, `/york` `[mensagem]`; texto sem link → Satélite ativo (Stella se ninguém); `/quem`, `/dormir`, `/esquecer` (apaga histórico do ativo), `/conta` (tokens por Satélite). **Links continuam sendo capturados normalmente.**
+- Custo medido: ~6k tokens de entrada por mensagem sem item anexado, ~14k com (≈ US$ 0,002–0,005 no gemini-3.7-flash). Cresce com o INDEX.
+- Limites: **sem ferramentas** no Telegram (não executa comandos absorvidos, não escreve no diário — só lê; diz que "isso se faz no Claude Code"); histórico cortado, não resumido; `/stella` responde "acordou. Pode falar." sem saudação em personagem (melhoria fácil: uma chamada extra ao modelo no wake).
+- Validado em produção 2026-08-26 22:19–22:25 (prints): Stella, Shaka e Lilith responderam em personagem e apontaram `/nome` corretamente; 4 links encaminhados foram capturados no meio da conversa.
 
 ## Como operar
 
 | Ação | Comando |
 |---|---|
-| Logs | `docker compose logs --tail 50 -f` |
+| Logs | `docker compose logs --tail 50 -f` (container em UTC: 22:19 local = 01:19 no log) |
 | Mudou `.env` | `docker compose up -d --force-recreate` (restart NÃO relê o .env) |
-| Mudou código em `src/` | `docker compose restart` (código é montado via `PYTHONPATH=/app/src`, sem rebuild) |
-| Mudou `pyproject.toml` / deps | `docker compose build && docker compose up -d` |
-| Testes | `PYTHONPATH=src .venv/bin/python -m pytest -q` |
-| Ver banco | `sqlite3 data/vegapunk.db "select id,status,platform,title from knowledge_items"` |
+| Mudou código em `src/` ou um agente `.md` | `docker compose restart` (montado por volume, sem rebuild) |
+| Mudou `pyproject.toml` / deps | `docker compose build && docker compose up -d` (pyyaml já está na imagem via huggingface_hub; foi só declarado) |
+| Testes | `PYTHONPATH=src .venv/bin/python -m pytest -q` (41) |
+| Editou agente | `scripts/sync_agents.sh` (global + FURY + plugin + `vegapunk.md` + `squads/vegapunk/` → FURY) |
+| Ver banco | `sqlite3 data/vegapunk.db "select id,status,platform,title from knowledge_items"` · conversas: `select satellite,count(*) from chat_messages group by 1` |
+| Conversa por Satélite no chat | `/conta` no Telegram |
 
 ## Decisões fechadas (não reabrir)
-- Python único + polling + SQLite + Docker local. Sem Rails/Sidekiq/webhook/VPS (o pacote em `.docs/pacote_telegram_knowledge_bot_v1` é o plano v1, superado; as ideias boas dele — máquina de estados, dedup, vault regenerável, triagem — foram mantidas).
-- Sem API da Anthropic direta (custo). OpenRouter via SDK `openai`, `response_format json_schema strict` + validação Pydantic com 1 retry.
+- Python único + polling + SQLite + Docker local. Sem Rails/Sidekiq/webhook/VPS.
+- Sem API da Anthropic direta (custo). OpenRouter via SDK `openai`, `response_format json_schema strict` + Pydantic com 1 retry (enrich); chat livre com `temperature=0.8`.
 - Vault `knowledge/` é projeção do SQLite; só `## Notas manuais` é editável à mão.
+- **Uma personalidade, dois lugares**: Telegram lê o mesmo `.md` do Claude Code. Nunca criar system prompt separado no bot.
+- **Absorção é aditiva**: nunca remover comandos/seções originais dos Satélites ao adicionar funções.
+- **Autossuficiência**: `squads/vegapunk/` não aponta para o FURY; o FURY recebe cópia (sync), não o contrário.
+- York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são da Stella.
 
 ## Armadilhas conhecidas
-- **`.env`: NUNCA comentário na mesma linha do valor.** Docker `env_file` não trata `#` como comentário → o valor vira `# texto...`. Foi isso que quebrou o TikTok (yt-dlp recebeu `--cookies "# cookies.txt..."`, criou um cookie jar na raiz e reusou cookies queimados → 403 em todas as tentativas). `config.py` agora corta em `#` por defesa, mas mantenha o `.env` limpo.
-- Se aparecer um arquivo `# cookies.txt (Netscape)...` na raiz, é sintoma desse bug — apague e verifique o `.env`.
-- TikTok: erro "Unable to extract universal data for rehydration" é intermitente (~40% por tentativa) → pipeline tenta 6x com espera crescente (15 s × n).
-- YouTube legendas: `choose_sub_langs(meta)` pede só manuais (pt/en/es) ou a auto-legenda ORIGINAL (`*-orig`). Nunca pedir `pt` de auto-caption: o YouTube traduz sob demanda → HTTP 429 → caía em 33 min de Whisper (aconteceu 2026-08-26). Se legenda falhar, cai para áudio+Whisper.
-- Whisper: `language_detection_segments=4` (rótulo de idioma errava, ex. 'yo' num vídeo em inglês); áudio com <3 s de fala após VAD é pulado (música de slideshow).
-- Item com `extraction_failed`/`pending_manual` vai para `knowledge/_pending/`; colar o texto em "Notas manuais" e `/reprocess <id>`.
+- **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.
+- TikTok "Unable to extract universal data for rehydration" é intermitente (~40%) → 6 tentativas com espera crescente.
+- YouTube legendas: só manuais (pt/en/es) ou auto ORIGINAL (`*-orig`); nunca `pt` de auto-caption (429 → 33 min de Whisper).
+- Whisper: `language_detection_segments=4`; áudio com <3 s de fala após VAD é pulado.
+- Item `extraction_failed`/`pending_manual` → `knowledge/_pending/`; colar texto em "Notas manuais" e `/reprocess <id>`.
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
+- YAML dos agentes: `vocabulary: [..., "aguenta?"]` e `routing: - {need: "...", satellite: x}` precisam ficar assim (com aspas / flow mapping) — foram os dois pontos que quebravam o parser.
+- Texto sem link no Telegram agora **custa tokens** (vai ao modelo). Mensagem acidental = uma coxinha.
 
 ## Mapa do código
-`src/vegapunk/`: `bot.py` (handlers/comandos/teclado) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema com topics/tools; `read_slides` visão), `format_summary` em `pipeline.py` (mensagem Telegram), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env).
+`src/vegapunk/`: `bot.py` (handlers: links → pipeline; texto → chat; comandos de Satélite) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema; `read_slides`; `_client()` reutilizado pelo chat), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env), **`satellites.py`** (persona → prompt, vault picker), **`chat.py`** (estado/histórico/reply).
+`tests/`: 41 testes; `test_satellites.py` cobre load dos 7, prompt, vault picker, chat state/history/reply (mock), nada-se-perde, dependências existem.
 
 ## Ideias para depois (não iniciadas)
-- **Visão (Opção A, decidido 2026-08-26):** `ffmpeg` amostra 1 frame/10 s → `enrich.read_slides()` descreve o que está na tela → texto entra junto da transcrição. Gatilho manual (`/ver <link>`), não automático. Custo medido: ~1k tokens/imagem ⇒ ~US$ 0,02 por 10 min no gemini-3.7-flash (US$ 0,375/M in). Exige baixar o vídeo inteiro (hoje só áudio) em `tmp/<item_id>/`, apagado ao fim. Vale para screencast/tutorial/demo de UI; inútil para talking-head.
-
-- Parser do enrich mais tolerante (extrair `{...}` do texto): Gemini às vezes responde vazio na 1ª tentativa; o retry resolve, mas custa uma chamada.
-- **TikTok slideshow (`/photo/`) é suportado**: `extract_tiktok_slides` usa `TikTokIE._extract_web_data_and_status` (API privada do yt-dlp — se um update quebrar, `tests/test_slides.py` não pega, o log mostra `tiktok web data:`), baixa `imagePost.images`, o Gemini lê as imagens (`enrich.read_slides`, sem OCR local) e, se `music.original`, transcreve a narração com Whisper. `content_type: slides`. Instagram carrossel continua ERR-008 (exige login); só rende a legenda (`--ignore-no-formats-error` já está no `fetch_metadata`); conteúdo em imagem precisaria de OCR. Reels ainda não testados; provavelmente precisam de `VEGAPUNK_COOKIES_FILE` com cookies exportados do navegador.
-- Healthcheck diário no Telegram (itens presos, falhas 24h).
-- Push automático (`VEGAPUNK_GIT_PUSH=true` + montar `~/.ssh` no compose).
-- Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para a skill `/vegapunk`.
-- MCP de consulta ao vault (Fase 4 do plano original).
+- **Telegram com ferramentas**: deixar os Satélites executarem comandos absorvidos leves pelo chat (ler item do vault por nome, `*roi` da York, `*evidence` da Lilith) via tool-use no OpenRouter; e **escrever no diário** (`## Diário`) quando o Fernando conta algo. Hoje só leem.
+- Saudação em personagem no `/nome` (uma chamada ao modelo no wake).
+- Resumo do histórico quando passar de N mensagens (hoje corta em 12).
+- Plugin autossuficiente: copiar `squads/vegapunk/{tasks,checklists,templates}` para dentro do plugin e trocar o caminho absoluto da diretiva.
+- Mover `examples` de cada agente para arquivo à parte se os `.md` ficarem grandes demais para manter a voz.
+- **Visão (Opção A, decidido 2026-08-26)**: `ffmpeg` 1 frame/10 s → `enrich.read_slides()`; gatilho manual `/ver <link>`; ~US$ 0,02 por 10 min.
+- Parser do enrich mais tolerante (extrair `{...}` do texto).
+- TikTok slideshow já suportado (`extract_tiktok_slides`, API privada do yt-dlp — se quebrar, log mostra `tiktok web data:`). Instagram carrossel/Reels: exigem cookies (`VEGAPUNK_COOKIES_FILE`), não testados.
+- Healthcheck diário no Telegram (York já tem o comando no Claude Code; falta agendar no bot).
+- Push automático do vault (`VEGAPUNK_GIT_PUSH=true` + `~/.ssh` no compose).
+- Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para `/vegapunk`.
+- MCP de consulta ao vault.

@@ -1,0 +1,156 @@
+# Workflow de Avaliação de Imóvel — ciclo profissional completo
+# Triagem > Vistoria > Pesquisa > Tratamento > Laudo > Revisão Adversarial > Decisão
+# Version: 1.0.0
+
+workflow:
+  id: wf-property-evaluation
+  name: "Ciclo de Avaliação de Imóvel"
+  version: "1.0.0"
+  trigger: "*evaluate"
+  entry_agent: avaliador-chief
+  description: "Ciclo profissional de avaliação imobiliária pelo MCDDM (NBR 14.653-2:2004), da triagem à entrega do laudo defensável. Inferência estatística (regressão) é o método padrão; o revisor-adversarial é portão obrigatório antes da entrega."
+  estimated_duration: "Variável conforme o fim e a complexidade do imóvel"
+  type: sequential
+  sequence:
+    - agent: avaliador-chief
+      action: diagnose
+      creates: triagem
+    - agent: inspetor-tecnico
+      action: conduct-inspection
+      creates: laudo_inspecao
+    - agent: pesquisador-mercado
+      action: conduct-market-research
+      creates: amostra_saneada
+    - agent: engenheiro-dados
+      action: build-sample-dataset
+      creates: modelo_tratado
+    - agent: redator-laudos
+      action: draft-laudo
+      creates: laudo
+    - agent: redator-laudos
+      action: validate-norms
+      creates: enquadramento
+    - agent: revisor-adversarial
+      action: adversarial-laudo-review
+      creates: veredito
+    - agent: avaliador-chief
+      action: approve-laudo
+      creates: laudo_aprovado
+
+inputs:
+  - name: imovel
+    required: true
+    description: "Tipo, endereço e características do imóvel avaliando"
+  - name: fim
+    required: true
+    description: "bancário (Caixa/financiamento) | judicial (perícia) | particular (inventário/divisão/negociação)"
+  - name: imagens
+    required: false
+    description: "Fotos do imóvel/patologias (acionam capacidade de visão do Sentinel)"
+  - name: prazo
+    required: false
+    description: "Restrições de prazo"
+
+phases:
+  - id: phase_1_triagem
+    name: "Triagem"
+    agent: avaliador-chief
+    task: diagnose.md
+    depends_on: []
+    description: "Definir fim, grau-alvo e método; designar o ciclo"
+    checkpoint:
+      gate: "Fim + grau-alvo + método definidos"
+      veto: "avaliador-chief rejeita início sem fim/grau-alvo"
+      required_output: "triagem"
+
+  - id: phase_2_vistoria
+    name: "Vistoria"
+    agent: inspetor-tecnico
+    task: conduct-inspection.md
+    depends_on: [phase_1_triagem]
+    description: "Vistoria sistêmica IBAPE 2025 + patologias + estado de conservação"
+    checkpoint:
+      gate: "9 etapas IBAPE percorridas; patologias classificadas; limitações declaradas"
+      veto: "avaliador-chief rejeita vistoria com severidade não sustentada pela evidência"
+      required_output: "laudo_inspecao"
+
+  - id: phase_3_pesquisa
+    name: "Pesquisa de Mercado"
+    agent: pesquisador-mercado
+    task: conduct-market-research.md
+    depends_on: [phase_1_triagem]
+    description: "Amostra saneada, fontes regionais priorizadas, natureza identificada"
+    checkpoint:
+      gate: "Amostra dimensionada ao grau-alvo; oferta×transação identificadas; origens rastreáveis"
+      veto: "avaliador-chief rejeita amostra insuficiente ou sem rastreabilidade"
+      required_output: "amostra_saneada"
+
+  - id: phase_4_tratamento
+    name: "Tratamento de Dados"
+    agent: engenheiro-dados
+    task: build-sample-dataset.md
+    depends_on: [phase_2_vistoria, phase_3_pesquisa]
+    description: "Regressão (padrão) + pressupostos + indicadores de grau; fatores só fallback declarado"
+    checkpoint:
+      gate: "Pressupostos testados; significância vs. grau-alvo; campo de arbítrio definido"
+      veto: "avaliador-chief rejeita modelo sem diagnóstico ou com fatores não justificados"
+      required_output: "modelo_tratado"
+
+  - id: phase_5_laudo
+    name: "Redação do Laudo"
+    agent: redator-laudos
+    task: draft-laudo.md
+    depends_on: [phase_4_tratamento]
+    description: "Laudo NBR-compliant, rastreável, com ressalvas e ART"
+    checkpoint:
+      gate: "Estrutura NBR completa; zero afirmação órfã; ressalvas explícitas"
+      veto: "avaliador-chief rejeita valor sem rastreabilidade"
+      required_output: "laudo"
+
+  - id: phase_6_compliance
+    name: "Enquadramento de Grau"
+    agent: redator-laudos
+    task: validate-norms.md
+    depends_on: [phase_5_laudo]
+    description: "Pontuação por item, itens obrigatórios, tetos, grau vs. grau-alvo"
+    checkpoint:
+      gate: "Grau declarado sustentado pela tabela; lacunas vs. grau-alvo reportadas"
+      veto: "avaliador-chief rejeita grau superdeclarado"
+      required_output: "enquadramento"
+
+  - id: phase_7_adversarial
+    name: "Revisão Adversarial"
+    agent: revisor-adversarial
+    task: adversarial-laudo-review.md
+    depends_on: [phase_6_compliance]
+    description: "Simulação de rejeição banco/juízo/comprador — portão obrigatório"
+    checkpoint:
+      gate: "3 adversários simulados; fragilidades com vetor + reparo"
+      veto: "avaliador-chief NÃO aprova laudo que não passou aqui"
+      required_output: "veredito"
+
+  - id: phase_8_decisao
+    name: "Decisão"
+    agent: avaliador-chief
+    task: review.md
+    depends_on: [phase_7_adversarial]
+    description: "Revisão de qualidade (8 critérios) e aprovação/rejeição final"
+    checkpoint:
+      gate: "8 critérios aplicados; veredito adversarial considerado"
+      veto: "None — avaliador-chief detém a autoridade exclusiva de aprovar/rejeitar"
+      required_output: "laudo_aprovado"
+
+completion_criteria:
+  - "Fim e grau-alvo definidos na triagem"
+  - "Vistoria com patologias classificadas e limitações declaradas"
+  - "Amostra pertinente e rastreável, dimensionada ao grau-alvo"
+  - "Modelo (regressão padrão) com pressupostos testados; fallback de fatores justificado se usado"
+  - "Laudo rastreável, com ressalvas, ART e grau enquadrado"
+  - "Revisão adversarial executada (banco + juízo + comprador)"
+  - "Laudo aprovado ou devolvido pelo avaliador-chief"
+
+error_handling:
+  amostra_insuficiente: "Sem dados para qualquer método → declarar parecer técnico (não laudo), NBR 14.653-2:2004 §9.1.2"
+  grau_abaixo_do_alvo: "Reportar lacunas ao avaliador-chief; reforçar amostra/modelo ou rebaixar grau declarado com transparência"
+  veredito_devolver: "Retornar ao agente responsável pela fragilidade (vetor + reparo); reexecutar a partir da fase impactada"
+  escalation: "Divergência entre especialistas → avaliador-chief media pelo grau-alvo e fim da avaliação"

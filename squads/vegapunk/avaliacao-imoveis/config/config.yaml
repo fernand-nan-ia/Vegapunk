@@ -1,0 +1,115 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Avaliação de Imóveis
+# Domain: Engenharia Civil — Avaliação Imobiliária (NBR 14.653)
+# Version: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: avaliacao-imoveis
+  display_name: "Avaliação de Imóveis"
+  version: "1.0.0"
+  domain: "Engenharia Civil — Avaliação imobiliária pelo método comparativo de dados de mercado (NBR 14.653-1/-2), vistoria, patologias, homogeneização e laudo defensável"
+  description: |
+    Squad de 6 especialistas que reproduz, em IA, um time real de avaliação de
+    imóveis: liderança técnica (Roland), pesquisa de mercado imobiliário (Trainman),
+    inspeção técnica com análise de imagem (Sentinel), redação de laudos e compliance
+    normativo (Rama-Kandra), revisão adversarial anti-rejeição bancária (Agent Johnson)
+    e engenharia de dados/planilha (Dozer).
+
+    Opera o workflow profissional ponta-a-ponta — vistoria → pesquisa → tratamento de
+    dados → laudo → revisão adversarial → entrega — fundamentado na NBR 14.653 e na
+    prática de avaliação para fins bancários, judiciais e particulares.
+  keywords: [avaliacao-imoveis, avaliacao imobiliaria, NBR 14653, metodo comparativo, laudo de avaliacao, vistoria, patologia, homogeneizacao, mercado imobiliario, pericia, engenharia civil, valor de mercado, SisDea, CalcImov]
+  entry_agent: avaliador-chief
+  created_at: "2026-05-18"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [avaliador-chief]
+    purpose: "Triagem do caso, roteamento ao especialista certo, governança aprovar/rejeitar e revisão de qualidade do laudo"
+  tier_1:
+    name: "Levantamento de Campo & Mercado"
+    agents: [inspetor-tecnico, pesquisador-mercado]
+    purpose: "Vistoria e diagnóstico de patologias (com análise de imagem); pesquisa de mercado, amostragem e homogeneização"
+  tier_2:
+    name: "Tratamento de Dados & Laudo"
+    agents: [engenheiro-dados, redator-laudos]
+    purpose: "Construção da planilha amostral e ponte de dados; redação do laudo e compliance normativo"
+  tier_3:
+    name: "Defesa Adversarial"
+    agents: [revisor-adversarial]
+    purpose: "Simulação de rejeição bancária/judicial antes da entrega — caça a fragilidades no laudo"
+
+agents:
+  avaliador-chief:
+    file: agents/avaliador-chief.md
+    tier: 0
+    persona: "Roland"
+    icon: "🏗️"
+    focus: "Orquestração do ciclo de avaliação, roteamento, governança e qualidade do laudo"
+  inspetor-tecnico:
+    file: agents/inspetor-tecnico.md
+    tier: 1
+    persona: "Sentinel"
+    icon: "🔬"
+    focus: "Vistoria, diagnóstico de patologias (fissuras, infiltração, recalque) e análise de imagem"
+  pesquisador-mercado:
+    file: agents/pesquisador-mercado.md
+    tier: 1
+    persona: "Trainman"
+    icon: "🔍"
+    focus: "Pesquisa de mercado imobiliário, amostragem (≥6), oferta×transação, raio e homogeneização"
+  engenheiro-dados:
+    file: agents/engenheiro-dados.md
+    tier: 2
+    persona: "Dozer"
+    icon: "📊"
+    focus: "Planilha amostral, tratamento estatístico, ponte de dados SisDea/CalcImov"
+  redator-laudos:
+    file: agents/redator-laudos.md
+    tier: 2
+    persona: "Rama-Kandra"
+    icon: "📄"
+    focus: "Redação do laudo, compliance NBR 14.653-1/-2 e NBR 12.721, ressalvas e fundamentação"
+  revisor-adversarial:
+    file: agents/revisor-adversarial.md
+    tier: 3
+    persona: "Agent Johnson"
+    icon: "⚔️"
+    focus: "Revisão adversarial — simula a rejeição do banco/perito antes da entrega"
+
+handoffs:
+  avaliador-chief:
+    routes_to: [inspetor-tecnico, pesquisador-mercado, engenheiro-dados, redator-laudos, revisor-adversarial]
+  inspetor-tecnico:
+    collaborates_with: [pesquisador-mercado]
+    hands_off_to: [engenheiro-dados, redator-laudos]
+    escalates_to: [avaliador-chief]
+  pesquisador-mercado:
+    collaborates_with: [inspetor-tecnico]
+    hands_off_to: [engenheiro-dados]
+    escalates_to: [avaliador-chief]
+  engenheiro-dados:
+    collaborates_with: [pesquisador-mercado]
+    hands_off_to: [redator-laudos]
+    escalates_to: [avaliador-chief]
+  redator-laudos:
+    collaborates_with: [engenheiro-dados]
+    hands_off_to: [revisor-adversarial]
+    escalates_to: [avaliador-chief]
+  revisor-adversarial:
+    collaborates_with: [redator-laudos]
+    escalates_to: [avaliador-chief]
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  norm_authority: "NBR 14.653-1 (procedimentos gerais), NBR 14.653-2 (imóveis urbanos), NBR 12.721 (custos), e grau de fundamentação/precisão exigido pelo fim (bancário, judicial, particular)"
+  conflict_resolution: "Quando especialistas divergem, o avaliador-chief (Roland) media com base no grau de fundamentação exigido e no fim da avaliação"
+  collaboration: "O chief pode designar especialista primário + secundário; o revisor-adversarial sempre roda antes da entrega final"
+
+settings:
+  activation:
+    prefix: "avaliacao-imoveis"
+    example: "@avaliacao-imoveis:pesquisador-mercado"

@@ -1,0 +1,65 @@
+name: avaliacao-imoveis
+version: "1.0.0"
+short-title: "Avaliação de Imóveis"
+description: "Squad de engenharia civil com 6 especialistas em avaliação imobiliária pelo método comparativo de dados de mercado (NBR 14.653) — líder avaliador, pesquisador de mercado, inspetor técnico com visão, redator de laudos, revisor adversarial e engenheiro de dados."
+author: "Synkra AIOS"
+license: MIT
+slashPrefix: "avaliacao-imoveis"
+
+lmas:
+  minVersion: "5.3.5"
+  type: squad
+
+tags:
+  - avaliacao-imoveis
+  - engenharia-civil
+  - nbr-14653
+  - metodo-comparativo
+  - laudo-avaliacao
+  - vistoria
+  - patologia
+  - mercado-imobiliario
+  - pericia
+  - homogeneizacao
+
+components:
+  agents:
+    # Tier 0 — Orquestração
+    - avaliador-chief.md
+    # Tier 1 — Levantamento de Campo & Mercado
+    - inspetor-tecnico.md
+    - pesquisador-mercado.md
+    # Tier 2 — Tratamento de Dados & Laudo
+    - engenheiro-dados.md
+    - redator-laudos.md
+    # Tier 3 — Defesa Adversarial
+    - revisor-adversarial.md
+  tasks:
+    # Orquestração (padrão chief-first)
+    - diagnose.md
+    - review.md
+    # Workflow profissional de avaliação
+    - conduct-inspection.md
+    - analyze-pathology-images.md
+    - conduct-market-research.md
+    - build-sample-dataset.md
+    - draft-laudo.md
+    - validate-norms.md
+    - adversarial-laudo-review.md
+    - export-sisdea.md
+  workflows:
+    - wf-property-evaluation.yaml
+  checklists:
+    - inspection-quality.md
+    - norms-compliance.md
+    - laudo-dod.md
+    - bank-defensibility.md
+
+config:
+  extends: extend
+
+# Tier Architecture (metadata — enriquece roteamento, não exigido pelo schema)
+# tier_0: Orquestração — avaliador-chief (Roland)
+# tier_1: Levantamento de Campo & Mercado — inspetor-tecnico (Sentinel), pesquisador-mercado (Trainman)
+# tier_2: Tratamento de Dados & Laudo — engenheiro-dados (Dozer), redator-laudos (Rama-Kandra)
+# tier_3: Defesa Adversarial — revisor-adversarial (Agent Johnson)
