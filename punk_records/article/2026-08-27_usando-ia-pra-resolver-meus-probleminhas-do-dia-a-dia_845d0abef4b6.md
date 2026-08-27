@@ -5,8 +5,8 @@ external_id: "845d0abef4b6"
 canonical_url: "https://akitaonrails.com/2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["personal-software", "local-ai", "distrobox", "ansible", "tauri", "terminal-ui", "docker", "local-first"]
 applicability:
   saas_pessoal: baixa
