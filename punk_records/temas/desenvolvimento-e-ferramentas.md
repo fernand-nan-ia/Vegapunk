@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [SerpApi — Google Search API: o que faz, localização, tipos de resultado, SLA e Legal Shield](../article/2026-08-27_serpapi-google-search-api-o-que-faz-localizacao-tipos-de-res_42c16f44651b.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api`
+
+Google Search API da SerpApi: resultados do Google em JSON com navegador real e CAPTCHA resolvido, localização por cidade, orgânicos + Maps/Local/Shopping/Knowledge Graph.
 
 ## [Registro.br — regras para registro de domínios .br (quem pode, DNS, categorias com documentação, tickets)](../article/2026-08-27_registro-br-regras-para-registro-de-dominios-br-quem-pode-dn_db9f7210abeb.md)
 2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `regras-de-registro` `dns` `saci-adm` `categorias-de-dominio`

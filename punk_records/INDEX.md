@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 12 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 12 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 13 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -31,6 +31,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [SerpApi — Google Search API: o que faz, localização, tipos de resultado, SLA e Legal Shield](article/2026-08-27_serpapi-google-search-api-o-que-faz-localizacao-tipos-de-res_42c16f44651b.md) · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api` · alta/media/media · —
 - 2026-08-27 · article · [Registro.br — regras para registro de domínios .br (quem pode, DNS, categorias com documentação, tickets)](article/2026-08-27_registro-br-regras-para-registro-de-dominios-br-quem-pode-dn_db9f7210abeb.md) · `registro-br` `dominio-br` `regras-de-registro` `dns` `saci-adm` `categorias-de-dominio` · media/alta/media · —
 - 2026-08-27 · article · [Registro.br — categorias de domínios .br (DPNs): quem pode registrar o quê](article/2026-08-27_registro-br-categorias-de-dominios-br-dpns-quem-pode-registr_703ff08ad8d5.md) · `registro-br` `dominio-br` `dpn` `categorias-de-dominio` `cnpj` `cpf` · media/alta/baixa · —
 - 2026-08-27 · article · [Hostinger Mail (Business Starter) — e-mail profissional: planos, cotas e Agentic Mail](article/2026-08-27_hostinger-mail-business-starter-e-mail-profissional-planos-c_0650c4397ec9.md) · `hostinger` `email-profissional` `hospedagem-de-email` `agentic-mail` `webhook` `precos` · media/alta/baixa · —
