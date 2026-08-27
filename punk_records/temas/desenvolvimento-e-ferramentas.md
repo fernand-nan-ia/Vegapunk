@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — criar uma chave de API: permissões, restrição por domínio e uso via variável de ambiente](../article/2026-08-27_resend-criar-uma-chave-de-api-permissoes-restricao-por-domin_d1be3efca69b.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas`
+
+Chave de API do Resend: crie com permissão 'Sending access' restrita ao domínio do app, guarde em variável de ambiente e passe ao cliente no código.
 
 ## [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](../article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
