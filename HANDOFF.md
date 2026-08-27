@@ -4,16 +4,18 @@
 
 Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
-1. **Fabriophase (bot Telegram)** — captura links (YouTube/TikTok/Instagram) → extrai → resume via OpenRouter → guarda no SQLite → projeta em `knowledge/` (o Punk Records, versionado) → commit automático. **E agora conversa**: os 7 Satélites respondem no Telegram em personagem (`/stella`, `/shaka`, …).
+1. **Fabriophase (bot Telegram)** — captura links (YouTube/TikTok/Instagram) → extrai → resume via OpenRouter → guarda no SQLite → projeta em `punk_records/` (o Punk Records, versionado) → commit automático. **E agora conversa**: os 7 Satélites respondem no Telegram em personagem (`/stella`, `/shaka`, …).
 2. **Labophase (Claude Code)** — os 7 Satélites como skills (`/vegapunk`, `/vegapunk:lilith`, …), cada um com personalidade completa **e** funções absorvidas do FURY (dev, qa, smith, pm, po, mifune…), autossuficientes em `squads/vegapunk/`.
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **41/41 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `1bfb2fb` = só commits `kb:` do bot — **todo o trabalho da sessão 3 está SEM COMMIT** (58 arquivos; ver "Git" abaixo).
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **41/41 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `fe63b19` (sessão 3 commitada e pushada, 116 arquivos) e FURY em `6ee82c0` (espelho do squad). Working tree limpa.
 
-## Git — o que commitar (Fernando faz; agentes nunca fazem)
+## Git — como commitar (Fernando faz; agentes nunca fazem)
 
-**Repo Vegapunk** (58 arquivos modificados/novos, tudo intencional):
+Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
+
+**Repo Vegapunk:**
 ```bash
 git add -A
 git commit -m "feat: Satélites com personalidade + funções do FURY (autossuficientes) + conversa no Telegram"
@@ -30,11 +32,20 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-1. **Commitar os dois repos** (acima). Sem isso, um `git checkout` acidental apaga a sessão inteira.
-2. **Testar um Satélite no Claude Code com função absorvida**: `/vegapunk:lilith` → `*verify src/vegapunk/chat.py`. Esperado: ela lê `squads/vegapunk/tasks/lilith-verify-delivery.md` e a checklist, entrega findings com Onde/Por quê/Como corrigir e um veredito (AFUNDOU / ÁGUA NO PORÃO / FLUTUA COM REMENDO / AGUENTOU). Se ela não achar a task, o problema é a diretiva `ABSORBED CAPABILITIES` (caminho absoluto).
-3. **Testar o ciclo completo numa feature pequena**: Edison `*prd` → Stella `*story` → Atlas `*develop` → Lilith `*verify` → Shaka `*gate` → Stella `*release` (ela deve PARAR e pedir "push" explícito).
-4. **Telegram**: mandar "oi" a `/york` e perguntar "quanto cobrar pelo meu SaaS?" — ela deve responder em personagem e dizer que `*pricing` completo é no Claude Code (no Telegram não há ferramentas).
-5. Se algum agente parecer "esquecer" a personalidade quando executa um comando absorvido: a causa provável é o tamanho do arquivo (290–400 linhas). Solução prevista: mover `examples` para um arquivo à parte lido na ativação — **não** cortar seções.
+1. **Testar um Satélite no Claude Code com função absorvida**: `/vegapunk:lilith` → `*verify src/vegapunk/chat.py`. Esperado: ela lê `squads/vegapunk/tasks/lilith-verify-delivery.md` e a checklist, entrega findings com Onde/Por quê/Como corrigir e um veredito (AFUNDOU / ÁGUA NO PORÃO / FLUTUA COM REMENDO / AGUENTOU). Se ela não achar a task, o problema é a diretiva `ABSORBED CAPABILITIES` (caminho absoluto).
+2. **Testar o ciclo completo numa feature pequena**: Edison `*prd` → Stella `*story` → Atlas `*develop` → Lilith `*verify` → Shaka `*gate` → Stella `*release` (ela deve PARAR e pedir "push" explícito).
+3. **Telegram**: mandar "oi" a `/york` e perguntar "quanto cobrar pelo meu SaaS?" — ela deve responder em personagem e dizer que `*pricing` completo é no Claude Code (no Telegram não há ferramentas).
+4. Se algum agente parecer "esquecer" a personalidade quando executa um comando absorvido: a causa provável é o tamanho do arquivo (290–400 linhas). Solução prevista: mover `examples` para um arquivo à parte lido na ativação — **não** cortar seções.
+
+## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
+
+Cada agente em `.claude/commands/vegapunk/agents/*.md` foi enriquecido (só adição) com o cânone das páginas `onepiece.fandom.com/wiki/Vegapunk[/Satélite]`: aparência real, habilidades, eventos do arco Egghead (traição da York, morte do Shaka, Pythagoras/Atlas/Shaka reconvergindo no corpo do Edison, Lilith fugindo com os Chapéus de Palha, transmissão final do Stella), relações canônicas, falas traduzidas. Seções tocadas: `persona_profile.canon/signature_phrases/vocabulary`, `mind`, `relationships`, `quirks`, `examples` (+2–4 diálogos cada). Duas correções factuais: Lilith (macacão rosa + capacete vermelho, não vestido laranja) e York (olhos água-marinha). 41/41 testes verdes; prompt do Telegram cresceu para ~20–23k chars por Satélite (era ~13k) → custo por mensagem sobe proporcionalmente.
+
+Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso completo do Vegapunk `_sAI-ganFAw`, transcritos via `extract.extract` no venv): a voz do discurso em Stella ("Alô, alô, teste, teste", "só a verdade confirmada", "dois pecados", "acredito na ciência"), a regra "Satélites sincronizam 1×/dia e não se encontram à toa" (Stella `council` raro), "não rotular bom/mau antes de compreender" (Shaka), lacuna marcada > lacuna preenchida (Pythagoras), Karakuri sem financiamento (York). Container estava parado (exit 127, sem log de erro — provável reinício do Docker/WSL) e foi subido com `docker compose up -d`.
+
+**Pasta renomeada: `knowledge/` → `punk_records/`** (tema; underscore em vez de espaço para não quebrar shell/Docker/links). Trocado em `config.py` (default), `.env`/`.env.example` (`VEGAPUNK_VAULT_DIR=punk_records`), teste, 7 agentes + `vegapunk.md`, plugin, `squads/vegapunk/`, README. Links do INDEX são relativos — não mudam. Container recriado com `--force-recreate`. A cópia global em `~/.claude/commands` ainda diz `knowledge/` até rodar o sync.
+
+**Pendente (bloqueado por permissão na sessão):** rodar `scripts/sync_agents.sh` (global + FURY + plugin), depois commitar Vegapunk e FURY.
 
 ## Os 7 Satélites — mapa completo
 
@@ -103,7 +114,7 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 ## Decisões fechadas (não reabrir)
 - Python único + polling + SQLite + Docker local. Sem Rails/Sidekiq/webhook/VPS.
 - Sem API da Anthropic direta (custo). OpenRouter via SDK `openai`, `response_format json_schema strict` + Pydantic com 1 retry (enrich); chat livre com `temperature=0.8`.
-- Vault `knowledge/` é projeção do SQLite; só `## Notas manuais` é editável à mão.
+- Vault `punk_records/` é projeção do SQLite; só `## Notas manuais` é editável à mão.
 - **Uma personalidade, dois lugares**: Telegram lê o mesmo `.md` do Claude Code. Nunca criar system prompt separado no bot.
 - **Absorção é aditiva**: nunca remover comandos/seções originais dos Satélites ao adicionar funções.
 - **Autossuficiência**: `squads/vegapunk/` não aponta para o FURY; o FURY recebe cópia (sync), não o contrário.
@@ -114,7 +125,7 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - TikTok "Unable to extract universal data for rehydration" é intermitente (~40%) → 6 tentativas com espera crescente.
 - YouTube legendas: só manuais (pt/en/es) ou auto ORIGINAL (`*-orig`); nunca `pt` de auto-caption (429 → 33 min de Whisper).
 - Whisper: `language_detection_segments=4`; áudio com <3 s de fala após VAD é pulado.
-- Item `extraction_failed`/`pending_manual` → `knowledge/_pending/`; colar texto em "Notas manuais" e `/reprocess <id>`.
+- Item `extraction_failed`/`pending_manual` → `punk_records/_pending/`; colar texto em "Notas manuais" e `/reprocess <id>`.
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
 - YAML dos agentes: `vocabulary: [..., "aguenta?"]` e `routing: - {need: "...", satellite: x}` precisam ficar assim (com aspas / flow mapping) — foram os dois pontos que quebravam o parser.
 - Texto sem link no Telegram agora **custa tokens** (vai ao modelo). Mensagem acidental = uma coxinha.

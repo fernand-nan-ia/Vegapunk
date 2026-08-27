@@ -34,4 +34,4 @@ Edison roda antes de entregar um PRD (`*prd`). Item ✗ → corrigir ou justific
 - [ ] Termos técnicos explicados na primeira vez (nível dev júnior)
 - [ ] Site de cliente: seção "O que o cliente aprova" existe
 - [ ] Termina com "Chame Atlas: *build {primeiro bloco Must}"
-- [ ] Salvo em `docs/prd/` do projeto alvo, nunca em `knowledge/`
+- [ ] Salvo em `docs/prd/` do projeto alvo, nunca em `punk_records/`

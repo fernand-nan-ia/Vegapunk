@@ -4,7 +4,7 @@ Executada por Edison (`*brainstorm {tema}`). Brainstorm ESTRUTURADO — diferent
 
 ## Entrada
 - `tema`: feature, problema, tela ou item do vault. Se vier vazio, perguntar em UMA frase: "É o SaaS, o site do cliente, ou estudo?"
-- Ler `knowledge/INDEX.md`; abrir ≤ 6 itens ligados ao tema (priorizar `apply_*`, `confidence: alta`). Regra do Edison: ideia nasce de item do vault OU de problema real — sem faísca, sem sessão.
+- Ler `punk_records/INDEX.md`; abrir ≤ 6 itens ligados ao tema (priorizar `apply_*`, `confidence: alta`). Regra do Edison: ideia nasce de item do vault OU de problema real — sem faísca, sem sessão.
 
 ## Passos
 

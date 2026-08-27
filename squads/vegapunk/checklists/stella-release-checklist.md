@@ -8,7 +8,7 @@ Rodar no `*release`, mostrar preenchida ao Fernando ANTES de pedir o "push". Ite
 | 2 | Shaka `*gate` = PASS, ou CONCERNS aceito pelo Fernando nesta sessão (citar a frase) | sim | |
 | 3 | `git status --short` só com arquivos desta release | sim | |
 | 4 | Nenhum `.env`, cookies, `.pem`, `.key` rastreado (`git ls-files`) | sim | |
-| 5 | `git grep` de padrões de chave (OpenRouter, Anthropic, GitHub, BotFather) = 0 fora de `knowledge/` | sim | |
+| 5 | `git grep` de padrões de chave (OpenRouter, Anthropic, GitHub, BotFather) = 0 fora de `punk_records/` | sim | |
 | 6 | `pytest -q` verde (N/N) — última linha colada | sim | |
 | 7 | Container reiniciado sem `ERROR` nos últimos 20 logs (se `src/` mudou) | sim | |
 | 8 | `docker compose build` lembrado se `pyproject.toml` mudou | não | |

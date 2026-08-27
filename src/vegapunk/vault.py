@@ -105,12 +105,21 @@ def write_item(item: dict) -> Path:
     return path
 
 
+def _rel_to_vault(vault_path: str) -> Path:
+    """Caminho relativo ao vault; tolera caminhos gravados com um vault_dir antigo (ex.: renomeação da pasta)."""
+    p = Path(vault_path)
+    try:
+        return p.relative_to(settings.vault_dir)
+    except ValueError:
+        return Path(*p.parts[-2:])  # <subpasta>/<arquivo>
+
+
 def write_index(items: list[dict]) -> Path:
     lines = ["# Vegapunk — Índice da memória", "", "Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.", ""]
     for it in items:
         e = json.loads(it["enrichment"])
         a = e["applicability"]
-        rel = Path(it["vault_path"]).relative_to(settings.vault_dir) if it.get("vault_path") else ""
+        rel = _rel_to_vault(it["vault_path"]) if it.get("vault_path") else ""
         lines.append(
             f"- {it['captured_at'][:10]} · {it['platform']} · [{e['title']}]({rel}) · "
             f"`{'` `'.join(e['tags'])}` · {a['saas_pessoal']}/{a['projeto_cliente']}/{a['estudo_geral']} · {it.get('triage_decision') or '—'}"

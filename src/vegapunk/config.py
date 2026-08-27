@@ -24,7 +24,7 @@ class Settings:
     git_push: bool = os.environ.get("VEGAPUNK_GIT_PUSH", "false").lower() == "true"
     cookies_file: str = os.environ.get("VEGAPUNK_COOKIES_FILE", "").split("#")[0].strip()
     db_path: Path = ROOT / os.environ.get("VEGAPUNK_DB_PATH", "data/vegapunk.db")
-    vault_dir: Path = ROOT / os.environ.get("VEGAPUNK_VAULT_DIR", "knowledge")
+    vault_dir: Path = ROOT / os.environ.get("VEGAPUNK_VAULT_DIR", "punk_records")
     tmp_dir: Path = ROOT / "tmp"
     max_transcript_chars: int = 60_000
 

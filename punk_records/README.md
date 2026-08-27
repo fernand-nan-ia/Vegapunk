@@ -1,4 +1,4 @@
-# knowledge/ — a memória do Vegapunk
+# punk_records/ — o Punk Records, a memória do Vegapunk
 
 Cada arquivo é um link que você mandou no Telegram, já extraído e resumido.
 Gerado automaticamente a partir do banco (`data/vegapunk.db`); não edite fora da seção `## Notas manuais`.

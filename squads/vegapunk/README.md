@@ -1,6 +1,6 @@
 # Squad Vegapunk — Dr. Vegapunk e os Satélites
 
-Personas de Egghead (One Piece) sobre a memória de conhecimento do Fernando. O bot Telegram captura links e escreve o **Punk Records** (`knowledge/`); os Satélites são as formas de *usar* essa memória dentro do Claude Code.
+Personas de Egghead (One Piece) sobre a memória de conhecimento do Fernando. O bot Telegram captura links e escreve o **Punk Records** (`punk_records/`); os Satélites são as formas de *usar* essa memória dentro do Claude Code.
 
 | Punk | Agente | Faceta | Chame quando… | Comando-chave |
 |---|---|---|---|---|
@@ -14,4 +14,4 @@ Personas de Egghead (One Piece) sobre a memória de conhecimento do Fernando. O 
 
 Invocação: `/vegapunk:agents:<id>` (ou `/vegapunk` para o Stella). Arquivos em `.claude/commands/vegapunk/agents/`.
 
-Mapa do cânone → sistema: Punk Records = `knowledge/` · cabeça que cresce = `data/vegapunk.db` · Labophase = skills · Fabriophase = bot/pipeline · sincronização diária = `git push` · Mother Flame = tokens.
+Mapa do cânone → sistema: Punk Records = `punk_records/` · cabeça que cresce = `data/vegapunk.db` · Labophase = skills · Fabriophase = bot/pipeline · sincronização diária = `git push` · Mother Flame = tokens.

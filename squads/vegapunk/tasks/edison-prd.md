@@ -10,7 +10,7 @@ Executada por Edison (`*prd {feature}`). Escreve um PRD ENXUTO usando `templates
 ## Entrada
 - `feature`: nome ou frase.
 - Contexto: `{saas|cliente}` — perguntar se não ficar claro.
-- Ler `knowledge/INDEX.md`; itens relacionados viram a seção "Fontes do Punk Records".
+- Ler `punk_records/INDEX.md`; itens relacionados viram a seção "Fontes do Punk Records".
 - Se for brownfield (já existe código): pedir ao Fernando o caminho do projeto e ler o README/estrutura antes de escrever — o PRD tem que citar o que JÁ existe para não propor de novo.
 
 ## Passos
@@ -37,7 +37,7 @@ Executada por Edison (`*prd {feature}`). Escreve um PRD ENXUTO usando `templates
 
 10. **Rodar `checklists/edison-prd.md`** antes de entregar. Corrigir o que falhar.
 
-11. **Entregar** em `docs/prd/{slug}.md` no projeto alvo (perguntar caminho se não souber; nunca em `knowledge/`). Terminar com: "Chame Atlas: *build {primeiro bloco Must}" e, se houver risco marcado, "Peça a Lilith: *attack {risco}".
+11. **Entregar** em `docs/prd/{slug}.md` no projeto alvo (perguntar caminho se não souber; nunca em `punk_records/`). Terminar com: "Chame Atlas: *build {primeiro bloco Must}" e, se houver risco marcado, "Peça a Lilith: *attack {risco}".
 
 ## Regras
 - Tamanho alvo: 80–150 linhas. PRD de 400 linhas é ideia demais.

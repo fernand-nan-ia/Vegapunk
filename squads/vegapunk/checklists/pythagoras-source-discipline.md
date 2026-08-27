@@ -3,7 +3,7 @@
 Aplicar a todo dossiê, pesquisa, planta ou ADR antes de entregar. Cada item é respondido com sim/não; um "não" bloqueia a entrega até ser resolvido ou declarado como lacuna.
 
 ## Origem
-- [ ] Toda afirmação sobre o vault cita `[título](caminho relativo a knowledge/)` e o arquivo foi aberto nesta sessão.
+- [ ] Toda afirmação sobre o vault cita `[título](caminho relativo a punk_records/)` e o arquivo foi aberto nesta sessão.
 - [ ] Toda afirmação externa tem URL e data de publicação (ou "sem data" explícito).
 - [ ] Fonte de vídeo, thread ou post sem autoria identificável está marcada `confidence: baixa`.
 - [ ] Nenhum número aparece sem fonte ao lado.

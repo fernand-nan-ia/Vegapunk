@@ -49,7 +49,7 @@ def test_chat_state_history_and_reply():
     assert chat.active(1) is None
     with patch("vegapunk.chat._client") as c, patch.object(satellites, "AGENTS_DIR", ROOT / ".claude/commands/vegapunk/agents"), \
          patch("vegapunk.satellites.settings") as st:
-        st.vault_dir = ROOT / "knowledge"
+        st.vault_dir = ROOT / "punk_records"
         c.return_value.chat.completions.create.return_value = _resp("Três navios afundados.")
         sat, text = chat.reply(1, "oi Lilith")          # ninguém ativo → Stella
         assert sat.id == "stella"

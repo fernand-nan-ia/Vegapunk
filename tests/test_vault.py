@@ -33,3 +33,11 @@ def test_index(tmp_path, monkeypatch):
     p = vault.write_item(ITEM)
     idx = vault.write_index([{**ITEM, "vault_path": str(p)}])
     assert "rails-security" in idx.read_text() and "alta/media/alta" in idx.read_text()
+
+
+def test_index_tolerates_stale_vault_dir(tmp_path, monkeypatch):
+    # caminho gravado no banco com a pasta antiga (ex.: knowledge/ → punk_records/) não pode derrubar o INDEX
+    monkeypatch.setattr(vault.settings, "vault_dir", tmp_path)
+    stale = "/app/knowledge/youtube/2026-08-25_x_6DJFl-g83dM.md"
+    idx = vault.write_index([{**ITEM, "vault_path": stale}]).read_text()
+    assert "](youtube/2026-08-25_x_6DJFl-g83dM.md)" in idx

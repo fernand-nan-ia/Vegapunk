@@ -5,7 +5,7 @@ Executada por Edison (`*wireframe {tela}`). Wireframe de baixa fidelidade em TEX
 ## Entrada
 - `tela`: nome ("login", "dashboard do cliente", "página de contato").
 - Contexto `{saas|cliente}` e dispositivo principal (perguntar: "celular primeiro ou PC?"; site de cliente costuma ser celular).
-- Ler itens de UI/UX/design no `knowledge/INDEX.md` (tags `ui`, `ux`, `design`, `landing`); citar os usados. Se o projeto já tem um `design-system.md` ou tokens, ler e respeitar — não inventar paleta nova.
+- Ler itens de UI/UX/design no `punk_records/INDEX.md` (tags `ui`, `ux`, `design`, `landing`); citar os usados. Se o projeto já tem um `design-system.md` ou tokens, ler e respeitar — não inventar paleta nova.
 
 ## Passos
 

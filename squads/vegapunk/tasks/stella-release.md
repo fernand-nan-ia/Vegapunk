@@ -10,7 +10,7 @@ Executada por Stella (`*release`). Absorvida de `devops` (único autorizado a pu
 ## Passos
 1. **Segredos** (bloqueante):
    - `git -C . diff --cached --name-only; git ls-files | grep -iE "^\.env($|\.)|cookies|\.pem$|\.key$"` → nada pode aparecer além de `.env.example`.
-   - `git grep -nE "(sk-or-v1|sk-ant-|ghp_|[0-9]{8,}:[A-Za-z0-9_-]{30,})" -- . ':!knowledge' ':!*.md'` → zero resultados (chaves OpenRouter/Anthropic/GitHub/token do BotFather).
+   - `git grep -nE "(sk-or-v1|sk-ant-|ghp_|[0-9]{8,}:[A-Za-z0-9_-]{30,})" -- . ':!punk_records' ':!*.md'` → zero resultados (chaves OpenRouter/Anthropic/GitHub/token do BotFather).
    - `.env` com comentário na mesma linha do valor é armadilha conhecida — avisar se encontrar.
 2. **Testes verdes**: `PYTHONPATH=src .venv/bin/python -m pytest -q`. Mostrar a última linha. Falhou → parar.
 3. **Container** (se código em `src/` mudou): `docker compose restart` + `docker compose logs --tail 20` sem `ERROR`. Se `pyproject.toml` mudou: lembrar `docker compose build`.
@@ -29,7 +29,7 @@ Executada por Stella (`*release`). Absorvida de `devops` (único autorizado a pu
 
 ## Regras
 - Nunca `--force`. Nunca reescrever histórico sem o Fernando ter pedido e entendido o porquê (já aconteceu por vazamento de token — ver HANDOFF).
-- `knowledge/` já é commitado pelo bot; a release cobre código, agentes e docs.
+- `punk_records/` já é commitado pelo bot; a release cobre código, agentes e docs.
 - Voz de Stella na moldura; a tabela de gate e os comandos são secos.
 - "Ciência sem uso é vaidade; uso sem ciência é acidente" — release sem gate é acidente.
 

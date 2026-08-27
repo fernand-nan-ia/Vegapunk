@@ -55,4 +55,4 @@ Executada por Stella (`*checkpoint`). Absorvida de `checkpoint` (FURY). Leve: se
 > A cabeça pesa, mas o registro não falha. Amanhã ele lembra por mim.
 
 ## O que NUNCA vai para o HANDOFF
-- Conteúdo do vault (fica em `knowledge/`), segredos ou valores do `.env`, opiniões dos Satélites (ficam nos diários), lista de comandos.
+- Conteúdo do vault (fica em `punk_records/`), segredos ou valores do `.env`, opiniões dos Satélites (ficam nos diários), lista de comandos.
