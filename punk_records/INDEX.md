@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-27 · article · [Guia Avançado de Scraping com Firecrawl: Ações de Navegador, PDFs e Crawling Assíncrono](article/2026-08-27_guia-avancado-de-scraping-com-firecrawl-acoes-de-navegador-p_3253b13d9210.md) · `firecrawl` `web-scraping` `web-crawling` `ocr-pdf` `browser-actions` `data-extraction` · alta/alta/alta · —
 - 2026-08-27 · article · [Introdução ao Firecrawl: API de Web Scraping, Busca e Interação para LLMs](article/2026-08-27_introducao-ao-firecrawl-api-de-web-scraping-busca-e-interaca_b0a8cad5a786.md) · `firecrawl` `web-scraping` `mcp` `llm-ready` `extracao-de-dados` `automacao-web` `agentic-ai` · alta/media/alta · archive
 - 2026-08-27 · article · [Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)](article/2026-08-27_lei-geral-de-protecao-de-dados-pessoais-lgpd-lei-no-13-709-2_738beed144b7.md) · `lgpd` `privacidade-de-dados` `conformidade-legal` `seguranca-da-informacao` `anpd` `privacy-by-design` · alta/alta/alta · apply_saas
 - 2026-08-27 · article · [Visão Geral e Fundamentos da Lei Geral de Proteção de Dados (LGPD)](article/2026-08-27_visao-geral-e-fundamentos-da-lei-geral-de-protecao-de-dados_f3323dda928b.md) · `lgpd` `privacidade` `protecao-de-dados` `compliance` `seguranca-da-informacao` `direito-digital` `governanca` · alta/alta/alta · apply_saas
