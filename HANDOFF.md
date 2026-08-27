@@ -54,6 +54,15 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - Release feita pela Stella após "push" do Fernando (gate PASS, 51/51). Duplicata/falhas agora falam na voz do dono do lote.
 - Ideia decorrente: "Notas manuais" e `/reprocess` continuam valendo para artigo com paywall (cai em ERR-004 → `_pending/`).
 
+## Sessão 4c (2026-08-27) — Satélites com ferramentas e comandos no Telegram (NÃO commitado)
+
+- `src/vegapunk/tools.py`: 5 ferramentas (busca, leitura de item, status/custo, git log do vault, diário). Só leitura + diário; nada executa código.
+- `chat.py`: `parse_command` (`*cmd args`); comando fora de `TELEGRAM_COMMANDS` ou `*help` → resposta pronta (zero tokens); senão o procedimento do `.md` entra como system message e roda o loop de tool-use (3 rodadas conversa / 8 comando). Tokens das rodadas somados em `chat_messages`.
+- `satellites.py`: `search_index` (título/tags ×3 + corpo ×1, radical), `TELEGRAM_COMMANDS`, `parse_command`, `command_info`, `procedure`.
+- Custo: um comando com 2–3 rodadas ≈ 20–30k tokens de entrada (persona ~7k + índice + itens lidos) ≈ US$ 0,01–0,02. York avisa.
+- Testes: 58/58 (`tests/test_tools.py` novo; loop mockado em `test_satellites.py`).
+- Ideias decorrentes: cache de prompt (persona é idêntica em toda chamada); `*council` no Telegram (6 chamadas — caro, ficou fora); resumo do histórico.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |

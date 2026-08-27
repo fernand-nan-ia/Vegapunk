@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.0 — 2026-08-27
+### Adicionado
+- Satélites com **ferramentas no Telegram** (`tools.py`, tool-use via OpenRouter): `search_punk_records`, `read_item`, `punk_records_status` (saúde + custo em US$), `recent_changes` (git log do vault), `write_diary`. Loop de até 3 rodadas em conversa e 8 em comando.
+- **Comandos `*` no Telegram**: whitelist por Satélite (`satellites.TELEGRAM_COMMANDS`) dos comandos que são raciocínio sobre o vault; o procedimento do `.md` vai ao prompt. `*help` e comandos que exigem código respondem sem token ("se faz no Claude Code").
+- Busca do vault por corpo dos itens com radical de palavra (`satellites.search_index`); prompt manda consultar antes de responder.
+- `CLAUDE.md` do projeto: consultar o Punk Records antes de responder; Satélite ativo por nome.
+### Gate: Shaka PASS · Verify: Lilith ✓ (loop, comandos e respostas prontas testados em produção) · Testes: 58/58
+
 ## v1.2.0 — 2026-08-27
 ### Adicionado
 - Artigos/páginas web como fonte (`platform: article`): extração com trafilatura (título, autor, data, Markdown), texto integral guardado no vault em `## Texto integral`, pasta `punk_records/article/`. Duplicata por hash da URL sem rastreadores (utm, fbclid…).

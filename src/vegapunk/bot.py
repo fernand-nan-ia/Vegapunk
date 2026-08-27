@@ -18,7 +18,9 @@ from .pipeline import Pipeline
 log = logging.getLogger("vegapunk.bot")
 
 HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram ou de artigos/páginas web e eu extraio, resumo e guardo no Punk Records (artigos vão por inteiro).\n"
-        "Texto sem link é conversa com o Satélite ativo (Stella por padrão).\n\n"
+        "Texto sem link é conversa com o Satélite ativo (Stella por padrão); eles consultam o Punk Records antes de responder.\n"
+        "<b>Comandos dos Satélites:</b> <code>*help</code> lista o que o Satélite ativo faz aqui; ex.: <code>/lilith *attack usar scraping do Maps</code>, "
+        "<code>/pythagoras *dossier precificação</code>, <code>/york *cost</code>.\n\n"
         "<b>Satélites:</b> /stella 🧠 · /shaka 🪖 · /lilith 🏴‍☠️ · /edison 💡 · /pythagoras 📚 · /atlas 🔧 · /york 🍩\n"
         "/quem — quem está acordado · /dormir — ninguém responde texto · /esquecer — apaga o histórico da conversa\n\n"
         "/stats — contagem por estado\n/pending — itens sem triagem ou com falha\n"

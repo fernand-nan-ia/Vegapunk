@@ -52,6 +52,11 @@ def speaker(sat: str) -> str:
     return f"{ICON[sat]} <b>{NAME[sat]}</b> · {PUNK[sat]}"
 
 
+def speaker_plain(sat: str) -> str:
+    """Mesmo cabeçalho, sem HTML (para respostas enviadas como texto puro)."""
+    return f"{ICON[sat]} {NAME[sat]} · {PUNK[sat]}"
+
+
 def capture_line(n: int, sat: str | None = None, rng: random.Random | None = None) -> str:
     rng = rng or random
     sat = sat or pick(rng)

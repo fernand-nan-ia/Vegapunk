@@ -45,6 +45,8 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 **Conversa (os Satélites no Telegram)**
 - `/stella`, `/shaka`, `/lilith`, `/edison`, `/pythagoras`, `/atlas`, `/york` acordam um personagem. Depois disso, qualquer texto sem link vai para o Satélite ativo, com histórico de conversa e acesso ao índice do Punk Records (ele anexa até 3 itens relevantes por palavras-chave).
 - Cada um responde **em personagem**, lembra o que você contou (diário próprio) e indica o colega certo quando a pergunta é de outra faceta.
+- **Eles têm ferramentas** (tool-use): buscar no Punk Records, ler um item inteiro, ver saúde/custo, ver o que entrou nos últimos dias e anotar no próprio diário o que você contou. Perguntou "o que eu tenho sobre X?" → o Satélite busca de verdade antes de responder.
+- **Comandos `*` no Telegram**: cada Satélite executa aqui os comandos que são "cabeça sobre o vault" — `*attack`, `*hype-check`, `*premortem` (Lilith), `*judge`, `*risk`, `*audit-triage` (Shaka), `*ideas`, `*apply`, `*combine`, `*brainstorm` (Edison), `*recall`, `*dossier`, `*compare`, `*gaps` (Pythagoras), `*explain`, `*plan` (Atlas), `*cost`, `*health`, `*stuck`, `*pricing`, `*roi`, `*offer`, `*budget` (York), `*ask`, `*sync`, `*premises` (Stella). Ex.: `/lilith *attack usar scraping do Maps`. `*help` lista o que o Satélite ativo faz por lá. Os comandos que exigem **mãos** (código, testes, arquivos do projeto, push) respondem "isso se faz no Claude Code" — sem gastar token.
 - `/conta` mostra quantos tokens cada Satélite consumiu.
 
 **Trabalho (Labophase — as skills no Claude Code)**
@@ -142,9 +144,10 @@ Há também um plugin em `plugin/vegapunk-satellites/` (mesmas skills no formato
 | `/quem` | quem está ativo neste chat |
 | `/dormir` | ninguém ativo (texto solto volta a ir para Stella) |
 | `/esquecer` | apaga o histórico de conversa do Satélite ativo |
+| `*help` · `*comando args` | comandos do Satélite ativo (ver lista acima); `/lilith *attack …` acorda e já executa |
 | `/conta` | tokens consumidos por Satélite |
 
-Limites no Telegram: os Satélites **não têm ferramentas** — não executam comandos, não editam o vault, não escrevem no diário (só leem). Quando a pergunta exige isso, eles dizem: *"isso se faz no Claude Code"*. O histórico enviado ao modelo é cortado nas 12 últimas mensagens. Links mandados no meio da conversa continuam sendo capturados normalmente.
+Limites no Telegram: as ferramentas são de **leitura** (vault, banco, git) mais o diário; os Satélites não executam código, não editam o vault, não rodam testes nem fazem push — para isso dizem *"isso se faz no Claude Code"*. Cada resposta pode usar até 3 rodadas de ferramentas em conversa livre e 8 num comando `*` (custo cresce proporcionalmente; York conta). O histórico enviado ao modelo é cortado nas 12 últimas mensagens. Links mandados no meio da conversa continuam sendo capturados normalmente.
 
 ---
 
@@ -464,7 +467,8 @@ src/vegapunk/
   extract.py      yt-dlp + VTT + faster-whisper + slides do TikTok + artigos (trafilatura)
   enrich.py       OpenRouter com JSON schema estrito; leitura de slides por visão
   satellites.py   persona .md → system prompt; seletor de itens do vault
-  chat.py         estado por chat, histórico, resposta
+  chat.py         estado por chat, histórico, comandos `*`, loop de ferramentas
+  tools.py        ferramentas dos Satélites no Telegram (busca/leitura do vault, status/custo, git log, diário)
   voices.py       falas dos Satélites para captura/duplicata/erro (templates, zero tokens)
   vault.py        Markdown + INDEX + git
   db.py           SQLite e transições de estado

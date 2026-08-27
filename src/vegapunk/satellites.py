@@ -68,8 +68,19 @@ def _keywords(text: str) -> set[str]:
     return {w for w in re.findall(r"[a-z0-9][a-z0-9\-]{2,}", _norm(text)) if w not in STOPWORDS}
 
 
-def pick_vault_items(message: str, vault_dir: Path | None = None) -> list[tuple[str, str]]:
-    """Itens do INDEX.md cujo título/tags batem com palavras da mensagem. Retorna [(caminho relativo, conteúdo)]."""
+def _stem(w: str) -> str:
+    """Radical grosseiro para pt-BR: 'seguranca'/'segurancas', 'harness'/'harnesses', 'precificar'/'precificacao' → mesmo prefixo."""
+    return w[:6] if len(w) > 6 else w
+
+
+def _hits(kws: set[str], text: str) -> int:
+    """Quantas palavras-chave distintas da pergunta aparecem no texto (por radical)."""
+    words = {_stem(w) for w in _keywords(text)}
+    return sum(1 for k in kws if _stem(k) in words)
+
+
+def search_index(message: str, vault_dir: Path | None = None, limit: int = MAX_ITEMS) -> list[tuple[int, str, str, str]]:
+    """Busca no Punk Records: título/tags (peso 3) + corpo (peso 1). Retorna [(score, título, caminho, corpo sem frontmatter)]."""
     vault_dir = vault_dir or settings.vault_dir
     index = vault_dir / "INDEX.md"
     if not index.exists():
@@ -82,17 +93,54 @@ def pick_vault_items(message: str, vault_dir: Path | None = None) -> list[tuple[
         m = re.search(r"\[([^\]]+)\]\(([^)]+)\)", line)
         if not m or line.lstrip().startswith("#"):
             continue
-        hay = _keywords(m.group(1) + " " + " ".join(re.findall(r"`([^`]+)`", line)))
-        score = sum(1 for k in kws if any(k in h or h in k for h in hay))
-        if score:
-            scored.append((score, m.group(1), m.group(2)))
-    scored.sort(key=lambda t: -t[0])
-    out = []
-    for _, title, rel in scored[:MAX_ITEMS]:
+        title, rel = m.group(1), m.group(2)
         p = vault_dir / rel
-        if p.exists():
-            out.append((rel, p.read_text(encoding="utf-8")[:MAX_ITEM_CHARS]))
-    return out
+        if not p.exists():
+            continue
+        head = title + " " + " ".join(re.findall(r"`([^`]+)`", line))
+        body = p.read_text(encoding="utf-8")
+        body = body.split("---", 2)[-1] if body.startswith("---") else body  # sem frontmatter
+        score = 3 * _hits(kws, head) + _hits(kws, body)
+        if score:
+            scored.append((score, title, rel, body))
+    scored.sort(key=lambda t: -t[0])
+    return scored[:limit]
+
+
+def pick_vault_items(message: str, vault_dir: Path | None = None) -> list[tuple[str, str]]:
+    """Até MAX_ITEMS itens relevantes à mensagem: [(caminho relativo, conteúdo cortado)]."""
+    return [(rel, body[:MAX_ITEM_CHARS]) for _, _, rel, body in search_index(message, vault_dir)]
+
+
+# ── comandos no Telegram ─────────────────────────────────────
+# Só o que é cabeça sobre o Punk Records. O que exige mãos (código, testes, arquivos do projeto, push) fica no Claude Code.
+TELEGRAM_COMMANDS = {
+    "stella": ["ask", "wake", "sync", "premises"],
+    "shaka": ["judge", "risk", "audit-triage", "versus"],
+    "lilith": ["attack", "hype-check", "premortem", "versus"],
+    "edison": ["ideas", "apply", "combine", "weekend", "brainstorm"],
+    "pythagoras": ["recall", "dossier", "compare", "gaps", "tags"],
+    "atlas": ["explain", "plan"],
+    "york": ["health", "cost", "stuck", "worth-it", "pricing", "offer", "roi", "budget"],
+}
+CMD_RE = re.compile(r"^\s*\*\s*([a-z][a-z0-9\-]*)\s*(.*)$", re.S | re.I)
+
+
+def parse_command(text: str) -> tuple[str, str] | None:
+    """'*attack usar scraping' → ('attack', 'usar scraping'); None se não começa com '*'."""
+    m = CMD_RE.match(text or "")
+    return (m.group(1).lower(), m.group(2).strip()) if m else None
+
+
+def command_info(sat: Satellite, name: str) -> dict | None:
+    for c in sat.data.get("commands", []):
+        if c.get("name") == name:
+            return c
+    return None
+
+
+def procedure(sat: Satellite, name: str) -> str:
+    return str(sat.data.get("procedures", {}).get(name, "")).strip()
 
 
 def build_system_prompt(sat: Satellite, *, diary_text: str = "", index_text: str = "") -> str:
@@ -104,8 +152,10 @@ def build_system_prompt(sat: Satellite, *, diary_text: str = "", index_text: str
         "no máximo listas curtas com '-' ). Mensagens curtas: conversa em 1–4 linhas; trabalho (análise, ideia, veredito) em até ~15 linhas.",
         "A definição completa da sua personalidade está no YAML abaixo. Siga `mind`, `relationships`, `conversation`, `quirks` "
         "e imite o registro de `examples`. Quando a mensagem não é uma tarefa, converse como pessoa; nunca liste comandos.",
-        "Você compartilha o Punk Records (a base de conhecimento do Fernando). Quando citar um item, use o título entre aspas; "
-        "NUNCA invente itens: se não estiver no índice ou nos itens anexados, diga que não há registro. "
+        "Você compartilha o Punk Records (a base de conhecimento do Fernando). Quando ele pergunta ou pede uma informação, "
+        "PRIMEIRO procure nos itens anexados (foram escolhidos por relevância à mensagem) e no índice; responda com o que está lá, "
+        "citando o título entre aspas, e só depois acrescente sua opinião. "
+        "NUNCA invente itens: se não estiver no índice nem nos anexados, diga que não há registro no Punk Records. "
         f"Os outros Satélites: {others}. Quando a pergunta é a especialidade de outro, dê sua opinião curta e indique-o "
         "(no Telegram o Fernando troca com /nome).",
         "Não há ferramentas: você não executa código, não lê arquivos além dos anexados, não edita o vault. "
