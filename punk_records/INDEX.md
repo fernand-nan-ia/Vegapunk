@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 3 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 2 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 1 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 2 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 2 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 📚 Carreira e aprendizado — 2 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -61,6 +61,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-08-27 · article · [Hostinger — preços de registro de domínios (página de TLDs)](article/2026-08-27_hostinger-precos-de-registro-de-dominios-pagina-de-tlds_c00ffe700d27.md) · `hostinger` `dominios` `registro-de-dominio` `precos` · media/alta/baixa · —
 - 2026-08-27 · article · [Hostinger — planos e preços de hospedagem de sites (Single, Premium, Unlimited, Cloud Startup)](article/2026-08-27_hostinger-planos-e-precos-de-hospedagem-de-sites-single-prem_021400311050.md) · `hostinger` `hospedagem-de-sites` `precos` `planos-de-hospedagem` `custos-de-infraestrutura` · alta/alta/media · —
 
 ## 🎨 Design e UX
