@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
+
+Automations = fluxos 'quando acontecer X, mande Y depois de Z': gatilho por evento (user.created), passos de condição, atraso, espera por evento, envio com template, atualização de contato; runs para monitorar; descadast
 
 ## [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](../article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `logs` `observabilidade` `debug` `api`
