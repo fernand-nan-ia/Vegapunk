@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 4 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 5 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 2 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 📚 Carreira e aprendizado — 2 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -67,6 +67,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-08-27 · article · [Registro.br — pagamento de domínio .br: períodos, formas de pagamento, cobrança e renovação](article/2026-08-27_registro-br-pagamento-de-dominio-br-periodos-formas-de-pagam_86d7d228ff5b.md) · `registro-br` `dominio-br` `pagamento` `renovacao-de-dominio` `boleto` `pix` · media/alta/media · —
 - 2026-08-27 · article · [Shopify — preços dos planos no Brasil (Basic, Grow, Advanced, Plus)](article/2026-08-27_shopify-precos-dos-planos-no-brasil-basic-grow-advanced-plus_8a02be816c1f.md) · `shopify` `e-commerce` `precos` `planos` `taxas-de-transacao` `loja-virtual` · baixa/alta/media · —
 - 2026-08-27 · article · [Hostinger — página inicial: planos de hospedagem com detalhes de recursos (Single, Premium, Unlimited, Cloud Startup)](article/2026-08-27_hostinger-pagina-inicial-planos-de-hospedagem-com-detalhes-d_8473df69a3b9.md) · `hostinger` `hospedagem-de-sites` `planos` `backups` `nodejs` `precos` · alta/alta/media · —
 - 2026-08-27 · article · [Hostinger — preços de registro de domínios (página de TLDs)](article/2026-08-27_hostinger-precos-de-registro-de-dominios-pagina-de-tlds_c00ffe700d27.md) · `hostinger` `dominios` `registro-de-dominio` `precos` · media/alta/baixa · —

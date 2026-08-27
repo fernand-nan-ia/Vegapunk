@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Registro.br — pagamento de domínio .br: períodos, formas de pagamento, cobrança e renovação](../article/2026-08-27_registro-br-pagamento-de-dominio-br-periodos-formas-de-pagam_86d7d228ff5b.md)
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `pagamento` `renovacao-de-dominio` `boleto` `pix`
+
+Como se paga um domínio .br: Pix, cartão (Visa/Master) ou boleto, ou via Provedor de Serviços; aviso 30 dias antes de expirar, nunca boleto por correio.
 
 ## [Shopify — preços dos planos no Brasil (Basic, Grow, Advanced, Plus)](../article/2026-08-27_shopify-precos-dos-planos-no-brasil-basic-grow-advanced-plus_8a02be816c1f.md)
 2026-08-27 · article · SaaS baixa · cliente alta · estudo media · triagem — · `shopify` `e-commerce` `precos` `planos` `taxas-de-transacao` `loja-virtual`
