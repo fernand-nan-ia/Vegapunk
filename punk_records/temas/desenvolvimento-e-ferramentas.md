@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Créditos de Parceiros no Firecrawl: Regras, Limites e Validade](../article/2026-08-27_creditos-de-parceiros-no-firecrawl-regras-limites-e-validade_56a11cb636cb.md)
+2026-08-27 · article · SaaS media · cliente baixa · estudo media · triagem — · `firecrawl` `web-scraping` `api` `crawler` `free-tier`
+
+Parceiros do Firecrawl oferecem 10.000 créditos gratuitos válidos por 3 meses para qualquer endpoint.
 
 ## [Rate Limits e Concorrência na API do Firecrawl](../article/2026-08-27_rate-limits-e-concorrencia-na-api-do-firecrawl_552467ff860e.md)
 2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem archive · `firecrawl` `web-scraping` `rate-limits` `api` `mcp` `llm-tools`
