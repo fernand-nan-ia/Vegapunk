@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Documentação de Cobrança e Créditos do Firecrawl](../article/2026-08-27_documentacao-de-cobranca-e-creditos-do-firecrawl_363d9da06ada.md)
+2026-08-27 · article · SaaS media · cliente alta · estudo alta · triagem — · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe`
+
+O Firecrawl adota faturamento por créditos em USD com custos cumulativos por endpoint e opções ativas.
 
 ## [Guia Avançado de Scraping com Firecrawl: Ações de Navegador, PDFs e Crawling Assíncrono](../article/2026-08-27_guia-avancado-de-scraping-com-firecrawl-acoes-de-navegador-p_3253b13d9210.md)
 2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem archive · `firecrawl` `web-scraping` `web-crawling` `ocr-pdf` `browser-actions` `data-extraction`
