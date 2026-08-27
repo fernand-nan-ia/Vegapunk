@@ -5,8 +5,8 @@ external_id: "f3323dda928b"
 canonical_url: "https://www.gov.br/mds/pt-br/acesso-a-informacao/governanca/integridade/campanhas/lgpd"
 channel: "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["lgpd", "privacidade", "protecao-de-dados", "compliance", "seguranca-da-informacao", "direito-digital", "governanca"]
 applicability:
   saas_pessoal: alta

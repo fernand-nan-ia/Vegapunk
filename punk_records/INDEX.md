@@ -2,7 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
-- 2026-08-27 · article · [Visão Geral e Fundamentos da Lei Geral de Proteção de Dados (LGPD)](article/2026-08-27_visao-geral-e-fundamentos-da-lei-geral-de-protecao-de-dados_f3323dda928b.md) · `lgpd` `privacidade` `protecao-de-dados` `compliance` `seguranca-da-informacao` `direito-digital` `governanca` · alta/alta/alta · —
+- 2026-08-27 · article · [Visão Geral e Fundamentos da Lei Geral de Proteção de Dados (LGPD)](article/2026-08-27_visao-geral-e-fundamentos-da-lei-geral-de-protecao-de-dados_f3323dda928b.md) · `lgpd` `privacidade` `protecao-de-dados` `compliance` `seguranca-da-informacao` `direito-digital` `governanca` · alta/alta/alta · apply_saas
 - 2026-08-27 · document · [Checklist de Vistoria de Obra Residencial](document/2026-08-27_checklist-de-vistoria-de-obra-residencial_aafe2c8a6c78.md) · `vistoria-de-obras` `construcao-civil` `checklist-tecnico` `controle-de-qualidade` · nenhuma/baixa/media · archive
 - 2026-08-27 · document · [Planilha de Orçamento de Obra e Serviços de Construção Civil](document/2026-08-27_planilha-de-orcamento-de-obra-e-servicos-de-construcao-civil_2491dc405e7d.md) · `orcamento-obra` `construcao-civil` `planilha-de-custos` `gestao-financeira` · nenhuma/nenhuma/baixa · archive
 - 2026-08-27 · article · [Hot take: Harness, Loop Engineering, Graph Engineering são Bullshit](article/2026-08-27_hot-take-harness-loop-engineering-graph-engineering-sao-bull_653ea1860c62.md) · `ai-agents` `prompt-caching` `extreme-programming` `benchmarking` `context-engineering` `software-architecture` · alta/alta/alta · archive
