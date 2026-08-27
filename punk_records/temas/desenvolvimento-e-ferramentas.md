@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 37 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 38 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](../article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing`
+
+Escreve pontos de dados de dentro do Worker e consulta por SQL; cardinalidade ilimitada — serve para analytics por cliente e cobrança por uso.
 
 ## [Cloudflare Workers — conectar a bancos de dados: D1, Postgres/MySQL via Hyperdrive, Supabase/Neon/PlanetScale, drivers serverless](../article/2026-08-27_cloudflare-workers-conectar-a-bancos-de-dados-d1-postgres-my_899edaad2043.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase`
