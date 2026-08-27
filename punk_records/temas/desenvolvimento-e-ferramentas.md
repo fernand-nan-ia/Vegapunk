@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — SDKs oficiais e da comunidade (Node, PHP, Laravel, Python, Ruby, Go, Java, Rust, .NET) e OpenAPI](../article/2026-08-27_resend-sdks-oficiais-e-da-comunidade-node-php-laravel-python_9624a934ad35.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `sdk` `python` `openapi` `bibliotecas`
+
+SDK oficial em 9 linguagens (Python incluído), 3 da comunidade e uma spec OpenAPI.
 
 ## [Resend — cabeçalhos customizados: X-Entity-Ref-ID (evitar agrupamento no Gmail) e List-Unsubscribe](../article/2026-08-27_resend-cabecalhos-customizados-x-entity-ref-id-evitar-agrupa_936685d222df.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional`
