@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Créditos de Parceiros no Firecrawl: Regras, Limites e Validade](../article/2026-08-27_creditos-de-parceiros-no-firecrawl-regras-limites-e-validade_56a11cb636cb.md)
-2026-08-27 · article · SaaS media · cliente baixa · estudo media · triagem — · `firecrawl` `web-scraping` `api` `crawler` `free-tier`
+2026-08-27 · article · SaaS media · cliente baixa · estudo media · triagem archive · `firecrawl` `web-scraping` `api` `crawler` `free-tier`
 
 Parceiros do Firecrawl oferecem 10.000 créditos gratuitos válidos por 3 meses para qualquer endpoint.
 

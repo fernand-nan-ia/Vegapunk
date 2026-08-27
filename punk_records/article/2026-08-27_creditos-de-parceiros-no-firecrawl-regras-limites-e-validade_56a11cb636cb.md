@@ -5,8 +5,8 @@ external_id: "56a11cb636cb"
 canonical_url: "https://docs.firecrawl.dev/partner-credits"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "api", "crawler", "free-tier"]
 applicability:
   saas_pessoal: media

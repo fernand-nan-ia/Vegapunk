@@ -27,7 +27,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
-- 2026-08-27 · article · [Créditos de Parceiros no Firecrawl: Regras, Limites e Validade](article/2026-08-27_creditos-de-parceiros-no-firecrawl-regras-limites-e-validade_56a11cb636cb.md) · `firecrawl` `web-scraping` `api` `crawler` `free-tier` · media/baixa/media · —
+- 2026-08-27 · article · [Créditos de Parceiros no Firecrawl: Regras, Limites e Validade](article/2026-08-27_creditos-de-parceiros-no-firecrawl-regras-limites-e-validade_56a11cb636cb.md) · `firecrawl` `web-scraping` `api` `crawler` `free-tier` · media/baixa/media · archive
 - 2026-08-27 · article · [Rate Limits e Concorrência na API do Firecrawl](article/2026-08-27_rate-limits-e-concorrencia-na-api-do-firecrawl_552467ff860e.md) · `firecrawl` `web-scraping` `rate-limits` `api` `mcp` `llm-tools` · media/media/alta · archive
 - 2026-08-27 · article · [Documentação de Cobrança e Créditos do Firecrawl](article/2026-08-27_documentacao-de-cobranca-e-creditos-do-firecrawl_363d9da06ada.md) · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe` · media/alta/alta · archive
 - 2026-08-27 · article · [Guia Avançado de Scraping com Firecrawl: Ações de Navegador, PDFs e Crawling Assíncrono](article/2026-08-27_guia-avancado-de-scraping-com-firecrawl-acoes-de-navegador-p_3253b13d9210.md) · `firecrawl` `web-scraping` `web-crawling` `ocr-pdf` `browser-actions` `data-extraction` · alta/alta/alta · archive
