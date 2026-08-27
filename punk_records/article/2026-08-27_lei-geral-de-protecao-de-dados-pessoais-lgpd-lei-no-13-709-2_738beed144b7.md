@@ -5,8 +5,8 @@ external_id: "738beed144b7"
 canonical_url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
 channel: "planalto.gov.br"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["lgpd", "privacidade-de-dados", "conformidade-legal", "seguranca-da-informacao", "anpd", "privacy-by-design"]
 applicability:
   saas_pessoal: alta
