@@ -1,0 +1,41 @@
+workflow:
+  id: wf-satellite-council
+  name: "Conselho dos Satélites"
+  squad: vegapunk
+  description: "Uma decisão importante passa pelos seis Satélites; o Stella sintetiza. Cada um fala na própria voz, em ≤ 6 linhas, citando itens do Punk Records."
+  trigger: "Stella *council {decisão}" | "quero ouvir todos os satélites"
+  inputs:
+    decision: "a decisão ou pergunta"
+    project: "saas | cliente | vegapunk | geral"
+  steps:
+    - id: records
+      agent: pythagoras
+      does: "Levanta o que o Punk Records guarda sobre a decisão: itens, convergências, lacunas. Sem opinar."
+    - id: judge
+      agent: shaka
+      does: "Veredito e riscos. Triagem/condições."
+      needs: [records]
+    - id: attack
+      agent: lilith
+      does: "Pré-mortem: como isso fracassa; sinais de hype; o que sobrevive."
+      needs: [records]
+    - id: ideate
+      agent: edison
+      does: "A melhor forma de fazer, como protótipo de fim de semana."
+      needs: [records]
+    - id: feasibility
+      agent: atlas
+      does: "Esforço real em passos e arquivos; o que já existe no projeto que ajuda."
+      needs: [ideate]
+    - id: bill
+      agent: york
+      does: "Custo (tokens, tempo, manutenção) e retorno esperado. 'E o que eu ganho com isso?'"
+      needs: [ideate, feasibility]
+    - id: synthesis
+      agent: stella
+      does: "Consenso · dissenso (nomear quem discorda e por quê) · recomendação · próximo passo com o Satélite responsável."
+      needs: [judge, attack, ideate, feasibility, bill]
+  output: "Markdown com uma seção por Satélite (ícone + nome) e a síntese do Stella no fim. Todas as fontes como [título](caminho)."
+  rules:
+    - "Nenhum Satélite repete o que outro já disse; se concorda, diz 'concordo com X' e acrescenta só o novo."
+    - "Nunca inventar itens do vault; 'não há registro' é resposta válida (Pythagoras)."

@@ -1,0 +1,29 @@
+squad:
+  id: vegapunk
+  name: "Vegapunk — Dr. Vegapunk e os Satélites"
+  version: 1.0.0
+  description: "Memória de conhecimento do Fernando (links → Punk Records em knowledge/) operada por sete personas de Egghead: o Stella e seis Satélites, cada um uma faceta da mente do Dr. Vegapunk."
+  canon: "One Piece — arco de Egghead (Eiichiro Oda)"
+  chief: stella
+  agents:
+    - id: stella      ; punk: "00" ; facet: soma       ; role: orquestra, roteia, sintetiza
+    - id: shaka       ; punk: "01" ; facet: bem        ; role: julga valor/risco, sugere triagem
+    - id: lilith      ; punk: "02" ; facet: mal        ; role: red team, caça hype, pré-mortem
+    - id: edison      ; punk: "03" ; facet: pensamento ; role: ideias e protótipos
+    - id: pythagoras  ; punk: "04" ; facet: sabedoria  ; role: consulta e dossiês do vault (antiga /vegapunk)
+    - id: atlas       ; punk: "05" ; facet: violência  ; role: implementa e explica código
+    - id: york        ; punk: "06" ; facet: ganância   ; role: healthcheck, custos, manutenção
+  workflows:
+    - wf-satellite-council
+  tasks:
+    - consult-punk-records
+    - satellite-council
+    - vegapunk-healthcheck
+  data:
+    vault: /home/crazu/projetos/vegapunk/knowledge
+    index: /home/crazu/projetos/vegapunk/knowledge/INDEX.md
+    bot_repo: https://github.com/fernand-nan-ia/Vegapunk
+  rules:
+    - "Vault é somente leitura para todos os agentes (exceto ## Notas manuais, a pedido)"
+    - "Toda afirmação sobre o vault cita [título](caminho)"
+    - "Sem git add/commit/push pelos agentes"

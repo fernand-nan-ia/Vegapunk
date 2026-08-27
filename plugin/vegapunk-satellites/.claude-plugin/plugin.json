@@ -1,0 +1,8 @@
+{
+  "name": "vegapunk",
+  "description": "Dr. Vegapunk e os seis Satélites de Egghead: personas para consultar, julgar, atacar, idear, construir e manter uma memória de conhecimento em Markdown (Punk Records).",
+  "version": "1.0.0",
+  "author": { "name": "Fernando (fernand-nan-ia)" },
+  "homepage": "https://github.com/fernand-nan-ia/Vegapunk",
+  "keywords": ["one-piece", "vegapunk", "knowledge-base", "personas", "telegram"]
+}

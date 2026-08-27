@@ -19,6 +19,10 @@ Correções da sessão 2: comentários inline no `.env` (ver Armadilhas), `--ext
 3. Avaliar qualidade do resumo do Gemini; ajustar `SYSTEM` em `src/vegapunk/enrich.py` se preciso. Trocar de modelo = mudar `VEGAPUNK_MODEL` no `.env` + `docker compose up -d --force-recreate`.
 4. Testar a skill `/vegapunk <pergunta>` de dentro de outro projeto (existe em `~/.claude/commands/`, FURY e aqui).
 
+## Satélites (sessão 2, noite)
+Squad `vegapunk` no padrão FURY: `.claude/commands/vegapunk/agents/{stella,shaka,lilith,edison,pythagoras,atlas,york}.md` (+ `workflows/wf-satellite-council.yaml`, `squads/vegapunk/`). `/vegapunk` = Stella. Espelhado em `~/.claude/commands` e no FURY. Plugin instalável em `plugin/vegapunk-satellites/` (skills/<id>/SKILL.md) + `.claude-plugin/marketplace.json` na raiz: `claude plugin marketplace add fernand-nan-ia/Vegapunk` → `/plugin install vegapunk@vegapunk-marketplace`. Ao editar um agente, editar em `.claude/commands/vegapunk/agents/` e regenerar as cópias (global, FURY, plugin) — a fonte da verdade é a do projeto.
+Próximo passo combinado: dar a voz do Stella ao bot do Telegram (prompt em `enrich.py` + mensagens em `pipeline.py`).
+
 ## Como operar
 
 | Ação | Comando |
