@@ -62,9 +62,9 @@ Fernando, o relatório descreve uma erosão técnica objetiva. Quando o regulado
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro -->
+<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
 
-# Entendendo a censura ao Discord e a ECA digital
+## Entendendo a censura ao Discord e a ECA digital
 
 *Se tem preguiça de ler, clique aqui pro TL;DR*
 
@@ -72,7 +72,7 @@ Em seis dias, o Brasil saiu de uma tragédia para um precedente regulatório que
 
 Entre um ponto e outro: a primeira-dama pedindo bloqueio da plataforma em cerimônia oficial, a AGU anunciando ação civil pública, e a primeira grande fiscalização da história da ECA Digital. Vamos por partes, porque o diabo mora exatamente nas partes.
 
-## O caso de Naviraí
+### O caso de Naviraí
 
 Os fatos, conforme a Polícia Civil do MS e o G1: Lívia, 13 anos, foi encontrada morta na manhã de 22 de julho no quintal de casa. Ela tirou a própria vida durante uma transmissão no Go Live, o recurso de vídeo ao vivo do Discord, sob pressão, humilhação e incentivo explícito de outros usuários. **Mais de 200 pessoas** assistiam.
 
@@ -80,7 +80,7 @@ A Operação Lívia, deflagrada em 4 de agosto com mandados em cinco estados, re
 
 Guarde dois detalhes pra depois: o grupo operava em mais de uma plataforma, e o Ministério da Justiça pediu à ANPD que investigasse Discord e Telegram. Só um dos dois foi sancionado.
 
-## Da primeira-dama à ANPD em seis dias
+### Da primeira-dama à ANPD em seis dias
 
 No dia 6 de agosto, na cerimônia de sanção do PL 3066/2025 (que endurece penas pra crimes digitais contra crianças — guarda esse projeto, que ele volta daqui a pouco), a primeira-dama Janja da Silva não deixou margem pra dúvida: *“a gente precisa bloquear o Discord no Brasil de qualquer forma… a gente precisa atuar junto ao Judiciário para tirar essa rede horrorosa do ar”*. O advogado-geral da União, Jorge Messias, anunciou ali mesmo uma ação civil pública pra tirar a plataforma do ar.
 
@@ -92,7 +92,7 @@ Sobre isso, um esclarecimento necessário. Circulou a versão de que o caso teri
 
 E aqui aparece a primeira pergunta incômoda: se o problema é sistêmico, por que a sanção é cirúrgica?
 
-## O que é a ECA Digital, a “Lei Felca”
+### O que é a ECA Digital, a “Lei Felca”
 
 A sanção só foi possível por causa de uma lei novinha em folha. Em agosto de 2025, o YouTuber Felca publicou o vídeo *“Adultização”*, expondo perfis que monetizavam conteúdo sexualizado com menores — o caso mais chocante sendo o do influenciador Hytalo Santos, preso naquele mês e condenado em fevereiro de 2026 a mais de 11 anos de prisão. O vídeo passou de 30 milhões de views, o Senado abriu uma CPI, e o Congresso correu pra aprovar em regime de urgência o PL 2628/2022, do senador Alessandro Vieira.
 
@@ -108,7 +108,7 @@ Esse último ponto já está em disputa: especialistas ouvidos pela Folha aponta
 
 Vale lembrar o contexto maior: em junho de 2025 o STF derrubou parcialmente o art. 19 do Marco Civil, acabando com a exigência de ordem judicial específica pra responsabilizar plataformas. Em junho de 2026 o mesmo tribunal consolidou um “dever de cuidado” com categorias de remoção imediata, incluindo indução a suicídio e crimes graves contra crianças. A ECA Digital legisla nessa direção. Em um ano, a responsabilidade das plataformas no Brasil deixou de ser reativa e virou proativa.
 
-## O oximoro: “pode criptografar, desde que a gente possa ler”
+### O oximoro: “pode criptografar, desde que a gente possa ler”
 
 Agora o miolo, que é o que me motivou a escrever. A justificativa oficial da ANPD pra suspender o Go Live merece ser lida com atenção: a arquitetura do Discord usa criptografia de ponta a ponta, **a plataforma não tem acesso ao conteúdo das transmissões ao vivo**, e portanto a moderação em tempo real é impossível. Na avaliação da ANPD, se a moderação depende de sistemas automatizados falhos e da denúncia de quem está na sala onde o crime acontece, o recurso é incompatível com a lei.
 
@@ -125,7 +125,7 @@ E tem ganchos na letra da lei esperando pra serem usados: o art. 18, III exige q
 **Pra guardar:** a ANPD não proibiu criptografia. Proibiu um recurso cuja criptografia impede a vigilância do conteúdo. O efeito prático é idêntico: no Brasil, criptografia de ponta a ponta agora é um risco regulatório.
 
 
-## ECA Digital contra LGPD
+### ECA Digital contra LGPD
 
 A ironia maior é institucional. Em 2018 aprovamos a LGPD pra proteger os dados pessoais do brasileiro, construída sobre princípios como minimização (colete só o necessário) e finalidade (use só pro que foi coletado). A ECA Digital, aplicada pela mesma agência, empurra na direção oposta.
 
@@ -135,7 +135,7 @@ E não é teoria. Uma carta aberta assinada por 438 cientistas de 32 países cha
 
 A lei tem salvaguardas no papel — o art. 13 limita o uso dos dados de verificação *“unicamente para essa finalidade”*, o art. 12 fala em minimização. Mas note o conflito de interesses estrutural: a ANPD acumula três mandatos — LGPD, ECA Digital e Marco Civil. **A agência que deveria defender a minimização dos seus dados é a mesma que agora exige que você os entregue.** Quando os dois papéis colidirem dentro do mesmo órgão, qual deles você acha que vence?
 
-## A outra lei do dia 6: usar VPN agora pesa na pena
+### A outra lei do dia 6: usar VPN agora pesa na pena
 
 Lembra que a cerimônia em que a primeira-dama pediu o bloqueio era a sanção de outra lei? Vale olhar o que mais foi sancionado naquele dia, porque tem um artigo do PL 3066/2025 que passou quase despercebido fora da bolha técnica: o **art. 226-A**, que aumenta a pena de um terço a dois terços pra crimes do ECA cometidos com uso de proxy, VPN ou qualquer técnica de mascaramento ou anonimização de IP.
 
@@ -154,7 +154,7 @@ E tem a ironia fina pra fechar: a carta dos 438 cientistas que mencionei na seç
 **Pra guardar:** ninguém proibiu VPN no Brasil. Criou-se algo mais sutil: o primeiro precedente penal em que usar uma ferramenta neutra de privacidade pesa contra você. Hoje agrava crime contra criança. O precedente, esse, não tem dono.
 
 
-## E os criminosos de verdade?
+### E os criminosos de verdade?
 
 Tem um contrassenso nessa história que quase ninguém comentou. A sanção contra o Discord caiu em seis dias, com potencial de R$ 50 milhões de multa por infração. E o que acontece com os autores do crime que motivou tudo isso?
 
@@ -173,7 +173,7 @@ Pra constar, o outro lado existe: a UNICEF se posicionou contra a redução, e o
 **Pra guardar:** seis dias pra sancionar a plataforma que milhões de inocentes usam; trinta anos sem mexer no teto de quem cometeu o crime.
 
 
-## Enquanto isso, no STF: o sigilo da fonte furado
+### Enquanto isso, no STF: o sigilo da fonte furado
 
 Se fosse só o Discord, dava pra chamar de acidente regulatório. Mas na mesma semana, outro pilar caiu.
 
@@ -192,7 +192,7 @@ A reação foi a de sempre, só que mais alta: Abraji, ANJ, ABERT, SIP internaci
 **Pra guardar:** o sigilo da fonte não foi revogado — foi contornado. Ninguém coagiu o jornalista; apreenderam os dispositivos dele e a fonte apareceu na perícia. A garantia segue existindo, mas só no papel.
 
 
-## Conclusão: estamos virando um país censurado?
+### Conclusão: estamos virando um país censurado?
 
 O padrão é o que me preocupa, não os episódios isolados. Em 2024, o X ficou um mês fora do ar no Brasil por ordem monocrática. Em 2025, caiu o art. 19 do Marco Civil e a responsabilidade das plataformas virou proativa. Em 2026, a ECA Digital entregou ao Executivo um pacote de obrigações tão intrusivo que, na primeira vez usado, derrubou um recurso criptografado no país inteiro — enquanto o líder de 14 anos do grupo que motivou a sanção enfrenta, no máximo, três anos de internação. E o sigilo da fonte jornalística foi furado por via forense, com aval do mesmo tribunal que o consagrou.
 
