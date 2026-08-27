@@ -6,19 +6,19 @@ E = {"title": "T <b>", "summary": "S & s.", "topics": [{"name": "RLS", "detail":
      "how_to_apply": "faça x", "confidence": "alta"}
 
 
-def test_sections_and_escaping():
+def test_escaping_and_compact_chat_format():
     t = format_summary(E)
-    assert "T &lt;b&gt;" in t and "S &amp; s." in t
-    assert "📚" in t and "RLS" in t and "🛠" in t and "Supabase" in t and "💡" in t and "#a_b" in t
+    assert "T &lt;b&gt;" in t and "S &amp; s." in t and "💡" in t and "#a_b" in t
+    # tópicos e ferramentas ficam no Punk Records, não no chat
+    assert "RLS" not in t and "Supabase" not in t and "Punk Records" in t
 
 
 def test_optional_sections_hidden():
-    e = {**E, "topics": [], "tools": [], "how_to_apply": ""}
-    t = format_summary(e)
-    assert "📚" not in t and "🛠" not in t and "💡" not in t
+    t = format_summary({**E, "how_to_apply": ""})
+    assert "💡" not in t
 
 
-def test_truncation_keeps_html_safe():
+def test_never_truncates_only_top3_points():
     e = {**E, "key_points": ["x" * 100] * 10, "summary": "y" * 3000}
-    t = format_summary(e, limit=1000)
-    assert len(t) <= 1002 and t.endswith("…")
+    t = format_summary(e)
+    assert "…" not in t and t.count("• ") == 3 and "y" * 3000 in t

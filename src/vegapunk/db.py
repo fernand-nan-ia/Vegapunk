@@ -73,6 +73,13 @@ class Database:
         self.conn.execute("PRAGMA journal_mode=WAL")
         self.conn.execute("PRAGMA foreign_keys=ON")
         self.conn.executescript(SCHEMA)
+        self._migrate()
+
+    def _migrate(self):
+        """Colunas adicionadas depois do schema inicial (ADD COLUMN é idempotente via checagem)."""
+        cols = {r[1] for r in self.conn.execute("PRAGMA table_info(knowledge_items)")}
+        if "satellite" not in cols:
+            self.conn.execute("ALTER TABLE knowledge_items ADD COLUMN satellite TEXT")
 
     @contextmanager
     def tx(self):
@@ -85,13 +92,13 @@ class Database:
             raise
 
     # ── CRUD ──────────────────────────────────────────────
-    def create_item(self, raw_url: str, chat_id: int, message_id: int) -> str:
+    def create_item(self, raw_url: str, chat_id: int, message_id: int, satellite: str | None = None) -> str:
         item_id, ts = str(uuid.uuid4()), now()
         with self.tx():
             self.conn.execute(
                 "INSERT INTO knowledge_items (id, raw_url, telegram_chat_id, telegram_message_id, captured_at,"
-                " last_shared_at, created_at, updated_at) VALUES (?,?,?,?,?,?,?,?)",
-                (item_id, raw_url, chat_id, message_id, ts, ts, ts, ts),
+                " last_shared_at, created_at, updated_at, satellite) VALUES (?,?,?,?,?,?,?,?,?)",
+                (item_id, raw_url, chat_id, message_id, ts, ts, ts, ts, satellite),
             )
             self._event(item_id, None, "captured", "webhook", {"raw_url": raw_url})
         return item_id

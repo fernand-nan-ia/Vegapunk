@@ -1,8 +1,9 @@
 """URL → (platform, external_id, canonical_url). Sem rede, exceto resolução de shortlinks."""
+import hashlib
 import re
 import urllib.request
 from dataclasses import dataclass
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 YT_ID = r"([A-Za-z0-9_-]{11})"
 YT_PATTERNS = [
@@ -18,7 +19,7 @@ URL_RE = re.compile(r"https?://[^\s<>\"')\]]+")
 
 @dataclass(frozen=True)
 class Normalized:
-    platform: str          # youtube | tiktok | instagram | other
+    platform: str          # youtube | tiktok | instagram | article | other
     external_id: str | None
     canonical_url: str
 
@@ -62,7 +63,7 @@ def normalize(url: str, resolver=resolve_redirect) -> Normalized:
                     break
         if vid and re.fullmatch(YT_ID, vid):
             return Normalized("youtube", vid, f"https://www.youtube.com/watch?v={vid}")
-        return Normalized("other", None, url)
+        return Normalized("other", None, url)   # canal/playlist: não é vídeo nem artigo
 
     if "tiktok" in host:
         if TT_SHORT.search(url):
@@ -80,4 +81,19 @@ def normalize(url: str, resolver=resolve_redirect) -> Normalized:
             return Normalized("instagram", code, f"https://www.instagram.com/{kind}/{code}/")
         return Normalized("other", None, url)
 
-    return Normalized("other", None, url)
+    return normalize_article(url)
+
+
+TRACKING_PARAMS = ("utm_", "fbclid", "gclid", "igsh", "si", "ref", "mc_cid", "mc_eid")
+
+
+def normalize_article(url: str) -> Normalized:
+    """Qualquer página http(s) que não é vídeo: artigo/post. id = hash da URL sem rastreadores."""
+    parsed = urlparse(url)
+    if parsed.scheme not in ("http", "https") or not parsed.hostname:
+        return Normalized("other", None, url)
+    query = [(k, v) for k, v in parse_qs(parsed.query, keep_blank_values=True).items()
+             if not k.lower().startswith(TRACKING_PARAMS)]
+    clean = urlunparse((parsed.scheme, parsed.hostname.lower() + (f":{parsed.port}" if parsed.port else ""),
+                        parsed.path.rstrip("/") or "/", "", urlencode(query, doseq=True), ""))
+    return Normalized("article", hashlib.sha1(clean.encode()).hexdigest()[:12], clean)

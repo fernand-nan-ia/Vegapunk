@@ -33,10 +33,11 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 ## O que o Vegapunk faz
 
 **Captura (Fabriophase — o bot Telegram)**
-- Recebe links de **YouTube, TikTok e Instagram** (vários por mensagem, inclusive encaminhados no meio de uma conversa).
-- Extrai o texto pelo melhor caminho disponível: legenda manual → legenda automática original → **áudio transcrito com Whisper** (faster-whisper local) → descrição/caption. Slideshows do TikTok são lidos imagem a imagem por um modelo com visão.
+- Recebe links de **YouTube, TikTok, Instagram e artigos/páginas web** (blogs, docs, notícias — vários por mensagem, inclusive encaminhados no meio de uma conversa).
+- Extrai o texto pelo melhor caminho disponível: legenda manual → legenda automática original → **áudio transcrito com Whisper** (faster-whisper local) → descrição/caption. Slideshows do TikTok são lidos imagem a imagem por um modelo com visão. **Artigos** são extraídos com trafilatura (título, autor, data, texto principal em Markdown) e guardados **por inteiro** no vault, além do resumo — fonte robusta merece o texto completo.
 - Resume, extrai pontos-chave, ferramentas citadas, "como aplicar", tags, tipo de conteúdo, **confiança** na fonte e **aplicabilidade** para cada projeto seu (SaaS pessoal / projeto de cliente / estudo geral) — tudo com saída estruturada (JSON schema estrito + validação Pydantic).
 - Grava no SQLite (fonte da verdade), projeta em Markdown em `punk_records/`, atualiza o `INDEX.md` e **faz commit automático**.
+- Cada resultado chega **na voz de um Satélite**: o modelo escolhe quem apresenta (legal/risco → Shaka, hype → Lilith, artigo denso → Pythagoras, tutorial → Atlas, produto → Edison, dinheiro → York, visão → Stella) e fecha com um comentário em personagem. As mensagens de captura, duplicata e erro também são deles ("🔧 Atlas: Passo 1 de 3: 2 links na bancada…").
 - Botões de **triagem** direto no Telegram: arquivar, aplicar no SaaS, aplicar no cliente, descartar.
 - Retenta falhas intermitentes (TikTok, 429), enfileira o que chegou enquanto estava offline, e manda para `_pending/` o que não conseguiu extrair — você cola o texto em "Notas manuais" e pede `/reprocess`.
 
@@ -64,7 +65,7 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 | **Sincronização diária** dos Satélites | `git push` (manual por padrão) |
 | **Stella** e os **seis Satélites** | 7 arquivos `.claude/commands/vegapunk/agents/<id>.md` — a única fonte da verdade de cada personagem |
 
-Stack: Python 3.12 · python-telegram-bot (polling) · yt-dlp + ffmpeg · faster-whisper · OpenRouter (SDK `openai`) · SQLite · Docker Compose. Sem webhook, sem VPS, sem fila externa: roda na sua máquina.
+Stack: Python 3.12 · python-telegram-bot (polling) · yt-dlp + ffmpeg · faster-whisper · trafilatura · OpenRouter (SDK `openai`) · SQLite · Docker Compose. Sem webhook, sem VPS, sem fila externa: roda na sua máquina.
 
 ---
 
@@ -122,7 +123,7 @@ Há também um plugin em `plugin/vegapunk-satellites/` (mesmas skills no formato
 
 | Você manda | O bot faz |
 |---|---|
-| um ou mais links | captura e processa cada um; responde com título, resumo curto e botões |
+| um ou mais links (vídeo ou artigo) | captura e processa cada um; responde na voz de um Satélite com resumo, tópicos, pontos-chave e botões |
 | botões 📁 🚀 👤 🗑 | triagem: **arquivar** / **aplicar no SaaS** / **aplicar no cliente** / **descartar** — atualiza o `.md`, o INDEX e commita |
 | `/pending` | itens sem triagem ou com falha de extração |
 | `/reprocess <id>` | tenta de novo (ou processa o texto que você colou em "Notas manuais" de um item em `_pending/`) |
@@ -377,8 +378,8 @@ Cada um tem um **diário** em `squads/vegapunk/memory/<id>.md` com o que você c
 ```
 punk_records/
   INDEX.md                    sumário: data · plataforma · [título](caminho) · tags · saas/cliente/estudo · triagem
-  youtube/  tiktok/  instagram/
-    2026-08-26_slug_id.md     um item por link
+  youtube/  tiktok/  instagram/  article/
+    2026-08-26_slug_id.md     um item por link (artigos trazem "## Texto integral")
   _pending/                   itens sem extração (cole o texto em "Notas manuais" e /reprocess <id>)
   README.md
 ```
@@ -390,13 +391,15 @@ Cada item:
 platform, channel, captured_at, status, triage, tags,
 applicability: {saas_pessoal, projeto_cliente, estudo_geral}   # nenhuma | baixa | média | alta
 confidence: alta | média | baixa
-content_type: transcript | caption | whisper | slides | manual
+content_type: transcript | caption | whisper | slides | article | manual
 ---
 ## Resumo
 ## Tópicos            (opcional)
 ## Ferramentas citadas (opcional)
 ## Pontos-chave
 ## Como aplicar
+## 📚 Pythagoras diz  (o comentário do Satélite que apresentou o item)
+## Texto integral     (só artigos: o texto completo da página, títulos rebaixados um nível)
 ## Notas manuais      ← a única seção editável à mão; vale mais que o resumo automático
 ```
 
@@ -456,10 +459,11 @@ plugin/vegapunk-satellites/             mesmas skills em formato de plugin
 src/vegapunk/
   bot.py          handlers do Telegram (links → pipeline; texto → chat; comandos)
   pipeline.py     normalize → extract → enrich → persist; retries; triagem; reprocess
-  extract.py      yt-dlp + VTT + faster-whisper + slides do TikTok
+  extract.py      yt-dlp + VTT + faster-whisper + slides do TikTok + artigos (trafilatura)
   enrich.py       OpenRouter com JSON schema estrito; leitura de slides por visão
   satellites.py   persona .md → system prompt; seletor de itens do vault
   chat.py         estado por chat, histórico, resposta
+  voices.py       falas dos Satélites para captura/duplicata/erro (templates, zero tokens)
   vault.py        Markdown + INDEX + git
   db.py           SQLite e transições de estado
   config.py       variáveis de ambiente

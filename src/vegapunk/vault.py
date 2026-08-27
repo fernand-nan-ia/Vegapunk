@@ -72,6 +72,13 @@ def render(item: dict, manual_notes: str = "") -> str:
         body += [f"- {p}" for p in e["key_points"]]
         if e.get("how_to_apply"):
             body += ["", "## Como aplicar", "", e["how_to_apply"]]
+        if e.get("satellite_take"):
+            from .voices import ICON, NAME
+            sat = e.get("satellite") or "stella"
+            body += ["", f"## {ICON[sat]} {NAME[sat]} diz", "", e["satellite_take"]]
+        if item.get("content_type") == "article" and item.get("raw_content"):
+            body += ["", "## Texto integral", "", "<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->", "",
+                     _demote_headings(item["raw_content"].strip())]
     else:
         body += ["_Pendente de extração automática. Cole o conteúdo em Notas manuais e rode `/reprocess`._"]
         if item.get("error_code"):
@@ -80,6 +87,15 @@ def render(item: dict, manual_notes: str = "") -> str:
     if manual_notes:
         body += [manual_notes.rstrip(), ""]
     return "\n".join(fm + body)
+
+
+def _demote_headings(md: str) -> str:
+    """Rebaixa os títulos do artigo para que o maior deles vire '###' — abaixo das seções do item (##)."""
+    levels = [len(m.group(1)) for m in re.finditer(r"^(#{1,6}) ", md, flags=re.M)]
+    if not levels:
+        return md
+    shift = max(0, 3 - min(levels))
+    return re.sub(r"^(#{1,6}) ", lambda m: "#" * min(6, len(m.group(1)) + shift) + " ", md, flags=re.M)
 
 
 def read_manual_notes(path: Path) -> str:

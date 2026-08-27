@@ -16,8 +16,15 @@ def test_instagram_reel():
     n = normalize("https://www.instagram.com/reel/C9abcDEF12/?igsh=xyz")
     assert (n.platform, n.external_id, n.canonical_url) == ("instagram", "C9abcDEF12", "https://www.instagram.com/reel/C9abcDEF12/")
 
-def test_other():
-    assert normalize("https://example.com/post").platform == "other"
+def test_article_any_web_page():
+    n = normalize("https://akitaonrails.com/2026/07/30/novo-llm-benchmark-refiz-todos-os-testes/?utm_source=tg&ref=x#topo")
+    assert n.platform == "article" and len(n.external_id) == 12
+    assert n.canonical_url == "https://akitaonrails.com/2026/07/30/novo-llm-benchmark-refiz-todos-os-testes"
+    # mesma página com/sem rastreadores => mesmo id (duplicata detectada)
+    assert normalize("https://akitaonrails.com/2026/07/30/novo-llm-benchmark-refiz-todos-os-testes").external_id == n.external_id
+
+def test_other_only_for_unparseable_video_urls():
+    assert normalize("https://www.youtube.com/@canal").platform == "other"
 
 def test_extract_urls_dedup():
     assert extract_urls("veja https://a.com/x, e https://a.com/x e https://b.com.") == ["https://a.com/x", "https://b.com"]

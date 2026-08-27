@@ -226,10 +226,37 @@ def extract_tiktok_slides(url: str, workdir: Path) -> Extracted:
 
 
 # ── Orquestração ──────────────────────────────────────────────
+def extract_article(url: str, html: str | None = None) -> Extracted:
+    """Página web (blog, documentação, notícia): texto principal em Markdown via trafilatura, com título/autor/data."""
+    import trafilatura
+    from urllib.parse import urlparse
+
+    if html is None:
+        html = trafilatura.fetch_url(url)
+        if not html:
+            raise ExtractionError("ERR-003", f"não consegui baixar a página: {url}", retryable=True)
+    meta = trafilatura.bare_extraction(html, url=url, with_metadata=True, include_comments=False, include_tables=True, favor_recall=True)
+    text = trafilatura.extract(html, url=url, output_format="markdown", include_comments=False,
+                               include_tables=True, include_links=False, favor_recall=True) or ""
+    text = text.strip()
+    if len(text) < 200:
+        raise ExtractionError("ERR-004", "página sem texto principal extraível (paywall, login ou só imagens?)", retryable=False)
+    md = getattr(meta, "as_dict", lambda: meta or {})() if meta is not None else {}
+    title = (md.get("title") or "").strip() or url
+    author = (md.get("author") or "").strip()
+    site = (md.get("sitename") or "").strip() or (urlparse(url).hostname or "")
+    channel = f"{author} · {site}" if author and site and author != site else (author or site)
+    date = (md.get("date") or "").strip()
+    description = ((md.get("description") or "").strip() + (f"\nPublicado em: {date}" if date else "")).strip()
+    return Extracted(title, channel, None, description[:3000], "article", text[: settings.max_transcript_chars], None)
+
+
 def extract(url: str, platform: str, item_id: str) -> Extracted:
     workdir = settings.tmp_dir / item_id
     workdir.mkdir(parents=True, exist_ok=True)
     try:
+        if platform == "article":
+            return extract_article(url)
         if platform == "tiktok" and TT_PHOTO.search(url):
             return extract_tiktok_slides(url, workdir)
         meta = fetch_metadata(url)

@@ -45,6 +45,15 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 
 **Release v1.1.0 feita pela Stella (teste do `*release`, 2026-08-27):** Lilith achou que o SQLite guardava `vault_path` absoluto com `/app/knowledge/` (21 linhas) → migrado (backup `data/vegapunk.db.bak-rename-20260827`) + `vault._rel_to_vault` tolerante + teste; 42/42; sync rodado; Vegapunk `40fec7d` tag `v1.1.0` pushado; FURY pushado. Sem pendências.
 
+## Sessão 4b (2026-08-27) — artigos + voz dos Satélites no bot (NÃO commitado ainda)
+
+- **Artigos**: `normalize.normalize_article` (qualquer http(s) não-vídeo → `article`, id = sha1 da URL sem utm/fbclid/ref/si), `extract.extract_article` (trafilatura, `output_format="markdown"`, `with_metadata=True`), `vault.render` adiciona `## Texto integral` (títulos rebaixados via `_demote_headings`). `other` sobrou só para canal/playlist de YouTube/TikTok/IG. Testados de verdade com 2 artigos do Akita (24k e 19k chars) — itens em `punk_records/article/`, commits `kb:` feitos pelo bot.
+- **Voz**: `enrich.Enrichment` ganhou `satellite` (enum) e `satellite_take` (2–3 frases); `VOICE_RULES` no system prompt decide quem apresenta. `pipeline.format_summary` abre com o ícone do Satélite e fecha com o take; `voices.py` tem as falas de captura (sorteio), duplicata, ERR-002/008/extração/enriquecimento/crash. Itens antigos sem `satellite` continuam renderizando (default stella).
+- **Ajustes do Fernando (mesma sessão)**: (1) fim do "…" — `bot.notify` envia em `chunks`, teclado na última parte; (2) quem anuncia apresenta — `voices.pick()` no `on_message`, coluna `satellite` (migração em `db._migrate`), `enrich` recebe "SATÉLITE JÁ ESCOLHIDO"; (3) cabeçalho `voices.speaker()` = `ícone Nome · Punk-NN`; (4) chat compacto (`brief`, 3 pontos-chave, sem tópicos/ferramentas) e vault completo (`summary` 4-10 frases). Itens antigos sem `brief` usam `summary`.
+- Imagem **rebuildada** (trafilatura) e container rodando. 50/50 testes.
+- Pendente: Fernando commitar/pushar (v1.2.0 no CHANGELOG está como "não lançado"), e rodar `*release` se quiser o fluxo completo.
+- Ideia decorrente: "Notas manuais" e `/reprocess` continuam valendo para artigo com paywall (cai em ERR-004 → `_pending/`).
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |

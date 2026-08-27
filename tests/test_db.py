@@ -34,3 +34,11 @@ def test_dedup_lookup():
     assert db.find_by_external("youtube", "abc")["id"] == a
     db.bump_shared(a)
     assert db.get(a)["shared_count"] == 2
+
+
+def test_satellite_column_migrated_and_stored(tmp_path):
+    from vegapunk.db import Database
+    db = Database(tmp_path / "x.db")
+    i = db.create_item("https://a.com/x", 1, 1, satellite="york")
+    assert db.get(i)["satellite"] == "york"
+    assert db.get(db.create_item("https://a.com/y", 1, 2))["satellite"] is None

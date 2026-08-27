@@ -7,7 +7,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, filters
 
-from . import satellites
+from . import satellites, voices
 from .chat import Chat
 from .config import settings
 from .db import Database
@@ -17,7 +17,7 @@ from .pipeline import Pipeline
 
 log = logging.getLogger("vegapunk.bot")
 
-HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok ou Instagram e eu extraio, resumo e guardo na memória.\n"
+HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram ou de artigos/páginas web e eu extraio, resumo e guardo no Punk Records (artigos vão por inteiro).\n"
         "Texto sem link é conversa com o Satélite ativo (Stella por padrão).\n\n"
         "<b>Satélites:</b> /stella 🧠 · /shaka 🪖 · /lilith 🏴‍☠️ · /edison 💡 · /pythagoras 📚 · /atlas 🔧 · /york 🍩\n"
         "/quem — quem está acordado · /dormir — ninguém responde texto · /esquecer — apaga o histórico da conversa\n\n"
@@ -48,10 +48,14 @@ def build_app(db: Database) -> Application:
     app = Application.builder().token(settings.bot_token).build()
 
     async def notify(chat_id: int, text: str, reply_to: int | None = None, item_id: str | None = None):
+        """Mensagens longas vão em partes (nunca cortadas); o teclado de triagem vai na última."""
         try:
-            await app.bot.send_message(chat_id, text, parse_mode=ParseMode.HTML,
-                                       reply_to_message_id=reply_to,
-                                       reply_markup=keyboard(item_id) if item_id else None)
+            parts = chunks(text)
+            for i, part in enumerate(parts):
+                last = i == len(parts) - 1
+                await app.bot.send_message(chat_id, part, parse_mode=ParseMode.HTML,
+                                           reply_to_message_id=reply_to if i == 0 else None,
+                                           reply_markup=keyboard(item_id) if (item_id and last) else None)
         except Exception:
             log.exception("falha ao notificar chat=%s", chat_id)
 
@@ -171,10 +175,11 @@ def build_app(db: Database) -> Application:
         if not urls:
             await talk(update, msg.text or msg.caption or "")
             return
+        sat = voices.pick()  # quem anuncia é quem apresenta o resultado
         for url in urls:
-            item_id = db.create_item(url, msg.chat_id, msg.message_id)
+            item_id = db.create_item(url, msg.chat_id, msg.message_id, satellite=sat)
             asyncio.create_task(pipeline.run(item_id))
-        await msg.reply_text(f"✅ Capturado ({len(urls)}). Processando...")
+        await msg.reply_text(voices.capture_line(len(urls), sat=sat), parse_mode=ParseMode.HTML)
 
     async def on_callback(update: Update, _):
         q = update.callback_query

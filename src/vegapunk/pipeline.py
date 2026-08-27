@@ -4,7 +4,7 @@ import json
 import logging
 import time
 
-from . import vault
+from . import vault, voices
 from .db import Database
 from .enrich import EnrichmentError, enrich
 from .extract import ExtractionError, extract
@@ -20,32 +20,24 @@ MAX_RETRIES = 6
 LEVEL_ICON = {"alta": "🟢", "media": "🟡", "baixa": "🟠", "nenhuma": "⚪"}
 
 
-def format_summary(e: dict, limit: int = 3900) -> str:
-    """Mensagem Telegram (HTML) do resumo enriquecido. Seções opcionais só aparecem se houver conteúdo."""
+def format_summary(e: dict, sat: str | None = None) -> str:
+    """Mensagem Telegram (HTML) compacta, na voz do Satélite. O detalhe completo fica no Punk Records."""
     a = e["applicability"]
-    parts = [f"🧠 <b>{esc(e['title'])}</b>", "", esc(e["summary"])]
-    if e.get("topics"):
-        parts += ["", "📚 <b>Tópicos</b>"]
-        parts += [f"• <b>{esc(t['name'])}</b> — {esc(t['detail'])}" for t in e["topics"]]
-    if e.get("tools"):
-        parts += ["", "🛠 <b>Ferramentas citadas</b>"]
-        parts += [f"• <b>{esc(t['name'])}</b>: {esc(t['role'])}" for t in e["tools"]]
+    sat = sat if sat in voices.ICON else (e.get("satellite") if e.get("satellite") in voices.ICON else "stella")
+    parts = [f"{voices.speaker(sat)} apresenta:", "", f"<b>{esc(e['title'])}</b>", "", esc(e.get("brief") or e["summary"])]
     if e.get("key_points"):
-        parts += ["", "✅ <b>Pontos-chave</b>"]
-        parts += [f"• {esc(p)}" for p in e["key_points"][:6]]
+        parts += ["", "✅ <b>Pontos-chave</b>"] + [f"• {esc(p)}" for p in e["key_points"][:3]]
     if e.get("how_to_apply"):
         parts += ["", f"💡 <b>Como aplicar:</b> {esc(e['how_to_apply'])}"]
     parts += ["",
               f"📌 SaaS {LEVEL_ICON.get(a['saas_pessoal'], '')} {a['saas_pessoal']} · "
               f"Cliente {LEVEL_ICON.get(a['projeto_cliente'], '')} {a['projeto_cliente']} · "
-              f"Estudo {LEVEL_ICON.get(a['estudo_geral'], '')} {a['estudo_geral']}",
-              f"🎯 Confiança: {e['confidence']}",
+              f"Estudo {LEVEL_ICON.get(a['estudo_geral'], '')} {a['estudo_geral']} · 🎯 {e['confidence']}",
               f"🏷 {esc(' '.join('#' + t.replace('-', '_') for t in e['tags']))}"]
-    text = "\n".join(parts)
-    if len(text) > limit:
-        # corta no fim de uma linha para não quebrar tag HTML
-        text = text[:limit].rsplit("\n", 1)[0] + "\n…"
-    return text
+    if e.get("satellite_take"):
+        parts += ["", f"{voices.ICON[sat]} <b>{voices.NAME[sat]}:</b> <i>{esc(e['satellite_take'])}</i>"]
+    parts += ["", "📄 <i>Tópicos, ferramentas e o texto completo estão no Punk Records.</i>"]
+    return "\n".join(parts)
 
 
 class Pipeline:
@@ -73,7 +65,7 @@ class Pipeline:
         except Exception:
             log.exception("pipeline falhou item=%s", item_id)
             item = self.db.get(item_id)
-            await self.notify(item["telegram_chat_id"], f"💥 Erro inesperado no item {item_id[:8]}. Veja os logs.")
+            await self.notify(item["telegram_chat_id"], voices.CRASH.format(id=item_id[:8]))
 
     # ── etapas ──────────────────────────────────────────────
     async def step_normalize(self, item_id: str) -> str | None:
@@ -86,7 +78,7 @@ class Pipeline:
                 self.db.transition_to(item_id, "duplicate", "normalize_job", {"of": dup["id"]},
                                       platform=n.platform, external_id=None, canonical_url=n.canonical_url)
                 await self.notify(item["telegram_chat_id"],
-                                  f"♻️ Já capturado em {dup['captured_at'][:10]} (x{dup['shared_count'] + 1}). Status: {dup['status']}.",
+                                  voices.duplicate_line(dup["captured_at"][:10], dup["shared_count"] + 1, dup["status"], sat=item["satellite"]),
                                   reply_to=item["telegram_message_id"])
                 return None
         self.db.transition_to(item_id, "normalized", "normalize_job", {},
@@ -127,12 +119,8 @@ class Pipeline:
         path = await asyncio.to_thread(vault.write_item, dict(item))
         self.db.update(item_id, vault_path=str(path))
         await asyncio.to_thread(vault.git_commit, f"kb: pending {item['platform']}/{item['external_id']}")
-        msg = ("📥 Salvo como pendente (plataforma não suportada)." if code == "ERR-002"
-               else f"📷 Post de imagens (slideshow/carrossel) — não tem áudio nem vídeo para eu transcrever. "
-                    f"Link salvo em _pending/. Se quiser guardar, cole o texto das imagens em 'Notas manuais' "
-                    f"e mande /reprocess {item_id[:8]}." if code == "ERR-008"
-               else f"⚠️ Não consegui extrair o conteúdo ({code}). Link salvo em _pending/. "
-                    f"Cole o texto em 'Notas manuais' e mande /reprocess {item_id[:8]}.")
+        kind = "unsupported" if code == "ERR-002" else "slides" if code == "ERR-008" else "extract"
+        msg = voices.failure_line(kind, item_id[:8], code, sat=item["satellite"])
         await self.notify(item["telegram_chat_id"], msg, reply_to=item["telegram_message_id"])
         return False
 
@@ -153,8 +141,7 @@ class Pipeline:
                     continue
                 self.db.transition_to(item_id, "enrichment_failed", "enrich_job", {"error": e.code},
                                       error_code=e.code, error_detail=e.detail)
-                await self.notify(item["telegram_chat_id"],
-                                  f"⚠️ Extraí o conteúdo mas o resumo falhou ({e.code}). Mande /reprocess {item_id[:8]} depois.",
+                await self.notify(item["telegram_chat_id"], voices.failure_line("enrich", item_id[:8], e.code, sat=item.get("satellite")),
                                   reply_to=item["telegram_message_id"])
                 return False
         return False
@@ -165,7 +152,7 @@ class Pipeline:
         self.db.update(item_id, vault_path=str(path))
         await asyncio.to_thread(vault.write_index, [dict(r) for r in self.db.all_with_enrichment()])
         await asyncio.to_thread(vault.git_commit, f"kb: add {item['platform']}/{item['external_id']}")
-        text = format_summary(json.loads(item["enrichment"]))
+        text = format_summary(json.loads(item["enrichment"]), item.get("satellite"))
         await self.notify(item["telegram_chat_id"], text, reply_to=item["telegram_message_id"], item_id=item_id)
 
     # ── triagem ─────────────────────────────────────────────
