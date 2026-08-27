@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 10 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 2 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 3 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 2 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 2 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -60,6 +60,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-08-27 · article · [Hostinger Reach — e-mail marketing com IA: modelo de cobrança e recursos](article/2026-08-27_hostinger-reach-e-mail-marketing-com-ia-modelo-de-cobranca-e_ac7e6223fff2.md) · `hostinger` `email-marketing` `reach` `lgpd` `automacao-de-marketing` `precos` · baixa/media/baixa · —
 - 2026-08-26 · tiktok · [Estratégia de Prospecção Ativa Internacional para Criação de Sites](tiktok/2026-08-26_estrategia-de-prospeccao-ativa-internacional-para-criacao-de_7678376368752692487.md) · `cold-outreach` `lead-generation` `google-maps-scraping` `freelance-sales` `web-development-sales` · baixa/alta/media · apply_client
 - 2026-08-26 · tiktok · [Checklist de 7 configurações essenciais para landing pages feitas com IA](tiktok/2026-08-26_checklist-de-7-configuracoes-essenciais-para-landing-pages-f_7671505270237023509.md) · `landing-page-cro` `seo-tecnico` `json-ld` `web-performance` `google-analytics` `microsoft-clarity` `schema-markup` · alta/alta/media · archive
 
