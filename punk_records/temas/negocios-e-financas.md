@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [SerpApi — planos e preços: cotas de buscas, throughput, ZeroTrace e Legal Shield](../article/2026-08-27_serpapi-planos-e-precos-cotas-de-buscas-throughput-zerotrace_dc6e4e909b0a.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `precos` `api-de-busca` `serp` `web-scraping` `planos`
+
+SerpApi cobra por buscas bem-sucedidas: grátis 250/mês; planos de 1.000, 5.000 e 30.000/mês (valores em US$ não vieram no texto).
 
 ## [Registro.br — pagamento de domínio .br: períodos, formas de pagamento, cobrança e renovação](../article/2026-08-27_registro-br-pagamento-de-dominio-br-periodos-formas-de-pagam_86d7d228ff5b.md)
 2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `pagamento` `renovacao-de-dominio` `boleto` `pix`
