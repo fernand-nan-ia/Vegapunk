@@ -1,6 +1,6 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
@@ -21,6 +21,11 @@ Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, 
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas`
 
 Chave de API do Resend: crie com permissão 'Sending access' restrita ao domínio do app, guarde em variável de ambiente e passe ao cliente no código.
+
+## [Resend — connections: definindo as ligações entre passos de uma automação via API (exemplos em 6 linguagens)](../article/2026-08-27_resend-connections-definindo-as-ligacoes-entre-passos-de-uma_307fcd951e99.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `api` `infra-como-codigo` `python`
+
+Ao criar automações por código, os passos viram nós com chave e as connections ligam from → to.
 
 ## [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](../article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
