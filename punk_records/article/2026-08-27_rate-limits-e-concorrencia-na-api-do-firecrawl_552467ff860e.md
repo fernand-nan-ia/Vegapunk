@@ -5,8 +5,8 @@ external_id: "552467ff860e"
 canonical_url: "https://docs.firecrawl.dev/rate-limits"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "rate-limits", "api", "mcp", "llm-tools"]
 applicability:
   saas_pessoal: media
