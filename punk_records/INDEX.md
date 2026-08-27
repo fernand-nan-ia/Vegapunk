@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 12 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 9 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 10 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 2 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -31,6 +31,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Hostinger Mail (Business Starter) — e-mail profissional: planos, cotas e Agentic Mail](article/2026-08-27_hostinger-mail-business-starter-e-mail-profissional-planos-c_0650c4397ec9.md) · `hostinger` `email-profissional` `hospedagem-de-email` `agentic-mail` `webhook` `precos` · media/alta/baixa · —
 - 2026-08-27 · article · [Hostinger VPS KVM — planos (KVM 1 a KVM 8), preços e VPS gerenciado por IA](article/2026-08-27_hostinger-vps-kvm-planos-kvm-1-a-kvm-8-precos-e-vps-gerencia_622ffe58fa4e.md) · `hostinger` `vps` `kvm` `precos` `docker` `n8n` `mcp` `infraestrutura` · alta/media/media · —
 - 2026-08-27 · article · [Documentação do Endpoint /scrape da Firecrawl](article/2026-08-27_documentacao-do-endpoint-scrape-da-firecrawl_ae119d362098.md) · `firecrawl` `web-scraping` `llm-tools` `data-extraction` `json-schema` `api` · alta/media/alta · archive
 - 2026-08-27 · article · [Créditos de Parceiros no Firecrawl: Regras, Limites e Validade](article/2026-08-27_creditos-de-parceiros-no-firecrawl-regras-limites-e-validade_56a11cb636cb.md) · `firecrawl` `web-scraping` `api` `crawler` `free-tier` · media/baixa/media · archive

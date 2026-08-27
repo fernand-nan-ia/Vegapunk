@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Hostinger Mail (Business Starter) — e-mail profissional: planos, cotas e Agentic Mail](../article/2026-08-27_hostinger-mail-business-starter-e-mail-profissional-planos-c_0650c4397ec9.md)
+2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem — · `hostinger` `email-profissional` `hospedagem-de-email` `agentic-mail` `webhook` `precos`
+
+E-mail profissional com domínio próprio: 5/20/50 GB por conta, a partir de R$ 2,49/mês (tabela completa não renderizou).
 
 ## [Hostinger VPS KVM — planos (KVM 1 a KVM 8), preços e VPS gerenciado por IA](../article/2026-08-27_hostinger-vps-kvm-planos-kvm-1-a-kvm-8-precos-e-vps-gerencia_622ffe58fa4e.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `hostinger` `vps` `kvm` `precos` `docker` `n8n`
