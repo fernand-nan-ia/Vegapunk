@@ -1,6 +1,6 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
@@ -16,6 +16,11 @@ Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtr
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
 
 Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, cole os registros DKIM/SPF exatamente no DNS, espere a verificação (15 min a 72 h) e depois configure DMARC.
+
+## [Resend — gerenciar domínios: status de verificação, registros DNS, configuração e exclusão](../article/2026-08-27_resend-gerenciar-dominios-status-de-verificacao-registros-dn_91fcf31821fd.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `status` `dkim` `spf`
+
+Status de domínio no Resend (pending, verified, partially_*, failed, temporary_failure) e o que cada um significa; registros DKIM/SPF/DMARC na aba Records; TLS e tracking por domínio.
 
 ## [Resend — webhooks: receber eventos de e-mail em tempo real, testar localmente, retentativas e IPs](../article/2026-08-27_resend-webhooks-receber-eventos-de-e-mail-em-tempo-real-test_0fd780231949.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `webhooks` `eventos-de-email` `bounce` `inbound` `observabilidade`
