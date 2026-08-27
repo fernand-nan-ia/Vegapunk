@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — open e click tracking: subdomínio de tracking, CNAME, como funciona e armadilhas](../article/2026-08-27_resend-open-e-click-tracking-subdominio-de-tracking-cname-co_dacf594cf225.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `tracking` `open-rate` `click-tracking` `dns` `cname`
+
+Tracking exige um subdomínio próprio (CNAME) para reescrever links e servir o pixel; uma vez criado só pode ser trocado, nunca removido; não apague o CNAME antigo.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
