@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — visão geral do envio de e-mails transacionais (recursos e formas de integrar)](../article/2026-08-27_resend-visao-geral-do-envio-de-e-mails-transacionais-recurso_51f277b15710.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `email-transacional` `api` `sdk` `smtp` `mcp`
+
+Índice do que o Resend faz para e-mail transacional: envio simples ou em lote, agendamento, anexos, cabeçalhos, idempotência, logs e métricas — via SDK, API, CLI, MCP ou SMTP.
 
 ## [SerpApi — referência da Google Search Engine Results API: parâmetros, tipos de busca e estrutura do JSON](../article/2026-08-27_serpapi-referencia-da-google-search-engine-results-api-param_095ffd77aa1a.md)
 2026-08-27 · article · SaaS alta · cliente baixa · estudo media · triagem — · `serpapi` `api-reference` `google-search` `parametros` `json` `documentacao`
