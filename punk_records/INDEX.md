@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 9 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 10 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 8 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 6 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 3 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -15,6 +15,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-08-27 · article · [Firecrawl CLI: Documentação de Skills e Linha de Comando para Agentes de IA](article/2026-08-27_firecrawl-cli-documentacao-de-skills-e-linha-de-comando-para_753e9bd5df87.md) · `firecrawl` `web-scraping` `claude-code` `cli` `ai-agents` `crawling` `developer-tools` · alta/media/alta · —
 - 2026-08-27 · article · [Introdução ao Firecrawl: API de Web Scraping, Busca e Interação para LLMs](article/2026-08-27_introducao-ao-firecrawl-api-de-web-scraping-busca-e-interaca_b0a8cad5a786.md) · `firecrawl` `web-scraping` `mcp` `llm-ready` `extracao-de-dados` `automacao-web` `agentic-ai` · alta/media/alta · archive
 - 2026-08-27 · article · [Hot take: Harness, Loop Engineering, Graph Engineering são Bullshit](article/2026-08-27_hot-take-harness-loop-engineering-graph-engineering-sao-bull_653ea1860c62.md) · `ai-agents` `prompt-caching` `extreme-programming` `benchmarking` `context-engineering` `software-architecture` · alta/alta/alta · archive
 - 2026-08-27 · article · [Visão Geral do Claude Code: Instalação, Recursos e Automação Agêntica](article/2026-08-27_visao-geral-do-claude-code-instalacao-recursos-e-automacao-a_19c7c0a3eaa2.md) · `claude-code` `agentic-coding` `mcp` `cli-automation` `subagents` `claude-md` `developer-tools` `ci-cd` · alta/alta/alta · apply_saas
