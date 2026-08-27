@@ -67,7 +67,7 @@ O registro demonstra com clareza matemática que capacidade bruta sem o harness 
 
 <!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
 
-## Novo LLM Benchmark: refiz todos os testes!
+### Novo LLM Benchmark: refiz todos os testes!
 
 *Se tem preguiça de ler, clique aqui pro TL;DR*
 
@@ -81,7 +81,7 @@ O resultado é a **versão 2** do meu LLM Coding Benchmark. A prova ficou mais d
 
 E já vou adiantar: **os scores do v2 não são comparáveis diretamente aos do v1**. Mudaram o prompt, os requisitos, o harness de vários modelos, a validação e a rubrica. A coluna `v1` no relatório serve como histórico, não como medição científica de quanto cada modelo “evoluiu”.
 
-### Por que aposentei o v1
+#### Por que aposentei o v1
 
 Rodamos o v1 por meses. Ele serviu muito bem pra separar quem realmente conseguia construir um app Rails de quem inventava APIs do RubyLLM, escrevia testes pra própria alucinação e entregava Dockerfile que nunca subia.
 
@@ -94,7 +94,7 @@ O que o benchmark mede nunca foi apenas o arquivo de pesos:
 `resultado = modelo + harness + prompt + tools + contexto + execução + auditoria`
 Então resolvi parar de esconder o harness dentro da nota. Claude foi pro Claude Code. GPT foi pro Codex. Kimi K3 e K2.7-Coding foram pro Kimi CLI. Grok e Gemini ganharam rodadas A/B nos CLIs dos próprios vendors. OpenCode, completamente isolado, continuou como fallback pros modelos sem harness melhor ou sem acesso por assinatura.
 
-### A prova nova
+#### A prova nova
 
 O v1 tinha duas fases: construir e tentar subir. O v2 tem **três fases**, quatorze objetivos numerados e uma rubrica de dez dimensões.
 
@@ -116,7 +116,7 @@ A terceira fase pede que o próprio modelo revise cada objetivo como `PASS`, `PA
 
 Essa fase trouxe um dado que o v1 não tinha. Kimi K3 e Nex, por exemplo, admitiram defeitos que seria fácil esconder. Outros construíram um app razoável e depois alucinaram a própria inspeção. Saber programar e saber revisar o que programou são capacidades diferentes.
 
-### O harness também entrou no teste
+#### O harness também entrou no teste
 
 Também fiz A/Bs com as ferramentas nativas:
 
@@ -131,7 +131,7 @@ O harness nativo não joga pó mágico no modelo. Grok 4.5 praticamente não lig
 
 No ranking abaixo, uso o harness preferencial quando existe uma rodada completa: Antigravity pros Geminis e grok CLI pros Groks. Os baselines de OpenCode continuam no repositório como A/B, mas não aparecem uma segunda vez na tabela.
 
-### O novo ranking
+#### O novo ranking
 
 Esta é a tabela consolidada do v2, com uma entrada por modelo no harness preferencial disponível.
 
@@ -173,7 +173,7 @@ Esta é a tabela consolidada do v2, com uma entrada por modelo no harness prefer
 
 Os detalhes, artefatos e deduções estão no relatório completo do v2.
 
-### O que os tiers querem dizer agora
+#### O que os tiers querem dizer agora
 
 O novo corte foi ancorado no Claude Opus 4.6, que fez 83 e mostrou o mínimo necessário pra carregar a prova inteira. A interpretação prática ficou assim:
 
@@ -191,7 +191,7 @@ Isso não transforma 96 em uma inteligência universalmente maior que 91, nem to
 
 A.1 e A.2 formam o grupo de candidatos. Tier C e D são grupos que eu corto antes de começar.
 
-### Afinal, qual é o melhor: Fable, Opus, Terra ou Kimi?
+#### Afinal, qual é o melhor: Fable, Opus, Terra ou Kimi?
 
 Se você só quer uma resposta de uma linha, vai se decepcionar de novo.
 
@@ -217,7 +217,7 @@ Minha leitura desse run:
 
 É uma leitura deste projeto. Troque o workload e a ordem pode virar.
 
-### Opus contra Sonnet, Sol contra Terra
+#### Opus contra Sonnet, Sol contra Terra
 
 Nome de tier não é benchmark. O Sonnet 5 provou isso de um jeito quase constrangedor:
 
@@ -248,7 +248,7 @@ Luna continua na tabela porque fez 91 e ainda é um resultado A.1, mas perdeu o 
 
 O detalhe importante continua sendo o cache. Dos 21,7 milhões de tokens de input do Terra, 21 milhões eram cache hits. Cobrar tudo como input novo daria um teto de $111,62. Com a tarifa de cache, cai pra $16,92. Qualquer tabela de custo que mistura CLIs sem entender o que cada uma reporta está comparando banana com JSON.
 
-### E os modelos chineses?
+#### E os modelos chineses?
 
 A conversa de que modelo chinês só serve como alternativa barata ficou velha.
 
@@ -273,7 +273,7 @@ GLM 5.2 fez 92 com custo marginal zero no plano da Z.ai, mas consumiu o equivale
 
 DeepSeek continua barato, mas parou no Tier B. V4 Pro fez 82 por $0,35 e V4 Flash fez 80 por $0,81. Estão perto e quero repetir quando vier uma versão nova. Hoje eu ainda não usaria nenhum dos dois pra deixar um coding agent trabalhando sozinho numa codebase que importa. Economizar um ou dois dólares pra depois gastar uma hora revisando defeito estrutural é uma conta ruim.
 
-### Por que não refiz os modelos locais
+#### Por que não refiz os modelos locais
 
 Não rodei Qwen 3.5 e os outros modelos locais no v2. A prioridade passou a ser mapear melhor o Tier A de programação, e cada execução completa dessa prova custa tempo de máquina, auditoria e sanidade.
 
@@ -281,7 +281,7 @@ Os locals não são inúteis. Servem pra tradução, classificação, resumo, on
 
 Pra programação, hoje não vale a pena. Se surgir um modelo local novo com evidência forte, eu testo. Até lá, prefiro gastar tempo diferenciando os vinte e quatro modelos que já passaram do piso.
 
-### Conclusão
+#### Conclusão
 
 O v1 cumpriu seu papel e saturou. O v2 aperta onde os modelos atuais ainda escorregam: streaming de verdade, payload multi-turn, concorrência, persistência, tools, structured output, orçamento, segurança operacional, teste fiel e capacidade de admitir o próprio defeito.
 
