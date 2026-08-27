@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Sentry — planos e preços: Developer (grátis), Team US$ 26/mês, Business US$ 80/mês; cotas e pay-as-you-go](../article/2026-08-27_sentry-planos-e-precos-developer-gratis-team-us-26-mes-busin_deade02168a7.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `sentry` `precos` `monitoramento-de-erros` `observabilidade` `tracing`
+
+Sentry: grátis para 1 dev (erros + tracing + alertas + MCP); Team US$ 26/mês (usuários ilimitados, integrações); Business US$ 80/mês.
 
 ## [Resend — como funciona a cobrança: por e-mail enviado/recebido, destinatários contam separado, Free 100/dia, Enterprise a partir de 3 milhões/mês](../article/2026-08-27_resend-como-funciona-a-cobranca-por-e-mail-enviado-recebido_5d5650b51412.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `cobranca` `email-transacional`

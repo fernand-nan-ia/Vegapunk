@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 10 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 9 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 10 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 2 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -98,6 +98,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-08-27 · article · [Sentry — planos e preços: Developer (grátis), Team US$ 26/mês, Business US$ 80/mês; cotas e pay-as-you-go](article/2026-08-27_sentry-planos-e-precos-developer-gratis-team-us-26-mes-busin_deade02168a7.md) · `sentry` `precos` `monitoramento-de-erros` `observabilidade` `tracing` · alta/media/media · —
 - 2026-08-27 · article · [Resend — como funciona a cobrança: por e-mail enviado/recebido, destinatários contam separado, Free 100/dia, Enterprise a partir de 3 milhões/mês](article/2026-08-27_resend-como-funciona-a-cobranca-por-e-mail-enviado-recebido_5d5650b51412.md) · `resend` `precos` `cobranca` `email-transacional` · alta/media/media · —
 - 2026-08-27 · article · [Resend — cobrança: assinatura, e-mail de faturamento único, cartão, endereço, tax ID, faturas e cancelamento](article/2026-08-27_resend-cobranca-assinatura-e-mail-de-faturamento-unico-carta_fcde67aa166b.md) · `resend` `billing` `faturas` `assinatura` · media/baixa/baixa · —
 - 2026-08-27 · article · [Resend — planos e preços: Free, Pro, Scale e Enterprise (limites, domínios, retenção, webhooks, IP dedicado)](article/2026-08-27_resend-planos-e-precos-free-pro-scale-e-enterprise-limites-d_05e01b4c23b2.md) · `resend` `precos` `planos` `limites` `ip-dedicado` · alta/media/media · —
