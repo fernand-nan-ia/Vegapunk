@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Registro.br — regras para registro de domínios .br (quem pode, DNS, categorias com documentação, tickets)](../article/2026-08-27_registro-br-regras-para-registro-de-dominios-br-quem-pode-dn_db9f7210abeb.md)
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `regras-de-registro` `dns` `saci-adm` `categorias-de-dominio`
+
+Regras do .br: qualquer CPF ou CNPJ no Brasil registra; precisa de 2 servidores DNS (os do Registro.br servem); registro em até 5 minutos sem pendência; qualquer nome disponível vale; categorias como edu.br, org.br, b.br
 
 ## [Registro.br — categorias de domínios .br (DPNs): quem pode registrar o quê](../article/2026-08-27_registro-br-categorias-de-dominios-br-dpns-quem-pode-registr_703ff08ad8d5.md)
 2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem — · `registro-br` `dominio-br` `dpn` `categorias-de-dominio` `cnpj` `cpf`
