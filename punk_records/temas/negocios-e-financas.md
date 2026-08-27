@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cloudflare Workers — preço: Free 100 mil requisições/dia e 10 ms de CPU; Paid US$ 0,30/milhão de requisições e US$ 0,02/milhão de ms de CPU](../article/2026-08-27_cloudflare-workers-preco-free-100-mil-requisicoes-dia-e-10-m_fc7635ee4280.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `precos` `serverless`
+
+Workers: grátis até 100 mil req/dia (10 ms CPU cada); pago a US$ 0,30 por milhão de requisições + US$ 0,02 por milhão de ms de CPU.
 
 ## [Sentry — planos e preços: Developer (grátis), Team US$ 26/mês, Business US$ 80/mês; cotas e pay-as-you-go](../article/2026-08-27_sentry-planos-e-precos-developer-gratis-team-us-26-mes-busin_deade02168a7.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `sentry` `precos` `monitoramento-de-erros` `observabilidade` `tracing`
