@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 11 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 13 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 14 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 2 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -109,6 +109,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-08-27 · article · [Google Cloud Fraud Defense (reCAPTCHA) — comparação de níveis: Essentials grátis até 10 mil avaliações, Premium US$ 8 fixo até 100 mil + US$ 1/1.000, Enterprise](article/2026-08-27_google-cloud-fraud-defense-recaptcha-comparacao-de-niveis-es_affbae6d5733.md) · `recaptcha` `google-cloud` `precos` `anti-fraude` `anti-bot` · alta/media/media · —
 - 2026-08-27 · article · [UptimeRobot — preços: Free (50 monitores, 5 min), Solo US$ 9, Team US$ 35, Scale US$ 65/mês, Enterprise](article/2026-08-27_uptimerobot-precos-free-50-monitores-5-min-solo-us-9-team-us_7271ce6c8e8b.md) · `uptimerobot` `monitoramento` `uptime` `precos` `ssl` `status-page` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers Analytics Engine — preço: pontos escritos e consultas SQL (Free 100k/dia e 10k/dia; Paid 10M e 1M/mês inclusos)](article/2026-08-27_cloudflare-workers-analytics-engine-preco-pontos-escritos-e_4d5015f2c495.md) · `cloudflare` `analytics-engine` `precos` `metricas` `usage-billing` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers — preço: Free 100 mil requisições/dia e 10 ms de CPU; Paid US$ 0,30/milhão de requisições e US$ 0,02/milhão de ms de CPU](article/2026-08-27_cloudflare-workers-preco-free-100-mil-requisicoes-dia-e-10-m_fc7635ee4280.md) · `cloudflare` `workers` `precos` `serverless` · alta/media/media · —
