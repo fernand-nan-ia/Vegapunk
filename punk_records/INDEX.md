@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 26 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 27 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Resend — ver e gerenciar e-mails enviados: eventos (bounced, delivered, complained…), link público e logs](article/2026-08-27_resend-ver-e-gerenciar-e-mails-enviados-eventos-bounced-deli_9a66f05f6a14.md) · `resend` `eventos-de-email` `bounce` `suppression-list` `painel` · alta/media/media · —
 - 2026-08-27 · article · [Resend — open e click tracking: subdomínio de tracking, CNAME, como funciona e armadilhas](article/2026-08-27_resend-open-e-click-tracking-subdominio-de-tracking-cname-co_dacf594cf225.md) · `resend` `tracking` `open-rate` `click-tracking` `dns` `cname` · alta/media/media · —
 - 2026-08-27 · article · [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md) · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates` · alta/media/media · —
 - 2026-08-27 · article · [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md) · `resend` `logs` `observabilidade` `debug` `api` · alta/media/media · —
