@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [GitHub — preços: Free (repos ilimitados, 2.000 min de Actions), Team US$ 4/usuário, Enterprise US$ 21/usuário; add-ons Copilot, Advanced Security, Codespaces](../article/2026-08-27_github-precos-free-repos-ilimitados-2-000-min-de-actions-tea_bb65e6d6f03b.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `github` `precos` `github-actions` `ci-cd` `copilot` `planos`
+
+GitHub Free já dá repositórios privados ilimitados e 2.000 min/mês de Actions; Team US$ 4/usuário (regras de branch, revisores obrigatórios, 3.000 min); Enterprise US$ 21/usuário.
 
 ## [Google Cloud Fraud Defense (reCAPTCHA) — comparação de níveis: Essentials grátis até 10 mil avaliações, Premium US$ 8 fixo até 100 mil + US$ 1/1.000, Enterprise](../article/2026-08-27_google-cloud-fraud-defense-recaptcha-comparacao-de-niveis-es_affbae6d5733.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `recaptcha` `google-cloud` `precos` `anti-fraude` `anti-bot`
