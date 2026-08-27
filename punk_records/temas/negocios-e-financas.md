@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — cobrança: assinatura, e-mail de faturamento único, cartão, endereço, tax ID, faturas e cancelamento](../article/2026-08-27_resend-cobranca-assinatura-e-mail-de-faturamento-unico-carta_fcde67aa166b.md)
+2026-08-27 · article · SaaS media · cliente baixa · estudo baixa · triagem — · `resend` `billing` `faturas` `assinatura`
+
+Billing do Resend: um único e-mail de fatura por time (use alias ou convide membros), cartão, endereço, tax ID e faturas; cancelar pelo menu do plano.
 
 ## [Resend — planos e preços: Free, Pro, Scale e Enterprise (limites, domínios, retenção, webhooks, IP dedicado)](../article/2026-08-27_resend-planos-e-precos-free-pro-scale-e-enterprise-limites-d_05e01b4c23b2.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `planos` `limites` `ip-dedicado`
