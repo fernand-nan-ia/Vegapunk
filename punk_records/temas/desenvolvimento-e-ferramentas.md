@@ -1,6 +1,6 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 39 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 40 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](../article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing`
@@ -11,6 +11,11 @@ Escreve pontos de dados de dentro do Worker e consulta por SQL; cardinalidade il
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase`
 
 Do Worker dá para falar com D1 (SQL da Cloudflare, bancos de 10 GB por tenant), Postgres/MySQL e Supabase/Neon via drivers TCP com Hyperdrive (pool + cache de conexão), ou drivers HTTP.
+
+## [Cloudflare Workers — catálogo de exemplos: SPA shell, Analytics Engine, streaming JSON, auth básica, HMAC, Turnstile, cache, redirects, geolocalização](../article/2026-08-27_cloudflare-workers-catalogo-de-exemplos-spa-shell-analytics_21b05c335f15.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `exemplos` `hmac` `turnstile` `cache`
+
+Receitas prontas de Workers: auth básica, HMAC, Turnstile, cache de POST, redirects em massa, streaming, geolocalização, Analytics Engine — copiar e adaptar.
 
 ## [Cloudflare Workers — visão geral: serverless global, frameworks e linguagens, bindings para storage, compute e mídia](../article/2026-08-27_cloudflare-workers-visao-geral-serverless-global-frameworks_357f958e998d.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `serverless` `edge` `d1` `r2`

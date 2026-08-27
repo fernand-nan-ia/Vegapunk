@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 39 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 40 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 10 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -34,6 +34,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 2026-08-27 · article · [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md) · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers — conectar a bancos de dados: D1, Postgres/MySQL via Hyperdrive, Supabase/Neon/PlanetScale, drivers serverless](article/2026-08-27_cloudflare-workers-conectar-a-bancos-de-dados-d1-postgres-my_899edaad2043.md) · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase` `multi-tenant` · alta/media/media · —
+- 2026-08-27 · article · [Cloudflare Workers — catálogo de exemplos: SPA shell, Analytics Engine, streaming JSON, auth básica, HMAC, Turnstile, cache, redirects, geolocalização](article/2026-08-27_cloudflare-workers-catalogo-de-exemplos-spa-shell-analytics_21b05c335f15.md) · `cloudflare` `workers` `exemplos` `hmac` `turnstile` `cache` `redirects` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers — visão geral: serverless global, frameworks e linguagens, bindings para storage, compute e mídia](article/2026-08-27_cloudflare-workers-visao-geral-serverless-global-frameworks_357f958e998d.md) · `cloudflare` `workers` `serverless` `edge` `d1` `r2` `kv` · alta/media/media · —
 - 2026-08-27 · article · [Resend — exemplos de código por framework (Next.js, Express, Hono, FastAPI/Flask/Django, Rails, Go…) e por recurso](article/2026-08-27_resend-exemplos-de-codigo-por-framework-next-js-express-hono_056725bb2ef3.md) · `resend` `exemplos` `fastapi` `django` `nextjs` `double-opt-in` `magic-link` · alta/media/media · —
 - 2026-08-27 · article · [Resend — integrações: agentes de código, ferramentas de IA, no-code (n8n, Zapier, Make), notificações, CMS e dev tools](article/2026-08-27_resend-integracoes-agentes-de-codigo-ferramentas-de-ia-no-co_945d75b18fb6.md) · `resend` `integracoes` `n8n` `zapier` `wordpress` `claude-code` · alta/media/media · —
