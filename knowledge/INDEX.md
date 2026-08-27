@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-27 · tiktok · [#ad to amando aprender sobre IA](tiktok/2026-08-27_ad-to-amando-aprender-sobre-ia_7659911795506744596.md) · `claude-code` `inteligencia-artificial` `video-curto` · nenhuma/nenhuma/nenhuma · —
 - 2026-08-27 · tiktok · [Top 3 erros de segurança comuns no vibe coding](tiktok/2026-08-27_top-3-erros-de-seguranca-comuns-no-vibe-coding_7652116731359431954.md) · `vibe-coding` `supabase-rls` `edge-functions` `env-leaks` `security-audit` `app-security` `claude-code` · alta/alta/media · —
 - 2026-08-27 · tiktok · [O que você já construiu com Claude Code?](tiktok/2026-08-27_o-que-voce-ja-construiu-com-claude-code_7639794125965036831.md) · `claude-code` `vibecoding` `techtok` · baixa/nenhuma/baixa · discard
 - 2026-08-26 · tiktok · [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md) · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade` · alta/alta/media · apply_saas
