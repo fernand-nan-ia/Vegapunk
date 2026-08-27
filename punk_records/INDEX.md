@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 15 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 16 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md) · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt` · alta/media/media · —
 - 2026-08-27 · article · [Resend — visão geral do envio de e-mails transacionais (recursos e formas de integrar)](article/2026-08-27_resend-visao-geral-do-envio-de-e-mails-transacionais-recurso_51f277b15710.md) · `resend` `email-transacional` `api` `sdk` `smtp` `mcp` · alta/media/media · —
 - 2026-08-27 · article · [SerpApi — referência da Google Search Engine Results API: parâmetros, tipos de busca e estrutura do JSON](article/2026-08-27_serpapi-referencia-da-google-search-engine-results-api-param_095ffd77aa1a.md) · `serpapi` `api-reference` `google-search` `parametros` `json` `documentacao` · alta/baixa/media · —
 - 2026-08-27 · article · [SerpApi — Google Search API: o que faz, localização, tipos de resultado, SLA e Legal Shield](article/2026-08-27_serpapi-google-search-api-o-que-faz-localizacao-tipos-de-res_42c16f44651b.md) · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api` · alta/media/media · —

@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](../article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
+
+Para usar o Resend: domínio verificado + chave de API.
 
 ## [Resend — visão geral do envio de e-mails transacionais (recursos e formas de integrar)](../article/2026-08-27_resend-visao-geral-do-envio-de-e-mails-transacionais-recurso_51f277b15710.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `email-transacional` `api` `sdk` `smtp` `mcp`
