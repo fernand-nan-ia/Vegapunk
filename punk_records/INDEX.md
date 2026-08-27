@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 32 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 33 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Resend CLI — instalação, login/perfis e comandos (emails, batch, domínios, contatos, templates, logs, webhooks)](article/2026-08-27_resend-cli-instalacao-login-perfis-e-comandos-emails-batch-d_a3f11566dbf6.md) · `resend` `cli` `automacao` `scripts` `terminal` · alta/media/media · —
 - 2026-08-27 · article · [Resend — SDKs oficiais e da comunidade (Node, PHP, Laravel, Python, Ruby, Go, Java, Rust, .NET) e OpenAPI](article/2026-08-27_resend-sdks-oficiais-e-da-comunidade-node-php-laravel-python_9624a934ad35.md) · `resend` `sdk` `python` `openapi` `bibliotecas` · alta/media/media · —
 - 2026-08-27 · article · [Resend — cabeçalhos customizados: X-Entity-Ref-ID (evitar agrupamento no Gmail) e List-Unsubscribe](article/2026-08-27_resend-cabecalhos-customizados-x-entity-ref-id-evitar-agrupa_936685d222df.md) · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional` · alta/media/media · —
 - 2026-08-27 · article · [Resend — anexos: arquivo remoto (path) ou local (Base64), CID, download via API e limites (40 MB, sem lote)](article/2026-08-27_resend-anexos-arquivo-remoto-path-ou-local-base64-cid-downlo_5db57f423da9.md) · `resend` `anexos` `base64` `api` `limites` · alta/media/media · —

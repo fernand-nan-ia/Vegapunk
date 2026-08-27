@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend CLI — instalação, login/perfis e comandos (emails, batch, domínios, contatos, templates, logs, webhooks)](../article/2026-08-27_resend-cli-instalacao-login-perfis-e-comandos-emails-batch-d_a3f11566dbf6.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cli` `automacao` `scripts` `terminal`
+
+CLI faz tudo que o painel faz: resend login, emails send/batch (JSON, agendamento em linguagem natural), domínios, contatos com import de CSV, templates, logs, webhooks; perfis para vários times.
 
 ## [Resend — SDKs oficiais e da comunidade (Node, PHP, Laravel, Python, Ruby, Go, Java, Rust, .NET) e OpenAPI](../article/2026-08-27_resend-sdks-oficiais-e-da-comunidade-node-php-laravel-python_9624a934ad35.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `sdk` `python` `openapi` `bibliotecas`
