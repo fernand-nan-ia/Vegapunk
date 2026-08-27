@@ -1,11 +1,16 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 47 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 48 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](../article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos`
 
 Nominatim = geocodificação grátis e open source com dados do OpenStreetMap (endereço ↔ coordenadas), instalável no seu servidor; é o que roda por trás do openstreetmap.org.
+
+## [Nominatim — documentação oficial: estrutura (API, administração, customização, biblioteca Python, desenvolvimento)](../article/2026-08-27_nominatim-documentacao-oficial-estrutura-api-administracao-c_1f2983dfea42.md)
+2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `nominatim` `documentacao` `geocoding` `python` `openstreetmap`
+
+Mapa da doc do Nominatim: API, administração (instalar servidor), customização, biblioteca Python e desenvolvimento.
 
 ## [UptimeRobot — API REST v3: monitores, contatos, manutenção e status pages; rate limits; três tipos de chave](../article/2026-08-27_uptimerobot-api-rest-v3-monitores-contatos-manutencao-e-stat_0df3a8ca9ce9.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck`
