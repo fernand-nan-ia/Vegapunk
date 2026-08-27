@@ -1,6 +1,6 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
@@ -26,6 +26,11 @@ Chave de API do Resend: crie com permissão 'Sending access' restrita ao domíni
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
 
 Para usar o Resend: domínio verificado + chave de API.
+
+## [Resend — eventos customizados: nome, schema opcional e disparo de múltiplas automações](../article/2026-08-27_resend-eventos-customizados-nome-schema-opcional-e-disparo-d_ed6846df51be.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `eventos` `automations` `schema` `webhooks`
+
+Evento customizado = nome (ex.: user.created) + schema opcional do payload; um evento pode disparar várias automações; payload inválido dá 422.
 
 ## [Resend — visão geral do envio de e-mails transacionais (recursos e formas de integrar)](../article/2026-08-27_resend-visao-geral-do-envio-de-e-mails-transacionais-recurso_51f277b15710.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `email-transacional` `api` `sdk` `smtp` `mcp`
