@@ -33,8 +33,8 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 ## O que o Vegapunk faz
 
 **Captura (Fabriophase — o bot Telegram)**
-- Recebe links de **YouTube, TikTok, Instagram e artigos/páginas web** (blogs, docs, notícias — vários por mensagem, inclusive encaminhados no meio de uma conversa).
-- Extrai o texto pelo melhor caminho disponível: legenda manual → legenda automática original → **áudio transcrito com Whisper** (faster-whisper local) → descrição/caption. Slideshows do TikTok são lidos imagem a imagem por um modelo com visão. **Artigos** são extraídos com trafilatura (título, autor, data, texto principal em Markdown) e guardados **por inteiro** no vault, além do resumo — fonte robusta merece o texto completo.
+- Recebe links de **YouTube, TikTok, Instagram e artigos/páginas web** (blogs, docs, notícias — vários por mensagem, inclusive encaminhados no meio de uma conversa) e **arquivos anexados**: PDF, Word (.docx), planilha (.xlsx), txt/md/csv, até 20 MB.
+- Extrai o texto pelo melhor caminho disponível: legenda manual → legenda automática original → **áudio transcrito com Whisper** (faster-whisper local) → descrição/caption. Slideshows do TikTok são lidos imagem a imagem por um modelo com visão. **Artigos** são extraídos com trafilatura (título, autor, data, texto principal em Markdown) e **documentos** com pypdf/python-docx/openpyxl (títulos e tabelas do Word viram Markdown; cada aba da planilha vira tabela); ambos são guardados **por inteiro** no vault, além do resumo — fonte robusta merece o texto completo. PDF escaneado (sem texto) vai para `_pending/`.
 - Resume, extrai pontos-chave, ferramentas citadas, "como aplicar", tags, tipo de conteúdo, **confiança** na fonte e **aplicabilidade** para cada projeto seu (SaaS pessoal / projeto de cliente / estudo geral) — tudo com saída estruturada (JSON schema estrito + validação Pydantic).
 - Grava no SQLite (fonte da verdade), projeta em Markdown em `punk_records/`, atualiza o `INDEX.md` e **faz commit automático**.
 - **Cada lote de links tem um Satélite dono.** Ele é sorteado na captura e anuncia ("🔧 **Atlas** · Punk-05: Passo 1 de 3: 2 links na bancada…"), e é **ele mesmo** quem apresenta o resultado, avisa duplicata ("esse link já está no Punk Records — nada novo para apresentar") ou falha. O cabeçalho é sempre `ícone Nome · Punk-NN`, para não restar dúvida de quem fala.
@@ -68,7 +68,7 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 | **Sincronização diária** dos Satélites | `git push` (manual por padrão) |
 | **Stella** e os **seis Satélites** | 7 arquivos `.claude/commands/vegapunk/agents/<id>.md` — a única fonte da verdade de cada personagem |
 
-Stack: Python 3.12 · python-telegram-bot (polling) · yt-dlp + ffmpeg · faster-whisper · trafilatura · OpenRouter (SDK `openai`) · SQLite · Docker Compose. Sem webhook, sem VPS, sem fila externa: roda na sua máquina.
+Stack: Python 3.12 · python-telegram-bot (polling) · yt-dlp + ffmpeg · faster-whisper · trafilatura · pypdf/python-docx/openpyxl · OpenRouter (SDK `openai`) · SQLite · Docker Compose. Sem webhook, sem VPS, sem fila externa: roda na sua máquina.
 
 ---
 
@@ -127,6 +127,7 @@ Há também um plugin em `plugin/vegapunk-satellites/` (mesmas skills no formato
 | Você manda | O bot faz |
 |---|---|
 | um ou mais links (vídeo ou artigo) | um Satélite assume o lote, anuncia e depois apresenta cada item: resumo curto, 3 pontos-chave, aplicabilidade, comentário em personagem e botões de triagem |
+| arquivo anexado (PDF, DOCX, XLSX, TXT/MD/CSV ≤ 20 MB) | mesmo caminho: vira item `document/` com texto integral; links na legenda do arquivo também são capturados; arquivo idêntico = duplicata |
 | botões 📁 🚀 👤 🗑 | triagem: **arquivar** / **aplicar no SaaS** / **aplicar no cliente** / **descartar** — atualiza o `.md`, o INDEX e commita |
 | `/pending` | itens sem triagem ou com falha de extração |
 | link repetido (mesmo com `?utm_…`) | o dono do lote avisa que já está no Punk Records (contador de vezes) |
@@ -378,25 +379,29 @@ Cada um tem um **diário** em `squads/vegapunk/memory/<id>.md` com o que você c
 
 ## O Punk Records
 
-`punk_records/` é uma projeção em Markdown do SQLite — regenerável, versionado, legível por humanos e por LLMs.
+`punk_records/` é uma projeção em Markdown do SQLite — regenerável, versionado, legível por humanos e por LLMs. Duas camadas: **pastas por origem** (onde o arquivo mora) e **temas por assunto** (como você e os outros projetos encontram as coisas).
 
 ```
 punk_records/
-  INDEX.md                    sumário: data · plataforma · [título](caminho) · tags · saas/cliente/estudo · triagem
-  youtube/  tiktok/  instagram/  article/
-    2026-08-26_slug_id.md     um item por link (artigos trazem "## Texto integral")
+  INDEX.md                    mapa de temas no topo + itens agrupados por tema (dentro do tema, mais novos primeiro)
+  temas/<tema>.md             UMA PÁGINA POR ASSUNTO: itens do tema com resumo de uma linha, aplicabilidade e link.
+                              É o que outro projeto lê para aproveitar um assunto sem abrir todos os .md
+  youtube/  tiktok/  instagram/  article/  document/
+    2026-08-26_slug_id.md     um item por link/arquivo (artigos e documentos trazem "## Texto integral")
   _pending/                   itens sem extração (cole o texto em "Notas manuais" e /reprocess <id>)
   README.md
 ```
+
+Temas (fixos, escolhidos pelo modelo na hora do resumo — `theme:` no frontmatter): 🤖 IA e agentes · 🛠 Desenvolvimento e ferramentas · 🔐 Segurança e privacidade · 🚀 Produto e SaaS · 📣 Marketing e vendas · 💰 Negócios e finanças · 🎨 Design e UX · 🏗 Engenharia civil · 🎮 Jogos e entretenimento · 📚 Carreira e aprendizado · 📦 Outros. A lista vive em `src/vegapunk/themes.py`; para acrescentar um tema, edite lá e rode `scripts/backfill_themes.py` (reclassifica o que não tem tema e regenera o vault).
 
 Cada item:
 
 ```markdown
 ---
-platform, channel, captured_at, status, triage, tags,
+platform, channel, captured_at, status, triage, tags, theme,
 applicability: {saas_pessoal, projeto_cliente, estudo_geral}   # nenhuma | baixa | média | alta
 confidence: alta | média | baixa
-content_type: transcript | caption | whisper | slides | article | manual
+content_type: transcript | caption | whisper | slides | article | document | manual
 ---
 ## Resumo
 ## Tópicos            (opcional)
@@ -464,13 +469,14 @@ plugin/vegapunk-satellites/             mesmas skills em formato de plugin
 src/vegapunk/
   bot.py          handlers do Telegram (links → pipeline; texto → chat; comandos)
   pipeline.py     normalize → extract → enrich → persist; retries; triagem; reprocess
-  extract.py      yt-dlp + VTT + faster-whisper + slides do TikTok + artigos (trafilatura)
+  extract.py      yt-dlp + VTT + faster-whisper + slides do TikTok + artigos (trafilatura) + documentos (pypdf/docx/openpyxl)
   enrich.py       OpenRouter com JSON schema estrito; leitura de slides por visão
   satellites.py   persona .md → system prompt; seletor de itens do vault
   chat.py         estado por chat, histórico, comandos `*`, loop de ferramentas
   tools.py        ferramentas dos Satélites no Telegram (busca/leitura do vault, status/custo, git log, diário)
   voices.py       falas dos Satélites para captura/duplicata/erro (templates, zero tokens)
-  vault.py        Markdown + INDEX + git
+  vault.py        Markdown + INDEX (por tema) + git
+  themes.py       lista de temas, classificação de reserva, páginas temas/<tema>.md
   db.py           SQLite e transições de estado
   config.py       variáveis de ambiente
 tests/            pytest (pipeline, vault, satélites, "nada se perde" vs. baseline)

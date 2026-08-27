@@ -83,3 +83,33 @@ def test_batch_owner_speaks_on_duplicate_and_failure():
     f = voices.failure_line("extract", "abc12345", "ERR-003", sat="york")
     assert f.startswith("🍩 <b>York</b> · Punk-06:") and "/reprocess abc12345" in f and "ERR-003" in f
     assert voices.failure_line("extract", "abc12345", "ERR-003").startswith("🔧 <b>Atlas</b>")
+
+
+def test_extract_article_accepts_bytes_latin1():
+    html = HTML.replace("Novo LLM benchmark", "Lei de Proteção").encode("latin-1")
+    ex = extract_article("https://www.planalto.gov.br/x.htm", html=html)
+    assert "Proteção" in ex.title or "Proteção" in ex.text
+
+
+def test_fetch_html_uses_browser_headers(monkeypatch):
+    import urllib.request
+    from vegapunk import extract as ex
+    seen = {}
+    class H:
+        def get_content_charset(self): return "utf-8"
+    class R:
+        headers = H()
+        def __enter__(self): return self
+        def __exit__(self, *a): pass
+        def read(self): return b"<html>ok</html>"
+    def fake_open(req, timeout=0):
+        seen["ua"] = req.get_header("User-agent"); return R()
+    monkeypatch.setattr(urllib.request, "urlopen", fake_open)
+    assert ex.fetch_html("https://x.gov.br/") == "<html>ok</html>" and "Mozilla" in seen["ua"]
+
+
+def test_decode_html_prefers_meta_then_falls_back_to_cp1252():
+    from vegapunk.extract import decode_html
+    assert decode_html("<meta charset='iso-8859-1'><p>relação</p>".encode("latin-1")) == "<meta charset='iso-8859-1'><p>relação</p>"
+    assert decode_html("<p>relação</p>".encode("cp1252")) == "<p>relação</p>"          # sem meta, não é utf-8 válido → cp1252
+    assert decode_html("<p>relação</p>".encode("utf-8")) == "<p>relação</p>"

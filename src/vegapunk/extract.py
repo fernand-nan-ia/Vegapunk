@@ -226,13 +226,139 @@ def extract_tiktok_slides(url: str, workdir: Path) -> Extracted:
 
 
 # ── Orquestração ──────────────────────────────────────────────
-def extract_article(url: str, html: str | None = None) -> Extracted:
-    """Página web (blog, documentação, notícia): texto principal em Markdown via trafilatura, com título/autor/data."""
+DOC_EXTS = {".pdf", ".docx", ".xlsx", ".xlsm", ".txt", ".md", ".csv"}
+MAX_SHEET_ROWS, MAX_SHEET_COLS = 300, 30
+
+
+def _pdf_text(path: Path) -> str:
+    from pypdf import PdfReader
+    pages = []
+    try:
+        reader = PdfReader(str(path))
+        for i, page in enumerate(reader.pages, 1):
+            t = (page.extract_text() or "").strip()
+            if t:
+                pages.append(f"<!-- página {i} -->\n{t}")
+    except Exception as e:
+        log.warning("pypdf falhou em %s: %s", path.name, e)
+    text = "\n\n".join(pages)
+    if len(text) < 200 and shutil.which("pdftotext"):  # reserva: poppler
+        r = subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True, text=True, timeout=120)
+        if len(r.stdout.strip()) > len(text):
+            text = r.stdout.strip()
+    return text
+
+
+def _docx_text(path: Path) -> str:
+    import docx
+    d = docx.Document(str(path))
+    out = []
+    for block in d.element.body.iterchildren():
+        tag = block.tag.rsplit("}", 1)[-1]
+        if tag == "p":
+            para = docx.text.paragraph.Paragraph(block, d)
+            t = para.text.strip()
+            if not t:
+                continue
+            style = (para.style.name if para.style is not None else "") or ""
+            m = re.match(r"Heading (\d)", style)
+            out.append(("#" * min(int(m.group(1)) + 1, 6) + " " + t) if m else ("# " + t if style == "Title" else t))
+        elif tag == "tbl":
+            table = docx.table.Table(block, d)
+            rows = [[c.text.strip().replace("|", "\\|") for c in r.cells] for r in table.rows]
+            if rows:
+                out.append("| " + " | ".join(rows[0]) + " |\n|" + "---|" * len(rows[0]) + "\n" +
+                           "\n".join("| " + " | ".join(r) + " |" for r in rows[1:]))
+    return "\n\n".join(out)
+
+
+def _xlsx_text(path: Path) -> str:
+    import openpyxl
+    wb = openpyxl.load_workbook(str(path), read_only=True, data_only=True)
+    out = []
+    for ws in wb.worksheets:
+        rows = []
+        for r in ws.iter_rows(values_only=True):
+            cells = ["" if v is None else str(v).strip().replace("|", "\\|").replace("\n", " ") for v in r[:MAX_SHEET_COLS]]
+            if any(cells):
+                rows.append(cells)
+            if len(rows) >= MAX_SHEET_ROWS:
+                break
+        if not rows:
+            continue
+        width = max(len(r) for r in rows)
+        rows = [r + [""] * (width - len(r)) for r in rows]
+        table = "| " + " | ".join(rows[0]) + " |\n|" + "---|" * width + "\n" + "\n".join("| " + " | ".join(r) + " |" for r in rows[1:])
+        more = f"\n\n_(aba cortada em {MAX_SHEET_ROWS} linhas)_" if ws.max_row and ws.max_row > MAX_SHEET_ROWS else ""
+        out.append(f"## Aba: {ws.title}\n\n{table}{more}")
+    return "\n\n".join(out)
+
+
+def extract_document(path: Path) -> Extracted:
+    """Arquivo local (PDF, DOCX, XLSX, TXT/MD/CSV) → texto/Markdown. Sem OCR: PDF escaneado cai em ERR-004."""
+    path = Path(path)
+    if not path.is_file():
+        raise ExtractionError("ERR-003", f"arquivo não encontrado: {path.name}", retryable=False)
+    ext = path.suffix.lower()
+    if ext == ".pdf":
+        text = _pdf_text(path)
+    elif ext == ".docx":
+        text = _docx_text(path)
+    elif ext in (".xlsx", ".xlsm"):
+        text = _xlsx_text(path)
+    elif ext in (".txt", ".md", ".csv"):
+        text = path.read_text(encoding="utf-8", errors="replace")
+    else:
+        raise ExtractionError("ERR-002", f"tipo de arquivo não suportado: {ext}", retryable=False)
+    text = text.strip()
+    if len(text) < 200:
+        raise ExtractionError("ERR-004", "documento sem texto extraível (PDF escaneado? planilha vazia?)", retryable=False)
+    title = re.sub(r"[_\-]+", " ", path.stem).strip() or path.name
+    return Extracted(title, f"documento {ext.lstrip('.')}", None, "", "document", text[: settings.max_document_chars], None)
+
+
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8", "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+}
+
+
+def fetch_html(url: str, timeout: int = 30) -> bytes | str | None:
+    """Baixa a página como um navegador (sites .gov.br derrubam clientes 'de robô'); trafilatura como reserva."""
+    import urllib.error
+    import urllib.request
+    try:
+        req = urllib.request.Request(url, headers=BROWSER_HEADERS)
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = r.read()
+            if data:
+                return decode_html(data, r.headers.get_content_charset())
+    except (urllib.error.URLError, OSError, ValueError) as e:
+        log.info("fetch com cabeçalho de navegador falhou (%s); tentando trafilatura", e)
+    import trafilatura
+    return trafilatura.fetch_url(url)
+
+
+def decode_html(data: bytes, header_charset: str | None = None) -> str:
+    """Decodifica HTML: charset do cabeçalho → <meta charset> → utf-8 → cp1252 (sites .gov.br antigos)."""
+    m = re.search(rb"charset=[\"']?([A-Za-z0-9_\-]+)", data[:4096], flags=re.I)
+    for enc in (header_charset, m.group(1).decode("ascii", "ignore") if m else None, "utf-8"):
+        if not enc:
+            continue
+        try:
+            return data.decode(enc)
+        except (UnicodeDecodeError, LookupError):
+            continue
+    return data.decode("cp1252", "replace")
+
+
+def extract_article(url: str, html: str | bytes | None = None) -> Extracted:
+    """Página web (blog, documentação, notícia, lei): texto principal em Markdown via trafilatura, com título/autor/data."""
     import trafilatura
     from urllib.parse import urlparse
 
     if html is None:
-        html = trafilatura.fetch_url(url)
+        html = fetch_html(url)
         if not html:
             raise ExtractionError("ERR-003", f"não consegui baixar a página: {url}", retryable=True)
     meta = trafilatura.bare_extraction(html, url=url, with_metadata=True, include_comments=False, include_tables=True, favor_recall=True)
@@ -248,13 +374,15 @@ def extract_article(url: str, html: str | None = None) -> Extracted:
     channel = f"{author} · {site}" if author and site and author != site else (author or site)
     date = (md.get("date") or "").strip()
     description = ((md.get("description") or "").strip() + (f"\nPublicado em: {date}" if date else "")).strip()
-    return Extracted(title, channel, None, description[:3000], "article", text[: settings.max_transcript_chars], None)
+    return Extracted(title, channel, None, description[:3000], "article", text[: settings.max_document_chars], None)
 
 
 def extract(url: str, platform: str, item_id: str) -> Extracted:
     workdir = settings.tmp_dir / item_id
     workdir.mkdir(parents=True, exist_ok=True)
     try:
+        if platform == "document":
+            return extract_document(Path(url.removeprefix("file://")))
         if platform == "article":
             return extract_article(url)
         if platform == "tiktok" and TT_PHOTO.search(url):

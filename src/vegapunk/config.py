@@ -27,6 +27,7 @@ class Settings:
     vault_dir: Path = ROOT / os.environ.get("VEGAPUNK_VAULT_DIR", "punk_records")
     tmp_dir: Path = ROOT / "tmp"
     max_transcript_chars: int = 60_000
+    max_document_chars: int = 150_000   # artigos/documentos guardados por inteiro (uma lei cabe)
 
 
 settings = Settings()

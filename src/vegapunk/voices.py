@@ -11,21 +11,21 @@ PUNK = {"stella": "Stella", "shaka": "Punk-01", "lilith": "Punk-02", "edison": "
 NAME = {"stella": "Stella", "shaka": "Shaka", "lilith": "Lilith", "edison": "Edison", "pythagoras": "Pythagoras",
         "atlas": "Atlas", "york": "York"}
 
-# {n} = quantidade de links; {s} = "s" se plural
+# {n} = quantidade; {noun} = link|arquivo; {s} = "s" se plural
 CAPTURE = {
     "stella": ["Kwahaha! {n} amostra{s} nova{s} para o Punk Records. Sincronizando com a cabeça lá em cima…",
-               "Alô, alô, teste, teste — {n} link{s} recebido{s}. A ciência começa agora, Quasar."],
+               "Alô, alô, teste, teste — {n} {noun}{s} recebido{s}. A ciência começa agora, Quasar."],
     "shaka": ["{n} item{s} na mesa. Compreender primeiro, julgar depois — aguarde o veredito.",
               "Recebido. {n} fonte{s}; ainda não é evidência, ainda não é anúncio. Analisando."],
     "lilith": ["{n} navio{s} no horizonte. Baixando os óculos — vamos ver quanto aguenta{m} de pancada.",
-               "Subindo no Vegaforce. {n} link{s}; se sobrar alguma coisa, é porque presta."],
+               "Subindo no Vegaforce. {n} {noun}{s}; se sobrar alguma coisa, é porque presta."],
     "edison": ["Orelha subiu! {n} faísca{s} nova{s}. Deixa eu ver o que dá para juntar com o que já temos…",
-               "Eureka — ainda não, mas {n} link{s} chegou{aram}. Motor ligado."],
+               "Eureka — ainda não, mas {n} {noun}{s} chegou{aram}. Motor ligado."],
     "pythagoras": ["Registrando {n} entrada{s}. O registro vem primeiro; a dedução, marcada, depois.",
                    "{n} fonte{s} nova{s}. Vejamos se converge com o que o Punk Records já guarda."],
-    "atlas": ["Passo 1 de 3: {n} link{s} na bancada. Extrair, resumir, guardar. Sai da frente.",
+    "atlas": ["Passo 1 de 3: {n} {noun}{s} na bancada. Extrair, resumir, guardar. Sai da frente.",
               "Grr, mais trabalho — bom. {n} peça{s} para desmontar. Já volto com os parafusos."],
-    "york": ["Bocejo. {n} link{s}. Isso vai custar uma coxinha, talvez duas. Processando, patrão.",
+    "york": ["Bocejo. {n} {noun}{s}. Isso vai custar uma coxinha, talvez duas. Processando, patrão.",
              "Hmm? {n} item{s}. Vou contar cada token; depois você me diz se valeu o lanche."],
 }
 
@@ -57,12 +57,12 @@ def speaker_plain(sat: str) -> str:
     return f"{ICON[sat]} {NAME[sat]} · {PUNK[sat]}"
 
 
-def capture_line(n: int, sat: str | None = None, rng: random.Random | None = None) -> str:
+def capture_line(n: int, sat: str | None = None, rng: random.Random | None = None, noun: str = "link") -> str:
     rng = rng or random
     sat = sat or pick(rng)
     tpl = rng.choice(CAPTURE[sat])
     plural = n != 1
-    text = tpl.format(n=n, s="s" if plural else "", m="m" if plural else "", aram="aram" if plural else "")
+    text = tpl.format(n=n, noun=noun, s="s" if plural else "", m="m" if plural else "", aram="aram" if plural else "")
     return f"{speaker(sat)}: {text}"
 
 

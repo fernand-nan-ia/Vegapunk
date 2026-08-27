@@ -13,6 +13,9 @@ dependencies = [
   "python-slugify>=8.0",
   "pyyaml>=6.0",
   "trafilatura>=2.0",
+  "pypdf>=5.0",
+  "python-docx>=1.1",
+  "openpyxl>=3.1",
 ]
 
 [project.optional-dependencies]

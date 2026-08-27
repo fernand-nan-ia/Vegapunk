@@ -63,6 +63,23 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - Testes: 58/58 (`tests/test_tools.py` novo; loop mockado em `test_satellites.py`).
 - Ideias decorrentes: cache de prompt (persona é idêntica em toda chamada); `*council` no Telegram (6 chamadas — caro, ficou fora); resumo do histórico.
 
+## Sessão 4d (2026-08-27) — documentos (PDF/DOCX/XLSX) no Telegram e no Claude Code (NÃO commitado)
+
+- Telegram: `bot.on_document` (filtro `Document.ALL`, registrado ANTES do de texto) baixa para `tmp/documents/<file_unique_id>.<ext>`, cria item `file://…` com Satélite dono; `normalize_document` = sha1 do conteúdo; `extract_document` por extensão; após extração o arquivo temporário é apagado (texto já está no banco). Falha de extração deixa o arquivo em `tmp/documents/` para reprocess manual.
+- Vault: frontmatter `canonical_url` = nome do arquivo (o caminho temporário não sobrevive); corpo mostra `📎 nome (enviado pelo Telegram)`; `## Texto integral` também para `document`.
+- Claude Code: `.venv` tem pypdf/python-docx/openpyxl — para ler .docx/.xlsx aqui, converter com `extract.extract_document(Path)` e ler o texto; PDF eu leio direto.
+- Sem OCR: PDF escaneado → ERR-004 → `_pending/`. Ideia: OCR por visão (`enrich.read_slides` com páginas renderizadas) sob gatilho manual.
+- Testes: 66 (`tests/test_document.py`).
+- **Armadilha nova**: planalto.gov.br fecha a conexão para User-Agent não-navegador (`fetch_url` do trafilatura falha). `extract.fetch_html` usa cabeçalhos de Chrome primeiro. Item da LGPD (`f831b2bb`) ficou 5 tentativas em ERR-003 e foi retomado pelo `resume_unfinished` após o restart com a correção — funcionou (112k chars).
+
+## Sessão 4e (2026-08-27) — Punk Records por tema (NÃO commitado o código; o vault o bot commitou)
+
+- Pedido do Fernando: organização visual por assunto (LGPD ≠ IA ≠ jogos) e páginas por tema para outros projetos não lerem todos os .md.
+- `src/vegapunk/themes.py`: 11 temas fixos (slug → ícone, nome, descrição, gatilhos). `Enrichment.theme` (enum) + regra no prompt; `theme:` no frontmatter; `vault.write_index` agrupa por tema e chama `themes.write_theme_pages` → `punk_records/temas/<slug>.md` (remove página de tema vazio). `satellites.search_index` ignora `temas/`.
+- `scripts/backfill_themes.py`: classifica os itens sem `theme` em UMA chamada (json_object) e regenera todo o vault. Rodado no container em 2026-08-27.
+- Pastas por origem não mudaram (o bot gera; mover quebraria `vault_path`).
+- Para adicionar tema: editar `THEMES` + `Theme` (Literal em enrich.py) e rodar o backfill.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -161,6 +178,6 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - TikTok slideshow já suportado (`extract_tiktok_slides`, API privada do yt-dlp — se quebrar, log mostra `tiktok web data:`). Instagram carrossel/Reels: exigem cookies (`VEGAPUNK_COOKIES_FILE`), não testados.
 - Healthcheck diário no Telegram (York já tem o comando no Claude Code; falta agendar no bot).
 - Push automático do vault (`VEGAPUNK_GIT_PUSH=true` + `~/.ssh` no compose).
-- Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para `/vegapunk`.
+- ~~Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente~~ — FEITO 2026-08-27: bloco em `docs/punk-records-claude-md.md` e adicionado ao **global** `~/.claude/CLAUDE.md` (vale para todo projeto da máquina). O SaaS e o site do cliente ficam em outros diretórios.
 - MCP de consulta ao vault.
 - **Integrar o Punk Records com Notion ou Obsidian** (pedido do Fernando em 2026-08-27, a estudar). Obsidian: o vault já é Markdown com frontmatter — basta abrir `punk_records/` como vault; avaliar wikilinks, Dataview sobre `tags`/`applicability`, e não quebrar `## Notas manuais`. Notion: exige sync via API (páginas por item, propriedades = frontmatter); há um doc antigo em `.docs/pacote_telegram_knowledge_bot_v1/06_persistencia_obsidian/`.

@@ -94,6 +94,8 @@ def search_index(message: str, vault_dir: Path | None = None, limit: int = MAX_I
         if not m or line.lstrip().startswith("#"):
             continue
         title, rel = m.group(1), m.group(2)
+        if rel.startswith("temas/"):
+            continue  # mapa de temas: não é item
         p = vault_dir / rel
         if not p.exists():
             continue

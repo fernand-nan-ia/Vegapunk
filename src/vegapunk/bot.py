@@ -1,6 +1,7 @@
 """Bot Telegram (polling). Única interface do usuário."""
 import asyncio
 import logging
+from pathlib import Path
 
 from telegram.error import NetworkError
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
@@ -12,12 +13,14 @@ from .chat import Chat
 from .config import settings
 from .db import Database
 from .enrich import EnrichmentError
+from .extract import DOC_EXTS
 from .normalize import extract_urls
 from .pipeline import Pipeline
 
 log = logging.getLogger("vegapunk.bot")
 
-HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram ou de artigos/páginas web e eu extraio, resumo e guardo no Punk Records (artigos vão por inteiro).\n"
+HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram, artigos/páginas web ou <b>arquivos</b> (PDF, Word, planilha, txt/md/csv até 20 MB) "
+        "e eu extraio, resumo e guardo no Punk Records (artigos e documentos vão por inteiro).\n"
         "Texto sem link é conversa com o Satélite ativo (Stella por padrão); eles consultam o Punk Records antes de responder.\n"
         "<b>Comandos dos Satélites:</b> <code>*help</code> lista o que o Satélite ativo faz aqui; ex.: <code>/lilith *attack usar scraping do Maps</code>, "
         "<code>/pythagoras *dossier precificação</code>, <code>/york *cost</code>.\n\n"
@@ -26,6 +29,7 @@ HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram o
         "/stats — contagem por estado\n/pending — itens sem triagem ou com falha\n"
         "/reprocess &lt;id&gt; — tenta de novo um item com falha\n/id — mostra o id deste chat")
 TG_MAX = 4000
+DOC_MAX_BYTES = 20 * 1024 * 1024   # teto do Bot API para download
 
 
 def chunks(text: str, size: int = TG_MAX) -> list[str]:
@@ -183,6 +187,37 @@ def build_app(db: Database) -> Application:
             asyncio.create_task(pipeline.run(item_id))
         await msg.reply_text(voices.capture_line(len(urls), sat=sat), parse_mode=ParseMode.HTML)
 
+    async def on_document(update: Update, _):
+        """Arquivo anexado (PDF, DOCX, XLSX, TXT/MD/CSV): baixa para tmp/documents e entra no pipeline como platform=document."""
+        if not allowed(update):
+            return
+        msg = update.message
+        doc = msg.document
+        ext = Path(doc.file_name or "").suffix.lower()
+        if ext not in DOC_EXTS:
+            await msg.reply_text(f"📎 Tipo não suportado ({ext or 'sem extensão'}). Aceito: {', '.join(sorted(DOC_EXTS))}.")
+            return
+        if doc.file_size and doc.file_size > DOC_MAX_BYTES:
+            await msg.reply_text("📎 Arquivo acima de 20 MB — o Telegram não deixa o bot baixar. Divida ou mande um link.")
+            return
+        sat = voices.pick()
+        dest = settings.tmp_dir / "documents" / f"{doc.file_unique_id}{ext}"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            tg_file = await doc.get_file()
+            await tg_file.download_to_drive(dest)
+        except Exception:
+            log.exception("download de documento falhou")
+            await msg.reply_text("📎 Não consegui baixar o arquivo do Telegram. Tente de novo.")
+            return
+        n = 1
+        item_id = db.create_item(f"file://{dest}", msg.chat_id, msg.message_id, satellite=sat)
+        asyncio.create_task(pipeline.run(item_id))
+        for url in extract_urls(msg.caption or ""):   # links na legenda do arquivo também contam
+            asyncio.create_task(pipeline.run(db.create_item(url, msg.chat_id, msg.message_id, satellite=sat)))
+            n += 1
+        await msg.reply_text(voices.capture_line(n, sat=sat, noun="arquivo" if n == 1 else "item"), parse_mode=ParseMode.HTML)
+
     async def on_callback(update: Update, _):
         q = update.callback_query
         if not allowed(update):
@@ -221,6 +256,7 @@ def build_app(db: Database) -> Application:
     app.add_handler(CommandHandler("esquecer", cmd_esquecer))
     app.add_handler(CommandHandler("conta", cmd_conta))
     app.add_handler(CallbackQueryHandler(on_callback, pattern=r"^triage:"))
+    app.add_handler(MessageHandler(filters.Document.ALL, on_document))      # antes do texto: documento com legenda cai aqui
     app.add_handler(MessageHandler(filters.TEXT | filters.CAPTION, on_message))
     return app
 

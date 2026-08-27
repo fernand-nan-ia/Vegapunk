@@ -3,6 +3,7 @@ import asyncio
 import json
 import logging
 import time
+from pathlib import Path
 
 from . import vault, voices
 from .db import Database
@@ -100,6 +101,8 @@ class Pipeline:
                                       title=ex.title, channel=ex.channel, duration=ex.duration, description=ex.description,
                                       content_type=ex.content_type, raw_content=ex.text, content_lang=ex.lang,
                                       extracted_at=vault_now(), error_code=None, error_detail=None)
+                if item["platform"] == "document":   # texto já está no banco; o arquivo temporário pode ir
+                    Path(item["canonical_url"].removeprefix("file://")).unlink(missing_ok=True)
                 return True
             except ExtractionError as e:
                 log.warning("extração item=%s tentativa=%s %s", item_id, attempt, e)

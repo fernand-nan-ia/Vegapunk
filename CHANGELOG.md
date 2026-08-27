@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.4.0 — 2026-08-27
+### Adicionado
+- **Documentos pelo Telegram**: PDF, DOCX, XLSX/XLSM, TXT/MD/CSV (≤ 20 MB) → `platform: document`, texto integral no vault (`punk_records/document/`), duplicata por hash do conteúdo, links na legenda também capturados. `extract_document` (pypdf + `pdftotext` de reserva, python-docx com títulos/tabelas, openpyxl por aba com teto de 300 linhas).
+- Dockerfile: `poppler-utils`. `pyproject`: pypdf, python-docx, openpyxl (exige `docker compose build`).
+- **Temas**: cada item ganha `theme` (escolhido pelo modelo; `themes.guess_theme` de reserva). `INDEX.md` com mapa de temas e itens agrupados por tema; `punk_records/temas/<tema>.md` — uma página por assunto para outros projetos lerem. `scripts/backfill_themes.py` classifica o acervo existente numa chamada.
+### Corrigido
+- Páginas que derrubam clientes 'de robô' (planalto.gov.br): `extract.fetch_html` baixa com cabeçalhos de navegador, trafilatura como reserva. Teto de artigos/documentos subiu para 150k chars (`settings.max_document_chars`) — uma lei inteira cabe.
+
+### Gate: Shaka PASS (ressalva: restart com item em retentativa perde a task em voo; resume_unfinished retoma) · Verify: Lilith ✓ (docs, planalto e temas testados em produção) · Testes: 70/70
 ## v1.3.0 — 2026-08-27
 ### Adicionado
 - Satélites com **ferramentas no Telegram** (`tools.py`, tool-use via OpenRouter): `search_punk_records`, `read_item`, `punk_records_status` (saúde + custo em US$), `recent_changes` (git log do vault), `write_diary`. Loop de até 3 rodadas em conversa e 8 em comando.

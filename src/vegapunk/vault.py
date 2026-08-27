@@ -8,6 +8,7 @@ from pathlib import Path
 from slugify import slugify
 
 from .config import ROOT, settings
+from . import themes
 
 log = logging.getLogger("vegapunk.vault")
 
@@ -45,7 +46,7 @@ def render(item: dict, manual_notes: str = "") -> str:
         f"item_id: {_yaml_str(item['id'])}",
         f"platform: {item['platform']}",
         f"external_id: {_yaml_str(item['external_id'])}",
-        f"canonical_url: {_yaml_str(item['canonical_url'])}",
+        f"canonical_url: {_yaml_str(Path(item['canonical_url'].removeprefix('file://')).name if item.get('platform') == 'document' else item['canonical_url'])}",
         f"channel: {_yaml_str(item.get('channel'))}",
         f"captured_at: {(item['captured_at'] or '')[:10]}",
         f"status: {item['status']}",
@@ -56,12 +57,18 @@ def render(item: dict, manual_notes: str = "") -> str:
         f"  projeto_cliente: {app.get('projeto_cliente', 'null')}",
         f"  estudo_geral: {app.get('estudo_geral', 'null')}",
         f"confidence: {e['confidence'] if e else 'null'}",
+        f"theme: {themes.theme_of(e) if e else 'null'}",
         f"content_type: {item.get('content_type') or 'null'}",
         "---",
         "",
     ]
     title = (e["title"] if e else item.get("title")) or item["canonical_url"]
-    body = [f"# {title}", "", f"🔗 {item['canonical_url']}", ""]
+    src = item["canonical_url"]
+    if item.get("platform") == "document":
+        src = f"📎 {Path(src.removeprefix('file://')).name} (enviado pelo Telegram)"
+    else:
+        src = f"🔗 {src}"
+    body = [f"# {title}", "", src, ""]
     if e:
         body += ["## Resumo", "", e["summary"]]
         if e.get("topics"):
@@ -76,8 +83,8 @@ def render(item: dict, manual_notes: str = "") -> str:
             from .voices import ICON, NAME
             sat = e.get("satellite") or "stella"
             body += ["", f"## {ICON[sat]} {NAME[sat]} diz", "", e["satellite_take"]]
-        if item.get("content_type") == "article" and item.get("raw_content"):
-            body += ["", "## Texto integral", "", "<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->", "",
+        if item.get("content_type") in ("article", "document") and item.get("raw_content"):
+            body += ["", "## Texto integral", "", "<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->", "",
                      _demote_headings(item["raw_content"].strip())]
     else:
         body += ["_Pendente de extração automática. Cole o conteúdo em Notas manuais e rode `/reprocess`._"]
@@ -131,17 +138,25 @@ def _rel_to_vault(vault_path: str) -> Path:
 
 
 def write_index(items: list[dict]) -> Path:
-    lines = ["# Vegapunk — Índice da memória", "", "Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.", ""]
-    for it in items:
-        e = json.loads(it["enrichment"])
-        a = e["applicability"]
-        rel = _rel_to_vault(it["vault_path"]) if it.get("vault_path") else ""
-        lines.append(
-            f"- {it['captured_at'][:10]} · {it['platform']} · [{e['title']}]({rel}) · "
-            f"`{'` `'.join(e['tags'])}` · {a['saas_pessoal']}/{a['projeto_cliente']}/{a['estudo_geral']} · {it.get('triage_decision') or '—'}"
-        )
+    """INDEX.md agrupado por tema + páginas temas/<tema>.md. Linha do item: data · plataforma · [título](caminho) · tags · saas/cliente/estudo · triagem."""
+    rel_of = lambda it: str(_rel_to_vault(it["vault_path"])) if it.get("vault_path") else ""
+    groups = themes.group_by_theme(items)
+    lines = ["# Vegapunk — Índice da memória", "",
+             "Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos primeiro. "
+             "Linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.", "",
+             "## Mapa de temas", ""] + themes.theme_map_lines(groups) + [""]
+    for slug, pairs in groups.items():
+        lines += [f"## {themes.label(slug)}", ""]
+        for it, e in pairs:
+            a = e["applicability"]
+            lines.append(
+                f"- {it['captured_at'][:10]} · {it['platform']} · [{e['title']}]({rel_of(it)}) · "
+                f"`{'` `'.join(e['tags'])}` · {a['saas_pessoal']}/{a['projeto_cliente']}/{a['estudo_geral']} · {it.get('triage_decision') or '—'}"
+            )
+        lines.append("")
     p = settings.vault_dir / "INDEX.md"
-    p.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    p.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    themes.write_theme_pages(items, settings.vault_dir, rel_of)
     return p
 
 

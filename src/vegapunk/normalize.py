@@ -19,7 +19,7 @@ URL_RE = re.compile(r"https?://[^\s<>\"')\]]+")
 
 @dataclass(frozen=True)
 class Normalized:
-    platform: str          # youtube | tiktok | instagram | article | other
+    platform: str          # youtube | tiktok | instagram | article | document | other
     external_id: str | None
     canonical_url: str
 
@@ -49,7 +49,23 @@ def resolve_redirect(url: str, timeout: float = 10) -> str:
             return url
 
 
+def normalize_document(url: str) -> Normalized:
+    """file:///caminho/arquivo.pdf → ('document', sha1 do conteúdo, mesma URL). Arquivo idêntico = duplicata."""
+    from pathlib import Path
+    path = Path(url.removeprefix("file://"))
+    h = hashlib.sha1()
+    try:
+        with path.open("rb") as f:
+            for chunk in iter(lambda: f.read(1 << 20), b""):
+                h.update(chunk)
+    except OSError:
+        return Normalized("document", None, url)
+    return Normalized("document", h.hexdigest()[:12], url)
+
+
 def normalize(url: str, resolver=resolve_redirect) -> Normalized:
+    if url.startswith("file://"):
+        return normalize_document(url)
     host = (urlparse(url).hostname or "").lower()
 
     if "youtu" in host:
