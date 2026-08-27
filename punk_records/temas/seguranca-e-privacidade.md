@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — ativar MFA na conta com app autenticador (e como desativar)](../article/2026-08-27_resend-ativar-mfa-na-conta-com-app-autenticador-e-como-desat_83891a9d3985.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `resend` `mfa` `seguranca` `conta`
+
+MFA no Resend: Profile → Enable MFA → QR no autenticador → código.
 
 ## [Resend — trocar o e-mail da conta: dupla confirmação (novo e atual)](../article/2026-08-27_resend-trocar-o-e-mail-da-conta-dupla-confirmacao-novo-e-atu_304e119d4601.md)
 2026-08-27 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `resend` `conta` `seguranca`
