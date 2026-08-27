@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **51/51 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `023fa49` (v1.2.0, sessão 4b); agentes nunca fazem)
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **58/58 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `9be20c5` (v1.3.0, sessão 4c); agentes nunca fazem)
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -54,7 +54,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - Release feita pela Stella após "push" do Fernando (gate PASS, 51/51). Duplicata/falhas agora falam na voz do dono do lote.
 - Ideia decorrente: "Notas manuais" e `/reprocess` continuam valendo para artigo com paywall (cai em ERR-004 → `_pending/`).
 
-## Sessão 4c (2026-08-27) — Satélites com ferramentas e comandos no Telegram (NÃO commitado)
+## Sessão 4c (2026-08-27) — Satélites com ferramentas e comandos no Telegram — **v1.3.0 `9be20c5` pushado**
 
 - `src/vegapunk/tools.py`: 5 ferramentas (busca, leitura de item, status/custo, git log do vault, diário). Só leitura + diário; nada executa código.
 - `chat.py`: `parse_command` (`*cmd args`); comando fora de `TELEGRAM_COMMANDS` ou `*help` → resposta pronta (zero tokens); senão o procedimento do `.md` entra como system message e roda o loop de tool-use (3 rodadas conversa / 8 comando). Tokens das rodadas somados em `chat_messages`.

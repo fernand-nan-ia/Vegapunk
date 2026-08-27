@@ -10,3 +10,4 @@
 ## Sincronizações
 - 2026-08-27 · v1.1.0 `40fec7d` — cânone nos 7 Satélites, knowledge/ → punk_records/, README; Lilith achou vault_path antigo no banco, corrigido antes do push; Fernando disse "push" (primeiro *release de teste)
 - 2026-08-27 · v1.2.0 `023fa49` — artigos web (trafilatura, texto integral) + Satélites apresentam itens no Telegram (brief/summary, dono do lote); Fernando disse "push"
+- 2026-08-27 · v1.3.0 `9be20c5` — Satélites com ferramentas (busca, item, status/custo, git, diário) e comandos * no Telegram; *council ficou fora por custo; Fernando disse "push"
