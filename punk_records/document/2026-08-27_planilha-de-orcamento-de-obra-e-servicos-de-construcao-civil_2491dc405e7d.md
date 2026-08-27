@@ -5,8 +5,8 @@ external_id: "2491dc405e7d"
 canonical_url: "teste_orcamento.xlsx"
 channel: "documento xlsx"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["orcamento-obra", "construcao-civil", "planilha-de-custos", "gestao-financeira"]
 applicability:
   saas_pessoal: nenhuma
