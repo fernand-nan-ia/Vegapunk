@@ -85,6 +85,13 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - Motivo (Fernando): minimizar custo do OpenRouter — a sessão do Claude Code faz o resumo. `scripts/capture.py extract|enrich|auto|pending`; `stella.md` ganhou `capture` (+ task). `enrich` usa `db.transition_to(..., "enriched", "claude_code", …, model_used="claude-code")` e depois `Pipeline.step_persist` (vault, índice, temas, commit, Telegram). York: `punk_records_status` soma tokens só de `item_events`, então itens claude-code entram como custo zero — correto.
 - Sync rodado; FURY commitado e pushado junto. Compose: `stop_grace_period: 30s` (fim dos exit 137 em restart).
 
+## Sessão 4g (2026-08-27) — lote de captura sem OpenRouter (Hostinger, Shopify, Registro.br) — capture.py com `--text` (NÃO commitado)
+
+- Lote da noite de 2026-08-27 pelo `*capture` (custo OpenRouter zero, resumos escritos pela sessão): Hostinger 8, Shopify 2, Registro.br 6, Claude Code memória 1, SerpApi 4, Resend 27, Sentry 1, Cloudflare (Workers/Analytics/R2) 11, UptimeRobot 2, reCAPTCHA 2, GitHub 1, Nominatim 2, MapTiler 2, Geoapify 2 = **71 itens**. Páginas só de navegação/vitrine (menus em JS) foram descartadas do banco em vez de poluir o vault (SerpApi 3, Cloudflare 2, Sentry guides, R2 buckets, reCAPTCHA home/samples, docs.github home).
+- **Armadilha nova — SPA (registro.br)**: HTML de 4 KB, conteúdo em chunks Vue (`/assets/<Rota>-<hash>.js`) e API com XSRF de sessão (preços não obtidos). Solução usada: baixar os chunks, extrair strings de texto (script ad hoc no scratchpad) e alimentar com `capture.py extract <url> --text arquivo.txt`. Páginas de preço da Hostinger/Shopify também renderizam tabelas por JS: preços registrados só onde o texto trazia; `confidence: media` quando faltou.
+- `docker compose exec -T` dentro de `while read` consome o stdin do laço → usar `</dev/null` (ou `for`).
+- `_pending/` restante: carrinho da Hostinger (checkout pessoal, sem texto) e um Instagram antigo.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |

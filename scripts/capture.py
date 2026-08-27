@@ -2,7 +2,8 @@
 
 Fluxo em dois passos (o resumo é feito pela sessão do Claude Code, não pelo modelo do OpenRouter):
 
-  1. python scripts/capture.py extract <url|arquivo> [--sat york]
+  1. python scripts/capture.py extract <url|arquivo> [--sat york] [--text arquivo.txt --title "…" --channel "…"]
+       (--text: usar texto já obtido — página em JavaScript, print colado — mantendo a URL como fonte)
        → cria o item, normaliza, extrai (yt-dlp/Whisper/trafilatura/PDF… tudo local) e grava
          tmp/capture/<id>.md com metadados + TEXTO + o contrato do JSON de enriquecimento.
   2. (o Claude Code lê esse arquivo e escreve tmp/capture/<id>.json seguindo o contrato)
@@ -62,16 +63,39 @@ def _source(arg: str) -> str:
     return f"file://{p.resolve()}" if p.exists() else arg
 
 
+def _reuse_failed(db, source: str, sat: str) -> str | None:
+    """Se a mesma fonte já falhou antes (extraction_failed/pending_manual), reaproveita o item em vez de criar duplicata."""
+    n = normalize(source)
+    dup = db.find_by_external(n.platform, n.external_id) if n.external_id else None
+    if dup and dup["status"] in ("extraction_failed", "pending_manual"):
+        if dup["status"] == "extraction_failed":
+            db.transition_to(dup["id"], "normalized", "manual", {"retry": "capture"})
+        db.update(dup["id"], satellite=sat, error_code=None, error_detail=None)
+        print(f"reaproveitando item {dup['id'][:8]} ({dup['status']} → nova tentativa)")
+        return dup["id"]
+    return None
+
+
 def cmd_extract(args):
     db = Database(settings.db_path)
     sat = args.sat or voices.pick()
-    item_id = db.create_item(_source(args.source), _chat_id(), 0, satellite=sat)
+    src = _source(args.source)
+    item_id = _reuse_failed(db, src, sat) or db.create_item(src, _chat_id(), 0, satellite=sat)
     p = Pipeline(db, _notifier(quiet=True))
 
     async def run():
-        i = await p.step_normalize(item_id)
-        if i is None:
-            return None
+        if db.get(item_id)["status"] == "captured":
+            i = await p.step_normalize(item_id)
+            if i is None:
+                return None
+        if args.text:  # texto fornecido (página em JavaScript, print colado…): pula a extração automática
+            text = Path(args.text).read_text(encoding="utf-8").strip()
+            if len(text) < 50:
+                return None
+            db.transition_to(item_id, "extracted", "manual", {"chars": len(text)}, raw_content=text, content_type="manual",
+                             content_lang="und", title=args.title or db.get(item_id)["canonical_url"], channel=args.channel or "",
+                             extracted_at=now())
+            return item_id
         return item_id if await p.step_extract(item_id) else None
     ok = asyncio.run(run())
     item = db.get(item_id)
@@ -137,7 +161,9 @@ def cmd_pending(_args):
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
 sub = ap.add_subparsers(dest="cmd", required=True)
-s1 = sub.add_parser("extract"); s1.add_argument("source"); s1.add_argument("--sat", choices=satellites.IDS); s1.set_defaults(fn=cmd_extract)
+s1 = sub.add_parser("extract"); s1.add_argument("source"); s1.add_argument("--sat", choices=satellites.IDS)
+s1.add_argument("--text", help="arquivo com o texto já extraído (páginas em JavaScript, conteúdo colado)")
+s1.add_argument("--title"); s1.add_argument("--channel"); s1.set_defaults(fn=cmd_extract)
 s2 = sub.add_parser("enrich"); s2.add_argument("id"); s2.add_argument("--json"); s2.add_argument("--quiet", action="store_true"); s2.set_defaults(fn=cmd_enrich)
 s3 = sub.add_parser("auto"); s3.add_argument("source"); s3.add_argument("--sat", choices=satellites.IDS); s3.add_argument("--quiet", action="store_true"); s3.set_defaults(fn=cmd_auto)
 s4 = sub.add_parser("pending"); s4.set_defaults(fn=cmd_pending)

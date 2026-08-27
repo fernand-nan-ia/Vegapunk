@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.5.1 — 2026-08-27
+### Adicionado
+- `capture.py extract --text arquivo --title --channel`: usar texto já obtido (páginas em JavaScript, conteúdo colado) mantendo a URL como fonte (`content_type: manual`).
+- `capture.py` reaproveita itens que falharam (`extraction_failed`/`pending_manual`) em vez de criar duplicata; o `_pending/` antigo é removido na persistência.
+### Gate: Shaka PASS · Verify: Lilith ✓ (--text e reaproveitamento usados em ~70 capturas reais) · Testes: 70/70
+
 ## v1.5.0 — 2026-08-27
 ### Corrigido
 - `docker-compose.yml`: `stop_grace_period: 30s` (restart matava o bot em 10 s → exit 137 e task em voo perdida). `Tool.name` até 100 chars (evita retry pago no enriquecimento).
