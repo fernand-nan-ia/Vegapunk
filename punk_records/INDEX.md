@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 22 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 23 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 8 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -35,6 +35,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 2026-08-27 · article · [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md) · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates` · alta/media/media · —
 - 2026-08-27 · article · [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md) · `resend` `logs` `observabilidade` `debug` `api` · alta/media/media · —
 - 2026-08-27 · article · [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md) · `resend` `dominio` `dns` `dkim` `spf` `dmarc` `entregabilidade` · alta/media/media · —
+- 2026-08-27 · article · [Resend — webhooks: receber eventos de e-mail em tempo real, testar localmente, retentativas e IPs](article/2026-08-27_resend-webhooks-receber-eventos-de-e-mail-em-tempo-real-test_0fd780231949.md) · `resend` `webhooks` `eventos-de-email` `bounce` `inbound` `observabilidade` · alta/media/media · —
 - 2026-08-27 · article · [Resend — criar uma chave de API: permissões, restrição por domínio e uso via variável de ambiente](article/2026-08-27_resend-criar-uma-chave-de-api-permissoes-restricao-por-domin_d1be3efca69b.md) · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas` · alta/media/media · —
 - 2026-08-27 · article · [Resend — connections: definindo as ligações entre passos de uma automação via API (exemplos em 6 linguagens)](article/2026-08-27_resend-connections-definindo-as-ligacoes-entre-passos-de-uma_307fcd951e99.md) · `resend` `automations` `api` `infra-como-codigo` `python` · alta/media/media · —
 - 2026-08-27 · article · [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md) · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt` · alta/media/media · —
