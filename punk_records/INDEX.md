@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-27 · article · [Entendendo a censura ao Discord e a ECA digital](article/2026-08-27_entendendo-a-censura-ao-discord-e-a-eca-digital_eb9b588141e8.md) · `eca-digital` `anpd` `criptografia-ponta-a-ponta` `lgpd` `regulacao-de-plataformas` `privacidade-digital` `vpn` `marco-civil-da-internet` · media/baixa/alta · —
 - 2026-08-27 · tiktok · [#ad to amando aprender sobre IA](tiktok/2026-08-27_ad-to-amando-aprender-sobre-ia_7659911795506744596.md) · `claude-code` `inteligencia-artificial` `video-curto` · nenhuma/nenhuma/nenhuma · discard
 - 2026-08-27 · tiktok · [5 Repositórios GitHub para Limpeza e Segurança de Código Pós-Vibecoding](tiktok/2026-08-27_5-repositorios-github-para-limpeza-e-seguranca-de-codigo-pos_7656153667501870358.md) · `vibecoding` `code-quality` `dead-code-removal` `security-scanner` `code-audit` `github-repos` · alta/alta/media · apply_saas
 - 2026-08-27 · tiktok · [Top 3 erros de segurança comuns no vibe coding](tiktok/2026-08-27_top-3-erros-de-seguranca-comuns-no-vibe-coding_7652116731359431954.md) · `vibe-coding` `supabase-rls` `edge-functions` `env-leaks` `security-audit` `app-security` `claude-code` · alta/alta/media · apply_saas
