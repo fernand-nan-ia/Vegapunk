@@ -154,3 +154,4 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - Push automático do vault (`VEGAPUNK_GIT_PUSH=true` + `~/.ssh` no compose).
 - Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente apontando para `/vegapunk`.
 - MCP de consulta ao vault.
+- **Integrar o Punk Records com Notion ou Obsidian** (pedido do Fernando em 2026-08-27, a estudar). Obsidian: o vault já é Markdown com frontmatter — basta abrir `punk_records/` como vault; avaliar wikilinks, Dataview sobre `tags`/`applicability`, e não quebrar `## Notas manuais`. Notion: exige sync via API (páginas por item, propriedades = frontmatter); há um doc antigo em `.docs/pacote_telegram_knowledge_bot_v1/06_persistencia_obsidian/`.
