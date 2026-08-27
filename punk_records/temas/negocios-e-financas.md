@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Geoapify — preços por créditos: 1 requisição simples = 1 crédito; Free comercial com atribuição; limites 'soft'; dedicado 700 €/mês; SLA 99,5% nos pagos](../article/2026-08-27_geoapify-precos-por-creditos-1-requisicao-simples-1-credito_26727b74e3c5.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `geoapify` `precos` `creditos` `geocoding` `free-tier`
+
+Geoapify cobra por créditos (1 chamada simples = 1 crédito); Free serve para uso comercial com atribuição e limites 'soft'; valores dos planos não vieram (calculador).
 
 ## [MapTiler Cloud — modelo de preços: Free (logo, 5 GB), Flex pay-as-you-go (10 GB, sem logo, SLA), Custom; cobrança por sessões e requisições](../article/2026-08-27_maptiler-cloud-modelo-de-precos-free-logo-5-gb-flex-pay-as-y_4401cac3bd7a.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `maptiler` `precos` `mapas` `pay-as-you-go` `sessoes`
