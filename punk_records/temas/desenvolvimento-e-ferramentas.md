@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Hostinger VPS KVM — planos (KVM 1 a KVM 8), preços e VPS gerenciado por IA](../article/2026-08-27_hostinger-vps-kvm-planos-kvm-1-a-kvm-8-precos-e-vps-gerencia_622ffe58fa4e.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `hostinger` `vps` `kvm` `precos` `docker` `n8n`
+
+VPS KVM da Hostinger: R$ 29,99 (KVM 1) a R$ 119,99/mês (KVM 8); KVM 2 (2 vCPU/8 GB/100 GB NVMe) por R$ 43,99 é o indicado para n8n.
 
 ## [Documentação do Endpoint /scrape da Firecrawl](../article/2026-08-27_documentacao-do-endpoint-scrape-da-firecrawl_ae119d362098.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem archive · `firecrawl` `web-scraping` `llm-tools` `data-extraction` `json-schema` `api`
