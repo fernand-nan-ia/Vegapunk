@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 35 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — integrações: agentes de código, ferramentas de IA, no-code (n8n, Zapier, Make), notificações, CMS e dev tools](../article/2026-08-27_resend-integracoes-agentes-de-codigo-ferramentas-de-ia-no-co_945d75b18fb6.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `integracoes` `n8n` `zapier` `wordpress` `claude-code`
+
+O Resend se liga a quase tudo: Claude Code e Cursor (MCP/plugin), n8n/Zapier/Make, Novu/Knock, Payload/Strapi, Inngest/Trigger.dev, WordPress via Post SMTP.
 
 ## [Resend MCP Server — remoto (OAuth/Bearer) e local (npx, stdio/HTTP): opções e ferramentas para agentes](../article/2026-08-27_resend-mcp-server-remoto-oauth-bearer-e-local-npx-stdio-http_2791bb5fe7ab.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `mcp` `claude-code` `agentes` `automacao`
