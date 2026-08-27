@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [MapTiler Cloud — modelo de preços: Free (logo, 5 GB), Flex pay-as-you-go (10 GB, sem logo, SLA), Custom; cobrança por sessões e requisições](../article/2026-08-27_maptiler-cloud-modelo-de-precos-free-logo-5-gb-flex-pay-as-y_4401cac3bd7a.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `maptiler` `precos` `mapas` `pay-as-you-go` `sessoes`
+
+MapTiler cobra por sessão de mapa (abrir o mapa; navegar é grátis) e por requisições; Free só não comercial e com logo; Flex é pay-as-you-go comercial com SLA.
 
 ## [GitHub — preços: Free (repos ilimitados, 2.000 min de Actions), Team US$ 4/usuário, Enterprise US$ 21/usuário; add-ons Copilot, Advanced Security, Codespaces](../article/2026-08-27_github-precos-free-repos-ilimitados-2-000-min-de-actions-tea_bb65e6d6f03b.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `github` `precos` `github-actions` `ci-cd` `copilot` `planos`
