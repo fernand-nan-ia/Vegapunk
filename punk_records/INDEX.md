@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 42 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 43 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 10 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -32,6 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-08-27 · article · [Cloudflare R2 — visão geral: armazenamento de objetos sem taxa de egress, casos de uso e recursos (location hints, CORS, buckets públicos, tokens, Data Catalog)](article/2026-08-27_cloudflare-r2-visao-geral-armazenamento-de-objetos-sem-taxa_a955751d328b.md) · `cloudflare` `r2` `object-storage` `s3` `egress` `storage` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md) · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers — conectar a bancos de dados: D1, Postgres/MySQL via Hyperdrive, Supabase/Neon/PlanetScale, drivers serverless](article/2026-08-27_cloudflare-workers-conectar-a-bancos-de-dados-d1-postgres-my_899edaad2043.md) · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase` `multi-tenant` · alta/media/media · —
 - 2026-08-27 · article · [Cloudflare Workers — CI/CD: Workers Builds (GitHub/GitLab) ou provedores externos; por que automatizar o deploy](article/2026-08-27_cloudflare-workers-ci-cd-workers-builds-github-gitlab-ou-pro_8ff27fbb138d.md) · `cloudflare` `workers` `ci-cd` `deploy` `github` · alta/media/media · —

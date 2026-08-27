@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 42 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 43 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cloudflare R2 — visão geral: armazenamento de objetos sem taxa de egress, casos de uso e recursos (location hints, CORS, buckets públicos, tokens, Data Catalog)](../article/2026-08-27_cloudflare-r2-visao-geral-armazenamento-de-objetos-sem-taxa_a955751d328b.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `object-storage` `s3` `egress` `storage`
+
+R2 = S3 sem cobrança de saída de dados: guarda arquivos, serve conteúdo web e datasets; buckets públicos, tokens por bucket, CORS, Data Catalog (Iceberg) e integração com Workers.
 
 ## [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](../article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing`
