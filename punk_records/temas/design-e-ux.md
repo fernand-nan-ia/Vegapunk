@@ -1,0 +1,18 @@
+# 🎨 Design e UX
+
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](../tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md)
+2026-08-26 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_saas · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade`
+
+Apresenta regras práticas de design de interface para melhorar a usabilidade e o acabamento visual.
+
+## [Chamada para habilidades de design no front-end](../tiktok/2026-08-26_chamada-para-habilidades-de-design-no-front-end_7658016248529177873.md)
+2026-08-26 · tiktok · SaaS baixa · cliente baixa · estudo baixa · triagem discard · `front-end-design` `ui-design` `habilidades-frontend`
+
+O post atua como uma chamada de engajamento prometendo compartilhar três habilidades de design para transformar o desenvolvimento front-end.
+
+## [5 sites úteis de design para identidade visual, assets e mockups](../tiktok/2026-08-26_5-sites-uteis-de-design-para-identidade-visual-assets-e-mock_7672502144024595732.md)
+2026-08-26 · tiktok · SaaS media · cliente alta · estudo media · triagem archive · `ui-design` `branding` `design-assets` `ia-generativa` `mockups` `vetorizacao`
+
+Criar identidades visuais e materiais consistentes exige ferramentas que fujam de bancos de dados genéricos.

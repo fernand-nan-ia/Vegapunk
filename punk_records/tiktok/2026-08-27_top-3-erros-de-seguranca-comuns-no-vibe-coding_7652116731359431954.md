@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: media
 confidence: media
+theme: seguranca-e-privacidade
 content_type: whisper
 ---
 

@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: alta
 confidence: alta
+theme: ia-e-agentes
 content_type: article
 ---
 
@@ -65,7 +66,7 @@ O registro demonstra com clareza matemática que capacidade bruta sem o harness 
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
 
 ### Novo LLM Benchmark: refiz todos os testes!
 

@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: baixa
   estudo_geral: alta
 confidence: alta
+theme: seguranca-e-privacidade
 content_type: article
 ---
 
@@ -62,7 +63,7 @@ Fernando, o relatório descreve uma erosão técnica objetiva. Quando o regulado
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
 
 ### Entendendo a censura ao Discord e a ECA digital
 

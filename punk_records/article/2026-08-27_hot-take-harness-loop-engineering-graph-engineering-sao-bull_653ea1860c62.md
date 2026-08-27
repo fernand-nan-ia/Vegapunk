@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: alta
 confidence: alta
+theme: ia-e-agentes
 content_type: article
 ---
 
@@ -62,7 +63,7 @@ Kwahaha! Uma análise brilhante sobre a história cíclica da engenharia, Fernan
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
 
 ### Hot take: Harness, Loop Engineering, Graph Engineering são Bullshit
 

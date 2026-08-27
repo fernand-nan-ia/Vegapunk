@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: alta
 confidence: alta
+theme: ia-e-agentes
 content_type: article
 ---
 
@@ -67,7 +68,7 @@ Se esse tal de Claude Code trabalha enquanto o meu computador tá desligado via 
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
 
 ### Get started
 

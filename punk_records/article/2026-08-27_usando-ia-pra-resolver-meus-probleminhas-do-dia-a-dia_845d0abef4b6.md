@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: baixa
   estudo_geral: alta
 confidence: alta
+theme: desenvolvimento-e-ferramentas
 content_type: article
 ---
 
@@ -65,7 +66,7 @@ Isso é uma evidência de como o custo marginal de desenvolvimento caiu a ponto 
 
 ## Texto integral
 
-<!-- extraído da página; artigos são guardados por inteiro (títulos rebaixados um nível) -->
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
 
 ### Usando IA pra resolver meus probleminhas do dia-a-dia
 

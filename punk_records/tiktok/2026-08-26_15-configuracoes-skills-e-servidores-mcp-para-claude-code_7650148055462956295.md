@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: alta
 confidence: alta
+theme: ia-e-agentes
 content_type: slides
 ---
 

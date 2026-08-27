@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: nenhuma
   estudo_geral: media
 confidence: alta
+theme: carreira-e-aprendizado
 content_type: whisper
 ---
 

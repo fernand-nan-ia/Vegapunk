@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: alta
 confidence: alta
+theme: seguranca-e-privacidade
 content_type: transcript
 ---
 

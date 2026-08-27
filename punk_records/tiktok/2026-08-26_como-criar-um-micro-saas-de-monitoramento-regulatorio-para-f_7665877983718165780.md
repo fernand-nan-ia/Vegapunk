@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: media
   estudo_geral: alta
 confidence: alta
+theme: produto-e-saas
 content_type: slides
 ---
 

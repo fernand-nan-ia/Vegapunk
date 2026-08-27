@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: nenhuma
   estudo_geral: baixa
 confidence: baixa
+theme: ia-e-agentes
 content_type: slides
 ---
 

@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: baixa
   estudo_geral: alta
 confidence: alta
+theme: carreira-e-aprendizado
 content_type: slides
 ---
 

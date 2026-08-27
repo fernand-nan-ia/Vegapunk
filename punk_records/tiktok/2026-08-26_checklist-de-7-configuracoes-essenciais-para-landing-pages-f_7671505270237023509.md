@@ -13,6 +13,7 @@ applicability:
   projeto_cliente: alta
   estudo_geral: media
 confidence: alta
+theme: marketing-e-vendas
 content_type: whisper
 ---
 
