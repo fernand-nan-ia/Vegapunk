@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Hostinger — hospedagem gerenciada de n8n, OpenClaw e Hermes Agent (automação com IA)](../article/2026-08-27_hostinger-hospedagem-gerenciada-de-n8n-openclaw-e-hermes-age_1a6de9d5c684.md)
+2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `hostinger` `n8n` `openclaw` `hermes-agent` `automacao-com-ia` `hospedagem-gerenciada`
+
+Hospedagem gerenciada de n8n/OpenClaw/Hermes: renovação a R$ 59,99/mês (preços promocionais não renderizaram).
 
 ## [Memória do Claude Code: CLAUDE.md, regras por caminho e auto memory](../article/2026-08-27_memoria-do-claude-code-claude-md-regras-por-caminho-e-auto-m_8449d3c9e81a.md)
 2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem archive · `claude-code` `claude-md` `auto-memory` `claude-rules` `context-management` `configuracao-de-agentes`
