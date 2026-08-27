@@ -5,8 +5,8 @@ external_id: "aafe2c8a6c78"
 canonical_url: "teste_vistoria.docx"
 channel: "documento docx"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["vistoria-de-obras", "construcao-civil", "checklist-tecnico", "controle-de-qualidade"]
 applicability:
   saas_pessoal: nenhuma
