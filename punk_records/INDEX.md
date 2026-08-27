@@ -2,6 +2,7 @@
 
 Gerado automaticamente. Um item por linha: data · plataforma · título · tags · aplicabilidade (saas/cliente/estudo) · triagem.
 
+- 2026-08-27 · article · [Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)](article/2026-08-27_lei-geral-de-protecao-de-dados-pessoais-lgpd-lei-no-13-709-2_738beed144b7.md) · `lgpd` `privacidade-de-dados` `conformidade-legal` `seguranca-da-informacao` `anpd` `privacy-by-design` · alta/alta/alta · —
 - 2026-08-27 · article · [Visão Geral e Fundamentos da Lei Geral de Proteção de Dados (LGPD)](article/2026-08-27_visao-geral-e-fundamentos-da-lei-geral-de-protecao-de-dados_f3323dda928b.md) · `lgpd` `privacidade` `protecao-de-dados` `compliance` `seguranca-da-informacao` `direito-digital` `governanca` · alta/alta/alta · apply_saas
 - 2026-08-27 · document · [Checklist de Vistoria de Obra Residencial](document/2026-08-27_checklist-de-vistoria-de-obra-residencial_aafe2c8a6c78.md) · `vistoria-de-obras` `construcao-civil` `checklist-tecnico` `controle-de-qualidade` · nenhuma/baixa/media · archive
 - 2026-08-27 · document · [Planilha de Orçamento de Obra e Serviços de Construção Civil](document/2026-08-27_planilha-de-orcamento-de-obra-e-servicos-de-construcao-civil_2491dc405e7d.md) · `orcamento-obra` `construcao-civil` `planilha-de-custos` `gestao-financeira` · nenhuma/nenhuma/baixa · archive
