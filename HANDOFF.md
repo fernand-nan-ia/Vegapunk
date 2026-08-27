@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **70/70 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `e9b1e5b` (v1.4.0, sessões 4d–4e); agentes nunca fazem)
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **70/70 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `b8a560b` (v1.5.0, sessão 4f); agentes nunca fazem)
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -80,10 +80,10 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - Pastas por origem não mudaram (o bot gera; mover quebraria `vault_path`).
 - Para adicionar tema: editar `THEMES` + `Theme` (Literal em enrich.py) e rodar o backfill.
 
-## Sessão 4f (2026-08-27) — `*capture`: alimentar o Punk Records pelo Claude Code sem OpenRouter (NÃO commitado)
+## Sessão 4f (2026-08-27) — `*capture`: alimentar o Punk Records pelo Claude Code sem OpenRouter — **v1.5.0 `b8a560b`**
 
 - Motivo (Fernando): minimizar custo do OpenRouter — a sessão do Claude Code faz o resumo. `scripts/capture.py extract|enrich|auto|pending`; `stella.md` ganhou `capture` (+ task). `enrich` usa `db.transition_to(..., "enriched", "claude_code", …, model_used="claude-code")` e depois `Pipeline.step_persist` (vault, índice, temas, commit, Telegram). York: `punk_records_status` soma tokens só de `item_events`, então itens claude-code entram como custo zero — correto.
-- Sync rodado (stella.md mudou) → FURY tem alteração pendente de commit.
+- Sync rodado; FURY commitado e pushado junto. Compose: `stop_grace_period: 30s` (fim dos exit 137 em restart).
 
 ## Os 7 Satélites — mapa completo
 
