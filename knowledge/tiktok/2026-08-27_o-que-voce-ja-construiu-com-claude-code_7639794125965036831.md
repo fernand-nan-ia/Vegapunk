@@ -5,8 +5,8 @@ external_id: "7639794125965036831"
 canonical_url: "https://www.tiktok.com/@zainmorshed/photo/7639794125965036831"
 channel: "zain"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["claude-code", "vibecoding", "techtok"]
 applicability:
   saas_pessoal: baixa
