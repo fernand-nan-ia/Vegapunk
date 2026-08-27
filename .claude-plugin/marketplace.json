@@ -1,11 +1,14 @@
 {
   "name": "vegapunk-marketplace",
-  "owner": { "name": "Fernando (fernand-nan-ia)" },
+  "owner": {
+    "name": "Fernando (fernand-nan-ia)"
+  },
   "plugins": [
     {
       "name": "vegapunk",
       "source": "./plugin/vegapunk-satellites",
       "description": "Dr. Vegapunk e os seis Satélites — personas sobre a memória de conhecimento (Punk Records)."
     }
-  ]
+  ],
+  "description": "Plugins do Vegapunk: Dr. Vegapunk e os Satélites de Egghead para operar uma memória de conhecimento em Markdown."
 }
