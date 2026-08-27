@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — anexos: arquivo remoto (path) ou local (Base64), CID, download via API e limites (40 MB, sem lote)](../article/2026-08-27_resend-anexos-arquivo-remoto-path-ou-local-base64-cid-downlo_5db57f423da9.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `anexos` `base64` `api` `limites`
+
+Anexo por URL (path) ou Base64 (content), até 40 MB no total, tipos restritos, nunca em lote; anexos enviados ficam baixáveis por API com URL assinada.
 
 ## [Resend — imagens embutidas (CID) em e-mails: HTML com cid: e anexo com content_id (exemplos em várias linguagens)](../article/2026-08-27_resend-imagens-embutidas-cid-em-e-mails-html-com-cid-e-anexo_119ad20aa1ad.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cid` `imagens-inline` `anexos` `html-email` `python`
