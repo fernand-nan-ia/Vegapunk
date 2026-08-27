@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 45 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 46 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [UptimeRobot — API REST v3: monitores, contatos, manutenção e status pages; rate limits; três tipos de chave](../article/2026-08-27_uptimerobot-api-rest-v3-monitores-contatos-manutencao-e-stat_0df3a8ca9ce9.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck`
+
+API do UptimeRobot: CRUD de monitores/contatos/manutenção/status pages em JSON; Free 10 req/min; chave de conta, por monitor ou somente leitura.
 
 ## [Cloudflare R2 — preços: armazenamento por GB-mês, operações classe A/B, Infrequent Access, cota grátis (10 GB, 1 M A, 10 M B) e egress zero](../article/2026-08-27_cloudflare-r2-precos-armazenamento-por-gb-mes-operacoes-clas_cee070dc634d.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `precos` `storage` `egress` `gb-mes`
