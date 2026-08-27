@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Memória do Claude Code: CLAUDE.md, regras por caminho e auto memory](../article/2026-08-27_memoria-do-claude-code-claude-md-regras-por-caminho-e-auto-m_8449d3c9e81a.md)
+2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem — · `claude-code` `claude-md` `auto-memory` `claude-rules` `context-management` `configuracao-de-agentes`
+
+Guia oficial dos dois sistemas de memória do Claude Code: CLAUDE.md (você escreve; vários escopos concatenados) e auto memory (o Claude anota sozinho).
 
 ## [Firecrawl CLI: Documentação de Skills e Linha de Comando para Agentes de IA](../article/2026-08-27_firecrawl-cli-documentacao-de-skills-e-linha-de-comando-para_753e9bd5df87.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo alta · triagem archive · `firecrawl` `web-scraping` `claude-code` `cli` `ai-agents` `crawling`
