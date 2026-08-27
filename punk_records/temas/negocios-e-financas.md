@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — planos e preços: Free, Pro, Scale e Enterprise (limites, domínios, retenção, webhooks, IP dedicado)](../article/2026-08-27_resend-planos-e-precos-free-pro-scale-e-enterprise-limites-d_05e01b4c23b2.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `planos` `limites` `ip-dedicado`
+
+Free: 100 e-mails/dia, 3 domínios, 1 webhook.
 
 ## [SerpApi — planos e preços: cotas de buscas, throughput, ZeroTrace e Legal Shield](../article/2026-08-27_serpapi-planos-e-precos-cotas-de-buscas-throughput-zerotrace_dc6e4e909b0a.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `precos` `api-de-busca` `serp` `web-scraping` `planos`
