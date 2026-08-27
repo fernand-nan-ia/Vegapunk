@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Shopify — preços dos planos no Brasil (Basic, Grow, Advanced, Plus)](../article/2026-08-27_shopify-precos-dos-planos-no-brasil-basic-grow-advanced-plus_8a02be816c1f.md)
+2026-08-27 · article · SaaS baixa · cliente alta · estudo media · triagem — · `shopify` `e-commerce` `precos` `planos` `taxas-de-transacao` `loja-virtual`
+
+Planos Shopify no Brasil: Basic US$ 14, Grow US$ 39, Advanced US$ 299, Plus a partir de US$ 2.300/mês — mais taxa por transação com pagamento de terceiros (2% → 0,2%).
 
 ## [Hostinger — página inicial: planos de hospedagem com detalhes de recursos (Single, Premium, Unlimited, Cloud Startup)](../article/2026-08-27_hostinger-pagina-inicial-planos-de-hospedagem-com-detalhes-d_8473df69a3b9.md)
 2026-08-27 · article · SaaS alta · cliente alta · estudo media · triagem — · `hostinger` `hospedagem-de-sites` `planos` `backups` `nodejs` `precos`
