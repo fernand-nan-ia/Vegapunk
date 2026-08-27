@@ -5,8 +5,8 @@ external_id: "363d9da06ada"
 canonical_url: "https://docs.firecrawl.dev/billing"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "api-billing", "rate-limits", "grok-api", "stripe"]
 applicability:
   saas_pessoal: media

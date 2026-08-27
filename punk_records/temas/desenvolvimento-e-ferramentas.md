@@ -8,7 +8,7 @@ _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automati
 Guia oficial com os limites de concorrência de navegadores e requisições por minuto (RPM) da API do Firecrawl.
 
 ## [Documentação de Cobrança e Créditos do Firecrawl](../article/2026-08-27_documentacao-de-cobranca-e-creditos-do-firecrawl_363d9da06ada.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo alta · triagem — · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe`
+2026-08-27 · article · SaaS media · cliente alta · estudo alta · triagem archive · `firecrawl` `web-scraping` `api-billing` `rate-limits` `grok-api` `stripe`
 
 O Firecrawl adota faturamento por créditos em USD com custos cumulativos por endpoint e opções ativas.
 
