@@ -5,8 +5,8 @@ external_id: "b0a8cad5a786"
 canonical_url: "https://docs.firecrawl.dev/introduction"
 channel: "Firecrawl Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["firecrawl", "web-scraping", "mcp", "llm-ready", "extracao-de-dados", "automacao-web", "agentic-ai"]
 applicability:
   saas_pessoal: alta
