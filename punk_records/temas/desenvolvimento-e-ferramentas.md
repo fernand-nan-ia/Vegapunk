@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](../article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md)
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `logs` `observabilidade` `debug` `api`
+
+Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtro por erro/chave/SDK, link para o e-mail gerado e botão 'Help me fix' para erros comuns.
 
 ## [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](../article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
