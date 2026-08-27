@@ -1,0 +1,325 @@
+---
+item_id: "bf384a0a-84ad-4a53-90b6-57cee9a677c3"
+platform: article
+external_id: "ae119d362098"
+canonical_url: "https://docs.firecrawl.dev/features/scrape"
+channel: "Firecrawl Docs"
+captured_at: 2026-08-27
+status: enriched
+triage: null
+tags: ["firecrawl", "web-scraping", "llm-tools", "data-extraction", "json-schema", "api"]
+applicability:
+  saas_pessoal: alta
+  projeto_cliente: media
+  estudo_geral: alta
+confidence: alta
+theme: desenvolvimento-e-ferramentas
+content_type: article
+---
+
+# Documentação do Endpoint /scrape da Firecrawl
+
+🔗 https://docs.firecrawl.dev/features/scrape
+
+## Resumo
+
+A documentação técnica detalha o funcionamento do endpoint `/scrape` da Firecrawl, projetado para converter qualquer URL em dados limpos como Markdown, JSON estruturado ou HTML. O serviço gerencia proxies, renderização em JavaScript, rate limits e bloqueios de segurança automaticamente. Diversos formatos de extração são suportados, incluindo extração determinística de produtos (sem LLM), análise de identidade visual (branding), além de extração de áudio e vídeo de plataformas como o YouTube. O sistema também suporta automação de interações na página através de ações como cliques e navegação antes da coleta. O modelo de precificação consome 1 crédito base por página, com custos adicionais para modos estruturados via LLM, extração de mídia e redação de PII. Por fim, a plataforma oferece recursos corporativos como cache configurável de 2 dias e Zero Data Retention (ZDR) para compliance de dados.
+
+## Tópicos
+
+- **Formatos de Saída e Extração Determinística** — Suporta saídas em Markdown, JSON com schema, Branding e Product. O modo Product extrai dados de e-commerce determinísticamente sem LLM via JSON-LD e microdata.
+- **Custos em Créditos e Modos Adicionais** — Scrape básico custa 1 crédito, enquanto JSON via LLM, perguntas, redação de PII e extração de áudio/vídeo adicionam 4 créditos por página.
+- **Interações e Automação com Actions** — Permite executar cliques, buscas, esperas e rolagem na página alvo antes de consolidar a raspagem do conteúdo.
+- **Políticas de Cache e Retenção Zero (ZDR)** — Mantém cache por padrão de 2 dias (maxAge) e oferece o modo Zero Data Retention por 1 crédito extra para descartar dados após a requisição.
+
+## Ferramentas citadas
+
+- **Firecrawl**: API de web scraping e extração de conteúdo estruturado para alimentar LLMs e pipelines de dados.
+
+## Pontos-chave
+
+- O endpoint /scrape gerencia proxies, renderização dinâmica em JS, PDFs e rate limits automaticamente.
+- A camada de status separa o sucesso da API HTTP (200) do status real retornado pela página de destino (data.metadata.statusCode).
+- O formato 'product' extrai dados de catálogo sem LLM priorizando JSON-LD, Microdata e estados embutidos como __NEXT_DATA__.
+- O formato 'branding' extrai paleta de cores, tipografia, espaçamento e componentes visuais do site.
+- O modo 'redactPII' remove automaticamente dados pessoais de identificação do Markdown retornado.
+- Zero Data Retention (ZDR) não persiste nenhum dado extraído após o request, custando 1 crédito adicional e bloqueando screenshots.
+- Cache padrão dura 48 horas (172.800.000 ms), acelerando respostas em até 5x mas cobrando 1 crédito mesmo quando servido do cache.
+
+## Como aplicar
+
+Pode ser integrado via API no SaaS pessoal para enriquecer dados de clientes a partir de links públicos ou auditar sites de concorrentes extraindo Markdown limpo diretamente para o Claude processar.
+
+## 🍩 York diz
+
+Fernando, olha esses custos: 1 crédito pra raspar básico, mas se inventar de usar modo JSON ou LLM já pula pra 5 créditos por página! Cuidado com o cache também, porque eles cobram 1 crédito mesmo se entregarem dado velho de 2 dias atrás sem bater na web. Se for usar no SaaS, usa o modo 'product' determinístico que não gasta LLM e economiza nosso lanche.
+
+## Texto integral
+
+<!-- extraído da fonte; artigos e documentos são guardados por inteiro (títulos rebaixados um nível) -->
+
+- It manages complexities: proxies, caching, rate limits, js-blocked content
+- Handles dynamic content: dynamic websites, js-rendered sites, PDFs, images
+- Outputs clean markdown, structured data, screenshots or html.
+
+### Try it in the Playground
+
+Test scraping in the interactive playground — no code required.
+
+If a request fails, see Errors for the full catalog of error codes, causes, remedies, and retry guidance.
+
+### Scraping a URL with Firecrawl
+
+#### /scrape endpoint
+
+Used to scrape a URL and get its content.
+#### Installation
+
+#### Usage
+
+Each scrape consumes 1 credit. Additional credits apply for certain options: JSON mode costs 4 additional credits per page, question and highlights formats cost 4 additional credits per page per format, PII redaction costs 4 additional credits per page, PDF parsing costs 1 credit per PDF page, and audio or video extraction costs 4 additional credits per page.
+
+#### Response
+
+SDKs will return the data object directly. cURL will return the payload exactly as shown below.
+#### Response metadata and status codes
+
+There are two separate status layers in a scrape response, and it helps to keep them apart:
+- **API request status** : the HTTP status of the Firecrawl API call itself, alongside the`success` boolean in the response body. An accepted and processed request returns HTTP`200` with`success: true` , even if the target page underneath returned a non-2xx code.
+- **Page status** (`data.metadata.statusCode` ): the HTTP status the target website returned for that page (e.g.`200` ,`301` ,`404` ,`403` ,`500` ). This is what tells you how the page itself responded.
+
+`200` + `success: true`), then check `data.metadata.statusCode` for the actual page outcome. Firecrawl treats a `statusCode` of 2xx or `304` as a clean page load; anything else means the page did not load cleanly. When a page returns an error status, `data.metadata.error` may carry additional detail.
+### Scrape Formats
+
+You can now choose what formats you want your output in. You can specify multiple output formats. Supported formats are:
+- Markdown (`markdown` )
+- Summary (`summary` )
+- HTML (`html` ) - cleaned version of the page’s HTML
+- Raw HTML (`rawHtml` ) - unmodified HTML as received from the page
+- Raw Base64 (`rawBase64` ) - Base64-encoded original HTTP response body; must be the only format in the request
+- Screenshot (`screenshot` , with options like`fullPage` ,`quality` ,`viewport` ) — screenshot URLs expire after 24 hours
+- Links (`links` )
+- JSON (`json` ) - structured output
+- Images (`images` ) - extract all image URLs from the page
+- Branding (`branding` ) - extract brand identity and design system
+- Product (`product` ) - extract a structured product (title, price, availability, variants) from product pages
+- Audio (`audio` ) - extract MP3 audio from supported video URLs, e.g. YouTube (returns a signed GCS URL, expires after 1 hour)
+- Video (`video` ) - extract best-quality video from supported video URLs, e.g. YouTube (returns a signed GCS URL, expires after 1 hour)
+- Query (`query` , with`prompt` and optional`mode` ) - ask a natural-language question about the page; the answer is returned in the`answer` field
+
+`rawBase64` format returns the original HTTP response body, encoded as Base64. The `rawBase64` field holds a bare Base64 string, not a data URI. Read the MIME type from `metadata.contentType`. Request `rawBase64` alone, because the API rejects it together with any other format. The response has no `markdown`, `html`, or `rawHtml` field, and it holds only the one file at that URL, not CSS, images, or other sub-resources.
+### Extract structured data
+
+#### /scrape (with json) endpoint
+
+Used to extract structured data from scraped pages.
+JSON
+
+#### Extracting without schema
+
+You can now extract without a schema by just passing a`prompt` to the endpoint. The llm chooses the structure of the data.
+JSON
+
+#### JSON format options
+
+When using the`json` format, pass an object inside `formats` with the following parameters:
+- `schema` : JSON Schema for the structured output.
+- `prompt` : Optional prompt to help guide extraction when a schema is present or when you prefer light guidance.
+
+### Extract brand identity
+
+#### /scrape (with branding) endpoint
+
+The branding format extracts comprehensive brand identity information from a webpage, including colors, fonts, typography, spacing, UI components, and more. This is useful for design system analysis, brand monitoring, or building tools that need to understand a website’s visual identity.
+#### Response
+
+The branding format returns a comprehensive`BrandingProfile` object with the following structure:
+Output
+
+#### Branding Profile Structure
+
+The`branding` object contains the following properties:
+- `colorScheme` : The detected color scheme (`"light"` or`"dark"` )
+- `logo` : URL of the primary logo
+- `colors` : Object containing brand colors:
+  - `primary` ,`secondary` ,`accent` : Main brand colors
+  - `background` ,`textPrimary` ,`textSecondary` : UI colors
+  - `link` ,`success` ,`warning` ,`error` : Semantic colors
+- `fonts` : Array of font families used on the page
+- `typography` : Detailed typography information:
+  - `fontFamilies` : Primary, heading, and code font families
+  - `fontSizes` : Size definitions for headings and body text
+  - `fontWeights` : Weight definitions (light, regular, medium, bold)
+  - `lineHeights` : Line height values for different text types
+- `spacing` : Spacing and layout information:
+  - `baseUnit` : Base spacing unit in pixels
+  - `borderRadius` : Default border radius
+  - `padding` ,`margins` : Spacing values
+- `components` : UI component styles:
+  - `buttonPrimary` ,`buttonSecondary` : Button styles
+  - `input` : Input field styles
+- `icons` : Icon style information
+- `images` : Brand images (logo, favicon, og:image)
+- `animations` : Animation and transition settings
+- `layout` : Layout configuration (grid, header/footer heights)
+- `personality` : Brand personality traits (tone, energy, target audience)
+
+#### Combining with other formats
+
+You can combine the branding format with other formats to get comprehensive page data:
+### Extract product data
+
+The`product` format extracts a structured product **deterministically**— the same kind of structured output as the
+
+`json` format, but without an LLM call or a schema you define, purpose-built for product pages. If you’ve been pulling product fields with a `json` schema, use `formats: ["product"]` instead — it’s faster and cheaper, just limited to products.
+It returns a `product` object with title, brand, category, description, and variants — where each variant carries price, original price, availability, and images — useful for price monitoring, catalog ingestion, or comparison-shopping tools.
+#### /scrape (with product) endpoint
+
+#### Response
+
+The product format returns a`product` object with the following structure:
+Output
+
+#### Product object structure
+
+The`product` object contains the following properties:
+- `title` : The product name
+- `brand` : The product brand (optional)
+- `category` : The product category (optional)
+- `url` : The canonical URL of the product
+- `description` : The product description (optional)
+- `variants` : Array of product variants. Pricing, availability, and images live on each variant — a single-SKU product still returns exactly one variant carrying these. Each variant has:
+  - `id` ,`sku` ,`title` : variant identifiers and label (all optional)
+  - `values` : a map of option name to value, e.g.`{ "color": "Charcoal" }` (optional)
+  - `price` : the current price object (optional):
+    - `amount` : The numeric price value
+    - `currency` : The currency code, reported only when the page sources it (optional)
+    - `formatted` : The price as displayed on the page (optional)
+  - `sale` : present only when the variant is discounted (optional). Contains:
+    - `originalPrice` : The original (pre-discount) price, same shape as`price`
+  - `availability` : availability information, always present on a variant:
+    - `inStock` : Whether the variant is in stock
+    - `text` : The raw availability text from the page (optional)
+  - `images` : array of variant images, each with a`url` and optional`alt` text (optional)
+
+#### How product extraction works
+
+The product format extracts the product deterministically from on-page structured data — no LLM is involved. It merges multiple sources by priority:
+**JSON-LD > schema.org microdata > RDFa > embedded state (**. The merge is identity-aware, so fields from different products are never combined. Currency is reported only when the page sources it.
+
+`__NEXT_DATA__`/Nuxt/Apollo/Redux/Remix) > AliExpress `runParams` > GA4 `dataLayer` > OpenGraph/`<meta>`
+Product extraction is fail-closed: ambiguous pages yield no product, and weaker sources such as OpenGraph only contribute when a price is present. On a page with no extractable product, the response omits the 
+
+`product` object and adds a `warning` (e.g. “No product found…”).
+**Self-hosting:**the
+
+`product` format is backed by a dedicated product-extraction service. On Firecrawl Cloud it works out of the box. If you self-host, set `PRODUCT_EXTRACTION_SERVICE_URL` to point at that service — when it is unset, requesting the `product` format returns a warning and no product (the same pattern the audio/video formats use for their service).
+#### Combining with other formats
+
+You can combine the product format with other formats to get comprehensive page data:
+### Audio extraction
+
+The`audio` format extracts audio from supported websites (e.g. YouTube) as MP3 files and returns a signed Google Cloud Storage URL. This is useful for building audio processing pipelines, transcription services, or podcast tools.
+Audio extraction costs 5 credits per page (1 base + 4 additional).
+
+### Video extraction
+
+The`video` format extracts best-quality video from supported websites (e.g. YouTube) and returns a signed Google Cloud Storage URL. This is useful for building video processing pipelines, moderation tools, or media archiving workflows.
+Video extraction costs 5 credits per page (1 base + 4 additional).
+
+### Question format
+
+Use the`question` format to ask a natural-language question about the page. Firecrawl returns the answer in the response’s `answer` field.
+The 
+
+`question` format costs 5 credits per page (1 base + 4 additional for the LLM call).
+- `question` (required for`type: "question"` ): the question to answer. Maximum 10,000 characters.
+
+`question` with other formats — for example, request `markdown` and `question` together to get page content and an answer in a single call.
+`question` format is also available in `/search` via `scrapeOptions`, which runs the same extraction across each search result.
+### Highlights format
+
+Use the`highlights` format to find relevant source text from the page. Firecrawl returns the selected text in the response’s `highlights` field.
+The 
+
+`highlights` format costs 5 credits per page (1 base + 4 additional for the LLM call).
+- `query` (required for`type: "highlights"` ): the source-text selection request. Maximum 10,000 characters.
+
+`highlights` with other formats — for example, request `markdown` and `highlights` together to get page content and source text in a single call.
+`highlights` format is also available in `/search` via `scrapeOptions`, which runs the same extraction across each search result.
+### PII redaction
+
+Set`redactPII: true` to redact personally identifiable information from returned markdown. The `markdown` field contains the redacted result.
+See PII Redaction for SDK, cURL, CLI, and MCP examples.
+### Interacting with the page with Actions
+
+Firecrawl allows you to perform various actions on a web page before scraping its content. This is particularly useful for interacting with dynamic content, navigating through pages, or accessing content that requires user interaction. Here is an example of how to use actions to navigate to google.com, search for Firecrawl, click on the first result, and take a screenshot. It is important to almost always use the`wait` action before/after executing other actions to give enough time for the page to load.
+#### Example
+
+#### Output
+
+### Location and Language
+
+Specify country and preferred languages to get relevant content based on your target location and language preferences.
+#### How it works
+
+When you specify the location settings, Firecrawl will use an appropriate proxy if available and emulate the corresponding language and timezone settings. By default, the location is set to ‘US’ if not specified.
+#### Usage
+
+To use the location and language settings, include the`location` object in your request body with the following properties:
+- `country` : ISO 3166-1 alpha-2 country code (e.g., ‘US’, ‘AU’, ‘DE’, ‘JP’). Defaults to ‘US’.
+- `languages` : An array of preferred languages and locales for the request in order of priority. Defaults to the language of the specified location.
+
+### Caching and maxAge
+
+To make requests faster, Firecrawl serves results from cache by default when a recent copy is available.
+- **Default freshness window** :`maxAge = 172800000` ms (2 days). If a cached page is newer than this, it’s returned instantly; otherwise, the page is scraped and then cached.
+- **Performance** : This can speed up scrapes by up to 5x when data doesn’t need to be ultra-fresh.
+- **Always fetch fresh** : Set`maxAge` to`0` . Note that this bypasses the cache entirely, so every request goes through the full scraping pipeline, meaning that the request will take longer to complete and is more likely to fail. Use a non-zero`maxAge` if freshness on every request is not critical.
+- **Avoid storing** : Set`storeInCache` to`false` if you don’t want Firecrawl to cache/store results for this request.
+- **Cache-only lookup** : Set`minAge` to perform a cache-only lookup without triggering a fresh scrape. The value is in milliseconds and specifies the minimum age the cached data must be. If no cached data is found, a`404` with error code`SCRAPE_NO_CACHED_DATA` is returned. Set`minAge` to`1` to accept any cached data regardless of age.
+- **Change tracking** : Requests that include`changeTracking` bypass the cache, so`maxAge` is ignored.
+- **Credits** : Cached results still cost 1 credit per page. Caching improves speed, not credit usage.
+
+#### Freshness and item status
+
+`maxAge` controls whether Firecrawl may return a cached copy; it does not tell you whether the state represented by a page is current. When freshness matters, use `maxAge: 0` to skip the cache, then inspect the returned content and any redirect or source-specific status signals. A successful response alone is not proof of current state.
+See Verifying Freshness and Liveness for a checklist and examples.
+### Batch scraping multiple URLs
+
+You can now batch scrape multiple URLs at the same time. It takes the starting URLs and optional parameters as arguments. The params argument allows you to specify additional options for the batch scrape job, such as the output formats.
+#### How it works
+
+It is very similar to how the`/crawl` endpoint works. It submits a batch scrape job and returns a job ID to check the status of the batch scrape.
+The sdk provides 2 methods, synchronous and asynchronous. The synchronous method will return the results of the batch scrape job, while the asynchronous method will return a job ID that you can use to check the status of the batch scrape.
+#### Usage
+
+#### Response
+
+If you’re using the sync methods from the SDKs, it will return the results of the batch scrape job. Otherwise, it will return a job ID that you can use to check the status of the batch scrape.
+##### Synchronous
+
+Completed
+
+##### Asynchronous
+
+You can then use the job ID to check the status of the batch scrape by calling the`/batch/scrape/{id}` endpoint. This endpoint is meant to be used while the job is still running or right after it has completed **as batch scrape jobs expire after 24 hours**.
+
+### Enhanced Mode
+
+For complex websites, Firecrawl offers enhanced mode that provides better success rates while maintaining privacy. Learn more about Enhanced Mode.
+### Zero Data Retention (ZDR)
+
+Firecrawl supports Zero Data Retention (ZDR) for teams with strict data handling requirements. When enabled, Firecrawl will not persist any page content or extracted data beyond the lifetime of the request. To enable ZDR, set`zeroDataRetention: true` in your request:
+cURL
+
+**1 additional credit per page**on top of the base scrape cost.
+
+Screenshots are not available in ZDR mode. Because screenshots require uploading to persistent storage, they are incompatible with the ZDR guarantee. Requests that include both 
+
+`zeroDataRetention: true` and a `screenshot` format will return an error.
+Are you an AI agent that needs a Firecrawl API key? See firecrawl.dev/agent-onboarding/SKILL.md for automated onboarding instructions.
+
+## Notas manuais
+
+<!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
