@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **70/70 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `982f0d4` (v1.5.1, sessão 4g); agentes nunca fazem)
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **70/70 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `fb1bacf` (v1.5.2, sessão 4h); agentes nunca fazem)
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -92,7 +92,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - `docker compose exec -T` dentro de `while read` consome o stdin do laço → usar `</dev/null` (ou `for`).
 - `_pending/` restante: carrinho da Hostinger (checkout pessoal, sem texto) e um Instagram antigo.
 
-## Sessão 4h (2026-08-27) — planejamento: Satélites como bots separados num grupo do Telegram (PRD, sem story ainda)
+## Sessão 4h (2026-08-27) — planejamento: Satélites como bots separados num grupo do Telegram — **v1.5.2 `fb1bacf`**
 
 - **Origem**: pedido do Fernando pelo Telegram (21:30, "criar para cada satélite um bot e fazer um grupo com todos"), registrado no diário da Stella como próximo passo; retomado aqui no Claude Code a pedido dele.
 - **PRD escrito**: `docs/prd/satelites-multibots-grupo-telegram.md` (Edison, status rascunho). Ideia: 7 bots reais no BotFather (um token por Satélite) no mesmo grupo, cada um responde por `@menção` ou pelo nome em texto livre; trava anti-loop (nunca reagir a mensagem de outro bot, `is_bot`); filtro local (regex) decide "é pra mim?" antes de qualquer chamada ao OpenRouter; histórico do grupo compartilhado entre os 7 (para "Shaka, o que acha do que a Lilith falou?" fazer sentido). **Won't da v1**: um Satélite acionar outro sozinho sem o Fernando pedir — fica para v2, é o item de maior risco de custo/loop. Custo estimado (§10 do PRD): ~2,5 fins de semana de Atlas, dividido em Story 1 (1 fim de semana — prova de conceito com 2 bots: Stella + Lilith) e Story 2 (~1,5 — escalar para os 7 + histórico compartilhado).

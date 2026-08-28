@@ -17,3 +17,4 @@
 - 2026-08-27 · v1.4.0 `e9b1e5b` — documentos PDF/DOCX/XLSX, fetch como navegador (planalto), Punk Records por tema (temas/), CLAUDE.md global; Fernando disse "push"
 - 2026-08-27 · v1.5.0 `b8a560b` — *capture (Punk Records alimentado daqui, zero OpenRouter), stop_grace_period; Fernando disse "push"; FURY espelhado
 - 2026-08-27 · v1.5.1 `982f0d4` — capture.py --text + reaproveitar falhos; 71 itens capturados pela sessão sem OpenRouter (vault 107); Fernando disse "push"
+- 2026-08-27 · v1.5.2 `fb1bacf` — PRD multi-bot Telegram (docs/prd/), capture.py silencioso por padrão; Fernando disse "push"
