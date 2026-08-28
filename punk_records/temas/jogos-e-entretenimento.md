@@ -1,6 +1,11 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Discurso completo do Dr. Vegapunk — a transmissão mundial sobre o Século Perdido e o afundamento do mundo](../youtube/2026-08-28_discurso-completo-do-dr-vegapunk-a-transmissao-mundial-sobre__sAI-ganFAw.md)
+2026-08-28 · youtube · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `discurso` `seculo-perdido` `mother-flame` `canon`
+
+A transmissão que Vegapunk deixou programada para tocar quando seu coração parasse.
 
 ## [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](../article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead`

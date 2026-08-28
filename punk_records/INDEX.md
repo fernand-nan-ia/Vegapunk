@@ -12,7 +12,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 3 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
-- 🎮 Jogos e entretenimento — 7 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
+- 🎮 Jogos e entretenimento — 8 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
 
 ## 🤖 IA e agentes
@@ -153,6 +153,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎮 Jogos e entretenimento
 
+- 2026-08-28 · youtube · [Discurso completo do Dr. Vegapunk — a transmissão mundial sobre o Século Perdido e o afundamento do mundo](youtube/2026-08-28_discurso-completo-do-dr-vegapunk-a-transmissao-mundial-sobre__sAI-ganFAw.md) · `one-piece` `vegapunk` `discurso` `seculo-perdido` `mother-flame` `canon` `persona-satelite` · nenhuma/nenhuma/alta · —
 - 2026-08-28 · article · [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md) · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead` `traicao` · nenhuma/nenhuma/alta · —
 - 2026-08-28 · article · [Atlas (Punk-05) — wiki One Piece: o Satélite da Violência, as Luvas de Pressão de Luz e a autodetonação](article/2026-08-28_atlas-punk-05-wiki-one-piece-o-satelite-da-violencia-as-luva_58278760111b.md) · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
 - 2026-08-28 · article · [Pythagoras (Punk-04) — wiki One Piece: o Satélite da Sabedoria, o arquivista que desmascarou York](article/2026-08-28_pythagoras-punk-04-wiki-one-piece-o-satelite-da-sabedoria-o_a324fa978dee.md) · `one-piece` `vegapunk` `pythagoras` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
