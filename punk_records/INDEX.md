@@ -12,7 +12,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 3 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
-- 🎮 Jogos e entretenimento — 6 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
+- 🎮 Jogos e entretenimento — 7 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
 
 ## 🤖 IA e agentes
@@ -159,6 +159,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 2026-08-28 · article · [Edison (Punk-03) — wiki One Piece: o Satélite do Pensamento, o 'Eureka!' e a fuga pela Frontier Dome](article/2026-08-28_edison-punk-03-wiki-one-piece-o-satelite-do-pensamento-o-eur_bb8addf099d0.md) · `one-piece` `vegapunk` `edison` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
 - 2026-08-28 · article · [Lilith (Punk-02) — wiki One Piece: o Satélite do Mal, a Bubble Gun e a única a escapar de Egghead](article/2026-08-28_lilith-punk-02-wiki-one-piece-o-satelite-do-mal-a-bubble-gun_58c44955870a.md) · `one-piece` `vegapunk` `lilith` `persona-satelite` `canon` `egghead` `elbaf` · nenhuma/nenhuma/alta · —
 - 2026-08-28 · article · [Shaka (Punk-01) — wiki One Piece: o Satélite do Bem, a descoberta da traição e a morte em Egghead](article/2026-08-28_shaka-punk-01-wiki-one-piece-o-satelite-do-bem-a-descoberta_b405718de1c7.md) · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
+- 2026-08-28 · article · [Dr. Vegapunk (Stella) — wiki One Piece: os seis Satélites, o Punk Records e o Incidente de Egghead](article/2026-08-28_dr-vegapunk-stella-wiki-one-piece-os-seis-satelites-o-punk-r_123f9196d63a.md) · `one-piece` `vegapunk` `stella` `punk-records` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
 
 ## 📚 Carreira e aprendizado
 

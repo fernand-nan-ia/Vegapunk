@@ -1,6 +1,6 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](../article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead`
@@ -31,3 +31,8 @@ O Satélite do Mal: macacão rosa, capacete vermelho de aviadora e pronome arcai
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead`
 
 O Satélite do Bem: 2,20 m, capacete 01, 'Caution' na manga.
+
+## [Dr. Vegapunk (Stella) — wiki One Piece: os seis Satélites, o Punk Records e o Incidente de Egghead](../article/2026-08-28_dr-vegapunk-stella-wiki-one-piece-os-seis-satelites-o-punk-r_123f9196d63a.md)
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `stella` `punk-records` `persona-satelite` `canon`
+
+A página do corpo original: 500 anos à frente, MADS, o cérebro transferido para o Punk Records e a divisão em seis Satélites.
