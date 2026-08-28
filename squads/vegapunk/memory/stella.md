@@ -21,3 +21,5 @@
 - 2026-08-27 · v1.5.0 `b8a560b` — *capture (Punk Records alimentado daqui, zero OpenRouter), stop_grace_period; Fernando disse "push"; FURY espelhado
 - 2026-08-27 · v1.5.1 `982f0d4` — capture.py --text + reaproveitar falhos; 71 itens capturados pela sessão sem OpenRouter (vault 107); Fernando disse "push"
 - 2026-08-27 · v1.5.2 `fb1bacf` — PRD multi-bot Telegram (docs/prd/), capture.py silencioso por padrão; Fernando disse "push"
+- 2026-08-28 · v1.6.0 `74c7528` — roteador do grupo multi-bot (Story 1a) + porteiro do dinheiro (falha aberta corrigida, TELEGRAM_ALLOWED_USER_IDS, grupo desligado por padrão); 7 bots criados pelo Fernando no BotFather e no grupo «Vegapunk»; 12 links antigos recuperados no Punk Records; correção: o Stella é masculino. Lilith AGUENTOU em 3 passadas, Shaka PASS, 97/97; Fernando disse "push"; FURY `ab4ce12`
+

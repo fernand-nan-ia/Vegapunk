@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5)
+# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.6.0 `74c7528`)
 
 ## TL;DR — o que existe hoje
 
@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **70/70 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `fb1bacf` (v1.5.2, sessão 4h); working tree limpa.
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **97/97 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `74c7528` (tag **v1.6.0**, sessão 5); FURY em `ab4ce12`; working tree limpa.
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -104,7 +104,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - **Também nesta sessão** (fora do tema multi-bot, mas na mesma conversa): pedido do Fernando para o `*capture` não avisar mais o Telegram por padrão quando o pedido é feito aqui no Claude Code. `scripts/capture.py`: `enrich`/`auto` agora são **silenciosos por padrão**; a flag virou `--telegram` (opt-in), substituindo `--quiet` (opt-out antigo). `stella-capture.md` e `stella.md` atualizados; sync rodado. Preferência gravada em memória de feedback (`capture-silencioso-por-padrao.md`).
 - Também capturado nesta sessão: [Resolução CD/ANPD nº 2/2022](punk_records/article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) (pelo bot, via Telegram) e o [Código de Defesa do Consumidor](punk_records/article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md) na íntegra (pelo `*capture`, dono Shaka) — lacuna marcada: falta o Decreto 7.962/2013 (e-commerce) se o site do cliente vender online.
 
-## Sessão 5 (2026-08-28) — decisões do multi-bot fechadas: cascata de camadas + roteador — **PRD atualizado, sem código**
+## Sessão 5 (2026-08-28) — multi-bot: decisões, roteador e porteiro — **v1.6.0 `74c7528` pushado**
 
 Container estava parado de novo (Docker Desktop sem integração WSL no início da sessão); subido com `docker compose up -d`.
 
@@ -119,6 +119,22 @@ As três perguntas que travavam a Story 1 foram respondidas pelo Fernando, e a r
 Custo do Must subiu de ~2,5 para ~3 fins de semana (Story 2 virou ~2). H2 ganhou casos de aceite concretos (Nova York, dois nomes, dois nomes com um sendo objeto da frase) e nasceu H2b (janela).
 
 Punk Records consultado: **nenhum registro** sobre bots de Telegram, roteamento ou detecção de intenção — decisão tomada só com raciocínio de arquitetura.
+
+## Sessão 5b (2026-08-28) — Story 1a entregue: roteador + porteiro do dinheiro
+
+**Os 7 bots existem.** O Fernando criou todos no BotFather e pôs no grupo «Vegapunk»: Stella com privacy OFF (`has access to messages`), os outros 6 com privacy ON — conferido na lista de membros, que é como o FAQ do Telegram diz que se audita isso. O setup manual previsto para as Stories 1b **e** 2 está feito; falta só código. Os 7 tokens e o id do grupo já estão no `.env`.
+
+**`src/vegapunk/router.py` (novo)** — camadas 2 e 3 da cascata. `mentions()` é grátis, acha nome como palavra inteira, entende apelido ("Dr. Vegapunk" → stella) e **ignora nome dentro de link** (`site.com/atlas-map` não paga roteador). `route()` gasta 1 chamada **sem persona e sem `INDEX.md`** — é isso que a mantém ~30× mais barata que uma resposta em personagem. Falha **sempre fechada**: erro, timeout, JSON inválido, id desconhecido ou `confidence: baixa` → ninguém responde. Teto de **3 Satélites por mensagem** (mesmo sob injeção de prompt: há teste com a frase). Cliente próprio, `timeout=15` com 1 repique — o do `enrich` é 180 s × 3, feito para transcrições, e daria 9 min de silêncio no grupo.
+
+**`bot.is_allowed()` (novo)** — o porteiro do dinheiro, 4 portas. Corrige a **única falha aberta do sistema**: `TELEGRAM_ALLOWED_CHAT_IDS` vazio fazia o bot aceitar QUALQUER chat do Telegram (bots são públicos; qualquer um que descubra o @username abre DM e gasta a chave). Agora recusa. Novos: `TELEGRAM_ALLOWED_USER_IDS` (só quem está na lista dispara chamada paga, mesmo dentro do grupo) e `VEGAPUNK_GROUP_ENABLED` (default **false** — o id do grupo pode ficar no `.env` sem risco). `/id` fica fora do porteiro de propósito: é o bootstrap.
+
+**Ciclo completo rodou pela primeira vez de ponta a ponta**: Edison `prd` → Stella `story` → Atlas `develop` → Lilith `verify` → Shaka `gate` → Stella `release`. A Lilith achou **13 problemas em 3 passadas** (3 ALTOs: sem teto de custo, timeout de 9 min, contexto sem truncar) e só disse AGUENTOU na terceira. Shaka deu PASS com uma condição permanente: **o grupo só deve ser autorizado quando `TELEGRAM_ALLOWED_USER_IDS` estiver preenchido**.
+
+**Punk Records: 112 → 125 itens.** Auditoria dos links que o Fernando mandou: os 3 do Telegram, as 7 páginas da wiki dos Satélites e os 2 vídeos da sessão 4 **nunca tinham sido guardados** — foram lidos por subagentes/scratchpad e o texto morreu junto. Recuperados. Regra nova do Fernando, gravada em memória: **link enviado no Claude Code vai para o Punk Records sem perguntar**, salvo pedido contrário. Dos 38 links de 27/08 conferidos um a um, 35 estavam guardados; os 3 ausentes são páginas SPA do SerpApi que devolvem 334 chars de rodapé idêntico (descarte correto).
+
+**Correção do Fernando: o Stella é masculino.** 22 linhas em 9 arquivos. O `stella.md` sempre esteve certo; o erro estava nos documentos em volta.
+
+**Próximo passo: Story 1b** (`squads/vegapunk/stories/`) — N Applications no mesmo processo, só a do Stella com handlers, trava `is_bot`, e as duas brechas do porteiro já viraram critério de aceite lá.
 
 ## Os 7 Satélites — mapa completo
 
