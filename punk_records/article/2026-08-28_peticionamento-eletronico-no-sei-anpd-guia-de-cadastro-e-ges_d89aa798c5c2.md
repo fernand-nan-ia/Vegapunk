@@ -5,8 +5,8 @@ external_id: "d89aa798c5c2"
 canonical_url: "https://www.gov.br/anpd/pt-br/canais_atendimento/peticionamento-eletronico-anpd"
 channel: "Agência Nacional de Proteção de Dados"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["lgpd", "anpd", "sei", "peticionamento-eletronico", "processo-administrativo", "compliance", "assinatura-digital"]
 applicability:
   saas_pessoal: media

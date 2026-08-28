@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Peticionamento Eletrônico no SEI/ANPD: Guia de Cadastro e Gestão Processual](../article/2026-08-28_peticionamento-eletronico-no-sei-anpd-guia-de-cadastro-e-ges_d89aa798c5c2.md)
-2026-08-28 · article · SaaS media · cliente media · estudo alta · triagem — · `lgpd` `anpd` `sei` `peticionamento-eletronico` `processo-administrativo` `compliance`
+2026-08-28 · article · SaaS media · cliente media · estudo alta · triagem archive · `lgpd` `anpd` `sei` `peticionamento-eletronico` `processo-administrativo` `compliance`
 
 A ANPD unificou todos os seus trâmites administrativos no SEI, exigindo cadastro de usuário externo validado por assinatura gov.br ou ICP-Brasil para envio de petições e respostas a fiscalizações.
 
