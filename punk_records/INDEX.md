@@ -85,7 +85,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
-- 2026-08-28 · article · [Resolução CD/ANPD nº 2/2022: Regulamento da LGPD para Agentes de Pequeno Porte](article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) · `lgpd` `anpd` `resolucao-cd-anpd-2` `compliance-lgpd` `startups-lgpd` `dpo-simplificado` `seguranca-da-informacao` · alta/alta/alta · —
+- 2026-08-28 · article · [Resolução CD/ANPD nº 2/2022: Regulamento da LGPD para Agentes de Pequeno Porte](article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) · `lgpd` `anpd` `resolucao-cd-anpd-2` `compliance-lgpd` `startups-lgpd` `dpo-simplificado` `seguranca-da-informacao` · alta/alta/alta · archive
 - 2026-08-27 · article · [reCAPTCHA v3 — pontuação sem atrito: carregar o script, vincular a botão ou executar programaticamente, interpretar a pontuação](article/2026-08-27_recaptcha-v3-pontuacao-sem-atrito-carregar-o-script-vincular_8b722ef0051f.md) · `recaptcha` `recaptcha-v3` `anti-bot` `formularios` `seguranca` `javascript` · alta/media/media · —
 - 2026-08-27 · article · [Resend — ativar MFA na conta com app autenticador (e como desativar)](article/2026-08-27_resend-ativar-mfa-na-conta-com-app-autenticador-e-como-desat_83891a9d3985.md) · `resend` `mfa` `seguranca` `conta` · alta/media/baixa · —
 - 2026-08-27 · article · [Resend — trocar o e-mail da conta: dupla confirmação (novo e atual)](article/2026-08-27_resend-trocar-o-e-mail-da-conta-dupla-confirmacao-novo-e-atu_304e119d4601.md) · `resend` `conta` `seguranca` · baixa/baixa/baixa · —

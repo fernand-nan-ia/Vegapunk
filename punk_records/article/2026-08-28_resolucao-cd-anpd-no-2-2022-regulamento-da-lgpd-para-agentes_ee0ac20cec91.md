@@ -5,8 +5,8 @@ external_id: "ee0ac20cec91"
 canonical_url: "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022"
 channel: "Agência Nacional de Proteção de Dados"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["lgpd", "anpd", "resolucao-cd-anpd-2", "compliance-lgpd", "startups-lgpd", "dpo-simplificado", "seguranca-da-informacao"]
 applicability:
   saas_pessoal: alta
