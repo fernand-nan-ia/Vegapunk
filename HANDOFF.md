@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.6.0 `74c7528`)
+# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.7.0 `811710f`)
 
 ## TL;DR — o que existe hoje
 
@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **97/97 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `74c7528` (tag **v1.6.0**, sessão 5); FURY em `ab4ce12`; working tree limpa.
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **112/112 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**, sessão 5); FURY em `ab4ce12`; working tree limpa.
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -135,6 +135,26 @@ Punk Records consultado: **nenhum registro** sobre bots de Telegram, roteamento 
 **Correção do Fernando: o Stella é masculino.** 22 linhas em 9 arquivos. O `stella.md` sempre esteve certo; o erro estava nos documentos em volta.
 
 **Próximo passo: Story 1b** (`squads/vegapunk/stories/`) — N Applications no mesmo processo, só a do Stella com handlers, trava `is_bot`, e as duas brechas do porteiro já viraram critério de aceite lá.
+
+## Sessão 5c (2026-08-28) — Story 1b: os 7 Satélites como bots no grupo — **v1.7.0 `811710f`**
+
+**`src/vegapunk/speakers.py` (novo).** Decisão de projeto do Atlas: a story previa uma `Application` por token; ele usou **`telegram.Bot` puro** para os seis que só publicam. Uma `Application` existe para RECEBER (Updater, fila, polling); quem só fala não recebe. Ganho: **um laço de polling em vez de sete**, e o critério "os outros não registram handler" virou **estrutural** — num `Bot` não existe `add_handler` (há teste disso).
+
+**Trava anti-loop** — condição bloqueante do Shaka desde a análise de risco: `is_allowed(from_bot=True)` é a **porta 0** do porteiro, antes até da lista de chats. Sete bots num grupo, um respondendo ao outro, era o único caminho para custo verdadeiramente descontrolado.
+
+**`config.bot_tokens`** por varredura do ambiente: `TELEGRAM_BOT_TOKEN` → stella, `TELEGRAM_BOT_TOKEN_<ID>` → `<id>`. Acrescentar um bot é uma linha no `.env`. **E o `bot_token` do `build_app` passou a sair do mesmo dicionário** — antes, `TELEGRAM_BOT_TOKEN_STELLA` derrubava o serviço no arranque **enquanto um comentário no código afirmava ser o caminho da renomeação da Story 2**. O Fernando tinha tentado exatamente isso pela manhã. Foi o ALTO do `*verify`.
+
+**Quem fala.** `bot.responder()`: no grupo cada Satélite sai pelo próprio bot (nome e ícone dele); na DM, pelo bot de sempre — um bot não pode escrever para quem nunca abriu conversa com ele. Resposta longa sai toda pela **mesma boca** (se o primeiro pedaço cai para o leitor, o resto vai com ele); a queda larga o `reply_to_message_id` (se a mensagem original sumiu, ela É a causa); o laço de envio está protegido — resposta já paga não some em silêncio.
+
+**O que a produção ensinou em três restarts.** Primeira subida com tokens reais: 5 de 6 bots vieram e o da Lilith caiu com `TimedOut`. A degradação funcionou ("ele falará pelo bot do stella"), mas expôs duas falhas: init **sequencial** custava ~17 s de polling parado, e **não havia segunda chance** — um piscar de rede aposentava o bot até o restart. Agora `asyncio.gather` + 1 repique: **1,6 s**, e há teste com o caso real. Terceira falha achada pela Lilith: o bot que falha no `get_me` era descartado sem `shutdown`, vazando o pool httpx (duas vezes, uma por tentativa).
+
+**Verificação em produção, os dois lados:**
+- `/lilith oi` no **grupo** → `grupo -5120920932 está no .env mas VEGAPUNK_GROUP_ENABLED=false: ignorando`. Silêncio por decisão, custo zero. Primeira prova de que o id do grupo pode ficar no `.env` sem risco.
+- `/lilith oi` na **DM** → resposta em personagem, com `reply_to` e ícone (24.788 tokens de entrada — conversa com item do vault anexado). Única regressão possível da story, descartada por observação.
+
+**Setup do Fernando:** os 7 bots criados no BotFather e no grupo «Vegapunk» (`-5120920932`); Stella com privacy OFF, os outros 6 ON; 7 tokens e o id do grupo no `.env`. Usernames: `@vegapunkkyorkbot`, `@vegapunkkedisonbot`, `@vegapunkkatlasbot`, `@vegapunkshakabot`, `@vegapunkkpythagorasbot`, `@vegapunkklilithbot`.
+
+**Próximo passo: Story 1c** — ligar a cascata do §4.1 (camadas 0–2 grátis, roteador, resposta), janela de continuidade de 10 min, e só então `VEGAPUNK_GROUP_ENABLED=true` **com `TELEGRAM_ALLOWED_USER_IDS` preenchido** (condição permanente do Shaka). Herdadas do `*verify` da 1a: obrigar `mentions()` antes de `route()` e teto de chamadas por minuto.
 
 ## Os 7 Satélites — mapa completo
 

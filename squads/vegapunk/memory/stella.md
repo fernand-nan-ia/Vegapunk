@@ -22,4 +22,5 @@
 - 2026-08-27 · v1.5.1 `982f0d4` — capture.py --text + reaproveitar falhos; 71 itens capturados pela sessão sem OpenRouter (vault 107); Fernando disse "push"
 - 2026-08-27 · v1.5.2 `fb1bacf` — PRD multi-bot Telegram (docs/prd/), capture.py silencioso por padrão; Fernando disse "push"
 - 2026-08-28 · v1.6.0 `74c7528` — roteador do grupo multi-bot (Story 1a) + porteiro do dinheiro (falha aberta corrigida, TELEGRAM_ALLOWED_USER_IDS, grupo desligado por padrão); 7 bots criados pelo Fernando no BotFather e no grupo «Vegapunk»; 12 links antigos recuperados no Punk Records; correção: o Stella é masculino. Lilith AGUENTOU em 3 passadas, Shaka PASS, 97/97; Fernando disse "push"; FURY `ab4ce12`
+- 2026-08-28 · v1.7.0 `811710f` — Story 1b: os 6 Satélites como bots que só falam (telegram.Bot puro, init paralelo com repique), trava anti-loop `from_bot` como porta 0 do porteiro, `bot_token` saindo do mesmo dicionário (a renomeação da Story 2 passou a funcionar). Lilith 5 achados/1 ALTO, Shaka PASS, 112/112; verificado em produção nos dois lados: grupo mudo, DM intacta. Fernando disse "push"
 
