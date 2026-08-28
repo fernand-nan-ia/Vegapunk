@@ -12,6 +12,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 3 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
+- 🎮 Jogos e entretenimento — 1 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
 
 ## 🤖 IA e agentes
@@ -149,6 +150,10 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 2026-08-28 · article · [Amostrando: Plataforma SaaS para Avaliação de Imóveis e Inferência Estatística](article/2026-08-28_amostrando-plataforma-saas-para-avaliacao-de-imoveis-e-infer_dc2f578035bd.md) · `avaliacao-imoveis` `nbr-14653` `estatistica-inferencial` `laudo-pericial` `saas-vertical` `engenharia-de-avaliacoes` · media/alta/alta · archive
 - 2026-08-27 · document · [Checklist de Vistoria de Obra Residencial](document/2026-08-27_checklist-de-vistoria-de-obra-residencial_aafe2c8a6c78.md) · `vistoria-de-obras` `construcao-civil` `checklist-tecnico` `controle-de-qualidade` · nenhuma/baixa/media · archive
 - 2026-08-27 · document · [Planilha de Orçamento de Obra e Serviços de Construção Civil](document/2026-08-27_planilha-de-orcamento-de-obra-e-servicos-de-construcao-civil_2491dc405e7d.md) · `orcamento-obra` `construcao-civil` `planilha-de-custos` `gestao-financeira` · nenhuma/nenhuma/baixa · archive
+
+## 🎮 Jogos e entretenimento
+
+- 2026-08-28 · article · [Shaka (Punk-01) — wiki One Piece: o Satélite do Bem, a descoberta da traição e a morte em Egghead](article/2026-08-28_shaka-punk-01-wiki-one-piece-o-satelite-do-bem-a-descoberta_b405718de1c7.md) · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead` · nenhuma/nenhuma/alta · —
 
 ## 📚 Carreira e aprendizado
 
