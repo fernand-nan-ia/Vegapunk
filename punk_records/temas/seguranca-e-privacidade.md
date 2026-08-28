@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Peticionamento Eletrônico no SEI/ANPD: Guia de Cadastro e Gestão Processual](../article/2026-08-28_peticionamento-eletronico-no-sei-anpd-guia-de-cadastro-e-ges_d89aa798c5c2.md)
+2026-08-28 · article · SaaS media · cliente media · estudo alta · triagem — · `lgpd` `anpd` `sei` `peticionamento-eletronico` `processo-administrativo` `compliance`
+
+A ANPD unificou todos os seus trâmites administrativos no SEI, exigindo cadastro de usuário externo validado por assinatura gov.br ou ICP-Brasil para envio de petições e respostas a fiscalizações.
 
 ## [Resolução CD/ANPD nº 2/2022: Regulamento da LGPD para Agentes de Pequeno Porte](../article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md)
 2026-08-28 · article · SaaS alta · cliente alta · estudo alta · triagem archive · `lgpd` `anpd` `resolucao-cd-anpd-2` `compliance-lgpd` `startups-lgpd` `dpo-simplificado`
