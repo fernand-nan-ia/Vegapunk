@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 50 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 51 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Meu "Netflix Pessoal" com Docker Compose](../article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md)
+2026-08-28 · article · SaaS baixa · cliente baixa · estudo alta · triagem — · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas`
+
+Guia técnico detalhado sobre como montar um servidor de mídia privado e automatizado usando Docker Compose.
 
 ## [Geoapify — plataforma de localização com dados abertos: geocoding, rotas, lugares, isócronas; licença permissiva (pode guardar resultados)](../article/2026-08-27_geoapify-plataforma-de-localizacao-com-dados-abertos-geocodi_cf121d534817.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca`
