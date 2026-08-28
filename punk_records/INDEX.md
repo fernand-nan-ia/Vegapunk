@@ -11,7 +11,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 3 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
-- 🏗 Engenharia civil — 3 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
+- 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 9 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
 
@@ -147,6 +147,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🏗 Engenharia civil
 
+- 2026-08-28 · youtube · [Amostrando — avaliação de imóvel completa do zero: coleta, variáveis por IA, regressão e checklist NBR](youtube/2026-08-28_amostrando-avaliacao-de-imovel-completa-do-zero-coleta-varia_XlxK2aIBgww.md) · `avaliacao-de-imoveis` `nbr-14653` `regressao-linear` `inferencia-estatistica` `amostrando` `laudo-tecnico` `outliers` `ia-classificacao` · media/nenhuma/alta · —
 - 2026-08-28 · article · [Amostrando: Plataforma SaaS para Avaliação de Imóveis e Inferência Estatística](article/2026-08-28_amostrando-plataforma-saas-para-avaliacao-de-imoveis-e-infer_dc2f578035bd.md) · `avaliacao-imoveis` `nbr-14653` `estatistica-inferencial` `laudo-pericial` `saas-vertical` `engenharia-de-avaliacoes` · media/alta/alta · archive
 - 2026-08-27 · document · [Checklist de Vistoria de Obra Residencial](document/2026-08-27_checklist-de-vistoria-de-obra-residencial_aafe2c8a6c78.md) · `vistoria-de-obras` `construcao-civil` `checklist-tecnico` `controle-de-qualidade` · nenhuma/baixa/media · archive
 - 2026-08-27 · document · [Planilha de Orçamento de Obra e Serviços de Construção Civil](document/2026-08-27_planilha-de-orcamento-de-obra-e-servicos-de-construcao-civil_2491dc405e7d.md) · `orcamento-obra` `construcao-civil` `planilha-de-custos` `gestao-financeira` · nenhuma/nenhuma/baixa · archive
