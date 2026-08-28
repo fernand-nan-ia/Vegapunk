@@ -87,7 +87,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
-- 2026-08-28 · youtube · [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md) · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec` `hardening` · alta/alta/alta · —
+- 2026-08-28 · youtube · [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md) · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec` `hardening` · alta/alta/alta · archive
 - 2026-08-28 · article · [Visão Geral de Segurança do Telegram — moderação, CSAM e conteúdo terrorista](article/2026-08-28_visao-geral-de-seguranca-do-telegram-moderacao-csam-e-conteu_96c95a08cb48.md) · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma` · baixa/nenhuma/media · —
 - 2026-08-28 · article · [Telegram FAQ — grupos, chats secretos, bots, privacy mode, GDPR e miniapps](article/2026-08-28_telegram-faq-grupos-chats-secretos-bots-privacy-mode-gdpr-e_461904727fd2.md) · `telegram` `telegram-bot` `privacy-mode` `grupos-telegram` `chats-secretos` `gdpr` `miniapps` `bot-api` · media/baixa/alta · —
 - 2026-08-28 · article · [Standard Bot Privacy Policy — a política de privacidade padrão dos bots do Telegram](article/2026-08-28_standard-bot-privacy-policy-a-politica-de-privacidade-padrao_19b30f460b29.md) · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso` · alta/media/alta · —

@@ -5,8 +5,8 @@ external_id: "mjSOFCDV_wA"
 canonical_url: "https://www.youtube.com/watch?v=mjSOFCDV_wA"
 channel: "mano deyvin"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["vibe-coding", "auditoria-seguranca", "claude", "idor", "supabase-rls", "appsec", "hardening"]
 applicability:
   saas_pessoal: alta
