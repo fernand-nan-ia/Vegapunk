@@ -5,8 +5,8 @@ external_id: "6bb7420aee5e"
 canonical_url: "https://www.consumidor.gov.br/pages/conteudo/publico/102"
 channel: "Consumidor"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cdc", "codigo-de-defesa-do-consumidor", "lei-8078-1990", "direito-do-consumidor", "clausulas-abusivas", "direito-de-arrependimento", "publicidade-enganosa", "garantia-legal"]
 applicability:
   saas_pessoal: media

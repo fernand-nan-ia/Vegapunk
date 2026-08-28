@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Código de Defesa do Consumidor (Lei nº 8.078/1990) — texto integral, com as alterações da Lei do Superendividamento (14.181/2021)](../article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md)
-2026-08-28 · article · SaaS media · cliente alta · estudo media · triagem — · `cdc` `codigo-de-defesa-do-consumidor` `lei-8078-1990` `direito-do-consumidor` `clausulas-abusivas` `direito-de-arrependimento`
+2026-08-28 · article · SaaS media · cliente alta · estudo media · triagem archive · `cdc` `codigo-de-defesa-do-consumidor` `lei-8078-1990` `direito-do-consumidor` `clausulas-abusivas` `direito-de-arrependimento`
 
 Texto integral do CDC (Lei 8.078/1990): direitos básicos do consumidor, responsabilidade por defeito/vício (garantia legal 30/90 dias), regras de publicidade e práticas abusivas, cláusulas nulas de pleno direito (art.
 
