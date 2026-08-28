@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 51 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Meu "Netflix Pessoal" com Docker Compose](../article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md)
-2026-08-28 · article · SaaS baixa · cliente baixa · estudo alta · triagem — · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas`
+2026-08-28 · article · SaaS baixa · cliente baixa · estudo alta · triagem archive · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas`
 
 Guia técnico detalhado sobre como montar um servidor de mídia privado e automatizado usando Docker Compose.
 

@@ -32,7 +32,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
-- 2026-08-28 · article · [Meu "Netflix Pessoal" com Docker Compose](article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md) · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas` `radarr` `sonarr` · baixa/baixa/alta · —
+- 2026-08-28 · article · [Meu "Netflix Pessoal" com Docker Compose](article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md) · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas` `radarr` `sonarr` · baixa/baixa/alta · archive
 - 2026-08-27 · article · [Geoapify — plataforma de localização com dados abertos: geocoding, rotas, lugares, isócronas; licença permissiva (pode guardar resultados)](article/2026-08-27_geoapify-plataforma-de-localizacao-com-dados-abertos-geocodi_cf121d534817.md) · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca` · alta/media/media · —
 - 2026-08-27 · article · [MapTiler Cloud — API de mapas para web e mobile: estilos customizados, hospedagem de geodados, geocoding, mapas estáticos, coordenadas e IP geolocation](article/2026-08-27_maptiler-cloud-api-de-mapas-para-web-e-mobile-estilos-custom_48d744ad5a68.md) · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff` `epsg` · media/media/media · —
 - 2026-08-27 · article · [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md) · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos` · alta/media/media · —

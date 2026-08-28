@@ -5,8 +5,8 @@ external_id: "0bc1f323bb64"
 canonical_url: "https://akitaonrails.com/2024/04/03/meu-netflix-pessoal-com-docker-compose"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["docker-compose", "self-hosting", "plex", "homelab", "transcoding", "nas", "radarr", "sonarr"]
 applicability:
   saas_pessoal: baixa
