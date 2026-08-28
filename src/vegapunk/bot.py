@@ -16,6 +16,7 @@ from .enrich import EnrichmentError
 from .extract import DOC_EXTS
 from .normalize import extract_urls
 from .pipeline import Pipeline
+from .speakers import Speakers
 
 log = logging.getLogger("vegapunk.bot")
 
@@ -50,10 +51,12 @@ def keyboard(item_id: str) -> InlineKeyboardMarkup:
     ])
 
 
-def is_allowed(chat_id: int, user_id: int | None = None) -> bool:
+def is_allowed(chat_id: int, user_id: int | None = None, from_bot: bool = False) -> bool:
     """Porteiro do dinheiro: nada chega ao OpenRouter sem passar por aqui. Falha SEMPRE fechada.
 
-    Quatro portas, na ordem do mais barato para o mais específico:
+    Cinco portas, na ordem do mais barato para o mais específico:
+      0. remetente é um bot → recusa (TRAVA ANTI-LOOP: no grupo há 7 bots; um respondendo ao outro
+         seria uma conversa infinita paga por token. Vem antes de tudo, inclusive da lista de chats.)
       1. sem lista de chats no .env → recusa tudo (antes aceitava tudo: era a única falha aberta do sistema)
       2. chat fora da lista → recusa
       3. chat de grupo (id negativo) com VEGAPUNK_GROUP_ENABLED=false → recusa
@@ -61,6 +64,9 @@ def is_allowed(chat_id: int, user_id: int | None = None) -> bool:
 
     `/id` NÃO passa por aqui de propósito: é o caminho de bootstrap (instalar → /id → preencher o .env).
     """
+    if from_bot:
+        log.debug("mensagem de bot em %s: ignorada (trava anti-loop)", chat_id)
+        return False
     if not settings.allowed_chat_ids:
         log.debug("TELEGRAM_ALLOWED_CHAT_IDS vazio: recusando. (o aviso alto é no arranque, aqui rodaria a cada mensagem)")
         return False
@@ -73,6 +79,15 @@ def is_allowed(chat_id: int, user_id: int | None = None) -> bool:
         log.info("usuário %s fora de TELEGRAM_ALLOWED_USER_IDS em %s: ignorando", user_id, chat_id)
         return False
     return True
+
+
+async def responder(speakers: Speakers, sat, answer: str, chat_id: int, reply_to: int | None = None):
+    """Manda a resposta pela boca do Satélite que respondeu.
+
+    Vive fora de `build_app` para poder ser testada: era o critério principal da Story 1b
+    ("a resposta da Lilith aparece com o nome dela") e não tinha prova nenhuma.
+    """
+    await speakers.say_all(sat.id, chat_id, chunks(f"{sat.icon} {answer}"), reply_to=reply_to, parse_mode=None)
 
 
 def build_app(db: Database) -> Application:
@@ -95,9 +110,12 @@ def build_app(db: Database) -> Application:
     chat = Chat(db)
     app.bot_data["chat"] = chat
 
+    speakers = Speakers(app.bot)
+    app.bot_data["speakers"] = speakers
+
     def allowed(update: Update) -> bool:
         chat, user = update.effective_chat, update.effective_user
-        return bool(chat) and is_allowed(chat.id, user.id if user else None)
+        return bool(chat) and is_allowed(chat.id, user.id if user else None, bool(user and user.is_bot))
 
     async def cmd_id(update: Update, _):
         await update.message.reply_text(f"chat_id: {update.effective_chat.id}")
@@ -194,8 +212,16 @@ def build_app(db: Database) -> Application:
             log.exception("chat falhou")
             await msg.reply_text("⚠️ Falha na conversa (veja os logs).")
             return
-        for part in chunks(f"{sat.icon} {answer}"):
-            await msg.reply_text(part)
+        try:
+            # no grupo sai pelo bot do próprio Satélite (nome e ícone dele); na DM, pelo bot de sempre
+            await responder(speakers, sat, answer, msg.chat_id, msg.message_id)
+        except Exception:
+            # a resposta já foi paga em token: não pode sumir em silêncio
+            log.exception("falha ao enviar a resposta de %s em %s", sat.id, msg.chat_id)
+            try:
+                await msg.reply_text(f"{sat.icon} (não consegui enviar a resposta — veja os logs)")
+            except Exception:
+                log.exception("nem o aviso de falha saiu")
 
     async def on_message(update: Update, _):
         if not allowed(update):

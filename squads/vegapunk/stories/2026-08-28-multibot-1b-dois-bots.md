@@ -1,6 +1,6 @@
 # Story 1b: N bots no mesmo processo — Stella lê, os outros só falam (+ porteiro do dinheiro)
 
-**Projeto:** vegapunk     **Status:** rascunho (só vira `pronta` depois que a 1a passar no gate)
+**Projeto:** vegapunk     **Status:** feita (Atlas, 2026-08-28) — 108 testes; 6 bots confirmados no Telegram
 **Origem:** `docs/prd/satelites-multibots-grupo-telegram.md` §0 (a) e §7
 
 ## Objetivo (1 frase)

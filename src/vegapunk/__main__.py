@@ -24,9 +24,14 @@ def main():
     app = build_app(db)
 
     async def post_init(a):
+        await a.bot_data["speakers"].initialize()   # sobe os bots que só falam e confirma a identidade de cada um
         await resume_unfinished(db, a.bot_data["pipeline"])
 
+    async def post_shutdown(a):
+        await a.bot_data["speakers"].shutdown()
+
     app.post_init = post_init
+    app.post_shutdown = post_shutdown
     logging.info("Vegapunk online (modelo=%s, whisper=%s)", settings.model, settings.whisper_model)
     app.run_polling(allowed_updates=["message", "callback_query"], drop_pending_updates=False)
 
