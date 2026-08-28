@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 13 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 51 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 14 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 15 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -86,6 +86,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-08-28 · article · [Standard Bot Privacy Policy — a política de privacidade padrão dos bots do Telegram](article/2026-08-28_standard-bot-privacy-policy-a-politica-de-privacidade-padrao_19b30f460b29.md) · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso` · alta/media/alta · —
 - 2026-08-28 · article · [Código de Defesa do Consumidor (Lei nº 8.078/1990) — texto integral, com as alterações da Lei do Superendividamento (14.181/2021)](article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md) · `cdc` `codigo-de-defesa-do-consumidor` `lei-8078-1990` `direito-do-consumidor` `clausulas-abusivas` `direito-de-arrependimento` `publicidade-enganosa` `garantia-legal` · media/alta/media · archive
 - 2026-08-28 · article · [Peticionamento Eletrônico no SEI/ANPD: Guia de Cadastro e Gestão Processual](article/2026-08-28_peticionamento-eletronico-no-sei-anpd-guia-de-cadastro-e-ges_d89aa798c5c2.md) · `lgpd` `anpd` `sei` `peticionamento-eletronico` `processo-administrativo` `compliance` `assinatura-digital` · media/media/alta · archive
 - 2026-08-28 · article · [Resolução CD/ANPD nº 2/2022: Regulamento da LGPD para Agentes de Pequeno Porte](article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) · `lgpd` `anpd` `resolucao-cd-anpd-2` `compliance-lgpd` `startups-lgpd` `dpo-simplificado` `seguranca-da-informacao` · alta/alta/alta · archive

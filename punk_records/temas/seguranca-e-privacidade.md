@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Standard Bot Privacy Policy — a política de privacidade padrão dos bots do Telegram](../article/2026-08-28_standard-bot-privacy-policy-a-politica-de-privacidade-padrao_19b30f460b29.md)
+2026-08-28 · article · SaaS alta · cliente media · estudo alta · triagem — · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso`
+
+Política padrão que vale para todo bot de terceiros no Telegram.
 
 ## [Código de Defesa do Consumidor (Lei nº 8.078/1990) — texto integral, com as alterações da Lei do Superendividamento (14.181/2021)](../article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md)
 2026-08-28 · article · SaaS media · cliente alta · estudo media · triagem archive · `cdc` `codigo-de-defesa-do-consumidor` `lei-8078-1990` `direito-do-consumidor` `clausulas-abusivas` `direito-de-arrependimento`
