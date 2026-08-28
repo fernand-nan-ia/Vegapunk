@@ -1,6 +1,11 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Atlas (Punk-05) — wiki One Piece: o Satélite da Violência, as Luvas de Pressão de Luz e a autodetonação](../article/2026-08-28_atlas-punk-05-wiki-one-piece-o-satelite-da-violencia-as-luva_58278760111b.md)
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead`
+
+O Satélite da Violência: gigante como Kaidou, jetpack, pronome masculino 'ore' e luvas que tornam a luz sólida.
 
 ## [Pythagoras (Punk-04) — wiki One Piece: o Satélite da Sabedoria, o arquivista que desmascarou York](../article/2026-08-28_pythagoras-punk-04-wiki-one-piece-o-satelite-da-sabedoria-o_a324fa978dee.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `pythagoras` `persona-satelite` `canon` `egghead`
