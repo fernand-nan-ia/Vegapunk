@@ -54,7 +54,7 @@ link no Telegram ─► extrai (legenda | áudio→Whisper | slides→visão) �
 **Trabalho (Labophase — as skills no Claude Code)**
 - Os mesmos sete personagens existem como skills (`/vegapunk`, `/vegapunk:shaka`, …), com **a mesma definição de personalidade** (um único arquivo `.md` por Satélite alimenta os dois lugares).
 - Além de consultar o vault, cada Satélite absorveu funções de um framework de agentes de engenharia (dev, QA, verificação adversarial, PM/PRD, arquitetura, backlog/ADR, pricing/ROI…), com tasks, checklists e templates próprios em `squads/vegapunk/`.
-- Ciclo de entrega padrão, com papéis e vetos codificados: **Edison `prd` → Stella `story` → Atlas `develop` → Lilith `verify` → Shaka `gate` → Stella `release`**. Só a Stella faz `git push`, e só depois que você escreve literalmente "push".
+- Ciclo de entrega padrão, com papéis e vetos codificados: **Edison `prd` → Stella `story` → Atlas `develop` → Lilith `verify` → Shaka `gate` → Stella `release`**. Só o Stella faz `git push`, e só depois que você escreve literalmente "push".
 
 ---
 

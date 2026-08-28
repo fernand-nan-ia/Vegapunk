@@ -1,6 +1,6 @@
 # Task: pythagoras-backlog
 
-Backlog priorizado com critérios de aceite, executado por Pythagoras (`*backlog {projeto}`). Absorvido do FURY `po`, sem ClickUp/Jira/sprints: o backlog é um arquivo Markdown no projeto, e cada item pronto vira insumo da `*story` da Stella.
+Backlog priorizado com critérios de aceite, executado por Pythagoras (`*backlog {projeto}`). Absorvido do FURY `po`, sem ClickUp/Jira/sprints: o backlog é um arquivo Markdown no projeto, e cada item pronto vira insumo da `*story` do Stella.
 
 ## Entrada
 - `{projeto}` — `saas`, `cliente` ou caminho. Opcional: `--add "{item}"` (só acrescenta um item), `--top {n}` (só mostra os n primeiros), `--fonte {item do vault}` (item nasce de um registro).

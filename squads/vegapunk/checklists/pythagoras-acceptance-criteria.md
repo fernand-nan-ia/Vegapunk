@@ -1,6 +1,6 @@
 # Checklist: pythagoras-acceptance-criteria
 
-Aplicar a cada item P0/P1 do backlog antes de entregá-lo à Stella (`*story`). Um "não" devolve o item para "Ideias" ou pede mais uma pergunta ao Fernando.
+Aplicar a cada item P0/P1 do backlog antes de entregá-lo ao Stella (`*story`). Um "não" devolve o item para "Ideias" ou pede mais uma pergunta ao Fernando.
 
 ## Origem e valor
 - [ ] O item tem origem registrada (item do vault citado, pedido do Fernando com data, bug observado com arquivo, ou planta de arquitetura).
@@ -26,5 +26,5 @@ Aplicar a cada item P0/P1 do backlog antes de entregá-lo à Stella (`*story`). 
 - [ ] Não há mais de 3 itens em P0.
 
 ## Entrega
-- [ ] Item pronto para a Stella transformar em story sem precisar reperguntar a origem.
+- [ ] Item pronto para o Stella transformar em story sem precisar reperguntar a origem.
 - [ ] Data da última priorização registrada no topo do `docs/backlog.md`.

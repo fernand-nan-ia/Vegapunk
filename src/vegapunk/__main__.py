@@ -13,7 +13,13 @@ def main():
     if not settings.bot_token:
         sys.exit("TELEGRAM_BOT_TOKEN não definido (.env)")
     if not settings.allowed_chat_ids:
-        logging.warning("TELEGRAM_ALLOWED_CHAT_IDS vazio: bot aceita qualquer chat. Mande /id e preencha o .env.")
+        logging.warning("TELEGRAM_ALLOWED_CHAT_IDS vazio: bot RECUSA todos os chats. Mande /id e preencha o .env.")
+    grupos = [i for i in settings.allowed_chat_ids if i < 0]
+    if grupos and not settings.group_enabled:
+        logging.warning("grupos autorizados no .env mas VEGAPUNK_GROUP_ENABLED=false: %s serão ignorados", grupos)
+    if grupos and settings.group_enabled and not settings.allowed_user_ids:
+        logging.warning("GRUPO LIGADO SEM FILTRO DE PESSOA: qualquer participante de %s gasta sua chave do "
+                        "OpenRouter. Preencha TELEGRAM_ALLOWED_USER_IDS.", grupos)
     db = Database(settings.db_path)
     app = build_app(db)
 

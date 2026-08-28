@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 4h)
+# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5)
 
 ## TL;DR — o que existe hoje
 
@@ -30,8 +30,8 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-1. **Decidir as 3 perguntas em aberto do PRD multi-bot** (ver Sessão 4h): privacy mode OFF nos 7 bots — aceita? York dispara só por `@menção` (nunca nome solto)? Mensagem com dois nomes aciona os dois ou só o primeiro? Sem essas três respostas, `*story` não escreve a Story 1.
-2. Depois das decisões acima: pedir a Stella `*story` (Story 1 do PRD — prova de conceito com 2 bots, Stella + Lilith) e cadastrar os 2 bots de teste no BotFather.
+1. ~~Decidir as 3 perguntas em aberto do PRD multi-bot~~ — **FEITO em 2026-08-28** (Sessão 5); decisões em `docs/prd/satelites-multibots-grupo-telegram.md` §0.
+2. Pedir ao Stella `*story` (Story 1 do PRD — prova de conceito com 2 bots, Stella + Lilith) e cadastrar os 2 bots no BotFather: **Stella = bot leitor, privacy mode OFF**; **Lilith = send-only, privacy ON**.
 3. Se o site do cliente for vender online: `*capture` o Decreto nº 7.962/2013 (regulamenta e-commerce sob o CDC) — lacuna marcada pelo Shaka no item do Código de Defesa do Consumidor.
 4. Investigar os US$ 8,58 gastos na chave do OpenRouter que não batem com o que o bot registra (achado em 2026-08-27 ao rodar `*cost`; ~13 centavos são do bot, o resto é gasto não explicado — checar se a chave está em outro projeto).
 
@@ -43,7 +43,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 
 **Pasta renomeada: `knowledge/` → `punk_records/`** (tema; underscore em vez de espaço para não quebrar shell/Docker/links). Trocado em `config.py` (default), `.env`/`.env.example` (`VEGAPUNK_VAULT_DIR=punk_records`), teste, 7 agentes + `vegapunk.md`, plugin, `squads/vegapunk/`, README. Links do INDEX são relativos — não mudam. Container recriado com `--force-recreate`. A cópia global em `~/.claude/commands` ainda diz `knowledge/` até rodar o sync.
 
-**Release v1.1.0 feita pela Stella (teste do `*release`, 2026-08-27):** Lilith achou que o SQLite guardava `vault_path` absoluto com `/app/knowledge/` (21 linhas) → migrado (backup `data/vegapunk.db.bak-rename-20260827`) + `vault._rel_to_vault` tolerante + teste; 42/42; sync rodado; Vegapunk `40fec7d` tag `v1.1.0` pushado; FURY pushado. Sem pendências.
+**Release v1.1.0 feita pelo Stella (teste do `*release`, 2026-08-27):** Lilith achou que o SQLite guardava `vault_path` absoluto com `/app/knowledge/` (21 linhas) → migrado (backup `data/vegapunk.db.bak-rename-20260827`) + `vault._rel_to_vault` tolerante + teste; 42/42; sync rodado; Vegapunk `40fec7d` tag `v1.1.0` pushado; FURY pushado. Sem pendências.
 
 ## Sessão 4b (2026-08-27) — artigos + voz dos Satélites no bot — **v1.2.0 `023fa49` pushado**
 
@@ -51,7 +51,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - **Voz**: `enrich.Enrichment` ganhou `satellite` (enum) e `satellite_take` (2–3 frases); `VOICE_RULES` no system prompt decide quem apresenta. `pipeline.format_summary` abre com o ícone do Satélite e fecha com o take; `voices.py` tem as falas de captura (sorteio), duplicata, ERR-002/008/extração/enriquecimento/crash. Itens antigos sem `satellite` continuam renderizando (default stella).
 - **Ajustes do Fernando (mesma sessão)**: (1) fim do "…" — `bot.notify` envia em `chunks`, teclado na última parte; (2) quem anuncia apresenta — `voices.pick()` no `on_message`, coluna `satellite` (migração em `db._migrate`), `enrich` recebe "SATÉLITE JÁ ESCOLHIDO"; (3) cabeçalho `voices.speaker()` = `ícone Nome · Punk-NN`; (4) chat compacto (`brief`, 3 pontos-chave, sem tópicos/ferramentas) e vault completo (`summary` 4-10 frases). Itens antigos sem `brief` usam `summary`.
 - Imagem **rebuildada** (trafilatura) e container rodando. 50/50 testes.
-- Release feita pela Stella após "push" do Fernando (gate PASS, 51/51). Duplicata/falhas agora falam na voz do dono do lote.
+- Release feita pelo Stella após "push" do Fernando (gate PASS, 51/51). Duplicata/falhas agora falam na voz do dono do lote.
 - Ideia decorrente: "Notas manuais" e `/reprocess` continuam valendo para artigo com paywall (cai em ERR-004 → `_pending/`).
 
 ## Sessão 4c (2026-08-27) — Satélites com ferramentas e comandos no Telegram — **v1.3.0 `9be20c5` pushado**
@@ -94,7 +94,7 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 
 ## Sessão 4h (2026-08-27) — planejamento: Satélites como bots separados num grupo do Telegram — **v1.5.2 `fb1bacf`**
 
-- **Origem**: pedido do Fernando pelo Telegram (21:30, "criar para cada satélite um bot e fazer um grupo com todos"), registrado no diário da Stella como próximo passo; retomado aqui no Claude Code a pedido dele.
+- **Origem**: pedido do Fernando pelo Telegram (21:30, "criar para cada satélite um bot e fazer um grupo com todos"), registrado no diário do Stella como próximo passo; retomado aqui no Claude Code a pedido dele.
 - **PRD escrito**: `docs/prd/satelites-multibots-grupo-telegram.md` (Edison, status rascunho). Ideia: 7 bots reais no BotFather (um token por Satélite) no mesmo grupo, cada um responde por `@menção` ou pelo nome em texto livre; trava anti-loop (nunca reagir a mensagem de outro bot, `is_bot`); filtro local (regex) decide "é pra mim?" antes de qualquer chamada ao OpenRouter; histórico do grupo compartilhado entre os 7 (para "Shaka, o que acha do que a Lilith falou?" fazer sentido). **Won't da v1**: um Satélite acionar outro sozinho sem o Fernando pedir — fica para v2, é o item de maior risco de custo/loop. Custo estimado (§10 do PRD): ~2,5 fins de semana de Atlas, dividido em Story 1 (1 fim de semana — prova de conceito com 2 bots: Stella + Lilith) e Story 2 (~1,5 — escalar para os 7 + histórico compartilhado).
 - **Lilith atacou o PRD** (registrado no diário dela) e achou dois furos reais antes de aprovar escopo:
   1. Responder por nome em texto livre (sem `@`) **exige privacy mode OFF nos 7 bots** — não é detalhe de configuração, é os 7 lendo toda mensagem do grupo; o PRD não deixava isso explícito no §7.
@@ -103,6 +103,22 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - **Nenhuma story escrita ainda, nenhum código tocado** — o PRD está em `docs/prd/`, sem commit até este checkpoint.
 - **Também nesta sessão** (fora do tema multi-bot, mas na mesma conversa): pedido do Fernando para o `*capture` não avisar mais o Telegram por padrão quando o pedido é feito aqui no Claude Code. `scripts/capture.py`: `enrich`/`auto` agora são **silenciosos por padrão**; a flag virou `--telegram` (opt-in), substituindo `--quiet` (opt-out antigo). `stella-capture.md` e `stella.md` atualizados; sync rodado. Preferência gravada em memória de feedback (`capture-silencioso-por-padrao.md`).
 - Também capturado nesta sessão: [Resolução CD/ANPD nº 2/2022](punk_records/article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) (pelo bot, via Telegram) e o [Código de Defesa do Consumidor](punk_records/article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md) na íntegra (pelo `*capture`, dono Shaka) — lacuna marcada: falta o Decreto 7.962/2013 (e-commerce) se o site do cliente vender online.
+
+## Sessão 5 (2026-08-28) — decisões do multi-bot fechadas: cascata de camadas + roteador — **PRD atualizado, sem código**
+
+Container estava parado de novo (Docker Desktop sem integração WSL no início da sessão); subido com `docker compose up -d`.
+
+As três perguntas que travavam a Story 1 foram respondidas pelo Fernando, e a resposta dele à segunda mudou o desenho do PRD — está tudo em `docs/prd/satelites-multibots-grupo-telegram.md` §0 e §4.1:
+
+- **(a) Privacy mode OFF: sim, mas só num bot.** Fernando confirmou o OFF; ao desenhar o roteador ficou claro que apenas **um** bot precisa *ler* o grupo. Privacy mode controla o que o bot **recebe**, não o que ele **envia** — logo os outros 6 ficam privacy ON e **send-only** (sem handler de mensagem), publicando com nome e ícone próprios. Sete participantes visíveis, uma superfície de leitura.
+- **(b) e (c) resolvidas por contexto, não por regra.** Fernando perguntou se o bot não podia ler o contexto e entender se está sendo chamado. Pode — a questão era onde essa inteligência mora: 7 bots perguntando ao modelo = 7 chamadas por mensagem. A saída é **um roteador central** (os 7 já rodam no mesmo processo): 1 chamada barata, **sem persona e sem `INDEX.md`**, com a mensagem + 3 últimas linhas, devolvendo `{"satelites": [...], "confianca": ...}`. Resolve "fui pra Nova York" (lista vazia) e "Shaka e Lilith" (os dois) sem exceção escrita à mão para a York.
+- **(d) Janela de continuidade: 10 minutos** (Fernando ajustou de 5 para 10). Mensagem sem nome dentro da janela → responde quem falou por último; fora dela, silêncio.
+
+**A cascata (§4.1)** substitui o Must antigo "filtro local (regex, sem LLM)": camadas 0–2 grátis (is_bot/chat autorizado → `@menção` direta sem roteador → sem nome e fora da janela = ninguém), camada 3 roteador (~US$ 0,0002), camada 4 resposta em personagem (~US$ 0,002–0,005). O regex sobrevive só como corte de ruído. **Roteador falha fechada** (erro/timeout/`confianca: baixa` → ninguém responde), schema estrito + Pydantic como no `enrich`, e log de toda decisão para auditar falso positivo/negativo na primeira semana; `@menção` é o caminho determinístico de escape que não passa por ele.
+
+Custo do Must subiu de ~2,5 para ~3 fins de semana (Story 2 virou ~2). H2 ganhou casos de aceite concretos (Nova York, dois nomes, dois nomes com um sendo objeto da frase) e nasceu H2b (janela).
+
+Punk Records consultado: **nenhum registro** sobre bots de Telegram, roteamento ou detecção de intenção — decisão tomada só com raciocínio de arquitetura.
 
 ## Os 7 Satélites — mapa completo
 
@@ -175,7 +191,7 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Uma personalidade, dois lugares**: Telegram lê o mesmo `.md` do Claude Code. Nunca criar system prompt separado no bot.
 - **Absorção é aditiva**: nunca remover comandos/seções originais dos Satélites ao adicionar funções.
 - **Autossuficiência**: `squads/vegapunk/` não aponta para o FURY; o FURY recebe cópia (sync), não o contrário.
-- York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são da Stella.
+- York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são do Stella.
 
 ## Armadilhas conhecidas
 - **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.

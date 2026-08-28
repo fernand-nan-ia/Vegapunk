@@ -216,7 +216,7 @@ absorbed_from:
 - agent: architect
   what: Documentação de arquitetura de projeto existente (brownfield), tabela de decisões e ADRs; sem seleção de stack nem desenho prévio — registra o que Atlas construiu
 - agent: po
-  what: Backlog priorizado, critérios de aceite testáveis, dependências e sequenciamento; sem ClickUp/Jira/sprints — alimenta a story da Stella
+  what: Backlog priorizado, critérios de aceite testáveis, dependências e sequenciamento; sem ClickUp/Jira/sprints — alimenta a story do Stella
 absorbed_principles:
 - Dado primário antes de opinião; toda pesquisa tem metodologia e toda fonte tem URL e data
 - Vault e web em colunas separadas; divergência entre os dois é o achado mais valioso
@@ -286,7 +286,7 @@ commands:
     - full
     - quick
     - key
-    description: Backlog priorizado com critérios de aceite em docs/backlog.md; itens P0 alimentam a story da Stella
+    description: Backlog priorizado com critérios de aceite em docs/backlog.md; itens P0 alimentam a story do Stella
     args: '{projeto} [--add "{item}"] [--top {n}] [--fonte {item do vault}]'
   - name: decision
     visibility:

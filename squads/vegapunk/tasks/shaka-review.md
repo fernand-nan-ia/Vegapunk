@@ -4,7 +4,7 @@ Revisão consultiva de código ou entregável. Executada por Shaka (`*review`). 
 
 ## Posição no fluxo
 
-Atlas constrói → Shaka `review` (achados) → Atlas corrige → Lilith `verify` (adversarial, obrigatório em risco alto) → Shaka `gate` → Stella `sync` (push). Ninguém além da Stella faz push; a Stella não faz push sem gate PASS ou WAIVED registrado.
+Atlas constrói → Shaka `review` (achados) → Atlas corrige → Lilith `verify` (adversarial, obrigatório em risco alto) → Shaka `gate` → Stella `sync` (push). Ninguém além do Stella faz push; o Stella não faz push sem gate PASS ou WAIVED registrado.
 
 ## Entrada
 

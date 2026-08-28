@@ -50,6 +50,31 @@ def keyboard(item_id: str) -> InlineKeyboardMarkup:
     ])
 
 
+def is_allowed(chat_id: int, user_id: int | None = None) -> bool:
+    """Porteiro do dinheiro: nada chega ao OpenRouter sem passar por aqui. Falha SEMPRE fechada.
+
+    Quatro portas, na ordem do mais barato para o mais específico:
+      1. sem lista de chats no .env → recusa tudo (antes aceitava tudo: era a única falha aberta do sistema)
+      2. chat fora da lista → recusa
+      3. chat de grupo (id negativo) com VEGAPUNK_GROUP_ENABLED=false → recusa
+      4. TELEGRAM_ALLOWED_USER_IDS preenchido e o remetente fora dela → recusa
+
+    `/id` NÃO passa por aqui de propósito: é o caminho de bootstrap (instalar → /id → preencher o .env).
+    """
+    if not settings.allowed_chat_ids:
+        log.debug("TELEGRAM_ALLOWED_CHAT_IDS vazio: recusando. (o aviso alto é no arranque, aqui rodaria a cada mensagem)")
+        return False
+    if chat_id not in settings.allowed_chat_ids:
+        return False
+    if chat_id < 0 and not settings.group_enabled:
+        log.info("grupo %s está no .env mas VEGAPUNK_GROUP_ENABLED=false: ignorando", chat_id)
+        return False
+    if settings.allowed_user_ids and user_id not in settings.allowed_user_ids:
+        log.info("usuário %s fora de TELEGRAM_ALLOWED_USER_IDS em %s: ignorando", user_id, chat_id)
+        return False
+    return True
+
+
 def build_app(db: Database) -> Application:
     app = Application.builder().token(settings.bot_token).build()
 
@@ -71,8 +96,8 @@ def build_app(db: Database) -> Application:
     app.bot_data["chat"] = chat
 
     def allowed(update: Update) -> bool:
-        chat = update.effective_chat
-        return bool(chat) and (not settings.allowed_chat_ids or chat.id in settings.allowed_chat_ids)
+        chat, user = update.effective_chat, update.effective_user
+        return bool(chat) and is_allowed(chat.id, user.id if user else None)
 
     async def cmd_id(update: Update, _):
         await update.message.reply_text(f"chat_id: {update.effective_chat.id}")

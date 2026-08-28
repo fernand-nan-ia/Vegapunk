@@ -9,6 +9,9 @@
 - 2026-08-28 · Fernando quer criar um bot do Telegram para cada Satélite e reuni-los em um grupo como próximo passo
 - 2026-08-27 · PRD do grupo multi-bot escrito (docs/prd/satelites-multibots-grupo-telegram.md); Lilith atacou, três decisões do Fernando pendentes antes da Story 1 (privacy mode, York só por @menção, dois nomes numa mensagem)
 - 2026-08-27 · Checkpoint via *checkpoint: capture.py virou silencioso por padrão (--telegram é opt-in) a pedido do Fernando
+- 2026-08-28 · Fernando fechou as 3 decisões do PRD multi-bot: privacy OFF só no bot leitor, roteador decide por contexto (sem exceção para a York), janela de continuidade de 10 min (ele mesmo subiu de 5 para 10)
+- 2026-08-28 · Story 1 do PRD não cabia numa sessão de Atlas: dividida em 1a (roteador), 1b (dois bots), 1c (cascata); só a 1a foi entregue pronta
+- 2026-08-28 · Regra nova do Fernando: link enviado aqui para leitura vai SEMPRE para o Punk Records via *capture, sem perguntar, salvo pedido contrário (aprendido depois de eu ler 3 páginas do Telegram e só perguntar se capturava)
 
 ## Sincronizações
 - 2026-08-27 · v1.1.0 `40fec7d` — cânone nos 7 Satélites, knowledge/ → punk_records/, README; Lilith achou vault_path antigo no banco, corrigido antes do push; Fernando disse "push" (primeiro *release de teste)
