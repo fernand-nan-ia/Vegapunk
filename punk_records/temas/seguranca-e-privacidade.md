@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](../youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md)
+2026-08-28 · youtube · SaaS alta · cliente alta · estudo alta · triagem — · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec`
+
+Demonstração prática de um mega prompt de auditoria de segurança rodando via Claude em quatro projetos feitos com vibe coding.
 
 ## [Visão Geral de Segurança do Telegram — moderação, CSAM e conteúdo terrorista](../article/2026-08-28_visao-geral-de-seguranca-do-telegram-moderacao-csam-e-conteu_96c95a08cb48.md)
 2026-08-28 · article · SaaS baixa · cliente nenhuma · estudo media · triagem — · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma`
