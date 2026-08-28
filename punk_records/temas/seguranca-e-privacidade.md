@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Telegram FAQ — grupos, chats secretos, bots, privacy mode, GDPR e miniapps](../article/2026-08-28_telegram-faq-grupos-chats-secretos-bots-privacy-mode-gdpr-e_461904727fd2.md)
+2026-08-28 · article · SaaS media · cliente baixa · estudo alta · triagem — · `telegram` `telegram-bot` `privacy-mode` `grupos-telegram` `chats-secretos` `gdpr`
+
+O FAQ oficial: grupos até 200 mil membros, privacy mode dos bots visível na lista de membros, chats secretos fora da nuvem (logo, sem bots), GDPR via @EURegulation e miniapps com pagamentos via Stars.
 
 ## [Standard Bot Privacy Policy — a política de privacidade padrão dos bots do Telegram](../article/2026-08-28_standard-bot-privacy-policy-a-politica-de-privacidade-padrao_19b30f460b29.md)
 2026-08-28 · article · SaaS alta · cliente media · estudo alta · triagem — · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso`
