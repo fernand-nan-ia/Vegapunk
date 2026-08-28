@@ -7,12 +7,13 @@ Fluxo em dois passos (o resumo é feito pela sessão do Claude Code, não pelo m
        → cria o item, normaliza, extrai (yt-dlp/Whisper/trafilatura/PDF… tudo local) e grava
          tmp/capture/<id>.md com metadados + TEXTO + o contrato do JSON de enriquecimento.
   2. (o Claude Code lê esse arquivo e escreve tmp/capture/<id>.json seguindo o contrato)
-  3. python scripts/capture.py enrich <id> [--quiet]
+  3. python scripts/capture.py enrich <id> [--telegram]
        → valida o JSON com o MESMO Pydantic do bot, grava (model_used=claude-code), gera o .md,
-         o índice por tema, commit e — salvo --quiet — avisa no Telegram na voz do Satélite dono.
+         o índice por tema e commit. Por padrão SILENCIOSO (fica só aqui no Claude Code); passe
+         --telegram se quiser que o Satélite dono também avise no Telegram.
 
-  python scripts/capture.py auto <url|arquivo>   → pipeline completo via OpenRouter (como o Telegram)
-  python scripts/capture.py pending              → itens extraídos à espera do passo 2
+  python scripts/capture.py auto <url|arquivo> [--telegram]   → pipeline completo via OpenRouter
+  python scripts/capture.py pending                            → itens extraídos à espera do passo 2
 
 Rodar dentro do container (tem yt-dlp/ffmpeg/Whisper): docker compose exec -T vegapunk python scripts/capture.py …
 """
@@ -40,8 +41,8 @@ def _chat_id() -> int:
     return ids[0]
 
 
-def _notifier(quiet: bool):
-    if quiet:
+def _notifier(notify_telegram: bool):
+    if not notify_telegram:
         async def silent(cid, text, reply_to=None, item_id=None):
             print("(quiet)", text[:100].replace("\n", " | "))
         return silent
@@ -81,7 +82,7 @@ def cmd_extract(args):
     sat = args.sat or voices.pick()
     src = _source(args.source)
     item_id = _reuse_failed(db, src, sat) or db.create_item(src, _chat_id(), 0, satellite=sat)
-    p = Pipeline(db, _notifier(quiet=True))
+    p = Pipeline(db, _notifier(notify_telegram=False))
 
     async def run():
         if db.get(item_id)["status"] == "captured":
@@ -134,7 +135,7 @@ def cmd_enrich(args):
         e.satellite = item["satellite"]
     db.transition_to(item_id, "enriched", "claude_code", {"input_tokens": 0, "output_tokens": 0, "model": "claude-code"},
                      enrichment=e.model_dump_json(), enriched_at=now(), model_used="claude-code", error_code=None, error_detail=None)
-    p = Pipeline(db, _notifier(args.quiet))
+    p = Pipeline(db, _notifier(args.telegram))
     asyncio.run(p.step_persist(item_id))
     it = db.get(item_id)
     print(f"guardado: {it['vault_path']}\n\n{format_summary(json.loads(it['enrichment']), it['satellite'])[:600]}")
@@ -146,7 +147,7 @@ def cmd_auto(args):
     db = Database(settings.db_path)
     sat = args.sat or voices.pick()
     item_id = db.create_item(_source(args.source), _chat_id(), 0, satellite=sat)
-    asyncio.run(Pipeline(db, _notifier(args.quiet)).run(item_id))
+    asyncio.run(Pipeline(db, _notifier(args.telegram)).run(item_id))
     it = db.get(item_id)
     print(f"{it['status']} · {it['platform']} · {it['vault_path'] or it['error_detail']}")
 
@@ -164,8 +165,12 @@ sub = ap.add_subparsers(dest="cmd", required=True)
 s1 = sub.add_parser("extract"); s1.add_argument("source"); s1.add_argument("--sat", choices=satellites.IDS)
 s1.add_argument("--text", help="arquivo com o texto já extraído (páginas em JavaScript, conteúdo colado)")
 s1.add_argument("--title"); s1.add_argument("--channel"); s1.set_defaults(fn=cmd_extract)
-s2 = sub.add_parser("enrich"); s2.add_argument("id"); s2.add_argument("--json"); s2.add_argument("--quiet", action="store_true"); s2.set_defaults(fn=cmd_enrich)
-s3 = sub.add_parser("auto"); s3.add_argument("source"); s3.add_argument("--sat", choices=satellites.IDS); s3.add_argument("--quiet", action="store_true"); s3.set_defaults(fn=cmd_auto)
+s2 = sub.add_parser("enrich"); s2.add_argument("id"); s2.add_argument("--json")
+s2.add_argument("--telegram", action="store_true", help="também avisar no Telegram (padrão: só aqui no Claude Code)")
+s2.set_defaults(fn=cmd_enrich)
+s3 = sub.add_parser("auto"); s3.add_argument("source"); s3.add_argument("--sat", choices=satellites.IDS)
+s3.add_argument("--telegram", action="store_true", help="também avisar no Telegram (padrão: só aqui no Claude Code)")
+s3.set_defaults(fn=cmd_auto)
 s4 = sub.add_parser("pending"); s4.set_defaults(fn=cmd_pending)
 a = ap.parse_args()
 a.fn(a)

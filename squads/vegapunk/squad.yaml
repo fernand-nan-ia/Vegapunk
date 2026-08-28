@@ -1,7 +1,7 @@
 squad:
   id: vegapunk
   name: "Vegapunk — Dr. Vegapunk e os Satélites"
-  version: 1.5.1
+  version: 1.5.2
   description: "Memória de conhecimento do Fernando (links → Punk Records em punk_records/) operada por sete personas de Egghead: o Stella e seis Satélites, cada um uma faceta da mente do Dr. Vegapunk."
   canon: "One Piece — arco de Egghead (Eiichiro Oda)"
   chief: stella

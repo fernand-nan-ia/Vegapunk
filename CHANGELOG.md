@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5.2 — 2026-08-27
+### Mudado
+- `capture.py enrich`/`auto`: **silencioso por padrão** (fica só no Claude Code); a flag virou `--telegram` (opt-in), substituindo `--quiet` (opt-out). Pedido do Fernando — capturas feitas aqui não devem duplicar aviso no Telegram salvo pedido explícito.
+### Adicionado
+- `docs/prd/satelites-multibots-grupo-telegram.md` (Edison, rascunho): PRD dos Satélites como bots separados no mesmo grupo do Telegram. Lilith atacou (privacy mode, falso positivo de nome); 3 decisões do Fernando pendentes antes da Story 1.
+### Gate: Shaka PASS · Verify: Lilith ✓ (flag --telegram testada isoladamente no container) · Testes: 70/70
+
 ## v1.5.1 — 2026-08-27
 ### Adicionado
 - `capture.py extract --text arquivo --title --channel`: usar texto já obtido (páginas em JavaScript, conteúdo colado) mantendo a URL como fonte (`content_type: manual`).

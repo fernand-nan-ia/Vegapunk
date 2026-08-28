@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 4)
+# HANDOFF — Vegapunk (atualizado em 2026-08-27, fim da sessão 4h)
 
 ## TL;DR — o que existe hoje
 
@@ -30,10 +30,10 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-1. **Testar um Satélite no Claude Code com função absorvida**: `/vegapunk:lilith` → `*verify src/vegapunk/chat.py`. Esperado: ela lê `squads/vegapunk/tasks/lilith-verify-delivery.md` e a checklist, entrega findings com Onde/Por quê/Como corrigir e um veredito (AFUNDOU / ÁGUA NO PORÃO / FLUTUA COM REMENDO / AGUENTOU). Se ela não achar a task, o problema é a diretiva `ABSORBED CAPABILITIES` (caminho absoluto).
-2. **Testar o ciclo completo numa feature pequena**: Edison `*prd` → Stella `*story` → Atlas `*develop` → Lilith `*verify` → Shaka `*gate` → Stella `*release` (ela deve PARAR e pedir "push" explícito).
-3. **Telegram**: mandar "oi" a `/york` e perguntar "quanto cobrar pelo meu SaaS?" — ela deve responder em personagem e dizer que `*pricing` completo é no Claude Code (no Telegram não há ferramentas).
-4. Se algum agente parecer "esquecer" a personalidade quando executa um comando absorvido: a causa provável é o tamanho do arquivo (290–400 linhas). Solução prevista: mover `examples` para um arquivo à parte lido na ativação — **não** cortar seções.
+1. **Decidir as 3 perguntas em aberto do PRD multi-bot** (ver Sessão 4h): privacy mode OFF nos 7 bots — aceita? York dispara só por `@menção` (nunca nome solto)? Mensagem com dois nomes aciona os dois ou só o primeiro? Sem essas três respostas, `*story` não escreve a Story 1.
+2. Depois das decisões acima: pedir a Stella `*story` (Story 1 do PRD — prova de conceito com 2 bots, Stella + Lilith) e cadastrar os 2 bots de teste no BotFather.
+3. Se o site do cliente for vender online: `*capture` o Decreto nº 7.962/2013 (regulamenta e-commerce sob o CDC) — lacuna marcada pelo Shaka no item do Código de Defesa do Consumidor.
+4. Investigar os US$ 8,58 gastos na chave do OpenRouter que não batem com o que o bot registra (achado em 2026-08-27 ao rodar `*cost`; ~13 centavos são do bot, o resto é gasto não explicado — checar se a chave está em outro projeto).
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -91,6 +91,18 @@ Também incorporados dois vídeos (Uselessinho `Pveu6gs7-LM` e o discurso comple
 - **Armadilha nova — SPA (registro.br)**: HTML de 4 KB, conteúdo em chunks Vue (`/assets/<Rota>-<hash>.js`) e API com XSRF de sessão (preços não obtidos). Solução usada: baixar os chunks, extrair strings de texto (script ad hoc no scratchpad) e alimentar com `capture.py extract <url> --text arquivo.txt`. Páginas de preço da Hostinger/Shopify também renderizam tabelas por JS: preços registrados só onde o texto trazia; `confidence: media` quando faltou.
 - `docker compose exec -T` dentro de `while read` consome o stdin do laço → usar `</dev/null` (ou `for`).
 - `_pending/` restante: carrinho da Hostinger (checkout pessoal, sem texto) e um Instagram antigo.
+
+## Sessão 4h (2026-08-27) — planejamento: Satélites como bots separados num grupo do Telegram (PRD, sem story ainda)
+
+- **Origem**: pedido do Fernando pelo Telegram (21:30, "criar para cada satélite um bot e fazer um grupo com todos"), registrado no diário da Stella como próximo passo; retomado aqui no Claude Code a pedido dele.
+- **PRD escrito**: `docs/prd/satelites-multibots-grupo-telegram.md` (Edison, status rascunho). Ideia: 7 bots reais no BotFather (um token por Satélite) no mesmo grupo, cada um responde por `@menção` ou pelo nome em texto livre; trava anti-loop (nunca reagir a mensagem de outro bot, `is_bot`); filtro local (regex) decide "é pra mim?" antes de qualquer chamada ao OpenRouter; histórico do grupo compartilhado entre os 7 (para "Shaka, o que acha do que a Lilith falou?" fazer sentido). **Won't da v1**: um Satélite acionar outro sozinho sem o Fernando pedir — fica para v2, é o item de maior risco de custo/loop. Custo estimado (§10 do PRD): ~2,5 fins de semana de Atlas, dividido em Story 1 (1 fim de semana — prova de conceito com 2 bots: Stella + Lilith) e Story 2 (~1,5 — escalar para os 7 + histórico compartilhado).
+- **Lilith atacou o PRD** (registrado no diário dela) e achou dois furos reais antes de aprovar escopo:
+  1. Responder por nome em texto livre (sem `@`) **exige privacy mode OFF nos 7 bots** — não é detalhe de configuração, é os 7 lendo toda mensagem do grupo; o PRD não deixava isso explícito no §7.
+  2. Nome como palavra solta vai casar com falso positivo real (ex.: "fui pra Nova York" aciona o bot da York); e o comportamento com **dois nomes na mesma mensagem** ("Shaka e Lilith, o que acham?") não está definido.
+- **Três decisões do Fernando ainda pendentes** (bloqueiam a Story 1 — ver "Primeira coisa a fazer"): (a) aceitar privacy mode OFF nos 7 bots; (b) York disparar só por `@menção`, nunca por nome solto; (c) mensagem com dois nomes aciona os dois ou só o primeiro.
+- **Nenhuma story escrita ainda, nenhum código tocado** — o PRD está em `docs/prd/`, sem commit até este checkpoint.
+- **Também nesta sessão** (fora do tema multi-bot, mas na mesma conversa): pedido do Fernando para o `*capture` não avisar mais o Telegram por padrão quando o pedido é feito aqui no Claude Code. `scripts/capture.py`: `enrich`/`auto` agora são **silenciosos por padrão**; a flag virou `--telegram` (opt-in), substituindo `--quiet` (opt-out antigo). `stella-capture.md` e `stella.md` atualizados; sync rodado. Preferência gravada em memória de feedback (`capture-silencioso-por-padrao.md`).
+- Também capturado nesta sessão: [Resolução CD/ANPD nº 2/2022](punk_records/article/2026-08-28_resolucao-cd-anpd-no-2-2022-regulamento-da-lgpd-para-agentes_ee0ac20cec91.md) (pelo bot, via Telegram) e o [Código de Defesa do Consumidor](punk_records/article/2026-08-28_codigo-de-defesa-do-consumidor-lei-no-8-078-1990-texto-integ_6bb7420aee5e.md) na íntegra (pelo `*capture`, dono Shaka) — lacuna marcada: falta o Decreto 7.962/2013 (e-commerce) se o site do cliente vender online.
 
 ## Os 7 Satélites — mapa completo
 

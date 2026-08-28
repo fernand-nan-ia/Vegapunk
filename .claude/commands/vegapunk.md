@@ -289,7 +289,7 @@ commands:
   - name: capture
     visibility: [full, quick, key]
     description: "Guardar um link ou arquivo no Punk Records a partir daqui — extração local + resumo feito por esta sessão (zero OpenRouter); avisa no Telegram na voz do Satélite dono"
-    args: "{url ou caminho} [--sat id] [--quiet]"
+    args: "{url ou caminho} [--sat id] [--telegram]"
   # ── absorvidos do FURY ──
   - name: route
     visibility:
@@ -343,7 +343,7 @@ procedures:
     1. `docker compose exec -T vegapunk python scripts/capture.py extract "<url|arquivo>" [--sat id]` (extração local; duplicata → parar).
     2. Ler tmp/capture/<id>.md (metadados + instruções do bot + contrato JSON + texto).
     3. Escrever tmp/capture/<id>.json seguindo o contrato: summary completo, brief curto, topics, tools, key_points, tags, applicability, how_to_apply, confidence, theme, satellite (o dono) e satellite_take na voz dele. Fiel ao texto.
-    4. `… capture.py enrich <id> [--quiet]` — valida (Pydantic do bot), grava, gera .md + índice por tema + commit, avisa no Telegram.
+    4. `… capture.py enrich <id>` — valida (Pydantic do bot), grava, gera .md + índice por tema + commit. Silencioso por padrão (só aqui no Claude Code); `--telegram` só se Fernando pedir o aviso lá também.
     5. Responder: caminho, tema, aplicabilidade, take. "Zero Mother Flame."
   route: 'Executar squads/vegapunk/tasks/stella-route.md.
   
