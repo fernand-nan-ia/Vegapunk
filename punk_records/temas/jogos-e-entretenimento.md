@@ -1,6 +1,11 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](../article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md)
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead`
+
+O Satélite da Ganância: come, dorme e evacua pelos outros — e a apatia era fachada.
 
 ## [Atlas (Punk-05) — wiki One Piece: o Satélite da Violência, as Luvas de Pressão de Luz e a autodetonação](../article/2026-08-28_atlas-punk-05-wiki-one-piece-o-satelite-da-violencia-as-luva_58278760111b.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead`
