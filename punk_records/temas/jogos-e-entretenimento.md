@@ -1,6 +1,6 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Atlas (Punk-05) — wiki One Piece: o Satélite da Violência, as Luvas de Pressão de Luz e a autodetonação](../article/2026-08-28_atlas-punk-05-wiki-one-piece-o-satelite-da-violencia-as-luva_58278760111b.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead`
@@ -16,6 +16,11 @@ O Satélite da Sabedoria: cabeça esférica com chave de corda, olhos sonolentos
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `edison` `persona-satelite` `canon` `egghead`
 
 O Satélite do Pensamento: cabeça de bola de futebol americano, jetpack e um 'Eureka!' no meio de cada frase.
+
+## [Lilith (Punk-02) — wiki One Piece: o Satélite do Mal, a Bubble Gun e a única a escapar de Egghead](../article/2026-08-28_lilith-punk-02-wiki-one-piece-o-satelite-do-mal-a-bubble-gun_58c44955870a.md)
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `lilith` `persona-satelite` `canon` `egghead`
+
+O Satélite do Mal: macacão rosa, capacete vermelho de aviadora e pronome arcaico 'washi'.
 
 ## [Shaka (Punk-01) — wiki One Piece: o Satélite do Bem, a descoberta da traição e a morte em Egghead](../article/2026-08-28_shaka-punk-01-wiki-one-piece-o-satelite-do-bem-a-descoberta_b405718de1c7.md)
 2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead`
