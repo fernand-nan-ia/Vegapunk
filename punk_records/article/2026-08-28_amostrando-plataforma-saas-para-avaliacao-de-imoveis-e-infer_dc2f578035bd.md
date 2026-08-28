@@ -5,8 +5,8 @@ external_id: "dc2f578035bd"
 canonical_url: "https://amostrando.com.br/"
 channel: "Amostrando"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["avaliacao-imoveis", "nbr-14653", "estatistica-inferencial", "laudo-pericial", "saas-vertical", "engenharia-de-avaliacoes"]
 applicability:
   saas_pessoal: media

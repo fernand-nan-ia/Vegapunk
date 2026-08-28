@@ -3,7 +3,7 @@
 _obras, vistoria, laudos, avaliação de imóveis, normas técnicas._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Amostrando: Plataforma SaaS para Avaliação de Imóveis e Inferência Estatística](../article/2026-08-28_amostrando-plataforma-saas-para-avaliacao-de-imoveis-e-infer_dc2f578035bd.md)
-2026-08-28 · article · SaaS media · cliente alta · estudo alta · triagem — · `avaliacao-imoveis` `nbr-14653` `estatistica-inferencial` `laudo-pericial` `saas-vertical` `engenharia-de-avaliacoes`
+2026-08-28 · article · SaaS media · cliente alta · estudo alta · triagem archive · `avaliacao-imoveis` `nbr-14653` `estatistica-inferencial` `laudo-pericial` `saas-vertical` `engenharia-de-avaliacoes`
 
 Apresentação da plataforma Amostrando para engenharia de avaliações e peritos imobiliários.
 
