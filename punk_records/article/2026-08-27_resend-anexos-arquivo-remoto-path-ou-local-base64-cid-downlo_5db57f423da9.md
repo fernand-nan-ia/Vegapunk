@@ -5,8 +5,8 @@ external_id: "5db57f423da9"
 canonical_url: "https://resend.com/docs/dashboard/emails/attachments"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "anexos", "base64", "api", "limites"]
 applicability:
   saas_pessoal: alta

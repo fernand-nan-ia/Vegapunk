@@ -118,7 +118,7 @@ SDK oficial em 9 linguagens (Python incluído), 3 da comunidade e uma spec OpenA
 headers: {'X-Entity-Ref-ID': id-único} evita que o Gmail empilhe seus e-mails numa thread; List-Unsubscribe dá descadastro em um clique.
 
 ## [Resend — anexos: arquivo remoto (path) ou local (Base64), CID, download via API e limites (40 MB, sem lote)](../article/2026-08-27_resend-anexos-arquivo-remoto-path-ou-local-base64-cid-downlo_5db57f423da9.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `anexos` `base64` `api` `limites`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `anexos` `base64` `api` `limites`
 
 Anexo por URL (path) ou Base64 (content), até 40 MB no total, tipos restritos, nunca em lote; anexos enviados ficam baixáveis por API com URL assinada.
 
