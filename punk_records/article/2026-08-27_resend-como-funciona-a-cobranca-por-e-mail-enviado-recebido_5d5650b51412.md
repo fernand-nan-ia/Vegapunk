@@ -5,8 +5,8 @@ external_id: "5d5650b51412"
 canonical_url: "https://resend.com/docs/knowledge-base/what-is-resend-pricing"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "precos", "cobranca", "email-transacional"]
 applicability:
   saas_pessoal: alta

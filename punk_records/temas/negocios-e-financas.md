@@ -43,7 +43,7 @@ Workers: grátis até 100 mil req/dia (10 ms CPU cada); pago a US$ 0,30 por milh
 Sentry: grátis para 1 dev (erros + tracing + alertas + MCP); Team US$ 26/mês (usuários ilimitados, integrações); Business US$ 80/mês.
 
 ## [Resend — como funciona a cobrança: por e-mail enviado/recebido, destinatários contam separado, Free 100/dia, Enterprise a partir de 3 milhões/mês](../article/2026-08-27_resend-como-funciona-a-cobranca-por-e-mail-enviado-recebido_5d5650b51412.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `cobranca` `email-transacional`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `precos` `cobranca` `email-transacional`
 
 Cada destinatário conta como um e-mail (To/CC/BCC); Free 100/dia; pagos cobram excedente só acima do volume mensal; Enterprise a partir de 3 milhões/mês.
 
