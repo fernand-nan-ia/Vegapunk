@@ -5,8 +5,8 @@ external_id: "4d5015f2c495"
 canonical_url: "https://developers.cloudflare.com/analytics/analytics-engine/pricing"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "analytics-engine", "precos", "metricas", "usage-billing"]
 applicability:
   saas_pessoal: alta

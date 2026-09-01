@@ -28,7 +28,7 @@ reCAPTCHA (Fraud Defense): Essentials grátis até 10 mil avaliações/mês; Pre
 UptimeRobot: grátis com 50 monitores a cada 5 min (HTTP, porta, ping, keyword, SSL/domínio); Solo US$ 9 (10 monitores, 60 s); Team US$ 35 (100, 30 s, webhooks); Scale US$ 65 (200–500, 15 s).
 
 ## [Cloudflare Workers Analytics Engine — preço: pontos escritos e consultas SQL (Free 100k/dia e 10k/dia; Paid 10M e 1M/mês inclusos)](../article/2026-08-27_cloudflare-workers-analytics-engine-preco-pontos-escritos-e_4d5015f2c495.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `analytics-engine` `precos` `metricas` `usage-billing`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `analytics-engine` `precos` `metricas` `usage-billing`
 
 Analytics Engine: escreve 100 mil pontos/dia e consulta 10 mil/dia de graça; no Paid, 10 M pontos e 1 M consultas/mês inclusos, depois US$ 0,25 e US$ 1,00 por milhão.
 
