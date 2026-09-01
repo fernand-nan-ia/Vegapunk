@@ -5,8 +5,8 @@ external_id: "7672412734549544199"
 canonical_url: "https://www.tiktok.com/@sophiascatola/video/7672412734549544199"
 channel: "sophiascatola"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["design-de-saas", "cara-de-ia", "ui-design", "copywriting", "retencao", "vibe-coding"]
 applicability:
   saas_pessoal: alta

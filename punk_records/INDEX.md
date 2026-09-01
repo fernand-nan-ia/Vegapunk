@@ -148,7 +148,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎨 Design e UX
 
-- 2026-09-01 · tiktok · [Como fazer o design do SaaS não ter cara de feito por IA — emojis, travessão e a estrelinha](tiktok/2026-09-01_como-fazer-o-design-do-saas-nao-ter-cara-de-feito-por-ia-emo_7672412734549544199.md) · `design-de-saas` `cara-de-ia` `ui-design` `copywriting` `retencao` `vibe-coding` · alta/media/media · —
+- 2026-09-01 · tiktok · [Como fazer o design do SaaS não ter cara de feito por IA — emojis, travessão e a estrelinha](tiktok/2026-09-01_como-fazer-o-design-do-saas-nao-ter-cara-de-feito-por-ia-emo_7672412734549544199.md) · `design-de-saas` `cara-de-ia` `ui-design` `copywriting` `retencao` `vibe-coding` · alta/media/media · apply_saas
 - 2026-08-26 · tiktok · [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md) · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade` · alta/alta/media · apply_saas
 - 2026-08-26 · tiktok · [Chamada para habilidades de design no front-end](tiktok/2026-08-26_chamada-para-habilidades-de-design-no-front-end_7658016248529177873.md) · `front-end-design` `ui-design` `habilidades-frontend` · baixa/baixa/baixa · discard
 - 2026-08-26 · tiktok · [5 sites úteis de design para identidade visual, assets e mockups](tiktok/2026-08-26_5-sites-uteis-de-design-para-identidade-visual-assets-e-mock_7672502144024595732.md) · `ui-design` `branding` `design-assets` `ia-generativa` `mockups` `vetorizacao` `color-palette` · media/alta/media · archive
