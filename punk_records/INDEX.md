@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 53 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 5 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 7 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 8 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 4 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -122,6 +122,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-01 · tiktok · [Workflow para Venda e Criação Rápida de Landing Pages com IA](tiktok/2026-09-01_workflow-para-venda-e-criacao-rapida-de-landing-pages-com-ia_7676498062474284308.md) · `landing-page` `freelance` `prospeccao` `claude` `vercel` `negocios-locais` · baixa/alta/media · —
 - 2026-09-01 · tiktok · [Estratégia de Aquisição de Clientes e Prova Social com Serviços Gratuitos](tiktok/2026-09-01_estrategia-de-aquisicao-de-clientes-e-prova-social-com-servi_7653187659157867797.md) · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos` `programa-de-indicacao` · baixa/media/media · —
 - 2026-09-01 · tiktok · [Venda de site para clínica odontológica por R$ 680 — a conversa inteira, do primeiro contato ao fechamento](tiktok/2026-09-01_venda-de-site-para-clinica-odontologica-por-r-680-a-conversa_7674792895030791432.md) · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente` · baixa/alta/media · apply_client
 - 2026-09-01 · tiktok · [10 lições de quem faturou R$ 6 mil/mês com um SaaS gastando R$ 0 em tráfego pago](tiktok/2026-09-01_10-licoes-de-quem-faturou-r-6-mil-mes-com-um-saas-gastando-r_7675925461137968391.md) · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento` · alta/baixa/media · apply_saas

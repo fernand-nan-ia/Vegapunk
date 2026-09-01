@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Workflow para Venda e Criação Rápida de Landing Pages com IA](../tiktok/2026-09-01_workflow-para-venda-e-criacao-rapida-de-landing-pages-com-ia_7676498062474284308.md)
+2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `landing-page` `freelance` `prospeccao` `claude` `vercel` `negocios-locais`
+
+Roteiro simplificado para prospectar e vender landing pages para negócios locais por R$ 1.000.
 
 ## [Estratégia de Aquisição de Clientes e Prova Social com Serviços Gratuitos](../tiktok/2026-09-01_estrategia-de-aquisicao-de-clientes-e-prova-social-com-servi_7653187659157867797.md)
 2026-09-01 · tiktok · SaaS baixa · cliente media · estudo media · triagem — · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos`
