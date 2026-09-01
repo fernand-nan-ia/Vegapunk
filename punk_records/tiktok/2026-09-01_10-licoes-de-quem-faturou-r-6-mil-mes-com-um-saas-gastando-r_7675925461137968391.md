@@ -5,8 +5,8 @@ external_id: "7675925461137968391"
 canonical_url: "https://www.tiktok.com/@eudanielbusiness3/photo/7675925461137968391"
 channel: "Daniel"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["micro-saas", "distribuicao", "marketing-de-conteudo", "trafego-organico", "receita-recorrente", "lancamento"]
 applicability:
   saas_pessoal: alta

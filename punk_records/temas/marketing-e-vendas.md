@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Print da conversa real de venda de um site para clínica odontológica: qualificação em três perguntas, negociação em duas mensagens, fechado em R$ 680.
 
 ## [10 lições de quem faturou R$ 6 mil/mês com um SaaS gastando R$ 0 em tráfego pago](../tiktok/2026-09-01_10-licoes-de-quem-faturou-r-6-mil-mes-com-um-saas-gastando-r_7675925461137968391.md)
-2026-09-01 · tiktok · SaaS alta · cliente baixa · estudo media · triagem — · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento`
+2026-09-01 · tiktok · SaaS alta · cliente baixa · estudo media · triagem apply_saas · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento`
 
 SaaS a ~R$ 6 mil/mês sem tráfego pago.
 
