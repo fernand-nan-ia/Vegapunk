@@ -5,8 +5,8 @@ external_id: "cf121d534817"
 canonical_url: "https://www.geoapify.com/"
 channel: "Geoapify GmbH"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["geoapify", "geocoding", "openstreetmap", "isocronas", "routing", "licenca"]
 applicability:
   saas_pessoal: alta

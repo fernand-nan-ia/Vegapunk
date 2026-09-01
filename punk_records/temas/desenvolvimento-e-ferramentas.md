@@ -18,7 +18,7 @@ Todo projeto vibe-codado sai em Next porque é o que as ferramentas de geração
 Guia técnico detalhado sobre como montar um servidor de mídia privado e automatizado usando Docker Compose.
 
 ## [Geoapify — plataforma de localização com dados abertos: geocoding, rotas, lugares, isócronas; licença permissiva (pode guardar resultados)](../article/2026-08-27_geoapify-plataforma-de-localizacao-com-dados-abertos-geocodi_cf121d534817.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca`
 
 Geoapify: geocoding, rotas, lugares e isócronas sobre OSM/OpenAddresses; a diferença é a licença — você pode guardar e reutilizar os resultados (montar sua base de endereços), e o Free vale para uso comercial com atribui
 
