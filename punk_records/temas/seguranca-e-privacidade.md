@@ -13,7 +13,7 @@ Demonstração prática de um mega prompt de auditoria de segurança rodando via
 Números oficiais da moderação do Telegram: ~24 milhões de grupos/canais bloqueados em 2026, banco de hashes de CSAM desde 2018 e 200+ milhões de itens terroristas removidos com o ETIDAL.
 
 ## [Telegram FAQ — grupos, chats secretos, bots, privacy mode, GDPR e miniapps](../article/2026-08-28_telegram-faq-grupos-chats-secretos-bots-privacy-mode-gdpr-e_461904727fd2.md)
-2026-08-28 · article · SaaS media · cliente baixa · estudo alta · triagem — · `telegram` `telegram-bot` `privacy-mode` `grupos-telegram` `chats-secretos` `gdpr`
+2026-08-28 · article · SaaS media · cliente baixa · estudo alta · triagem archive · `telegram` `telegram-bot` `privacy-mode` `grupos-telegram` `chats-secretos` `gdpr`
 
 O FAQ oficial: grupos até 200 mil membros, privacy mode dos bots visível na lista de membros, chats secretos fora da nuvem (logo, sem bots), GDPR via @EURegulation e miniapps com pagamentos via Stars.
 

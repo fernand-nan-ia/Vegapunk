@@ -5,8 +5,8 @@ external_id: "461904727fd2"
 canonical_url: "https://telegram.org/faq"
 channel: "Telegram"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["telegram", "telegram-bot", "privacy-mode", "grupos-telegram", "chats-secretos", "gdpr", "miniapps", "bot-api"]
 applicability:
   saas_pessoal: media
