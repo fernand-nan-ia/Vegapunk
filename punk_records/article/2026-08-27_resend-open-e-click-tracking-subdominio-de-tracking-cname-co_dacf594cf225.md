@@ -5,8 +5,8 @@ external_id: "dacf594cf225"
 canonical_url: "https://resend.com/docs/dashboard/domains/tracking"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "tracking", "open-rate", "click-tracking", "dns", "cname"]
 applicability:
   saas_pessoal: alta
