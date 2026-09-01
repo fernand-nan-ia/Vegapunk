@@ -5,8 +5,8 @@ external_id: "9624a934ad35"
 canonical_url: "https://resend.com/docs/sdks"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "sdk", "python", "openapi", "bibliotecas"]
 applicability:
   saas_pessoal: alta

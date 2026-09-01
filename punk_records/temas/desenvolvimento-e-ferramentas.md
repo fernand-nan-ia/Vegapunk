@@ -108,7 +108,7 @@ MCP do Resend: remoto (OAuth no Claude Code via /mcp) ou local via npx (stdio/HT
 CLI faz tudo que o painel faz: resend login, emails send/batch (JSON, agendamento em linguagem natural), domínios, contatos com import de CSV, templates, logs, webhooks; perfis para vários times.
 
 ## [Resend — SDKs oficiais e da comunidade (Node, PHP, Laravel, Python, Ruby, Go, Java, Rust, .NET) e OpenAPI](../article/2026-08-27_resend-sdks-oficiais-e-da-comunidade-node-php-laravel-python_9624a934ad35.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `sdk` `python` `openapi` `bibliotecas`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `sdk` `python` `openapi` `bibliotecas`
 
 SDK oficial em 9 linguagens (Python incluído), 3 da comunidade e uma spec OpenAPI.
 
