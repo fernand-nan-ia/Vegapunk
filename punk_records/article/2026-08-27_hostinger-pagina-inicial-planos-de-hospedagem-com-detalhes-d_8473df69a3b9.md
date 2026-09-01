@@ -5,8 +5,8 @@ external_id: "8473df69a3b9"
 canonical_url: "https://www.hostinger.com/br"
 channel: "Riishi Riitambhar Serviços de tecnologia · Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "hospedagem-de-sites", "planos", "backups", "nodejs", "precos"]
 applicability:
   saas_pessoal: alta

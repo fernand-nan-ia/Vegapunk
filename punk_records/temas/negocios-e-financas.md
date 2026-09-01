@@ -73,7 +73,7 @@ Como se paga um domínio .br: Pix, cartão (Visa/Master) ou boleto, ou via Prove
 Planos Shopify no Brasil: Basic US$ 14, Grow US$ 39, Advanced US$ 299, Plus a partir de US$ 2.300/mês — mais taxa por transação com pagamento de terceiros (2% → 0,2%).
 
 ## [Hostinger — página inicial: planos de hospedagem com detalhes de recursos (Single, Premium, Unlimited, Cloud Startup)](../article/2026-08-27_hostinger-pagina-inicial-planos-de-hospedagem-com-detalhes-d_8473df69a3b9.md)
-2026-08-27 · article · SaaS alta · cliente alta · estudo media · triagem — · `hostinger` `hospedagem-de-sites` `planos` `backups` `nodejs` `precos`
+2026-08-27 · article · SaaS alta · cliente alta · estudo media · triagem archive · `hostinger` `hospedagem-de-sites` `planos` `backups` `nodejs` `precos`
 
 Detalhe dos planos que a página de preços esconde: Single 10 GB/backups semanais/AI Builder 5 créditos; Premium 3 sites/20 GB; Unlimited 50 GB NVMe/backups diários/15 créditos; Cloud Startup 100 GB/backups sob demanda.
 
