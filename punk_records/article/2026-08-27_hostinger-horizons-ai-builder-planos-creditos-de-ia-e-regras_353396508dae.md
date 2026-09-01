@@ -5,8 +5,8 @@ external_id: "353396508dae"
 canonical_url: "https://www.hostinger.com/br/pricing/ai-builder"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "ai-builder", "criador-de-sites-ia", "vibecoding", "precos", "creditos-de-ia"]
 applicability:
   saas_pessoal: media
