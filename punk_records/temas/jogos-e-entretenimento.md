@@ -18,7 +18,7 @@ Resumo em pt-BR do maior cientista de One Piece: a fruta do cérebro, os experim
 O Satélite da Ganância: come, dorme e evacua pelos outros — e a apatia era fachada.
 
 ## [Atlas (Punk-05) — wiki One Piece: o Satélite da Violência, as Luvas de Pressão de Luz e a autodetonação](../article/2026-08-28_atlas-punk-05-wiki-one-piece-o-satelite-da-violencia-as-luva_58278760111b.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `atlas` `persona-satelite` `canon` `egghead`
 
 O Satélite da Violência: gigante como Kaidou, jetpack, pronome masculino 'ore' e luvas que tornam a luz sólida.
 

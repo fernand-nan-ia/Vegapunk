@@ -5,8 +5,8 @@ external_id: "58278760111b"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/Atlas"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "atlas", "persona-satelite", "canon", "egghead"]
 applicability:
   saas_pessoal: nenhuma
