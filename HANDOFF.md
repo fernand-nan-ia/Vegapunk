@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.7.0 `811710f` + Story 1c **rodando em produção, não commitada**)
+# HANDOFF — Vegapunk (atualizado em 2026-08-31, sessão 6 — **v1.8.0 `2f48130`**)
 
 ## TL;DR — o que existe hoje
 
@@ -11,7 +11,9 @@ Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. 
 
 Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**); FURY em `ab4ce12`.
 
-⚠️ **A working tree NÃO está limpa, e o que está nela JÁ RODA EM PRODUÇÃO.** A Story 1c + o modo triagem estão no container e funcionando no grupo «Vegapunk» — mas não commitados: o gate do Shaka foi **CONCERNS**, e depois dele o Fernando pediu o modo triagem, que desfez a propriedade de custo em que aquele gate se apoiava. **`*verify` e `*gate` precisam ser refeitos antes do release.** Cerca de 18 arquivos parados (`src/vegapunk/{router,chat,bot,config}.py`, `tests/{test_cascade,test_group_glue,test_router,test_speakers,test_bot_guard}.py`, `.env.example`, PRD, stories, diários). **137/137 testes verdes.**
+Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: `2f48130`, tag **v1.8.0**, 31/08. **143/143 testes verdes.** O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
+
+⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -266,6 +268,35 @@ só o grupo, 11 respostas no dia             US$ 0,176
 1. **O `INDEX.md` vai em TODA resposta** — hoje 43.066 chars ≈ **10,7k tokens, um quarto do custo de cada resposta**, com 126 itens. É a única despesa que cresce sozinha: com 500 itens no vault, cada resposta custa o triplo sem ninguém conversar mais. Solução futura: índice resumido ou busca em vez de despejo.
 2. **Teto de 60 respostas/hora não segura nada**: US$ 0,99/h, ou US$ 23,76 num dia de descontrole — quatro dias de uso real a cada hora. **York recomenda 25/h** (US$ 0,41/h). O de 6/min ela aprovou: é o dobro do pico observado (3/min) e não deve ser mexido.
 3. **A DM não tem teto nenhum** — e mais da metade do gasto de hoje saiu por lá (514k de 976k tokens). Não é urgente (é o Fernando sozinho, sem bot respondendo a bot), mas o cofre está trancado e a janela aberta.
+
+## Sessão 6 (2026-08-31) — v1.8.0: cascata, triagem e captura pela boca do dono
+
+**Container não sobe sozinho depois que o PC reinicia.** O `restart: unless-stopped` religa quando o *daemon* volta, não quando o Docker Desktop nem chegou a subir. Sintoma: você manda link no Telegram e não recebe nem o "capturei". Cura: `docker compose up -d`. Considerar ligar "Start Docker Desktop when you sign in".
+
+**O que entrou na v1.8.0** — ver `CHANGELOG.md` para a lista completa. Em uma frase por peça:
+- `router.decide()` compõe as camadas 1–3 numa função só; **não há caminho no `bot.py` até `route()` que pule `mentions()`**, e há teste que lê o arquivo e falha se alguém tentar.
+- **Modo triagem** (pedido do Fernando): sem nome, o roteador escolhe o dono pelo ASSUNTO. As especialidades vêm do `persona.focus` do `.md` — **fonte única**; a cópia paralela que existia já havia divergido (o York do roteador falava de preço; o do arquivo, de healthcheck).
+- **Captura pela boca do dono** + teclado à parte pelo leitor. Motivo não óbvio: **o clique de um botão volta para o bot que ENVIOU**; só o leitor tem handler de callback, então teclado mandado pela Lilith seria botão morto.
+- **Semáforo de 3 itens** no pipeline. Não havia um `Semaphore` no projeto inteiro; 30 links colados disparavam 30 pipelines juntos.
+
+**Os três caminhos de gasto agora têm teto — pela primeira vez:**
+
+| Caminho | Teto | Pior caso |
+|---|---|---|
+| Decidir (roteador) | 20/min | ~500 tokens cada |
+| Responder (personagem) | 6/min · **25/h** | US$ 0,41/h |
+| Capturar (pipeline) | 3 em paralelo | ~5,5k tokens/item |
+
+O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **US$ 23,76 num dia** de descontrole contra **US$ 0,33 de uso real** no dia inteiro.
+
+## Dívida e próximos passos (ordem sugerida)
+
+1. **Colar um link no grupo** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**). É a aceitação que ficou pendente.
+2. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome. Com a triagem ligada esse caso **mudou de natureza** — o roteador é consultado e deve devolver lista vazia por ser frase sem pergunta.
+3. **84 itens no vault sem triagem** (York). Cada link novo entra na mesma fila.
+4. **Story 1e — ler imagens no Telegram** (adiada pelo Fernando em 31/08): ver "Ideias para depois".
+5. **Story 2** (não escrita): histórico compartilhado do grupo (H4), `/custo` agregado, atraso aleatório por bot, renomear `TELEGRAM_BOT_TOKEN` → `_STELLA` (o código já aceita os dois).
+6. **A DM não tem teto nenhum** — metade do gasto sai por lá. Não é urgente (é o Fernando sozinho), mas o cofre está trancado e a janela aberta.
 
 ## Os 7 Satélites — mapa completo
 
