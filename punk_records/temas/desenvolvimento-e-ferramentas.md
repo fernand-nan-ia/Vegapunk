@@ -58,7 +58,7 @@ R2 é S3-compatível, fortemente consistente e cifrado; escrita só responde 200
 R2 = S3 sem cobrança de saída de dados: guarda arquivos, serve conteúdo web e datasets; buckets públicos, tokens por bucket, CORS, Data Catalog (Iceberg) e integração com Workers.
 
 ## [Cloudflare Workers Analytics Engine — analytics de cardinalidade ilimitada com escrita por API e consulta SQL](../article/2026-08-27_cloudflare-workers-analytics-engine-analytics-de-cardinalida_efb088a1ace9.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `analytics-engine` `metricas` `sql` `usage-billing`
 
 Escreve pontos de dados de dentro do Worker e consulta por SQL; cardinalidade ilimitada — serve para analytics por cliente e cobrança por uso.
 

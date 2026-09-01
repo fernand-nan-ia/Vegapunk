@@ -5,8 +5,8 @@ external_id: "efb088a1ace9"
 canonical_url: "https://developers.cloudflare.com/analytics/analytics-engine"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "analytics-engine", "metricas", "sql", "usage-billing"]
 applicability:
   saas_pessoal: alta
