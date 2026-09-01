@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 15 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 52 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 53 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 5 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -35,6 +35,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-01 · tiktok · [Pilha de ferramentas para montar um MVP de SaaS: Stitch, Claude, 21st.dev, Search Console, UAZAPI, Oracle e Supabase](tiktok/2026-09-01_pilha-de-ferramentas-para-montar-um-mvp-de-saas-stitch-claud_7673143692844141832.md) · `mvp` `stack-de-ferramentas` `supabase` `orquestracao-de-modelos` `sucesso-do-cliente` `whatsapp` `gateway-de-pagamento` · alta/media/media · —
 - 2026-09-01 · tiktok · [Por que todo projeto vibe-codado nasce em Next.js — e quando trocar de stack](tiktok/2026-09-01_por-que-todo-projeto-vibe-codado-nasce-em-next-js-e-quando-t_7678524435174788373.md) · `nextjs` `vite` `react` `escolha-de-stack` `vibe-coding` `ssr` `arquitetura` · alta/alta/media · —
 - 2026-08-28 · article · [Meu "Netflix Pessoal" com Docker Compose](article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md) · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas` `radarr` `sonarr` · baixa/baixa/alta · archive
 - 2026-08-27 · article · [Geoapify — plataforma de localização com dados abertos: geocoding, rotas, lugares, isócronas; licença permissiva (pode guardar resultados)](article/2026-08-27_geoapify-plataforma-de-localizacao-com-dados-abertos-geocodi_cf121d534817.md) · `geoapify` `geocoding` `openstreetmap` `isocronas` `routing` `licenca` · alta/media/media · —
