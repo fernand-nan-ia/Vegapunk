@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 15 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 16 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 53 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -17,6 +17,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-09-01 · youtube · [Marca d'Água Invisível no Claude e o Rastreamento de Textos Gerados](youtube/2026-09-01_marca-d-agua-invisivel-no-claude-e-o-rastreamento-de-textos_l881Vh5IhiI.md) · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance` `open-source-llm` · media/media/alta · —
 - 2026-09-01 · tiktok · [Nove coisas construídas com Claude por um não-programador: briefing diário, relatório de volumetria, finanças e site de casamento](tiktok/2026-09-01_nove-coisas-construidas-com-claude-por-um-nao-programador-br_7668277297434348821.md) · `claude-code` `automacao` `nao-programador` `design-system` `integracao-sistemas` `produtividade` · media/baixa/media · archive
 - 2026-09-01 · tiktok · [Pythonando — útil versus inútil no desenvolvimento assistido por IA: 9 práticas classificadas](tiktok/2026-09-01_pythonando-util-versus-inutil-no-desenvolvimento-assistido-p_7675093983021796615.md) · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning` `ci-cd` · alta/media/alta · apply_saas
 - 2026-08-27 · article · [SerpApi — Google AI Overview Results API: como extrair o bloco de IA do Google em JSON](article/2026-08-27_serpapi-google-ai-overview-results-api-como-extrair-o-bloco_dae2c368a9ab.md) · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao` · media/media/alta · archive

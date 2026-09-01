@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Marca d'Água Invisível no Claude e o Rastreamento de Textos Gerados](../youtube/2026-09-01_marca-d-agua-invisivel-no-claude-e-o-rastreamento-de-textos_l881Vh5IhiI.md)
+2026-09-01 · youtube · SaaS media · cliente media · estudo alta · triagem — · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance`
+
+A Anthropic passou a embutir marca d'água estatística em textos gerados pelo Claude para cumprir regulações europeias.
 
 ## [Nove coisas construídas com Claude por um não-programador: briefing diário, relatório de volumetria, finanças e site de casamento](../tiktok/2026-09-01_nove-coisas-construidas-com-claude-por-um-nao-programador-br_7668277297434348821.md)
 2026-09-01 · tiktok · SaaS media · cliente baixa · estudo media · triagem archive · `claude-code` `automacao` `nao-programador` `design-system` `integracao-sistemas` `produtividade`
