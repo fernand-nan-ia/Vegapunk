@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Marca d'Água Invisível no Claude e o Rastreamento de Textos Gerados](../youtube/2026-09-01_marca-d-agua-invisivel-no-claude-e-o-rastreamento-de-textos_l881Vh5IhiI.md)
-2026-09-01 · youtube · SaaS media · cliente media · estudo alta · triagem — · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance`
+2026-09-01 · youtube · SaaS media · cliente media · estudo alta · triagem archive · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance`
 
 A Anthropic passou a embutir marca d'água estatística em textos gerados pelo Claude para cumprir regulações europeias.
 

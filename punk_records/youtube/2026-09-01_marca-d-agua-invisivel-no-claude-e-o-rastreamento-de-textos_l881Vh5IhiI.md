@@ -5,8 +5,8 @@ external_id: "l881Vh5IhiI"
 canonical_url: "https://www.youtube.com/watch?v=l881Vh5IhiI"
 channel: "mano deyvin"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["anthropic", "claude", "claude-code", "watermarking", "ai-act", "llm-compliance", "open-source-llm"]
 applicability:
   saas_pessoal: media
