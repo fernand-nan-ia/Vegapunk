@@ -63,7 +63,7 @@ R2 = S3 sem cobrança de saída de dados: guarda arquivos, serve conteúdo web e
 Escreve pontos de dados de dentro do Worker e consulta por SQL; cardinalidade ilimitada — serve para analytics por cliente e cobrança por uso.
 
 ## [Cloudflare Workers — conectar a bancos de dados: D1, Postgres/MySQL via Hyperdrive, Supabase/Neon/PlanetScale, drivers serverless](../article/2026-08-27_cloudflare-workers-conectar-a-bancos-de-dados-d1-postgres-my_899edaad2043.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `d1` `hyperdrive` `postgres` `supabase`
 
 Do Worker dá para falar com D1 (SQL da Cloudflare, bancos de 10 GB por tenant), Postgres/MySQL e Supabase/Neon via drivers TCP com Hyperdrive (pool + cache de conexão), ou drivers HTTP.
 

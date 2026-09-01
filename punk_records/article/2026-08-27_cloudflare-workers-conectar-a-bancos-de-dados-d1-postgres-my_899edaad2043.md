@@ -5,8 +5,8 @@ external_id: "899edaad2043"
 canonical_url: "https://developers.cloudflare.com/workers/databases/connecting-to-databases"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "d1", "hyperdrive", "postgres", "supabase", "multi-tenant"]
 applicability:
   saas_pessoal: alta
