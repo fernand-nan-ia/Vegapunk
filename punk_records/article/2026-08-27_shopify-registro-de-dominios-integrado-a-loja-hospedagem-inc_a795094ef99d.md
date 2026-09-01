@@ -5,8 +5,8 @@ external_id: "a795094ef99d"
 canonical_url: "https://www.shopify.com/br/dominios?term=registro+br&adid=692294252840&campaignid=21054976722&bucket=domain_PTBR&matchtype=b&network=g&gad_source=1&gad_campaignid=21054976722&gbraid=0AAAAADiv1Ik1UQUyoeoUey-v97LA7hGFM"
 channel: "Shopify"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["shopify", "dominios", "registro-de-dominio", "dns", "e-commerce"]
 applicability:
   saas_pessoal: baixa

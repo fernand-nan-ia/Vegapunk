@@ -13,7 +13,7 @@ Print da conversa real de venda de um site para clínica odontológica: qualific
 SaaS a ~R$ 6 mil/mês sem tráfego pago.
 
 ## [Shopify — registro de domínios integrado à loja (hospedagem inclusa, DNS automático)](../article/2026-08-27_shopify-registro-de-dominios-integrado-a-loja-hospedagem-inc_a795094ef99d.md)
-2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `shopify` `dominios` `registro-de-dominio` `dns` `e-commerce`
+2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem discard · `shopify` `dominios` `registro-de-dominio` `dns` `e-commerce`
 
 Domínio comprado pela Shopify conecta sozinho à loja: DNS automático, hospedagem inclusa, SSL e WHOIS grátis, até 20 domínios por loja, encaminhamento de e-mail.
 
