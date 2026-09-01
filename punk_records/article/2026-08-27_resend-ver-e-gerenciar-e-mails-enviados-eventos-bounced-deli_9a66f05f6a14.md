@@ -5,8 +5,8 @@ external_id: "9a66f05f6a14"
 canonical_url: "https://resend.com/docs/dashboard/emails/manage-emails"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "eventos-de-email", "bounce", "suppression-list", "painel"]
 applicability:
   saas_pessoal: alta

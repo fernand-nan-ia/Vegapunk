@@ -133,7 +133,7 @@ Imagem dentro do e-mail: <img src="cid:x"> no HTML + anexo com content_id 'x' (U
 Até 100 e-mails por chamada, cada um diferente; resposta na mesma ordem; um inválido derruba o lote; sem anexos em lote.
 
 ## [Resend — ver e gerenciar e-mails enviados: eventos (bounced, delivered, complained…), link público e logs](../article/2026-08-27_resend-ver-e-gerenciar-e-mails-enviados-eventos-bounced-deli_9a66f05f6a14.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `eventos-de-email` `bounce` `suppression-list` `painel`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `eventos-de-email` `bounce` `suppression-list` `painel`
 
 Cada e-mail no painel tem preview/HTML e um histórico de eventos: sent, delivered, bounced, complained, delivery_delayed, suppressed, opened, clicked… Link público de 48 h para compartilhar com o time.
 
