@@ -5,8 +5,8 @@ external_id: "Pveu6gs7-LM"
 canonical_url: "https://www.youtube.com/watch?v=Pveu6gs7-LM"
 channel: "Uselessinho"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "punk-records", "nomi-nomi-no-mi", "canon", "persona-satelite"]
 applicability:
   saas_pessoal: nenhuma

@@ -8,7 +8,7 @@ _videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a par
 A transmissão que Vegapunk deixou programada para tocar quando seu coração parasse.
 
 ## [Uselessinho — Dr. Vegapunk explicado: Nomi Nomi no Mi, Punk Records e os seis Satélites](../youtube/2026-08-28_uselessinho-dr-vegapunk-explicado-nomi-nomi-no-mi-punk-recor_Pveu6gs7-LM.md)
-2026-08-28 · youtube · SaaS nenhuma · cliente nenhuma · estudo media · triagem — · `one-piece` `vegapunk` `punk-records` `nomi-nomi-no-mi` `canon` `persona-satelite`
+2026-08-28 · youtube · SaaS nenhuma · cliente nenhuma · estudo media · triagem archive · `one-piece` `vegapunk` `punk-records` `nomi-nomi-no-mi` `canon` `persona-satelite`
 
 Resumo em pt-BR do maior cientista de One Piece: a fruta do cérebro, os experimentos inacabados por falta de financiamento em Karakuri, a MADS, o SSG e a criação do Punk Records e dos seis Satélites.
 
