@@ -5,8 +5,8 @@ external_id: "a71249354370"
 canonical_url: "https://resend.com/docs/dashboard/domains/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "dominio", "subdominio", "reputacao", "dmarc", "bimi", "tls"]
 applicability:
   saas_pessoal: alta

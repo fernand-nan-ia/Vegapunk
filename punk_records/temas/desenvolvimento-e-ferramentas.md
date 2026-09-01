@@ -153,7 +153,7 @@ Automations = fluxos 'quando acontecer X, mande Y depois de Z': gatilho por even
 Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtro por erro/chave/SDK, link para o e-mail gerado e botão 'Help me fix' para erros comuns.
 
 ## [Resend — domínios verificados: por que subdomínios, tracking, TLS forçado, região, DMARC e BIMI](../article/2026-08-27_resend-dominios-verificados-por-que-subdominios-tracking-tls_a71249354370.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `subdominio` `reputacao` `dmarc` `bimi`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `dominio` `subdominio` `reputacao` `dmarc` `bimi`
 
 Envie de subdomínios separados por finalidade (newsletter com tracking, transacional sem), com TLS forçado, região próxima e DMARC/BIMI para reputação.
 
