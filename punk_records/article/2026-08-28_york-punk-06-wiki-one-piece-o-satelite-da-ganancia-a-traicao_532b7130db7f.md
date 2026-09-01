@@ -5,8 +5,8 @@ external_id: "532b7130db7f"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/York"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "york", "persona-satelite", "canon", "egghead", "traicao"]
 applicability:
   saas_pessoal: nenhuma

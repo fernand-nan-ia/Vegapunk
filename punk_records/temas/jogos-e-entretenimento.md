@@ -13,7 +13,7 @@ A transmissão que Vegapunk deixou programada para tocar quando seu coração pa
 Resumo em pt-BR do maior cientista de One Piece: a fruta do cérebro, os experimentos inacabados por falta de financiamento em Karakuri, a MADS, o SSG e a criação do Punk Records e dos seis Satélites.
 
 ## [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](../article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead`
 
 O Satélite da Ganância: come, dorme e evacua pelos outros — e a apatia era fachada.
 
