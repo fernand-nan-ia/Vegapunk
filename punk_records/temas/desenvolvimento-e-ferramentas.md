@@ -188,7 +188,7 @@ Ao criar automações por código, os passos viram nós com chave e as connectio
 Para usar o Resend: domínio verificado + chave de API.
 
 ## [Resend — eventos customizados: nome, schema opcional e disparo de múltiplas automações](../article/2026-08-27_resend-eventos-customizados-nome-schema-opcional-e-disparo-d_ed6846df51be.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `eventos` `automations` `schema` `webhooks`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `eventos` `automations` `schema` `webhooks`
 
 Evento customizado = nome (ex.: user.created) + schema opcional do payload; um evento pode disparar várias automações; payload inválido dá 422.
 

@@ -5,8 +5,8 @@ external_id: "ed6846df51be"
 canonical_url: "https://resend.com/docs/dashboard/automations/custom-events"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "eventos", "automations", "schema", "webhooks"]
 applicability:
   saas_pessoal: alta
