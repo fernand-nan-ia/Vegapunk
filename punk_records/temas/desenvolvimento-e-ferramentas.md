@@ -83,7 +83,7 @@ Regras de produção para Workers: compatibility_date atual, nodejs_compat, tipo
 Receitas prontas de Workers: auth básica, HMAC, Turnstile, cache de POST, redirects em massa, streaming, geolocalização, Analytics Engine — copiar e adaptar.
 
 ## [Cloudflare Workers — visão geral: serverless global, frameworks e linguagens, bindings para storage, compute e mídia](../article/2026-08-27_cloudflare-workers-visao-geral-serverless-global-frameworks_357f958e998d.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `serverless` `edge` `d1` `r2`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `serverless` `edge` `d1` `r2`
 
 Workers: serverless na borda com bindings prontos para D1/KV/R2/Queues/Durable Objects, Workers AI, Workflows, Vectorize e Browser Rendering; Python e TypeScript suportados; começa grátis.
 

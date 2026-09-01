@@ -5,8 +5,8 @@ external_id: "357f958e998d"
 canonical_url: "https://developers.cloudflare.com/workers"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "serverless", "edge", "d1", "r2", "kv"]
 applicability:
   saas_pessoal: alta
