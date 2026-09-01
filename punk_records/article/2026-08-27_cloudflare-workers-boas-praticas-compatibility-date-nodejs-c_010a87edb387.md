@@ -5,8 +5,8 @@ external_id: "010a87edb387"
 canonical_url: "https://developers.cloudflare.com/workers/best-practices/workers-best-practices"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "wrangler", "boas-praticas", "segredos", "ambientes"]
 applicability:
   saas_pessoal: alta

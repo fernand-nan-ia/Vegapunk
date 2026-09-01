@@ -73,7 +73,7 @@ Do Worker dá para falar com D1 (SQL da Cloudflare, bancos de 10 GB por tenant),
 Deploy automático de Workers a cada push com Workers Builds (GitHub/GitLab) ou CI externo; evita wrangler deploy manual e credencial na máquina.
 
 ## [Cloudflare Workers — boas práticas: compatibility_date, nodejs_compat, wrangler types, segredos, ambientes e mais](../article/2026-08-27_cloudflare-workers-boas-praticas-compatibility-date-nodejs-c_010a87edb387.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `wrangler` `boas-praticas` `segredos` `ambientes`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `wrangler` `boas-praticas` `segredos` `ambientes`
 
 Regras de produção para Workers: compatibility_date atual, nodejs_compat, tipos gerados por wrangler types, segredos via wrangler secret put (nunca no config), um ambiente por estágio com bindings próprios.
 
