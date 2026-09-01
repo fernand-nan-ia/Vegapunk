@@ -223,7 +223,7 @@ Lista de categorias .br: cada DPN tem regra de titular (CPF ou CNPJ), algumas ex
 E-mail profissional com domínio próprio: 5/20/50 GB por conta, a partir de R$ 2,49/mês (tabela completa não renderizou).
 
 ## [Hostinger VPS KVM — planos (KVM 1 a KVM 8), preços e VPS gerenciado por IA](../article/2026-08-27_hostinger-vps-kvm-planos-kvm-1-a-kvm-8-precos-e-vps-gerencia_622ffe58fa4e.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `hostinger` `vps` `kvm` `precos` `docker` `n8n`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `hostinger` `vps` `kvm` `precos` `docker` `n8n`
 
 VPS KVM da Hostinger: R$ 29,99 (KVM 1) a R$ 119,99/mês (KVM 8); KVM 2 (2 vCPU/8 GB/100 GB NVMe) por R$ 43,99 é o indicado para n8n.
 

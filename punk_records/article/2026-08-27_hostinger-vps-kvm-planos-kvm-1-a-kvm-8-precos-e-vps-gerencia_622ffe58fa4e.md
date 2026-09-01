@@ -5,8 +5,8 @@ external_id: "622ffe58fa4e"
 canonical_url: "https://www.hostinger.com/br/precos/vps-hosting"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "vps", "kvm", "precos", "docker", "n8n", "mcp", "infraestrutura"]
 applicability:
   saas_pessoal: alta
