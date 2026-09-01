@@ -174,6 +174,6 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📚 Carreira e aprendizado
 
-- 2026-08-27 · article · [Registro.br — quem somos: NIC.br, CGI.br e o registro do .br](article/2026-08-27_registro-br-quem-somos-nic-br-cgi-br-e-o-registro-do-br_cba436de2c34.md) · `registro-br` `nic-br` `cgi-br` `governanca-da-internet` `dominio-br` · baixa/baixa/media · —
+- 2026-08-27 · article · [Registro.br — quem somos: NIC.br, CGI.br e o registro do .br](article/2026-08-27_registro-br-quem-somos-nic-br-cgi-br-e-o-registro-do-br_cba436de2c34.md) · `registro-br` `nic-br` `cgi-br` `governanca-da-internet` `dominio-br` · baixa/baixa/media · discard
 - 2026-08-26 · tiktok · [5 Sites Gratuitos para Acelerar a Carreira e o Aprendizado em Programação](tiktok/2026-08-26_5-sites-gratuitos-para-acelerar-a-carreira-e-o-aprendizado-e_7666208793914576146.md) · `aprendizado-dev` `estudos-programacao` `trilha-fullstack` `sql` `repeticao-espacada` `roadmap-tecnico` · baixa/baixa/alta · archive
 - 2026-08-26 · tiktok · [Automação de busca de emprego e preparação com Claude e AI Job Search](tiktok/2026-08-26_automacao-de-busca-de-emprego-e-preparacao-com-claude-e-ai-j_7661231446069103880.md) · `job-automation` `claude` `cli-tools` `resume-parser` `interview-prep` `web-scraping` · baixa/nenhuma/media · archive

@@ -5,8 +5,8 @@ external_id: "cba436de2c34"
 canonical_url: "https://registro.br/quem-somos"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["registro-br", "nic-br", "cgi-br", "governanca-da-internet", "dominio-br"]
 applicability:
   saas_pessoal: baixa

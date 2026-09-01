@@ -3,7 +3,7 @@
 _estudo, cursos, emprego, produtividade, hábitos._ Gerado automaticamente a partir do Punk Records — 3 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Registro.br — quem somos: NIC.br, CGI.br e o registro do .br](../article/2026-08-27_registro-br-quem-somos-nic-br-cgi-br-e-o-registro-do-br_cba436de2c34.md)
-2026-08-27 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `registro-br` `nic-br` `cgi-br` `governanca-da-internet` `dominio-br`
+2026-08-27 · article · SaaS baixa · cliente baixa · estudo media · triagem discard · `registro-br` `nic-br` `cgi-br` `governanca-da-internet` `dominio-br`
 
 Registro.br é o braço do NIC.br que registra domínios .br e distribui IPs/ASNs no Brasil; o NIC.br executa o que o CGI.br (comitê multissetorial) decide.
 
