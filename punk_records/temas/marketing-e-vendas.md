@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [10 lições de quem faturou R$ 6 mil/mês com um SaaS gastando R$ 0 em tráfego pago](../tiktok/2026-09-01_10-licoes-de-quem-faturou-r-6-mil-mes-com-um-saas-gastando-r_7675925461137968391.md)
+2026-09-01 · tiktok · SaaS alta · cliente baixa · estudo media · triagem — · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento`
+
+SaaS a ~R$ 6 mil/mês sem tráfego pago.
 
 ## [Shopify — registro de domínios integrado à loja (hospedagem inclusa, DNS automático)](../article/2026-08-27_shopify-registro-de-dominios-integrado-a-loja-hospedagem-inc_a795094ef99d.md)
 2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `shopify` `dominios` `registro-de-dominio` `dns` `e-commerce`

@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 51 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 4 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 5 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 4 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -115,6 +115,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-01 · tiktok · [10 lições de quem faturou R$ 6 mil/mês com um SaaS gastando R$ 0 em tráfego pago](tiktok/2026-09-01_10-licoes-de-quem-faturou-r-6-mil-mes-com-um-saas-gastando-r_7675925461137968391.md) · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento` · alta/baixa/media · —
 - 2026-08-27 · article · [Shopify — registro de domínios integrado à loja (hospedagem inclusa, DNS automático)](article/2026-08-27_shopify-registro-de-dominios-integrado-a-loja-hospedagem-inc_a795094ef99d.md) · `shopify` `dominios` `registro-de-dominio` `dns` `e-commerce` · baixa/media/baixa · —
 - 2026-08-27 · article · [Hostinger Reach — e-mail marketing com IA: modelo de cobrança e recursos](article/2026-08-27_hostinger-reach-e-mail-marketing-com-ia-modelo-de-cobranca-e_ac7e6223fff2.md) · `hostinger` `email-marketing` `reach` `lgpd` `automacao-de-marketing` `precos` · baixa/media/baixa · —
 - 2026-08-26 · tiktok · [Estratégia de Prospecção Ativa Internacional para Criação de Sites](tiktok/2026-08-26_estrategia-de-prospeccao-ativa-internacional-para-criacao-de_7678376368752692487.md) · `cold-outreach` `lead-generation` `google-maps-scraping` `freelance-sales` `web-development-sales` · baixa/alta/media · apply_client
