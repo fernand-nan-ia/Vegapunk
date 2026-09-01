@@ -5,8 +5,8 @@ external_id: "d1be3efca69b"
 canonical_url: "https://resend.com/docs/create-an-api-key"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "api-key", "seguranca", "variaveis-de-ambiente", "boas-praticas"]
 applicability:
   saas_pessoal: alta

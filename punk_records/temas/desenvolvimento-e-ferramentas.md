@@ -173,7 +173,7 @@ Status de domínio no Resend (pending, verified, partially_*, failed, temporary_
 Webhook = sua URL recebe JSON a cada evento de e-mail (delivered, bounced, complained, clicked…).
 
 ## [Resend — criar uma chave de API: permissões, restrição por domínio e uso via variável de ambiente](../article/2026-08-27_resend-criar-uma-chave-de-api-permissoes-restricao-por-domin_d1be3efca69b.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `api-key` `seguranca` `variaveis-de-ambiente` `boas-praticas`
 
 Chave de API do Resend: crie com permissão 'Sending access' restrita ao domínio do app, guarde em variável de ambiente e passe ao cliente no código.
 
