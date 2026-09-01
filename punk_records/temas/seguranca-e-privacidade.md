@@ -43,7 +43,7 @@ A ANPD estabeleceu regras simplificadas de LGPD para startups e microempresas, d
 reCAPTCHA v3 dá uma nota de 0 a 1 sem desafio: coloque o script, chame grecaptcha.execute na ação, mande o token ao backend e decida por limiar (ex.: < 0,5 = pedir e-mail de confirmação ou bloquear).
 
 ## [Resend — ativar MFA na conta com app autenticador (e como desativar)](../article/2026-08-27_resend-ativar-mfa-na-conta-com-app-autenticador-e-como-desat_83891a9d3985.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `resend` `mfa` `seguranca` `conta`
+2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem archive · `resend` `mfa` `seguranca` `conta`
 
 MFA no Resend: Profile → Enable MFA → QR no autenticador → código.
 

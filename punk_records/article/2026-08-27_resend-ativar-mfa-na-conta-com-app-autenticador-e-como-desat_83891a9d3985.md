@@ -5,8 +5,8 @@ external_id: "83891a9d3985"
 canonical_url: "https://resend.com/docs/knowledge-base/how-can-i-add-mfa"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "mfa", "seguranca", "conta"]
 applicability:
   saas_pessoal: alta
