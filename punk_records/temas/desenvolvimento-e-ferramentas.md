@@ -113,7 +113,7 @@ CLI faz tudo que o painel faz: resend login, emails send/batch (JSON, agendament
 SDK oficial em 9 linguagens (Python incluído), 3 da comunidade e uma spec OpenAPI.
 
 ## [Resend — cabeçalhos customizados: X-Entity-Ref-ID (evitar agrupamento no Gmail) e List-Unsubscribe](../article/2026-08-27_resend-cabecalhos-customizados-x-entity-ref-id-evitar-agrupa_936685d222df.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `headers` `gmail` `list-unsubscribe` `email-transacional`
 
 headers: {'X-Entity-Ref-ID': id-único} evita que o Gmail empilhe seus e-mails numa thread; List-Unsubscribe dá descadastro em um clique.
 

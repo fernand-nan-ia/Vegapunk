@@ -5,8 +5,8 @@ external_id: "936685d222df"
 canonical_url: "https://resend.com/docs/dashboard/emails/custom-headers"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "headers", "gmail", "list-unsubscribe", "email-transacional"]
 applicability:
   saas_pessoal: alta
