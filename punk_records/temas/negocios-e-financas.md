@@ -68,7 +68,7 @@ SerpApi cobra por buscas bem-sucedidas: grátis 250/mês; planos de 1.000, 5.000
 Como se paga um domínio .br: Pix, cartão (Visa/Master) ou boleto, ou via Provedor de Serviços; aviso 30 dias antes de expirar, nunca boleto por correio.
 
 ## [Shopify — preços dos planos no Brasil (Basic, Grow, Advanced, Plus)](../article/2026-08-27_shopify-precos-dos-planos-no-brasil-basic-grow-advanced-plus_8a02be816c1f.md)
-2026-08-27 · article · SaaS baixa · cliente alta · estudo media · triagem — · `shopify` `e-commerce` `precos` `planos` `taxas-de-transacao` `loja-virtual`
+2026-08-27 · article · SaaS baixa · cliente alta · estudo media · triagem archive · `shopify` `e-commerce` `precos` `planos` `taxas-de-transacao` `loja-virtual`
 
 Planos Shopify no Brasil: Basic US$ 14, Grow US$ 39, Advanced US$ 299, Plus a partir de US$ 2.300/mês — mais taxa por transação com pagamento de terceiros (2% → 0,2%).
 

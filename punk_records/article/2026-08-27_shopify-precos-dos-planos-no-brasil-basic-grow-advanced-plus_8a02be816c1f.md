@@ -5,8 +5,8 @@ external_id: "8a02be816c1f"
 canonical_url: "https://www.shopify.com/br/precos"
 channel: "Shopify"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["shopify", "e-commerce", "precos", "planos", "taxas-de-transacao", "loja-virtual"]
 applicability:
   saas_pessoal: baixa
