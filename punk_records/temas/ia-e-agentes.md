@@ -8,7 +8,7 @@ _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automa
 Nove aplicações reais feitas com Claude por quem não programa: briefing diário automático, relatório de volumetria que caiu de 2h para 2min, conector com sistema de assinaturas, finanças pessoais, design system e até o s
 
 ## [Pythonando — útil versus inútil no desenvolvimento assistido por IA: 9 práticas classificadas](../tiktok/2026-09-01_pythonando-util-versus-inutil-no-desenvolvimento-assistido-p_7675093983021796615.md)
-2026-09-01 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning`
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_saas · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning`
 
 Nove práticas de desenvolvimento com IA separadas entre úteis e inúteis.
 

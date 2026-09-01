@@ -5,8 +5,8 @@ external_id: "7675093983021796615"
 canonical_url: "https://www.tiktok.com/@pythonando1/video/7675093983021796615"
 channel: "Pythonando"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["spec-driven-development", "tdd", "quality-gate", "engenharia-de-prompt", "llm-local", "fine-tuning", "ci-cd"]
 applicability:
   saas_pessoal: alta
