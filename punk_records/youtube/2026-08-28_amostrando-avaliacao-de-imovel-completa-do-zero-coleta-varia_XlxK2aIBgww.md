@@ -5,8 +5,8 @@ external_id: "XlxK2aIBgww"
 canonical_url: "https://www.youtube.com/watch?v=XlxK2aIBgww"
 channel: "Amostrando"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["avaliacao-de-imoveis", "nbr-14653", "regressao-linear", "inferencia-estatistica", "amostrando", "laudo-tecnico", "outliers", "ia-classificacao"]
 applicability:
   saas_pessoal: media

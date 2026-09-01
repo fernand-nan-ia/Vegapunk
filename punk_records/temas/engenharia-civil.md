@@ -3,7 +3,7 @@
 _obras, vistoria, laudos, avaliação de imóveis, normas técnicas._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Amostrando — avaliação de imóvel completa do zero: coleta, variáveis por IA, regressão e checklist NBR](../youtube/2026-08-28_amostrando-avaliacao-de-imovel-completa-do-zero-coleta-varia_XlxK2aIBgww.md)
-2026-08-28 · youtube · SaaS media · cliente nenhuma · estudo alta · triagem — · `avaliacao-de-imoveis` `nbr-14653` `regressao-linear` `inferencia-estatistica` `amostrando` `laudo-tecnico`
+2026-08-28 · youtube · SaaS media · cliente nenhuma · estudo alta · triagem archive · `avaliacao-de-imoveis` `nbr-14653` `regressao-linear` `inferencia-estatistica` `amostrando` `laudo-tecnico`
 
 Live mostrando uma avaliação NBR completa no Amostrando: 60 amostras, variáveis classificadas por IA a partir de fotos e descrição, regressão com R² 0,77 e remoção iterativa de outliers.
 
