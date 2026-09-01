@@ -103,7 +103,7 @@ O Resend se liga a quase tudo: Claude Code e Cursor (MCP/plugin), n8n/Zapier/Mak
 MCP do Resend: remoto (OAuth no Claude Code via /mcp) ou local via npx (stdio/HTTP), com remetente padrão configurável; dá ao agente acesso a e-mails, domínios e contatos por linguagem natural.
 
 ## [Resend CLI — instalação, login/perfis e comandos (emails, batch, domínios, contatos, templates, logs, webhooks)](../article/2026-08-27_resend-cli-instalacao-login-perfis-e-comandos-emails-batch-d_a3f11566dbf6.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cli` `automacao` `scripts` `terminal`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `cli` `automacao` `scripts` `terminal`
 
 CLI faz tudo que o painel faz: resend login, emails send/batch (JSON, agendamento em linguagem natural), domínios, contatos com import de CSV, templates, logs, webhooks; perfis para vários times.
 

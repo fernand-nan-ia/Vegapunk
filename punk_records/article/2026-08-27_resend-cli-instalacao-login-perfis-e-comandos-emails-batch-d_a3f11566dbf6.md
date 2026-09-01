@@ -5,8 +5,8 @@ external_id: "a3f11566dbf6"
 canonical_url: "https://resend.com/docs/cli"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "cli", "automacao", "scripts", "terminal"]
 applicability:
   saas_pessoal: alta
