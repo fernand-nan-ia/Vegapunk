@@ -5,8 +5,8 @@ external_id: "b405718de1c7"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/Shaka"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "shaka", "persona-satelite", "canon", "egghead"]
 applicability:
   saas_pessoal: nenhuma

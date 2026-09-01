@@ -38,7 +38,7 @@ O Satélite do Pensamento: cabeça de bola de futebol americano, jetpack e um 'E
 O Satélite do Mal: macacão rosa, capacete vermelho de aviadora e pronome arcaico 'washi'.
 
 ## [Shaka (Punk-01) — wiki One Piece: o Satélite do Bem, a descoberta da traição e a morte em Egghead](../article/2026-08-28_shaka-punk-01-wiki-one-piece-o-satelite-do-bem-a-descoberta_b405718de1c7.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `shaka` `persona-satelite` `canon` `egghead`
 
 O Satélite do Bem: 2,20 m, capacete 01, 'Caution' na manga.
 
