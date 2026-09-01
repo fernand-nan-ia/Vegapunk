@@ -5,8 +5,8 @@ external_id: "42c16f44651b"
 canonical_url: "https://serpapi.com/"
 channel: "SerpApi"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["serpapi", "google-search-api", "serp", "seo-local", "google-maps", "api"]
 applicability:
   saas_pessoal: alta

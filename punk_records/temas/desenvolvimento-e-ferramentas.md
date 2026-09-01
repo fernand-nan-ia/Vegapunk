@@ -203,7 +203,7 @@ Evento customizado = nome (ex.: user.created) + schema opcional do payload; um e
 Referência do endpoint de busca do Google na SerpApi: q com operadores, localização por cidade/uule/lat-lon, gl/hl para país e idioma, tbm para imagens/local/notícias/shopping, device e no_cache.
 
 ## [SerpApi — Google Search API: o que faz, localização, tipos de resultado, SLA e Legal Shield](../article/2026-08-27_serpapi-google-search-api-o-que-faz-localizacao-tipos-de-res_42c16f44651b.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `serpapi` `google-search-api` `serp` `seo-local` `google-maps` `api`
 
 Google Search API da SerpApi: resultados do Google em JSON com navegador real e CAPTCHA resolvido, localização por cidade, orgânicos + Maps/Local/Shopping/Knowledge Graph.
 
