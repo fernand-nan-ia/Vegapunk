@@ -1,6 +1,7 @@
 """Bot Telegram (polling). Única interface do usuário."""
 import asyncio
 import logging
+import re
 from pathlib import Path
 
 from telegram.error import NetworkError
@@ -8,7 +9,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, filters
 
-from . import satellites, voices
+from . import router, satellites, voices
 from .chat import Chat
 from .config import settings
 from .db import Database
@@ -30,6 +31,9 @@ HELP = ("🧠 <b>Vegapunk</b> — me mande links de YouTube, TikTok, Instagram, 
         "/stats — contagem por estado\n/pending — itens sem triagem ou com falha\n"
         "/reprocess &lt;id&gt; — tenta de novo um item com falha\n/id — mostra o id deste chat")
 TG_MAX = 4000
+def triagem_linha(titulo: str | None = None) -> str:
+    """Identifica o item: com vários chegando fora de ordem, botões idênticos viram loteria."""
+    return f"🧠 <b>{(titulo or 'este item')[:60]}</b> — onde guardar?"
 DOC_MAX_BYTES = 20 * 1024 * 1024   # teto do Bot API para download
 
 
@@ -81,6 +85,93 @@ def is_allowed(chat_id: int, user_id: int | None = None, from_bot: bool = False)
     return True
 
 
+def mencoes_explicitas(text: str, usernames: dict[str, str]) -> list[str]:
+    """Camada 1: `@vegapunkklilithbot` no texto → ["lilith"], na ordem em que aparecem.
+
+    É o caminho de escape determinístico — tem de funcionar com o roteador fora do ar E com o bot
+    daquele Satélite fora do ar. `usernames` só conhece quem respondeu ao `get_me` no arranque, e em
+    2026-08-28 a Lilith não respondeu (TimedOut): sem o casamento por padrão abaixo, `@…lilith…bot`
+    cairia no vazio e o grupo ignoraria o Fernando em silêncio.
+    """
+    baixo = (text or "").lower()
+    achados: list[tuple[int, str]] = []
+    for sat in satellites.IDS:
+        u = (usernames.get(sat) or "").lower()
+        pos = baixo.find("@" + u) if u else -1
+        if pos < 0:
+            m = re.search(r"@\w*" + re.escape(sat) + r"\w*", baixo)   # @qualquercoisa<id>qualquercoisa
+            pos = m.start() if m else -1
+        if pos >= 0:
+            achados.append((pos, sat))
+    return [sat for _, sat in sorted(achados)]
+
+
+async def notificar(speakers: Speakers, chat_id: int, text: str, reply_to: int | None = None,
+                    item_id: str | None = None, sat: str | None = None, titulo: str | None = None):
+    """Fala do pipeline (captura, duplicata, falha, resumo). `sat` = o Satélite dono do item.
+
+    No GRUPO o dono fala pela própria boca. O teclado de triagem, porém, tem de sair pelo LEITOR: o
+    clique de um botão volta para o bot que ENVIOU a mensagem, e só o leitor tem handler de callback —
+    teclado mandado pela Lilith seria um botão morto. Daí a mensagem separada.
+    Na DM nada muda: uma mensagem só, com o teclado na última parte.
+    """
+    parts = chunks(text)
+    dono = sat or satellites.DEFAULT
+    leitor = speakers.fallback
+    if speakers.bot_for(dono, chat_id) is leitor:
+        for i, part in enumerate(parts):            # DM, ou dono sem bot próprio: como sempre
+            last = i == len(parts) - 1
+            await leitor.send_message(chat_id, part, parse_mode=ParseMode.HTML,
+                                      reply_to_message_id=reply_to if i == 0 else None,
+                                      reply_markup=keyboard(item_id) if (item_id and last) else None)
+        return
+    await speakers.say_all(dono, chat_id, parts, reply_to=reply_to)
+    if item_id:
+        await leitor.send_message(chat_id, triagem_linha(titulo), parse_mode=ParseMode.HTML,
+                                  reply_markup=keyboard(item_id))
+
+
+async def responder_no_grupo(chat, speakers: Speakers, chat_id: int, text: str,
+                             message_id: int | None = None) -> list[str]:
+    """Cascata do PRD §4.1 no grupo, camadas 1 a 4. Devolve quem de fato respondeu.
+
+    Vive fora de `build_app` para ser testável: a ligação entre decidir e responder era o buraco que
+    a Lilith apontou duas vezes (Stories 1b e 1c).
+    """
+    sat_ativo, idade = chat.active_age(chat_id)
+    recentes = None
+    if sat_ativo:
+        quem = voices.NAME.get(sat_ativo, sat_ativo)
+        recentes = [f"{'Fernando' if m['role'] == 'user' else quem}: {m['content'][:200]}"
+                    for m in chat.history(chat_id, sat_ativo, limit=3)]   # com atribuição: sem ela o
+                    # roteador não sabe de quem "e isso aí?" é continuação — justo o que a janela serve
+    decisao = router.decide(text, explicitos=mencoes_explicitas(text, speakers.usernames),
+                            ativo=sat_ativo, idade_do_ativo=idade, recent=recentes)
+    if not decisao:
+        log.info("grupo %s: ninguém respondeu (%s)", chat_id, decisao.reason)
+        return []
+
+    responderam: list[str] = []
+    for sat_id in decisao.satellites:
+        if not router.pode_responder():          # teto da camada CARA, antes de gastar
+            log.warning("grupo %s: teto de respostas atingido; %s ficou de fora", chat_id, sat_id)
+            if not responderam:
+                await speakers.fallback.send_message(
+                    chat_id, "🍩 York: teto de respostas atingido. Espere um minuto — é dinheiro seu.")
+            break
+        try:
+            sat, answer = await asyncio.to_thread(chat.reply, chat_id, text, sat_id)
+            await responder(speakers, sat, answer, chat_id, message_id if not responderam else None)
+            responderam.append(sat_id)
+        except EnrichmentError as e:
+            log.warning("grupo %s: %s falhou (%s: %s)", chat_id, sat_id, e.code, e.detail[:120])
+        except Exception:
+            log.exception("grupo %s: %s falhou ao responder", chat_id, sat_id)
+    if responderam:
+        chat.wake(chat_id, responderam[0])       # a janela segue quem VOCÊ chamou primeiro, não quem falou por último
+    return responderam
+
+
 async def responder(speakers: Speakers, sat, answer: str, chat_id: int, reply_to: int | None = None):
     """Manda a resposta pela boca do Satélite que respondeu.
 
@@ -92,16 +183,13 @@ async def responder(speakers: Speakers, sat, answer: str, chat_id: int, reply_to
 
 def build_app(db: Database) -> Application:
     app = Application.builder().token(settings.bot_token).build()
+    speakers = Speakers(app.bot)
+    app.bot_data["speakers"] = speakers
 
-    async def notify(chat_id: int, text: str, reply_to: int | None = None, item_id: str | None = None):
-        """Mensagens longas vão em partes (nunca cortadas); o teclado de triagem vai na última."""
+    async def notify(chat_id: int, text: str, reply_to: int | None = None,
+                     item_id: str | None = None, sat: str | None = None, titulo: str | None = None):
         try:
-            parts = chunks(text)
-            for i, part in enumerate(parts):
-                last = i == len(parts) - 1
-                await app.bot.send_message(chat_id, part, parse_mode=ParseMode.HTML,
-                                           reply_to_message_id=reply_to if i == 0 else None,
-                                           reply_markup=keyboard(item_id) if (item_id and last) else None)
+            await notificar(speakers, chat_id, text, reply_to, item_id, sat, titulo)
         except Exception:
             log.exception("falha ao notificar chat=%s", chat_id)
 
@@ -109,9 +197,6 @@ def build_app(db: Database) -> Application:
     app.bot_data["pipeline"] = pipeline
     chat = Chat(db)
     app.bot_data["chat"] = chat
-
-    speakers = Speakers(app.bot)
-    app.bot_data["speakers"] = speakers
 
     def allowed(update: Update) -> bool:
         chat, user = update.effective_chat, update.effective_user
@@ -223,6 +308,11 @@ def build_app(db: Database) -> Application:
             except Exception:
                 log.exception("nem o aviso de falha saiu")
 
+    async def falar_no_grupo(update: Update, text: str):
+        """Camada 0 já passou (`allowed`); as camadas 1 a 4 vivem em `responder_no_grupo`, testável."""
+        msg = update.message
+        await responder_no_grupo(chat, speakers, msg.chat_id, text, msg.message_id)
+
     async def on_message(update: Update, _):
         if not allowed(update):
             log.info("chat não autorizado: %s", update.effective_chat.id)
@@ -230,13 +320,16 @@ def build_app(db: Database) -> Application:
         msg = update.message
         urls = extract_urls(msg.text or msg.caption or "")
         if not urls:
-            await talk(update, msg.text or msg.caption or "")
+            texto = msg.text or msg.caption or ""
+            # grupo passa pela cascata (só responde quem foi chamado); DM continua como sempre
+            await (falar_no_grupo(update, texto) if msg.chat_id < 0 else talk(update, texto))
             return
         sat = voices.pick()  # quem anuncia é quem apresenta o resultado
         for url in urls:
             item_id = db.create_item(url, msg.chat_id, msg.message_id, satellite=sat)
             asyncio.create_task(pipeline.run(item_id))
-        await msg.reply_text(voices.capture_line(len(urls), sat=sat), parse_mode=ParseMode.HTML)
+        await speakers.say_all(sat, msg.chat_id, [voices.capture_line(len(urls), sat=sat)],
+                               reply_to=msg.message_id)
 
     async def on_document(update: Update, _):
         """Arquivo anexado (PDF, DOCX, XLSX, TXT/MD/CSV): baixa para tmp/documents e entra no pipeline como platform=document."""
@@ -267,7 +360,8 @@ def build_app(db: Database) -> Application:
         for url in extract_urls(msg.caption or ""):   # links na legenda do arquivo também contam
             asyncio.create_task(pipeline.run(db.create_item(url, msg.chat_id, msg.message_id, satellite=sat)))
             n += 1
-        await msg.reply_text(voices.capture_line(n, sat=sat, noun="arquivo" if n == 1 else "item"), parse_mode=ParseMode.HTML)
+        await speakers.say_all(sat, msg.chat_id, [voices.capture_line(n, sat=sat, noun="arquivo" if n == 1 else "item")],
+                               reply_to=msg.message_id)
 
     async def on_callback(update: Update, _):
         q = update.callback_query

@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.7.0 `811710f`)
+# HANDOFF — Vegapunk (atualizado em 2026-08-28, sessão 5 — v1.7.0 `811710f` + Story 1c **rodando em produção, não commitada**)
 
 ## TL;DR — o que existe hoje
 
@@ -9,7 +9,9 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **112/112 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**, sessão 5); FURY em `ab4ce12`; working tree limpa.
+Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**); FURY em `ab4ce12`.
+
+⚠️ **A working tree NÃO está limpa, e o que está nela JÁ RODA EM PRODUÇÃO.** A Story 1c + o modo triagem estão no container e funcionando no grupo «Vegapunk» — mas não commitados: o gate do Shaka foi **CONCERNS**, e depois dele o Fernando pediu o modo triagem, que desfez a propriedade de custo em que aquele gate se apoiava. **`*verify` e `*gate` precisam ser refeitos antes do release.** Cerca de 18 arquivos parados (`src/vegapunk/{router,chat,bot,config}.py`, `tests/{test_cascade,test_group_glue,test_router,test_speakers,test_bot_guard}.py`, `.env.example`, PRD, stories, diários). **137/137 testes verdes.**
 
 Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
 
@@ -30,8 +32,14 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-1. ~~Decidir as 3 perguntas em aberto do PRD multi-bot~~ — **FEITO em 2026-08-28** (Sessão 5); decisões em `docs/prd/satelites-multibots-grupo-telegram.md` §0.
-2. Pedir ao Stella `*story` (Story 1 do PRD — prova de conceito com 2 bots, Stella + Lilith) e cadastrar os 2 bots no BotFather: **Stella = bot leitor, privacy mode OFF**; **Lilith = send-only, privacy ON**.
+**O grupo multi-bot está a duas linhas de `.env` de funcionar.** Todo o código das Stories 1a, 1b e 1c existe, com 130 testes. O que falta é uma decisão do Fernando e um `.env`.
+
+~~1 e 2 (aceitar ressalvas, editar `.env`)~~ — **FEITOS em 2026-08-28 à noite.** O `.env` está completo (7 tokens, id do grupo, `TELEGRAM_ALLOWED_USER_IDS`, `VEGAPUNK_GROUP_ENABLED=true`), o container foi recriado e **o grupo funciona** (ver Sessão 5e).
+
+1. **Decidir o teto de respostas por hora.** A York recomenda baixar de **60 para 25** (`router.MAX_REPLIES_PER_MIN` fica em 6, que ela aprovou). Motivo: 60/h autoriza US$ 23,76 num dia de descontrole — quatro dias de uso real a cada hora. É uma linha de código.
+2. **Refazer `*verify` (Lilith) e `*gate` (Shaka) sobre a Story 1c + triagem.** Os dois foram dados ANTES do modo triagem, que desfez a propriedade de custo em que se apoiavam. Sem isso o Stella não faz release — e há ~18 arquivos rodando em produção sem commit.
+3. **Depois: `*release`.** Working tree pronta, 137 testes verdes. Sugestão de versão: **v1.8.0** (cascata do grupo + triagem).
+4. **Falta um teste de aceite**: a sétima mensagem do roteiro — esperar 11 minutos e escrever `e aí?` sem nome. Esperado: ninguém responde (janela expirada). Com a triagem ligada, o roteador é consultado e deve devolver lista vazia por ser frase sem pergunta — **este caso mudou de natureza e ainda não foi observado**.
 3. Se o site do cliente for vender online: `*capture` o Decreto nº 7.962/2013 (regulamenta e-commerce sob o CDC) — lacuna marcada pelo Shaka no item do Código de Defesa do Consumidor.
 4. Investigar os US$ 8,58 gastos na chave do OpenRouter que não batem com o que o bot registra (achado em 2026-08-27 ao rodar `*cost`; ~13 centavos são do bot, o resto é gasto não explicado — checar se a chave está em outro projeto).
 
@@ -156,6 +164,109 @@ Punk Records consultado: **nenhum registro** sobre bots de Telegram, roteamento 
 
 **Próximo passo: Story 1c** — ligar a cascata do §4.1 (camadas 0–2 grátis, roteador, resposta), janela de continuidade de 10 min, e só então `VEGAPUNK_GROUP_ENABLED=true` **com `TELEGRAM_ALLOWED_USER_IDS` preenchido** (condição permanente do Shaka). Herdadas do `*verify` da 1a: obrigar `mentions()` antes de `route()` e teto de chamadas por minuto.
 
+## Sessão 5d (2026-08-28) — Story 1c: a cascata do grupo — **pronta, NÃO commitada (gate CONCERNS)**
+
+**A cascata do PRD §4.1 existe e está testada.** `router.decide()` compõe as camadas 1 a 3 numa função só:
+
+```
+camada 1 · @menção explícita  → responde direto, SEM roteador (escape determinístico)
+camada 2 · sem nome no texto E fora da janela → ninguém, custo zero
+camada 3 · roteador decide (com teto de 20 decisões/min)
+camada 4 · cada apontado responde pelo próprio bot (com teto de 6 respostas/min, 60/h)
+```
+
+**Por que `decide()` existe como função única:** era o achado 7 da Lilith na Story 1a. Enquanto compor as camadas fosse tarefa de quem chama, alguém pularia `mentions()` e pagaria o roteador em toda mensagem. Agora **não há caminho** até `route()` que não passe pelas duas peneiras grátis — e há um teste que lê o `bot.py` e falha se alguém escrever `router.route(` lá.
+
+**Janela de continuidade de 10 min**: `Chat.active_age()` lê o `updated_at` do `chat_state` (que `wake()` já atualizava). Aos 9 min a conversa segue sem repetir o nome; aos 11, a mensagem sem nome **nem chega ao roteador**. A janela passa a seguir **quem foi chamado primeiro**, não quem falou por último.
+
+**O ALTO do `*verify` da Lilith — o teto guardava a porta errada.** O Atlas tinha posto teto de 20/min no `route()`, que é a camada **barata** (~500 tokens). A camada cara custou **24.788 tokens medidos em produção** numa única resposta: 20 decisões autorizavam 60 respostas ≈ 1,5 milhão de tokens. O teto mudou para `router.pode_responder()`, chamado imediatamente antes de gastar, com dois horizontes (6/min segura a rajada, 60/h segura a tarde). **Pior caso absoluto ≈ US$ 0,50 por hora**; antes esse número não existia.
+
+**Outros quatro achados corrigidos:** (1) `@menção` dependia do `get_me` ter respondido no arranque — e a Lilith **não respondeu** na primeira subida real; agora o padrão `@…<id>…bot` casa mesmo com o bot fora do ar, senão o grupo ignoraria o Fernando em silêncio. (2) O contexto do roteador ia sem dizer quem falou (`"Fernando: ..."` / `"Lilith: ..."` agora). (3) A costura decidir→responder não tinha teste: virou `bot.responder_no_grupo()`, fora do `build_app`, com 5 testes. (4) Estouro de teto avisa uma vez na voz da York, custo zero — grupo que cala sem explicação é pior que grupo caro.
+
+**Gate do Shaka: CONCERNS**, com duas ressalvas numeradas (ver "Primeira coisa a fazer"). Não é FAIL: o código está correto e coberto. É que esta é **a única das três stories cujo comportamento nunca foi observado** — a 1a era inerte, a 1b foi confirmada com um `/lilith oi` na DM, e a cascata não pode rodar enquanto o grupo dorme.
+
+**Estado do `.env` do Fernando hoje:** 7 tokens ✓, id do grupo ✓, `VEGAPUNK_GROUP_ENABLED=false` (grupo mudo), `TELEGRAM_ALLOWED_USER_IDS` **vazio** (a condição do Shaka que falta).
+
+## Mapa do multi-bot — o que existe e onde
+
+| Peça | Arquivo | Story |
+|---|---|---|
+| Porteiro do dinheiro (5 portas, falha fechada) | `bot.is_allowed()` | 1a + 1b |
+| Roteador (mentions grátis + route pago) | `src/vegapunk/router.py` | 1a |
+| Cascata completa numa função | `router.decide()` | 1c |
+| Tetos de custo | `router.pode_responder()` (cara) e `_dentro_do_teto()` (barata) | 1c |
+| Os 6 bots que só falam | `src/vegapunk/speakers.py` | 1b |
+| Quem fala por quem | `bot.responder()` / `speakers.say_all()` | 1b |
+| Costura do grupo | `bot.responder_no_grupo()` | 1c |
+| Janela de 10 min | `chat.active_age()` + `router.WINDOW_SECONDS` | 1c |
+| Responder como um Satélite escolhido | `chat.reply(..., as_sat=)` | 1c |
+
+Stories em `squads/vegapunk/stories/`: 1a e 1b **feitas**; 1c **feita, aguardando release**.
+
+## Variáveis novas do `.env` (todas opcionais, todas com default seguro)
+
+| Variável | Default | Para que serve |
+|---|---|---|
+| `TELEGRAM_BOT_TOKEN_<ID>` | — | um por Satélite (`_SHAKA`, `_LILITH`…). Ausente = aquele bot fala pela boca do Stella |
+| `TELEGRAM_ALLOWED_USER_IDS` | vazio | só estes ids disparam chamada paga, mesmo dentro de chat autorizado |
+| `VEGAPUNK_GROUP_ENABLED` | `false` | **o grupo só acorda quando isto for `true`** |
+| `VEGAPUNK_ROUTER_MODEL` | vazio | modelo do roteador; vazio usa `VEGAPUNK_MODEL` |
+
+## Sessão 5e (2026-08-28, noite) — o grupo multi-bot FUNCIONANDO em produção
+
+**O que o Fernando pediu ontem às 21:30 no Telegram existe e roda.** No grupo «Vegapunk» (`-5120920932`), com os 7 bots dentro:
+
+| Ele escreve | Acontece | Custo |
+|---|---|---|
+| `bom dia` | ninguém responde | zero (antes da triagem) |
+| `Lilith, o que acha disso?` | só a Lilith, **pelo bot dela** (`@vegapunkklilithbot`) | ~US$ 0,017 |
+| `e isso aí, funciona?` (< 10 min) | a Lilith de novo, sem repetir o nome — **janela funcionou** | idem |
+| `Shaka e Lilith, o que acham?` | os dois, na ordem, dois bots diferentes | 2× |
+| `@vegapunkkyorkbot quanto custou?` | só a York, sem passar pelo roteador | 1× |
+| `qual é o melhor de vocês para LGPD?` | **triagem** escolheu o Shaka, que disse "Veredito: sou eu" e citou 4 leis do vault | 1× |
+
+Confirmado por print e por log em todos os casos.
+
+### Três bugs que SÓ a produção achou (nenhum teste pegaria)
+
+1. **`Message to be replied not found`** — os seis bots rodam com privacy mode ON, nunca "viram" a mensagem original, e o Telegram recusa a citação. A queda para o leitor mascarava isso em "todo mundo responde como Stella". Correção: só o leitor cita; os outros respondem sem citação, e há uma segunda tentativa **mantendo a identidade** antes de cair para o Stella.
+2. **`Chat not found` só da Lilith** — havia **dois bots Lilith**: `@Vegapunklilith_bot` no grupo e `@vegapunkklilithbot` no `.env`. Diagnosticado com `get_chat_member` usando o id que é o prefixo do token. O Fernando trocou pelo certo. **Técnica reaproveitável**: para saber se um bot está mesmo num chat, `leitor.get_chat_member(chat_id, int(token.split(':')[0]))`.
+3. **`JSONDecodeError: Unterminated string`** — `max_tokens=200` cortava o JSON do roteador no meio do `reason`. Falhou fechado (correto), mas o silêncio foi por defeito. Correção: `max_tokens=400` + `reason` com `max_length=120` no schema e no prompt.
+
+### Modo triagem (pedido do Fernando, PRD §0 e)
+
+Sem nome na mensagem, o roteador escolhe o dono **pelo assunto** — pode ser o próprio Stella. **Desfaz a propriedade "grupo calado é grátis"** que a Lilith aprovou e o Shaka carimbou: mensagem sem nome passa a custar a decisão (~US$ 0,0004). O silêncio deixou de ser estrutural e virou decisão do modelo (recado, `ok`, `kkk` → lista vazia). Reversível por `VEGAPUNK_GROUP_TRIAGE=false`, com teste dos dois modos.
+
+**Duas correções do `*verify` da Lilith sobre a triagem:**
+- **Teto de 1 em triagem** (`MAX_TRIAGE`): o prompt dizia "UM só" e a produção devolveu **três** respostas de ~55k tokens. Instrução sem enforcement é sugestão.
+- **`ESPECIALIDADES` deixou de ser fonte paralela**: o roteador agora lê `persona.focus` do `.md` de cada Satélite. A cópia fixa **já tinha divergido** (o York do roteador falava de preço; o do arquivo, de healthcheck). Teste compara os dois e falha se voltarem a discordar.
+
+## Custo: extrato real e projeção (York, 2026-08-28)
+
+Preço em `tools.py`: `PRICE_IN = 0,375/M`, `PRICE_OUT = 1,875/M` (gemini-3.7-flash).
+
+```
+conversas       1.005.100 in +  15.272 out = US$ 0,406
+enriquecimento    225.164 in +  69.569 out = US$ 0,215
+TOTAL do bot desde que existe               US$ 0,620   (R$ 3,22)
+só o grupo, 11 respostas no dia             US$ 0,176
+```
+
+| Unidade | Custo |
+|---|---|
+| 1 decisão do roteador (~650 tokens) | **US$ 0,0004** |
+| 1 resposta em personagem (~42k tokens, média medida no grupo) | **US$ 0,0165** |
+| 1 resposta COM busca no Punk Records | ~55k tokens (pior caso) |
+
+**O roteador é 40× mais barato que a resposta** — é isso que justifica a cascata inteira.
+
+**Projeção mensal:** leve (5 respostas/dia) **US$ 2,60** · médio (15/dia) **US$ 7,80** · pesado (40/dia) **US$ 20,79**. Estimativa da York para o Fernando: **US$ 3 a 6/mês**.
+
+**Três riscos de custo, na ordem em que importam:**
+1. **O `INDEX.md` vai em TODA resposta** — hoje 43.066 chars ≈ **10,7k tokens, um quarto do custo de cada resposta**, com 126 itens. É a única despesa que cresce sozinha: com 500 itens no vault, cada resposta custa o triplo sem ninguém conversar mais. Solução futura: índice resumido ou busca em vez de despejo.
+2. **Teto de 60 respostas/hora não segura nada**: US$ 0,99/h, ou US$ 23,76 num dia de descontrole — quatro dias de uso real a cada hora. **York recomenda 25/h** (US$ 0,41/h). O de 6/min ela aprovou: é o dobro do pico observado (3/min) e não deve ser mexido.
+3. **A DM não tem teto nenhum** — e mais da metade do gasto de hoje saiu por lá (514k de 976k tokens). Não é urgente (é o Fernando sozinho, sem bot respondendo a bot), mas o cofre está trancado e a janela aberta.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -243,7 +354,14 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 `src/vegapunk/`: `bot.py` (handlers: links → pipeline; texto → chat; comandos de Satélite) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema; `read_slides`; `_client()` reutilizado pelo chat), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env), **`satellites.py`** (persona → prompt, vault picker), **`chat.py`** (estado/histórico/reply).
 `tests/`: 41 testes; `test_satellites.py` cobre load dos 7, prompt, vault picker, chat state/history/reply (mock), nada-se-perde, dependências existem.
 
+## Dívida conhecida do multi-bot (escrita, não esquecida)
+- **Story 2** (não escrita): histórico **compartilhado** do grupo (H4 — cada Satélite ler o que os outros disseram), `/custo` agregado, atraso aleatório por bot, renomear `TELEGRAM_BOT_TOKEN` → `_STELLA` (o código já aceita os dois desde a v1.7.0).
+- **Won't da v1**: um Satélite acionar outro sozinho, sem o Fernando pedir. Maior risco de loop e custo.
+- Indicador "digitando…" sai como Stella mesmo quando quem vai responder é outro (BAIXO, `*verify` da 1c).
+- `enrich` continua com `timeout=180, max_retries=2` — correto para transcrição de uma hora, mas o raciocínio que corrigiu o roteador se aplica a ele um dia (ressalva do gate da 1a).
+
 ## Ideias para depois (não iniciadas)
+- **Ler imagens no Telegram (Story 1e, pedida em 2026-08-31, adiada pelo Fernando)**. Hoje print **não é lido**: os handlers são `filters.Document.ALL` e `filters.TEXT | filters.CAPTION`; não há `filters.PHOTO`. Print sem legenda cai no vazio; com legenda, só a legenda é lida — **parece que funcionou e não funcionou**, que é o pior caso. `DOC_EXTS` também não aceita imagem. **A peça já existe**: `enrich.read_slides()` manda imagens ao modelo multimodal (usada nos carrosséis do TikTok) e o `gemini-3.7-flash` enxerga imagem nativamente. Falta ligar ao Telegram. Três decisões antes de codar: (a) print é **contexto de conversa** ou **item do vault**? (b) só **transcrever texto** (como o read_slides faz hoje) ou também **descrever** a imagem — são prompts diferentes; (c) teto de imagens por mensagem, porque imagem custa vários milhares de tokens. Palpite do uso real do Fernando (engenheiro civil): print de planilha, laudo e tela de sistema, para o Satélite ler o conteúdo e comentar → caminho "ler + transcrever".
 - **Telegram com ferramentas**: deixar os Satélites executarem comandos absorvidos leves pelo chat (ler item do vault por nome, `*roi` da York, `*evidence` da Lilith) via tool-use no OpenRouter; e **escrever no diário** (`## Diário`) quando o Fernando conta algo. Hoje só leem.
 - Saudação em personagem no `/nome` (uma chamada ao modelo no wake).
 - Resumo do histórico quando passar de N mensagens (hoje corta em 12).

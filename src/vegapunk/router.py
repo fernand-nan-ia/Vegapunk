@@ -12,7 +12,9 @@ import functools
 import json
 import logging
 import re
+import time
 import unicodedata
+from collections import deque
 from dataclasses import dataclass, field
 from typing import Literal
 
@@ -29,9 +31,23 @@ CONFIDENCES = ("alta", "media", "baixa")
 RECENT_LINES = 3         # linhas anteriores do grupo enviadas como contexto
 MAX_RECENT_CHARS = 200   # …e cada uma é cortada: 3 linhas de 4000 chars fariam o "roteador barato" custar caro
 MAX_TEXT_CHARS = 1000    # a mensagem é cortada: roteador não precisa do texto inteiro
-MAX_SATELLITES = 3       # TETO DE CUSTO: nenhuma mensagem aciona mais que isto, aconteça o que acontecer
+MAX_SATELLITES = 3       # TETO DE CUSTO no modo destinatário ("Shaka e Lilith" pede os dois mesmo)
+MAX_TRIAGE = 1           # …mas em TRIAGEM o Fernando não chamou ninguém: um dono, não um comitê.
+                         # Produção 2026-08-28: o prompt dizia "UM só" e vieram 3 respostas de ~55k tokens.
 ROUTER_TIMEOUT = 15.0    # segundos por tentativa; pior caso 30 s. Roteador que não decide rápido não decide
 ROUTER_RETRIES = 1       # 1 repique: sobrevive a um 429 solitário sem virar espera de minutos
+MAX_ROUTES_PER_MIN = 20  # teto da camada BARATA (~500 tokens por decisão)
+WINDOW_SECONDS = 600     # janela de continuidade: 10 min sem repetir o nome (decisão do Fernando, PRD §0 d)
+
+# Teto da camada CARA. Uma resposta em personagem custou 24.788 tokens de entrada medidos em produção
+# (2026-08-28) — cerca de 50× uma decisão do roteador. Limitar só o roteador era decoração: 20 decisões
+# por minuto autorizavam 60 respostas, ~1,5 milhão de tokens. O teto tem que estar aqui.
+MAX_REPLIES_PER_MIN = 6     # York aprovou: o dobro do pico observado (3/min em 2026-08-28)
+MAX_REPLIES_PER_HOUR = 25   # York, 2026-08-31: 60/h autorizava US$ 23,76 num dia de descontrole,
+                            # contra US$ 0,33 de uso real no dia inteiro. 25/h ≈ US$ 0,41/h.
+
+_recentes: deque[float] = deque(maxlen=MAX_ROUTES_PER_MIN)   # instantes das últimas decisões
+_respostas: deque[float] = deque()                           # instantes das últimas respostas em personagem
 
 # Como o Fernando pode chamar cada Satélite em texto livre (além do id).
 ALIASES: dict[str, str] = {
@@ -108,7 +124,7 @@ class Routing:
 class _RouterOut(BaseModel):
     satellites: list[str] = Field(description="ids dos Satélites chamados, na ordem; lista vazia se ninguém foi chamado")
     confidence: Literal["alta", "media", "baixa"]
-    reason: str = Field(description="uma frase curta em pt-BR explicando a decisão")
+    reason: str = Field(max_length=120, description="UMA frase curta em pt-BR (máx. 120 caracteres)")
 
 
 def _schema() -> dict:
@@ -128,9 +144,46 @@ def _schema() -> dict:
     return s
 
 
-SYSTEM = (
+# Rede de segurança: se um `.md` não puder ser lido, o roteador não pode cair junto.
+ESPECIALIDADES_FALLBACK = {
+    "stella": "visão ampla, ciência, síntese; responde quando nenhum outro encaixa melhor",
+    "shaka": "risco, segurança, LGPD e leis, compliance, ética, decisões sérias",
+    "lilith": "atacar a ideia, achar furo, caçar hype e promessa fácil, pré-mortem",
+    "edison": "ideias novas, features, produto, protótipo de fim de semana",
+    "pythagoras": "o que está guardado no Punk Records, pesquisa, documentos, dossiê",
+    "atlas": "código, infraestrutura, banco de dados, mão na massa, laudos de engenharia",
+    "york": "custo, preço, monetização, ROI, orçamento",
+}
+
+
+@functools.lru_cache(maxsize=1)
+def especialidades() -> dict[str, str]:
+    """Para que serve cada Satélite, lido do `persona.focus` do `.md` dele.
+
+    FONTE ÚNICA (regra do projeto: `.claude/commands/vegapunk/agents/<id>.md` é a verdade). Antes havia
+    um dicionário fixo aqui e ele JÁ tinha divergido do `.md` — o do York falava de preço enquanto o
+    arquivo falava de healthcheck. Divergência silenciosa manda conversa para a versão velha do Satélite.
+    """
+    out: dict[str, str] = {}
+    for i in satellites.IDS:
+        try:
+            foco = (satellites.load(i).data.get("persona", {}).get("focus") or "").strip()
+        except Exception:
+            foco = ""
+        out[i] = foco[:170] if foco else ESPECIALIDADES_FALLBACK[i]
+    return out
+
+
+@functools.lru_cache(maxsize=2)
+def system_prompt(triagem: bool = False) -> str:
+    return _SYSTEM_BASE.format(
+        lista="\n".join(f"- {voices.NAME[i]} ({i}): {especialidades()[i]}" for i in satellites.IDS)
+    ) + (TRIAGEM if triagem else "")
+
+
+_SYSTEM_BASE = (
     "Você é um roteador de mensagens de um grupo do Telegram. No grupo existem sete bots, os Satélites de "
-    "Vegapunk: " + ", ".join(f"{voices.NAME[i]} ({i})" for i in satellites.IDS) + ".\n\n"
+    "Vegapunk, cada um com uma especialidade:\n{lista}\n\n"
     "Sua única tarefa: dizer a QUEM a última mensagem do usuário é dirigida. Responda apenas o JSON pedido.\n\n"
     "Regras:\n"
     "- Um nome citado como parte de um lugar, produto, marca ou pessoa real NÃO é uma chamada "
@@ -141,7 +194,18 @@ SYSTEM = (
     "- Mensagem sem destinatário claro: se houver um Satélite marcado como ATIVO e a mensagem for "
     "continuação natural da conversa dele, devolva só ele; senão, lista vazia.\n"
     "- Na dúvida, lista vazia. Silêncio custa menos que uma resposta indevida.\n"
-    "- confidence: \"alta\" quando é evidente; \"media\" quando é provável; \"baixa\" quando você não sabe."
+    "- confidence: \"alta\" quando é evidente; \"media\" quando é provável; \"baixa\" quando você não sabe.\n"
+    "- reason: no máximo 120 caracteres. É para o log, não para o Fernando ler."
+)
+
+TRIAGEM = (
+    "\n\n=== MODO TRIAGEM ===\n"
+    "Ninguém foi chamado pelo nome nesta mensagem. Sua tarefa muda: em vez de 'a quem é dirigida', decida "
+    "QUEM RESPONDE MELHOR pelo ASSUNTO, usando as especialidades acima. Devolva UM só, o mais adequado — "
+    "e o Stella quando nenhum outro encaixar claramente.\n"
+    "Mas continue devolvendo lista VAZIA quando a mensagem não pede resposta: recado para si mesmo, "
+    "'ok', 'kkk', 'valeu', reação a algo, ou frase solta sem pergunta nem pedido. Silêncio ainda é a opção "
+    "segura; o que mudou é que dúvida sobre um ASSUNTO agora merece dono."
 )
 
 
@@ -155,15 +219,49 @@ def _user_prompt(text: str, recent: list[str] | None, active: str | None) -> str
     return "\n\n".join(parts)
 
 
-def route(text: str, recent: list[str] | None = None, active: str | None = None) -> Routing:
-    """Camada 3 (paga): 1 chamada ao modelo decide quem responde. Sempre falha fechada."""
+def _dentro_do_teto() -> bool:
+    """Achado 8 da Lilith: sem teto, rajada de mensagens vira rajada de chamadas pagas."""
+    agora = time.monotonic()
+    if len(_recentes) == MAX_ROUTES_PER_MIN and agora - _recentes[0] < 60:
+        return False
+    _recentes.append(agora)
+    return True
+
+
+def pode_responder() -> bool:
+    """Teto da camada 4 (a cara). Chamar UMA vez por resposta, imediatamente antes de gastar.
+
+    Dois horizontes: o por minuto segura a rajada, o por hora segura a tarde inteira — foi a tarde
+    que a York sempre teve medo de pagar.
+    """
+    agora = time.monotonic()
+    while _respostas and agora - _respostas[0] > 3600:
+        _respostas.popleft()
+    if sum(1 for t in _respostas if agora - t < 60) >= MAX_REPLIES_PER_MIN:
+        log.warning("teto de %s respostas por minuto atingido: silêncio até baixar", MAX_REPLIES_PER_MIN)
+        return False
+    if len(_respostas) >= MAX_REPLIES_PER_HOUR:
+        log.warning("teto de %s respostas por hora atingido: silêncio até baixar", MAX_REPLIES_PER_HOUR)
+        return False
+    _respostas.append(agora)
+    return True
+
+
+def route(text: str, recent: list[str] | None = None, active: str | None = None,
+          triagem: bool = False) -> Routing:
+    """Camada 3 (paga): 1 chamada ao modelo decide quem responde. Sempre falha fechada.
+
+    `triagem=True`: ninguém foi chamado pelo nome; escolher pelo ASSUNTO (pedido do Fernando, 2026-08-28).
+    """
+    if not _dentro_do_teto():
+        return _closed(text, f"teto de {MAX_ROUTES_PER_MIN} chamadas por minuto estourado")
     model = settings.router_model or settings.model
     try:
         resp = _client().chat.completions.create(
             model=model,
-            messages=[{"role": "system", "content": SYSTEM},
+            messages=[{"role": "system", "content": system_prompt(triagem)},
                       {"role": "user", "content": _user_prompt(text, recent, active)}],
-            max_tokens=200,
+            max_tokens=400,        # 200 cortava o JSON no meio do `reason` (produção, 2026-08-28)
             temperature=0,
             response_format={"type": "json_schema",
                              "json_schema": {"name": "routing", "strict": True, "schema": _schema()}},
@@ -182,14 +280,48 @@ def route(text: str, recent: list[str] | None = None, active: str | None = None)
         return _closed(text, f"id desconhecido devolvido pelo modelo: {desconhecidos}")
 
     chosen: list[str] = [] if out.confidence == "baixa" else list(dict.fromkeys(out.satellites))
-    if len(chosen) > MAX_SATELLITES:
-        log.warning("roteador devolveu %s Satélites; cortando em %s (teto de custo)", len(chosen), MAX_SATELLITES)
-        chosen = chosen[:MAX_SATELLITES]
+    teto = MAX_TRIAGE if triagem else MAX_SATELLITES   # instrução sem enforcement é sugestão
+    if len(chosen) > teto:
+        log.warning("roteador devolveu %s Satélites; cortando em %s (teto de custo, triagem=%s)",
+                    len(chosen), teto, triagem)
+        chosen = chosen[:teto]
     usage = resp.usage
     log.info("roteador %s -> %s (%s) %s · %s in / %s out tokens",
              _oneline(text)[:80], chosen, out.confidence, _oneline(out.reason)[:120],
              getattr(usage, "prompt_tokens", 0), getattr(usage, "completion_tokens", 0))
     return Routing(satellites=chosen, confidence=out.confidence, reason=out.reason)
+
+
+def decide(text: str, *, explicitos: list[str] | None = None, ativo: str | None = None,
+           idade_do_ativo: float | None = None, recent: list[str] | None = None) -> Routing:
+    """A cascata inteira numa função só (PRD §4.1, camadas 1 a 3).
+
+    Existe por causa do achado 7 da Lilith: enquanto compor as camadas fosse tarefa de quem chama,
+    alguém acabaria pulando `mentions()` e pagando o roteador em toda mensagem do grupo. Aqui não há
+    como: `route()` só é alcançado depois das duas peneiras grátis.
+
+      camada 1 · `@menção` explícita → responde direto, SEM roteador (caminho de escape determinístico)
+      camada 2 · nenhum nome no texto E fora da janela de continuidade → ninguém, custo zero
+      camada 3 · roteador decide
+
+    `idade_do_ativo` = segundos desde a última interação no chat (None = nunca houve).
+    """
+    if explicitos:
+        escolhidos = [s for s in dict.fromkeys(explicitos) if s in satellites.IDS][:MAX_SATELLITES]
+        if escolhidos:
+            return Routing(escolhidos, "alta", "menção explícita: não passa pelo roteador")
+
+    citados = mentions(text)
+    na_janela = idade_do_ativo is not None and idade_do_ativo <= WINDOW_SECONDS
+    if not citados and not na_janela:
+        if not settings.group_triage:
+            return Routing([], "alta", "sem nome no texto e fora da janela: custo zero")
+        # Pedido do Fernando (2026-08-28): sem nome, o roteador triage pelo ASSUNTO e escolhe o dono —
+        # pode ser o próprio Stella. Troca a propriedade "silêncio é grátis" por ~500 tokens por mensagem;
+        # a trava de custo real continua sendo `pode_responder()` (6/min, 60/h).
+        return route(text, recent=recent, active=None, triagem=True)
+
+    return route(text, recent=recent, active=ativo if na_janela else None)
 
 
 def _oneline(s: str) -> str:

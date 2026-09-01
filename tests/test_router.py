@@ -68,7 +68,9 @@ def test_route_monta_prompt_sem_persona_e_com_contexto():
     assert "SATÉLITE ATIVO: lilith" in user and "já ataquei" in user
     assert kw["response_format"]["json_schema"]["strict"] is True
     assert kw["temperature"] == 0
-    assert "Punk Records" not in kw["messages"][0]["content"]   # sem persona, sem índice: é o que o mantém barato
+    system = kw["messages"][0]["content"]
+    # o que mantém o roteador barato é o TAMANHO: sem persona (~7k chars) e sem INDEX.md
+    assert len(system) < 3000 and "Kwahaha" not in system and "## Resumo" not in system
 
 
 def test_route_confianca_baixa_nao_aciona_ninguem():
@@ -154,3 +156,14 @@ def test_falta_de_api_key_falha_fechada_sem_traceback(monkeypatch):
 def test_log_do_roteador_nao_quebra_o_json_do_log():
     """MÉDIO: o log do projeto é uma linha JSON; aspas do modelo corromperiam o registro."""
     assert router._oneline('ele disse "oi"\nna outra linha') == "ele disse 'oi' na outra linha"
+
+
+def test_reason_tem_teto_no_schema_e_saida_com_folga():
+    """Produção 2026-08-28: max_tokens=200 cortava o JSON no meio do `reason` e o roteador calava por defeito."""
+    props = router._schema()["properties"]
+    assert props["reason"]["maxLength"] == 120
+    with patch("vegapunk.router._client") as c:
+        c.return_value.chat.completions.create.return_value = _resp(
+            {"satellites": [], "confidence": "alta", "reason": "x"})
+        router.route("oi")
+        assert c.return_value.chat.completions.create.call_args.kwargs["max_tokens"] >= 400

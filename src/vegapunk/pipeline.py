@@ -41,13 +41,23 @@ def format_summary(e: dict, sat: str | None = None) -> str:
     return "\n".join(parts)
 
 
+MAX_PARALELO = 3   # itens processando ao mesmo tempo. Whisper come CPU e o OpenRouter devolve 429 em
+                   # rajada: 30 links colados de uma vez derrubavam o container e sumiam em _pending.
+
+
 class Pipeline:
     def __init__(self, db: Database, notify):
-        """notify(chat_id, text, reply_to=None, item_id=None) -> awaitable. item_id != None => teclado de triagem."""
+        """notify(chat_id, text, reply_to=None, item_id=None, sat=None) -> awaitable. item_id != None => teclado."""
         self.db = db
         self.notify = notify
+        self._vaga = asyncio.Semaphore(MAX_PARALELO)
 
     async def run(self, item_id: str):
+        """Espera uma vaga antes de trabalhar: colar 30 links enfileira em vez de brigar por CPU."""
+        async with self._vaga:
+            await self._run(item_id)
+
+    async def _run(self, item_id: str):
         try:
             item = self.db.get(item_id)
             if item["status"] == "captured":
@@ -80,7 +90,7 @@ class Pipeline:
                                       platform=n.platform, external_id=None, canonical_url=n.canonical_url)
                 await self.notify(item["telegram_chat_id"],
                                   voices.duplicate_line(dup["captured_at"][:10], dup["shared_count"] + 1, dup["status"], sat=item["satellite"]),
-                                  reply_to=item["telegram_message_id"])
+                                  reply_to=item["telegram_message_id"], sat=item["satellite"])
                 return None
         self.db.transition_to(item_id, "normalized", "normalize_job", {},
                               platform=n.platform, external_id=n.external_id or item_id[:8],
@@ -124,7 +134,7 @@ class Pipeline:
         await asyncio.to_thread(vault.git_commit, f"kb: pending {item['platform']}/{item['external_id']}")
         kind = "unsupported" if code == "ERR-002" else "slides" if code == "ERR-008" else "extract"
         msg = voices.failure_line(kind, item_id[:8], code, sat=item["satellite"])
-        await self.notify(item["telegram_chat_id"], msg, reply_to=item["telegram_message_id"])
+        await self.notify(item["telegram_chat_id"], msg, reply_to=item["telegram_message_id"], sat=item["satellite"])
         return False
 
     async def step_enrich(self, item_id: str) -> bool:
@@ -156,7 +166,8 @@ class Pipeline:
         await asyncio.to_thread(vault.write_index, [dict(r) for r in self.db.all_with_enrichment()])
         await asyncio.to_thread(vault.git_commit, f"kb: add {item['platform']}/{item['external_id']}")
         text = format_summary(json.loads(item["enrichment"]), item.get("satellite"))
-        await self.notify(item["telegram_chat_id"], text, reply_to=item["telegram_message_id"], item_id=item_id)
+        await self.notify(item["telegram_chat_id"], text, reply_to=item["telegram_message_id"],
+                          item_id=item_id, sat=item.get("satellite"), titulo=item.get("title"))
 
     # ── triagem ─────────────────────────────────────────────
     async def triage(self, item_id: str, decision: str) -> str:

@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.8.0 — 2026-08-31
+### Adicionado
+- **A cascata do grupo (Story 1c)**: `router.decide()` compõe as camadas 1–3 numa função só — `@menção` responde sem roteador, mensagem sem nome e fora da janela não custa nada, e só então o roteador decide. Não existe caminho no `bot.py` até `route()` que pule `mentions()` (há teste que lê o arquivo e falha se alguém tentar).
+- **Janela de continuidade de 10 minutos**: `chat.active_age()` lê o `updated_at` do `chat_state`; a conversa segue sem repetir o nome, e a janela passa a acompanhar quem foi chamado PRIMEIRO, não quem falou por último.
+- **Modo triagem** (`VEGAPUNK_GROUP_TRIAGE`, default `true`): sem nome na mensagem, o roteador escolhe o dono pelo ASSUNTO — pode ser o próprio Stella. As especialidades saem do `persona.focus` do `.md` de cada Satélite: fonte única, sem cópia paralela.
+- **A captura fala pela boca do dono (Story 1d)**: no grupo, quem anuncia e resume um link é o bot do Satélite dono. O teclado de triagem sai numa mensagem à parte, **pelo leitor** — o clique de um botão volta para o bot que enviou, e só o leitor tem handler de callback. A linha do teclado agora traz o título do item.
+- **Tetos em todos os três caminhos de gasto**: 20 decisões/min (roteador), 6 respostas/min e 25/hora (personagem, calibrado pela York com o custo medido), 3 itens em paralelo no pipeline (semáforo), 1 Satélite em triagem e 3 no modo destinatário.
+- `tests/test_cascade.py` e `tests/test_group_glue.py`. Suíte: 143.
+
+### Corrigido
+- **`Message to be replied not found`**: os seis bots rodam com privacy mode ON e nunca "veem" a mensagem original. Só o leitor cita; os outros tentam de novo sem citação antes de cair para ele — a queda mascarava isso em "todos respondem como Stella".
+- **`max_tokens=200` cortava o JSON do roteador** no meio do `reason`, e ele calava por defeito. Agora 400, com `reason` limitado a 120 caracteres no schema e no prompt.
+- **Triagem devolvia até 3 Satélites** quando o prompt pedia um: três respostas de ~55k tokens numa pergunta só. Teto de 1 aplicado na fonte.
+- **A captura não tinha teto nenhum** — não havia um `Semaphore` no projeto inteiro. 30 links colados disparavam 30 pipelines juntos: Whisper brigando por CPU e 429 em rajada.
+- Bot que falha no `get_me` é desligado (vazava pool httpx); inicialização em paralelo (1,6 s contra 17 s) com uma segunda chance.
+
+### Verificado em produção (2026-08-28)
+`bom dia` → silêncio. `Lilith, o que acha?` → só ela, pelo bot dela. `e isso aí?` → ela de novo, sem repetir o nome. `Shaka e Lilith` → os dois, dois bots. `@vegapunkkyorkbot` → só a York. `qual é o melhor de vocês para LGPD?` → triagem escolheu o Shaka, que citou quatro leis do vault.
+
+### Custo medido
+Decisão do roteador US$ 0,0004 · resposta em personagem US$ 0,0165 (~42k tokens) · item capturado ~5,5k tokens. Total do bot desde que existe: **US$ 0,62**. Projeção: US$ 3–6/mês no uso do Fernando.
+
+### Gate: Shaka PASS · Verify: Lilith 3 rodadas (1 ALTO por rodada, todos fechados) · Testes: 143/143
+
 ## v1.7.0 — 2026-08-28
 ### Adicionado
 - `src/vegapunk/speakers.py`: os outros seis Satélites como bots que só FALAM. Decisão de projeto: `telegram.Bot` puro em vez de uma `Application` por token — um laço de polling em vez de sete, e o critério "os outros não registram handler" vira estrutural (num `Bot` não existe onde registrar). Inicialização em paralelo (1,6 s contra 17 s sequencial) com uma segunda chance, porque o `TimedOut` do Telegram é intermitente conhecido e sem repique um piscar de rede aposentaria aquele bot até o restart seguinte.

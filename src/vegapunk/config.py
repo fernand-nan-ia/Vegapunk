@@ -47,6 +47,7 @@ class Settings:
     # Porteiro do dinheiro: nada chega ao OpenRouter sem passar por estes três (ver bot.is_allowed).
     allowed_user_ids: set[int] = field(default_factory=lambda: _ids(os.environ.get("TELEGRAM_ALLOWED_USER_IDS", "")))
     group_enabled: bool = os.environ.get("VEGAPUNK_GROUP_ENABLED", "false").lower() == "true"   # grupo só responde quando ligado de propósito
+    group_triage: bool = os.environ.get("VEGAPUNK_GROUP_TRIAGE", "true").lower() == "true"     # sem nome: roteador escolhe o dono pelo assunto
     openrouter_api_key: str = os.environ.get("OPENROUTER_API_KEY", "")
     model: str = os.environ.get("VEGAPUNK_MODEL", "google/gemini-3.7-flash")
     router_model: str = os.environ.get("VEGAPUNK_ROUTER_MODEL", "")   # vazio = usa `model`; roteador do grupo (router.py)

@@ -106,6 +106,14 @@ class Speakers:
         except Exception:
             if bot is self.fallback:
                 raise
+            if kw.get("reply_to_message_id") is not None:
+                # segunda chance MANTENDO a identidade: perder a citação é melhor que perder a cara
+                kw.pop("reply_to_message_id")
+                try:
+                    await bot.send_message(chat_id, text, **kw)
+                    return bot
+                except Exception:
+                    pass
             log.exception("bot de %s falhou ao enviar; caindo para o %s", sat_id, READER)
             # sem `reply_to_message_id`: se a mensagem original sumiu, ela é a causa da falha e
             # repetir o mesmo kwarg faria o leitor falhar igual — a resposta já foi paga, não pode sumir
@@ -126,6 +134,12 @@ class Speakers:
         """
         kw.setdefault("parse_mode", ParseMode.HTML)
         bot = self.bot_for(sat_id, chat_id)
+        if bot is not self.fallback:
+            # Os outros seis rodam com privacy mode ON: nunca receberam a mensagem original, e o
+            # Telegram recusa com "Message to be replied not found". Só o leitor pode citar.
+            # (Descoberto em produção em 2026-08-28: a queda para o leitor mascarava isso em
+            #  "todos respondem como Stella".)
+            reply_to = None
         for i, part in enumerate(parts):
             bot = await self._enviar(bot, sat_id, chat_id, part,
                                      reply_to_message_id=reply_to if i == 0 else None, **kw)

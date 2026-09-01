@@ -156,3 +156,35 @@ def test_queda_para_o_leitor_larga_o_reply_to(tokens_dos_sete):
         corre(s.initialize())
         corre(s.say_all("lilith", GRUPO, ["oi"], reply_to=9))
     assert leitor.send_message.await_args.kwargs.get("reply_to_message_id") is None
+
+
+def test_satelite_com_privacy_on_nao_cita_a_mensagem(tokens_dos_sete):
+    """Produção 2026-08-28: BadRequest "Message to be replied not found" — o bot nunca viu a mensagem."""
+    leitor, lilith = _bot("stella_bot"), _bot()
+    with patch("vegapunk.speakers.Bot", return_value=lilith):
+        s = speakers.Speakers(fallback=leitor)
+        corre(s.initialize())
+        corre(s.say_all("lilith", GRUPO, ["oi"], reply_to=9))
+    assert lilith.send_message.await_args.kwargs.get("reply_to_message_id") is None
+    leitor.send_message.assert_not_awaited()          # e a resposta NÃO caiu para o leitor
+
+
+def test_leitor_continua_citando_na_dm(tokens_dos_sete):
+    leitor = _bot("stella_bot")
+    with patch("vegapunk.speakers.Bot", return_value=_bot()):
+        s = speakers.Speakers(fallback=leitor)
+        corre(s.initialize())
+        corre(s.say_all("lilith", DM, ["oi"], reply_to=9))
+    assert leitor.send_message.await_args.kwargs.get("reply_to_message_id") == 9
+
+
+def test_falha_com_citacao_tenta_de_novo_sem_citacao_antes_de_desistir(tokens_dos_sete):
+    """Perder a citação é melhor que perder a cara do Satélite."""
+    leitor, lilith = _bot("stella_bot"), _bot()
+    lilith.send_message = AsyncMock(side_effect=[RuntimeError("Message to be replied not found"), None])
+    s = speakers.Speakers(fallback=leitor)
+    s.bots["lilith"] = lilith
+    corre(s._enviar(lilith, "lilith", GRUPO, "oi", reply_to_message_id=9))
+    assert lilith.send_message.await_count == 2
+    leitor.send_message.assert_not_awaited()
+

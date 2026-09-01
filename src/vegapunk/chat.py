@@ -50,6 +50,23 @@ class Chat:
         r = self.db.conn.execute("SELECT satellite FROM chat_state WHERE chat_id=?", (chat_id,)).fetchone()
         return r["satellite"] if r else None
 
+    def active_age(self, chat_id: int) -> tuple[str | None, float | None]:
+        """Quem falou por último e há quantos segundos — base da janela de continuidade (10 min).
+
+        `wake()` atualiza `updated_at` a cada resposta, então isto mede a última interação real.
+        """
+        r = self.db.conn.execute("SELECT satellite, updated_at FROM chat_state WHERE chat_id=?",
+                                 (chat_id,)).fetchone()
+        if not r:
+            return None, None
+        try:
+            quando = datetime.fromisoformat(r["updated_at"])
+        except ValueError:
+            return r["satellite"], None
+        if quando.tzinfo is None:
+            quando = quando.replace(tzinfo=timezone.utc)
+        return r["satellite"], (datetime.now(timezone.utc) - quando).total_seconds()
+
     def wake(self, chat_id: int, sat_id: str) -> satellites.Satellite:
         sat = satellites.load(sat_id)
         self.db.conn.execute(
@@ -129,9 +146,13 @@ class Chat:
                     f"Se faz no Claude Code: /vegapunk:{sat.id} → *{name}. Aqui posso:\n{menu}")
         return f"{voices.speaker_plain(sat.id)}: não conheço *{name}. Mande *help para ver o que eu faço por aqui."
 
-    def reply(self, chat_id: int, user_text: str) -> tuple[satellites.Satellite, str]:
-        """Síncrono (chamar via asyncio.to_thread). Acorda Stella se ninguém estiver ativo. Loop de ferramentas."""
-        sat_id = self.active(chat_id) or satellites.DEFAULT
+    def reply(self, chat_id: int, user_text: str, as_sat: str | None = None) -> tuple[satellites.Satellite, str]:
+        """Síncrono (chamar via asyncio.to_thread). Loop de ferramentas.
+
+        `as_sat` = responder COMO este Satélite (o grupo, onde quem responde é decidido pela cascata).
+        Sem ele, vale o ativo do chat, e Stella se ninguém estiver acordado — comportamento da DM.
+        """
+        sat_id = as_sat or self.active(chat_id) or satellites.DEFAULT
         sat = self.wake(chat_id, sat_id)
         command = satellites.parse_command(user_text)
         if command:
