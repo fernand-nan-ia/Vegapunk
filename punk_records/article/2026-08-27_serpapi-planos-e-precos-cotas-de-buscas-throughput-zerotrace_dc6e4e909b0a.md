@@ -5,8 +5,8 @@ external_id: "dc6e4e909b0a"
 canonical_url: "https://serpapi.com/pricing"
 channel: "SerpApi"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["serpapi", "precos", "api-de-busca", "serp", "web-scraping", "planos"]
 applicability:
   saas_pessoal: alta

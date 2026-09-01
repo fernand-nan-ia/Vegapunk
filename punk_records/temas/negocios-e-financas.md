@@ -58,7 +58,7 @@ Billing do Resend: um único e-mail de fatura por time (use alias ou convide mem
 Free: 100 e-mails/dia, 3 domínios, 1 webhook.
 
 ## [SerpApi — planos e preços: cotas de buscas, throughput, ZeroTrace e Legal Shield](../article/2026-08-27_serpapi-planos-e-precos-cotas-de-buscas-throughput-zerotrace_dc6e4e909b0a.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `serpapi` `precos` `api-de-busca` `serp` `web-scraping` `planos`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `serpapi` `precos` `api-de-busca` `serp` `web-scraping` `planos`
 
 SerpApi cobra por buscas bem-sucedidas: grátis 250/mês; planos de 1.000, 5.000 e 30.000/mês (valores em US$ não vieram no texto).
 
