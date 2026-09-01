@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [3 prompts de emergência para quando a IA quebra o código no Vibe Coding](../tiktok/2026-09-01_3-prompts-de-emergencia-para-quando-a-ia-quebra-o-codigo-no_7677947166140239122.md)
+2026-09-01 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `vibe-coding` `claude-code` `prompt-engineering` `debugging` `cursor` `troubleshooting`
+
+Três prompts táticos para conter alucinações e quebras de código em ferramentas como Claude Code e Cursor.
 
 ## [Marca d'Água Invisível no Claude e o Rastreamento de Textos Gerados](../youtube/2026-09-01_marca-d-agua-invisivel-no-claude-e-o-rastreamento-de-textos_l881Vh5IhiI.md)
 2026-09-01 · youtube · SaaS media · cliente media · estudo alta · triagem archive · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance`
