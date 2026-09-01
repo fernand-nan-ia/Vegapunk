@@ -5,8 +5,8 @@ external_id: "deade02168a7"
 canonical_url: "https://sentry.io/pricing"
 channel: "Sentry"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["sentry", "precos", "monitoramento-de-erros", "observabilidade", "tracing"]
 applicability:
   saas_pessoal: alta
