@@ -5,8 +5,8 @@ external_id: "48d744ad5a68"
 canonical_url: "https://www.maptiler.com/cloud"
 channel: "Maptiler"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["maptiler", "mapas", "geocoding", "wmts", "qgis", "geotiff", "epsg"]
 applicability:
   saas_pessoal: media

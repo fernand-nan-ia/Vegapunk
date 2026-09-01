@@ -23,7 +23,7 @@ Guia técnico detalhado sobre como montar um servidor de mídia privado e automa
 Geoapify: geocoding, rotas, lugares e isócronas sobre OSM/OpenAddresses; a diferença é a licença — você pode guardar e reutilizar os resultados (montar sua base de endereços), e o Free vale para uso comercial com atribui
 
 ## [MapTiler Cloud — API de mapas para web e mobile: estilos customizados, hospedagem de geodados, geocoding, mapas estáticos, coordenadas e IP geolocation](../article/2026-08-27_maptiler-cloud-api-de-mapas-para-web-e-mobile-estilos-custom_48d744ad5a68.md)
-2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff`
+2026-08-27 · article · SaaS media · cliente media · estudo media · triagem archive · `maptiler` `mapas` `geocoding` `wmts` `qgis` `geotiff`
 
 MapTiler Cloud: mapas com estilo próprio, hospedagem de GeoTIFF/GeoJSON/Shapefile, geocoding, mapas estáticos, WMTS para QGIS e API de conversão de coordenadas (EPSG).
 
