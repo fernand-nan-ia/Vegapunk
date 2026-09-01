@@ -48,7 +48,7 @@ Sentry: grátis para 1 dev (erros + tracing + alertas + MCP); Team US$ 26/mês (
 Cada destinatário conta como um e-mail (To/CC/BCC); Free 100/dia; pagos cobram excedente só acima do volume mensal; Enterprise a partir de 3 milhões/mês.
 
 ## [Resend — cobrança: assinatura, e-mail de faturamento único, cartão, endereço, tax ID, faturas e cancelamento](../article/2026-08-27_resend-cobranca-assinatura-e-mail-de-faturamento-unico-carta_fcde67aa166b.md)
-2026-08-27 · article · SaaS media · cliente baixa · estudo baixa · triagem — · `resend` `billing` `faturas` `assinatura`
+2026-08-27 · article · SaaS media · cliente baixa · estudo baixa · triagem archive · `resend` `billing` `faturas` `assinatura`
 
 Billing do Resend: um único e-mail de fatura por time (use alias ou convide membros), cartão, endereço, tax ID e faturas; cancelar pelo menu do plano.
 

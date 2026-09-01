@@ -5,8 +5,8 @@ external_id: "fcde67aa166b"
 canonical_url: "https://resend.com/docs/dashboard/settings/billing"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "billing", "faturas", "assinatura"]
 applicability:
   saas_pessoal: media
