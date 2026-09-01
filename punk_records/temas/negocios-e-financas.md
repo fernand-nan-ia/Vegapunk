@@ -78,7 +78,7 @@ Planos Shopify no Brasil: Basic US$ 14, Grow US$ 39, Advanced US$ 299, Plus a pa
 Detalhe dos planos que a página de preços esconde: Single 10 GB/backups semanais/AI Builder 5 créditos; Premium 3 sites/20 GB; Unlimited 50 GB NVMe/backups diários/15 créditos; Cloud Startup 100 GB/backups sob demanda.
 
 ## [Hostinger — preços de registro de domínios (página de TLDs)](../article/2026-08-27_hostinger-precos-de-registro-de-dominios-pagina-de-tlds_c00ffe700d27.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem — · `hostinger` `dominios` `registro-de-dominio` `precos`
+2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem archive · `hostinger` `dominios` `registro-de-dominio` `precos`
 
 Página de preços de domínios: a tabela por TLD não renderizou no texto (JavaScript).
 

@@ -5,8 +5,8 @@ external_id: "c00ffe700d27"
 canonical_url: "https://www.hostinger.com/br/precos/domains"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "dominios", "registro-de-dominio", "precos"]
 applicability:
   saas_pessoal: media
