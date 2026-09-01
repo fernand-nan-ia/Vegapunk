@@ -5,8 +5,8 @@ external_id: "26c3e750d75f"
 canonical_url: "https://resend.com/docs/dashboard/logs/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "logs", "observabilidade", "debug", "api"]
 applicability:
   saas_pessoal: alta

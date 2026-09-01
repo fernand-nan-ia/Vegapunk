@@ -148,7 +148,7 @@ Tracking exige um subdomínio próprio (CNAME) para reescrever links e servir o 
 Automations = fluxos 'quando acontecer X, mande Y depois de Z': gatilho por evento (user.created), passos de condição, atraso, espera por evento, envio com template, atualização de contato; runs para monitorar; descadast
 
 ## [Resend — logs de API: filtros por status, detalhes de requisição/resposta e 'Help me fix'](../article/2026-08-27_resend-logs-de-api-filtros-por-status-detalhes-de-requisicao_26c3e750d75f.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `logs` `observabilidade` `debug` `api`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `logs` `observabilidade` `debug` `api`
 
 Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtro por erro/chave/SDK, link para o e-mail gerado e botão 'Help me fix' para erros comuns.
 
