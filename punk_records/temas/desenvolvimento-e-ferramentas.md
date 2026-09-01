@@ -193,7 +193,7 @@ Para usar o Resend: domínio verificado + chave de API.
 Evento customizado = nome (ex.: user.created) + schema opcional do payload; um evento pode disparar várias automações; payload inválido dá 422.
 
 ## [Resend — visão geral do envio de e-mails transacionais (recursos e formas de integrar)](../article/2026-08-27_resend-visao-geral-do-envio-de-e-mails-transacionais-recurso_51f277b15710.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `email-transacional` `api` `sdk` `smtp` `mcp`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `email-transacional` `api` `sdk` `smtp` `mcp`
 
 Índice do que o Resend faz para e-mail transacional: envio simples ou em lote, agendamento, anexos, cabeçalhos, idempotência, logs e métricas — via SDK, API, CLI, MCP ou SMTP.
 

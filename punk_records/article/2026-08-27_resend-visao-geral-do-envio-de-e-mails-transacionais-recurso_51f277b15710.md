@@ -5,8 +5,8 @@ external_id: "51f277b15710"
 canonical_url: "https://resend.com/docs/dashboard/emails/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "email-transacional", "api", "sdk", "smtp", "mcp"]
 applicability:
   saas_pessoal: alta
