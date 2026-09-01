@@ -5,8 +5,8 @@ external_id: "ac7e6223fff2"
 canonical_url: "https://www.hostinger.com/br/preco/email-marketing"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "email-marketing", "reach", "lgpd", "automacao-de-marketing", "precos"]
 applicability:
   saas_pessoal: baixa

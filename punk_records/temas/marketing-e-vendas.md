@@ -18,7 +18,7 @@ SaaS a ~R$ 6 mil/mês sem tráfego pago.
 Domínio comprado pela Shopify conecta sozinho à loja: DNS automático, hospedagem inclusa, SSL e WHOIS grátis, até 20 domínios por loja, encaminhamento de e-mail.
 
 ## [Hostinger Reach — e-mail marketing com IA: modelo de cobrança e recursos](../article/2026-08-27_hostinger-reach-e-mail-marketing-com-ia-modelo-de-cobranca-e_ac7e6223fff2.md)
-2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `hostinger` `email-marketing` `reach` `lgpd` `automacao-de-marketing` `precos`
+2026-08-27 · article · SaaS baixa · cliente media · estudo baixa · triagem archive · `hostinger` `email-marketing` `reach` `lgpd` `automacao-de-marketing` `precos`
 
 E-mail marketing da Hostinger: cobra por contatos e envios/mês (valores não renderizaram).
 
