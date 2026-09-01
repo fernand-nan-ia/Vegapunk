@@ -5,8 +5,8 @@ external_id: "7271ce6c8e8b"
 canonical_url: "https://uptimerobot.com/pricing"
 channel: "UptimeRobot"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["uptimerobot", "monitoramento", "uptime", "precos", "ssl", "status-page"]
 applicability:
   saas_pessoal: alta

@@ -23,7 +23,7 @@ GitHub Free já dá repositórios privados ilimitados e 2.000 min/mês de Action
 reCAPTCHA (Fraud Defense): Essentials grátis até 10 mil avaliações/mês; Premium US$ 8 fixo até 100 mil e US$ 1 por 1.000 depois (exige cartão no Google Cloud); Enterprise com contrato anual.
 
 ## [UptimeRobot — preços: Free (50 monitores, 5 min), Solo US$ 9, Team US$ 35, Scale US$ 65/mês, Enterprise](../article/2026-08-27_uptimerobot-precos-free-50-monitores-5-min-solo-us-9-team-us_7271ce6c8e8b.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `uptimerobot` `monitoramento` `uptime` `precos` `ssl` `status-page`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `uptimerobot` `monitoramento` `uptime` `precos` `ssl` `status-page`
 
 UptimeRobot: grátis com 50 monitores a cada 5 min (HTTP, porta, ping, keyword, SSL/domínio); Solo US$ 9 (10 monitores, 60 s); Team US$ 35 (100, 30 s, webhooks); Scale US$ 65 (200–500, 15 s).
 
