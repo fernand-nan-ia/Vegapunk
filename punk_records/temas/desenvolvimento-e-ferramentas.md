@@ -78,7 +78,7 @@ Deploy automático de Workers a cada push com Workers Builds (GitHub/GitLab) ou 
 Regras de produção para Workers: compatibility_date atual, nodejs_compat, tipos gerados por wrangler types, segredos via wrangler secret put (nunca no config), um ambiente por estágio com bindings próprios.
 
 ## [Cloudflare Workers — catálogo de exemplos: SPA shell, Analytics Engine, streaming JSON, auth básica, HMAC, Turnstile, cache, redirects, geolocalização](../article/2026-08-27_cloudflare-workers-catalogo-de-exemplos-spa-shell-analytics_21b05c335f15.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `exemplos` `hmac` `turnstile` `cache`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `exemplos` `hmac` `turnstile` `cache`
 
 Receitas prontas de Workers: auth básica, HMAC, Turnstile, cache de POST, redirects em massa, streaming, geolocalização, Analytics Engine — copiar e adaptar.
 

@@ -5,8 +5,8 @@ external_id: "21b05c335f15"
 canonical_url: "https://developers.cloudflare.com/workers/examples"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "exemplos", "hmac", "turnstile", "cache", "redirects"]
 applicability:
   saas_pessoal: alta
