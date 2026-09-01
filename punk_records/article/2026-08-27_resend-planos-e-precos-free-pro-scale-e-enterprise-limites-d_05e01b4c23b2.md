@@ -5,8 +5,8 @@ external_id: "05e01b4c23b2"
 canonical_url: "https://resend.com/pricing"
 channel: "resend.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "precos", "planos", "limites", "ip-dedicado"]
 applicability:
   saas_pessoal: alta

@@ -53,7 +53,7 @@ Cada destinatário conta como um e-mail (To/CC/BCC); Free 100/dia; pagos cobram 
 Billing do Resend: um único e-mail de fatura por time (use alias ou convide membros), cartão, endereço, tax ID e faturas; cancelar pelo menu do plano.
 
 ## [Resend — planos e preços: Free, Pro, Scale e Enterprise (limites, domínios, retenção, webhooks, IP dedicado)](../article/2026-08-27_resend-planos-e-precos-free-pro-scale-e-enterprise-limites-d_05e01b4c23b2.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `precos` `planos` `limites` `ip-dedicado`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `precos` `planos` `limites` `ip-dedicado`
 
 Free: 100 e-mails/dia, 3 domínios, 1 webhook.
 
