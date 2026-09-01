@@ -5,8 +5,8 @@ external_id: "1a6de9d5c684"
 canonical_url: "https://www.hostinger.com/br/precos/n8n-hosting"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "n8n", "openclaw", "hermes-agent", "automacao-com-ia", "hospedagem-gerenciada", "precos"]
 applicability:
   saas_pessoal: media
