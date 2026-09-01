@@ -5,8 +5,8 @@ external_id: "2791bb5fe7ab"
 canonical_url: "https://resend.com/docs/mcp-server"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "mcp", "claude-code", "agentes", "automacao"]
 applicability:
   saas_pessoal: alta

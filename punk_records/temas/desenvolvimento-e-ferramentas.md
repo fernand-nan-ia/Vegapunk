@@ -98,7 +98,7 @@ Exemplos prontos por framework (inclui FastAPI, Flask e Django) e por recurso: e
 O Resend se liga a quase tudo: Claude Code e Cursor (MCP/plugin), n8n/Zapier/Make, Novu/Knock, Payload/Strapi, Inngest/Trigger.dev, WordPress via Post SMTP.
 
 ## [Resend MCP Server — remoto (OAuth/Bearer) e local (npx, stdio/HTTP): opções e ferramentas para agentes](../article/2026-08-27_resend-mcp-server-remoto-oauth-bearer-e-local-npx-stdio-http_2791bb5fe7ab.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `mcp` `claude-code` `agentes` `automacao`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `mcp` `claude-code` `agentes` `automacao`
 
 MCP do Resend: remoto (OAuth no Claude Code via /mcp) ou local via npx (stdio/HTTP), com remetente padrão configurável; dá ao agente acesso a e-mails, domínios e contatos por linguagem natural.
 
