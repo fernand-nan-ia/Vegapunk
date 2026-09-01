@@ -33,7 +33,7 @@ UptimeRobot: grátis com 50 monitores a cada 5 min (HTTP, porta, ping, keyword, 
 Analytics Engine: escreve 100 mil pontos/dia e consulta 10 mil/dia de graça; no Paid, 10 M pontos e 1 M consultas/mês inclusos, depois US$ 0,25 e US$ 1,00 por milhão.
 
 ## [Cloudflare Workers — preço: Free 100 mil requisições/dia e 10 ms de CPU; Paid US$ 0,30/milhão de requisições e US$ 0,02/milhão de ms de CPU](../article/2026-08-27_cloudflare-workers-preco-free-100-mil-requisicoes-dia-e-10-m_fc7635ee4280.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `precos` `serverless`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `precos` `serverless`
 
 Workers: grátis até 100 mil req/dia (10 ms CPU cada); pago a US$ 0,30 por milhão de requisições + US$ 0,02 por milhão de ms de CPU.
 

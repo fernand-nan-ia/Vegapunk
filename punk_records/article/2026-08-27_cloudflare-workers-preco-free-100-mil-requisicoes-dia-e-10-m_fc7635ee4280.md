@@ -5,8 +5,8 @@ external_id: "fc7635ee4280"
 canonical_url: "https://www.cloudflare.com/plans"
 channel: "Cloudflare"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "precos", "serverless"]
 applicability:
   saas_pessoal: alta
