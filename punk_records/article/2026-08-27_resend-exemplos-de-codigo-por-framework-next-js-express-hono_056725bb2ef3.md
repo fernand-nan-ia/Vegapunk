@@ -5,8 +5,8 @@ external_id: "056725bb2ef3"
 canonical_url: "https://resend.com/docs/examples"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "exemplos", "fastapi", "django", "nextjs", "double-opt-in", "magic-link"]
 applicability:
   saas_pessoal: alta

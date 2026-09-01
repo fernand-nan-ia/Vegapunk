@@ -88,7 +88,7 @@ Receitas prontas de Workers: auth básica, HMAC, Turnstile, cache de POST, redir
 Workers: serverless na borda com bindings prontos para D1/KV/R2/Queues/Durable Objects, Workers AI, Workflows, Vectorize e Browser Rendering; Python e TypeScript suportados; começa grátis.
 
 ## [Resend — exemplos de código por framework (Next.js, Express, Hono, FastAPI/Flask/Django, Rails, Go…) e por recurso](../article/2026-08-27_resend-exemplos-de-codigo-por-framework-next-js-express-hono_056725bb2ef3.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `exemplos` `fastapi` `django` `nextjs` `double-opt-in`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `exemplos` `fastapi` `django` `nextjs` `double-opt-in`
 
 Exemplos prontos por framework (inclui FastAPI, Flask e Django) e por recurso: envio, anexos, CID, templates, agendamento, formulário de contato, double opt-in, inbound, automations, Better Auth.
 
