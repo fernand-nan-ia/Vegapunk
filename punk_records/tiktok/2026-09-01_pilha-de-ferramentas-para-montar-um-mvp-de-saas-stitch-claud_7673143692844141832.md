@@ -5,8 +5,8 @@ external_id: "7673143692844141832"
 canonical_url: "https://www.tiktok.com/@ivesgabriell/photo/7673143692844141832"
 channel: "Ivesgabriell"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["mvp", "stack-de-ferramentas", "supabase", "orquestracao-de-modelos", "sucesso-do-cliente", "whatsapp", "gateway-de-pagamento"]
 applicability:
   saas_pessoal: alta

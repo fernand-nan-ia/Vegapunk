@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 53 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Pilha de ferramentas para montar um MVP de SaaS: Stitch, Claude, 21st.dev, Search Console, UAZAPI, Oracle e Supabase](../tiktok/2026-09-01_pilha-de-ferramentas-para-montar-um-mvp-de-saas-stitch-claud_7673143692844141832.md)
-2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem — · `mvp` `stack-de-ferramentas` `supabase` `orquestracao-de-modelos` `sucesso-do-cliente` `whatsapp`
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `mvp` `stack-de-ferramentas` `supabase` `orquestracao-de-modelos` `sucesso-do-cliente` `whatsapp`
 
 Rota de ferramentas para um MVP: Stitch para telas, Claude para construir (Fable planeja e revisa segurança, Opus constrói), 21st.dev para o front não ter cara de IA, Supabase, Oracle e UAZAPI.
 
