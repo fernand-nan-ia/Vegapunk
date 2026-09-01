@@ -3,7 +3,7 @@
 _micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Como lançar um Micro SaaS em 48 horas com custo fixo zero](../tiktok/2026-09-01_como-lancar-um-micro-saas-em-48-horas-com-custo-fixo-zero_7679992868840295687.md)
-2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem — · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel`
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel`
 
 Guia prático para construir e colocar no ar um Micro SaaS em 48 horas com custo zero de infraestrutura.
 

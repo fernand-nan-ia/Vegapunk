@@ -5,8 +5,8 @@ external_id: "7679992868840295687"
 canonical_url: "https://www.tiktok.com/@purevibecoding/photo/7679992868840295687"
 channel: "Vibecoding"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["micro-saas", "mvp", "bootstrapping", "stack-gratuita", "supabase", "vercel", "escopo-enxuto"]
 applicability:
   saas_pessoal: alta

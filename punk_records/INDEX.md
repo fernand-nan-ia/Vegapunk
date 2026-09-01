@@ -113,7 +113,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🚀 Produto e SaaS
 
-- 2026-09-01 · tiktok · [Como lançar um Micro SaaS em 48 horas com custo fixo zero](tiktok/2026-09-01_como-lancar-um-micro-saas-em-48-horas-com-custo-fixo-zero_7679992868840295687.md) · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel` `escopo-enxuto` · alta/media/media · —
+- 2026-09-01 · tiktok · [Como lançar um Micro SaaS em 48 horas com custo fixo zero](tiktok/2026-09-01_como-lancar-um-micro-saas-em-48-horas-com-custo-fixo-zero_7679992868840295687.md) · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel` `escopo-enxuto` · alta/media/media · apply_saas
 - 2026-08-27 · article · [Hostinger Horizons (AI Builder) — planos, créditos de IA e regras de uso](article/2026-08-27_hostinger-horizons-ai-builder-planos-creditos-de-ia-e-regras_353396508dae.md) · `hostinger` `ai-builder` `criador-de-sites-ia` `vibecoding` `precos` `creditos-de-ia` · media/alta/media · archive
 - 2026-08-26 · tiktok · [Como criar um Micro-SaaS de monitoramento regulatório para farmácias](tiktok/2026-08-26_como-criar-um-micro-saas-de-monitoramento-regulatorio-para-f_7665877983718165780.md) · `micro-saas` `vibecoding` `b2b-saas` `anvisa` `whatsapp-api` `automacao` `supabase` · media/media/alta · apply_client
 - 2026-08-26 · tiktok · [Micro-SaaS B2B para Gestão de Resíduos Biológicos e Conformidade Sanitária](tiktok/2026-08-26_micro-saas-b2b-para-gestao-de-residuos-biologicos-e-conformi_7676611889853484295.md) · `micro-saas` `b2b-saas` `compliance` `gestao-residuos` `vigilancia-sanitaria` `ideacao-de-produto` · media/baixa/alta · archive
