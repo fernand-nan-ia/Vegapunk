@@ -83,6 +83,6 @@ Detalhe dos planos que a página de preços esconde: Single 10 GB/backups semana
 Página de preços de domínios: a tabela por TLD não renderizou no texto (JavaScript).
 
 ## [Hostinger — planos e preços de hospedagem de sites (Single, Premium, Unlimited, Cloud Startup)](../article/2026-08-27_hostinger-planos-e-precos-de-hospedagem-de-sites-single-prem_021400311050.md)
-2026-08-27 · article · SaaS alta · cliente alta · estudo media · triagem — · `hostinger` `hospedagem-de-sites` `precos` `planos-de-hospedagem` `custos-de-infraestrutura`
+2026-08-27 · article · SaaS alta · cliente alta · estudo media · triagem archive · `hostinger` `hospedagem-de-sites` `precos` `planos-de-hospedagem` `custos-de-infraestrutura`
 
 Quatro planos de hospedagem (Single a Cloud Startup) por 48 meses: R$ 287 a R$ 1.919, renovando de R$ 23,99 a R$ 129,99/mês.

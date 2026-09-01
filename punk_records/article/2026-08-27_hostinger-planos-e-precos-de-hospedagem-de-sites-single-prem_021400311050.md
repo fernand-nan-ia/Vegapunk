@@ -5,8 +5,8 @@ external_id: "021400311050"
 canonical_url: "https://www.hostinger.com/br/precos"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "hospedagem-de-sites", "precos", "planos-de-hospedagem", "custos-de-infraestrutura"]
 applicability:
   saas_pessoal: alta
