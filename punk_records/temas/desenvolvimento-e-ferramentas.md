@@ -178,7 +178,7 @@ Webhook = sua URL recebe JSON a cada evento de e-mail (delivered, bounced, compl
 Chave de API do Resend: crie com permissão 'Sending access' restrita ao domínio do app, guarde em variável de ambiente e passe ao cliente no código.
 
 ## [Resend — connections: definindo as ligações entre passos de uma automação via API (exemplos em 6 linguagens)](../article/2026-08-27_resend-connections-definindo-as-ligacoes-entre-passos-de-uma_307fcd951e99.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `api` `infra-como-codigo` `python`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `automations` `api` `infra-como-codigo` `python`
 
 Ao criar automações por código, os passos viram nós com chave e as connections ligam from → to.
 

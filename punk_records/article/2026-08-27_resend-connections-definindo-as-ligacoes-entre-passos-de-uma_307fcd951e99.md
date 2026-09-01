@@ -5,8 +5,8 @@ external_id: "307fcd951e99"
 canonical_url: "https://resend.com/docs/dashboard/automations/connections"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "automations", "api", "infra-como-codigo", "python"]
 applicability:
   saas_pessoal: alta
