@@ -5,8 +5,8 @@ external_id: "7668277297434348821"
 canonical_url: "https://www.tiktok.com/@marciolsn/photo/7668277297434348821"
 channel: "Marcio Larsen Jr"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["claude-code", "automacao", "nao-programador", "design-system", "integracao-sistemas", "produtividade"]
 applicability:
   saas_pessoal: media
