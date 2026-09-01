@@ -48,7 +48,7 @@ reCAPTCHA v3 dá uma nota de 0 a 1 sem desafio: coloque o script, chame grecaptc
 MFA no Resend: Profile → Enable MFA → QR no autenticador → código.
 
 ## [Resend — trocar o e-mail da conta: dupla confirmação (novo e atual)](../article/2026-08-27_resend-trocar-o-e-mail-da-conta-dupla-confirmacao-novo-e-atu_304e119d4601.md)
-2026-08-27 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `resend` `conta` `seguranca`
+2026-08-27 · article · SaaS baixa · cliente baixa · estudo baixa · triagem discard · `resend` `conta` `seguranca`
 
 Trocar e-mail da conta Resend exige confirmar nos dois endereços (novo e atual).
 

@@ -5,8 +5,8 @@ external_id: "304e119d4601"
 canonical_url: "https://resend.com/docs/knowledge-base/how-can-i-change-my-email-address"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["resend", "conta", "seguranca"]
 applicability:
   saas_pessoal: baixa
