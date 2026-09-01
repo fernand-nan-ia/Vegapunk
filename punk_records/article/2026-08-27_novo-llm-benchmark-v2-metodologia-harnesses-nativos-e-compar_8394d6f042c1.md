@@ -5,8 +5,8 @@ external_id: "8394d6f042c1"
 canonical_url: "https://akitaonrails.com/2026/07/30/novo-llm-benchmark-refiz-todos-os-testes"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["llm-benchmark", "claude-code", "ai-coding-agents", "model-evaluation", "prompt-caching", "software-engineering"]
 applicability:
   saas_pessoal: alta

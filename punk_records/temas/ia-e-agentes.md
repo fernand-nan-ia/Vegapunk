@@ -48,7 +48,7 @@ Novas taxonomias como Harness e Graph Engineering são infladas para criar merca
 Documentação oficial com a visão geral do Claude Code cobrindo superfícies de uso, instalação e recursos agênticos.
 
 ## [Novo LLM Benchmark v2: Metodologia, Harnesses Nativos e Comparativo de 31 Modelos para Programação](../article/2026-08-27_novo-llm-benchmark-v2-metodologia-harnesses-nativos-e-compar_8394d6f042c1.md)
-2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem — · `llm-benchmark` `claude-code` `ai-coding-agents` `model-evaluation` `prompt-caching` `software-engineering`
+2026-08-27 · article · SaaS alta · cliente alta · estudo alta · triagem archive · `llm-benchmark` `claude-code` `ai-coding-agents` `model-evaluation` `prompt-caching` `software-engineering`
 
 Após a saturação da primeira versão de seu benchmark de engenharia de software, Fabio Akita reformulou a prova completa implementando três fases rigorosas, auditoria explícita e execução em harnesses nativos de cada prov
 
