@@ -5,8 +5,8 @@ external_id: "119ad20aa1ad"
 canonical_url: "https://resend.com/docs/dashboard/emails/embed-inline-images"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "cid", "imagens-inline", "anexos", "html-email", "python"]
 applicability:
   saas_pessoal: alta

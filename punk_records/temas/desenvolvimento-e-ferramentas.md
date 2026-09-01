@@ -123,7 +123,7 @@ headers: {'X-Entity-Ref-ID': id-único} evita que o Gmail empilhe seus e-mails n
 Anexo por URL (path) ou Base64 (content), até 40 MB no total, tipos restritos, nunca em lote; anexos enviados ficam baixáveis por API com URL assinada.
 
 ## [Resend — imagens embutidas (CID) em e-mails: HTML com cid: e anexo com content_id (exemplos em várias linguagens)](../article/2026-08-27_resend-imagens-embutidas-cid-em-e-mails-html-com-cid-e-anexo_119ad20aa1ad.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `cid` `imagens-inline` `anexos` `html-email` `python`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `cid` `imagens-inline` `anexos` `html-email` `python`
 
 Imagem dentro do e-mail: <img src="cid:x"> no HTML + anexo com content_id 'x' (URL ou Base64).
 
