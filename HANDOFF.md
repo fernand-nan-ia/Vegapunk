@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-31, sessão 6 — **v1.8.0 `2f48130`**)
+# HANDOFF — Vegapunk (atualizado em 2026-08-31, sessão 6 — **v1.8.0**, último commit `4ee7177`)
 
 ## TL;DR — o que existe hoje
 
@@ -11,7 +11,7 @@ Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. 
 
 Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**); FURY em `ab4ce12`.
 
-Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: `2f48130`, tag **v1.8.0**, 31/08. **143/143 testes verdes.** O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
+Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, mais `8a32938` (checkpoint) e `4ee7177` (fix do capture.py). **144/144 testes verdes.** Punk Records com **133 itens**. O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
 
 ⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
@@ -291,12 +291,36 @@ O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **
 
 ## Dívida e próximos passos (ordem sugerida)
 
-1. **Colar um link no grupo** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**). É a aceitação que ficou pendente.
+1. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**). Continua pendente: o lote de 31/08 foi capturado pelo Claude Code, que não exercita esse caminho.
 2. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome. Com a triagem ligada esse caso **mudou de natureza** — o roteador é consultado e deve devolver lista vazia por ser frase sem pergunta.
 3. **84 itens no vault sem triagem** (York). Cada link novo entra na mesma fila.
 4. **Story 1e — ler imagens no Telegram** (adiada pelo Fernando em 31/08): ver "Ideias para depois".
 5. **Story 2** (não escrita): histórico compartilhado do grupo (H4), `/custo` agregado, atraso aleatório por bot, renomear `TELEGRAM_BOT_TOKEN` → `_STELLA` (o código já aceita os dois).
 6. **A DM não tem teto nenhum** — metade do gasto sai por lá. Não é urgente (é o Fernando sozinho), mas o cofre está trancado e a janela aberta.
+
+## Sessão 6b (2026-08-31, noite) — lote de 7 TikToks pelo `*capture` e uma regressão da v1.8.0
+
+**Sete links colados aqui no Claude Code** (não no Telegram, a pedido do Fernando: "é melhor do que gastar à toa pelo OpenRouter"). Todos extraídos e gravados; vault de 126 → **133 itens**. Um precisou de duas tentativas (`ERR-003`, o erro intermitente conhecido do TikTok) e passou na segunda.
+
+| Dono | Item | Por que guardar |
+|---|---|---|
+| 🍩 York | Venda de site para clínica odontológica por **R$ 680** | **Primeiro preço real de mercado para site de cliente no vault** — com escopo pedido, 3 perguntas de qualificação e estrutura entregue |
+| 🍩 York | 10 lições de um SaaS a R$ 6 mil/mês com R$ 0 de tráfego | Renovação (R$ 2.973) pesando o dobro da venda nova (R$ 1.499) |
+| 🍩 York | Design do SaaS sem cara de IA | Emojis, travessão, "não é sobre X, é sobre Y" e o ícone de estrelinha |
+| 🧠 Stella | Pythonando: útil × inútil no desenvolvimento com IA | Spec-driven, TDD e quality gate como fundamentais — é o ciclo que já praticamos |
+| 💡 Edison | Nove coisas feitas com Claude por não-programador | Relatório recorrente enviado ao cliente; design system que evita a "cara de IA" |
+| 💡 Edison | Pilha de ferramentas para MVP de SaaS | Separar o modelo que planeja do que constrói; 50 primeiros clientes na mão |
+| 🪖 Shaka | Por que todo projeto vibe-codado nasce em Next.js | A stack não foi escolhida, foi herdada da ferramenta |
+
+### Regressão da v1.8.0 achada pelo lote (corrigida em `4ee7177`)
+
+`scripts/capture.py` tem a **própria implementação** do callback `notify`. A v1.8.0 acrescentou `sat` e `titulo` ao contrato em `bot.py`/`pipeline.py` e o script quebrou com `TypeError: silent() got an unexpected keyword argument 'sat'`. **Nada se perdeu** — o erro acontece depois de gravar no vault e commitar. Corrigido com `**kw` nas duas assinaturas, mais um teste que LÊ o `capture.py` e falha se alguém tirar. **Lição para a próxima**: o contrato do `notify` tem duas implementações; quem mexer numa tem de mexer na outra.
+
+## Dívida nova registrada nesta sessão
+
+- **O gasto da leitura de slides é invisível.** Carrossel de TikTok passa por `enrich.read_slides()`, que usa o modelo **multimodal** e gasta OpenRouter de verdade — mas **nada disso é gravado em `item_events`**, que só registra o enriquecimento. O relatório de custo da York (`punk_records_status`) **subestima desde sempre**, e não dá para saber por quanto. Pior: quando o `*capture` roda por `docker compose exec`, o log sai no processo do exec e não no do container, então nem o log resta. Correção sugerida: gravar um evento com os tokens do `read_slides`, como já se faz no enriquecimento.
+- **Datas do vault em UTC.** O container roda em UTC; itens capturados depois das 21h no horário local entram com a data do **dia seguinte** no nome do arquivo e no `INDEX.md`. Os sete deste lote saíram como `2026-09-01` tendo sido capturados em 31/08. Não quebra nada (links são relativos), mas atrapalha busca por data.
+- **A DM continua sem teto** e o **`INDEX.md` continua crescendo dentro de toda resposta** (agora 133 itens) — as duas dívidas de custo mais antigas.
 
 ## Os 7 Satélites — mapa completo
 
