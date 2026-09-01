@@ -5,8 +5,8 @@ external_id: "26727b74e3c5"
 canonical_url: "https://www.geoapify.com/pricing"
 channel: "Geoapify GmbH"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["geoapify", "precos", "creditos", "geocoding", "free-tier"]
 applicability:
   saas_pessoal: alta

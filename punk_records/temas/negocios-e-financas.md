@@ -3,7 +3,7 @@
 _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Geoapify — preços por créditos: 1 requisição simples = 1 crédito; Free comercial com atribuição; limites 'soft'; dedicado 700 €/mês; SLA 99,5% nos pagos](../article/2026-08-27_geoapify-precos-por-creditos-1-requisicao-simples-1-credito_26727b74e3c5.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `geoapify` `precos` `creditos` `geocoding` `free-tier`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `geoapify` `precos` `creditos` `geocoding` `free-tier`
 
 Geoapify cobra por créditos (1 chamada simples = 1 crédito); Free serve para uso comercial com atribuição e limites 'soft'; valores dos planos não vieram (calculador).
 
