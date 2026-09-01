@@ -58,7 +58,7 @@ Trocar e-mail da conta Resend exige confirmar nos dois endereços (novo e atual)
 Contrato do .br em uma página: você aceita eletronicamente, define três contatos, responde pela senha, paga a anuidade do CGI.br (não pagar = cancelamento e liberação), seus dados vão ao whois público (PJ mais exposta qu
 
 ## [Registro.br — DNS e DNSSEC: o que é, quando é obrigatório, records e erros comuns](../article/2026-08-27_registro-br-dns-e-dnssec-o-que-e-quando-e-obrigatorio-record_c8ea90c3b97b.md)
-2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `registro-br` `dnssec` `dns` `seguranca-de-dominio` `records-ds` `bind`
+2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem archive · `registro-br` `dnssec` `dns` `seguranca-de-dominio` `records-ds` `bind`
 
 DNSSEC no .br: opcional (obrigatório só em b/bet/def/jus/leg/mp/tc.br) e automático se você usa o DNS do Registro.br.
 

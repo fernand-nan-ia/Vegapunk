@@ -5,8 +5,8 @@ external_id: "c8ea90c3b97b"
 canonical_url: "https://registro.br/tecnologia/dnssec"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["registro-br", "dnssec", "dns", "seguranca-de-dominio", "records-ds", "bind"]
 applicability:
   saas_pessoal: media
