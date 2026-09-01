@@ -5,8 +5,8 @@ external_id: "945d75b18fb6"
 canonical_url: "https://resend.com/docs/integrations"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "integracoes", "n8n", "zapier", "wordpress", "claude-code"]
 applicability:
   saas_pessoal: alta

@@ -93,7 +93,7 @@ Workers: serverless na borda com bindings prontos para D1/KV/R2/Queues/Durable O
 Exemplos prontos por framework (inclui FastAPI, Flask e Django) e por recurso: envio, anexos, CID, templates, agendamento, formulário de contato, double opt-in, inbound, automations, Better Auth.
 
 ## [Resend — integrações: agentes de código, ferramentas de IA, no-code (n8n, Zapier, Make), notificações, CMS e dev tools](../article/2026-08-27_resend-integracoes-agentes-de-codigo-ferramentas-de-ia-no-co_945d75b18fb6.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `integracoes` `n8n` `zapier` `wordpress` `claude-code`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `integracoes` `n8n` `zapier` `wordpress` `claude-code`
 
 O Resend se liga a quase tudo: Claude Code e Cursor (MCP/plugin), n8n/Zapier/Make, Novu/Knock, Payload/Strapi, Inngest/Trigger.dev, WordPress via Post SMTP.
 
