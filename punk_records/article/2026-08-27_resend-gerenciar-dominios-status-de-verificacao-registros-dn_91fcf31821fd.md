@@ -5,8 +5,8 @@ external_id: "91fcf31821fd"
 canonical_url: "https://resend.com/docs/dashboard/domains/manage-domains"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "dominio", "dns", "status", "dkim", "spf"]
 applicability:
   saas_pessoal: alta

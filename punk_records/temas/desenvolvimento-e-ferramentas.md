@@ -163,7 +163,7 @@ Envie de subdomínios separados por finalidade (newsletter com tracking, transac
 Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, cole os registros DKIM/SPF exatamente no DNS, espere a verificação (15 min a 72 h) e depois configure DMARC.
 
 ## [Resend — gerenciar domínios: status de verificação, registros DNS, configuração e exclusão](../article/2026-08-27_resend-gerenciar-dominios-status-de-verificacao-registros-dn_91fcf31821fd.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `status` `dkim` `spf`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `dominio` `dns` `status` `dkim` `spf`
 
 Status de domínio no Resend (pending, verified, partially_*, failed, temporary_failure) e o que cada um significa; registros DKIM/SPF/DMARC na aba Records; TLS e tracking por domínio.
 
