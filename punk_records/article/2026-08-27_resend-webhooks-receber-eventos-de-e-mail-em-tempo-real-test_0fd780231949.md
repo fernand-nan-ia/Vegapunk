@@ -5,8 +5,8 @@ external_id: "0fd780231949"
 canonical_url: "https://resend.com/docs/webhooks/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "webhooks", "eventos-de-email", "bounce", "inbound", "observabilidade"]
 applicability:
   saas_pessoal: alta

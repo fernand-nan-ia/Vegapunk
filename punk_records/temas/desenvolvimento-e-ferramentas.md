@@ -168,7 +168,7 @@ Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, 
 Status de domínio no Resend (pending, verified, partially_*, failed, temporary_failure) e o que cada um significa; registros DKIM/SPF/DMARC na aba Records; TLS e tracking por domínio.
 
 ## [Resend — webhooks: receber eventos de e-mail em tempo real, testar localmente, retentativas e IPs](../article/2026-08-27_resend-webhooks-receber-eventos-de-e-mail-em-tempo-real-test_0fd780231949.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `webhooks` `eventos-de-email` `bounce` `inbound` `observabilidade`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `webhooks` `eventos-de-email` `bounce` `inbound` `observabilidade`
 
 Webhook = sua URL recebe JSON a cada evento de e-mail (delivered, bounced, complained, clicked…).
 
