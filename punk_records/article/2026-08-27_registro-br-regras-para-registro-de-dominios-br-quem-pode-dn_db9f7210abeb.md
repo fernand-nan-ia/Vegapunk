@@ -5,8 +5,8 @@ external_id: "db9f7210abeb"
 canonical_url: "https://registro.br/dominio/regras"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["registro-br", "dominio-br", "regras-de-registro", "dns", "saci-adm", "categorias-de-dominio"]
 applicability:
   saas_pessoal: media

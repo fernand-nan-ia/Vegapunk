@@ -208,7 +208,7 @@ Referência do endpoint de busca do Google na SerpApi: q com operadores, localiz
 Google Search API da SerpApi: resultados do Google em JSON com navegador real e CAPTCHA resolvido, localização por cidade, orgânicos + Maps/Local/Shopping/Knowledge Graph.
 
 ## [Registro.br — regras para registro de domínios .br (quem pode, DNS, categorias com documentação, tickets)](../article/2026-08-27_registro-br-regras-para-registro-de-dominios-br-quem-pode-dn_db9f7210abeb.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `regras-de-registro` `dns` `saci-adm` `categorias-de-dominio`
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem archive · `registro-br` `dominio-br` `regras-de-registro` `dns` `saci-adm` `categorias-de-dominio`
 
 Regras do .br: qualquer CPF ou CNPJ no Brasil registra; precisa de 2 servidores DNS (os do Registro.br servem); registro em até 5 minutos sem pendência; qualquer nome disponível vale; categorias como edu.br, org.br, b.br
 
