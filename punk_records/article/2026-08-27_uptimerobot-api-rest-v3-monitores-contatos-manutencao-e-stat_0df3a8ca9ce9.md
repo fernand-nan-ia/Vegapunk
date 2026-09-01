@@ -5,8 +5,8 @@ external_id: "0df3a8ca9ce9"
 canonical_url: "https://uptimerobot.com/api/v3"
 channel: "uptimerobot.com"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["uptimerobot", "api", "monitoramento", "rate-limit", "healthcheck"]
 applicability:
   saas_pessoal: alta

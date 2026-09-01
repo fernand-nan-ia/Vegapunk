@@ -38,7 +38,7 @@ Nominatim = geocodificação grátis e open source com dados do OpenStreetMap (e
 Mapa da doc do Nominatim: API, administração (instalar servidor), customização, biblioteca Python e desenvolvimento.
 
 ## [UptimeRobot — API REST v3: monitores, contatos, manutenção e status pages; rate limits; três tipos de chave](../article/2026-08-27_uptimerobot-api-rest-v3-monitores-contatos-manutencao-e-stat_0df3a8ca9ce9.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `uptimerobot` `api` `monitoramento` `rate-limit` `healthcheck`
 
 API do UptimeRobot: CRUD de monitores/contatos/manutenção/status pages em JSON; Free 10 req/min; chave de conta, por monitor ou somente leitura.
 
