@@ -33,7 +33,7 @@ MapTiler Cloud: mapas com estilo próprio, hospedagem de GeoTIFF/GeoJSON/Shapefi
 Nominatim = geocodificação grátis e open source com dados do OpenStreetMap (endereço ↔ coordenadas), instalável no seu servidor; é o que roda por trás do openstreetmap.org.
 
 ## [Nominatim — documentação oficial: estrutura (API, administração, customização, biblioteca Python, desenvolvimento)](../article/2026-08-27_nominatim-documentacao-oficial-estrutura-api-administracao-c_1f2983dfea42.md)
-2026-08-27 · article · SaaS media · cliente media · estudo media · triagem — · `nominatim` `documentacao` `geocoding` `python` `openstreetmap`
+2026-08-27 · article · SaaS media · cliente media · estudo media · triagem archive · `nominatim` `documentacao` `geocoding` `python` `openstreetmap`
 
 Mapa da doc do Nominatim: API, administração (instalar servidor), customização, biblioteca Python e desenvolvimento.
 

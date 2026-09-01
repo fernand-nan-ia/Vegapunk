@@ -5,8 +5,8 @@ external_id: "1f2983dfea42"
 canonical_url: "https://nominatim.org/release-docs/latest"
 channel: "nominatim.org"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["nominatim", "documentacao", "geocoding", "python", "openstreetmap"]
 applicability:
   saas_pessoal: media
