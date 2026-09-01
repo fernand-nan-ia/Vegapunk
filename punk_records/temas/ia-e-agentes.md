@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Pythonando — útil versus inútil no desenvolvimento assistido por IA: 9 práticas classificadas](../tiktok/2026-09-01_pythonando-util-versus-inutil-no-desenvolvimento-assistido-p_7675093983021796615.md)
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning`
+
+Nove práticas de desenvolvimento com IA separadas entre úteis e inúteis.
 
 ## [SerpApi — Google AI Overview Results API: como extrair o bloco de IA do Google em JSON](../article/2026-08-27_serpapi-google-ai-overview-results-api-como-extrair-o-bloco_dae2c368a9ab.md)
 2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao`
