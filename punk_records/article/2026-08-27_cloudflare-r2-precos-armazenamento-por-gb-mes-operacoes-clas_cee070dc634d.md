@@ -5,8 +5,8 @@ external_id: "cee070dc634d"
 canonical_url: "https://developers.cloudflare.com/r2/pricing"
 channel: "Will I be charged · Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "r2", "precos", "storage", "egress", "gb-mes"]
 applicability:
   saas_pessoal: alta
