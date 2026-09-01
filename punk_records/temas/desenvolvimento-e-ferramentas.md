@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 53 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 54 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [8 ferramentas essenciais para a stack de desenvolvimento e operação de um SaaS](../tiktok/2026-09-01_8-ferramentas-essenciais-para-a-stack-de-desenvolvimento-e-o_7669132301544066324.md)
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem — · `micro-saas` `stack-tecnologica` `supabase` `resend` `cloudflare-r2` `railway`
+
+Seleção direta de oito ferramentas para compor a stack de um SaaS.
 
 ## [Pilha de ferramentas para montar um MVP de SaaS: Stitch, Claude, 21st.dev, Search Console, UAZAPI, Oracle e Supabase](../tiktok/2026-09-01_pilha-de-ferramentas-para-montar-um-mvp-de-saas-stitch-claud_7673143692844141832.md)
 2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `mvp` `stack-de-ferramentas` `supabase` `orquestracao-de-modelos` `sucesso-do-cliente` `whatsapp`
