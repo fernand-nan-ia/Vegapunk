@@ -5,8 +5,8 @@ external_id: "7678524435174788373"
 canonical_url: "https://www.tiktok.com/@eugustavosextaro/video/7678524435174788373"
 channel: "eugustavosextaro"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["nextjs", "vite", "react", "escolha-de-stack", "vibe-coding", "ssr", "arquitetura"]
 applicability:
   saas_pessoal: alta

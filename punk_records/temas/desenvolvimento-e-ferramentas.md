@@ -8,7 +8,7 @@ _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automati
 Rota de ferramentas para um MVP: Stitch para telas, Claude para construir (Fable planeja e revisa segurança, Opus constrói), 21st.dev para o front não ter cara de IA, Supabase, Oracle e UAZAPI.
 
 ## [Por que todo projeto vibe-codado nasce em Next.js — e quando trocar de stack](../tiktok/2026-09-01_por-que-todo-projeto-vibe-codado-nasce-em-next-js-e-quando-t_7678524435174788373.md)
-2026-09-01 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `nextjs` `vite` `react` `escolha-de-stack` `vibe-coding` `ssr`
+2026-09-01 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_saas · `nextjs` `vite` `react` `escolha-de-stack` `vibe-coding` `ssr`
 
 Todo projeto vibe-codado sai em Next porque é o que as ferramentas de geração mais conhecem, não porque é o certo.
 
