@@ -5,8 +5,8 @@ external_id: "a324fa978dee"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/Pythagoras"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "pythagoras", "persona-satelite", "canon", "egghead"]
 applicability:
   saas_pessoal: nenhuma

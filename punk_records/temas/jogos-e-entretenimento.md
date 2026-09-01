@@ -23,7 +23,7 @@ O Satélite da Ganância: come, dorme e evacua pelos outros — e a apatia era f
 O Satélite da Violência: gigante como Kaidou, jetpack, pronome masculino 'ore' e luvas que tornam a luz sólida.
 
 ## [Pythagoras (Punk-04) — wiki One Piece: o Satélite da Sabedoria, o arquivista que desmascarou York](../article/2026-08-28_pythagoras-punk-04-wiki-one-piece-o-satelite-da-sabedoria-o_a324fa978dee.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `pythagoras` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `pythagoras` `persona-satelite` `canon` `egghead`
 
 O Satélite da Sabedoria: cabeça esférica com chave de corda, olhos sonolentos, 341 cm.
 
