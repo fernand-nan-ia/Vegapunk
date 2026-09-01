@@ -28,7 +28,7 @@ Geoapify: geocoding, rotas, lugares e isócronas sobre OSM/OpenAddresses; a dife
 MapTiler Cloud: mapas com estilo próprio, hospedagem de GeoTIFF/GeoJSON/Shapefile, geocoding, mapas estáticos, WMTS para QGIS e API de conversão de coordenadas (EPSG).
 
 ## [Nominatim — geocodificação com OpenStreetMap: busca por nome/endereço, reverso, instalação própria escalável](../article/2026-08-27_nominatim-geocodificacao-com-openstreetmap-busca-por-nome-en_aa8e5c4b2c1e.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `nominatim` `geocoding` `openstreetmap` `mapas` `open-source` `enderecos`
 
 Nominatim = geocodificação grátis e open source com dados do OpenStreetMap (endereço ↔ coordenadas), instalável no seu servidor; é o que roda por trás do openstreetmap.org.
 

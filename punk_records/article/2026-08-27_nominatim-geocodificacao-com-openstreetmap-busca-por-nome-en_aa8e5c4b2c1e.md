@@ -5,8 +5,8 @@ external_id: "aa8e5c4b2c1e"
 canonical_url: "https://nominatim.org/"
 channel: "Osm-Search; Nominatim · nominatim.org"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["nominatim", "geocoding", "openstreetmap", "mapas", "open-source", "enderecos"]
 applicability:
   saas_pessoal: alta
