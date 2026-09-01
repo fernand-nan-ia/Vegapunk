@@ -183,7 +183,7 @@ Chave de API do Resend: crie com permissão 'Sending access' restrita ao domíni
 Ao criar automações por código, os passos viram nós com chave e as connections ligam from → to.
 
 ## [Resend — introdução: pré-requisitos, tipos de e-mail e quickstarts por linguagem](../article/2026-08-27_resend-introducao-pre-requisitos-tipos-de-e-mail-e-quickstar_99b1ac673498.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `documentacao` `quickstart` `email-transacional` `llms-txt`
 
 Para usar o Resend: domínio verificado + chave de API.
 

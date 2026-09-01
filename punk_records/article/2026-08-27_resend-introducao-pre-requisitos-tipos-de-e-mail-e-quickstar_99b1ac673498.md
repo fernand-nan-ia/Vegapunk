@@ -5,8 +5,8 @@ external_id: "99b1ac673498"
 canonical_url: "https://resend.com/docs/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "documentacao", "quickstart", "email-transacional", "llms-txt"]
 applicability:
   saas_pessoal: alta
