@@ -218,7 +218,7 @@ Regras do .br: qualquer CPF ou CNPJ no Brasil registra; precisa de 2 servidores 
 Lista de categorias .br: cada DPN tem regra de titular (CPF ou CNPJ), algumas exigem documentos, autorização de órgão ou DNSSEC.
 
 ## [Hostinger Mail (Business Starter) — e-mail profissional: planos, cotas e Agentic Mail](../article/2026-08-27_hostinger-mail-business-starter-e-mail-profissional-planos-c_0650c4397ec9.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem — · `hostinger` `email-profissional` `hospedagem-de-email` `agentic-mail` `webhook` `precos`
+2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem archive · `hostinger` `email-profissional` `hospedagem-de-email` `agentic-mail` `webhook` `precos`
 
 E-mail profissional com domínio próprio: 5/20/50 GB por conta, a partir de R$ 2,49/mês (tabela completa não renderizou).
 

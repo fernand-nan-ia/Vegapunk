@@ -5,8 +5,8 @@ external_id: "0650c4397ec9"
 canonical_url: "https://www.hostinger.com/br/precos/email-hosting"
 channel: "Hostinger"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["hostinger", "email-profissional", "hospedagem-de-email", "agentic-mail", "webhook", "precos"]
 applicability:
   saas_pessoal: media
