@@ -5,8 +5,8 @@ external_id: "ef20b9a5b602"
 canonical_url: "https://resend.com/docs/dashboard/emails/batch-sending"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "batch", "email-transacional", "api", "limites"]
 applicability:
   saas_pessoal: alta

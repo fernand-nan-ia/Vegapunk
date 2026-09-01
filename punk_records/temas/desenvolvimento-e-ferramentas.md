@@ -128,7 +128,7 @@ Anexo por URL (path) ou Base64 (content), até 40 MB no total, tipos restritos, 
 Imagem dentro do e-mail: <img src="cid:x"> no HTML + anexo com content_id 'x' (URL ou Base64).
 
 ## [Resend — envio em lote: até 100 e-mails por chamada, resposta indexada e limitações](../article/2026-08-27_resend-envio-em-lote-ate-100-e-mails-por-chamada-resposta-in_ef20b9a5b602.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `batch` `email-transacional` `api` `limites`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `batch` `email-transacional` `api` `limites`
 
 Até 100 e-mails por chamada, cada um diferente; resposta na mesma ordem; um inválido derruba o lote; sem anexos em lote.
 
