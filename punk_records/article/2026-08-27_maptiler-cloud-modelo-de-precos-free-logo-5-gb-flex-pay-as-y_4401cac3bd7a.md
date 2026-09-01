@@ -5,8 +5,8 @@ external_id: "4401cac3bd7a"
 canonical_url: "https://www.maptiler.com/cloud/pricing"
 channel: "Maptiler"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["maptiler", "precos", "mapas", "pay-as-you-go", "sessoes"]
 applicability:
   saas_pessoal: alta
