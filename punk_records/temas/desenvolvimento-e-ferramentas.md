@@ -48,7 +48,7 @@ API do UptimeRobot: CRUD de monitores/contatos/manutenção/status pages em JSON
 R2: US$ 0,015/GB-mês, escrita US$ 4,50/M ops, leitura US$ 0,36/M ops, saída grátis; 10 GB + 1 M escritas + 10 M leituras grátis por mês.
 
 ## [Cloudflare R2 — como funciona: compatível com S3, consistência forte, arquitetura (Gateway, Metadata em Durable Objects, cache em camadas, storage distribuído) e fluxo de escrita/leitura](../article/2026-08-27_cloudflare-r2-como-funciona-compativel-com-s3-consistencia-f_b44a7bafcca9.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `s3` `arquitetura` `consistencia` `durable-objects`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `r2` `s3` `arquitetura` `consistencia` `durable-objects`
 
 R2 é S3-compatível, fortemente consistente e cifrado; escrita só responde 200 depois do commit de metadados (sem gravação perdida); leituras passam por cache em camadas perto do cliente.
 

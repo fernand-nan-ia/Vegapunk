@@ -5,8 +5,8 @@ external_id: "b44a7bafcca9"
 canonical_url: "https://developers.cloudflare.com/r2/how-r2-works"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "r2", "s3", "arquitetura", "consistencia", "durable-objects"]
 applicability:
   saas_pessoal: alta
