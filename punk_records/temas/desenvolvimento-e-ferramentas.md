@@ -213,7 +213,7 @@ Google Search API da SerpApi: resultados do Google em JSON com navegador real e 
 Regras do .br: qualquer CPF ou CNPJ no Brasil registra; precisa de 2 servidores DNS (os do Registro.br servem); registro em até 5 minutos sem pendência; qualquer nome disponível vale; categorias como edu.br, org.br, b.br
 
 ## [Registro.br — categorias de domínios .br (DPNs): quem pode registrar o quê](../article/2026-08-27_registro-br-categorias-de-dominios-br-dpns-quem-pode-registr_703ff08ad8d5.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem — · `registro-br` `dominio-br` `dpn` `categorias-de-dominio` `cnpj` `cpf`
+2026-08-27 · article · SaaS media · cliente alta · estudo baixa · triagem archive · `registro-br` `dominio-br` `dpn` `categorias-de-dominio` `cnpj` `cpf`
 
 Lista de categorias .br: cada DPN tem regra de titular (CPF ou CNPJ), algumas exigem documentos, autorização de órgão ou DNSSEC.
 

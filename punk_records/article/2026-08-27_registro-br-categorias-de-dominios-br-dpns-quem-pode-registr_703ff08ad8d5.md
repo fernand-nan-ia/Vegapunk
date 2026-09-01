@@ -5,8 +5,8 @@ external_id: "703ff08ad8d5"
 canonical_url: "https://registro.br/dominio/categorias"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["registro-br", "dominio-br", "dpn", "categorias-de-dominio", "cnpj", "cpf"]
 applicability:
   saas_pessoal: media
