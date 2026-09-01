@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Estratégia de Aquisição de Clientes e Prova Social com Serviços Gratuitos](../tiktok/2026-09-01_estrategia-de-aquisicao-de-clientes-e-prova-social-com-servi_7653187659157867797.md)
+2026-09-01 · tiktok · SaaS baixa · cliente media · estudo media · triagem — · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos`
+
+Guia em slides focado em construir autoridade inicial do zero.
 
 ## [Venda de site para clínica odontológica por R$ 680 — a conversa inteira, do primeiro contato ao fechamento](../tiktok/2026-09-01_venda-de-site-para-clinica-odontologica-por-r-680-a-conversa_7674792895030791432.md)
 2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente`
