@@ -5,8 +5,8 @@ external_id: "20a033aa65f6"
 canonical_url: "https://resend.com/docs/dashboard/automations/introduction"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "automations", "onboarding", "drip-campaign", "eventos", "templates"]
 applicability:
   saas_pessoal: alta

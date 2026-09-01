@@ -143,7 +143,7 @@ Cada e-mail no painel tem preview/HTML e um histórico de eventos: sent, deliver
 Tracking exige um subdomínio próprio (CNAME) para reescrever links e servir o pixel; uma vez criado só pode ser trocado, nunca removido; não apague o CNAME antigo.
 
 ## [Resend Automations — fluxos de e-mail por evento: gatilhos, passos, templates, execução e monitoramento](../article/2026-08-27_resend-automations-fluxos-de-e-mail-por-evento-gatilhos-pass_20a033aa65f6.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `automations` `onboarding` `drip-campaign` `eventos` `templates`
 
 Automations = fluxos 'quando acontecer X, mande Y depois de Z': gatilho por evento (user.created), passos de condição, atraso, espera por evento, envio com template, atualização de contato; runs para monitorar; descadast
 
