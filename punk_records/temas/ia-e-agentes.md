@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Nove coisas construídas com Claude por um não-programador: briefing diário, relatório de volumetria, finanças e site de casamento](../tiktok/2026-09-01_nove-coisas-construidas-com-claude-por-um-nao-programador-br_7668277297434348821.md)
+2026-09-01 · tiktok · SaaS media · cliente baixa · estudo media · triagem — · `claude-code` `automacao` `nao-programador` `design-system` `integracao-sistemas` `produtividade`
+
+Nove aplicações reais feitas com Claude por quem não programa: briefing diário automático, relatório de volumetria que caiu de 2h para 2min, conector com sistema de assinaturas, finanças pessoais, design system e até o s
 
 ## [Pythonando — útil versus inútil no desenvolvimento assistido por IA: 9 práticas classificadas](../tiktok/2026-09-01_pythonando-util-versus-inutil-no-desenvolvimento-assistido-p_7675093983021796615.md)
 2026-09-01 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning`

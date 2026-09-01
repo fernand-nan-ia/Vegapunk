@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 14 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 15 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 51 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 4 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -17,6 +17,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-09-01 · tiktok · [Nove coisas construídas com Claude por um não-programador: briefing diário, relatório de volumetria, finanças e site de casamento](tiktok/2026-09-01_nove-coisas-construidas-com-claude-por-um-nao-programador-br_7668277297434348821.md) · `claude-code` `automacao` `nao-programador` `design-system` `integracao-sistemas` `produtividade` · media/baixa/media · —
 - 2026-09-01 · tiktok · [Pythonando — útil versus inútil no desenvolvimento assistido por IA: 9 práticas classificadas](tiktok/2026-09-01_pythonando-util-versus-inutil-no-desenvolvimento-assistido-p_7675093983021796615.md) · `spec-driven-development` `tdd` `quality-gate` `engenharia-de-prompt` `llm-local` `fine-tuning` `ci-cd` · alta/media/alta · —
 - 2026-08-27 · article · [SerpApi — Google AI Overview Results API: como extrair o bloco de IA do Google em JSON](article/2026-08-27_serpapi-google-ai-overview-results-api-como-extrair-o-bloco_dae2c368a9ab.md) · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao` · media/media/alta · —
 - 2026-08-27 · article · [Hostinger — hospedagem gerenciada de n8n, OpenClaw e Hermes Agent (automação com IA)](article/2026-08-27_hostinger-hospedagem-gerenciada-de-n8n-openclaw-e-hermes-age_1a6de9d5c684.md) · `hostinger` `n8n` `openclaw` `hermes-agent` `automacao-com-ia` `hospedagem-gerenciada` `precos` · media/media/media · —
