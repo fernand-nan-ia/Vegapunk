@@ -5,8 +5,8 @@ external_id: "dae2c368a9ab"
 canonical_url: "https://serpapi.com/ai-overview"
 channel: "SerpApi"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["serpapi", "google-ai-overview", "seo", "api", "llm", "documentacao"]
 applicability:
   saas_pessoal: media

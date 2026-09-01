@@ -13,7 +13,7 @@ Nove aplicações reais feitas com Claude por quem não programa: briefing diár
 Nove práticas de desenvolvimento com IA separadas entre úteis e inúteis.
 
 ## [SerpApi — Google AI Overview Results API: como extrair o bloco de IA do Google em JSON](../article/2026-08-27_serpapi-google-ai-overview-results-api-como-extrair-o-bloco_dae2c368a9ab.md)
-2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem — · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao`
+2026-08-27 · article · SaaS media · cliente media · estudo alta · triagem archive · `serpapi` `google-ai-overview` `seo` `api` `llm` `documentacao`
 
 A SerpApi devolve o AI Overview do Google como JSON estruturado (parágrafos, títulos, listas e referências com links).
 
