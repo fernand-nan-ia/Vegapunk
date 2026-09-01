@@ -5,8 +5,8 @@ external_id: "56588de8ec5c"
 canonical_url: "https://resend.com/docs/add-a-domain"
 channel: "Resend"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["resend", "dominio", "dns", "dkim", "spf", "dmarc", "entregabilidade"]
 applicability:
   saas_pessoal: alta

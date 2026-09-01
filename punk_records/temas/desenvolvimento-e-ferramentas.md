@@ -158,7 +158,7 @@ Logs do Resend: cada chamada com status, corpo da requisição e resposta, filtr
 Envie de subdomínios separados por finalidade (newsletter com tracking, transacional sem), com TLS forçado, região próxima e DMARC/BIMI para reputação.
 
 ## [Resend — adicionar e verificar um domínio: subdomínio, região, DNS (DKIM/SPF), Return-Path e DMARC](../article/2026-08-27_resend-adicionar-e-verificar-um-dominio-subdominio-regiao-dn_56588de8ec5c.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `resend` `dominio` `dns` `dkim` `spf` `dmarc`
 
 Adicione um subdomínio (ex.: notifications.seudominio.com), escolha a região, cole os registros DKIM/SPF exatamente no DNS, espere a verificação (15 min a 72 h) e depois configure DMARC.
 
