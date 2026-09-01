@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Venda de site para clínica odontológica por R$ 680 — a conversa inteira, do primeiro contato ao fechamento](../tiktok/2026-09-01_venda-de-site-para-clinica-odontologica-por-r-680-a-conversa_7674792895030791432.md)
+2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente`
+
+Print da conversa real de venda de um site para clínica odontológica: qualificação em três perguntas, negociação em duas mensagens, fechado em R$ 680.
 
 ## [10 lições de quem faturou R$ 6 mil/mês com um SaaS gastando R$ 0 em tráfego pago](../tiktok/2026-09-01_10-licoes-de-quem-faturou-r-6-mil-mes-com-um-saas-gastando-r_7675925461137968391.md)
 2026-09-01 · tiktok · SaaS alta · cliente baixa · estudo media · triagem — · `micro-saas` `distribuicao` `marketing-de-conteudo` `trafego-organico` `receita-recorrente` `lancamento`
