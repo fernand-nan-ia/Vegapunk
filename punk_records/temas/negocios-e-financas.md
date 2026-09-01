@@ -63,7 +63,7 @@ Free: 100 e-mails/dia, 3 domínios, 1 webhook.
 SerpApi cobra por buscas bem-sucedidas: grátis 250/mês; planos de 1.000, 5.000 e 30.000/mês (valores em US$ não vieram no texto).
 
 ## [Registro.br — pagamento de domínio .br: períodos, formas de pagamento, cobrança e renovação](../article/2026-08-27_registro-br-pagamento-de-dominio-br-periodos-formas-de-pagam_86d7d228ff5b.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `dominio-br` `pagamento` `renovacao-de-dominio` `boleto` `pix`
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem archive · `registro-br` `dominio-br` `pagamento` `renovacao-de-dominio` `boleto` `pix`
 
 Como se paga um domínio .br: Pix, cartão (Visa/Master) ou boleto, ou via Provedor de Serviços; aviso 30 dias antes de expirar, nunca boleto por correio.
 

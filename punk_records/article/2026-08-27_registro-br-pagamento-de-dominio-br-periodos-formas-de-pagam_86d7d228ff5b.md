@@ -5,8 +5,8 @@ external_id: "86d7d228ff5b"
 canonical_url: "https://registro.br/ajuda/pagamento-de-dominio"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["registro-br", "dominio-br", "pagamento", "renovacao-de-dominio", "boleto", "pix"]
 applicability:
   saas_pessoal: media
