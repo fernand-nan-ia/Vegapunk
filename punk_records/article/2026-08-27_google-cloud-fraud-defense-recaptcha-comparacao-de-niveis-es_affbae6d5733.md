@@ -5,8 +5,8 @@ external_id: "affbae6d5733"
 canonical_url: "https://docs.cloud.google.com/recaptcha/docs/compare-tiers?hl=pt-br"
 channel: "Google Cloud Documentation"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["recaptcha", "google-cloud", "precos", "anti-fraude", "anti-bot"]
 applicability:
   saas_pessoal: alta

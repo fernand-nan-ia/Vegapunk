@@ -18,7 +18,7 @@ MapTiler cobra por sessão de mapa (abrir o mapa; navegar é grátis) e por requ
 GitHub Free já dá repositórios privados ilimitados e 2.000 min/mês de Actions; Team US$ 4/usuário (regras de branch, revisores obrigatórios, 3.000 min); Enterprise US$ 21/usuário.
 
 ## [Google Cloud Fraud Defense (reCAPTCHA) — comparação de níveis: Essentials grátis até 10 mil avaliações, Premium US$ 8 fixo até 100 mil + US$ 1/1.000, Enterprise](../article/2026-08-27_google-cloud-fraud-defense-recaptcha-comparacao-de-niveis-es_affbae6d5733.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `recaptcha` `google-cloud` `precos` `anti-fraude` `anti-bot`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `recaptcha` `google-cloud` `precos` `anti-fraude` `anti-bot`
 
 reCAPTCHA (Fraud Defense): Essentials grátis até 10 mil avaliações/mês; Premium US$ 8 fixo até 100 mil e US$ 1 por 1.000 depois (exige cartão no Google Cloud); Enterprise com contrato anual.
 
