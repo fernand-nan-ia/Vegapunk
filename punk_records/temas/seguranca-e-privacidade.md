@@ -18,7 +18,7 @@ Números oficiais da moderação do Telegram: ~24 milhões de grupos/canais bloq
 O FAQ oficial: grupos até 200 mil membros, privacy mode dos bots visível na lista de membros, chats secretos fora da nuvem (logo, sem bots), GDPR via @EURegulation e miniapps com pagamentos via Stars.
 
 ## [Standard Bot Privacy Policy — a política de privacidade padrão dos bots do Telegram](../article/2026-08-28_standard-bot-privacy-policy-a-politica-de-privacidade-padrao_19b30f460b29.md)
-2026-08-28 · article · SaaS alta · cliente media · estudo alta · triagem — · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso`
+2026-08-28 · article · SaaS alta · cliente media · estudo alta · triagem apply_saas · `telegram-bot` `privacidade` `politica-de-privacidade` `compliance` `dados-pessoais` `termos-de-uso`
 
 Política padrão que vale para todo bot de terceiros no Telegram.
 

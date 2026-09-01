@@ -5,8 +5,8 @@ external_id: "19b30f460b29"
 canonical_url: "https://telegram.org/privacy-tpa"
 channel: "Telegram"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["telegram-bot", "privacidade", "politica-de-privacidade", "compliance", "dados-pessoais", "termos-de-uso"]
 applicability:
   saas_pessoal: alta
