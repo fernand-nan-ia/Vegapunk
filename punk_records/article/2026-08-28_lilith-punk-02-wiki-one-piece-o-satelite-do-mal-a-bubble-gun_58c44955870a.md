@@ -5,8 +5,8 @@ external_id: "58c44955870a"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/Lilith"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "lilith", "persona-satelite", "canon", "egghead", "elbaf"]
 applicability:
   saas_pessoal: nenhuma

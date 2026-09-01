@@ -33,7 +33,7 @@ O Satélite da Sabedoria: cabeça esférica com chave de corda, olhos sonolentos
 O Satélite do Pensamento: cabeça de bola de futebol americano, jetpack e um 'Eureka!' no meio de cada frase.
 
 ## [Lilith (Punk-02) — wiki One Piece: o Satélite do Mal, a Bubble Gun e a única a escapar de Egghead](../article/2026-08-28_lilith-punk-02-wiki-one-piece-o-satelite-do-mal-a-bubble-gun_58c44955870a.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `lilith` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `lilith` `persona-satelite` `canon` `egghead`
 
 O Satélite do Mal: macacão rosa, capacete vermelho de aviadora e pronome arcaico 'washi'.
 
