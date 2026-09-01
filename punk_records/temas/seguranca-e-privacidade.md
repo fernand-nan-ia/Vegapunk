@@ -38,7 +38,7 @@ A ANPD unificou todos os seus trâmites administrativos no SEI, exigindo cadastr
 A ANPD estabeleceu regras simplificadas de LGPD para startups e microempresas, dispensando a exigência de DPO formal e permitindo registros simplificados.
 
 ## [reCAPTCHA v3 — pontuação sem atrito: carregar o script, vincular a botão ou executar programaticamente, interpretar a pontuação](../article/2026-08-27_recaptcha-v3-pontuacao-sem-atrito-carregar-o-script-vincular_8b722ef0051f.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `recaptcha` `recaptcha-v3` `anti-bot` `formularios` `seguranca` `javascript`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `recaptcha` `recaptcha-v3` `anti-bot` `formularios` `seguranca` `javascript`
 
 reCAPTCHA v3 dá uma nota de 0 a 1 sem desafio: coloque o script, chame grecaptcha.execute na ação, mande o token ao backend e decida por limiar (ex.: < 0,5 = pedir e-mail de confirmação ou bloquear).
 

@@ -5,8 +5,8 @@ external_id: "8b722ef0051f"
 canonical_url: "https://developers.google.com/recaptcha/docs/v3?hl=pt-br"
 channel: "Google for Developers"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["recaptcha", "recaptcha-v3", "anti-bot", "formularios", "seguranca", "javascript"]
 applicability:
   saas_pessoal: alta
