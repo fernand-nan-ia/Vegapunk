@@ -5,8 +5,8 @@ external_id: "_sAI-ganFAw"
 canonical_url: "https://www.youtube.com/watch?v=_sAI-ganFAw"
 channel: "Chapéus de Palha"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "discurso", "seculo-perdido", "mother-flame", "canon", "persona-satelite"]
 applicability:
   saas_pessoal: nenhuma
