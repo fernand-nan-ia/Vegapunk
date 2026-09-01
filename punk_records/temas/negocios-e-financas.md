@@ -13,7 +13,7 @@ Geoapify cobra por créditos (1 chamada simples = 1 crédito); Free serve para u
 MapTiler cobra por sessão de mapa (abrir o mapa; navegar é grátis) e por requisições; Free só não comercial e com logo; Flex é pay-as-you-go comercial com SLA.
 
 ## [GitHub — preços: Free (repos ilimitados, 2.000 min de Actions), Team US$ 4/usuário, Enterprise US$ 21/usuário; add-ons Copilot, Advanced Security, Codespaces](../article/2026-08-27_github-precos-free-repos-ilimitados-2-000-min-de-actions-tea_bb65e6d6f03b.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem — · `github` `precos` `github-actions` `ci-cd` `copilot` `planos`
+2026-08-27 · article · SaaS alta · cliente media · estudo baixa · triagem archive · `github` `precos` `github-actions` `ci-cd` `copilot` `planos`
 
 GitHub Free já dá repositórios privados ilimitados e 2.000 min/mês de Actions; Team US$ 4/usuário (regras de branch, revisores obrigatórios, 3.000 min); Enterprise US$ 21/usuário.
 

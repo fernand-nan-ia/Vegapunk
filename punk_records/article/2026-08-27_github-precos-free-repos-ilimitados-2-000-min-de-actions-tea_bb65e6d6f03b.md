@@ -5,8 +5,8 @@ external_id: "bb65e6d6f03b"
 canonical_url: "https://github.com/pricing"
 channel: "GitHub"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["github", "precos", "github-actions", "ci-cd", "copilot", "planos"]
 applicability:
   saas_pessoal: alta
