@@ -5,8 +5,8 @@ external_id: "96c95a08cb48"
 canonical_url: "https://telegram.org/safety"
 channel: "Telegram"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["telegram", "moderacao-de-conteudo", "seguranca", "transparencia", "csam", "plataforma"]
 applicability:
   saas_pessoal: baixa

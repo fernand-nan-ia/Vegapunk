@@ -8,7 +8,7 @@ _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado aut
 Demonstração prática de um mega prompt de auditoria de segurança rodando via Claude em quatro projetos feitos com vibe coding.
 
 ## [Visão Geral de Segurança do Telegram — moderação, CSAM e conteúdo terrorista](../article/2026-08-28_visao-geral-de-seguranca-do-telegram-moderacao-csam-e-conteu_96c95a08cb48.md)
-2026-08-28 · article · SaaS baixa · cliente nenhuma · estudo media · triagem — · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma`
+2026-08-28 · article · SaaS baixa · cliente nenhuma · estudo media · triagem discard · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma`
 
 Números oficiais da moderação do Telegram: ~24 milhões de grupos/canais bloqueados em 2026, banco de hashes de CSAM desde 2018 e 200+ milhões de itens terroristas removidos com o ETIDAL.
 
