@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 51 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 52 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Por que todo projeto vibe-codado nasce em Next.js — e quando trocar de stack](../tiktok/2026-09-01_por-que-todo-projeto-vibe-codado-nasce-em-next-js-e-quando-t_7678524435174788373.md)
+2026-09-01 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `nextjs` `vite` `react` `escolha-de-stack` `vibe-coding` `ssr`
+
+Todo projeto vibe-codado sai em Next porque é o que as ferramentas de geração mais conhecem, não porque é o certo.
 
 ## [Meu "Netflix Pessoal" com Docker Compose](../article/2026-08-28_meu-netflix-pessoal-com-docker-compose_0bc1f323bb64.md)
 2026-08-28 · article · SaaS baixa · cliente baixa · estudo alta · triagem archive · `docker-compose` `self-hosting` `plex` `homelab` `transcoding` `nas`
