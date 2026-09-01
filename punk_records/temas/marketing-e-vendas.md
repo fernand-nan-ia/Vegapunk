@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Venda de site para clínica odontológica por R$ 680 — a conversa inteira, do primeiro contato ao fechamento](../tiktok/2026-09-01_venda-de-site-para-clinica-odontologica-por-r-680-a-conversa_7674792895030791432.md)
-2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente`
+2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente`
 
 Print da conversa real de venda de um site para clínica odontológica: qualificação em três perguntas, negociação em duas mensagens, fechado em R$ 680.
 

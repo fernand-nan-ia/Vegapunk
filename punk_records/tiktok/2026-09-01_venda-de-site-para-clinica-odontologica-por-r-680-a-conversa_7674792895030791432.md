@@ -5,8 +5,8 @@ external_id: "7674792895030791432"
 canonical_url: "https://www.tiktok.com/@wsfstudio/photo/7674792895030791432"
 channel: "Wsf studio - Sites"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["precificacao-de-sites", "site-institucional", "prospeccao", "clinica-odontologica", "landing-page", "projeto-cliente"]
 applicability:
   saas_pessoal: baixa
