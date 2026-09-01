@@ -68,7 +68,7 @@ Escreve pontos de dados de dentro do Worker e consulta por SQL; cardinalidade il
 Do Worker dá para falar com D1 (SQL da Cloudflare, bancos de 10 GB por tenant), Postgres/MySQL e Supabase/Neon via drivers TCP com Hyperdrive (pool + cache de conexão), ou drivers HTTP.
 
 ## [Cloudflare Workers — CI/CD: Workers Builds (GitHub/GitLab) ou provedores externos; por que automatizar o deploy](../article/2026-08-27_cloudflare-workers-ci-cd-workers-builds-github-gitlab-ou-pro_8ff27fbb138d.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `workers` `ci-cd` `deploy` `github`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `workers` `ci-cd` `deploy` `github`
 
 Deploy automático de Workers a cada push com Workers Builds (GitHub/GitLab) ou CI externo; evita wrangler deploy manual e credencial na máquina.
 

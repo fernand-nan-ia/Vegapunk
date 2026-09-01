@@ -5,8 +5,8 @@ external_id: "8ff27fbb138d"
 canonical_url: "https://developers.cloudflare.com/workers/ci-cd"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "workers", "ci-cd", "deploy", "github"]
 applicability:
   saas_pessoal: alta
