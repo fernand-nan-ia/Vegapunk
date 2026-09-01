@@ -198,7 +198,7 @@ Evento customizado = nome (ex.: user.created) + schema opcional do payload; um e
 Índice do que o Resend faz para e-mail transacional: envio simples ou em lote, agendamento, anexos, cabeçalhos, idempotência, logs e métricas — via SDK, API, CLI, MCP ou SMTP.
 
 ## [SerpApi — referência da Google Search Engine Results API: parâmetros, tipos de busca e estrutura do JSON](../article/2026-08-27_serpapi-referencia-da-google-search-engine-results-api-param_095ffd77aa1a.md)
-2026-08-27 · article · SaaS alta · cliente baixa · estudo media · triagem — · `serpapi` `api-reference` `google-search` `parametros` `json` `documentacao`
+2026-08-27 · article · SaaS alta · cliente baixa · estudo media · triagem archive · `serpapi` `api-reference` `google-search` `parametros` `json` `documentacao`
 
 Referência do endpoint de busca do Google na SerpApi: q com operadores, localização por cidade/uule/lat-lon, gl/hl para país e idioma, tbm para imagens/local/notícias/shopping, device e no_cache.
 
