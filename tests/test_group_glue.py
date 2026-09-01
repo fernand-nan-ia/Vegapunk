@@ -115,3 +115,16 @@ def test_titulo_longo_e_cortado_e_item_sem_titulo_tem_texto_neutro():
     assert "este item" in bot.triagem_linha(None)
     assert len(bot.triagem_linha("x" * 200)) < 120
 
+
+
+def test_capture_py_aceita_o_contrato_atual_do_notify():
+    """Regressão da v1.8.0: `notify` ganhou `sat`/`titulo` e o notificador do `scripts/capture.py`
+    quebrou — ele é a SEGUNDA implementação do mesmo callback e nenhum teste cobria o script.
+    Aqui basta ler a assinatura: importar o script puxa dependências que o teste não precisa."""
+    import re
+    from pathlib import Path
+    fonte = (Path(__file__).parents[1] / "scripts/capture.py").read_text(encoding="utf-8")
+    assinaturas = re.findall(r"async def (?:silent|notify)\(([^)]*)\)", fonte)
+    assert assinaturas, "o notificador do capture.py sumiu"
+    for a in assinaturas:
+        assert "**kw" in a, f"assinatura sem **kw quebra no próximo campo novo: {a}"

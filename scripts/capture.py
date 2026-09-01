@@ -43,7 +43,7 @@ def _chat_id() -> int:
 
 def _notifier(notify_telegram: bool):
     if not notify_telegram:
-        async def silent(cid, text, reply_to=None, item_id=None):
+        async def silent(cid, text, reply_to=None, item_id=None, **kw):
             print("(quiet)", text[:100].replace("\n", " | "))
         return silent
     from telegram import Bot
@@ -51,7 +51,9 @@ def _notifier(notify_telegram: bool):
     from vegapunk.bot import chunks, keyboard
     bot = Bot(settings.bot_token)
 
-    async def notify(cid, text, reply_to=None, item_id=None):
+    async def notify(cid, text, reply_to=None, item_id=None, sat=None, **kw):
+        """Mesmo contrato de `bot.notify` — o `**kw` existe para o script não quebrar quando o
+        contrato ganhar campos novos (aconteceu na v1.8.0 com `sat` e `titulo`)."""
         parts = chunks(text)
         for i, part in enumerate(parts):
             await bot.send_message(cid, part, parse_mode=ParseMode.HTML,
