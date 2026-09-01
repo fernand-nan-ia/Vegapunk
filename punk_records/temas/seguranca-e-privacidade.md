@@ -53,7 +53,7 @@ MFA no Resend: Profile → Enable MFA → QR no autenticador → código.
 Trocar e-mail da conta Resend exige confirmar nos dois endereços (novo e atual).
 
 ## [Registro.br — contrato para registro de nome de domínio sob o .br (cláusulas essenciais)](../article/2026-08-27_registro-br-contrato-para-registro-de-nome-de-dominio-sob-o_38a4f6ec1881.md)
-2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem — · `registro-br` `contrato` `dominio-br` `lgpd` `whois` `saci-adm`
+2026-08-27 · article · SaaS media · cliente alta · estudo media · triagem archive · `registro-br` `contrato` `dominio-br` `lgpd` `whois` `saci-adm`
 
 Contrato do .br em uma página: você aceita eletronicamente, define três contatos, responde pela senha, paga a anuidade do CGI.br (não pagar = cancelamento e liberação), seus dados vão ao whois público (PJ mais exposta qu
 

@@ -5,8 +5,8 @@ external_id: "38a4f6ec1881"
 canonical_url: "https://registro.br/dominio/contrato"
 channel: "Registro.br (NIC.br)"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["registro-br", "contrato", "dominio-br", "lgpd", "whois", "saci-adm"]
 applicability:
   saas_pessoal: media
