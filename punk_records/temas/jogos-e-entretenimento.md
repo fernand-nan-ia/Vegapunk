@@ -43,6 +43,6 @@ O Satélite do Mal: macacão rosa, capacete vermelho de aviadora e pronome arcai
 O Satélite do Bem: 2,20 m, capacete 01, 'Caution' na manga.
 
 ## [Dr. Vegapunk (Stella) — wiki One Piece: os seis Satélites, o Punk Records e o Incidente de Egghead](../article/2026-08-28_dr-vegapunk-stella-wiki-one-piece-os-seis-satelites-o-punk-r_123f9196d63a.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `stella` `punk-records` `persona-satelite` `canon`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `stella` `punk-records` `persona-satelite` `canon`
 
 A página do corpo original: 500 anos à frente, MADS, o cérebro transferido para o Punk Records e a divisão em seis Satélites.
