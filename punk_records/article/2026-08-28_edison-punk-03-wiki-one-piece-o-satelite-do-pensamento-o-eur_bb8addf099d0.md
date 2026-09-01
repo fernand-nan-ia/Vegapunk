@@ -5,8 +5,8 @@ external_id: "bb8addf099d0"
 canonical_url: "https://onepiece.fandom.com/wiki/Vegapunk/Edison"
 channel: "One Piece Wiki"
 captured_at: 2026-08-28
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["one-piece", "vegapunk", "edison", "persona-satelite", "canon", "egghead"]
 applicability:
   saas_pessoal: nenhuma

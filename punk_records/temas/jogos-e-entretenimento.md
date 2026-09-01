@@ -28,7 +28,7 @@ O Satélite da Violência: gigante como Kaidou, jetpack, pronome masculino 'ore'
 O Satélite da Sabedoria: cabeça esférica com chave de corda, olhos sonolentos, 341 cm.
 
 ## [Edison (Punk-03) — wiki One Piece: o Satélite do Pensamento, o 'Eureka!' e a fuga pela Frontier Dome](../article/2026-08-28_edison-punk-03-wiki-one-piece-o-satelite-do-pensamento-o-eur_bb8addf099d0.md)
-2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem — · `one-piece` `vegapunk` `edison` `persona-satelite` `canon` `egghead`
+2026-08-28 · article · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `edison` `persona-satelite` `canon` `egghead`
 
 O Satélite do Pensamento: cabeça de bola de futebol americano, jetpack e um 'Eureka!' no meio de cada frase.
 
