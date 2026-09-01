@@ -53,7 +53,7 @@ R2: US$ 0,015/GB-mês, escrita US$ 4,50/M ops, leitura US$ 0,36/M ops, saída gr
 R2 é S3-compatível, fortemente consistente e cifrado; escrita só responde 200 depois do commit de metadados (sem gravação perdida); leituras passam por cache em camadas perto do cliente.
 
 ## [Cloudflare R2 — visão geral: armazenamento de objetos sem taxa de egress, casos de uso e recursos (location hints, CORS, buckets públicos, tokens, Data Catalog)](../article/2026-08-27_cloudflare-r2-visao-geral-armazenamento-de-objetos-sem-taxa_a955751d328b.md)
-2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem — · `cloudflare` `r2` `object-storage` `s3` `egress` `storage`
+2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `cloudflare` `r2` `object-storage` `s3` `egress` `storage`
 
 R2 = S3 sem cobrança de saída de dados: guarda arquivos, serve conteúdo web e datasets; buckets públicos, tokens por bucket, CORS, Data Catalog (Iceberg) e integração com Workers.
 

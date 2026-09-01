@@ -5,8 +5,8 @@ external_id: "a955751d328b"
 canonical_url: "https://developers.cloudflare.com/r2"
 channel: "Cloudflare Docs"
 captured_at: 2026-08-27
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cloudflare", "r2", "object-storage", "s3", "egress", "storage"]
 applicability:
   saas_pessoal: alta
