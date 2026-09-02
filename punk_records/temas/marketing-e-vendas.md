@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Roteiro simplificado para prospectar e vender landing pages para negócios locais por R$ 1.000.
 
 ## [Estratégia de Aquisição de Clientes e Prova Social com Serviços Gratuitos](../tiktok/2026-09-01_estrategia-de-aquisicao-de-clientes-e-prova-social-com-servi_7653187659157867797.md)
-2026-09-01 · tiktok · SaaS baixa · cliente media · estudo media · triagem — · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos`
+2026-09-01 · tiktok · SaaS baixa · cliente media · estudo media · triagem archive · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos`
 
 Guia em slides focado em construir autoridade inicial do zero.
 

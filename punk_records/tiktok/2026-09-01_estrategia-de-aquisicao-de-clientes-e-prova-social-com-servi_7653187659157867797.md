@@ -5,8 +5,8 @@ external_id: "7653187659157867797"
 canonical_url: "https://www.tiktok.com/@romulo.br/photo/7653187659157867797"
 channel: "Vulgo Wayne"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["aquisicao-de-clientes", "prova-social", "prospeccao-ativa", "prestacao-de-servicos", "estrategia-freelance", "depoimentos", "programa-de-indicacao"]
 applicability:
   saas_pessoal: baixa
