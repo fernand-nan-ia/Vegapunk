@@ -5,8 +5,8 @@ external_id: "7676498062474284308"
 canonical_url: "https://www.tiktok.com/@oreidosites/photo/7676498062474284308"
 channel: "O Rei dos Sites 👑"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["landing-page", "freelance", "prospeccao", "claude", "vercel", "negocios-locais"]
 applicability:
   saas_pessoal: baixa
