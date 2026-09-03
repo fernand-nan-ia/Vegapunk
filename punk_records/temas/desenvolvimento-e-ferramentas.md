@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 56 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Criação e Venda Rápida de Landing Page Institucional com Claude Code](../tiktok/2026-09-03_criacao-e-venda-rapida-de-landing-page-institucional-com-cla_7680653890546683156.md)
-2026-09-03 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao`
+2026-09-03 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao`
 
 Demonstração de venda e entrega de uma landing page para transporte rodoviário em 50 minutos com Claude Code.
 

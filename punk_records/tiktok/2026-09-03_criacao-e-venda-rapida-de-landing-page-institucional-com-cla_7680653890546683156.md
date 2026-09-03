@@ -5,8 +5,8 @@ external_id: "7680653890546683156"
 canonical_url: "https://www.tiktok.com/@victorsyrion/photo/7680653890546683156"
 channel: "Bueno | Coder"
 captured_at: 2026-09-03
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["claude-code", "vibecoding", "landing-page", "freelance", "geracao-de-leads", "prospeccao"]
 applicability:
   saas_pessoal: baixa
