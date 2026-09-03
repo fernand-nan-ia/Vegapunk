@@ -1,6 +1,11 @@
 # 🚀 Produto e SaaS
 
-_micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Fitfolio: Tração e Monetização de App Fitness B2C Bootstrapped](../tiktok/2026-09-03_fitfolio-tracao-e-monetizacao-de-app-fitness-b2c-bootstrappe_7675194141344615700.md)
+2026-09-03 · tiktok · SaaS media · cliente baixa · estudo alta · triagem — · `micro-saas` `mobile-app` `bootstrapping` `in-app-purchases` `monetizacao` `b2c`
+
+Fundador solo apresenta métricas do app Fitfolio: mais de 70 mil usuários e cerca de US$ 528/dia em assinaturas in-app sem investimento externo.
 
 ## [Como lançar um Micro SaaS em 48 horas com custo fixo zero](../tiktok/2026-09-01_como-lancar-um-micro-saas-em-48-horas-com-custo-fixo-zero_7679992868840295687.md)
 2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel`
