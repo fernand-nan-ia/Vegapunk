@@ -5,8 +5,8 @@ external_id: "7655687733691665672"
 canonical_url: "https://www.tiktok.com/@ojpbatista/photo/7655687733691665672"
 channel: "ojpbatista"
 captured_at: 2026-09-03
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["saas-stack", "infraestrutura", "cloudflare-r2", "upstash-redis", "resend", "asaas", "rate-limiting"]
 applicability:
   saas_pessoal: alta

@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 57 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [5 Ferramentas de Infraestrutura e Operação para SaaS em Produção](../tiktok/2026-09-03_5-ferramentas-de-infraestrutura-e-operacao-para-saas-em-prod_7655687733691665672.md)
-2026-09-03 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas`
+2026-09-03 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_saas · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas`
 
 Seleção de ferramentas essenciais para levar um SaaS a nível de produção.
 
