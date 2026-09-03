@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [OpenRouter Models — catálogo de LLMs com preço, contexto e benchmarks](../article/2026-09-03_openrouter-models-catalogo-de-llms-com-preco-contexto-e-benc_9ada9be71fc4.md)
-2026-09-03 · article · SaaS alta · cliente media · estudo alta · triagem — · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados`
+2026-09-03 · article · SaaS alta · cliente media · estudo alta · triagem apply_saas · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados`
 
 Catálogo do OpenRouter: 424 modelos na API, 21 gratuitos, 8 com visão.
 

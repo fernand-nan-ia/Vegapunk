@@ -5,8 +5,8 @@ external_id: "9ada9be71fc4"
 canonical_url: "https://openrouter.ai/models"
 channel: "OpenRouter"
 captured_at: 2026-09-03
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["openrouter", "llm-gratuito", "modelos-multimodais", "preco-por-token", "rate-limit", "privacidade-de-dados", "vegapunk-bot"]
 applicability:
   saas_pessoal: alta
