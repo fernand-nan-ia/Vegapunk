@@ -5,8 +5,8 @@ external_id: "7677947166140239122"
 canonical_url: "https://www.tiktok.com/@purevibecoding/photo/7677947166140239122"
 channel: "Vibecoding"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["vibe-coding", "claude-code", "prompt-engineering", "debugging", "cursor", "troubleshooting"]
 applicability:
   saas_pessoal: alta
