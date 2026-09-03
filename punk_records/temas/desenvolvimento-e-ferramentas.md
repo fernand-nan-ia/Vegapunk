@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 55 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 56 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Criação e Venda Rápida de Landing Page Institucional com Claude Code](../tiktok/2026-09-03_criacao-e-venda-rapida-de-landing-page-institucional-com-cla_7680653890546683156.md)
+2026-09-03 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao`
+
+Demonstração de venda e entrega de uma landing page para transporte rodoviário em 50 minutos com Claude Code.
 
 ## [Stack Essencial de Ferramentas para Criar um SaaS com IA](../tiktok/2026-09-01_stack-essencial-de-ferramentas-para-criar-um-saas-com-ia_7674296195522497812.md)
 2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `vibe-coding` `micro-saas` `stack-tecnologica` `supabase` `vercel` `posthog`
