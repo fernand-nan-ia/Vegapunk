@@ -8,7 +8,7 @@ _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automati
 Lista com a stack padrão de ferramentas para construir um SaaS com IA: Claude/ChatGPT, GitHub, Vercel, Supabase, Cloudflare, Asaas, PostHog e Sentry.
 
 ## [8 ferramentas essenciais para a stack de desenvolvimento e operação de um SaaS](../tiktok/2026-09-01_8-ferramentas-essenciais-para-a-stack-de-desenvolvimento-e-o_7669132301544066324.md)
-2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem — · `micro-saas` `stack-tecnologica` `supabase` `resend` `cloudflare-r2` `railway`
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `micro-saas` `stack-tecnologica` `supabase` `resend` `cloudflare-r2` `railway`
 
 Seleção direta de oito ferramentas para compor a stack de um SaaS.
 

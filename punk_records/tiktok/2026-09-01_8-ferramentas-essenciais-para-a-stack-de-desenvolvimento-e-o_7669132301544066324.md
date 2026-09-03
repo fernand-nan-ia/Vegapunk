@@ -5,8 +5,8 @@ external_id: "7669132301544066324"
 canonical_url: "https://www.tiktok.com/@derick.dsa/photo/7669132301544066324"
 channel: "Derick | Apps"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["micro-saas", "stack-tecnologica", "supabase", "resend", "cloudflare-r2", "railway", "asaas", "21st-dev"]
 applicability:
   saas_pessoal: alta
