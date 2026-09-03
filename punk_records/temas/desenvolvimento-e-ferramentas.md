@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 56 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 57 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [5 Ferramentas de Infraestrutura e Operação para SaaS em Produção](../tiktok/2026-09-03_5-ferramentas-de-infraestrutura-e-operacao-para-saas-em-prod_7655687733691665672.md)
+2026-09-03 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas`
+
+Seleção de ferramentas essenciais para levar um SaaS a nível de produção.
 
 ## [Criação e Venda Rápida de Landing Page Institucional com Claude Code](../tiktok/2026-09-03_criacao-e-venda-rapida-de-landing-page-institucional-com-cla_7680653890546683156.md)
 2026-09-03 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao`

@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 18 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 56 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 57 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 5 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 8 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -38,6 +38,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-03 · tiktok · [5 Ferramentas de Infraestrutura e Operação para SaaS em Produção](tiktok/2026-09-03_5-ferramentas-de-infraestrutura-e-operacao-para-saas-em-prod_7655687733691665672.md) · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas` `rate-limiting` · alta/media/alta · —
 - 2026-09-03 · tiktok · [Criação e Venda Rápida de Landing Page Institucional com Claude Code](tiktok/2026-09-03_criacao-e-venda-rapida-de-landing-page-institucional-com-cla_7680653890546683156.md) · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao` · baixa/alta/media · apply_client
 - 2026-09-01 · tiktok · [Stack Essencial de Ferramentas para Criar um SaaS com IA](tiktok/2026-09-01_stack-essencial-de-ferramentas-para-criar-um-saas-com-ia_7674296195522497812.md) · `vibe-coding` `micro-saas` `stack-tecnologica` `supabase` `vercel` `posthog` `sentry` `asaas` · alta/media/media · apply_saas
 - 2026-09-01 · tiktok · [8 ferramentas essenciais para a stack de desenvolvimento e operação de um SaaS](tiktok/2026-09-01_8-ferramentas-essenciais-para-a-stack-de-desenvolvimento-e-o_7669132301544066324.md) · `micro-saas` `stack-tecnologica` `supabase` `resend` `cloudflare-r2` `railway` `asaas` `21st-dev` · alta/media/media · apply_saas
