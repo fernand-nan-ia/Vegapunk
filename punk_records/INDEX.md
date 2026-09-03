@@ -158,7 +158,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎨 Design e UX
 
-- 2026-09-03 · tiktok · [10 Sinais que Entregam um Site Feito por IA](tiktok/2026-09-03_10-sinais-que-entregam-um-site-feito-por-ia_7675432199545556244.md) · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web` · alta/alta/baixa · —
+- 2026-09-03 · tiktok · [10 Sinais que Entregam um Site Feito por IA](tiktok/2026-09-03_10-sinais-que-entregam-um-site-feito-por-ia_7675432199545556244.md) · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web` · alta/alta/baixa · apply_saas
 - 2026-09-01 · tiktok · [Como fazer o design do SaaS não ter cara de feito por IA — emojis, travessão e a estrelinha](tiktok/2026-09-01_como-fazer-o-design-do-saas-nao-ter-cara-de-feito-por-ia-emo_7672412734549544199.md) · `design-de-saas` `cara-de-ia` `ui-design` `copywriting` `retencao` `vibe-coding` · alta/media/media · apply_saas
 - 2026-08-26 · tiktok · [Boas Práticas de UI/UX: Consistência, Inputs e Raio de Borda](tiktok/2026-08-26_boas-praticas-de-ui-ux-consistencia-inputs-e-raio-de-borda_7678415963133381908.md) · `ui-design` `ux-design` `design-system` `form-design` `border-radius` `usabilidade` · alta/alta/media · apply_saas
 - 2026-08-26 · tiktok · [Chamada para habilidades de design no front-end](tiktok/2026-08-26_chamada-para-habilidades-de-design-no-front-end_7658016248529177873.md) · `front-end-design` `ui-design` `habilidades-frontend` · baixa/baixa/baixa · discard

@@ -5,8 +5,8 @@ external_id: "7675432199545556244"
 canonical_url: "https://www.tiktok.com/@natan_cardoso0/video/7675432199545556244"
 channel: "Natan Cardoso | Site"
 captured_at: 2026-09-03
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["landing-page-cro", "design-de-interfaces", "copywriting", "branding", "acabamento-web"]
 applicability:
   saas_pessoal: alta

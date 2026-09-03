@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [10 Sinais que Entregam um Site Feito por IA](../tiktok/2026-09-03_10-sinais-que-entregam-um-site-feito-por-ia_7675432199545556244.md)
-2026-09-03 · tiktok · SaaS alta · cliente alta · estudo baixa · triagem — · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web`
+2026-09-03 · tiktok · SaaS alta · cliente alta · estudo baixa · triagem apply_saas · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web`
 
 O vídeo compila 10 vícios comuns que entregam páginas geradas por IA, como subdomínio Vercel, gradiente roxo e excesso de emojis.
 
