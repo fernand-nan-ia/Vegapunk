@@ -5,8 +5,8 @@ external_id: "7674296195522497812"
 canonical_url: "https://www.tiktok.com/@gustavofrancoreal/photo/7674296195522497812"
 channel: "Gustavo Franco"
 captured_at: 2026-09-01
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["vibe-coding", "micro-saas", "stack-tecnologica", "supabase", "vercel", "posthog", "sentry", "asaas"]
 applicability:
   saas_pessoal: alta

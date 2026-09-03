@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 55 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Stack Essencial de Ferramentas para Criar um SaaS com IA](../tiktok/2026-09-01_stack-essencial-de-ferramentas-para-criar-um-saas-com-ia_7674296195522497812.md)
-2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem — · `vibe-coding` `micro-saas` `stack-tecnologica` `supabase` `vercel` `posthog`
+2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `vibe-coding` `micro-saas` `stack-tecnologica` `supabase` `vercel` `posthog`
 
 Lista com a stack padrão de ferramentas para construir um SaaS com IA: Claude/ChatGPT, GitHub, Vercel, Supabase, Cloudflare, Asaas, PostHog e Sentry.
 
