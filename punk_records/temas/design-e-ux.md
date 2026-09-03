@@ -1,6 +1,11 @@
 # 🎨 Design e UX
 
-_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 4 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 5 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [10 Sinais que Entregam um Site Feito por IA](../tiktok/2026-09-03_10-sinais-que-entregam-um-site-feito-por-ia_7675432199545556244.md)
+2026-09-03 · tiktok · SaaS alta · cliente alta · estudo baixa · triagem — · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web`
+
+O vídeo compila 10 vícios comuns que entregam páginas geradas por IA, como subdomínio Vercel, gradiente roxo e excesso de emojis.
 
 ## [Como fazer o design do SaaS não ter cara de feito por IA — emojis, travessão e a estrelinha](../tiktok/2026-09-01_como-fazer-o-design-do-saas-nao-ter-cara-de-feito-por-ia-emo_7672412734549544199.md)
 2026-09-01 · tiktok · SaaS alta · cliente media · estudo media · triagem apply_saas · `design-de-saas` `cara-de-ia` `ui-design` `copywriting` `retencao` `vibe-coding`
