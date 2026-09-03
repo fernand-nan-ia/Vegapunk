@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [OpenRouter Models — catálogo de LLMs com preço, contexto e benchmarks](../article/2026-09-03_openrouter-models-catalogo-de-llms-com-preco-contexto-e-benc_9ada9be71fc4.md)
+2026-09-03 · article · SaaS alta · cliente media · estudo alta · triagem — · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados`
+
+Catálogo do OpenRouter: 424 modelos na API, 21 gratuitos, 8 com visão.
 
 ## [3 prompts de emergência para quando a IA quebra o código no Vibe Coding](../tiktok/2026-09-01_3-prompts-de-emergencia-para-quando-a-ia-quebra-o-codigo-no_7677947166140239122.md)
 2026-09-01 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `vibe-coding` `claude-code` `prompt-engineering` `debugging` `cursor` `troubleshooting`
