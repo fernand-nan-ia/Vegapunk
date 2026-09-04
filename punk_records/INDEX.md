@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 18 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 19 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 58 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 20 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -17,6 +17,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-09-04 · tiktok · [Arquitetura e Ordem de Desenvolvimento de um CRM com Claude](tiktok/2026-09-04_arquitetura-e-ordem-de-desenvolvimento-de-um-crm-com-claude_7662101841697721621.md) · `claude` `arquitetura-backend` `modelagem-de-dados` `prompt-engineering` `multi-tenant` `desenvolvimento-modular` · alta/alta/media · —
 - 2026-09-03 · article · [OpenRouter Models — catálogo de LLMs com preço, contexto e benchmarks](article/2026-09-03_openrouter-models-catalogo-de-llms-com-preco-contexto-e-benc_9ada9be71fc4.md) · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados` `vegapunk-bot` · alta/media/alta · apply_saas
 - 2026-09-01 · tiktok · [3 prompts de emergência para quando a IA quebra o código no Vibe Coding](tiktok/2026-09-01_3-prompts-de-emergencia-para-quando-a-ia-quebra-o-codigo-no_7677947166140239122.md) · `vibe-coding` `claude-code` `prompt-engineering` `debugging` `cursor` `troubleshooting` · alta/alta/media · archive
 - 2026-09-01 · youtube · [Marca d'Água Invisível no Claude e o Rastreamento de Textos Gerados](youtube/2026-09-01_marca-d-agua-invisivel-no-claude-e-o-rastreamento-de-textos_l881Vh5IhiI.md) · `anthropic` `claude` `claude-code` `watermarking` `ai-act` `llm-compliance` `open-source-llm` · media/media/alta · archive

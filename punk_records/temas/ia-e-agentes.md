@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Arquitetura e Ordem de Desenvolvimento de um CRM com Claude](../tiktok/2026-09-04_arquitetura-e-ordem-de-desenvolvimento-de-um-crm-com-claude_7662101841697721621.md)
+2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `claude` `arquitetura-backend` `modelagem-de-dados` `prompt-engineering` `multi-tenant` `desenvolvimento-modular`
+
+Guia prático para estruturar o desenvolvimento de um CRM com Claude sem cair na armadilha do vibe coding.
 
 ## [OpenRouter Models — catálogo de LLMs com preço, contexto e benchmarks](../article/2026-09-03_openrouter-models-catalogo-de-llms-com-preco-contexto-e-benc_9ada9be71fc4.md)
 2026-09-03 · article · SaaS alta · cliente media · estudo alta · triagem apply_saas · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados`
