@@ -5,8 +5,8 @@ external_id: "7681411495401475336"
 canonical_url: "https://www.tiktok.com/@jornada10k.ia/photo/7681411495401475336"
 channel: "Jornada 10K"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["prospeccao-ativa", "cold-outreach", "venda-de-sites", "energia-solar", "prototipagem-rapida", "landing-page"]
 applicability:
   saas_pessoal: baixa

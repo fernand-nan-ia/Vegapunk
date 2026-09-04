@@ -13,7 +13,7 @@ Fluxo rápido de prospecção ativa de clientes locais sem website usando filtro
 Relato de como o app FitFolio atingiu R$ 180k de ARR sem gastar com anúncios pagos.
 
 ## [Prospecção Ativa no Nicho de Energia Solar com Prévias Rápidas via IA](../tiktok/2026-09-04_prospeccao-ativa-no-nicho-de-energia-solar-com-previas-rapid_7681411495401475336.md)
-2026-09-04 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page`
+2026-09-04 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page`
 
 Abordagem comercial prática no nicho de energia solar com 9 contatos e 2 retornos solicitando prévia.
 
