@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 57 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 58 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [3 Opções de Autenticação Gerenciada para SaaS: Supabase, Clerk e Firebase](../tiktok/2026-09-04_3-opcoes-de-autenticacao-gerenciada-para-saas-supabase-clerk_7677567514703973639.md)
+2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas`
+
+Evite programar autenticação e criptografia do zero em projetos de SaaS.
 
 ## [5 Ferramentas de Infraestrutura e Operação para SaaS em Produção](../tiktok/2026-09-03_5-ferramentas-de-infraestrutura-e-operacao-para-saas-em-prod_7655687733691665672.md)
 2026-09-03 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_saas · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas`
