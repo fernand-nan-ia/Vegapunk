@@ -77,3 +77,46 @@ For enterprise customers, OpenRouter supports in-region routing in the EU and US
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+### Estado da conta em 2026-09-04 (auditado por print)
+
+Painel real em `openrouter.ai/settings/privacy`, workspace `Default Workspace`, plano pessoal.
+
+**Data Training** (4 toggles):
+- Allow paid endpoints that train on request data — DESLIGADO ✅
+- Allow free endpoints that train on request data — **LIGADO** ⚠️ único aberto
+- Allow free endpoints that publish prompts — DESLIGADO ✅
+- Allow 1% data discount in workspaces — DESLIGADO ✅
+
+**Zero Data Retention** (todos DESLIGADOS): Non-frontier, Anthropic, OpenAI, Google, SpaceXAI.
+ZDR só roteia para endpoints que não guardam dados e rejeita requisições que exigiriam retenção;
+vale só para roteamento de provedor, não para plugins/tools.
+
+**Regional routing**: bloqueado, exige plano Business.
+**Providers**: Allowed e Ignored vazios (todos permitidos).
+**Eligibility Preview**: 553 disponíveis, 3 indisponíveis.
+**Prompt Injection Allowlist**: vazia; só surte efeito se o guardrail de prompt injection
+estiver habilitado na requisição — o bot não o habilita.
+
+**Fato que decide o ZDR do Google**: `google/gemini-3.7-flash` (modelo do bot) é servido por
+6 endpoints, metade Google AI Studio e metade Google Vertex. Ligar o toggle ZDR do Google
+desabilita só os de AI Studio; Vertex continua servindo o mesmo modelo. Logo o bot NÃO quebra.
+Ressalva: `google-vertex/global/flex` estava degradado (59% de uptime em 1 dia) na consulta.
+
+### Depois da mudança, mesmo dia (2026-09-04)
+
+Fernando aplicou duas alterações:
+- **Allow free endpoints that train on request data → DESLIGADO.** Fecha o último toggle de treino aberto.
+- **Zero Data Retention · Non-frontier → LIGADO.** Toda requisição a modelo non-frontier passa a exigir endpoint ZDR.
+
+Anthropic, OpenAI, Google e SpaceXAI seguem com ZDR desligado. Não foi preciso ligar o do Google:
+o Non-frontier já cobre o caso do bot, e ligar o do Google só somaria a perda dos endpoints AI Studio.
+
+**Verificação feita com a chave da conta, não por suposição:**
+- `/api/v1/models/user` → 347 modelos elegíveis; `google/gemini-3.7-flash` continua entre eles.
+- Chamada real de inferência a `google/gemini-3.7-flash` → HTTP 200, provedor Google, resposta correta.
+- 4 modelos `:free` seguem elegíveis: desligar o toggle exclui os que treinam, não todos os gratuitos.
+
+Conclusão: o bot Vegapunk funciona com ZDR Non-frontier ligado. Configuração de privacidade fechada
+sem custo operacional. Se um dia o bot começar a falhar em rajada com erro de política de dados,
+este é o primeiro lugar a olhar.

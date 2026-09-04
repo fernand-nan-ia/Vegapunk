@@ -7,7 +7,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🤖 IA e agentes — 18 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 57 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 19 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
-- 🚀 Produto e SaaS — 6 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
+- 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 8 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 5 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
@@ -120,6 +120,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🚀 Produto e SaaS
 
+- 2026-09-04 · tiktok · [4 lições essenciais sobre marketing, ICP e lançamento antes de criar um app](tiktok/2026-09-04_4-licoes-essenciais-sobre-marketing-icp-e-lancamento-antes-d_7672046361147165972.md) · `build-in-public` `distribuicao-saas` `icp` `lancamento-rapido` `mvp` `feedback-usuario` · alta/media/alta · —
 - 2026-09-03 · tiktok · [Fitfolio: Tração e Monetização de App Fitness B2C Bootstrapped](tiktok/2026-09-03_fitfolio-tracao-e-monetizacao-de-app-fitness-b2c-bootstrappe_7675194141344615700.md) · `micro-saas` `mobile-app` `bootstrapping` `in-app-purchases` `monetizacao` `b2c` · media/baixa/alta · —
 - 2026-09-01 · tiktok · [Como lançar um Micro SaaS em 48 horas com custo fixo zero](tiktok/2026-09-01_como-lancar-um-micro-saas-em-48-horas-com-custo-fixo-zero_7679992868840295687.md) · `micro-saas` `mvp` `bootstrapping` `stack-gratuita` `supabase` `vercel` `escopo-enxuto` · alta/media/media · apply_saas
 - 2026-08-27 · article · [Hostinger Horizons (AI Builder) — planos, créditos de IA e regras de uso](article/2026-08-27_hostinger-horizons-ai-builder-planos-creditos-de-ia-e-regras_353396508dae.md) · `hostinger` `ai-builder` `criador-de-sites-ia` `vibecoding` `precos` `creditos-de-ia` · media/alta/media · archive
