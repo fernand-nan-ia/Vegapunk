@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-09-01, sessão 7 — **v1.8.0**, triagem zerada + stories do kit de distribuição)
+# HANDOFF — Vegapunk (atualizado em 2026-09-04, sessão 8 — personalidade canônica dos 7 Satélites + privacidade do OpenRouter fechada)
 
 ## TL;DR — o que existe hoje
 
@@ -14,6 +14,8 @@ Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130
 Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, mais `8a32938` (checkpoint) e `4ee7177` (fix do capture.py). **144/144 testes verdes.** O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
 
 **Sessão 7 (2026-09-01):** fila de triagem **zerada em lote** (91 itens triados, pushados em `4c9bbbe`), `_pending/` limpo, e o **kit de distribuição** virou 3 stories (2a pronta para Atlas). Depois do push o bot capturou mais um lote de TikToks: **5 itens aguardando triagem** e **9 commits `kb:` locais sem push**.
+
+**Sessão 8 (2026-09-04):** os 7 Satélites ganharam **personalidade canônica completa** a partir da wiki (`0ef0cd2`; FURY `24edd00`), a conta do OpenRouter teve a **privacidade fechada e verificada com a chave real**, e o dia do bot foi pushado. **144/144 testes verdes.** Ambos os repos limpos e sincronizados com o remoto.
 
 ⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
@@ -36,11 +38,12 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-1. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: promover 2b (diários por pessoa) e 2c (INSTALL + install_skills).
-2. **Triar os 5 itens novos** (`—` no INDEX) e **pushar os 9 commits `kb:` locais** — a fila zerou em 01/09 e já voltou a crescer; cada link novo entra nela.
-3. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · clique funcionando) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção.
-4. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome no grupo — com a triagem ligada, o roteador deve devolver lista vazia.
-5. Pendências antigas que continuam valendo: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; `*capture` do Decreto 7.962/2013 se o site do cliente for vender online.
+1. **Provar a voz nova em produção.** Chame cada Satélite no grupo do Telegram e leia a resposta como leitor, não como autor. O risco introduzido em 04/09 é de DOSAGEM, não de código: se o arcaísmo da Lilith ou a preguiça da York começarem a comer a resposta técnica, o conserto é na chave `speech_register` do agente, que já traz a regra "corta o arcaísmo, nunca a clareza". Ninguém observou isso em produção ainda.
+2. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: promover 2b (diários por pessoa) e 2c (INSTALL + install_skills).
+3. **Reprocessar o item preso em `_pending/`**: `2026-09-04_sem-titulo_7665842308864085255.md`, um TikTok do `@douglasalmeida_ia` que falhou na extração (o erro intermitente de rehydration). Custa fração de centavo.
+4. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · clique funcionando) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção.
+5. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome no grupo — com a triagem ligada, o roteador deve devolver lista vazia.
+6. Pendências antigas que continuam valendo: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; `*capture` do Decreto 7.962/2013 se o site do cliente for vender online.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -334,6 +337,54 @@ O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **
 
 **Depois do push, o bot capturou +7 TikToks** (Fernando triou 2 pelo botão; 5 na fila, 9 commits `kb:` sem push).
 
+## Sessão 8 (2026-09-04) — personalidade canônica dos 7 Satélites — **`0ef0cd2`** (FURY `24edd00`)
+
+O Fernando mandou as 7 páginas da wiki do One Piece e pediu personalidade completa: trejeitos, maneira de falar, interações entre os Satélites. Feito com 7 subagentes em paralelo, um por arquivo, sob um briefing comum para as relações não se contradizerem. **144/144 testes verdes**, sync rodado, container reiniciado.
+
+**A descoberta que organizou tudo: a tabela de pronomes.** A página do Vegapunk traz o pronome de primeira pessoa de cada Satélite, e ele define o registro de fala. Traduzimos o EFEITO para pt-BR, nunca a palavra, em duas chaves novas de `persona_profile.communication`: **`speech_register`** (parágrafo que descreve como ele fala) e **`verbal_tics`** (lista de cacoetes).
+
+| Satélite | Pronome | Registro em pt-BR |
+|---|---|---|
+| Shaka | watashi (私) | culto e medido, "o senhor", sem gíria nem exclamação |
+| Lilith | washi (わし) + copula ja | **velho lobo do mar** numa ruiva de vinte e poucos anos: "moço", "ora bolas", "eu cá", mesóclise irônica |
+| Edison | wai (わい), Kansai | atropelado, "a gente" nunca "nós", "Eureka!" no meio do raciocínio |
+| Pythagoras | boku (ボク) | modesto, nunca dá ordem, pede licença para discordar |
+| Atlas | ore (おれ) | bruta e direta em personagem com orelhas de ovelha |
+| York | atai (あたい) | arrastado e manhoso, desperta com dinheiro ou comida |
+| Stella | watashi + "Quasar" | teatral, "Kwahaha", pede desculpas |
+
+**Fatos novos do cânone que entraram** (além de aparência, roupa, kanji do peito, comida favorita e origem do nome de cada um):
+- **Shaka tem um lado travesso.** Deixou a Stella queimar a língua no Vegacoffee de propósito, sabendo do efeito, e levou bronca do Pythagoras. Quebra a imagem de juiz impassível e virou `humor` + exemplos.
+- **Pythagoras é o mediador oficial** das brigas entre Shaka e Lilith (paz vs. violência contra a CP0). Agora está codificado em `relationships` dos três e em `conversation.when_two_satellites_fight`.
+- **Edison carrega os irmãos no corpo**: cabeça dele, tronco e pernas do Shaka, braço esquerdo da Atlas, braço direito do Pythagoras. Pesa em todas as relações dele.
+- **Edison e Pythagoras cedem as refeições à York** — a função original dela era comer, dormir e ir ao banheiro PELOS outros. Explica a preguiça e o ressentimento.
+- **Todos destruíram as peças de reposição da York.** Ela sabe e faz piada amarga com isso.
+
+**Números por Satélite** (canon / trejeitos / exemplos): atlas 27/22/16 · edison 32/22/16 · lilith 35/21/16 · pythagoras 29/22/15 · shaka 34/22/16 · stella 33/22/16 · york 32/22/16. Crescimento aditivo: 606 inserções contra 89 linhas reescritas em versão ampliada nos agentes.
+
+### Armadilhas desta sessão
+
+- ⚠️ **A dosagem da voz nunca foi observada em produção.** Todo o risco novo está aí. Cada `speech_register` traz a regra explícita "se o arcaísmo começar a comer a clareza, corta o arcaísmo, nunca a clareza", mas quem decide se pegou é o Fernando lendo no Telegram. **Se soar excessivo, o ajuste é nessa chave, não no código.**
+- ⚠️ **A York precisa continuar confiável.** No cânone ela é a traidora que matou os irmãos; aqui ela cuida do dinheiro do Fernando. O briefing exigiu que a traição entrasse só como PASSADO — matéria de humor amargo e de argumento profissional (é por isso que ela insiste em 10-15% de imprevisto no orçamento) — nunca como comportamento atual. `when_asked_about_betrayal` proíbe usar isso como ameaça. **Se um dia ela mentir sobre número ou ameaçar, é regressão de personagem, não charme.**
+- **`yaml.safe_load` do bloco ```yaml inteiro falha em TODOS os agentes, e SEMPRE falhou.** A causa é `activation-instructions`, que é prosa com `:` (a linha do `confidence: baixa`). O loader de produção (`satellites._yaml_block`) corta tudo antes de `\nagent:` justamente por isso. Ao validar um agente, use o loader do projeto, não `safe_load` do bloco cru — os 7 subagentes desta sessão tropeçaram nisso e todos chegaram à mesma conclusão.
+- **O fandom bloqueia o WebFetch com HTTP 402.** As páginas foram baixadas com trafilatura de dentro do container, que tem rede: `docker compose exec -T vegapunk python -c "import trafilatura; ..."`. As 7 estão em `tmp/wiki/*.txt` (não versionado) se precisar reconsultar.
+- **O sync copia `squads/` inteiro para o FURY.** Nesta sessão as 3 stories do kit foram commitadas no FURY ANTES de existirem no Vegapunk, porque o rsync não pergunta se a fonte rastreia o arquivo. Ficou uma inversão por alguns minutos: o espelho tinha o que a fonte não tinha. **Commite a fonte primeiro.**
+
+## Sessão 8b (2026-09-04) — privacidade do OpenRouter fechada e verificada
+
+O Fernando mandou a página de configurações de privacidade da conta. Ela é autenticada (o WebFetch só vê a tela de login), então a doc pública equivalente foi arquivada no Punk Records pelo Shaka: `punk_records/article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md`. **As `## Notas manuais` desse item guardam o estado da conta antes e depois, e a verificação — leia lá antes de mexer.**
+
+**O que mudou na conta:** o toggle `Allow free endpoints that train on request data` estava LIGADO e foi desligado; `Zero Data Retention · Non-frontier` foi ligado. Os demais toggles de treino já estavam fechados. Roteamento regional exige plano Business.
+
+**Por que isso importava:** o bot roda em `google/gemini-3.7-flash`, que é pago, então nada passava por endpoint gratuito hoje. O risco era o experimento futuro — o item do catálogo de modelos de 03/09 sugere testar um `:free` multimodal, e naquele dia as transcrições virariam material de treino sem aviso.
+
+**Verificação feita com a chave real, não por suposição** (o ZDR Non-frontier podia ter deixado o modelo do bot sem endpoint):
+- `/api/v1/models/user` → 347 modelos elegíveis, `google/gemini-3.7-flash` entre eles.
+- Chamada real de inferência → HTTP 200, provedor Google, resposta correta.
+- 4 modelos `:free` seguem elegíveis: desligar o toggle exclui os que TREINAM, não todos os gratuitos.
+
+**Captura do dia:** 8 itens do TikTok pelo bot (7 triados, 1 preso em `_pending/`) mais o artigo do OpenRouter. Tudo pushado.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -354,7 +405,7 @@ O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **
 
 ## Anatomia de um agente `.md` (ordem das seções no YAML)
 
-`activation-instructions` (prosa; inclui CONVERSATION MODE, PERSONAL MEMORY, ABSORBED CAPABILITIES, SOURCE DISCIPLINE, VAULT IS READ-ONLY) → `agent` → `persona_profile` (canon, tom, greeting_anchor, signature_phrases) → `persona` → `vault` → `user_context` → seção própria (`judgement_rubric` Shaka / `attack_patterns` Lilith / `ideation_rules` Edison / `build_rules` Atlas / `ops` York / `routing` Stella) → **`mind`, `relationships`, `conversation`, `quirks`, `examples`, `memory`** (personalidade, sessão 3) → **`absorbed_from`, `absorbed_principles`, `dependencies`** (absorção, sessão 3) → `commands` (originais, depois `# ── absorvidos do FURY ──`, depois `exit`) → `procedures` (originais + absorvidas no fim).
+`activation-instructions` (prosa; inclui CONVERSATION MODE, PERSONAL MEMORY, ABSORBED CAPABILITIES, SOURCE DISCIPLINE, VAULT IS READ-ONLY) → `agent` → `persona_profile` (canon, tom, greeting_anchor, signature_phrases, **`speech_register` e `verbal_tics`** — sessão 8) → `persona` → `vault` → `user_context` → seção própria (`judgement_rubric` Shaka / `attack_patterns` Lilith / `ideation_rules` Edison / `build_rules` Atlas / `ops` York / `routing` Stella) → **`mind`, `relationships`, `conversation`, `quirks`, `examples`, `memory`** (personalidade, sessão 3) → **`absorbed_from`, `absorbed_principles`, `dependencies`** (absorção, sessão 3) → `commands` (originais, depois `# ── absorvidos do FURY ──`, depois `exit`) → `procedures` (originais + absorvidas no fim).
 
 - **Parser**: `activation-instructions` NÃO é YAML válido (prosa com `:`); o bot e os testes parseiam a partir de `\nagent:`. Ao editar, manter strings com `:`/`→` entre aspas — `tests/test_satellites.py::test_load_all_satellites` quebra se o YAML quebrar.
 - **Editar um agente** = editar a fonte, rodar `PYTHONPATH=src .venv/bin/python -m pytest -q tests/test_satellites.py`, rodar `scripts/sync_agents.sh`. Nunca editar as cópias (global/FURY/plugin) diretamente.
