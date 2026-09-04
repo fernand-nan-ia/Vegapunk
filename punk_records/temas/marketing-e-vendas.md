@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Prospecção Ativa de Clientes Locais e Geração Rápida de Sites com IA](../tiktok/2026-09-04_prospeccao-ativa-de-clientes-locais-e-geracao-rapida-de-site_7679863271511526676.md)
-2026-09-04 · tiktok · SaaS baixa · cliente media · estudo media · triagem — · `prospeccao-ativa` `geracao-de-leads` `cold-outreach` `vendas-b2b` `criacao-de-sites` `ia-para-sites`
+2026-09-04 · tiktok · SaaS baixa · cliente media · estudo media · triagem apply_client · `prospeccao-ativa` `geracao-de-leads` `cold-outreach` `vendas-b2b` `criacao-de-sites` `ia-para-sites`
 
 Fluxo rápido de prospecção ativa de clientes locais sem website usando filtros de nicho e localização.
 
