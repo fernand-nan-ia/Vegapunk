@@ -5,8 +5,8 @@ external_id: "7661036212177685781"
 canonical_url: "https://www.tiktok.com/@matheusgobb1/photo/7661036212177685781"
 channel: "matheusgobbi"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["build-in-public", "distribuicao-organica", "tiktok-marketing", "ia-influencers", "crescimento-saas", "cursor"]
 applicability:
   saas_pessoal: alta

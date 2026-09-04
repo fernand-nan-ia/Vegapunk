@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Fluxo rápido de prospecção ativa de clientes locais sem website usando filtros de nicho e localização.
 
 ## [Playbook de Distribuição Orgânica do FitFolio: De 0 a 180k ARR com Build in Public e IA](../tiktok/2026-09-04_playbook-de-distribuicao-organica-do-fitfolio-de-0-a-180k-ar_7661036212177685781.md)
-2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `build-in-public` `distribuicao-organica` `tiktok-marketing` `ia-influencers` `crescimento-saas` `cursor`
+2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_saas · `build-in-public` `distribuicao-organica` `tiktok-marketing` `ia-influencers` `crescimento-saas` `cursor`
 
 Relato de como o app FitFolio atingiu R$ 180k de ARR sem gastar com anúncios pagos.
 
