@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Prospecção Ativa no Nicho de Energia Solar com Prévias Rápidas via IA](../tiktok/2026-09-04_prospeccao-ativa-no-nicho-de-energia-solar-com-previas-rapid_7681411495401475336.md)
+2026-09-04 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page`
+
+Abordagem comercial prática no nicho de energia solar com 9 contatos e 2 retornos solicitando prévia.
 
 ## [Workflow para Venda e Criação Rápida de Landing Pages com IA](../tiktok/2026-09-01_workflow-para-venda-e-criacao-rapida-de-landing-pages-com-ia_7676498062474284308.md)
 2026-09-01 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `landing-page` `freelance` `prospeccao` `claude` `vercel` `negocios-locais`

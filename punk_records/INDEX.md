@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 57 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 19 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 8 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 9 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -130,6 +130,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-04 · tiktok · [Prospecção Ativa no Nicho de Energia Solar com Prévias Rápidas via IA](tiktok/2026-09-04_prospeccao-ativa-no-nicho-de-energia-solar-com-previas-rapid_7681411495401475336.md) · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page` · baixa/alta/media · —
 - 2026-09-01 · tiktok · [Workflow para Venda e Criação Rápida de Landing Pages com IA](tiktok/2026-09-01_workflow-para-venda-e-criacao-rapida-de-landing-pages-com-ia_7676498062474284308.md) · `landing-page` `freelance` `prospeccao` `claude` `vercel` `negocios-locais` · baixa/alta/media · apply_client
 - 2026-09-01 · tiktok · [Estratégia de Aquisição de Clientes e Prova Social com Serviços Gratuitos](tiktok/2026-09-01_estrategia-de-aquisicao-de-clientes-e-prova-social-com-servi_7653187659157867797.md) · `aquisicao-de-clientes` `prova-social` `prospeccao-ativa` `prestacao-de-servicos` `estrategia-freelance` `depoimentos` `programa-de-indicacao` · baixa/media/media · archive
 - 2026-09-01 · tiktok · [Venda de site para clínica odontológica por R$ 680 — a conversa inteira, do primeiro contato ao fechamento](tiktok/2026-09-01_venda-de-site-para-clinica-odontologica-por-r-680-a-conversa_7674792895030791432.md) · `precificacao-de-sites` `site-institucional` `prospeccao` `clinica-odontologica` `landing-page` `projeto-cliente` · baixa/alta/media · apply_client
