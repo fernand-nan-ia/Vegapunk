@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [3 Ferramentas Gratuitas para Segurança e Monitoramento de SaaS](../tiktok/2026-09-04_3-ferramentas-gratuitas-para-seguranca-e-monitoramento-de-sa_7659496100713385224.md)
+2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking`
+
+Recomendações de ferramentas gratuitas para segurança básica em SaaS: Cloudflare para proteção DDoS, Supabase RLS para isolamento de dados e Sentry para monitoramento de erros.
 
 ## [OpenRouter — política de treino, retenção de logs e roteamento em região](../article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md)
 2026-09-04 · article · SaaS alta · cliente media · estudo alta · triagem — · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd`
