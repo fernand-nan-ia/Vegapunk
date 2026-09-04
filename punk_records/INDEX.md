@@ -100,7 +100,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
-- 2026-09-04 · tiktok · [3 Ferramentas Gratuitas para Segurança e Monitoramento de SaaS](tiktok/2026-09-04_3-ferramentas-gratuitas-para-seguranca-e-monitoramento-de-sa_7659496100713385224.md) · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking` `observabilidade` · alta/alta/media · —
+- 2026-09-04 · tiktok · [3 Ferramentas Gratuitas para Segurança e Monitoramento de SaaS](tiktok/2026-09-04_3-ferramentas-gratuitas-para-seguranca-e-monitoramento-de-sa_7659496100713385224.md) · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking` `observabilidade` · alta/alta/media · apply_saas
 - 2026-09-04 · article · [OpenRouter — política de treino, retenção de logs e roteamento em região](article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md) · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd` `vegapunk-bot` · alta/media/alta · —
 - 2026-08-28 · youtube · [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md) · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec` `hardening` · alta/alta/alta · archive
 - 2026-08-28 · article · [Visão Geral de Segurança do Telegram — moderação, CSAM e conteúdo terrorista](article/2026-08-28_visao-geral-de-seguranca-do-telegram-moderacao-csam-e-conteu_96c95a08cb48.md) · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma` · baixa/nenhuma/media · discard

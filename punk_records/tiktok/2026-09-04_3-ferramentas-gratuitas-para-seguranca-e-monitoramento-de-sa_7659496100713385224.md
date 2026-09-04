@@ -5,8 +5,8 @@ external_id: "7659496100713385224"
 canonical_url: "https://www.tiktok.com/@gabriel.padraoo/photo/7659496100713385224"
 channel: "Gabriel Padrão | IA & SaaS"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["cloudflare", "supabase-rls", "sentry", "seguranca-web", "ddos-protection", "error-tracking", "observabilidade"]
 applicability:
   saas_pessoal: alta

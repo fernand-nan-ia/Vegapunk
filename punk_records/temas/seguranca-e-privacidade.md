@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [3 Ferramentas Gratuitas para Segurança e Monitoramento de SaaS](../tiktok/2026-09-04_3-ferramentas-gratuitas-para-seguranca-e-monitoramento-de-sa_7659496100713385224.md)
-2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking`
+2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_saas · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking`
 
 Recomendações de ferramentas gratuitas para segurança básica em SaaS: Cloudflare para proteção DDoS, Supabase RLS para isolamento de dados e Sentry para monitoramento de erros.
 
