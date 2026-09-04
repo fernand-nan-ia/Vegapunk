@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 18 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 57 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 18 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 19 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 6 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 8 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -98,6 +98,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-09-04 · article · [OpenRouter — política de treino, retenção de logs e roteamento em região](article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md) · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd` `vegapunk-bot` · alta/media/alta · —
 - 2026-08-28 · youtube · [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md) · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec` `hardening` · alta/alta/alta · archive
 - 2026-08-28 · article · [Visão Geral de Segurança do Telegram — moderação, CSAM e conteúdo terrorista](article/2026-08-28_visao-geral-de-seguranca-do-telegram-moderacao-csam-e-conteu_96c95a08cb48.md) · `telegram` `moderacao-de-conteudo` `seguranca` `transparencia` `csam` `plataforma` · baixa/nenhuma/media · discard
 - 2026-08-28 · article · [Telegram FAQ — grupos, chats secretos, bots, privacy mode, GDPR e miniapps](article/2026-08-28_telegram-faq-grupos-chats-secretos-bots-privacy-mode-gdpr-e_461904727fd2.md) · `telegram` `telegram-bot` `privacy-mode` `grupos-telegram` `chats-secretos` `gdpr` `miniapps` `bot-api` · media/baixa/alta · archive

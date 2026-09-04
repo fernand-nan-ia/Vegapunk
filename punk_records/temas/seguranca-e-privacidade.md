@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [OpenRouter — política de treino, retenção de logs e roteamento em região](../article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md)
+2026-09-04 · article · SaaS alta · cliente media · estudo alta · triagem — · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd`
+
+Opt-out de treino no OpenRouter é configuração de conta, com toggles separados para modelos pagos e gratuitos.
 
 ## [Auditoria de Cibersegurança com IA em Projetos Vibe Coding](../youtube/2026-08-28_auditoria-de-ciberseguranca-com-ia-em-projetos-vibe-coding_mjSOFCDV_wA.md)
 2026-08-28 · youtube · SaaS alta · cliente alta · estudo alta · triagem archive · `vibe-coding` `auditoria-seguranca` `claude` `idor` `supabase-rls` `appsec`
