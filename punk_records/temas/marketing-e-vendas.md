@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Playbook de Distribuição Orgânica do FitFolio: De 0 a 180k ARR com Build in Public e IA](../tiktok/2026-09-04_playbook-de-distribuicao-organica-do-fitfolio-de-0-a-180k-ar_7661036212177685781.md)
+2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `build-in-public` `distribuicao-organica` `tiktok-marketing` `ia-influencers` `crescimento-saas` `cursor`
+
+Relato de como o app FitFolio atingiu R$ 180k de ARR sem gastar com anúncios pagos.
 
 ## [Prospecção Ativa no Nicho de Energia Solar com Prévias Rápidas via IA](../tiktok/2026-09-04_prospeccao-ativa-no-nicho-de-energia-solar-com-previas-rapid_7681411495401475336.md)
 2026-09-04 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page`
