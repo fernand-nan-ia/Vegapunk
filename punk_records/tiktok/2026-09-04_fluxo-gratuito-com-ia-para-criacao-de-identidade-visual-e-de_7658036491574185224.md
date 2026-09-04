@@ -5,8 +5,8 @@ external_id: "7658036491574185224"
 canonical_url: "https://www.tiktok.com/@gabriel.padraoo/photo/7658036491574185224"
 channel: "Gabriel Padrão | IA & SaaS"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["identidade-visual", "design-system", "geracao-de-logo", "google-stitch", "chatgpt", "micro-saas"]
 applicability:
   saas_pessoal: media
