@@ -39,7 +39,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
-- 2026-09-04 · tiktok · [3 Opções de Autenticação Gerenciada para SaaS: Supabase, Clerk e Firebase](tiktok/2026-09-04_3-opcoes-de-autenticacao-gerenciada-para-saas-supabase-clerk_7677567514703973639.md) · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas` · alta/alta/media · —
+- 2026-09-04 · tiktok · [3 Opções de Autenticação Gerenciada para SaaS: Supabase, Clerk e Firebase](tiktok/2026-09-04_3-opcoes-de-autenticacao-gerenciada-para-saas-supabase-clerk_7677567514703973639.md) · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas` · alta/alta/media · apply_saas
 - 2026-09-03 · tiktok · [5 Ferramentas de Infraestrutura e Operação para SaaS em Produção](tiktok/2026-09-03_5-ferramentas-de-infraestrutura-e-operacao-para-saas-em-prod_7655687733691665672.md) · `saas-stack` `infraestrutura` `cloudflare-r2` `upstash-redis` `resend` `asaas` `rate-limiting` · alta/media/alta · apply_saas
 - 2026-09-03 · tiktok · [Criação e Venda Rápida de Landing Page Institucional com Claude Code](tiktok/2026-09-03_criacao-e-venda-rapida-de-landing-page-institucional-com-cla_7680653890546683156.md) · `claude-code` `vibecoding` `landing-page` `freelance` `geracao-de-leads` `prospeccao` · baixa/alta/media · apply_client
 - 2026-09-01 · tiktok · [Stack Essencial de Ferramentas para Criar um SaaS com IA](tiktok/2026-09-01_stack-essencial-de-ferramentas-para-criar-um-saas-com-ia_7674296195522497812.md) · `vibe-coding` `micro-saas` `stack-tecnologica` `supabase` `vercel` `posthog` `sentry` `asaas` · alta/media/media · apply_saas

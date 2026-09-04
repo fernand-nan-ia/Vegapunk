@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 58 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [3 Opções de Autenticação Gerenciada para SaaS: Supabase, Clerk e Firebase](../tiktok/2026-09-04_3-opcoes-de-autenticacao-gerenciada-para-saas-supabase-clerk_7677567514703973639.md)
-2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas`
+2026-09-04 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_saas · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas`
 
 Evite programar autenticação e criptografia do zero em projetos de SaaS.
 

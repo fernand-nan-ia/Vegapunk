@@ -5,8 +5,8 @@ external_id: "7677567514703973639"
 canonical_url: "https://www.tiktok.com/@purevibecoding/photo/7677567514703973639"
 channel: "Vibecoding"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["autenticacao", "supabase-auth", "clerk", "firebase-auth", "vibecoding", "micro-saas"]
 applicability:
   saas_pessoal: alta
