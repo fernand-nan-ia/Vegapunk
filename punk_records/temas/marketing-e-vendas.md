@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Prospecção Ativa de Clientes Locais e Geração Rápida de Sites com IA](../tiktok/2026-09-04_prospeccao-ativa-de-clientes-locais-e-geracao-rapida-de-site_7679863271511526676.md)
+2026-09-04 · tiktok · SaaS baixa · cliente media · estudo media · triagem — · `prospeccao-ativa` `geracao-de-leads` `cold-outreach` `vendas-b2b` `criacao-de-sites` `ia-para-sites`
+
+Fluxo rápido de prospecção ativa de clientes locais sem website usando filtros de nicho e localização.
 
 ## [Playbook de Distribuição Orgânica do FitFolio: De 0 a 180k ARR com Build in Public e IA](../tiktok/2026-09-04_playbook-de-distribuicao-organica-do-fitfolio-de-0-a-180k-ar_7661036212177685781.md)
 2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `build-in-public` `distribuicao-organica` `tiktok-marketing` `ia-influencers` `crescimento-saas` `cursor`
