@@ -5,8 +5,8 @@ external_id: "7662101841697721621"
 canonical_url: "https://www.tiktok.com/@oreidosites/photo/7662101841697721621"
 channel: "O Rei dos Sites 👑"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["claude", "arquitetura-backend", "modelagem-de-dados", "prompt-engineering", "multi-tenant", "desenvolvimento-modular"]
 applicability:
   saas_pessoal: alta
