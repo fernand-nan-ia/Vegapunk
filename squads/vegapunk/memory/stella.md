@@ -12,6 +12,7 @@
 - 2026-08-28 · Fernando fechou as 3 decisões do PRD multi-bot: privacy OFF só no bot leitor, roteador decide por contexto (sem exceção para a York), janela de continuidade de 10 min (ele mesmo subiu de 5 para 10)
 - 2026-08-28 · Story 1 do PRD não cabia numa sessão de Atlas: dividida em 1a (roteador), 1b (dois bots), 1c (cascata); só a 1a foi entregue pronta
 - 2026-08-28 · Regra nova do Fernando: link enviado aqui para leitura vai SEMPRE para o Punk Records via *capture, sem perguntar, salvo pedido contrário (aprendido depois de eu ler 3 páginas do Telegram e só perguntar se capturava)
+- 2026-09-01 · Fernando quer o kit de distribuição: repo privado único como vault compartilhado com amigos de confiança (bots e chaves próprios de cada um), reinstalação sem perda, e instalação fácil só das skills. Decidiu: diários por pessoa (memory/fernando/). Stories 2a/2b/2c escritas; 2a pronta para Atlas.
 
 ## Sincronizações
 - 2026-08-27 · v1.1.0 `40fec7d` — cânone nos 7 Satélites, knowledge/ → punk_records/, README; Lilith achou vault_path antigo no banco, corrigido antes do push; Fernando disse "push" (primeiro *release de teste)
@@ -28,4 +29,5 @@
 - 2026-08-28 (noite) · Grupo «Vegapunk» funcionando de ponta a ponta em produção: 7 bots, cascata, janela de 10 min, cada Satélite pela própria boca, triagem por assunto. Três bugs achados só rodando (reply_to com privacy ON, dois bots Lilith, JSON cortado por max_tokens). 137 testes. NADA commitado: verify e gate precisam ser refeitos por causa da triagem.
 - 2026-08-31 · v1.8.0 `2f48130` — cascata do grupo, janela de 10 min, modo triagem por assunto, captura pela boca do dono com teclado à parte, semáforo de 3 no pipeline, teto de hora 60→25 (York). Lilith em 3 rodadas (1 ALTO cada), Shaka PASS, 143/143. O Fernando commitou e pushou ele mesmo. Aceitação da 1d (colar um link no grupo) ficou pendente.
 - 2026-08-31 · Lote de 7 TikToks pelo *capture (vault 126→133). O lote achou uma regressão da v1.8.0: o capture.py tem a própria implementação do notify e quebrou com os campos novos. Duas dívidas novas: gasto invisível dos slides e datas do vault em UTC.
+- 2026-09-01 · `4c9bbbe` — York (health: tudo de pé) e Shaka (auditoria de triagem): 91 itens `—` triados em lote aprovado pelo Fernando (4 discard, 6 apply_saas, 1 apply_client, 80 archive) + 2 extraction_failed apagados de _pending/. 92 commits kb:; Fernando disse "push".
 

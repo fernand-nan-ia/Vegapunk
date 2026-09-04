@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-08-31, sessão 6 — **v1.8.0**, último commit `4ee7177`)
+# HANDOFF — Vegapunk (atualizado em 2026-09-01, sessão 7 — **v1.8.0**, triagem zerada + stories do kit de distribuição)
 
 ## TL;DR — o que existe hoje
 
@@ -11,7 +11,9 @@ Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. 
 
 Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**); FURY em `ab4ce12`.
 
-Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, mais `8a32938` (checkpoint) e `4ee7177` (fix do capture.py). **144/144 testes verdes.** Punk Records com **133 itens**. O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
+Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, mais `8a32938` (checkpoint) e `4ee7177` (fix do capture.py). **144/144 testes verdes.** O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
+
+**Sessão 7 (2026-09-01):** fila de triagem **zerada em lote** (91 itens triados, pushados em `4c9bbbe`), `_pending/` limpo, e o **kit de distribuição** virou 3 stories (2a pronta para Atlas). Depois do push o bot capturou mais um lote de TikToks: **5 itens aguardando triagem** e **9 commits `kb:` locais sem push**.
 
 ⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
@@ -34,16 +36,11 @@ Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal
 
 ## Primeira coisa a fazer na próxima sessão
 
-**O grupo multi-bot está a duas linhas de `.env` de funcionar.** Todo o código das Stories 1a, 1b e 1c existe, com 130 testes. O que falta é uma decisão do Fernando e um `.env`.
-
-~~1 e 2 (aceitar ressalvas, editar `.env`)~~ — **FEITOS em 2026-08-28 à noite.** O `.env` está completo (7 tokens, id do grupo, `TELEGRAM_ALLOWED_USER_IDS`, `VEGAPUNK_GROUP_ENABLED=true`), o container foi recriado e **o grupo funciona** (ver Sessão 5e).
-
-1. **Decidir o teto de respostas por hora.** A York recomenda baixar de **60 para 25** (`router.MAX_REPLIES_PER_MIN` fica em 6, que ela aprovou). Motivo: 60/h autoriza US$ 23,76 num dia de descontrole — quatro dias de uso real a cada hora. É uma linha de código.
-2. **Refazer `*verify` (Lilith) e `*gate` (Shaka) sobre a Story 1c + triagem.** Os dois foram dados ANTES do modo triagem, que desfez a propriedade de custo em que se apoiavam. Sem isso o Stella não faz release — e há ~18 arquivos rodando em produção sem commit.
-3. **Depois: `*release`.** Working tree pronta, 137 testes verdes. Sugestão de versão: **v1.8.0** (cascata do grupo + triagem).
-4. **Falta um teste de aceite**: a sétima mensagem do roteiro — esperar 11 minutos e escrever `e aí?` sem nome. Esperado: ninguém responde (janela expirada). Com a triagem ligada, o roteador é consultado e deve devolver lista vazia por ser frase sem pergunta — **este caso mudou de natureza e ainda não foi observado**.
-3. Se o site do cliente for vender online: `*capture` o Decreto nº 7.962/2013 (regulamenta e-commerce sob o CDC) — lacuna marcada pelo Shaka no item do Código de Defesa do Consumidor.
-4. Investigar os US$ 8,58 gastos na chave do OpenRouter que não batem com o que o bot registra (achado em 2026-08-27 ao rodar `*cost`; ~13 centavos são do bot, o resto é gasto não explicado — checar se a chave está em outro projeto).
+1. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: promover 2b (diários por pessoa) e 2c (INSTALL + install_skills).
+2. **Triar os 5 itens novos** (`—` no INDEX) e **pushar os 9 commits `kb:` locais** — a fila zerou em 01/09 e já voltou a crescer; cada link novo entra nela.
+3. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · clique funcionando) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção.
+4. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome no grupo — com a triagem ligada, o roteador deve devolver lista vazia.
+5. Pendências antigas que continuam valendo: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; `*capture` do Decreto 7.962/2013 se o site do cliente for vender online.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -322,6 +319,21 @@ O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **
 - **Datas do vault em UTC.** O container roda em UTC; itens capturados depois das 21h no horário local entram com a data do **dia seguinte** no nome do arquivo e no `INDEX.md`. Os sete deste lote saíram como `2026-09-01` tendo sido capturados em 31/08. Não quebra nada (links são relativos), mas atrapalha busca por data.
 - **A DM continua sem teto** e o **`INDEX.md` continua crescendo dentro de toda resposta** (agora 133 itens) — as duas dívidas de custo mais antigas.
 
+## Sessão 7 (2026-09-01) — triagem zerada, _pending limpo, kit de distribuição planejado
+
+**Healthcheck (York):** container de pé (subida limpa, RestartCount=0), 7 bots online, nenhum erro no log desde a v1.8.0.
+
+**Fila de triagem zerada em lote.** Os 91 itens `—` foram triados de uma vez: Shaka propôs por grupos a partir do INDEX, Fernando aprovou integralmente (**4 discard · 6 apply_saas · 1 apply_client · 80 archive**), e a aplicação rodou dentro do container via `pipeline.triage` — a MESMA função do botão do Telegram, um commit `kb:` por decisão, zero OpenRouter. Script usado: `triage_batch.py` (scratchpad da sessão; o mapa de decisões está nele e no diário do Shaka).
+
+**`_pending/` zerado.** Os 2 `extraction_failed` foram apagados a pedido do Fernando (post do Instagram sem vídeo — yt-dlp não extrai foto/carrossel — e um carrinho de pagamento da Hostinger colado por engano). Apagar item exige `DELETE FROM item_events` ANTES de `knowledge_items` (FK). Push autorizado ("push"): **92 commits em `4c9bbbe`**.
+
+**Kit de distribuição planejado (pedido do Fernando).** Visão dele: repo **privado** único como vault compartilhado — amigos de confiança entram como collaborators do GitHub, cada um com bot, tokens e chave OpenRouter **próprios**, todos commitando `kb:` no mesmo repo; também serve de reinstalação sem perda em máquina nova. Decisão dele: **diários por pessoa** (`memory/fernando/`, `memory/<amigo>/`). Rotina por máquina: `git pull --rebase` → `import_vault` → usar → `push`. Três stories em `squads/vegapunk/stories/`:
+- **2a — Importador vault → banco** (`pronta`): reconstrói o banco a partir dos `.md`; fecha o furo de design em que item chegado por `git pull` some do INDEX na primeira regeneração local (INDEX nasce do banco, não dos arquivos). `*risk` do Shaka colado na story.
+- **2b — Diários por pessoa** (rascunho): `VEGAPUNK_OWNER` + migração `git mv` para `memory/fernando/`.
+- **2c — Instalação** (rascunho): INSTALL.md, `.env.example` completo, `install_skills.sh` com perfis "completa" e "só skills" — reescrevendo os caminhos absolutos `/home/crazu/...` dos agentes na cópia instalada.
+
+**Depois do push, o bot capturou +7 TikToks** (Fernando triou 2 pelo botão; 5 na fila, 9 commits `kb:` sem push).
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -394,6 +406,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Absorção é aditiva**: nunca remover comandos/seções originais dos Satélites ao adicionar funções.
 - **Autossuficiência**: `squads/vegapunk/` não aponta para o FURY; o FURY recebe cópia (sync), não o contrário.
 - York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são do Stella.
+- **Repo original privado = vault único compartilhado** (decidido 2026-09-01): amigos entram como collaborators, cada um com bot/tokens/chave próprios, todos commitam `kb:` no mesmo repo. Sem repo-modelo separado; o kit é o próprio repo + importador + INSTALL.
+- **Diários por pessoa** (decidido 2026-09-01): `squads/vegapunk/memory/<dono>/` — versionados (backup), sem mistura entre usuários (Story 2b).
 
 ## Armadilhas conhecidas
 - **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.
@@ -404,6 +418,9 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - `yt-dlp` desatualizado é a causa nº 1 de falha: `docker compose build --no-cache`.
 - YAML dos agentes: `vocabulary: [..., "aguenta?"]` e `routing: - {need: "...", satellite: x}` precisam ficar assim (com aspas / flow mapping) — foram os dois pontos que quebravam o parser.
 - Texto sem link no Telegram agora **custa tokens** (vai ao modelo). Mensagem acidental = uma coxinha.
+- Apagar item do banco: `item_events` referencia `knowledge_items` (FK) — deletar os eventos ANTES do item, senão `IntegrityError`.
+- `pipeline.triage` só aceita item em status `enriched`: `extraction_failed` não tem caminho de descarte pelo bot — a saída é colar conteúdo em Notas manuais + `/reprocess`, ou delete manual (com a FK acima).
+- INDEX.md e `temas/` são regenerados INTEIROS a partir do banco a cada triagem/captura: item que existir só como arquivo (ex.: vindo de `git pull` de outra instalação) some do índice — é o furo que a Story 2a (importador) fecha.
 
 ## Mapa do código
 `src/vegapunk/`: `bot.py` (handlers: links → pipeline; texto → chat; comandos de Satélite) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema; `read_slides`; `_client()` reutilizado pelo chat), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env), **`satellites.py`** (persona → prompt, vault picker), **`chat.py`** (estado/histórico/reply).
