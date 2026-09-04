@@ -5,8 +5,8 @@ external_id: "7672046361147165972"
 canonical_url: "https://www.tiktok.com/@matheusgobb1/video/7672046361147165972"
 channel: "matheusgobbi"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["build-in-public", "distribuicao-saas", "icp", "lancamento-rapido", "mvp", "feedback-usuario"]
 applicability:
   saas_pessoal: alta

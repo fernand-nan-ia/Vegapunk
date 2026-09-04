@@ -3,7 +3,7 @@
 _micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [4 lições essenciais sobre marketing, ICP e lançamento antes de criar um app](../tiktok/2026-09-04_4-licoes-essenciais-sobre-marketing-icp-e-lancamento-antes-d_7672046361147165972.md)
-2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `build-in-public` `distribuicao-saas` `icp` `lancamento-rapido` `mvp` `feedback-usuario`
+2026-09-04 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_client · `build-in-public` `distribuicao-saas` `icp` `lancamento-rapido` `mvp` `feedback-usuario`
 
 Dicas fundamentais para fundadores focarem em distribuição antes de adicionar mais features.
 
