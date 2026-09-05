@@ -1,6 +1,11 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [mangal: leitor e downloader de mangá em linha de comando (descontinuado)](../article/2026-09-05_mangal-leitor-e-downloader-de-manga-em-linha-de-comando-desc_6e292cc70559.md)
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao`
+
+Aplicativo de terminal para baixar e ler mangá, com scrapers em Lua e exportação em PDF ou CBZ.
 
 ## [Kaizoku: downloader de mangá self-hosted](../article/2026-09-05_kaizoku-downloader-de-manga-self-hosted_f4b0aa5f6b1a.md)
 2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem archive · `kaizoku` `manga-self-hosted` `docker-compose` `biblioteca-de-manga` `suwayomi` `mangal`

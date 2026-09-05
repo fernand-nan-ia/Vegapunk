@@ -12,7 +12,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
-- 🎮 Jogos e entretenimento — 10 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
+- 🎮 Jogos e entretenimento — 11 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
 
 ## 🤖 IA e agentes
@@ -188,6 +188,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎮 Jogos e entretenimento
 
+- 2026-09-05 · article · [mangal: leitor e downloader de mangá em linha de comando (descontinuado)](article/2026-09-05_mangal-leitor-e-downloader-de-manga-em-linha-de-comando-desc_6e292cc70559.md) · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao` · nenhuma/nenhuma/baixa · —
 - 2026-09-05 · article · [Kaizoku: downloader de mangá self-hosted](article/2026-09-05_kaizoku-downloader-de-manga-self-hosted_f4b0aa5f6b1a.md) · `kaizoku` `manga-self-hosted` `docker-compose` `biblioteca-de-manga` `suwayomi` `mangal` · nenhuma/nenhuma/baixa · archive
 - 2026-08-28 · youtube · [Discurso completo do Dr. Vegapunk — a transmissão mundial sobre o Século Perdido e o afundamento do mundo](youtube/2026-08-28_discurso-completo-do-dr-vegapunk-a-transmissao-mundial-sobre__sAI-ganFAw.md) · `one-piece` `vegapunk` `discurso` `seculo-perdido` `mother-flame` `canon` `persona-satelite` · nenhuma/nenhuma/alta · archive
 - 2026-08-28 · youtube · [Uselessinho — Dr. Vegapunk explicado: Nomi Nomi no Mi, Punk Records e os seis Satélites](youtube/2026-08-28_uselessinho-dr-vegapunk-explicado-nomi-nomi-no-mi-punk-recor_Pveu6gs7-LM.md) · `one-piece` `vegapunk` `punk-records` `nomi-nomi-no-mi` `canon` `persona-satelite` · nenhuma/nenhuma/media · archive
