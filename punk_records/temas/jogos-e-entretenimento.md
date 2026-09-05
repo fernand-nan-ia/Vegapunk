@@ -1,11 +1,16 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Solução Completa de Mangá: Frank Manga+, Frank Yomik, extensão Prettify-Manga](../article/2026-09-05_solucao-completa-de-manga-frank-manga-frank-yomik-extensao-p_ce46809ed49b.md)
 2026-09-05 · article · SaaS baixa · cliente nenhuma · estudo media · triagem archive · `frank-mangaplus` `tauri` `rust` `engenharia-reversa` `extensao-de-navegador` `ollama-local`
 
 Akita decompilou o app do MANGA Plus com Claude Code e jadx, descobriu que a assinatura é um segredo estático de 32 caracteres, e escreveu um leitor desktop em Rust com Tauri.
+
+## [Complete Manga Solution: Frank Manga+, Frank Yomik, and the Prettify-Manga Extension (versão em inglês)](../article/2026-09-05_complete-manga-solution-frank-manga-frank-yomik-and-the-pret_1691e8d26273.md)
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `duplicado` `versao-em-ingles` `frank-mangaplus`
+
+Versão em inglês de um artigo já guardado em português.
 
 ## [mangal: leitor e downloader de mangá em linha de comando (descontinuado)](../article/2026-09-05_mangal-leitor-e-downloader-de-manga-em-linha-de-comando-desc_6e292cc70559.md)
 2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao`
