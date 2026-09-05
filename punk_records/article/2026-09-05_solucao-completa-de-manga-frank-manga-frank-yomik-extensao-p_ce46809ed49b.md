@@ -5,8 +5,8 @@ external_id: "ce46809ed49b"
 canonical_url: "https://akitaonrails.com/2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["frank-mangaplus", "tauri", "rust", "engenharia-reversa", "extensao-de-navegador", "ollama-local", "ocr-de-manga", "leitor-de-manga"]
 applicability:
   saas_pessoal: baixa
