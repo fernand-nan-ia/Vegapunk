@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 22 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 26 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 27 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 11 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -104,6 +104,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-09-05 · article · [LGPD no Distrito Federal — modelo de implementação do GDF](article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md) · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta` · nenhuma/nenhuma/baixa · —
 - 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · archive
 - 2026-09-05 · article · [MPF — O que é a LGPD?](article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md) · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados` · baixa/baixa/baixa · discard
 - 2026-09-05 · article · [Serpro — O que muda com a LGPD](article/2026-09-05_serpro-o-que-muda-com-a-lgpd_f3144745865c.md) · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd` `governanca-de-dados` · media/media/alta · archive
