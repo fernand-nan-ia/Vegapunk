@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](../article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md)
 2026-09-05 · article · SaaS media · cliente baixa · estudo alta · triagem archive · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52`
@@ -11,6 +11,11 @@ Verbete que cobre o que as fontes oficiais omitem: a história política da lei,
 2026-09-05 · article · SaaS media · cliente media · estudo alta · triagem archive · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd`
 
 Visão geral oficial do Serpro sobre a LGPD: critério territorial, consentimento e suas exceções, direito de revisão de decisão automatizada, papéis de controlador, operador e encarregado, e o teto de multa de 2% do fatur
+
+## [LGPD — Lei nº 13.709/2018, texto compilado (versão consolidada do Planalto)](../article/2026-09-05_lgpd-lei-no-13-709-2018-texto-compilado-versao-consolidada-d_d7ead0700a60.md)
+2026-09-05 · article · SaaS media · cliente media · estudo media · triagem — · `lgpd` `lei-13709-2018` `texto-compilado` `legislacao-federal` `protecao-de-dados`
+
+Texto consolidado e limpo da LGPD, do art.
 
 ## [Lei nº 13.853/2019 — altera a LGPD e cria a Autoridade Nacional de Proteção de Dados](../article/2026-09-05_lei-no-13-853-2019-altera-a-lgpd-e-cria-a-autoridade-naciona_2553213467cb.md)
 2026-09-05 · article · SaaS baixa · cliente baixa · estudo media · triagem discard · `lgpd` `lei-13853-2019` `anpd` `mp-869-2018` `legislacao-federal` `protecao-de-dados`
