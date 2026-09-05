@@ -5,8 +5,8 @@ external_id: "f4b0aa5f6b1a"
 canonical_url: "https://github.com/oae/kaizoku"
 channel: "Oae · GitHub"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["kaizoku", "manga-self-hosted", "docker-compose", "biblioteca-de-manga", "suwayomi", "mangal"]
 applicability:
   saas_pessoal: nenhuma

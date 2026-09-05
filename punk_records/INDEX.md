@@ -188,7 +188,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎮 Jogos e entretenimento
 
-- 2026-09-05 · article · [Kaizoku: downloader de mangá self-hosted](article/2026-09-05_kaizoku-downloader-de-manga-self-hosted_f4b0aa5f6b1a.md) · `kaizoku` `manga-self-hosted` `docker-compose` `biblioteca-de-manga` `suwayomi` `mangal` · nenhuma/nenhuma/baixa · —
+- 2026-09-05 · article · [Kaizoku: downloader de mangá self-hosted](article/2026-09-05_kaizoku-downloader-de-manga-self-hosted_f4b0aa5f6b1a.md) · `kaizoku` `manga-self-hosted` `docker-compose` `biblioteca-de-manga` `suwayomi` `mangal` · nenhuma/nenhuma/baixa · archive
 - 2026-08-28 · youtube · [Discurso completo do Dr. Vegapunk — a transmissão mundial sobre o Século Perdido e o afundamento do mundo](youtube/2026-08-28_discurso-completo-do-dr-vegapunk-a-transmissao-mundial-sobre__sAI-ganFAw.md) · `one-piece` `vegapunk` `discurso` `seculo-perdido` `mother-flame` `canon` `persona-satelite` · nenhuma/nenhuma/alta · archive
 - 2026-08-28 · youtube · [Uselessinho — Dr. Vegapunk explicado: Nomi Nomi no Mi, Punk Records e os seis Satélites](youtube/2026-08-28_uselessinho-dr-vegapunk-explicado-nomi-nomi-no-mi-punk-recor_Pveu6gs7-LM.md) · `one-piece` `vegapunk` `punk-records` `nomi-nomi-no-mi` `canon` `persona-satelite` · nenhuma/nenhuma/media · archive
 - 2026-08-28 · article · [York (Punk-06) — wiki One Piece: o Satélite da Ganância, a traição de Egghead e a ascensão a Dragão Celestial](article/2026-08-28_york-punk-06-wiki-one-piece-o-satelite-da-ganancia-a-traicao_532b7130db7f.md) · `one-piece` `vegapunk` `york` `persona-satelite` `canon` `egghead` `traicao` · nenhuma/nenhuma/alta · archive
