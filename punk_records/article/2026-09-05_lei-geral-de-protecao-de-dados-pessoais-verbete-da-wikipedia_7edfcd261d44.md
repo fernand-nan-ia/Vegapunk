@@ -5,8 +5,8 @@ external_id: "7edfcd261d44"
 canonical_url: "https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais"
 channel: "Wikimedia Foundation, Inc."
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["lgpd", "historia-legislativa", "anpd", "cambridge-analytica", "sancoes-lgpd", "artigo-52", "mpdft"]
 applicability:
   saas_pessoal: media
