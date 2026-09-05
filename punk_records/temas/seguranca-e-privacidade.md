@@ -8,7 +8,7 @@ _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado aut
 Verbete que cobre o que as fontes oficiais omitem: a história política da lei, o veto de Temer à ANPD e sua recriação por medida provisória, os casos que pressionaram o tema e a lista completa das nove sanções do art.
 
 ## [MPF — O que é a LGPD?](../article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md)
-2026-09-05 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados`
+2026-09-05 · article · SaaS baixa · cliente baixa · estudo baixa · triagem discard · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados`
 
 Página do MPF sobre a LGPD que declara na última linha ser adaptação do texto do Serpro.
 

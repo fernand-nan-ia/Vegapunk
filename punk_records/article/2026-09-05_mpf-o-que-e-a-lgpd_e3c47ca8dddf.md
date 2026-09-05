@@ -5,8 +5,8 @@ external_id: "e3c47ca8dddf"
 canonical_url: "https://www.mpf.mp.br/servicos/lgpd/o-que-e"
 channel: "Ministério Público Federal"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["lgpd", "mpf", "conteudo-derivado", "serpro", "protecao-de-dados"]
 applicability:
   saas_pessoal: baixa

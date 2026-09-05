@@ -105,7 +105,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## 🔐 Segurança e privacidade
 
 - 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · archive
-- 2026-09-05 · article · [MPF — O que é a LGPD?](article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md) · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados` · baixa/baixa/baixa · —
+- 2026-09-05 · article · [MPF — O que é a LGPD?](article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md) · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados` · baixa/baixa/baixa · discard
 - 2026-09-05 · article · [Serpro — O que muda com a LGPD](article/2026-09-05_serpro-o-que-muda-com-a-lgpd_f3144745865c.md) · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd` `governanca-de-dados` · media/media/alta · archive
 - 2026-09-05 · article · [LGPD — Lei nº 13.709/2018, texto compilado (versão consolidada do Planalto)](article/2026-09-05_lgpd-lei-no-13-709-2018-texto-compilado-versao-consolidada-d_d7ead0700a60.md) · `lgpd` `lei-13709-2018` `texto-compilado` `legislacao-federal` `protecao-de-dados` · media/media/media · discard
 - 2026-09-05 · article · [Lei nº 13.853/2019 — altera a LGPD e cria a Autoridade Nacional de Proteção de Dados](article/2026-09-05_lei-no-13-853-2019-altera-a-lgpd-e-cria-a-autoridade-naciona_2553213467cb.md) · `lgpd` `lei-13853-2019` `anpd` `mp-869-2018` `legislacao-federal` `protecao-de-dados` · baixa/baixa/media · discard
