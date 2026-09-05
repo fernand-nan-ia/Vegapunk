@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 21 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 22 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 58 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 20 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -18,6 +18,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## 🤖 IA e agentes
 
 - 2026-09-05 · article · [Novidades no meu AI-MEMORY: cada vez melhor pra usar com suas IAs](article/2026-09-05_novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas_c4cbd7b80029.md) · `ai-memory` `memoria-de-agente` `workstream` `handoff-entre-harness` `sanitizer` `agent-skills` `ai-jail` `claude-code` · alta/baixa/alta · apply_saas
+- 2026-09-05 · article · [ai-memory (repositório): memória de longo prazo para agentes de código](article/2026-09-05_ai-memory-repositorio-memoria-de-longo-prazo-para-agentes-de_9b780e5528de.md) · `ai-memory` `memoria-de-agente` `markdown-como-fonte` `mcp` `hooks-de-sessao` `self-hosted` `handoff-tipado` `zero-llm` · media/baixa/alta · —
 - 2026-09-05 · article · [LLM Benchmarks: Qwen 3.8, GLM 5.3, Gemini 3.7, Grok 4.6](article/2026-09-05_llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7-grok-4-6_e94cac6a97a0.md) · `llm-benchmark` `glm-5-3` `gemini-3-7-flash` `qwen-3-8` `grok-4-6` `custo-por-modelo` `contaminacao-de-benchmark` `modelo-local` · alta/baixa/alta · apply_saas
 - 2026-09-04 · tiktok · [Arquitetura e Ordem de Desenvolvimento de um CRM com Claude](tiktok/2026-09-04_arquitetura-e-ordem-de-desenvolvimento-de-um-crm-com-claude_7662101841697721621.md) · `claude` `arquitetura-backend` `modelagem-de-dados` `prompt-engineering` `multi-tenant` `desenvolvimento-modular` · alta/alta/media · apply_saas
 - 2026-09-03 · article · [OpenRouter Models — catálogo de LLMs com preço, contexto e benchmarks](article/2026-09-03_openrouter-models-catalogo-de-llms-com-preco-contexto-e-benc_9ada9be71fc4.md) · `openrouter` `llm-gratuito` `modelos-multimodais` `preco-por-token` `rate-limit` `privacidade-de-dados` `vegapunk-bot` · alta/media/alta · apply_saas
