@@ -5,8 +5,8 @@ external_id: "d7ead0700a60"
 canonical_url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm"
 channel: "planalto.gov.br"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["lgpd", "lei-13709-2018", "texto-compilado", "legislacao-federal", "protecao-de-dados"]
 applicability:
   saas_pessoal: media

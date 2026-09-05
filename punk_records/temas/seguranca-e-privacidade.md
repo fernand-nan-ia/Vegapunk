@@ -13,7 +13,7 @@ Verbete que cobre o que as fontes oficiais omitem: a história política da lei,
 Visão geral oficial do Serpro sobre a LGPD: critério territorial, consentimento e suas exceções, direito de revisão de decisão automatizada, papéis de controlador, operador e encarregado, e o teto de multa de 2% do fatur
 
 ## [LGPD — Lei nº 13.709/2018, texto compilado (versão consolidada do Planalto)](../article/2026-09-05_lgpd-lei-no-13-709-2018-texto-compilado-versao-consolidada-d_d7ead0700a60.md)
-2026-09-05 · article · SaaS media · cliente media · estudo media · triagem — · `lgpd` `lei-13709-2018` `texto-compilado` `legislacao-federal` `protecao-de-dados`
+2026-09-05 · article · SaaS media · cliente media · estudo media · triagem discard · `lgpd` `lei-13709-2018` `texto-compilado` `legislacao-federal` `protecao-de-dados`
 
 Texto consolidado e limpo da LGPD, do art.
 
