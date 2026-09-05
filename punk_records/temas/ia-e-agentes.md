@@ -8,7 +8,7 @@ _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automa
 O `ai-memory run` mantém a mesma linha de trabalho ao trocar de Claude Code para Codex e volta: cada harness guarda a sessão nativa e um ledger portátil carrega só o delta.
 
 ## [ai-memory (repositório): memória de longo prazo para agentes de código](../article/2026-09-05_ai-memory-repositorio-memoria-de-longo-prazo-para-agentes-de_9b780e5528de.md)
-2026-09-05 · article · SaaS media · cliente baixa · estudo alta · triagem — · `ai-memory` `memoria-de-agente` `markdown-como-fonte` `mcp` `hooks-de-sessao` `self-hosted`
+2026-09-05 · article · SaaS media · cliente baixa · estudo alta · triagem archive · `ai-memory` `memoria-de-agente` `markdown-como-fonte` `mcp` `hooks-de-sessao` `self-hosted`
 
 Memória compartilhada entre mais de vinte agentes de código, com a wiki em Markdown versionada em git como fonte da verdade e o banco como índice reconstruível.
 

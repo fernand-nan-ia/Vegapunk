@@ -5,8 +5,8 @@ external_id: "9b780e5528de"
 canonical_url: "https://github.com/akitaonrails/ai-memory"
 channel: "Akitaonrails · GitHub"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["ai-memory", "memoria-de-agente", "markdown-como-fonte", "mcp", "hooks-de-sessao", "self-hosted", "handoff-tipado", "zero-llm"]
 applicability:
   saas_pessoal: media
