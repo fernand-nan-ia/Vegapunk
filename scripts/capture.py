@@ -12,6 +12,8 @@ Fluxo em dois passos (o resumo é feito pela sessão do Claude Code, não pelo m
          o índice por tema e commit. Por padrão SILENCIOSO (fica só aqui no Claude Code); passe
          --telegram se quiser que o Satélite dono também avise no Telegram.
 
+       Com --triage archive|apply_saas|apply_client|discard já aplica o veredito (igual aos botões).
+  python scripts/capture.py triage <id> <decisão>              → triar um item já guardado
   python scripts/capture.py auto <url|arquivo> [--telegram]   → pipeline completo via OpenRouter
   python scripts/capture.py pending                            → itens extraídos à espera do passo 2
 
@@ -143,6 +145,17 @@ def cmd_enrich(args):
     print(f"guardado: {it['vault_path']}\n\n{format_summary(json.loads(it['enrichment']), it['satellite'])[:600]}")
     for f in (jpath, CAP_DIR / f"{item_id[:8]}.md"):
         f.unlink(missing_ok=True)
+    if getattr(args, "triage", None):
+        print(asyncio.run(p.triage(item_id, args.triage)))
+
+
+def cmd_triage(args):
+    """Mesma triagem dos botões do Telegram (pipeline.triage): muda o estado, regrava o .md e o índice, commit kb:."""
+    db = Database(settings.db_path)
+    row = db.conn.execute("SELECT id FROM knowledge_items WHERE id LIKE ?", (args.id + "%",)).fetchone()
+    if not row:
+        sys.exit("item não encontrado")
+    print(asyncio.run(Pipeline(db, _notifier(False)).triage(row["id"], args.decision)))
 
 
 def cmd_auto(args):
@@ -169,7 +182,10 @@ s1.add_argument("--text", help="arquivo com o texto já extraído (páginas em J
 s1.add_argument("--title"); s1.add_argument("--channel"); s1.set_defaults(fn=cmd_extract)
 s2 = sub.add_parser("enrich"); s2.add_argument("id"); s2.add_argument("--json")
 s2.add_argument("--telegram", action="store_true", help="também avisar no Telegram (padrão: só aqui no Claude Code)")
+s2.add_argument("--triage", choices=sorted(vault.TRIAGE_LABEL), help="já aplicar a triagem (veredito do Fernando) logo após guardar")
 s2.set_defaults(fn=cmd_enrich)
+s4 = sub.add_parser("triage", help="triar um item já guardado, como os botões do Telegram")
+s4.add_argument("id"); s4.add_argument("decision", choices=sorted(vault.TRIAGE_LABEL)); s4.set_defaults(fn=cmd_triage)
 s3 = sub.add_parser("auto"); s3.add_argument("source"); s3.add_argument("--sat", choices=satellites.IDS)
 s3.add_argument("--telegram", action="store_true", help="também avisar no Telegram (padrão: só aqui no Claude Code)")
 s3.set_defaults(fn=cmd_auto)
