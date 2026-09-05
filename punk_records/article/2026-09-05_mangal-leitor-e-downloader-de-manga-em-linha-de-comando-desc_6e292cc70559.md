@@ -5,8 +5,8 @@ external_id: "6e292cc70559"
 canonical_url: "https://github.com/metafates/mangal"
 channel: "Metafates · GitHub"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["mangal", "cli-de-manga", "projeto-descontinuado", "scraper-lua", "risco-de-manutencao"]
 applicability:
   saas_pessoal: nenhuma

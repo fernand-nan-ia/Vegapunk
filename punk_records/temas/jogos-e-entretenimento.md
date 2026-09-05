@@ -3,7 +3,7 @@
 _videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [mangal: leitor e downloader de mangá em linha de comando (descontinuado)](../article/2026-09-05_mangal-leitor-e-downloader-de-manga-em-linha-de-comando-desc_6e292cc70559.md)
-2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao`
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao`
 
 Aplicativo de terminal para baixar e ler mangá, com scrapers em Lua e exportação em PDF ou CBZ.
 
