@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 22 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 22 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 23 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 11 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -104,6 +104,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · —
 - 2026-09-05 · article · [Serpro — O que muda com a LGPD](article/2026-09-05_serpro-o-que-muda-com-a-lgpd_f3144745865c.md) · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd` `governanca-de-dados` · media/media/alta · archive
 - 2026-09-05 · article · [ai-jail: sandbox multiplataforma para rodar agentes de IA com contenção](article/2026-09-05_ai-jail-sandbox-multiplataforma-para-rodar-agentes-de-ia-com_69404fe2ad58.md) · `ai-jail` `sandbox` `bubblewrap` `landlock` `yolo-mode` `isolamento-de-agente` `mascara-de-segredos` `seguranca-de-agente` · media/media/alta · apply_client
 - 2026-09-04 · tiktok · [3 Ferramentas Gratuitas para Segurança e Monitoramento de SaaS](tiktok/2026-09-04_3-ferramentas-gratuitas-para-seguranca-e-monitoramento-de-sa_7659496100713385224.md) · `cloudflare` `supabase-rls` `sentry` `seguranca-web` `ddos-protection` `error-tracking` `observabilidade` · alta/alta/media · apply_saas
