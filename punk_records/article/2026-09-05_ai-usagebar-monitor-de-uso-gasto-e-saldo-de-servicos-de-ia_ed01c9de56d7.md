@@ -5,8 +5,8 @@ external_id: "ed01c9de56d7"
 canonical_url: "https://github.com/akitaonrails/ai-usagebar"
 channel: "Akitaonrails · GitHub"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["ai-usagebar", "monitoramento-de-custo", "openrouter", "waybar", "rust", "quota-de-assinatura", "observabilidade-de-ia"]
 applicability:
   saas_pessoal: media

@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 59 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [ai-usagebar: monitor de uso, gasto e saldo de serviços de IA](../article/2026-09-05_ai-usagebar-monitor-de-uso-gasto-e-saldo-de-servicos-de-ia_ed01c9de56d7.md)
-2026-09-05 · article · SaaS media · cliente baixa · estudo media · triagem — · `ai-usagebar` `monitoramento-de-custo` `openrouter` `waybar` `rust` `quota-de-assinatura`
+2026-09-05 · article · SaaS media · cliente baixa · estudo media · triagem archive · `ai-usagebar` `monitoramento-de-custo` `openrouter` `waybar` `rust` `quota-de-assinatura`
 
 Widget e TUI em Rust que mostram quota, gasto e saldo de mais de dez serviços de IA, incluindo OpenRouter e Z.AI.
 
