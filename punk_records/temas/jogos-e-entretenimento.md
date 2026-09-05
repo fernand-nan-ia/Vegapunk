@@ -1,6 +1,11 @@
 # 🎮 Jogos e entretenimento
 
-_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Kaizoku: downloader de mangá self-hosted](../article/2026-09-05_kaizoku-downloader-de-manga-self-hosted_f4b0aa5f6b1a.md)
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `kaizoku` `manga-self-hosted` `docker-compose` `biblioteca-de-manga` `suwayomi` `mangal`
+
+Downloader de mangá self-hosted que roda em docker compose com Postgres e Redis, usando o mangal como motor de download.
 
 ## [Discurso completo do Dr. Vegapunk — a transmissão mundial sobre o Século Perdido e o afundamento do mundo](../youtube/2026-08-28_discurso-completo-do-dr-vegapunk-a-transmissao-mundial-sobre__sAI-ganFAw.md)
 2026-08-28 · youtube · SaaS nenhuma · cliente nenhuma · estudo alta · triagem archive · `one-piece` `vegapunk` `discurso` `seculo-perdido` `mother-flame` `canon`
