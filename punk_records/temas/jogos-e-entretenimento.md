@@ -8,7 +8,7 @@ _videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a par
 Akita decompilou o app do MANGA Plus com Claude Code e jadx, descobriu que a assinatura é um segredo estático de 32 caracteres, e escreveu um leitor desktop em Rust com Tauri.
 
 ## [Complete Manga Solution: Frank Manga+, Frank Yomik, and the Prettify-Manga Extension (versão em inglês)](../article/2026-09-05_complete-manga-solution-frank-manga-frank-yomik-and-the-pret_1691e8d26273.md)
-2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `duplicado` `versao-em-ingles` `frank-mangaplus`
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `duplicado` `versao-em-ingles` `frank-mangaplus`
 
 Versão em inglês de um artigo já guardado em português.
 
