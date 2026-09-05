@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [ai-jail: sandbox multiplataforma para rodar agentes de IA com contenção](../article/2026-09-05_ai-jail-sandbox-multiplataforma-para-rodar-agentes-de-ia-com_69404fe2ad58.md)
-2026-09-05 · article · SaaS media · cliente media · estudo alta · triagem — · `ai-jail` `sandbox` `bubblewrap` `landlock` `yolo-mode` `isolamento-de-agente`
+2026-09-05 · article · SaaS media · cliente media · estudo alta · triagem apply_client · `ai-jail` `sandbox` `bubblewrap` `landlock` `yolo-mode` `isolamento-de-agente`
 
 Sandbox de sistema para agentes de código: home em tmpfs, rede, GPU e display desligados por padrão, e credenciais do agente montadas só sob pedido.
 

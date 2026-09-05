@@ -5,8 +5,8 @@ external_id: "69404fe2ad58"
 canonical_url: "https://github.com/akitaonrails/ai-jail"
 channel: "Akitaonrails · GitHub"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["ai-jail", "sandbox", "bubblewrap", "landlock", "yolo-mode", "isolamento-de-agente", "mascara-de-segredos", "seguranca-de-agente"]
 applicability:
   saas_pessoal: media
