@@ -13,7 +13,7 @@ Verbete que cobre o que as fontes oficiais omitem: a história política da lei,
 Visão geral oficial do Serpro sobre a LGPD: critério territorial, consentimento e suas exceções, direito de revisão de decisão automatizada, papéis de controlador, operador e encarregado, e o teto de multa de 2% do fatur
 
 ## [Lei nº 13.853/2019 — altera a LGPD e cria a Autoridade Nacional de Proteção de Dados](../article/2026-09-05_lei-no-13-853-2019-altera-a-lgpd-e-cria-a-autoridade-naciona_2553213467cb.md)
-2026-09-05 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `lgpd` `lei-13853-2019` `anpd` `mp-869-2018` `legislacao-federal` `protecao-de-dados`
+2026-09-05 · article · SaaS baixa · cliente baixa · estudo media · triagem discard · `lgpd` `lei-13853-2019` `anpd` `mp-869-2018` `legislacao-federal` `protecao-de-dados`
 
 Lei que converteu a MP 869/2018: renomeia a lei para LGPD, torna as normas obrigatórias para todos os entes federativos e cria a ANPD com autonomia técnica e competência exclusiva para sancionar.
 

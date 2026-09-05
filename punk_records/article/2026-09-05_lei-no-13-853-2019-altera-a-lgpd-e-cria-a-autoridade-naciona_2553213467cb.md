@@ -5,8 +5,8 @@ external_id: "2553213467cb"
 canonical_url: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13853.htm"
 channel: "planalto.gov.br"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["lgpd", "lei-13853-2019", "anpd", "mp-869-2018", "legislacao-federal", "protecao-de-dados"]
 applicability:
   saas_pessoal: baixa
