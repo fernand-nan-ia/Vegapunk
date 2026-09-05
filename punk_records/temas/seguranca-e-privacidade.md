@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Serpro — O que muda com a LGPD](../article/2026-09-05_serpro-o-que-muda-com-a-lgpd_f3144745865c.md)
+2026-09-05 · article · SaaS media · cliente media · estudo alta · triagem — · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd`
+
+Visão geral oficial do Serpro sobre a LGPD: critério territorial, consentimento e suas exceções, direito de revisão de decisão automatizada, papéis de controlador, operador e encarregado, e o teto de multa de 2% do fatur
 
 ## [ai-jail: sandbox multiplataforma para rodar agentes de IA com contenção](../article/2026-09-05_ai-jail-sandbox-multiplataforma-para-rodar-agentes-de-ia-com_69404fe2ad58.md)
 2026-09-05 · article · SaaS media · cliente media · estudo alta · triagem apply_client · `ai-jail` `sandbox` `bubblewrap` `landlock` `yolo-mode` `isolamento-de-agente`
