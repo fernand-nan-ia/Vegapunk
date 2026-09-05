@@ -5,8 +5,8 @@ external_id: "e94cac6a97a0"
 canonical_url: "https://akitaonrails.com/2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["llm-benchmark", "glm-5-3", "gemini-3-7-flash", "qwen-3-8", "grok-4-6", "custo-por-modelo", "contaminacao-de-benchmark", "modelo-local"]
 applicability:
   saas_pessoal: alta

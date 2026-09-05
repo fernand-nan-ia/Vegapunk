@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [LLM Benchmarks: Qwen 3.8, GLM 5.3, Gemini 3.7, Grok 4.6](../article/2026-09-05_llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7-grok-4-6_e94cac6a97a0.md)
-2026-09-05 · article · SaaS alta · cliente baixa · estudo alta · triagem — · `llm-benchmark` `glm-5-3` `gemini-3-7-flash` `qwen-3-8` `grok-4-6` `custo-por-modelo`
+2026-09-05 · article · SaaS alta · cliente baixa · estudo alta · triagem apply_saas · `llm-benchmark` `glm-5-3` `gemini-3-7-flash` `qwen-3-8` `grok-4-6` `custo-por-modelo`
 
 GLM 5.3 fez 94 a custo marginal zero e ficou a dois pontos do Fable 5; Qwen 3.8 Max saltou 41 pontos.
 
