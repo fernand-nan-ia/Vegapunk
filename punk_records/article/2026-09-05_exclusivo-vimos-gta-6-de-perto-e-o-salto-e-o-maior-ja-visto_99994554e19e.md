@@ -5,8 +5,8 @@ external_id: "99994554e19e"
 canonical_url: "https://flowgames.gg/exclusivo-vimos-gta-6-de-perto-salto-maior-ja-visto"
 channel: "Bruno Micali · Flow Games"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["gta-6", "rockstar", "mundo-aberto", "design-de-sistemas", "preview-de-jogo", "rob-nelson", "lancamento-2026"]
 applicability:
   saas_pessoal: nenhuma

@@ -3,7 +3,7 @@
 _videogames, filmes, séries, animes, cultura pop._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Exclusivo: vimos GTA 6 de perto e o salto é o maior já visto](../article/2026-09-05_exclusivo-vimos-gta-6-de-perto-e-o-salto-e-o-maior-ja-visto_99994554e19e.md)
-2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `gta-6` `rockstar` `mundo-aberto` `design-de-sistemas` `preview-de-jogo` `rob-nelson`
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem archive · `gta-6` `rockstar` `mundo-aberto` `design-de-sistemas` `preview-de-jogo` `rob-nelson`
 
 Rob Nelson mostrou GTA 6 à imprensa: Vice City com o dobro da Los Santos de GTA 5, carros com combustível e dano real, polícia que só sabe o que viu, e dinheiro necessário para a história avançar.
 

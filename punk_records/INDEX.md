@@ -188,7 +188,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎮 Jogos e entretenimento
 
-- 2026-09-05 · article · [Exclusivo: vimos GTA 6 de perto e o salto é o maior já visto](article/2026-09-05_exclusivo-vimos-gta-6-de-perto-e-o-salto-e-o-maior-ja-visto_99994554e19e.md) · `gta-6` `rockstar` `mundo-aberto` `design-de-sistemas` `preview-de-jogo` `rob-nelson` `lancamento-2026` · nenhuma/nenhuma/baixa · —
+- 2026-09-05 · article · [Exclusivo: vimos GTA 6 de perto e o salto é o maior já visto](article/2026-09-05_exclusivo-vimos-gta-6-de-perto-e-o-salto-e-o-maior-ja-visto_99994554e19e.md) · `gta-6` `rockstar` `mundo-aberto` `design-de-sistemas` `preview-de-jogo` `rob-nelson` `lancamento-2026` · nenhuma/nenhuma/baixa · archive
 - 2026-09-05 · article · [Solução Completa de Mangá: Frank Manga+, Frank Yomik, extensão Prettify-Manga](article/2026-09-05_solucao-completa-de-manga-frank-manga-frank-yomik-extensao-p_ce46809ed49b.md) · `frank-mangaplus` `tauri` `rust` `engenharia-reversa` `extensao-de-navegador` `ollama-local` `ocr-de-manga` `leitor-de-manga` · baixa/nenhuma/media · archive
 - 2026-09-05 · article · [Complete Manga Solution: Frank Manga+, Frank Yomik, and the Prettify-Manga Extension (versão em inglês)](article/2026-09-05_complete-manga-solution-frank-manga-frank-yomik-and-the-pret_1691e8d26273.md) · `duplicado` `versao-em-ingles` `frank-mangaplus` · nenhuma/nenhuma/baixa · discard
 - 2026-09-05 · article · [mangal: leitor e downloader de mangá em linha de comando (descontinuado)](article/2026-09-05_mangal-leitor-e-downloader-de-manga-em-linha-de-comando-desc_6e292cc70559.md) · `mangal` `cli-de-manga` `projeto-descontinuado` `scraper-lua` `risco-de-manutencao` · nenhuma/nenhuma/baixa · discard
