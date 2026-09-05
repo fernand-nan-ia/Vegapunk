@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Novidades no meu AI-MEMORY: cada vez melhor pra usar com suas IAs](../article/2026-09-05_novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas_c4cbd7b80029.md)
-2026-09-05 · article · SaaS alta · cliente baixa · estudo alta · triagem — · `ai-memory` `memoria-de-agente` `workstream` `handoff-entre-harness` `sanitizer` `agent-skills`
+2026-09-05 · article · SaaS alta · cliente baixa · estudo alta · triagem apply_saas · `ai-memory` `memoria-de-agente` `workstream` `handoff-entre-harness` `sanitizer` `agent-skills`
 
 O `ai-memory run` mantém a mesma linha de trabalho ao trocar de Claude Code para Codex e volta: cada harness guarda a sessão nativa e um ledger portátil carrega só o delta.
 

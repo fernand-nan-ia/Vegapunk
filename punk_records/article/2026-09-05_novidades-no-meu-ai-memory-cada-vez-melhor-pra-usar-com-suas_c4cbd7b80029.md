@@ -5,8 +5,8 @@ external_id: "c4cbd7b80029"
 canonical_url: "https://akitaonrails.com/2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias"
 channel: "Fabio Akita · AkitaOnRails.com"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["ai-memory", "memoria-de-agente", "workstream", "handoff-entre-harness", "sanitizer", "agent-skills", "ai-jail", "claude-code"]
 applicability:
   saas_pessoal: alta
