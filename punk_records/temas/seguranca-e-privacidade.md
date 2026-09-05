@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [LGPD no Distrito Federal — modelo de implementação do GDF](../article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md)
-2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta`
+2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta`
 
 Página do Governo do Distrito Federal sobre o modelo de implementação da LGPD nos órgãos distritais, regido pelo Decreto 45.771/24.
 

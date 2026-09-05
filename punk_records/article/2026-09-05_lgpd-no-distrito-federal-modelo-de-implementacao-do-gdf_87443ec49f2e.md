@@ -5,8 +5,8 @@ external_id: "87443ec49f2e"
 canonical_url: "https://www.lgpd.df.gov.br/"
 channel: "lgpd.df.gov.br"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["lgpd", "distrito-federal", "administracao-publica", "decreto-45771-2024", "extracao-incompleta"]
 applicability:
   saas_pessoal: nenhuma

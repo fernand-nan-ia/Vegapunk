@@ -104,7 +104,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
-- 2026-09-05 · article · [LGPD no Distrito Federal — modelo de implementação do GDF](article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md) · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta` · nenhuma/nenhuma/baixa · —
+- 2026-09-05 · article · [LGPD no Distrito Federal — modelo de implementação do GDF](article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md) · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta` · nenhuma/nenhuma/baixa · discard
 - 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · archive
 - 2026-09-05 · article · [MPF — O que é a LGPD?](article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md) · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados` · baixa/baixa/baixa · discard
 - 2026-09-05 · article · [Serpro — O que muda com a LGPD](article/2026-09-05_serpro-o-que-muda-com-a-lgpd_f3144745865c.md) · `lgpd` `serpro` `consentimento` `decisao-automatizada` `encarregado-dpo` `sancoes-lgpd` `governanca-de-dados` · media/media/alta · archive
