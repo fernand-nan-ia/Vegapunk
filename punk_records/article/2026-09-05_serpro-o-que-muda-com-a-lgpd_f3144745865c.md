@@ -5,8 +5,8 @@ external_id: "f3144745865c"
 canonical_url: "https://www.serpro.gov.br/lgpd/menu/a-lgpd/o-que-muda-com-a-lgpd"
 channel: "serpro.gov.br"
 captured_at: 2026-09-05
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["lgpd", "serpro", "consentimento", "decisao-automatizada", "encarregado-dpo", "sancoes-lgpd", "governanca-de-dados"]
 applicability:
   saas_pessoal: media
