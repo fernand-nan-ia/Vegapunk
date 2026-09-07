@@ -1,6 +1,11 @@
 # 🎨 Design e UX
 
-_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 6 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Fugir do AI slop no Claude Code: referências, skills de design e iteração em três versões](../youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md)
+2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem — · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias`
+
+Três passos contra o AI slop: biblioteca de referências que combine com o cliente, skills de design (Impeccable ou Taste, nunca as duas juntas) e iteração em três versões antes de refinar.
 
 ## [Fluxo Gratuito com IA para Criação de Identidade Visual e Design System de SaaS](../tiktok/2026-09-04_fluxo-gratuito-com-ia-para-criacao-de-identidade-visual-e-de_7658036491574185224.md)
 2026-09-04 · tiktok · SaaS media · cliente media · estudo media · triagem archive · `identidade-visual` `design-system` `geracao-de-logo` `google-stitch` `chatgpt` `micro-saas`

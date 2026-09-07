@@ -10,7 +10,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 17 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 18 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
-- 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
+- 🎨 Design e UX — 7 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -188,6 +188,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎨 Design e UX
 
+- 2026-09-07 · youtube · [Fugir do AI slop no Claude Code: referências, skills de design e iteração em três versões](youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md) · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias` `claude-code` · alta/alta/alta · —
 - 2026-09-04 · tiktok · [Fluxo Gratuito com IA para Criação de Identidade Visual e Design System de SaaS](tiktok/2026-09-04_fluxo-gratuito-com-ia-para-criacao-de-identidade-visual-e-de_7658036491574185224.md) · `identidade-visual` `design-system` `geracao-de-logo` `google-stitch` `chatgpt` `micro-saas` · media/media/media · archive
 - 2026-09-03 · tiktok · [10 Sinais que Entregam um Site Feito por IA](tiktok/2026-09-03_10-sinais-que-entregam-um-site-feito-por-ia_7675432199545556244.md) · `landing-page-cro` `design-de-interfaces` `copywriting` `branding` `acabamento-web` · alta/alta/baixa · apply_saas
 - 2026-09-01 · tiktok · [Como fazer o design do SaaS não ter cara de feito por IA — emojis, travessão e a estrelinha](tiktok/2026-09-01_como-fazer-o-design-do-saas-nao-ter-cara-de-feito-por-ia-emo_7672412734549544199.md) · `design-de-saas` `cara-de-ia` `ui-design` `copywriting` `retencao` `vibe-coding` · alta/media/media · apply_saas
