@@ -5,8 +5,8 @@ external_id: "bfc3a522e2b6"
 canonical_url: "https://impeccable.style/designing"
 channel: "impeccable.style"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["impeccable", "modos-de-visitante", "design-com-ia", "auditoria-de-ui", "design-system", "ai-slop", "agent-skills"]
 applicability:
   saas_pessoal: alta

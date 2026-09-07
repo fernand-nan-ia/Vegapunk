@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Impeccable — os quatro modos de visitante e o fluxo de uso em quatro fases](../article/2026-09-07_impeccable-os-quatro-modos-de-visitante-e-o-fluxo-de-uso-em_bfc3a522e2b6.md)
-2026-09-07 · article · SaaS alta · cliente alta · estudo alta · triagem — · `impeccable` `modos-de-visitante` `design-com-ia` `auditoria-de-ui` `design-system` `ai-slop`
+2026-09-07 · article · SaaS alta · cliente alta · estudo alta · triagem apply_client · `impeccable` `modos-de-visitante` `design-com-ia` `auditoria-de-ui` `design-system` `ai-slop`
 
 Quatro modos de visitante — Persuade, Operate, Read, Experience — mudam o vocabulário do design conforme a tarefa da tela.
 
