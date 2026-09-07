@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 26 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 27 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -17,6 +17,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-09-07 · article · [screenshot-to-code: aplicação self-hosted que converte print, Figma e gravação de tela em código](article/2026-09-07_screenshot-to-code-aplicacao-self-hosted-que-converte-print_c5264a1d16b4.md) · `screenshot-to-code` `design-para-codigo` `self-hosted` `tailwind` `figma` `custo-de-api` `prototipagem` · baixa/media/media · —
 - 2026-09-07 · article · [Superpowers (obra): metodologia de desenvolvimento em 14 skills para agentes de código](article/2026-09-07_superpowers-obra-metodologia-de-desenvolvimento-em-14-skills_2046f5e50faf.md) · `superpowers` `agent-skills` `tdd` `spec-driven` `subagentes` `git-worktrees` `claude-code` `metodologia` · alta/media/alta · apply_saas
 - 2026-09-07 · youtube · [Cérebro do projeto no Claude Code: CLAUDE.md, spec e memória, imagens por .md e deploy](youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md) · `claude-code` `claude-md` `spec-driven` `memoria-de-projeto` `geracao-de-imagens` `deploy-estatico` `pagespeed` · alta/alta/alta · apply_saas
 - 2026-09-07 · youtube · [Claude Design: brief em vez de prompt corrido, exportar HTML e hospedar](youtube/2026-09-07_claude-design-brief-em-vez-de-prompt-corrido-exportar-html-e_7TSnITL-LfY.md) · `claude-design` `brief-estruturado` `exportacao-html` `aprovacao-de-layout` `venda-de-site` `conteudo-de-afiliado` · media/alta/media · apply_client
