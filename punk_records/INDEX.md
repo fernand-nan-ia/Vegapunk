@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 17 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 20 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 21 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 10 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
@@ -174,6 +174,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-09-07 · article · [Asaas: quem é, história e o que a plataforma oferece](article/2026-09-07_asaas-quem-e-historia-e-o-que-a-plataforma-oferece_afcfa36e4e97.md) · `asaas` `conta-digital-pj` `cobranca-recorrente` `instituicao-de-pagamento` `pix` `boleto` `antecipacao-de-recebiveis` `pme` · alta/alta/media · —
 - 2026-09-07 · article · [Checkout Transparente do Mercado Pago: 10 benefícios e como se compara ao Checkout Pro](article/2026-09-07_checkout-transparente-do-mercado-pago-10-beneficios-e-como-s_0ea26aecd6fc.md) · `checkout-transparente` `mercado-pago` `checkout-pro` `conversao-de-checkout` `one-click-buy` `parcelamento` `antifraude` `antecipacao-de-recebiveis` · alta/media/media · —
 - 2026-09-07 · article · [Gateway de pagamento: o que é, como funciona e como escolher (Mercado Pago)](article/2026-09-07_gateway-de-pagamento-o-que-e-como-funciona-e-como-escolher-m_8b0041f7afd5.md) · `gateway-de-pagamento` `mercado-pago` `subadquirente` `pci-dss` `split-de-pagamento` `checkout-transparente` `taxas-de-transacao` `link-de-pagamento` · alta/media/alta · —
 - 2026-09-07 · article · [Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)](article/2026-09-07_como-vender-um-site-avaliacao-por-multiplo-marketplaces-e-co_a19b8d1384f3.md) · `venda-de-ativo-digital` `valuation-por-multiplo` `marketplace-de-sites` `corretagem` `due-diligence` `relatorio-financeiro` `site-flipping` · alta/baixa/media · apply_saas

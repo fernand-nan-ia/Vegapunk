@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Asaas: quem é, história e o que a plataforma oferece](../article/2026-09-07_asaas-quem-e-historia-e-o-que-a-plataforma-oferece_afcfa36e4e97.md)
+2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `conta-digital-pj` `cobranca-recorrente` `instituicao-de-pagamento` `pix` `boleto`
+
+Asaas é uma plataforma financeira brasileira (Joinville, 2010, irmãos Contezini) voltada a cobrança automatizada de PMEs: Pix, boleto, cartão, conta PJ e ERP grátis, maquininha no celular, antecipação e nota fiscal.
 
 ## [Checkout Transparente do Mercado Pago: 10 benefícios e como se compara ao Checkout Pro](../article/2026-09-07_checkout-transparente-do-mercado-pago-10-beneficios-e-como-s_0ea26aecd6fc.md)
 2026-09-07 · article · SaaS alta · cliente media · estudo media · triagem — · `checkout-transparente` `mercado-pago` `checkout-pro` `conversao-de-checkout` `one-click-buy` `parcelamento`
