@@ -5,8 +5,8 @@ external_id: "7681077697811959058"
 canonical_url: "https://www.tiktok.com/@nexosites1/photo/7681077697811959058"
 channel: "Nexo Sites 👾"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["prospeccao-fria", "venda-de-site", "negocio-local", "preco-de-mercado", "quebra-de-objecao", "landing-whatsapp"]
 applicability:
   saas_pessoal: baixa

@@ -28,7 +28,7 @@ Mesma série de prospecção: lavagem automotiva fecha site por R$ 250.
 Prosvia.dev citado como fonte de leads, com prova de um Pix de R$ 1.250 por um site de hamburgueria.
 
 ## [Prospecção fria por DM para hortifruti de bairro — proposta de site a R$ 450](../tiktok/2026-09-07_prospeccao-fria-por-dm-para-hortifruti-de-bairro-proposta-de_7681077697811959058.md)
-2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp`
+2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem archive · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp`
 
 Prospecção por DM para hortifruti: mostra um exemplo pronto antes de falar preço, e só então pede R$ 450.
 
