@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [screenshot-to-code: aplicação self-hosted que converte print, Figma e gravação de tela em código](../article/2026-09-07_screenshot-to-code-aplicacao-self-hosted-que-converte-print_c5264a1d16b4.md)
-2026-09-07 · article · SaaS baixa · cliente media · estudo media · triagem — · `screenshot-to-code` `design-para-codigo` `self-hosted` `tailwind` `figma` `custo-de-api`
+2026-09-07 · article · SaaS baixa · cliente media · estudo media · triagem archive · `screenshot-to-code` `design-para-codigo` `self-hosted` `tailwind` `figma` `custo-de-api`
 
 Aplicação web self-hosted (React + FastAPI) que transforma print, Figma ou gravação de tela em código Tailwind/React/Vue.
 

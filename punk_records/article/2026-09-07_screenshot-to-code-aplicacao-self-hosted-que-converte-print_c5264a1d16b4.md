@@ -5,8 +5,8 @@ external_id: "c5264a1d16b4"
 canonical_url: "https://github.com/abi/screenshot-to-code"
 channel: "Abi · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["screenshot-to-code", "design-para-codigo", "self-hosted", "tailwind", "figma", "custo-de-api", "prototipagem"]
 applicability:
   saas_pessoal: baixa
