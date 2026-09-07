@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Fugir do AI slop no Claude Code: referências, skills de design e iteração em três versões](../youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md)
-2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem — · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias`
+2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem apply_saas · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias`
 
 Três passos contra o AI slop: biblioteca de referências que combine com o cliente, skills de design (Impeccable ou Taste, nunca as duas juntas) e iteração em três versões antes de refinar.
 

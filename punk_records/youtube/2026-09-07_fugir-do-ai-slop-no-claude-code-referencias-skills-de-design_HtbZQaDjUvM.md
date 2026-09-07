@@ -5,8 +5,8 @@ external_id: "HtbZQaDjUvM"
 canonical_url: "https://www.youtube.com/watch?v=HtbZQaDjUvM"
 channel: "Felipe Borges - Fala IA!"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["ai-slop", "design-com-ia", "agent-skills", "mcp", "iteracao-de-design", "biblioteca-de-referencias", "claude-code"]
 applicability:
   saas_pessoal: alta
