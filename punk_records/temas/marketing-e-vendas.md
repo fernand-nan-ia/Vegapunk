@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Prospecção fria por DM para hortifruti de bairro — proposta de site a R$ 450](../tiktok/2026-09-07_prospeccao-fria-por-dm-para-hortifruti-de-bairro-proposta-de_7681077697811959058.md)
+2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp`
+
+Prospecção por DM para hortifruti: mostra um exemplo pronto antes de falar preço, e só então pede R$ 450.
 
 ## [Prospecção Ativa de Clientes Locais e Geração Rápida de Sites com IA](../tiktok/2026-09-04_prospeccao-ativa-de-clientes-locais-e-geracao-rapida-de-site_7679863271511526676.md)
 2026-09-04 · tiktok · SaaS baixa · cliente media · estudo media · triagem apply_client · `prospeccao-ativa` `geracao-de-leads` `cold-outreach` `vendas-b2b` `criacao-de-sites` `ia-para-sites`

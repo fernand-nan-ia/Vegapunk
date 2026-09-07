@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 11 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 12 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -145,6 +145,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-07 · tiktok · [Prospecção fria por DM para hortifruti de bairro — proposta de site a R$ 450](tiktok/2026-09-07_prospeccao-fria-por-dm-para-hortifruti-de-bairro-proposta-de_7681077697811959058.md) · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp` · baixa/alta/media · —
 - 2026-09-04 · tiktok · [Prospecção Ativa de Clientes Locais e Geração Rápida de Sites com IA](tiktok/2026-09-04_prospeccao-ativa-de-clientes-locais-e-geracao-rapida-de-site_7679863271511526676.md) · `prospeccao-ativa` `geracao-de-leads` `cold-outreach` `vendas-b2b` `criacao-de-sites` `ia-para-sites` · baixa/media/media · apply_client
 - 2026-09-04 · tiktok · [Playbook de Distribuição Orgânica do FitFolio: De 0 a 180k ARR com Build in Public e IA](tiktok/2026-09-04_playbook-de-distribuicao-organica-do-fitfolio-de-0-a-180k-ar_7661036212177685781.md) · `build-in-public` `distribuicao-organica` `tiktok-marketing` `ia-influencers` `crescimento-saas` `cursor` · alta/media/alta · apply_saas
 - 2026-09-04 · tiktok · [Prospecção Ativa no Nicho de Energia Solar com Prévias Rápidas via IA](tiktok/2026-09-04_prospeccao-ativa-no-nicho-de-energia-solar-com-previas-rapid_7681411495401475336.md) · `prospeccao-ativa` `cold-outreach` `venda-de-sites` `energia-solar` `prototipagem-rapida` `landing-page` · baixa/alta/media · apply_client
