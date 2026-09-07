@@ -18,7 +18,7 @@ Passo a passo de loja virtual: produto (com importação por planilha, até 50),
 Sob a propaganda da hospedagem existe uma coisa aproveitável: a lista dos 13 blocos de uma página de vendas, da headline ao segundo botão.
 
 ## [Prospecção por DM para lavagem automotiva — site fechado a R$ 250](../tiktok/2026-09-07_prospeccao-por-dm-para-lavagem-automotiva-site-fechado-a-r-2_7675426401079561490.md)
-2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `proposta-comercial` `mobile-first`
+2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem archive · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `proposta-comercial` `mobile-first`
 
 Mesma série de prospecção: lavagem automotiva fecha site por R$ 250.
 
