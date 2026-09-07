@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 60 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Docusaurus: gerador de sites de documentação da Meta (Markdown → site estático)](../article/2026-09-07_docusaurus-gerador-de-sites-de-documentacao-da-meta-markdown_07e29605f541.md)
-2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem — · `docusaurus` `gerador-de-site-estatico` `documentacao` `markdown` `site-versionado` `meta-oss`
+2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem archive · `docusaurus` `gerador-de-site-estatico` `documentacao` `markdown` `site-versionado` `meta-oss`
 
 Gerador de sites de documentação da Meta: Markdown vira site estático com docs versionados, blog e busca.
 

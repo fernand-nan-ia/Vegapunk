@@ -5,8 +5,8 @@ external_id: "07e29605f541"
 canonical_url: "https://github.com/facebook/docusaurus"
 channel: "Facebook · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["docusaurus", "gerador-de-site-estatico", "documentacao", "markdown", "site-versionado", "meta-oss"]
 applicability:
   saas_pessoal: media
