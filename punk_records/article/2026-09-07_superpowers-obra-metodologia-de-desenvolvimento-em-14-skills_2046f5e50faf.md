@@ -5,8 +5,8 @@ external_id: "2046f5e50faf"
 canonical_url: "https://github.com/obra/superpowers"
 channel: "Obra · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["superpowers", "agent-skills", "tdd", "spec-driven", "subagentes", "git-worktrees", "claude-code", "metodologia"]
 applicability:
   saas_pessoal: alta
