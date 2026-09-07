@@ -23,7 +23,7 @@ Sob a propaganda da hospedagem existe uma coisa aproveitável: a lista dos 13 bl
 Mesma série de prospecção: lavagem automotiva fecha site por R$ 250.
 
 ## [Prosvia.dev como fonte de leads e um Pix de R$ 1.250 por site de hamburgueria](../tiktok/2026-09-07_prosvia-dev-como-fonte-de-leads-e-um-pix-de-r-1-250-por-site_7682456540334329108.md)
-2026-09-07 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `prova-social` `ferramenta-de-leads`
+2026-09-07 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem archive · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `prova-social` `ferramenta-de-leads`
 
 Prosvia.dev citado como fonte de leads, com prova de um Pix de R$ 1.250 por um site de hamburgueria.
 

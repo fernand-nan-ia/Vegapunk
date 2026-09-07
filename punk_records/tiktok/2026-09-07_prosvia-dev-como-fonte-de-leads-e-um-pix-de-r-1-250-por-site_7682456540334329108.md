@@ -5,8 +5,8 @@ external_id: "7682456540334329108"
 canonical_url: "https://www.tiktok.com/@elieldevjr/photo/7682456540334329108"
 channel: "Eliel.dev"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["prospeccao-fria", "venda-de-site", "negocio-local", "preco-de-mercado", "prova-social", "ferramenta-de-leads"]
 applicability:
   saas_pessoal: baixa
