@@ -5,8 +5,8 @@ external_id: "QC37e8uXbDY"
 canonical_url: "https://www.youtube.com/watch?v=QC37e8uXbDY"
 channel: "Nerds de Negócios"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["escada-de-preco", "venda-de-site", "portfolio", "prospeccao-fria", "tamanho-de-mercado", "conteudo-de-afiliado"]
 applicability:
   saas_pessoal: baixa
