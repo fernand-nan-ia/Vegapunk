@@ -48,7 +48,7 @@ Sandbox de sistema para agentes de código: home em tmpfs, rede, GPU e display d
 Recomendações de ferramentas gratuitas para segurança básica em SaaS: Cloudflare para proteção DDoS, Supabase RLS para isolamento de dados e Sentry para monitoramento de erros.
 
 ## [OpenRouter — política de treino, retenção de logs e roteamento em região](../article/2026-09-04_openrouter-politica-de-treino-retencao-de-logs-e-roteamento_a7e3e9a3d6ba.md)
-2026-09-04 · article · SaaS alta · cliente media · estudo alta · triagem — · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd`
+2026-09-04 · article · SaaS alta · cliente media · estudo alta · triagem archive · `openrouter` `privacidade-de-dados` `opt-out-de-treino` `retencao-de-logs` `roteamento-regional` `lgpd`
 
 Opt-out de treino no OpenRouter é configuração de conta, com toggles separados para modelos pagos e gratuitos.
 

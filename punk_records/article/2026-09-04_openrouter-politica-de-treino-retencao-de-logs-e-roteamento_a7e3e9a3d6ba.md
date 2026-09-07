@@ -5,8 +5,8 @@ external_id: "a7e3e9a3d6ba"
 canonical_url: "https://openrouter.ai/docs/features/privacy-and-logging"
 channel: "OpenRouter | Documentation"
 captured_at: 2026-09-04
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["openrouter", "privacidade-de-dados", "opt-out-de-treino", "retencao-de-logs", "roteamento-regional", "lgpd", "vegapunk-bot"]
 applicability:
   saas_pessoal: alta
