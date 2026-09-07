@@ -5,8 +5,8 @@ external_id: "7675194141344615700"
 canonical_url: "https://www.tiktok.com/@matheusgobb1/photo/7675194141344615700"
 channel: "matheusgobbi"
 captured_at: 2026-09-03
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["micro-saas", "mobile-app", "bootstrapping", "in-app-purchases", "monetizacao", "b2c"]
 applicability:
   saas_pessoal: media

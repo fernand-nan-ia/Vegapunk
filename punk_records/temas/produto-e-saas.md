@@ -8,7 +8,7 @@ _micro-SaaS, validação, retenção, features, PRD, onboarding._ Gerado automat
 Dicas fundamentais para fundadores focarem em distribuição antes de adicionar mais features.
 
 ## [Fitfolio: Tração e Monetização de App Fitness B2C Bootstrapped](../tiktok/2026-09-03_fitfolio-tracao-e-monetizacao-de-app-fitness-b2c-bootstrappe_7675194141344615700.md)
-2026-09-03 · tiktok · SaaS media · cliente baixa · estudo alta · triagem — · `micro-saas` `mobile-app` `bootstrapping` `in-app-purchases` `monetizacao` `b2c`
+2026-09-03 · tiktok · SaaS media · cliente baixa · estudo alta · triagem archive · `micro-saas` `mobile-app` `bootstrapping` `in-app-purchases` `monetizacao` `b2c`
 
 Fundador solo apresenta métricas do app Fitfolio: mais de 70 mil usuários e cerca de US$ 528/dia em assinaturas in-app sem investimento externo.
 
