@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Superpowers (obra): metodologia de desenvolvimento em 14 skills para agentes de código](../article/2026-09-07_superpowers-obra-metodologia-de-desenvolvimento-em-14-skills_2046f5e50faf.md)
+2026-09-07 · article · SaaS alta · cliente media · estudo alta · triagem — · `superpowers` `agent-skills` `tdd` `spec-driven` `subagentes` `git-worktrees`
+
+Metodologia em 14 skills que impede o agente de sair codando: brainstorm → worktree → plano em tarefas de 2-5 min → subagente por tarefa → TDD obrigatório → code review.
 
 ## [Cérebro do projeto no Claude Code: CLAUDE.md, spec e memória, imagens por .md e deploy](../youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md)
 2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem apply_saas · `claude-code` `claude-md` `spec-driven` `memoria-de-projeto` `geracao-de-imagens` `deploy-estatico`
