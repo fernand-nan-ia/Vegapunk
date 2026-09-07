@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Checkout Transparente do Mercado Pago: 10 benefícios e como se compara ao Checkout Pro](../article/2026-09-07_checkout-transparente-do-mercado-pago-10-beneficios-e-como-s_0ea26aecd6fc.md)
+2026-09-07 · article · SaaS alta · cliente media · estudo media · triagem — · `checkout-transparente` `mercado-pago` `checkout-pro` `conversao-de-checkout` `one-click-buy` `parcelamento`
+
+Checkout Transparente do Mercado Pago é uma API sem interface pronta: o pagamento acontece dentro do seu site, com a sua marca.
 
 ## [Gateway de pagamento: o que é, como funciona e como escolher (Mercado Pago)](../article/2026-09-07_gateway-de-pagamento-o-que-e-como-funciona-e-como-escolher-m_8b0041f7afd5.md)
 2026-09-07 · article · SaaS alta · cliente media · estudo alta · triagem — · `gateway-de-pagamento` `mercado-pago` `subadquirente` `pci-dss` `split-de-pagamento` `checkout-transparente`
