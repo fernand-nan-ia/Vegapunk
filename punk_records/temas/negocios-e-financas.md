@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)](../article/2026-09-07_como-vender-um-site-avaliacao-por-multiplo-marketplaces-e-co_a19b8d1384f3.md)
+2026-09-07 · article · SaaS alta · cliente baixa · estudo media · triagem — · `venda-de-ativo-digital` `valuation-por-multiplo` `marketplace-de-sites` `corretagem` `due-diligence` `relatorio-financeiro`
+
+Trata de vender o site como ativo, não de vender site para cliente.
 
 ## [Geoapify — preços por créditos: 1 requisição simples = 1 crédito; Free comercial com atribuição; limites 'soft'; dedicado 700 €/mês; SLA 99,5% nos pagos](../article/2026-08-27_geoapify-precos-por-creditos-1-requisicao-simples-1-credito_26727b74e3c5.md)
 2026-08-27 · article · SaaS alta · cliente media · estudo media · triagem archive · `geoapify` `precos` `creditos` `geocoding` `free-tier`
