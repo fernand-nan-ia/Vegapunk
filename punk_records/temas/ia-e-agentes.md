@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Claude Design: brief em vez de prompt corrido, exportar HTML e hospedar](../youtube/2026-09-07_claude-design-brief-em-vez-de-prompt-corrido-exportar-html-e_7TSnITL-LfY.md)
+2026-09-07 · youtube · SaaS media · cliente alta · estudo media · triagem — · `claude-design` `brief-estruturado` `exportacao-html` `aprovacao-de-layout` `venda-de-site` `conteudo-de-afiliado`
+
+O Claude Design quer BRIEF estruturado (tipo de página, público, objetivo, estilo, seções), não texto corrido.
 
 ## [Pipeline de site de cliente com Claude + skills, print do Instagram e vídeo gerado](../tiktok/2026-09-07_pipeline-de-site-de-cliente-com-claude-skills-print-do-insta_7667761470549019925.md)
 2026-09-07 · tiktok · SaaS media · cliente alta · estudo media · triagem — · `claude-code` `agent-skills` `geracao-de-site` `venda-de-site` `prompt-em-cadeia` `conteudo-do-cliente`
