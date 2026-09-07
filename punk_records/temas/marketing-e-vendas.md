@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Loja virtual completa no criador de sites da Hostinger: produtos, pagamento e frete](../youtube/2026-09-07_loja-virtual-completa-no-criador-de-sites-da-hostinger-produ_uZ9QIw5e8fs.md)
+2026-09-07 · youtube · SaaS baixa · cliente alta · estudo media · triagem — · `e-commerce` `loja-virtual` `meios-de-pagamento` `pix` `calculo-de-frete` `catalogo-de-produtos`
+
+Passo a passo de loja virtual: produto (com importação por planilha, até 50), pagamento por DLocal com Pix e boleto, e frete por estado com condições de preço e peso.
 
 ## [Anatomia de uma página de vendas em 13 blocos (tutorial WordPress + Elementor)](../youtube/2026-09-07_anatomia-de-uma-pagina-de-vendas-em-13-blocos-tutorial-wordp_Tr2cxnZ-XcI.md)
 2026-09-07 · youtube · SaaS media · cliente alta · estudo baixa · triagem — · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado`
