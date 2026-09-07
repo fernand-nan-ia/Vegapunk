@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 14 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 15 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 18 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -146,6 +146,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-07 · youtube · [Anatomia de uma página de vendas em 13 blocos (tutorial WordPress + Elementor)](youtube/2026-09-07_anatomia-de-uma-pagina-de-vendas-em-13-blocos-tutorial-wordp_Tr2cxnZ-XcI.md) · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado` `checkout-externo` · media/alta/baixa · —
 - 2026-09-07 · tiktok · [Prospecção por DM para lavagem automotiva — site fechado a R$ 250](tiktok/2026-09-07_prospeccao-por-dm-para-lavagem-automotiva-site-fechado-a-r-2_7675426401079561490.md) · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `proposta-comercial` `mobile-first` · baixa/alta/media · —
 - 2026-09-07 · tiktok · [Prosvia.dev como fonte de leads e um Pix de R$ 1.250 por site de hamburgueria](tiktok/2026-09-07_prosvia-dev-como-fonte-de-leads-e-um-pix-de-r-1-250-por-site_7682456540334329108.md) · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `prova-social` `ferramenta-de-leads` · baixa/media/baixa · —
 - 2026-09-07 · tiktok · [Prospecção fria por DM para hortifruti de bairro — proposta de site a R$ 450](tiktok/2026-09-07_prospeccao-fria-por-dm-para-hortifruti-de-bairro-proposta-de_7681077697811959058.md) · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp` · baixa/alta/media · —

@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 15 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Anatomia de uma página de vendas em 13 blocos (tutorial WordPress + Elementor)](../youtube/2026-09-07_anatomia-de-uma-pagina-de-vendas-em-13-blocos-tutorial-wordp_Tr2cxnZ-XcI.md)
+2026-09-07 · youtube · SaaS media · cliente alta · estudo baixa · triagem — · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado`
+
+Sob a propaganda da hospedagem existe uma coisa aproveitável: a lista dos 13 blocos de uma página de vendas, da headline ao segundo botão.
 
 ## [Prospecção por DM para lavagem automotiva — site fechado a R$ 250](../tiktok/2026-09-07_prospeccao-por-dm-para-lavagem-automotiva-site-fechado-a-r-2_7675426401079561490.md)
 2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `proposta-comercial` `mobile-first`
