@@ -13,7 +13,7 @@ O cérebro do projeto são três .md com ritmos diferentes: regras (CLAUDE.md), 
 O Claude Design quer BRIEF estruturado (tipo de página, público, objetivo, estilo, seções), não texto corrido.
 
 ## [Pipeline de site de cliente com Claude + skills, print do Instagram e vídeo gerado](../tiktok/2026-09-07_pipeline-de-site-de-cliente-com-claude-skills-print-do-insta_7667761470549019925.md)
-2026-09-07 · tiktok · SaaS media · cliente alta · estudo media · triagem — · `claude-code` `agent-skills` `geracao-de-site` `venda-de-site` `prompt-em-cadeia` `conteudo-do-cliente`
+2026-09-07 · tiktok · SaaS media · cliente alta · estudo media · triagem discard · `claude-code` `agent-skills` `geracao-de-site` `venda-de-site` `prompt-em-cadeia` `conteudo-do-cliente`
 
 Fluxo em cadeia: skills no Claude para fugir da cara de IA, ChatGPT gera o prompt a partir de print do Instagram, Claude gera o site, fotos do cliente viram vídeo.
 

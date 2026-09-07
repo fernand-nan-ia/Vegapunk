@@ -5,8 +5,8 @@ external_id: "7667761470549019925"
 canonical_url: "https://www.tiktok.com/@ryantoledoc/video/7667761470549019925"
 channel: "Ryan Toledo"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["claude-code", "agent-skills", "geracao-de-site", "venda-de-site", "prompt-em-cadeia", "conteudo-do-cliente"]
 applicability:
   saas_pessoal: media
