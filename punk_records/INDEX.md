@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 22 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 27 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 11 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 17 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -104,6 +104,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-09-07 · tiktok · [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md) · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa` · alta/alta/media · —
 - 2026-09-05 · article · [LGPD no Distrito Federal — modelo de implementação do GDF](article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md) · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta` · nenhuma/nenhuma/baixa · discard
 - 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · archive
 - 2026-09-05 · article · [MPF — O que é a LGPD?](article/2026-09-05_mpf-o-que-e-a-lgpd_e3c47ca8dddf.md) · `lgpd` `mpf` `conteudo-derivado` `serpro` `protecao-de-dados` · baixa/baixa/baixa · discard

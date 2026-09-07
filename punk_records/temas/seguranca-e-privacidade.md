@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](../tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md)
+2026-09-07 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa`
+
+securityheaders.com dá nota de A a F para os cabeçalhos HTTP do seu site.
 
 ## [LGPD no Distrito Federal — modelo de implementação do GDF](../article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md)
 2026-09-05 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta`
