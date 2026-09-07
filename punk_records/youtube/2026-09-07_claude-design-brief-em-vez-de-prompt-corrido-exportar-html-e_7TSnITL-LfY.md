@@ -5,8 +5,8 @@ external_id: "7TSnITL-LfY"
 canonical_url: "https://www.youtube.com/watch?v=7TSnITL-LfY"
 channel: "Nerds de Negócios"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["claude-design", "brief-estruturado", "exportacao-html", "aprovacao-de-layout", "venda-de-site", "conteudo-de-afiliado"]
 applicability:
   saas_pessoal: media

@@ -8,7 +8,7 @@ _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automa
 O cérebro do projeto são três .md com ritmos diferentes: regras (CLAUDE.md), spec de design e memória.
 
 ## [Claude Design: brief em vez de prompt corrido, exportar HTML e hospedar](../youtube/2026-09-07_claude-design-brief-em-vez-de-prompt-corrido-exportar-html-e_7TSnITL-LfY.md)
-2026-09-07 · youtube · SaaS media · cliente alta · estudo media · triagem — · `claude-design` `brief-estruturado` `exportacao-html` `aprovacao-de-layout` `venda-de-site` `conteudo-de-afiliado`
+2026-09-07 · youtube · SaaS media · cliente alta · estudo media · triagem apply_client · `claude-design` `brief-estruturado` `exportacao-html` `aprovacao-de-layout` `venda-de-site` `conteudo-de-afiliado`
 
 O Claude Design quer BRIEF estruturado (tipo de página, público, objetivo, estilo, seções), não texto corrido.
 
