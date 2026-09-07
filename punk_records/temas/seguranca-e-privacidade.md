@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](../tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md)
-2026-09-07 · tiktok · SaaS alta · cliente alta · estudo media · triagem — · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa`
+2026-09-07 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_client · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa`
 
 securityheaders.com dá nota de A a F para os cabeçalhos HTTP do seu site.
 

@@ -5,8 +5,8 @@ external_id: "7680992910879264021"
 canonical_url: "https://www.tiktok.com/@liviasimoes.ia/video/7680992910879264021"
 channel: "liviasimoes.ia"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["security-headers", "csp", "hardening-web", "vibe-coding", "checklist-de-lancamento", "auditoria-externa"]
 applicability:
   saas_pessoal: alta
