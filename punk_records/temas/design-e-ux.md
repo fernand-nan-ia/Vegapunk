@@ -1,6 +1,11 @@
 # 🎨 Design e UX
 
-_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 9 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Impeccable (pbakaus): 23 comandos de design, 61 regras determinísticas e hook que intercepta edição](../article/2026-09-07_impeccable-pbakaus-23-comandos-de-design-61-regras-determini_fa4361846156.md)
+2026-09-07 · article · SaaS alta · cliente alta · estudo alta · triagem — · `impeccable` `ai-slop` `design-com-ia` `detector-deterministico` `hooks` `ci-gate`
+
+23 comandos de design numa skill, 61 regras determinísticas que rodam sem LLM nem chave de API, e um hook que examina cada edição de interface.
 
 ## [Impeccable — os quatro modos de visitante e o fluxo de uso em quatro fases](../article/2026-09-07_impeccable-os-quatro-modos-de-visitante-e-o-fluxo-de-uso-em_bfc3a522e2b6.md)
 2026-09-07 · article · SaaS alta · cliente alta · estudo alta · triagem apply_client · `impeccable` `modos-de-visitante` `design-com-ia` `auditoria-de-ui` `design-system` `ai-slop`

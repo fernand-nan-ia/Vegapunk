@@ -10,7 +10,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 17 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 18 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
-- 🎨 Design e UX — 9 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
+- 🎨 Design e UX — 10 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -192,6 +192,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎨 Design e UX
 
+- 2026-09-07 · article · [Impeccable (pbakaus): 23 comandos de design, 61 regras determinísticas e hook que intercepta edição](article/2026-09-07_impeccable-pbakaus-23-comandos-de-design-61-regras-determini_fa4361846156.md) · `impeccable` `ai-slop` `design-com-ia` `detector-deterministico` `hooks` `ci-gate` `agent-skills` `claude-code` · alta/alta/alta · —
 - 2026-09-07 · article · [Impeccable — os quatro modos de visitante e o fluxo de uso em quatro fases](article/2026-09-07_impeccable-os-quatro-modos-de-visitante-e-o-fluxo-de-uso-em_bfc3a522e2b6.md) · `impeccable` `modos-de-visitante` `design-com-ia` `auditoria-de-ui` `design-system` `ai-slop` `agent-skills` · alta/alta/alta · apply_client
 - 2026-09-07 · article · [Taste Skill: 13 skills anti-slop para frontend, com três dials de ajuste](article/2026-09-07_taste-skill-13-skills-anti-slop-para-frontend-com-tres-dials_e331123fcba6.md) · `taste-skill` `ai-slop` `agent-skills` `design-com-ia` `frontend` `gsap` `design-tokens` `claude-code` · alta/alta/media · apply_client
 - 2026-09-07 · youtube · [Fugir do AI slop no Claude Code: referências, skills de design e iteração em três versões](youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md) · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias` `claude-code` · alta/alta/alta · apply_saas
