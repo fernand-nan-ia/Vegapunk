@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Prosvia.dev como fonte de leads e um Pix de R$ 1.250 por site de hamburgueria](../tiktok/2026-09-07_prosvia-dev-como-fonte-de-leads-e-um-pix-de-r-1-250-por-site_7682456540334329108.md)
+2026-09-07 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `prova-social` `ferramenta-de-leads`
+
+Prosvia.dev citado como fonte de leads, com prova de um Pix de R$ 1.250 por um site de hamburgueria.
 
 ## [Prospecção fria por DM para hortifruti de bairro — proposta de site a R$ 450](../tiktok/2026-09-07_prospeccao-fria-por-dm-para-hortifruti-de-bairro-proposta-de_7681077697811959058.md)
 2026-09-07 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `quebra-de-objecao` `landing-whatsapp`
