@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [awesome-claude-code: 179 recursos do Claude Code organizados em 27 seções](../article/2026-09-07_awesome-claude-code-179-recursos-do-claude-code-organizados_c7f7e9fbc46c.md)
-2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem — · `awesome-list` `claude-code` `catalogo` `agent-skills` `observabilidade` `design-e-ui`
+2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem archive · `awesome-list` `claude-code` `catalogo` `agent-skills` `observabilidade` `design-e-ui`
 
 179 recursos do Claude Code em 27 seções.
 

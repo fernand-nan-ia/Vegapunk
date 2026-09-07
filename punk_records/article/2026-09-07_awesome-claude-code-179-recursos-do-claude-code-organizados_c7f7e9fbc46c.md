@@ -5,8 +5,8 @@ external_id: "c7f7e9fbc46c"
 canonical_url: "https://github.com/hesreallyhim/awesome-claude-code"
 channel: "Hesreallyhim · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["awesome-list", "claude-code", "catalogo", "agent-skills", "observabilidade", "design-e-ui"]
 applicability:
   saas_pessoal: media
