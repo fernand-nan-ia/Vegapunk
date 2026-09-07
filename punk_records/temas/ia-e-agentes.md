@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [awesome-claude-code: 179 recursos do Claude Code organizados em 27 seções](../article/2026-09-07_awesome-claude-code-179-recursos-do-claude-code-organizados_c7f7e9fbc46c.md)
+2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem — · `awesome-list` `claude-code` `catalogo` `agent-skills` `observabilidade` `design-e-ui`
+
+179 recursos do Claude Code em 27 seções.
 
 ## [screenshot-to-code: aplicação self-hosted que converte print, Figma e gravação de tela em código](../article/2026-09-07_screenshot-to-code-aplicacao-self-hosted-que-converte-print_c5264a1d16b4.md)
 2026-09-07 · article · SaaS baixa · cliente media · estudo media · triagem archive · `screenshot-to-code` `design-para-codigo` `self-hosted` `tailwind` `figma` `custo-de-api`
