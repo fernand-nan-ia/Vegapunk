@@ -5,8 +5,8 @@ external_id: "a19b8d1384f3"
 canonical_url: "https://www.hostinger.com/br/tutoriais/como-vender-um-site?gad_source=1&gad_campaignid=20417074995&gbraid=0AAAAADMy-ha4LywJ6IeeactcEZZu1M2JL"
 channel: "Bruno Santana · Hostinger Tutoriais"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["venda-de-ativo-digital", "valuation-por-multiplo", "marketplace-de-sites", "corretagem", "due-diligence", "relatorio-financeiro", "site-flipping"]
 applicability:
   saas_pessoal: alta
