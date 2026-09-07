@@ -13,7 +13,7 @@ Escada de preço R$ 200 → 500 → 1.000 → 2.000+ e um dever de casa de 10 si
 Passo a passo de loja virtual: produto (com importação por planilha, até 50), pagamento por DLocal com Pix e boleto, e frete por estado com condições de preço e peso.
 
 ## [Anatomia de uma página de vendas em 13 blocos (tutorial WordPress + Elementor)](../youtube/2026-09-07_anatomia-de-uma-pagina-de-vendas-em-13-blocos-tutorial-wordp_Tr2cxnZ-XcI.md)
-2026-09-07 · youtube · SaaS media · cliente alta · estudo baixa · triagem — · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado`
+2026-09-07 · youtube · SaaS media · cliente alta · estudo baixa · triagem apply_client · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado`
 
 Sob a propaganda da hospedagem existe uma coisa aproveitável: a lista dos 13 blocos de uma página de vendas, da headline ao segundo botão.
 

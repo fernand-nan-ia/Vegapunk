@@ -5,8 +5,8 @@ external_id: "Tr2cxnZ-XcI"
 canonical_url: "https://www.youtube.com/watch?v=Tr2cxnZ-XcI"
 channel: "Aprendendo Sites"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["pagina-de-vendas", "estrutura-de-landing", "quebra-de-objecoes", "prova-social", "elementor", "conteudo-de-afiliado", "checkout-externo"]
 applicability:
   saas_pessoal: media
