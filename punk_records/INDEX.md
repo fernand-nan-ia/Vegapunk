@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 59 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 28 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 16 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 17 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 18 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 6 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -147,6 +147,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-07 · youtube · [Escada de preço para sites com IA (R$ 200 a R$ 2.000) e o argumento de mercado](youtube/2026-09-07_escada-de-preco-para-sites-com-ia-r-200-a-r-2-000-e-o-argume_QC37e8uXbDY.md) · `escada-de-preco` `venda-de-site` `portfolio` `prospeccao-fria` `tamanho-de-mercado` `conteudo-de-afiliado` · baixa/alta/baixa · —
 - 2026-09-07 · youtube · [Loja virtual completa no criador de sites da Hostinger: produtos, pagamento e frete](youtube/2026-09-07_loja-virtual-completa-no-criador-de-sites-da-hostinger-produ_uZ9QIw5e8fs.md) · `e-commerce` `loja-virtual` `meios-de-pagamento` `pix` `calculo-de-frete` `catalogo-de-produtos` `conteudo-de-afiliado` · baixa/alta/media · —
 - 2026-09-07 · youtube · [Anatomia de uma página de vendas em 13 blocos (tutorial WordPress + Elementor)](youtube/2026-09-07_anatomia-de-uma-pagina-de-vendas-em-13-blocos-tutorial-wordp_Tr2cxnZ-XcI.md) · `pagina-de-vendas` `estrutura-de-landing` `quebra-de-objecoes` `prova-social` `elementor` `conteudo-de-afiliado` `checkout-externo` · media/alta/baixa · —
 - 2026-09-07 · tiktok · [Prospecção por DM para lavagem automotiva — site fechado a R$ 250](tiktok/2026-09-07_prospeccao-por-dm-para-lavagem-automotiva-site-fechado-a-r-2_7675426401079561490.md) · `prospeccao-fria` `venda-de-site` `negocio-local` `preco-de-mercado` `proposta-comercial` `mobile-first` · baixa/alta/media · —

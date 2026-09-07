@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 16 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Escada de preço para sites com IA (R$ 200 a R$ 2.000) e o argumento de mercado](../youtube/2026-09-07_escada-de-preco-para-sites-com-ia-r-200-a-r-2-000-e-o-argume_QC37e8uXbDY.md)
+2026-09-07 · youtube · SaaS baixa · cliente alta · estudo baixa · triagem — · `escada-de-preco` `venda-de-site` `portfolio` `prospeccao-fria` `tamanho-de-mercado` `conteudo-de-afiliado`
+
+Escada de preço R$ 200 → 500 → 1.000 → 2.000+ e um dever de casa de 10 sites em uma semana para montar portfólio.
 
 ## [Loja virtual completa no criador de sites da Hostinger: produtos, pagamento e frete](../youtube/2026-09-07_loja-virtual-completa-no-criador-de-sites-da-hostinger-produ_uZ9QIw5e8fs.md)
 2026-09-07 · youtube · SaaS baixa · cliente alta · estudo media · triagem — · `e-commerce` `loja-virtual` `meios-de-pagamento` `pix` `calculo-de-frete` `catalogo-de-produtos`
