@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Escada de preço R$ 200 → 500 → 1.000 → 2.000+ e um dever de casa de 10 sites em uma semana para montar portfólio.
 
 ## [Loja virtual completa no criador de sites da Hostinger: produtos, pagamento e frete](../youtube/2026-09-07_loja-virtual-completa-no-criador-de-sites-da-hostinger-produ_uZ9QIw5e8fs.md)
-2026-09-07 · youtube · SaaS baixa · cliente alta · estudo media · triagem — · `e-commerce` `loja-virtual` `meios-de-pagamento` `pix` `calculo-de-frete` `catalogo-de-produtos`
+2026-09-07 · youtube · SaaS baixa · cliente alta · estudo media · triagem archive · `e-commerce` `loja-virtual` `meios-de-pagamento` `pix` `calculo-de-frete` `catalogo-de-produtos`
 
 Passo a passo de loja virtual: produto (com importação por planilha, até 50), pagamento por DLocal com Pix e boleto, e frete por estado com condições de preço e peso.
 

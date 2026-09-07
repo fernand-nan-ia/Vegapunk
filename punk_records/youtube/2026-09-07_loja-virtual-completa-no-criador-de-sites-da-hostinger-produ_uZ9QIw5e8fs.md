@@ -5,8 +5,8 @@ external_id: "uZ9QIw5e8fs"
 canonical_url: "https://www.youtube.com/watch?v=uZ9QIw5e8fs"
 channel: "Darlan Evandro"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["e-commerce", "loja-virtual", "meios-de-pagamento", "pix", "calculo-de-frete", "catalogo-de-produtos", "conteudo-de-afiliado"]
 applicability:
   saas_pessoal: baixa
