@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Cérebro do projeto no Claude Code: CLAUDE.md, spec e memória, imagens por .md e deploy](../youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md)
+2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem — · `claude-code` `claude-md` `spec-driven` `memoria-de-projeto` `geracao-de-imagens` `deploy-estatico`
+
+O cérebro do projeto são três .md com ritmos diferentes: regras (CLAUDE.md), spec de design e memória.
 
 ## [Claude Design: brief em vez de prompt corrido, exportar HTML e hospedar](../youtube/2026-09-07_claude-design-brief-em-vez-de-prompt-corrido-exportar-html-e_7TSnITL-LfY.md)
 2026-09-07 · youtube · SaaS media · cliente alta · estudo media · triagem — · `claude-design` `brief-estruturado` `exportacao-html` `aprovacao-de-layout` `venda-de-site` `conteudo-de-afiliado`
