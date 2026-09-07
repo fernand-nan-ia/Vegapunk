@@ -5,8 +5,8 @@ external_id: "3429c7218e4f"
 canonical_url: "https://github.com/affaan-m/ECC"
 channel: "Affaan-M · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["ecc", "agent-harness", "agent-skills", "agentshield", "seguranca-de-agente", "claude-code", "colisao-de-metodologia"]
 applicability:
   saas_pessoal: baixa

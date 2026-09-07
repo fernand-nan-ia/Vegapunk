@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [ECC (Everything Claude Code): 68 agentes, 286 skills e um sistema de engenharia inteiro](../article/2026-09-07_ecc-everything-claude-code-68-agentes-286-skills-e-um-sistem_3429c7218e4f.md)
-2026-09-07 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `ecc` `agent-harness` `agent-skills` `agentshield` `seguranca-de-agente` `claude-code`
+2026-09-07 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `ecc` `agent-harness` `agent-skills` `agentshield` `seguranca-de-agente` `claude-code`
 
 68 agentes, 286 skills, 94 comandos, hooks, memória e scanner de segurança.
 
