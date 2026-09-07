@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Preços e taxas do Asaas: Pix, boleto, cartão, Tap, antecipação e notificações](../article/2026-09-07_precos-e-taxas-do-asaas-pix-boleto-cartao-tap-antecipacao-e_2c0de4366084.md)
+2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `taxas-de-transacao` `pix` `boleto` `cartao-de-credito` `antecipacao-de-recebiveis`
+
+Asaas sem mensalidade nem adesão: Pix e boleto R$ 1,99 (R$ 0,99 nos 3 primeiros meses), débito R$ 0,35 + 1,89%, crédito R$ 0,49 + 2,99% à vista (1,99% na promo) e até 3,29% em 13-21x.
 
 ## [Asaas: quem é, história e o que a plataforma oferece](../article/2026-09-07_asaas-quem-e-historia-e-o-que-a-plataforma-oferece_afcfa36e4e97.md)
 2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `conta-digital-pj` `cobranca-recorrente` `instituicao-de-pagamento` `pix` `boleto`
