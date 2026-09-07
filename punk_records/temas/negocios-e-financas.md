@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Stripe Brasil (home): portfólio, escala e caminhos de integração](../article/2026-09-07_stripe-brasil-home-portfolio-escala-e-caminhos-de-integracao_63c27920a37d.md)
+2026-09-07 · article · SaaS media · cliente baixa · estudo alta · triagem — · `stripe` `infraestrutura-de-pagamentos` `stripe-billing` `stripe-atlas` `mcp` `agentic-commerce`
+
+Home da Stripe Brasil: 135+ moedas e formas de pagamento, US$ 1,9 tri processados em 2025, 99,999% de uptime e 200 mi de assinaturas no Billing.
 
 ## [Preços da Stripe no Brasil: cartão, Pix, boleto, contestações e produtos adicionais](../article/2026-09-07_precos-da-stripe-no-brasil-cartao-pix-boleto-contestacoes-e_ab375b3ea3cc.md)
 2026-09-07 · article · SaaS alta · cliente baixa · estudo alta · triagem — · `stripe` `taxas-de-transacao` `chargeback` `stripe-billing` `stripe-connect` `pix`
