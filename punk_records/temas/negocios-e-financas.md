@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Gateway de pagamento: o que é, como funciona e como escolher (Mercado Pago)](../article/2026-09-07_gateway-de-pagamento-o-que-e-como-funciona-e-como-escolher-m_8b0041f7afd5.md)
+2026-09-07 · article · SaaS alta · cliente media · estudo alta · triagem — · `gateway-de-pagamento` `mercado-pago` `subadquirente` `pci-dss` `split-de-pagamento` `checkout-transparente`
+
+Mercado Pago explica gateway de pagamento: o que faz, PCI DSS, split, recorrência e link de pagamento.
 
 ## [Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)](../article/2026-09-07_como-vender-um-site-avaliacao-por-multiplo-marketplaces-e-co_a19b8d1384f3.md)
 2026-09-07 · article · SaaS alta · cliente baixa · estudo media · triagem apply_saas · `venda-de-ativo-digital` `valuation-por-multiplo` `marketplace-de-sites` `corretagem` `due-diligence` `relatorio-financeiro`
