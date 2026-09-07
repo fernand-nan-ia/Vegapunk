@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-09-04, sessão 8 — personalidade canônica dos 7 Satélites + privacidade do OpenRouter fechada)
+# HANDOFF — Vegapunk (atualizado em 2026-09-07, sessão 10 — lote temático "vender e construir sites" + fila de triagem zerada)
 
 ## TL;DR — o que existe hoje
 
@@ -9,7 +9,7 @@ Vegapunk é **duas coisas** que compartilham uma fonte da verdade:
 
 Fonte da verdade de cada Satélite: `.claude/commands/vegapunk/agents/<id>.md`. **Tudo o mais é cópia** gerada por `scripts/sync_agents.sh` (global `~/.claude/commands`, FURY, plugin, `vegapunk.md`).
 
-Estado: container `vegapunk-vegapunk-1` rodando com o código de hoje; **130/130 testes verdes**; GitHub `fernand-nan-ia/Vegapunk` em `811710f` (tag **v1.7.0**); FURY em `ab4ce12`.
+→ **O estado de hoje está na tabela "Estado atual" logo abaixo.** As linhas de estado das sessões antigas ficam nas seções de cada sessão, como histórico — não as leia como o presente.
 
 Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, mais `8a32938` (checkpoint) e `4ee7177` (fix do capture.py). **144/144 testes verdes.** O grupo «Vegapunk» funciona com os 7 bots, cascata, janela de 10 min, triagem por assunto e captura pela boca do dono.
 
@@ -17,33 +17,46 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 8 (2026-09-04):** os 7 Satélites ganharam **personalidade canônica completa** a partir da wiki (`0ef0cd2`; FURY `24edd00`), a conta do OpenRouter teve a **privacidade fechada e verificada com a chave real**, e o dia do bot foi pushado. **144/144 testes verdes.** Ambos os repos limpos e sincronizados com o remoto.
 
+**Sessão 9 (2026-09-05, pelo Fernando sozinho):** `9ef54f3` (16 itens novos — lote Akita, GTA 6 e lote LGPD) e `8737dbd` (**`capture.py --triage` e subcomando `triage`** — a triagem deixou de ser exclusiva do Telegram).
+
+## Estado atual (2026-09-07, fim da sessão 10)
+
+| | |
+|---|---|
+| Repo Vegapunk | **`0783fec` pushado**, árvore limpa salvo `squads/vegapunk/memory/stella.md` (linha de sincronização) e este HANDOFF |
+| Repo FURY | `24edd00`, com `.claude/commands/vegapunk.md` modificado **sem commit** (resíduo do último sync) |
+| Container | `vegapunk-vegapunk-1` **de pé**, 7 bots online (subido à mão hoje — ver armadilha do exit 127) |
+| Testes | **144/144 verdes** |
+| Punk Records | **182 itens**, fila de triagem **zerada** (31 apply_saas · 12 apply_client · 125 archive · 14 discard) |
+| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
+| Sem tag nova | nenhuma linha de `src/` mudou na sessão 10 |
+
 ⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
-Sessão 3 já está no GitHub (`fe63b19` / FURY `6ee82c0`). Para as próximas, o padrão é o mesmo — sempre os DOIS repos:
+### Regra permanente: mexeu em agente, são DOIS repos
 
-**Repo Vegapunk:**
-```bash
-git add -A
-git commit -m "feat: Satélites com personalidade + funções do FURY (autossuficientes) + conversa no Telegram"
-git push
-```
-Inclui: 7 agentes + `vegapunk.md` + plugin (personalidade e absorção), `src/vegapunk/{chat,satellites}.py`, `bot.py`, `pyproject.toml` (+pyyaml), `tests/{test_satellites.py,satellites_baseline.json}`, `scripts/sync_agents.sh`, `squads/vegapunk/{tasks,checklists,templates,memory,avaliacao-imoveis}/`, este HANDOFF. `.env`, `data/`, `tmp/`, `whisper-cache/` continuam no `.gitignore` (conferido).
+Sempre que um `.md` de Satélite ou `squads/vegapunk/` mudar, o FURY recebe a cópia (`scripts/sync_agents.sh`) e precisa de commit próprio:
 
-**Repo FURY** (`/home/crazu/projetos/FURY`, 3 entradas novas: `.claude/commands/vegapunk.md`, `.claude/commands/vegapunk/`, `squads/vegapunk/`): é o espelho do squad, exigido pela regra global. Commitar lá também:
 ```bash
-git -C /home/crazu/projetos/FURY add -A && git -C /home/crazu/projetos/FURY commit -m "squad vegapunk: 7 Satélites (personalidade + funções absorvidas) e squads/vegapunk autossuficiente" && git -C /home/crazu/projetos/FURY push
+git add -A && git commit -m "…" && git push                      # Vegapunk (fonte)
+git -C /home/crazu/projetos/FURY add -A \
+  && git -C /home/crazu/projetos/FURY commit -m "sync(vegapunk): …" \
+  && git -C /home/crazu/projetos/FURY push                        # espelho
 ```
 
-Depois de commitar, o bot continua fazendo commits `kb:` automáticos — normal.
+**Commite a FONTE primeiro** — o rsync não pergunta se o arquivo é rastreado, e já houve inversão (sessão 8) em que o espelho tinha o que a fonte não tinha. `.env`, `data/`, `tmp/` e `whisper-cache/` seguem no `.gitignore`. Commits `kb:` automáticos do bot depois do push são normais.
 
-## Primeira coisa a fazer na próxima sessão
+## Primeira coisa a fazer (aberto agora)
 
-1. **Provar a voz nova em produção.** Chame cada Satélite no grupo do Telegram e leia a resposta como leitor, não como autor. O risco introduzido em 04/09 é de DOSAGEM, não de código: se o arcaísmo da Lilith ou a preguiça da York começarem a comer a resposta técnica, o conserto é na chave `speech_register` do agente, que já traz a regra "corta o arcaísmo, nunca a clareza". Ninguém observou isso em produção ainda.
-2. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: promover 2b (diários por pessoa) e 2c (INSTALL + install_skills).
-3. **Reprocessar o item preso em `_pending/`**: `2026-09-04_sem-titulo_7665842308864085255.md`, um TikTok do `@douglasalmeida_ia` que falhou na extração (o erro intermitente de rehydration). Custa fração de centavo.
-4. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · clique funcionando) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção.
-5. **A sétima mensagem do roteiro**, nunca testada: esperar 11 min e escrever `e aí?` sem nome no grupo — com a triagem ligada, o roteador deve devolver lista vazia.
-6. Pendências antigas que continuam valendo: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; `*capture` do Decreto 7.962/2013 se o site do cliente for vender online.
+**Uma decisão do Fernando bloqueia dois itens: o site do cliente vai vender online?** Se sim, (a) o item da loja virtual sai de `archive` para `apply_client`, (b) o Decreto 7.962/2013 precisa entrar no vault ANTES do catálogo (lacuna marcada desde 28/08) e (c) a LGPD passa a valer para dado de comprador. O Shaka recusou marcar `apply_client` enquanto isso não se resolve — aplicação condicional é aplicação vaga.
+
+1. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**, aprendida do item [Cérebro do projeto no Claude Code](punk_records/youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md): *pedido novo que contradiz uma decisão/spec registrada → o agente PARA e avisa antes de alterar*. Uma frase; protege decisão fechada de ser desfeita por engano. Trabalho para Atlas.
+2. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos, então a mesma página vinda de dois anúncios do Google entra como DOIS itens. Uma linha; ver armadilha abaixo.
+3. **Provar a voz nova em produção.** Chame cada Satélite no grupo do Telegram e leia como leitor, não como autor. O risco de 04/09 é de DOSAGEM, não de código: se o arcaísmo da Lilith ou a preguiça da York comerem a resposta técnica, o conserto é na chave `speech_register`, que já traz "corta o arcaísmo, nunca a clareza". Nunca observado.
+4. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: 2b (diários por pessoa) e 2c (INSTALL + install_skills).
+5. **Reprocessar os 3 itens de `_pending/`** (1 de 04/09, 2 de 05/09) — falhas de extração do TikTok, o erro intermitente de rehydration. Custa fração de centavo.
+6. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção. Junto: a sétima mensagem do roteiro, nunca testada (esperar 11 min e escrever `e aí?` sem nome; com triagem ligada o roteador deve devolver lista vazia).
+7. Pendências antigas: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; commitar o `.claude/commands/vegapunk.md` modificado no FURY.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -318,7 +331,7 @@ O teto de hora caiu de 60 para 25 por recomendação da York: 60/h autorizava **
 
 ## Dívida nova registrada nesta sessão
 
-- **O gasto da leitura de slides é invisível.** Carrossel de TikTok passa por `enrich.read_slides()`, que usa o modelo **multimodal** e gasta OpenRouter de verdade — mas **nada disso é gravado em `item_events`**, que só registra o enriquecimento. O relatório de custo da York (`punk_records_status`) **subestima desde sempre**, e não dá para saber por quanto. Pior: quando o `*capture` roda por `docker compose exec`, o log sai no processo do exec e não no do container, então nem o log resta. Correção sugerida: gravar um evento com os tokens do `read_slides`, como já se faz no enriquecimento.
+- **O gasto da leitura de slides é invisível.** Carrossel de TikTok passa por `enrich.read_slides()`, que usa o modelo **multimodal** e gasta OpenRouter de verdade — mas **nada disso é gravado em `item_events`**, que só registra o enriquecimento. O relatório de custo da York (`punk_records_status`) **subestima desde sempre**, e não dá para saber por quanto. Pior: quando o `*capture` roda por `docker compose exec`, o log sai no processo do exec e não no do container, então nem o log resta. Correção sugerida: gravar um evento com os tokens do `read_slides`, como já se faz no enriquecimento. **Atualização 07/09: agora há ordem de grandeza.** O log do container mostrou `slides lidos: 5 imagens, 5392 in / 639 out tokens` — ou seja, **~5,4k in + 0,6k out por carrossel, ≈ US$ 0,003 cada**. Pequeno por item, mas invisível por design: 3 carrosséis passaram na sessão 10 e nenhum apareceu no relatório da York.
 - **Datas do vault em UTC.** O container roda em UTC; itens capturados depois das 21h no horário local entram com a data do **dia seguinte** no nome do arquivo e no `INDEX.md`. Os sete deste lote saíram como `2026-09-01` tendo sido capturados em 31/08. Não quebra nada (links são relativos), mas atrapalha busca por data.
 - **A DM continua sem teto** e o **`INDEX.md` continua crescendo dentro de toda resposta** (agora 133 itens) — as duas dívidas de custo mais antigas.
 
@@ -385,6 +398,46 @@ O Fernando mandou a página de configurações de privacidade da conta. Ela é a
 
 **Captura do dia:** 8 itens do TikTok pelo bot (7 triados, 1 preso em `_pending/`) mais o artigo do OpenRouter. Tudo pushado.
 
+## Sessão 9 (2026-09-05) — capture.py aprendeu a triar — **`8737dbd`**
+
+Feita pelo Fernando sozinho, registrada só no diário do Stella até agora. Dois pushes:
+- `9ef54f3` — **16 itens novos** (164 → 180). Lote Akita (benchmarks de LLM, ai-memory, ai-jail, mangá) + GTA 6 + um lote LGPD de 10 links que rendeu só 2 úteis: 2 duplicatas recusadas pelo próprio script, 4 descartes por redundância (a 13.853 é lei de diferença; o compilado é 2ª cópia; o MPF confessa copiar o Serpro; o do DF é para órgão público) e 2 páginas sem texto no HTML (Sebrae, índice do MPF).
+- `8737dbd` — **`capture.py --triage`** no `enrich` e **subcomando `triage <id> <decisão>`**. Ambos chamam `pipeline.triage`, a MESMA função dos botões do Telegram — sem lógica duplicada. A triagem deixou de ser exclusiva do Telegram, e foi isso que tornou possível o lote da sessão 10.
+
+## Sessão 10 (2026-09-07) — 13 capturas e a fila zerada — **`0783fec`**
+
+**27 commits pushados**, vault **170 → 182 itens**, fila de triagem **14 → 0**. Nenhuma linha de `src/` mudou, então **sem tag**.
+
+**O dia formou um tema sozinho, em duas metades.** Os 13 itens não foram escolhidos por assunto, mas convergiram:
+
+*Como se VENDE um site para negócio local* — e agora há **quatro preços observados** no Punk Records, que é a primeira faixa de mercado real do vault:
+
+| Valor | Caso | Prova |
+|---|---|---|
+| R$ 250 | lavagem automotiva | **fechado no print** |
+| R$ 450 | hortifruti | proposto, terminou em "vou pensar" |
+| R$ 680 | clínica odontológica (31/08) | relatado |
+| R$ 1.250 | hamburgueria | **Pix recebido no print** |
+
+Dois padrões repetem nos que fecharam: o preço **nunca** aparece antes do aceite da proposta, e a proposta é uma **lista de entregáveis nomeados**, não descrição genérica de site.
+
+*Como se CONSTRÓI um sem cara de IA* — três itens com processo de verdade:
+- **AI slop** ([item](punk_records/youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md)): o problema não é feiura, é uniformidade — quando tudo tem a mesma cara, o cliente acha que qualquer um entrega igual e o preço cai. Processo: biblioteca de referências que case com o TIPO de cliente (Awwwards filtrado, Dribbble, Pinterest) → skills de design (**Impeccable e Taste conflitam se ativadas juntas; nomear uma no prompt**) → iterar em 3 versões antes de refinar. Truque: baixar o código-fonte do site de referência e anexar ao brief.
+- **Cérebro do projeto** ([item](punk_records/youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md)): confirmação externa da nossa própria arquitetura — regras (`CLAUDE.md`), spec e memória em arquivos separados **porque cada um muda num ritmo diferente**. Traz a regra que NÃO temos (item 1 da lista acima) e dois padrões operacionais: um `imagens.md` que devolve prompts com proporção em vez de pedir foto a foto, e devolver o print do PageSpeed ao agente para ele corrigir desempenho.
+- **Claude Design** ([item](punk_records/youtube/2026-09-07_claude-design-brief-em-vez-de-prompt-corrido-exportar-html-e_7TSnITL-LfY.md)): o campo espera **brief em 5 campos** (tipo de página, público-alvo, objetivo, estilo, seções obrigatórias), não texto corrido. Os 5 campos viram o questionário da reunião com o cliente; exportar em PDF aprova o layout antes de gastar com domínio.
+
+**Custo do lote: quase zero.** Os resumos foram escritos pela sessão do Claude Code (`*capture`), não pelo OpenRouter. Únicos gastos: 3 carrosséis de TikTok que passam por `enrich.read_slides()` (~5,4k tokens de entrada cada, ≈ US$ 0,01 no total). Os 6 vídeos do YouTube vieram com **legenda pronta** — Whisper não rodou.
+
+### A triagem em lote pelo Shaka (14 vereditos)
+
+3 `apply_saas` · 3 `apply_client` · 7 `archive` · 1 `discard`. Aplicados por `capture.py triage`, um commit `kb:` cada, zero OpenRouter.
+
+**O Shaka recusou duas marcações que pareciam óbvias, e a razão vale como regra:**
+1. **Loja virtual da Hostinger → `archive`**, não `apply_client`. A lista de requisitos é boa, mas a aplicação depende de uma decisão não tomada (o cliente vende online?). Marcar `apply_*` com aplicação condicional é inflar a fila com aplicação vaga — o defeito que o `*audit-triage` existe para caçar.
+2. **Escada de preço (R$ 200→500→1.000→2.000) → `archive`.** Uma escada afirmada por um afiliado não manda em quatro preços observados.
+
+**Todos os 13 itens de hoje são conteúdo de afiliado ou funil de curso** (Hostinger, HostGator, cursos de Claude Code). Isso está marcado no campo `tools` e nos `key_points` de cada um — o resumo separa o que é processo do que é anúncio. O único `discard` foi o método que manda **baixar foto do Instagram do prospecto** para peça comercial: fonte superada por itens melhores, com risco de uso de imagem de terceiro embutido.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -444,7 +497,7 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 | Mudou `.env` | `docker compose up -d --force-recreate` (restart NÃO relê o .env) |
 | Mudou código em `src/` ou um agente `.md` | `docker compose restart` (montado por volume, sem rebuild) |
 | Mudou `pyproject.toml` / deps | `docker compose build && docker compose up -d` (pyyaml já está na imagem via huggingface_hub; foi só declarado) |
-| Testes | `PYTHONPATH=src .venv/bin/python -m pytest -q` (41) |
+| Testes | `PYTHONPATH=src .venv/bin/python -m pytest -q` (144) |
 | Editou agente | `scripts/sync_agents.sh` (global + FURY + plugin + `vegapunk.md` + `squads/vegapunk/` → FURY) |
 | Ver banco | `sqlite3 data/vegapunk.db "select id,status,platform,title from knowledge_items"` · conversas: `select satellite,count(*) from chat_messages group by 1` |
 | Conversa por Satélite no chat | `/conta` no Telegram |
@@ -459,6 +512,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são do Stella.
 - **Repo original privado = vault único compartilhado** (decidido 2026-09-01): amigos entram como collaborators, cada um com bot/tokens/chave próprios, todos commitam `kb:` no mesmo repo. Sem repo-modelo separado; o kit é o próprio repo + importador + INSTALL.
 - **Diários por pessoa** (decidido 2026-09-01): `squads/vegapunk/memory/<dono>/` — versionados (backup), sem mistura entre usuários (Story 2b).
+- **`apply_*` exige ação concreta e incondicional** (Shaka, 2026-09-07): item cuja aplicação depende de uma decisão ainda não tomada vai para `archive`, não para `apply_client`. Aplicação condicional é aplicação vaga, e é ela que faz a fila de `apply_*` perder o sentido. O item volta a ser candidato no dia em que a decisão for tomada.
+- **Link mandado no Claude Code é capturado pelo `*capture`, não pelo bot** (praticado desde 27/08, consolidado em 07/09): o resumo sai da sessão, custo de OpenRouter é zero, e o único gasto residual são os carrosséis de TikTok que passam pelo `read_slides()`. O bot do Telegram continua sendo o caminho para captura em movimento.
 
 ## Armadilhas conhecidas
 - **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.
@@ -472,10 +527,24 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - Apagar item do banco: `item_events` referencia `knowledge_items` (FK) — deletar os eventos ANTES do item, senão `IntegrityError`.
 - `pipeline.triage` só aceita item em status `enriched`: `extraction_failed` não tem caminho de descarte pelo bot — a saída é colar conteúdo em Notas manuais + `/reprocess`, ou delete manual (com a FK acima).
 - INDEX.md e `temas/` são regenerados INTEIROS a partir do banco a cada triagem/captura: item que existir só como arquivo (ex.: vindo de `git pull` de outra instalação) some do índice — é o furo que a Story 2a (importador) fecha.
+- **`normalize.TRACKING_PARAMS` não cobre os parâmetros novos do Google Ads** (`normalize.py:103` limpa `utm_`, `fbclid`, `gclid`, `igsh`, `si`, `ref`, `mc_cid`, `mc_eid`). **`gad_source`, `gad_campaignid` e `gbraid` sobrevivem** — e como o id do item é o sha1 da URL limpa, a MESMA página vinda de dois anúncios diferentes entra como dois itens. Visto em 07/09 no artigo da Hostinger (`a19b8d1384f3`), que ficou com os três na `canonical_url`.
+- **Container morre com `Exited (127)` sem uma linha de log quando o Docker Desktop sobe.** O `restart: unless-stopped` religa cedo demais, antes do ambiente estar pronto. Terceira ocorrência (sessões 4, 6 e 10). Sintoma: link mandado no Telegram não recebe nem o "capturei". Cura: `docker compose up -d` na mão. **Não é o exit 137**, que era o `stop_grace_period` e já foi resolvido.
+- **`Enrichment.topics` aceita no máximo 7 itens** (e `tools` 10, `key_points` 10, `tags` 8). Escrever o JSON do `*capture` com 8 tópicos falha no Pydantic DEPOIS da extração — nada se perde, mas custa uma rodada. Conferir antes de rodar `enrich`.
+- **A extensão de captura de tela e o `--text` continuam sendo a saída para página em JavaScript**, mas repare: o `*capture` de artigo agora acerta a maioria dos sites de conteúdo (trafilatura + cabeçalhos de Chrome). Os que ainda falham são SPA de vitrine, não artigo.
 
 ## Mapa do código
 `src/vegapunk/`: `bot.py` (handlers: links → pipeline; texto → chat; comandos de Satélite) → `pipeline.py` (normalize→extract→enrich→persist, retries, triagem, reprocess) → `normalize.py`, `extract.py` (yt-dlp + VTT + faster-whisper + slides TikTok), `enrich.py` (OpenRouter; schema; `read_slides`; `_client()` reutilizado pelo chat), `vault.py` (md + INDEX + git), `db.py` (SQLite + `transition_to`), `config.py` (env), **`satellites.py`** (persona → prompt, vault picker), **`chat.py`** (estado/histórico/reply).
-`tests/`: 41 testes; `test_satellites.py` cobre load dos 7, prompt, vault picker, chat state/history/reply (mock), nada-se-perde, dependências existem.
+`tests/`: 144 testes; `test_satellites.py` cobre load dos 7, prompt, vault picker, chat state/history/reply (mock), nada-se-perde, dependências existem.
+
+**`scripts/capture.py` — o caminho do Claude Code (sem OpenRouter):**
+```
+extract <url|arquivo> [--sat id] [--text arq.txt]   → tmp/capture/<id>.md (metadados + TEXTO + contrato JSON)
+   (a sessão lê esse .md e escreve tmp/capture/<id>.json)
+enrich <id> [--telegram] [--triage <decisão>]       → valida com o MESMO Pydantic do bot, grava, índice, temas, commit kb:
+triage <id> archive|apply_saas|apply_client|discard → mesma função dos botões (pipeline.triage)
+pending                                              → itens extraídos à espera do passo 2
+```
+Rodar dentro do container (`docker compose exec -T vegapunk python scripts/capture.py …`), que é onde estão yt-dlp, ffmpeg e Whisper. **Silencioso por padrão**; `--telegram` é opt-in. O `id` aceita prefixo. **Duas implementações do contrato `notify`** (aqui e no `bot.py`): quem mexer numa tem de mexer na outra — há teste que lê o arquivo e falha se o `**kw` sumir.
 
 ## Dívida conhecida do multi-bot (escrita, não esquecida)
 - **Story 2** (não escrita): histórico **compartilhado** do grupo (H4 — cada Satélite ler o que os outros disseram), `/custo` agregado, atraso aleatório por bot, renomear `TELEGRAM_BOT_TOKEN` → `_STELLA` (o código já aceita os dois desde a v1.7.0).
@@ -497,4 +566,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - Push automático do vault (`VEGAPUNK_GIT_PUSH=true` + `~/.ssh` no compose).
 - ~~Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente~~ — FEITO 2026-08-27: bloco em `docs/punk-records-claude-md.md` e adicionado ao **global** `~/.claude/CLAUDE.md` (vale para todo projeto da máquina). O SaaS e o site do cliente ficam em outros diretórios.
 - MCP de consulta ao vault.
+- **Regra de contradição de spec no `CLAUDE.md`** (aprendida em 07/09, item `apply_saas`): *pedido novo que contradiz uma decisão registrada → o agente PARA e avisa antes de alterar*. Uma frase. Protege as "Decisões fechadas" deste arquivo de serem desfeitas por engano numa sessão distraída. É o item 1 da lista de abertura.
+- **`imagens.md` como padrão de geração de imagem** (07/09): em vez de pedir foto a foto, um arquivo lê as referências e devolve TODOS os prompts em inglês já com a proporção de cada imagem. Aplicável ao site do cliente. Companheiro: `follow the ref` junto das fotos originais quando o produto sai inconsistente.
+- **Devolver o print do PageSpeed ao agente** para ele corrigir desempenho, acessibilidade e SEO — o relatório é a especificação do conserto. Vale como passo final de entrega do site do cliente, junto com o `securityheaders.com` (item `apply_client` de 07/09).
+- **Biblioteca de referências por tipo de cliente** (anti-AI-slop): uma pasta com 3 referências que casem com o SEGMENTO, não com o gosto geral. Advocacia e agência criativa não pedem a mesma linguagem. Barato de montar, e é o passo que o item de 07/09 aponta como o mais importante dos três.
 - **Integrar o Punk Records com Notion ou Obsidian** (pedido do Fernando em 2026-08-27, a estudar). Obsidian: o vault já é Markdown com frontmatter — basta abrir `punk_records/` como vault; avaliar wikilinks, Dataview sobre `tags`/`applicability`, e não quebrar `## Notas manuais`. Notion: exige sync via API (páginas por item, propriedades = frontmatter); há um doc antigo em `.docs/pacote_telegram_knowledge_bot_v1/06_persistencia_obsidian/`.
