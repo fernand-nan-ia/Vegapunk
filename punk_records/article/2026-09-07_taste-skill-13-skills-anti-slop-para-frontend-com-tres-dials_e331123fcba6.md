@@ -5,8 +5,8 @@ external_id: "e331123fcba6"
 canonical_url: "https://github.com/Leonxlnx/taste-skill"
 channel: "Leonxlnx · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["taste-skill", "ai-slop", "agent-skills", "design-com-ia", "frontend", "gsap", "design-tokens", "claude-code"]
 applicability:
   saas_pessoal: alta
