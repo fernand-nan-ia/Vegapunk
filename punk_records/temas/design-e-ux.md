@@ -1,6 +1,11 @@
 # 🎨 Design e UX
 
-_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 7 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 8 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Taste Skill: 13 skills anti-slop para frontend, com três dials de ajuste](../article/2026-09-07_taste-skill-13-skills-anti-slop-para-frontend-com-tres-dials_e331123fcba6.md)
+2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `taste-skill` `ai-slop` `agent-skills` `design-com-ia` `frontend` `gsap`
+
+13 skills que tiram a cara de IA do frontend, controladas por três dials de 1 a 10 (variância, movimento, densidade).
 
 ## [Fugir do AI slop no Claude Code: referências, skills de design e iteração em três versões](../youtube/2026-09-07_fugir-do-ai-slop-no-claude-code-referencias-skills-de-design_HtbZQaDjUvM.md)
 2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem apply_saas · `ai-slop` `design-com-ia` `agent-skills` `mcp` `iteracao-de-design` `biblioteca-de-referencias`
