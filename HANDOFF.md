@@ -23,11 +23,11 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 | | |
 |---|---|
-| Repo Vegapunk | **`0783fec` pushado**, árvore limpa salvo `squads/vegapunk/memory/stella.md` (linha de sincronização) e este HANDOFF |
-| Repo FURY | `24edd00`, com `.claude/commands/vegapunk.md` modificado **sem commit** (resíduo do último sync) |
+| Repo Vegapunk | **`9998a05` pushado**, árvore limpa salvo este HANDOFF |
+| Repo FURY | **`3e9afc0` pushado**, limpo; espelho conferido contra a fonte (`vegapunk.md` e os 7 agentes idênticos) |
 | Container | `vegapunk-vegapunk-1` **de pé**, 7 bots online (subido à mão hoje — ver armadilha do exit 127) |
 | Testes | **144/144 verdes** |
-| Punk Records | **182 itens**, fila de triagem **zerada** (31 apply_saas · 12 apply_client · 125 archive · 14 discard) |
+| Punk Records | **191 itens**, fila de triagem **zerada** (32 apply_saas · 15 apply_client · 130 archive · 14 discard) |
 | `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
 | Sem tag nova | nenhuma linha de `src/` mudou na sessão 10 |
 
@@ -48,6 +48,8 @@ git -C /home/crazu/projetos/FURY add -A \
 
 ## Primeira coisa a fazer (aberto agora)
 
+🎯 **PEDIDO DO FERNANDO (07/09, fim da sessão): preparar o começo da venda de sites.** Ele quer transformar o que o Punk Records já guarda em plano de trabalho para prestar o serviço de verdade. A matéria-prima já está toda no vault e foi capturada hoje: **faixa de preço observada** (R$ 250 fechado · R$ 450 proposto · R$ 680 · R$ 1.250 recebido), **roteiros de prospecção por DM** com as objeções reais do comércio local, **anatomia da página de vendas em 13 blocos**, **requisitos de e-commerce** se o cliente vender, **os quatro modos de visitante do Impeccable** (site de cliente = Persuade, SaaS = Operate), **duas skills de design** avaliadas, e o **gate de segurança** (securityheaders.com). Falta o que nenhum item traz: escopo padrão, o que está e o que NÃO está incluso, prazo, forma de pagamento, manutenção recorrente e contrato. Ciclo sugerido: **York** `*pricing`/`*offer` (preço e oferta a partir dos 4 preços reais) → **Edison** `*prd` (o serviço como produto: escopo, entregáveis, etapas) → **Lilith** `*premortem` (como esse negócio fracassa em 6 meses) → **Shaka** `*compliance` (LGPD, Decreto 7.962 se vender online, o que prometer sem mentir). A decisão travada continua sendo a mesma e agora vale dinheiro: **o site do cliente vai vender online?**
+
 **Uma decisão do Fernando bloqueia dois itens: o site do cliente vai vender online?** Se sim, (a) o item da loja virtual sai de `archive` para `apply_client`, (b) o Decreto 7.962/2013 precisa entrar no vault ANTES do catálogo (lacuna marcada desde 28/08) e (c) a LGPD passa a valer para dado de comprador. O Shaka recusou marcar `apply_client` enquanto isso não se resolve — aplicação condicional é aplicação vaga.
 
 1. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**, aprendida do item [Cérebro do projeto no Claude Code](punk_records/youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md): *pedido novo que contradiz uma decisão/spec registrada → o agente PARA e avisa antes de alterar*. Uma frase; protege decisão fechada de ser desfeita por engano. Trabalho para Atlas.
@@ -56,7 +58,7 @@ git -C /home/crazu/projetos/FURY add -A \
 4. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: 2b (diários por pessoa) e 2c (INSTALL + install_skills).
 5. **Reprocessar os 3 itens de `_pending/`** (1 de 04/09, 2 de 05/09) — falhas de extração do TikTok, o erro intermitente de rehydration. Custa fração de centavo.
 6. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção. Junto: a sétima mensagem do roteiro, nunca testada (esperar 11 min e escrever `e aí?` sem nome; com triagem ligada o roteador deve devolver lista vazia).
-7. Pendências antigas: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot; commitar o `.claude/commands/vegapunk.md` modificado no FURY.
+7. Pendências antigas: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
