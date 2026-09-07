@@ -5,8 +5,8 @@ external_id: "fa4361846156"
 canonical_url: "https://github.com/pbakaus/impeccable"
 channel: "Pbakaus · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["impeccable", "ai-slop", "design-com-ia", "detector-deterministico", "hooks", "ci-gate", "agent-skills", "claude-code"]
 applicability:
   saas_pessoal: alta
