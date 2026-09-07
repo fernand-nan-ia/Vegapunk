@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 60 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 61 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [awesome-mcp-servers: 3.793 servidores MCP catalogados em 69 categorias](../article/2026-09-07_awesome-mcp-servers-3-793-servidores-mcp-catalogados-em-69-c_7d9153c0bf2c.md)
+2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem — · `mcp` `awesome-list` `catalogo` `browser-automation` `integracao-de-ferramentas` `claude-code`
+
+Catálogo de 3.793 servidores MCP em 69 categorias.
 
 ## [Docusaurus: gerador de sites de documentação da Meta (Markdown → site estático)](../article/2026-09-07_docusaurus-gerador-de-sites-de-documentacao-da-meta-markdown_07e29605f541.md)
 2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem archive · `docusaurus` `gerador-de-site-estatico` `documentacao` `markdown` `site-versionado` `meta-oss`
