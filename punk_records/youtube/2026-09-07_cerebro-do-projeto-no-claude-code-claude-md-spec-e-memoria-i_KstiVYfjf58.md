@@ -5,8 +5,8 @@ external_id: "KstiVYfjf58"
 canonical_url: "https://www.youtube.com/watch?v=KstiVYfjf58"
 channel: "LABS"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["claude-code", "claude-md", "spec-driven", "memoria-de-projeto", "geracao-de-imagens", "deploy-estatico", "pagespeed"]
 applicability:
   saas_pessoal: alta

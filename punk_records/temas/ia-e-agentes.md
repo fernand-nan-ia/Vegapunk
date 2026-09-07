@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Cérebro do projeto no Claude Code: CLAUDE.md, spec e memória, imagens por .md e deploy](../youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md)
-2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem — · `claude-code` `claude-md` `spec-driven` `memoria-de-projeto` `geracao-de-imagens` `deploy-estatico`
+2026-09-07 · youtube · SaaS alta · cliente alta · estudo alta · triagem apply_saas · `claude-code` `claude-md` `spec-driven` `memoria-de-projeto` `geracao-de-imagens` `deploy-estatico`
 
 O cérebro do projeto são três .md com ritmos diferentes: regras (CLAUDE.md), spec de design e memória.
 
