@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Preços da Stripe no Brasil: cartão, Pix, boleto, contestações e produtos adicionais](../article/2026-09-07_precos-da-stripe-no-brasil-cartao-pix-boleto-contestacoes-e_ab375b3ea3cc.md)
+2026-09-07 · article · SaaS alta · cliente baixa · estudo alta · triagem — · `stripe` `taxas-de-transacao` `chargeback` `stripe-billing` `stripe-connect` `pix`
+
+Stripe Brasil: 3,99% + R$ 0,39 por transação em cartão nacional, +2% em cartão internacional, boleto R$ 3,45 e Pix 1,19% (sob convite).
 
 ## [Preços e taxas do Asaas: Pix, boleto, cartão, Tap, antecipação e notificações](../article/2026-09-07_precos-e-taxas-do-asaas-pix-boleto-cartao-tap-antecipacao-e_2c0de4366084.md)
 2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `taxas-de-transacao` `pix` `boleto` `cartao-de-credito` `antecipacao-de-recebiveis`
