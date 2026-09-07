@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Pipeline de site de cliente com Claude + skills, print do Instagram e vídeo gerado](../tiktok/2026-09-07_pipeline-de-site-de-cliente-com-claude-skills-print-do-insta_7667761470549019925.md)
+2026-09-07 · tiktok · SaaS media · cliente alta · estudo media · triagem — · `claude-code` `agent-skills` `geracao-de-site` `venda-de-site` `prompt-em-cadeia` `conteudo-do-cliente`
+
+Fluxo em cadeia: skills no Claude para fugir da cara de IA, ChatGPT gera o prompt a partir de print do Instagram, Claude gera o site, fotos do cliente viram vídeo.
 
 ## [Novidades no meu AI-MEMORY: cada vez melhor pra usar com suas IAs](../article/2026-09-05_novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas_c4cbd7b80029.md)
 2026-09-05 · article · SaaS alta · cliente baixa · estudo alta · triagem apply_saas · `ai-memory` `memoria-de-agente` `workstream` `handoff-entre-harness` `sanitizer` `agent-skills`
