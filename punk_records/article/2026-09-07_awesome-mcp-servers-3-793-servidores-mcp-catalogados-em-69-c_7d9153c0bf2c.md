@@ -5,8 +5,8 @@ external_id: "7d9153c0bf2c"
 canonical_url: "https://github.com/punkpeye/awesome-mcp-servers"
 channel: "Punkpeye · GitHub"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["mcp", "awesome-list", "catalogo", "browser-automation", "integracao-de-ferramentas", "claude-code"]
 applicability:
   saas_pessoal: media

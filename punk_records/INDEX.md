@@ -47,7 +47,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
-- 2026-09-07 · article · [awesome-mcp-servers: 3.793 servidores MCP catalogados em 69 categorias](article/2026-09-07_awesome-mcp-servers-3-793-servidores-mcp-catalogados-em-69-c_7d9153c0bf2c.md) · `mcp` `awesome-list` `catalogo` `browser-automation` `integracao-de-ferramentas` `claude-code` · media/baixa/media · —
+- 2026-09-07 · article · [awesome-mcp-servers: 3.793 servidores MCP catalogados em 69 categorias](article/2026-09-07_awesome-mcp-servers-3-793-servidores-mcp-catalogados-em-69-c_7d9153c0bf2c.md) · `mcp` `awesome-list` `catalogo` `browser-automation` `integracao-de-ferramentas` `claude-code` · media/baixa/media · archive
 - 2026-09-07 · article · [Docusaurus: gerador de sites de documentação da Meta (Markdown → site estático)](article/2026-09-07_docusaurus-gerador-de-sites-de-documentacao-da-meta-markdown_07e29605f541.md) · `docusaurus` `gerador-de-site-estatico` `documentacao` `markdown` `site-versionado` `meta-oss` · media/baixa/media · archive
 - 2026-09-05 · article · [ai-usagebar: monitor de uso, gasto e saldo de serviços de IA](article/2026-09-05_ai-usagebar-monitor-de-uso-gasto-e-saldo-de-servicos-de-ia_ed01c9de56d7.md) · `ai-usagebar` `monitoramento-de-custo` `openrouter` `waybar` `rust` `quota-de-assinatura` `observabilidade-de-ia` · media/baixa/media · archive
 - 2026-09-04 · tiktok · [3 Opções de Autenticação Gerenciada para SaaS: Supabase, Clerk e Firebase](tiktok/2026-09-04_3-opcoes-de-autenticacao-gerenciada-para-saas-supabase-clerk_7677567514703973639.md) · `autenticacao` `supabase-auth` `clerk` `firebase-auth` `vibecoding` `micro-saas` · alta/alta/media · apply_saas
