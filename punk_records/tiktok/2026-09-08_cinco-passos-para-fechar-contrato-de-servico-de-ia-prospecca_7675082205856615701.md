@@ -5,8 +5,8 @@ external_id: "7675082205856615701"
 canonical_url: "https://www.tiktok.com/@eujoaotorresz/video/7675082205856615701"
 channel: "Joao Torres"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "processo-comercial", "prospeccao", "diagnostico", "claude-code", "precificacao"]
 applicability:
   saas_pessoal: baixa

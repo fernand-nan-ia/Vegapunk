@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 21 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Cinco passos para fechar contrato de serviço de IA: prospecção, escuta, diagnóstico e implementação](../tiktok/2026-09-08_cinco-passos-para-fechar-contrato-de-servico-de-ia-prospecca_7675082205856615701.md)
-2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `processo-comercial` `prospeccao` `diagnostico` `claude-code` `precificacao`
+2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `processo-comercial` `prospeccao` `diagnostico` `claude-code` `precificacao`
 
 Prospecção ativa, reunião de escuta, anotações guardadas como memória, diagnóstico real e só então a proposta.
 
