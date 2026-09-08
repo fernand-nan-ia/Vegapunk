@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-09-07, sessão 10 — lote temático "vender e construir sites" + fila de triagem zerada)
+# HANDOFF — Vegapunk (atualizado em 2026-09-07 noite, sessão 10b — preço do serviço de sites, escopo desta pasta e publicidade médica do CFM)
 
 ## TL;DR — o que existe hoje
 
@@ -19,17 +19,17 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 9 (2026-09-05, pelo Fernando sozinho):** `9ef54f3` (16 itens novos — lote Akita, GTA 6 e lote LGPD) e `8737dbd` (**`capture.py --triage` e subcomando `triage`** — a triagem deixou de ser exclusiva do Telegram).
 
-## Estado atual (2026-09-07, fim da sessão 10)
+## Estado atual (2026-09-07 noite, fim da sessão 10b)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`9998a05` pushado**, árvore limpa salvo este HANDOFF |
+| Repo Vegapunk | **`a446561` pushado**, árvore limpa salvo este HANDOFF |
 | Repo FURY | **`3e9afc0` pushado**, limpo; espelho conferido contra a fonte (`vegapunk.md` e os 7 agentes idênticos) |
-| Container | `vegapunk-vegapunk-1` **de pé**, 7 bots online (subido à mão hoje — ver armadilha do exit 127) |
+| Container | `vegapunk-vegapunk-1` **de pé há 8h**, 7 bots online (subido à mão hoje — ver armadilha do exit 127) |
 | Testes | **144/144 verdes** |
-| Punk Records | **191 itens**, fila de triagem **zerada** (32 apply_saas · 15 apply_client · 130 archive · 14 discard) |
+| Punk Records | **208 itens** (32 apply_saas · 19 apply_client · 132 archive · 15 discard) · **10 sem triagem** — lote de gateways de pagamento capturado pelo Fernando via Telegram, não triado porque ele não pediu |
 | `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
-| Sem tag nova | nenhuma linha de `src/` mudou na sessão 10 |
+| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 e 10b |
 
 ⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
 
@@ -48,17 +48,37 @@ git -C /home/crazu/projetos/FURY add -A \
 
 ## Primeira coisa a fazer (aberto agora)
 
-🎯 **PEDIDO DO FERNANDO (07/09, fim da sessão): preparar o começo da venda de sites.** Ele quer transformar o que o Punk Records já guarda em plano de trabalho para prestar o serviço de verdade. A matéria-prima já está toda no vault e foi capturada hoje: **faixa de preço observada** (R$ 250 fechado · R$ 450 proposto · R$ 680 · R$ 1.250 recebido), **roteiros de prospecção por DM** com as objeções reais do comércio local, **anatomia da página de vendas em 13 blocos**, **requisitos de e-commerce** se o cliente vender, **os quatro modos de visitante do Impeccable** (site de cliente = Persuade, SaaS = Operate), **duas skills de design** avaliadas, e o **gate de segurança** (securityheaders.com). Falta o que nenhum item traz: escopo padrão, o que está e o que NÃO está incluso, prazo, forma de pagamento, manutenção recorrente e contrato. Ciclo sugerido: **York** `*pricing`/`*offer` (preço e oferta a partir dos 4 preços reais) → **Edison** `*prd` (o serviço como produto: escopo, entregáveis, etapas) → **Lilith** `*premortem` (como esse negócio fracassa em 6 meses) → **Shaka** `*compliance` (LGPD, Decreto 7.962 se vender online, o que prometer sem mentir). A decisão travada continua sendo a mesma e agora vale dinheiro: **o site do cliente vai vender online?**
+🎯 **O Fernando está começando a vender sites.** Meta declarada em 07/09; o levantamento começou em 26/08 e hoje tem 19 itens `apply_client`. **Ele NÃO quer fechar escopo nem PRD aqui** — ver a regra de escopo logo abaixo.
 
-**Uma decisão do Fernando bloqueia dois itens: o site do cliente vai vender online?** Se sim, (a) o item da loja virtual sai de `archive` para `apply_client`, (b) o Decreto 7.962/2013 precisa entrar no vault ANTES do catálogo (lacuna marcada desde 28/08) e (c) a LGPD passa a valer para dado de comprador. O Shaka recusou marcar `apply_client` enquanto isso não se resolve — aplicação condicional é aplicação vaga.
+### ⚠️ REGRA DE ESCOPO (dita pelo Fernando em 07/09 — não violar)
 
-1. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**, aprendida do item [Cérebro do projeto no Claude Code](punk_records/youtube/2026-09-07_cerebro-do-projeto-no-claude-code-claude-md-spec-e-memoria-i_KstiVYfjf58.md): *pedido novo que contradiz uma decisão/spec registrada → o agente PARA e avisa antes de alterar*. Uma frase; protege decisão fechada de ser desfeita por engano. Trabalho para Atlas.
-2. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos, então a mesma página vinda de dois anúncios do Google entra como DOIS itens. Uma linha; ver armadilha abaixo.
-3. **Provar a voz nova em produção.** Chame cada Satélite no grupo do Telegram e leia como leitor, não como autor. O risco de 04/09 é de DOSAGEM, não de código: se o arcaísmo da Lilith ou a preguiça da York comerem a resposta técnica, o conserto é na chave `speech_register`, que já traz "corta o arcaísmo, nunca a clareza". Nunca observado.
-4. **Atlas: `*develop squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`** — o importador vault → banco é a fundação do kit de distribuição E da reinstalação sem perda. Shaka já deu o `*risk` (MÉDIO, 4 condições, coladas na story). Depois: 2b (diários por pessoa) e 2c (INSTALL + install_skills).
-5. **Reprocessar os 3 itens de `_pending/`** (1 de 04/09, 2 de 05/09) — falhas de extração do TikTok, o erro intermitente de rehydration. Custa fração de centavo.
-6. **Colar um link no GRUPO** e conferir os quatro sinais da Story 1d (anúncio pelo bot do dono · resumo pela mesma boca · triagem à parte com o título · **clique funcionando**) — aceitação pendente desde a v1.8.0; nada da 1d foi observado em produção. Junto: a sétima mensagem do roteiro, nunca testada (esperar 11 min e escrever `e aí?` sem nome; com triagem ligada o roteador deve devolver lista vazia).
-7. Pendências antigas: investigar os US$ 8,58 da chave OpenRouter que não batem com o registro do bot.
+**Nesta pasta se ESTUDA o caso. Projeto de cliente se constrói em diretório próprio.**
+Aqui: preço, risco, norma, abordagem, o que perguntar ao cliente, que referência usar.
+Lá: código, deploy, domínio, revisões, o site.
+**Não criar arquivo de projeto de cliente aqui, e não oferecer `*offer`, `*prd` ou `*develop` como se fossem executar nesta pasta.** Entregar a análise em conversa; quando ele decidir construir, dizer que é hora de abrir o diretório do cliente.
+
+### Os dois primeiros clientes (decididos em 07/09)
+
+| | Energia solar | Psiquiatra |
+|---|---|---|
+| Tipo | landing → WhatsApp | landing → WhatsApp |
+| Vende online? | **não** | **não** |
+| Cobrança | **preço de custo** (só domínio, ~R$ 40) | idem |
+| Motivo | testar as próprias habilidades, sem pressa | idem |
+| Restrição especial | — | **Resolução CFM 2.336/2023** |
+
+**Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
+
+### O que fazer quando ele voltar
+
+1. **Triar os 10 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago, checkout transparente) — capturados por ele via Telegram enquanto trabalhávamos. **York** já ofereceu comparar taxas e ele ainda não respondeu. Para um serviço de R$ 900 pago uma vez, a resposta provável é mais simples e barata que os três (Pix direto).
+2. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b abaixo.
+3. **`npx impeccable detect`** numa página pronta — custo zero, sem instalar nada, 61 regras determinísticas. Continua sendo o próximo passo mais barato para design.
+4. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*. Uma frase; protege as "Decisões fechadas" deste arquivo.
+5. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
+6. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
+7. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`), fundação do kit de distribuição. Shaka já deu o `*risk`.
+8. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -440,6 +460,60 @@ Dois padrões repetem nos que fecharam: o preço **nunca** aparece antes do acei
 
 **Todos os 13 itens de hoje são conteúdo de afiliado ou funil de curso** (Hostinger, HostGator, cursos de Claude Code). Isso está marcado no campo `tools` e nos `key_points` de cada um — o resumo separa o que é processo do que é anúncio. O único `discard` foi o método que manda **baixar foto do Instagram do prospecto** para peça comercial: fonte superada por itens melhores, com risco de uso de imagem de terceiro embutido.
 
+## Sessão 10b (2026-09-07, noite) — preço do serviço, regra de escopo e a norma do CFM
+
+**O Fernando declarou que vai vender sites**, e ao reler o vault ficou claro que o levantamento começou em **26/08**, não hoje: são 19 itens `apply_client` sobre venda, prospecção, estrutura de página e design. Ele estava fazendo pesquisa de mercado sem declarar a intenção.
+
+### A precificação da York (`*pricing`)
+
+**O benchmark brasileiro derruba os preços dos vídeos.** Cinco fontes ([BluePaper](https://bluepaper.io/blog/quanto-custa-landing-page), [BQHost](https://bqhost.com.br/lp/quanto-custa-uma-landing-page/), [Safira](https://safiradesign.com.br/blog/quanto-custa-uma-landing-page-2026/), [Vibe](https://govibe.digital/quanto-custa-criacao-de-site-para-empresa-em-2026/), [BigData University](https://bigdatauniversity.com.br/quanto-cobrar-por-uma-landing-page-2026/)) põem landing para pequena empresa entre **R$ 1.500 e R$ 5.000**. Os preços do TikTok (R$ 250 a R$ 1.250) estão **abaixo do piso de mercado**.
+
+**A conta que importa, e que nenhum vídeo mostra:** ~4h de produção + **~5h de prospecção** = **~9h por cliente FECHADO**. A prospecção custa mais que a produção. A R$ 250, a hora do Fernando vale R$ 28.
+
+**Princípio de preço que explica os dados do vault:** cobrar pelo **ticket do cliente do cliente**, não pelo número de seções. Hortifruti (ticket R$ 80) hesitou em R$ 450; clínica odontológica (ticket R$ 500-3.000) fechou R$ 680 em cinco minutos.
+
+| Degrau | Preço | Observação |
+|---|---|---|
+| Entrada | **grátis** | a prévia pronta ANTES do preço — presente em todos os casos que fecharam |
+| Núcleo | R$ 1.500 | piso do mercado brasileiro |
+| Premium | R$ 2.800 | com agendamento, SEO local, Google Meu Negócio |
+| Recorrência | R$ 200/mês | **o Fernando adiou**, mas fica "a combinar" escrito na proposta |
+
+**Decisão dele, registrada:** os **três primeiros a preço de custo** (só o domínio, ~R$ 40), porque são projetos-treino. A York aceitou e propôs o enquadramento de **preço de portfólio com contrapartida** (autorização de uso + depoimento + indicação), que ancora o R$ 1.500 sem parecer desconto.
+
+**Custo real por site: R$ 40** — hospedagem é zero (Vercel/Netlify/Cloudflare Pages) e o **botão de WhatsApp é um link `wa.me`, sem API e sem custo**. A API oficial só serve para automação, que não está no escopo.
+
+**Domínio: sempre no CNPJ do cliente.** Um `.com.br` exige CPF/CNPJ brasileiro — registrar no próprio nome torna o Fernando dono legal do domínio do cliente, com risco de parecer refém e de o site morrer se ele esquecer de renovar. Cobrar a configuração, nunca a posse.
+
+### A norma que ninguém tinha visto: publicidade médica
+
+O Punk Records **não tinha nada** sobre isso antes desta sessão. Sete fontes capturadas, das quais duas primárias.
+
+**Resolução CFM nº 2.336/2023**, vigente desde **11/03/2024** (substituiu a 1.974/2011). Site de médico é "rede própria" e está integralmente sujeito a ela. **Três regras quebram uma landing gerada por IA:**
+
+1. **Identificação obrigatória na PÁGINA PRINCIPAL** (art. 4º e 6º): nome + a palavra **MÉDICO/MÉDICA** + número do CRM + RQE da especialidade. E o **Manual da Codame** acrescenta uma exigência de DESIGN: **sem diferença de fonte, tamanho e cor** entre essas informações. Nome em display grande com CRM cinza miúdo no rodapé descumpre — e é o padrão que todo gerador produz.
+2. **Vedado garantir, prometer ou INSINUAR bons resultados** (art. 11, XII). "Insinuar" alcança headline persuasiva comum. Também é vedado causar medo ou insegurança, o que derruba copy de dor. E vale para **símbolo, ícone, selo e slogan**, não só texto.
+3. **Máximo de DUAS especialidades**, cada uma com seu RQE, e só as reconhecidas na Resolução CFM 2.330/2023 (o CRM-PR cita Medicina Estética como exemplo do que NÃO é especialidade).
+
+**O que a norma nova PERMITE** e a antiga proibia: divulgar preço da consulta e formas de pagamento, campanhas promocionais, fotos do consultório e da equipe, imagem de paciente com finalidade educativa. Muito conteúdo na internet ainda ensina pela norma revogada.
+
+**O risco é do médico, não do fornecedor** — quem responde ao CRM é ela. Mas o prejuízo volta: página reprovada custa a cliente, o depoimento e a indicação.
+
+### Armadilha técnica nova
+
+**O `capture.py` não extrai PDF pela URL.** O `extract_article` usa trafilatura, que devolve ERR-004 em PDF. O caminho que funcionou, e que deve virar rotina para norma e documento oficial:
+
+```python
+# dentro do container
+urllib.request.urlopen(req)  # baixar o PDF (User-Agent de navegador)
+from vegapunk.extract import extract_document
+extract_document(Path("arquivo.pdf"))  # pypdf converte
+# depois: capture.py extract <url> --text arquivo.txt --title "..." --sat shaka
+```
+Funcionou com 46k e 146k chars. **Atenção**: a URL já existe no banco como `extraction_failed`, e o `extract` recusa duplicata — é preciso apagar o item (`item_events` ANTES de `knowledge_items`, por causa da FK) e remover o `.md` órfão de `_pending/`.
+
+**Listas gigantes também não passam pelo trafilatura**: `awesome-mcp-servers` (1,5 MB de README) e `awesome-claude-code` devolveram só navegação do GitHub. Solução usada: baixar o README cru, condensar para o **mapa estrutural** (seções + contagem) e alimentar por `--text`. Guardar 3.793 links que mudam toda semana incharia o vault sem ganho.
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -513,6 +587,9 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Autossuficiência**: `squads/vegapunk/` não aponta para o FURY; o FURY recebe cópia (sync), não o contrário.
 - York NÃO é devops/scrum (foi cogitado e descartado em 2026-08-27): Ganância = dinheiro (pricing/oferta/ROI). Push e cadência são do Stella.
 - **Repo original privado = vault único compartilhado** (decidido 2026-09-01): amigos entram como collaborators, cada um com bot/tokens/chave próprios, todos commitam `kb:` no mesmo repo. Sem repo-modelo separado; o kit é o próprio repo + importador + INSTALL.
+- **Esta pasta é para ESTUDAR; projeto de cliente é em diretório próprio** (decidido 2026-09-07). Aqui: preço, risco, norma, abordagem. Lá: código, deploy, domínio, o site. Não criar arquivo de projeto de cliente aqui nem oferecer `*offer`/`*prd`/`*develop` como se fossem executar nesta pasta.
+- **Domínio sempre no CNPJ do cliente** (decidido 2026-09-07): `.com.br` exige CPF/CNPJ, e registrar no próprio nome torna o fornecedor dono legal do domínio alheio. Cobrar a configuração, nunca a posse.
+- **Botão `wa.me` em vez de formulário** (decidido 2026-09-07, nos dois primeiros clientes): sem coleta no site, a LGPD do fornecedor deixa de existir. A conversa no WhatsApp é do cliente, que já tem dever próprio de sigilo.
 - **Diários por pessoa** (decidido 2026-09-01): `squads/vegapunk/memory/<dono>/` — versionados (backup), sem mistura entre usuários (Story 2b).
 - **`apply_*` exige ação concreta e incondicional** (Shaka, 2026-09-07): item cuja aplicação depende de uma decisão ainda não tomada vai para `archive`, não para `apply_client`. Aplicação condicional é aplicação vaga, e é ela que faz a fila de `apply_*` perder o sentido. O item volta a ser candidato no dia em que a decisão for tomada.
 - **Link mandado no Claude Code é capturado pelo `*capture`, não pelo bot** (praticado desde 27/08, consolidado em 07/09): o resumo sai da sessão, custo de OpenRouter é zero, e o único gasto residual são os carrosséis de TikTok que passam pelo `read_slides()`. O bot do Telegram continua sendo o caminho para captura em movimento.
@@ -532,6 +609,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **`normalize.TRACKING_PARAMS` não cobre os parâmetros novos do Google Ads** (`normalize.py:103` limpa `utm_`, `fbclid`, `gclid`, `igsh`, `si`, `ref`, `mc_cid`, `mc_eid`). **`gad_source`, `gad_campaignid` e `gbraid` sobrevivem** — e como o id do item é o sha1 da URL limpa, a MESMA página vinda de dois anúncios diferentes entra como dois itens. Visto em 07/09 no artigo da Hostinger (`a19b8d1384f3`), que ficou com os três na `canonical_url`.
 - **Container morre com `Exited (127)` sem uma linha de log quando o Docker Desktop sobe.** O `restart: unless-stopped` religa cedo demais, antes do ambiente estar pronto. Terceira ocorrência (sessões 4, 6 e 10). Sintoma: link mandado no Telegram não recebe nem o "capturei". Cura: `docker compose up -d` na mão. **Não é o exit 137**, que era o `stop_grace_period` e já foi resolvido.
 - **`Enrichment.topics` aceita no máximo 7 itens** (e `tools` 10, `key_points` 10, `tags` 8). Escrever o JSON do `*capture` com 8 tópicos falha no Pydantic DEPOIS da extração — nada se perde, mas custa uma rodada. Conferir antes de rodar `enrich`.
+- **PDF pela URL cai em ERR-004**: o `extract_article` usa trafilatura, que não lê PDF. Baixar + `extract.extract_document` (pypdf) + `--text` é o caminho; ver sessão 10b. Se a URL já falhou antes, apagar o item (eventos ANTES do item, FK) e o `.md` de `_pending/`.
+- **README gigante do GitHub devolve só navegação**: listas tipo `awesome-*` (1,5 MB) não passam pelo trafilatura. Baixar o raw, condensar para mapa estrutural e usar `--text`. Não guardar listas de link inteiras: envelhecem em dias e incham o vault.
 - **A extensão de captura de tela e o `--text` continuam sendo a saída para página em JavaScript**, mas repare: o `*capture` de artigo agora acerta a maioria dos sites de conteúdo (trafilatura + cabeçalhos de Chrome). Os que ainda falham são SPA de vitrine, não artigo.
 
 ## Mapa do código
@@ -567,6 +646,7 @@ Rodar dentro do container (`docker compose exec -T vegapunk python scripts/captu
 - Healthcheck diário no Telegram (York já tem o comando no Claude Code; falta agendar no bot).
 - Push automático do vault (`VEGAPUNK_GIT_PUSH=true` + `~/.ssh` no compose).
 - ~~Bloco "Base de conhecimento" no CLAUDE.md do SaaS e do site do cliente~~ — FEITO 2026-08-27: bloco em `docs/punk-records-claude-md.md` e adicionado ao **global** `~/.claude/CLAUDE.md` (vale para todo projeto da máquina). O SaaS e o site do cliente ficam em outros diretórios.
+- **Comparar gateways de pagamento para receber pelo serviço** (10 itens capturados em 07/09, sem triagem: Asaas, Stripe, Mercado Pago, checkout transparente). York já ofereceu; para R$ 900 pagos uma vez, a resposta provável é Pix direto, sem gateway nenhum.
 - MCP de consulta ao vault.
 - **Regra de contradição de spec no `CLAUDE.md`** (aprendida em 07/09, item `apply_saas`): *pedido novo que contradiz uma decisão registrada → o agente PARA e avisa antes de alterar*. Uma frase. Protege as "Decisões fechadas" deste arquivo de serem desfeitas por engano numa sessão distraída. É o item 1 da lista de abertura.
 - **`imagens.md` como padrão de geração de imagem** (07/09): em vez de pedir foto a foto, um arquivo lê as referências e devolve TODOS os prompts em inglês já com a proporção de cada imagem. Aplicável ao site do cliente. Companheiro: `follow the ref` junto das fotos originais quando o produto sai inconsistente.
