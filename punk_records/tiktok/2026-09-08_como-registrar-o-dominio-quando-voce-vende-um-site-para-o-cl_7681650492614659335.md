@@ -5,8 +5,8 @@ external_id: "7681650492614659335"
 canonical_url: "https://www.tiktok.com/@fgoncalvesreal/video/7681650492614659335"
 channel: "fgoncalvesreal"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "dominio", "registro-br", "vercel", "processo-comercial", "freelance"]
 applicability:
   saas_pessoal: baixa

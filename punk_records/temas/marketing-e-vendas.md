@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Prospecção ativa, reunião de escuta, anotações guardadas como memória, diagnóstico real e só então a proposta.
 
 ## [Como registrar o domínio quando você vende um site para o cliente](../tiktok/2026-09-08_como-registrar-o-dominio-quando-voce-vende-um-site-para-o-cl_7681650492614659335.md)
-2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance`
+2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance`
 
 Sobe a versão de aprovação na Vercel com domínio grátis; só compra o domínio no Registro.br depois que o cliente aprova e o contrato fecha.
 
