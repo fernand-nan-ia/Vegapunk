@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
@@ -21,6 +21,11 @@ Orientação do CRM-PR com dois pontos que a resolução federal não traz: máx
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico`
 
 Comparativo oficial entre a norma nova e a de 2011.
+
+## [CFM moderniza a resolução da publicidade médica (nota oficial, 2023)](../article/2026-09-08_cfm-moderniza-a-resolucao-da-publicidade-medica-nota-oficial_10733afe4876.md)
+2026-09-08 · article · SaaS nenhuma · cliente media · estudo baixa · triagem — · `cfm` `publicidade-medica` `resolucao-2336-2023` `imagem-de-paciente` `fonte-oficial`
+
+Nota oficial do CFM sobre a aprovação da 2.336/2023: três anos de processo, 2.600 sugestões em consulta pública.
 
 ## [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](../tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md)
 2026-09-07 · tiktok · SaaS alta · cliente alta · estudo media · triagem apply_client · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa`
