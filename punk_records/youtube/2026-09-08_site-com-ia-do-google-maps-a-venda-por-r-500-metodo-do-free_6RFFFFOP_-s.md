@@ -5,8 +5,8 @@ external_id: "6RFFFFOP_-s"
 canonical_url: "https://www.youtube.com/watch?v=6RFFFFOP_-s"
 channel: "A Vizinhança"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "prospeccao-local", "free-mockup", "claude-code", "pinterest-referencia", "vercel-deploy", "whatsapp-checkout", "precificacao-site"]
 applicability:
   saas_pessoal: baixa

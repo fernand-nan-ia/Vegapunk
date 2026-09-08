@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Site com IA: do Google Maps à venda por R$ 500 (método do 'free mockup')](../youtube/2026-09-08_site-com-ia-do-google-maps-a-venda-por-r-500-metodo-do-free_6RFFFFOP_-s.md)
-2026-09-08 · youtube · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-local` `free-mockup` `claude-code` `pinterest-referencia` `vercel-deploy`
+2026-09-08 · youtube · SaaS baixa · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `prospeccao-local` `free-mockup` `claude-code` `pinterest-referencia` `vercel-deploy`
 
 Método completo de vender site local: acha o cliente no Google Maps, monta com Claude Code copiando referências do Pinterest, hospeda de graça na Vercel e manda pronto no WhatsApp ('free mockup') por R$ 500.
 
