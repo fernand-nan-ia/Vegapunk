@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
@@ -16,6 +16,11 @@ Norma vigente desde 13/09/2023.
 2026-09-08 · article · SaaS baixa · cliente alta · estudo baixa · triagem apply_client · `cfm` `crm-pr` `publicidade-medica` `rqe` `especialidade-reconhecida` `garantia-de-resultado`
 
 Orientação do CRM-PR com dois pontos que a resolução federal não traz: máximo de DUAS especialidades divulgadas, e divulgar especialidade não reconhecida (ex.: Medicina Estética) é infração ética.
+
+## [Lançamento do Manual da Publicidade Médica no I ENCM 2024 (nota oficial)](../article/2026-09-08_lancamento-do-manual-da-publicidade-medica-no-i-encm-2024-no_d2248affffc3.md)
+2026-09-08 · article · SaaS nenhuma · cliente baixa · estudo baixa · triagem — · `cfm` `publicidade-medica` `manual-codame` `antes-e-depois` `fiscalizacao` `fonte-oficial`
+
+Nota do lançamento do Manual da Codame, em março de 2024.
 
 ## [O que muda na publicidade médica: comparativo 2.336/2023 × 1.974/2011 (CFM)](../article/2026-09-08_o-que-muda-na-publicidade-medica-comparativo-2-336-2023-x-1_1bec769ca36f.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico`

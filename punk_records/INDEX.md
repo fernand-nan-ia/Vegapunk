@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 29 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 33 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 34 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 18 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 25 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -117,6 +117,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 2026-09-08 · article · [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md) · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico` `compliance` · baixa/alta/media · apply_client
 - 2026-09-08 · article · [Resolução CFM nº 2.336/2023 — publicidade e propaganda médicas (texto integral)](article/2026-09-08_resolucao-cfm-no-2-336-2023-publicidade-e-propaganda-medicas_14d443253bbf.md) · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe` `landing-page` `risco-do-cliente` · baixa/alta/media · apply_client
 - 2026-09-08 · article · [CRM-PR — pontos práticos da publicidade médica, incluindo especialidade não reconhecida](article/2026-09-08_crm-pr-pontos-praticos-da-publicidade-medica-incluindo-espec_afd664213469.md) · `cfm` `crm-pr` `publicidade-medica` `rqe` `especialidade-reconhecida` `garantia-de-resultado` `site-de-medico` · baixa/alta/baixa · apply_client
+- 2026-09-08 · article · [Lançamento do Manual da Publicidade Médica no I ENCM 2024 (nota oficial)](article/2026-09-08_lancamento-do-manual-da-publicidade-medica-no-i-encm-2024-no_d2248affffc3.md) · `cfm` `publicidade-medica` `manual-codame` `antes-e-depois` `fiscalizacao` `fonte-oficial` · nenhuma/baixa/baixa · —
 - 2026-09-08 · article · [O que muda na publicidade médica: comparativo 2.336/2023 × 1.974/2011 (CFM)](article/2026-09-08_o-que-muda-na-publicidade-medica-comparativo-2-336-2023-x-1_1bec769ca36f.md) · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico` · baixa/alta/media · apply_client
 - 2026-09-08 · article · [CFM moderniza a resolução da publicidade médica (nota oficial, 2023)](article/2026-09-08_cfm-moderniza-a-resolucao-da-publicidade-medica-nota-oficial_10733afe4876.md) · `cfm` `publicidade-medica` `resolucao-2336-2023` `imagem-de-paciente` `fonte-oficial` · nenhuma/media/baixa · archive
 - 2026-09-07 · tiktok · [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md) · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa` · alta/alta/media · apply_client
