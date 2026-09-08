@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [O básico de LGPD para não tomar multa com um SaaS](../tiktok/2026-09-08_o-basico-de-lgpd-para-nao-tomar-multa-com-um-saas_7668067412713032978.md)
-2026-09-08 · tiktok · SaaS alta · cliente baixa · estudo media · triagem — · `lgpd` `privacidade` `saas` `anonimizacao` `conformidade` `direitos-do-titular`
+2026-09-08 · tiktok · SaaS alta · cliente baixa · estudo media · triagem apply_saas · `lgpd` `privacidade` `saas` `anonimizacao` `conformidade` `direitos-do-titular`
 
 Consentimento, política de privacidade e os direitos de acesso, correção, exportação e exclusão.
 

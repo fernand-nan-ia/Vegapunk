@@ -5,8 +5,8 @@ external_id: "7668067412713032978"
 canonical_url: "https://www.tiktok.com/@gabriel.padraoo/photo/7668067412713032978"
 channel: "Gabriel Padrão | IA & SaaS"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["lgpd", "privacidade", "saas", "anonimizacao", "conformidade", "direitos-do-titular"]
 applicability:
   saas_pessoal: alta
