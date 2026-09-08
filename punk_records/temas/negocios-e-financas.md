@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Asaas como meio de pagamento para SaaS: os 4 estágios de integração, nota fiscal automática e custo real por cobrança](../youtube/2026-09-08_asaas-como-meio-de-pagamento-para-saas-os-4-estagios-de-inte_6lKMViPJh6A.md)
+2026-09-08 · youtube · SaaS alta · cliente media · estudo alta · triagem — · `asaas` `meio-de-pagamento-saas` `nota-fiscal-automatica` `cobranca-recorrente` `cobranca-por-uso` `webhook`
+
+Túlio do DevPleno mostra como cobra nos SaaS dele com o Asaas, evoluindo por estágios: 1-5 clientes sem integração nenhuma, 5-10 com assinatura criada à mão e um único GET para listar cobranças, e só depois cron de cobra
 
 ## [Stripe Brasil (home): portfólio, escala e caminhos de integração](../article/2026-09-07_stripe-brasil-home-portfolio-escala-e-caminhos-de-integracao_63c27920a37d.md)
 2026-09-07 · article · SaaS media · cliente baixa · estudo alta · triagem — · `stripe` `infraestrutura-de-pagamentos` `stripe-billing` `stripe-atlas` `mcp` `agentic-commerce`
