@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 17 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [5 métodos de renda com IA (Breno Perrucho): venda de sites por prospecção fria, vídeos de imóveis, ebook, canal infantil e how-to no Instagram](../youtube/2026-09-08_5-metodos-de-renda-com-ia-breno-perrucho-venda-de-sites-por_op0GvHqDOFQ.md)
+2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp`
+
+Breno Perrucho lista cinco métodos de renda com IA.
 
 ## [Escada de preço para sites com IA (R$ 200 a R$ 2.000) e o argumento de mercado](../youtube/2026-09-07_escada-de-preco-para-sites-com-ia-r-200-a-r-2-000-e-o-argume_QC37e8uXbDY.md)
 2026-09-07 · youtube · SaaS baixa · cliente alta · estudo baixa · triagem archive · `escada-de-preco` `venda-de-site` `portfolio` `prospeccao-fria` `tamanho-de-mercado` `conteudo-de-afiliado`
