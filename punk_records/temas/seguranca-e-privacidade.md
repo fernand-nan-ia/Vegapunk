@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 35 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [O básico de LGPD para não tomar multa com um SaaS](../tiktok/2026-09-08_o-basico-de-lgpd-para-nao-tomar-multa-com-um-saas_7668067412713032978.md)
+2026-09-08 · tiktok · SaaS alta · cliente baixa · estudo media · triagem — · `lgpd` `privacidade` `saas` `anonimizacao` `conformidade` `direitos-do-titular`
+
+Consentimento, política de privacidade e os direitos de acesso, correção, exportação e exclusão.
 
 ## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
