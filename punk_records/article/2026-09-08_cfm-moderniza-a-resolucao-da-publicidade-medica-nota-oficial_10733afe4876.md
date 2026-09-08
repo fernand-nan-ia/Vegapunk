@@ -5,8 +5,8 @@ external_id: "10733afe4876"
 canonical_url: "https://portal.cfm.org.br/noticias/cfm-atualiza-resolucao-da-publicidade-medica"
 channel: "Portal Médico"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cfm", "publicidade-medica", "resolucao-2336-2023", "imagem-de-paciente", "fonte-oficial"]
 applicability:
   saas_pessoal: nenhuma

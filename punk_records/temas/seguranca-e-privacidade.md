@@ -23,7 +23,7 @@ Orientação do CRM-PR com dois pontos que a resolução federal não traz: máx
 Comparativo oficial entre a norma nova e a de 2011.
 
 ## [CFM moderniza a resolução da publicidade médica (nota oficial, 2023)](../article/2026-09-08_cfm-moderniza-a-resolucao-da-publicidade-medica-nota-oficial_10733afe4876.md)
-2026-09-08 · article · SaaS nenhuma · cliente media · estudo baixa · triagem — · `cfm` `publicidade-medica` `resolucao-2336-2023` `imagem-de-paciente` `fonte-oficial`
+2026-09-08 · article · SaaS nenhuma · cliente media · estudo baixa · triagem archive · `cfm` `publicidade-medica` `resolucao-2336-2023` `imagem-de-paciente` `fonte-oficial`
 
 Nota oficial do CFM sobre a aprovação da 2.336/2023: três anos de processo, 2.600 sugestões em consulta pública.
 
