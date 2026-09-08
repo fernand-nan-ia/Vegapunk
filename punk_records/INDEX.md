@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 29 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 30 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 31 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 18 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 25 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -116,6 +116,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 2026-09-08 · article · [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md) · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico` `compliance` · baixa/alta/media · apply_client
 - 2026-09-08 · article · [Resolução CFM nº 2.336/2023 — publicidade e propaganda médicas (texto integral)](article/2026-09-08_resolucao-cfm-no-2-336-2023-publicidade-e-propaganda-medicas_14d443253bbf.md) · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe` `landing-page` `risco-do-cliente` · baixa/alta/media · apply_client
+- 2026-09-08 · article · [O que muda na publicidade médica: comparativo 2.336/2023 × 1.974/2011 (CFM)](article/2026-09-08_o-que-muda-na-publicidade-medica-comparativo-2-336-2023-x-1_1bec769ca36f.md) · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico` · baixa/alta/media · —
 - 2026-09-07 · tiktok · [Checagem de cabeçalhos de segurança em site feito com IA (securityheaders.com)](tiktok/2026-09-07_checagem-de-cabecalhos-de-seguranca-em-site-feito-com-ia-sec_7680992910879264021.md) · `security-headers` `csp` `hardening-web` `vibe-coding` `checklist-de-lancamento` `auditoria-externa` · alta/alta/media · apply_client
 - 2026-09-05 · article · [LGPD no Distrito Federal — modelo de implementação do GDF](article/2026-09-05_lgpd-no-distrito-federal-modelo-de-implementacao-do-gdf_87443ec49f2e.md) · `lgpd` `distrito-federal` `administracao-publica` `decreto-45771-2024` `extracao-incompleta` · nenhuma/nenhuma/baixa · discard
 - 2026-09-05 · article · [Lei Geral de Proteção de Dados Pessoais — verbete da Wikipédia](article/2026-09-05_lei-geral-de-protecao-de-dados-pessoais-verbete-da-wikipedia_7edfcd261d44.md) · `lgpd` `historia-legislativa` `anpd` `cambridge-analytica` `sancoes-lgpd` `artigo-52` `mpdft` · media/baixa/alta · archive
