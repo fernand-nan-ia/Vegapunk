@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 35 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 20 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 21 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 25 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 11 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -162,6 +162,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-08 · tiktok · [Cinco passos para fechar contrato de serviço de IA: prospecção, escuta, diagnóstico e implementação](tiktok/2026-09-08_cinco-passos-para-fechar-contrato-de-servico-de-ia-prospecca_7675082205856615701.md) · `venda-de-sites` `processo-comercial` `prospeccao` `diagnostico` `claude-code` `precificacao` · baixa/alta/media · —
 - 2026-09-08 · tiktok · [Como registrar o domínio quando você vende um site para o cliente](tiktok/2026-09-08_como-registrar-o-dominio-quando-voce-vende-um-site-para-o-cl_7681650492614659335.md) · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance` · baixa/alta/media · —
 - 2026-09-08 · tiktok · [Prompt único de ChatGPT para gerar site e vender por R$ 1.500 (isca de treinamento)](tiktok/2026-09-08_prompt-unico-de-chatgpt-para-gerar-site-e-vender-por-r-1-500_7670577644882234644.md) · `venda-de-sites` `ia-generativa` `prompt` `precificacao` `isca-de-infoproduto` `landing-page` · nenhuma/media/baixa · —
 - 2026-09-08 · youtube · [5 métodos de renda com IA (Breno Perrucho): venda de sites por prospecção fria, vídeos de imóveis, ebook, canal infantil e how-to no Instagram](youtube/2026-09-08_5-metodos-de-renda-com-ia-breno-perrucho-venda-de-sites-por_op0GvHqDOFQ.md) · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp` `ebook` `renda-extra-com-ia` · media/alta/media · —
