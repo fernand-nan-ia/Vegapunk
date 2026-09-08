@@ -13,7 +13,7 @@ O manual da Codame que acompanha a Resolução 2.336.
 Norma vigente desde 13/09/2023.
 
 ## [CFM atualiza resolução da publicidade médica (reprodução do CREMEB, com erro de numeração)](../article/2026-09-08_cfm-atualiza-resolucao-da-publicidade-medica-reproducao-do-c_526d9b6784b1.md)
-2026-09-08 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `cfm` `cremeb` `publicidade-medica` `duplicata` `erro-de-fonte`
+2026-09-08 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem discard · `cfm` `cremeb` `publicidade-medica` `duplicata` `erro-de-fonte`
 
 Cópia da nota oficial do CFM publicada pelo CREMEB, com um erro de numeração (2.333 em vez de 2.336).
 

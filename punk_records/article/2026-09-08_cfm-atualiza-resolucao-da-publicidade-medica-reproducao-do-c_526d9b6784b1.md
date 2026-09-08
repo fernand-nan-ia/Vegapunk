@@ -5,8 +5,8 @@ external_id: "526d9b6784b1"
 canonical_url: "https://www.cremeb.org.br/index.php/noticias/cfm-atualiza-resolucao-da-publicidade-medica"
 channel: "Portal Cremeb BA"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["cfm", "cremeb", "publicidade-medica", "duplicata", "erro-de-fonte"]
 applicability:
   saas_pessoal: nenhuma
