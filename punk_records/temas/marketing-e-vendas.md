@@ -1,11 +1,16 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 20 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Como registrar o domínio quando você vende um site para o cliente](../tiktok/2026-09-08_como-registrar-o-dominio-quando-voce-vende-um-site-para-o-cl_7681650492614659335.md)
 2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance`
 
 Sobe a versão de aprovação na Vercel com domínio grátis; só compra o domínio no Registro.br depois que o cliente aprova e o contrato fecha.
+
+## [Prompt único de ChatGPT para gerar site e vender por R$ 1.500 (isca de treinamento)](../tiktok/2026-09-08_prompt-unico-de-chatgpt-para-gerar-site-e-vender-por-r-1-500_7670577644882234644.md)
+2026-09-08 · tiktok · SaaS nenhuma · cliente media · estudo baixa · triagem — · `venda-de-sites` `ia-generativa` `prompt` `precificacao` `isca-de-infoproduto` `landing-page`
+
+Carrossel de isca: um prompt genérico de site premium colado em Lovable, Gamma, Bolt ou Claude, prometendo R$ 1.500 por projeto.
 
 ## [5 métodos de renda com IA (Breno Perrucho): venda de sites por prospecção fria, vídeos de imóveis, ebook, canal infantil e how-to no Instagram](../youtube/2026-09-08_5-metodos-de-renda-com-ia-breno-perrucho-venda-de-sites-por_op0GvHqDOFQ.md)
 2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp`
