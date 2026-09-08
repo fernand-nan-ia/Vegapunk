@@ -5,8 +5,8 @@ external_id: "a4594ad45e45"
 canonical_url: "https://crmma.org.br/wp-content/uploads/2026/05/Manual-de-publicidade-completo-1-1.pdf"
 channel: "CFM / CRM-MA"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["cfm", "publicidade-medica", "manual-codame", "identificacao-do-medico", "restricao-de-design", "site-de-medico", "compliance"]
 applicability:
   saas_pessoal: baixa

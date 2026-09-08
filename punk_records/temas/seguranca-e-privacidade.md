@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
-2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem — · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
+2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
 
 O manual da Codame que acompanha a Resolução 2.336.
 
