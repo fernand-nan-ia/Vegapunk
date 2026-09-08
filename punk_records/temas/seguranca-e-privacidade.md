@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 35 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
@@ -11,6 +11,11 @@ O manual da Codame que acompanha a Resolução 2.336.
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe`
 
 Norma vigente desde 13/09/2023.
+
+## [CFM atualiza resolução da publicidade médica (reprodução do CREMEB, com erro de numeração)](../article/2026-09-08_cfm-atualiza-resolucao-da-publicidade-medica-reproducao-do-c_526d9b6784b1.md)
+2026-09-08 · article · SaaS nenhuma · cliente nenhuma · estudo baixa · triagem — · `cfm` `cremeb` `publicidade-medica` `duplicata` `erro-de-fonte`
+
+Cópia da nota oficial do CFM publicada pelo CREMEB, com um erro de numeração (2.333 em vez de 2.336).
 
 ## [CRM-PR — pontos práticos da publicidade médica, incluindo especialidade não reconhecida](../article/2026-09-08_crm-pr-pontos-praticos-da-publicidade-medica-incluindo-espec_afd664213469.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo baixa · triagem apply_client · `cfm` `crm-pr` `publicidade-medica` `rqe` `especialidade-reconhecida` `garantia-de-resultado`
