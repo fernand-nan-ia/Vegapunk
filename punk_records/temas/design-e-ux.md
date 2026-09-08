@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 12 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Checklist de 20 itens para pedir ao Claude antes de publicar um site](../tiktok/2026-09-08_checklist-de-20-itens-para-pedir-ao-claude-antes-de-publicar_7679462516988087559.md)
-2026-09-08 · tiktok · SaaS media · cliente alta · estudo media · triagem — · `venda-de-sites` `checklist` `seo` `landing-page` `pre-lancamento` `claude-code`
+2026-09-08 · tiktok · SaaS media · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `checklist` `seo` `landing-page` `pre-lancamento` `claude-code`
 
 Vinte itens de pré-lançamento: 404, CTAs, FAQ, robots.txt, títulos únicos, meta descriptions, marcação de negócio local, política de privacidade, alt text, Analytics e prova social real.
 
