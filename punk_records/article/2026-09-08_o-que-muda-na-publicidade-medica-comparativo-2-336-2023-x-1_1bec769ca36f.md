@@ -5,8 +5,8 @@ external_id: "1bec769ca36f"
 canonical_url: "https://publicidademedica.cfm.org.br/resolucao/o-que-muda"
 channel: "publicidademedica.cfm.org.br"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["cfm", "publicidade-medica", "resolucao-2336-2023", "comparativo-normativo", "vigencia", "site-de-medico"]
 applicability:
   saas_pessoal: baixa

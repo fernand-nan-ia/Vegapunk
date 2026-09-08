@@ -13,7 +13,7 @@ O manual da Codame que acompanha a Resolução 2.336.
 Norma vigente desde 13/09/2023.
 
 ## [O que muda na publicidade médica: comparativo 2.336/2023 × 1.974/2011 (CFM)](../article/2026-09-08_o-que-muda-na-publicidade-medica-comparativo-2-336-2023-x-1_1bec769ca36f.md)
-2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem — · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico`
+2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `comparativo-normativo` `vigencia` `site-de-medico`
 
 Comparativo oficial entre a norma nova e a de 2011.
 
