@@ -13,7 +13,7 @@ Prospecção ativa, reunião de escuta, anotações guardadas como memória, dia
 Sobe a versão de aprovação na Vercel com domínio grátis; só compra o domínio no Registro.br depois que o cliente aprova e o contrato fecha.
 
 ## [Prompt único de ChatGPT para gerar site e vender por R$ 1.500 (isca de treinamento)](../tiktok/2026-09-08_prompt-unico-de-chatgpt-para-gerar-site-e-vender-por-r-1-500_7670577644882234644.md)
-2026-09-08 · tiktok · SaaS nenhuma · cliente media · estudo baixa · triagem — · `venda-de-sites` `ia-generativa` `prompt` `precificacao` `isca-de-infoproduto` `landing-page`
+2026-09-08 · tiktok · SaaS nenhuma · cliente media · estudo baixa · triagem apply_client · `venda-de-sites` `ia-generativa` `prompt` `precificacao` `isca-de-infoproduto` `landing-page`
 
 Carrossel de isca: um prompt genérico de site premium colado em Lovable, Gamma, Bolt ou Claude, prometendo R$ 1.500 por projeto.
 

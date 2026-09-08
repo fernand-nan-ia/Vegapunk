@@ -5,8 +5,8 @@ external_id: "7670577644882234644"
 canonical_url: "https://www.tiktok.com/@ialucrativa._/photo/7670577644882234644"
 channel: "IA Lucrativa"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "ia-generativa", "prompt", "precificacao", "isca-de-infoproduto", "landing-page"]
 applicability:
   saas_pessoal: nenhuma
