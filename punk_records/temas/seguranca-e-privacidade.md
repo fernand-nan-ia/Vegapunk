@@ -18,7 +18,7 @@ Norma vigente desde 13/09/2023.
 Orientação do CRM-PR com dois pontos que a resolução federal não traz: máximo de DUAS especialidades divulgadas, e divulgar especialidade não reconhecida (ex.: Medicina Estética) é infração ética.
 
 ## [Lançamento do Manual da Publicidade Médica no I ENCM 2024 (nota oficial)](../article/2026-09-08_lancamento-do-manual-da-publicidade-medica-no-i-encm-2024-no_d2248affffc3.md)
-2026-09-08 · article · SaaS nenhuma · cliente baixa · estudo baixa · triagem — · `cfm` `publicidade-medica` `manual-codame` `antes-e-depois` `fiscalizacao` `fonte-oficial`
+2026-09-08 · article · SaaS nenhuma · cliente baixa · estudo baixa · triagem archive · `cfm` `publicidade-medica` `manual-codame` `antes-e-depois` `fiscalizacao` `fonte-oficial`
 
 Nota do lançamento do Manual da Codame, em março de 2024.
 

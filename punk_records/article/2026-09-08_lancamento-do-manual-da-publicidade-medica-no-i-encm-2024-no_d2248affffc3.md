@@ -5,8 +5,8 @@ external_id: "d2248affffc3"
 canonical_url: "https://portal.cfm.org.br/noticias/novo-manual-da-publicidade-medica-foi-lancado-durante-o-i-encm-2024"
 channel: "Portal Médico"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cfm", "publicidade-medica", "manual-codame", "antes-e-depois", "fiscalizacao", "fonte-oficial"]
 applicability:
   saas_pessoal: nenhuma
