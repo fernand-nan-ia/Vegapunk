@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Resolução CFM nº 2.336/2023 — publicidade e propaganda médicas (texto integral)](../article/2026-09-08_resolucao-cfm-no-2-336-2023-publicidade-e-propaganda-medicas_14d443253bbf.md)
-2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem — · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe`
+2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe`
 
 Norma vigente desde 13/09/2023.
 

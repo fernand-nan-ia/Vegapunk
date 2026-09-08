@@ -5,8 +5,8 @@ external_id: "14d443253bbf"
 canonical_url: "https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2023/2336_2023.pdf"
 channel: "Conselho Federal de Medicina"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["cfm", "publicidade-medica", "resolucao-2336-2023", "site-de-medico", "compliance", "crm-rqe", "landing-page", "risco-do-cliente"]
 applicability:
   saas_pessoal: baixa
