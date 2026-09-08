@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 61 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 62 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Assinaturas na API do Asaas: template de cobrança, tokenização de cartão e emissão automática de NF](../youtube/2026-09-08_assinaturas-na-api-do-asaas-template-de-cobranca-tokenizacao_m-ahYNfK_UU.md)
+2026-09-08 · youtube · SaaS alta · cliente media · estudo media · triagem — · `asaas` `api-de-assinaturas` `cobranca-recorrente` `tokenizacao-de-cartao` `nota-fiscal-automatica` `webhook`
+
+Vídeo dev do Asaas sobre a API de assinaturas: é um template que gera uma cobrança por ciclo, diferente de parcelamento.
 
 ## [awesome-mcp-servers: 3.793 servidores MCP catalogados em 69 categorias](../article/2026-09-07_awesome-mcp-servers-3-793-servidores-mcp-catalogados-em-69-c_7d9153c0bf2c.md)
 2026-09-07 · article · SaaS media · cliente baixa · estudo media · triagem archive · `mcp` `awesome-list` `catalogo` `browser-automation` `integracao-de-ferramentas` `claude-code`
