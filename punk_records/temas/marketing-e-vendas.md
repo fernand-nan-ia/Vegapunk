@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 18 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 19 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Como registrar o domínio quando você vende um site para o cliente](../tiktok/2026-09-08_como-registrar-o-dominio-quando-voce-vende-um-site-para-o-cl_7681650492614659335.md)
+2026-09-08 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance`
+
+Sobe a versão de aprovação na Vercel com domínio grátis; só compra o domínio no Registro.br depois que o cliente aprova e o contrato fecha.
 
 ## [5 métodos de renda com IA (Breno Perrucho): venda de sites por prospecção fria, vídeos de imóveis, ebook, canal infantil e how-to no Instagram](../youtube/2026-09-08_5-metodos-de-renda-com-ia-breno-perrucho-venda-de-sites-por_op0GvHqDOFQ.md)
 2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp`
