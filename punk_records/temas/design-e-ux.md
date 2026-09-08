@@ -1,6 +1,11 @@
 # 🎨 Design e UX
 
-_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 10 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 11 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Sites animados com Claude: banco de referências visuais e prompt único que tira a cara de IA da página](../youtube/2026-09-08_sites-animados-com-claude-banco-de-referencias-visuais-e-pro_hCD7HhpszfA.md)
+2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `claude-code` `sites-animados` `referencia-visual` `motion-design` `animacoes-css` `prompt-de-design`
+
+Junhão mostra como tirar a cara de IA de um site feito no Claude: pegar um Hero animado pronto no motionsites.ai, apontar o Claude para um banco de mais de 60 animações CSS/JS e mandar tudo num prompt só, pedindo fluidez
 
 ## [Impeccable (pbakaus): 23 comandos de design, 61 regras determinísticas e hook que intercepta edição](../article/2026-09-07_impeccable-pbakaus-23-comandos-de-design-61-regras-determini_fa4361846156.md)
 2026-09-07 · article · SaaS alta · cliente alta · estudo alta · triagem apply_client · `impeccable` `ai-slop` `design-com-ia` `detector-deterministico` `hooks` `ci-gate`
