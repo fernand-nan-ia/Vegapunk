@@ -5,8 +5,8 @@ external_id: "op0GvHqDOFQ"
 canonical_url: "https://www.youtube.com/watch?v=op0GvHqDOFQ"
 channel: "Breno Perrucho - Jovens de Negócios"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "prospeccao-fria", "google-maps", "hostinger-horizons", "manychat", "higgsfield-mcp", "ebook", "renda-extra-com-ia"]
 applicability:
   saas_pessoal: media

@@ -23,7 +23,7 @@ Sobe a versão de aprovação na Vercel com domínio grátis; só compra o domí
 Carrossel de isca: um prompt genérico de site premium colado em Lovable, Gamma, Bolt ou Claude, prometendo R$ 1.500 por projeto.
 
 ## [5 métodos de renda com IA (Breno Perrucho): venda de sites por prospecção fria, vídeos de imóveis, ebook, canal infantil e how-to no Instagram](../youtube/2026-09-08_5-metodos-de-renda-com-ia-breno-perrucho-venda-de-sites-por_op0GvHqDOFQ.md)
-2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp`
+2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `prospeccao-fria` `google-maps` `hostinger-horizons` `manychat` `higgsfield-mcp`
 
 Breno Perrucho lista cinco métodos de renda com IA.
 
