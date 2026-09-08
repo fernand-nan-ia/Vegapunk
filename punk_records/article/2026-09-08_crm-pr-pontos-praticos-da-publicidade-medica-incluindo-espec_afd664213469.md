@@ -5,8 +5,8 @@ external_id: "afd664213469"
 canonical_url: "https://www.crmpr.org.br/Publicidade-Medica-1-101.shtml"
 channel: "crmpr.org.br"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["cfm", "crm-pr", "publicidade-medica", "rqe", "especialidade-reconhecida", "garantia-de-resultado", "site-de-medico"]
 applicability:
   saas_pessoal: baixa

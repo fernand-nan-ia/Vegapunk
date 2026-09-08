@@ -13,7 +13,7 @@ O manual da Codame que acompanha a Resolução 2.336.
 Norma vigente desde 13/09/2023.
 
 ## [CRM-PR — pontos práticos da publicidade médica, incluindo especialidade não reconhecida](../article/2026-09-08_crm-pr-pontos-praticos-da-publicidade-medica-incluindo-espec_afd664213469.md)
-2026-09-08 · article · SaaS baixa · cliente alta · estudo baixa · triagem — · `cfm` `crm-pr` `publicidade-medica` `rqe` `especialidade-reconhecida` `garantia-de-resultado`
+2026-09-08 · article · SaaS baixa · cliente alta · estudo baixa · triagem apply_client · `cfm` `crm-pr` `publicidade-medica` `rqe` `especialidade-reconhecida` `garantia-de-resultado`
 
 Orientação do CRM-PR com dois pontos que a resolução federal não traz: máximo de DUAS especialidades divulgadas, e divulgar especialidade não reconhecida (ex.: Medicina Estética) é infração ética.
 
