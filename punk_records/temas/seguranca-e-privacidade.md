@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](../article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md)
+2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem — · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico`
+
+O manual da Codame que acompanha a Resolução 2.336.
 
 ## [Resolução CFM nº 2.336/2023 — publicidade e propaganda médicas (texto integral)](../article/2026-09-08_resolucao-cfm-no-2-336-2023-publicidade-e-propaganda-medicas_14d443253bbf.md)
 2026-09-08 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cfm` `publicidade-medica` `resolucao-2336-2023` `site-de-medico` `compliance` `crm-rqe`
