@@ -3,7 +3,7 @@
 _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Quatro formas de faturar com IA: sites, dashboards, automação de WhatsApp e solução sob medida](../youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md)
-2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente`
+2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem apply_client · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente`
 
 Quatro linhas de serviço com IA e quanto cada uma rendeu: sites/LP (+R$ 10k), dashboard e CRM (+R$ 8k), automação de WhatsApp (+R$ 6k em 30 dias) e solução sob medida, precificada pelo problema resolvido.
 

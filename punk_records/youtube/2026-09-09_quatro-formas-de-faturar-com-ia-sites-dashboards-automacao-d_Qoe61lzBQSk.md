@@ -5,8 +5,8 @@ external_id: "Qoe61lzBQSk"
 canonical_url: "https://www.youtube.com/watch?v=Qoe61lzBQSk"
 channel: "A Vizinhança"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["monetizacao-com-ia", "precificacao-por-valor", "venda-de-sites", "automacao-whatsapp", "dashboard-crm", "servico-recorrente", "prospeccao-por-entrega"]
 applicability:
   saas_pessoal: media
