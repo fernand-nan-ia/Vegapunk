@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 36 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 22 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 23 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 25 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 12 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -163,6 +163,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-09 · tiktok · [Como vender o primeiro site: prospecção no Google Maps, nicho e fechamento](tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md) · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual` `primeiro-cliente` · baixa/alta/media · —
 - 2026-09-08 · youtube · [Site com IA: do Google Maps à venda por R$ 500 (método do 'free mockup')](youtube/2026-09-08_site-com-ia-do-google-maps-a-venda-por-r-500-metodo-do-free_6RFFFFOP_-s.md) · `venda-de-sites` `prospeccao-local` `free-mockup` `claude-code` `pinterest-referencia` `vercel-deploy` `whatsapp-checkout` `precificacao-site` · baixa/alta/media · apply_client
 - 2026-09-08 · tiktok · [Cinco passos para fechar contrato de serviço de IA: prospecção, escuta, diagnóstico e implementação](tiktok/2026-09-08_cinco-passos-para-fechar-contrato-de-servico-de-ia-prospecca_7675082205856615701.md) · `venda-de-sites` `processo-comercial` `prospeccao` `diagnostico` `claude-code` `precificacao` · baixa/alta/media · apply_client
 - 2026-09-08 · tiktok · [Como registrar o domínio quando você vende um site para o cliente](tiktok/2026-09-08_como-registrar-o-dominio-quando-voce-vende-um-site-para-o-cl_7681650492614659335.md) · `venda-de-sites` `dominio` `registro-br` `vercel` `processo-comercial` `freelance` · baixa/alta/media · apply_client

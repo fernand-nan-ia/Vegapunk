@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 22 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Como vender o primeiro site: prospecção no Google Maps, nicho e fechamento](../tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md)
+2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual`
+
+Método de primeira venda de site: prospectar no Google Maps fugindo de advogado e dentista, mirar salão de festas/buffet, reunião no Meet no mesmo dia e fechamento com desconto somado a benefício, sempre 50% adiantado.
 
 ## [Site com IA: do Google Maps à venda por R$ 500 (método do 'free mockup')](../youtube/2026-09-08_site-com-ia-do-google-maps-a-venda-por-r-500-metodo-do-free_6RFFFFOP_-s.md)
 2026-09-08 · youtube · SaaS baixa · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `prospeccao-local` `free-mockup` `claude-code` `pinterest-referencia` `vercel-deploy`
