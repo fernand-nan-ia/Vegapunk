@@ -5,8 +5,8 @@ external_id: "7681261206534917394"
 canonical_url: "https://www.tiktok.com/@luisfernando_engdev/photo/7681261206534917394"
 channel: "Luis dev"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["open-source-como-servico", "licenca-mit", "apache-2", "bsd-3-clause", "modelo-red-hat", "contrato-de-implantacao", "changedetection", "paddleocr"]
 applicability:
   saas_pessoal: media
