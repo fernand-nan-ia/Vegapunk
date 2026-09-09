@@ -5,8 +5,8 @@ external_id: "2a59fbf9b429"
 canonical_url: "https://github.com/JCodesMore/ai-website-cloner-template"
 channel: "JCodesMore"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["clone-de-site", "nextjs-16", "claude-code-skill", "browser-mcp", "git-worktree", "engenharia-reversa-de-ui", "demo-antes-do-contato", "licenca-mit"]
 applicability:
   saas_pessoal: baixa
