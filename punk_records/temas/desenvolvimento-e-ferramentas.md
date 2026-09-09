@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 62 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 63 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Sete repositórios open source para implantar e cobrar como serviço (com as licenças conferidas)](../tiktok/2026-09-09_sete-repositorios-open-source-para-implantar-e-cobrar-como-s_7681261206534917394.md)
+2026-09-09 · tiktok · SaaS media · cliente alta · estudo alta · triagem — · `open-source-como-servico` `licenca-mit` `apache-2` `bsd-3-clause` `modelo-red-hat` `contrato-de-implantacao`
+
+Modelo Red Hat aplicado a sete repositórios abertos: você não vende o código (que é grátis), vende implantação, configuração, integração e suporte.
 
 ## [Assinaturas na API do Asaas: template de cobrança, tokenização de cartão e emissão automática de NF](../youtube/2026-09-08_assinaturas-na-api-do-asaas-template-de-cobranca-tokenizacao_m-ahYNfK_UU.md)
 2026-09-08 · youtube · SaaS alta · cliente media · estudo media · triagem — · `asaas` `api-de-assinaturas` `cobranca-recorrente` `tokenizacao-de-cartao` `nota-fiscal-automatica` `webhook`
