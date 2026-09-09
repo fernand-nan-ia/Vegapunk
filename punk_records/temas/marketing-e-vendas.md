@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Lista corrida de ~20 erros de SEO: título repetido, duas páginas na mesma palavra-chave, conteúdo só em JavaScript, robots.txt bloqueando sem querer, página sem link de entrada, site lento no celular e Google Meu Negócio
 
 ## [Vender sites feitos com IA para clientes internacionais (venda de +US$ 650)](../tiktok/2026-09-09_vender-sites-feitos-com-ia-para-clientes-internacionais-vend_7682823642698337557.md)
-2026-09-09 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `clientes-internacionais` `prospeccao-fria` `demo-antes-do-contato` `infoproduto` `venda-de-sites` `faturamento-em-dolar`
+2026-09-09 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem apply_client · `clientes-internacionais` `prospeccao-fria` `demo-antes-do-contato` `infoproduto` `venda-de-sites` `faturamento-em-dolar`
 
 Print de venda de US$ 650 usado como prova para vender um guia de prospecção internacional (templates, prompts, e-mails, invoice).
 
