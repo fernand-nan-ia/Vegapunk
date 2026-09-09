@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 37 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [5 testes de segurança em app feito com IA, sem escrever código](../tiktok/2026-09-09_5-testes-de-seguranca-em-app-feito-com-ia-sem-escrever-codig_7682949171111922964.md)
+2026-09-09 · tiktok · SaaS alta · cliente media · estudo alta · triagem — · `seguranca-de-aplicacao` `idor` `rate-limiting` `chave-exposta` `validacao-no-servidor` `bucket-privado`
+
+Cinco testes de dez minutos só com o navegador: trocar o número na URL, errar a senha 20 vezes, procurar 'sk-' no F12, editar o preço no inspetor e abrir o link de um arquivo sem login.
 
 ## [O básico de LGPD para não tomar multa com um SaaS](../tiktok/2026-09-08_o-basico-de-lgpd-para-nao-tomar-multa-com-um-saas_7668067412713032978.md)
 2026-09-08 · tiktok · SaaS alta · cliente baixa · estudo media · triagem apply_saas · `lgpd` `privacidade` `saas` `anonimizacao` `conformidade` `direitos-do-titular`
