@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 37 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 23 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 24 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 12 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -165,6 +165,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-09 · tiktok · [Vender sites feitos com IA para clientes internacionais (venda de +US$ 650)](tiktok/2026-09-09_vender-sites-feitos-com-ia-para-clientes-internacionais-vend_7682823642698337557.md) · `clientes-internacionais` `prospeccao-fria` `demo-antes-do-contato` `infoproduto` `venda-de-sites` `faturamento-em-dolar` · baixa/media/baixa · —
 - 2026-09-09 · tiktok · [Como vender o primeiro site: prospecção no Google Maps, nicho e fechamento](tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md) · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual` `primeiro-cliente` · baixa/alta/media · —
 - 2026-09-08 · youtube · [Site com IA: do Google Maps à venda por R$ 500 (método do 'free mockup')](youtube/2026-09-08_site-com-ia-do-google-maps-a-venda-por-r-500-metodo-do-free_6RFFFFOP_-s.md) · `venda-de-sites` `prospeccao-local` `free-mockup` `claude-code` `pinterest-referencia` `vercel-deploy` `whatsapp-checkout` `precificacao-site` · baixa/alta/media · apply_client
 - 2026-09-08 · tiktok · [Cinco passos para fechar contrato de serviço de IA: prospecção, escuta, diagnóstico e implementação](tiktok/2026-09-08_cinco-passos-para-fechar-contrato-de-servico-de-ia-prospecca_7675082205856615701.md) · `venda-de-sites` `processo-comercial` `prospeccao` `diagnostico` `claude-code` `precificacao` · baixa/alta/media · apply_client

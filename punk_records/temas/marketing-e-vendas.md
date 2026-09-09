@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 23 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Vender sites feitos com IA para clientes internacionais (venda de +US$ 650)](../tiktok/2026-09-09_vender-sites-feitos-com-ia-para-clientes-internacionais-vend_7682823642698337557.md)
+2026-09-09 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `clientes-internacionais` `prospeccao-fria` `demo-antes-do-contato` `infoproduto` `venda-de-sites` `faturamento-em-dolar`
+
+Print de venda de US$ 650 usado como prova para vender um guia de prospecção internacional (templates, prompts, e-mails, invoice).
 
 ## [Como vender o primeiro site: prospecção no Google Maps, nicho e fechamento](../tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md)
 2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual`
