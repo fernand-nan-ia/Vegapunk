@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Parar de mostrar portfólio e mandar o site pronto no primeiro contato](../tiktok/2026-09-09_parar-de-mostrar-portfolio-e-mandar-o-site-pronto-no-primeir_7683569617746496788.md)
+2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `prospeccao-fria` `demo-antes-do-contato` `leads-sem-site` `venda-de-sites` `nicho-local` `portfolio`
+
+Portfólio não vende: mande o site da empresa pronto já no primeiro contato.
 
 ## [Parar de vender site: perguntar a dor e não dar nome à solução](../youtube/2026-09-09_parar-de-vender-site-perguntar-a-dor-e-nao-dar-nome-a-soluca_bQeOZczf5q0.md)
 2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem apply_client · `posicionamento-de-servico` `fuga-da-commodity` `venda-consultiva` `demo-antes-do-contrato` `precificacao-por-valor` `escada-de-servicos`
