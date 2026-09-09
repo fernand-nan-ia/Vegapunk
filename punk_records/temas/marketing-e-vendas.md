@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Lista de erros que impedem um site de ser encontrado no Google](../tiktok/2026-09-09_lista-de-erros-que-impedem-um-site-de-ser-encontrado-no-goog_7683300020581453074.md)
-2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `seo-tecnico` `indexacao` `google-meu-negocio` `seo-local` `performance-mobile` `canibalizacao-de-palavra-chave`
+2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `seo-tecnico` `indexacao` `google-meu-negocio` `seo-local` `performance-mobile` `canibalizacao-de-palavra-chave`
 
 Lista corrida de ~20 erros de SEO: título repetido, duas páginas na mesma palavra-chave, conteúdo só em JavaScript, robots.txt bloqueando sem querer, página sem link de entrada, site lento no celular e Google Meu Negócio
 
