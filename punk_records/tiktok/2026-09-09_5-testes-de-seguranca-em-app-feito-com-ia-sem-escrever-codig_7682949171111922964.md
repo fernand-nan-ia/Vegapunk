@@ -5,8 +5,8 @@ external_id: "7682949171111922964"
 canonical_url: "https://www.tiktok.com/@isnaldo.dev/photo/7682949171111922964"
 channel: "Isnaldo.dev"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["seguranca-de-aplicacao", "idor", "rate-limiting", "chave-exposta", "validacao-no-servidor", "bucket-privado", "vibe-coding", "checklist-pre-lancamento"]
 applicability:
   saas_pessoal: alta
