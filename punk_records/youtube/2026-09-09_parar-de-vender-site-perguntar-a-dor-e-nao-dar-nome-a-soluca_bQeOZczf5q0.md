@@ -5,8 +5,8 @@ external_id: "bQeOZczf5q0"
 canonical_url: "https://www.youtube.com/watch?v=bQeOZczf5q0"
 channel: "A Vizinhança"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["posicionamento-de-servico", "fuga-da-commodity", "venda-consultiva", "demo-antes-do-contrato", "precificacao-por-valor", "escada-de-servicos", "automacao-whatsapp", "painel-de-gestao"]
 applicability:
   saas_pessoal: media
