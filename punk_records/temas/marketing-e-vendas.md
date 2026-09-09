@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Parar de vender site: perguntar a dor e não dar nome à solução](../youtube/2026-09-09_parar-de-vender-site-perguntar-a-dor-e-nao-dar-nome-a-soluca_bQeOZczf5q0.md)
+2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `posicionamento-de-servico` `fuga-da-commodity` `venda-consultiva` `demo-antes-do-contrato` `precificacao-por-valor` `escada-de-servicos`
+
+A tese: quando você nomeia o que faz ('site', 'automação N8N'), o cliente cota e escolhe o mais barato — descreva o resultado sem dar nome à categoria.
 
 ## [Lista de erros que impedem um site de ser encontrado no Google](../tiktok/2026-09-09_lista-de-erros-que-impedem-um-site-de-ser-encontrado-no-goog_7683300020581453074.md)
 2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `seo-tecnico` `indexacao` `google-meu-negocio` `seo-local` `performance-mobile` `canibalizacao-de-palavra-chave`
