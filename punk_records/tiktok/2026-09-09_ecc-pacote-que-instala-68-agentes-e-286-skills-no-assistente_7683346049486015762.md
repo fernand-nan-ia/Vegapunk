@@ -5,8 +5,8 @@ external_id: "7683346049486015762"
 canonical_url: "https://www.tiktok.com/@verticeclubsolutions/photo/7683346049486015762"
 channel: "verticeclubsolutions"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["agentes-de-codigo", "claude-code", "npx-installer", "cadeia-de-agentes", "risco-de-supply-chain", "regras-de-agente"]
 applicability:
   saas_pessoal: media
