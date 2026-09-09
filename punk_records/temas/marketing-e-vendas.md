@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 24 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Lista de erros que impedem um site de ser encontrado no Google](../tiktok/2026-09-09_lista-de-erros-que-impedem-um-site-de-ser-encontrado-no-goog_7683300020581453074.md)
+2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `seo-tecnico` `indexacao` `google-meu-negocio` `seo-local` `performance-mobile` `canibalizacao-de-palavra-chave`
+
+Lista corrida de ~20 erros de SEO: título repetido, duas páginas na mesma palavra-chave, conteúdo só em JavaScript, robots.txt bloqueando sem querer, página sem link de entrada, site lento no celular e Google Meu Negócio
 
 ## [Vender sites feitos com IA para clientes internacionais (venda de +US$ 650)](../tiktok/2026-09-09_vender-sites-feitos-com-ia-para-clientes-internacionais-vend_7682823642698337557.md)
 2026-09-09 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `clientes-internacionais` `prospeccao-fria` `demo-antes-do-contato` `infoproduto` `venda-de-sites` `faturamento-em-dolar`
