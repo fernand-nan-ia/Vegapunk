@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 30 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 63 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 64 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 37 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 27 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -50,6 +50,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-09 · article · [AI Website Cloner Template — clonar qualquer site em Next.js por um comando](article/2026-09-09_ai-website-cloner-template-clonar-qualquer-site-em-next-js-p_2a59fbf9b429.md) · `clone-de-site` `nextjs-16` `claude-code-skill` `browser-mcp` `git-worktree` `engenharia-reversa-de-ui` `demo-antes-do-contato` `licenca-mit` · baixa/alta/alta · —
 - 2026-09-09 · tiktok · [Sete repositórios open source para implantar e cobrar como serviço (com as licenças conferidas)](tiktok/2026-09-09_sete-repositorios-open-source-para-implantar-e-cobrar-como-s_7681261206534917394.md) · `open-source-como-servico` `licenca-mit` `apache-2` `bsd-3-clause` `modelo-red-hat` `contrato-de-implantacao` `changedetection` `paddleocr` · media/alta/alta · apply_client
 - 2026-09-08 · youtube · [Assinaturas na API do Asaas: template de cobrança, tokenização de cartão e emissão automática de NF](youtube/2026-09-08_assinaturas-na-api-do-asaas-template-de-cobranca-tokenizacao_m-ahYNfK_UU.md) · `asaas` `api-de-assinaturas` `cobranca-recorrente` `tokenizacao-de-cartao` `nota-fiscal-automatica` `webhook` `reajuste-de-preco` `integracao-de-pagamento` · alta/media/media · —
 - 2026-09-07 · article · [awesome-mcp-servers: 3.793 servidores MCP catalogados em 69 categorias](article/2026-09-07_awesome-mcp-servers-3-793-servidores-mcp-catalogados-em-69-c_7d9153c0bf2c.md) · `mcp` `awesome-list` `catalogo` `browser-automation` `integracao-de-ferramentas` `claude-code` · media/baixa/media · archive

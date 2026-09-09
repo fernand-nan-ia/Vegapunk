@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 63 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 64 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [AI Website Cloner Template — clonar qualquer site em Next.js por um comando](../article/2026-09-09_ai-website-cloner-template-clonar-qualquer-site-em-next-js-p_2a59fbf9b429.md)
+2026-09-09 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `clone-de-site` `nextjs-16` `claude-code-skill` `browser-mcp` `git-worktree` `engenharia-reversa-de-ui`
+
+Template Next.js + skill `/clone-website` que reconstrói um site alvo com agentes paralelos em worktrees, a partir de valores computados de CSS e ativos baixados do original.
 
 ## [Sete repositórios open source para implantar e cobrar como serviço (com as licenças conferidas)](../tiktok/2026-09-09_sete-repositorios-open-source-para-implantar-e-cobrar-como-s_7681261206534917394.md)
 2026-09-09 · tiktok · SaaS media · cliente alta · estudo alta · triagem apply_client · `open-source-como-servico` `licenca-mit` `apache-2` `bsd-3-clause` `modelo-red-hat` `contrato-de-implantacao`
