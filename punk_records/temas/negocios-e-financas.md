@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 25 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Quatro formas de faturar com IA: sites, dashboards, automação de WhatsApp e solução sob medida](../youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md)
+2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente`
+
+Quatro linhas de serviço com IA e quanto cada uma rendeu: sites/LP (+R$ 10k), dashboard e CRM (+R$ 8k), automação de WhatsApp (+R$ 6k em 30 dias) e solução sob medida, precificada pelo problema resolvido.
 
 ## [Asaas como meio de pagamento para SaaS: os 4 estágios de integração, nota fiscal automática e custo real por cobrança](../youtube/2026-09-08_asaas-como-meio-de-pagamento-para-saas-os-4-estagios-de-inte_6lKMViPJh6A.md)
 2026-09-08 · youtube · SaaS alta · cliente media · estudo alta · triagem — · `asaas` `meio-de-pagamento-saas` `nota-fiscal-automatica` `cobranca-recorrente` `cobranca-por-uso` `webhook`

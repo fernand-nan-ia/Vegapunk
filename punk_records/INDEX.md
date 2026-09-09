@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 36 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 23 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 25 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 12 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
@@ -190,6 +190,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-09-09 · youtube · [Quatro formas de faturar com IA: sites, dashboards, automação de WhatsApp e solução sob medida](youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md) · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente` `prospeccao-por-entrega` · media/alta/alta · —
 - 2026-09-08 · youtube · [Asaas como meio de pagamento para SaaS: os 4 estágios de integração, nota fiscal automática e custo real por cobrança](youtube/2026-09-08_asaas-como-meio-de-pagamento-para-saas-os-4-estagios-de-inte_6lKMViPJh6A.md) · `asaas` `meio-de-pagamento-saas` `nota-fiscal-automatica` `cobranca-recorrente` `cobranca-por-uso` `webhook` `multitenant` `integracao-minima` · alta/media/alta · —
 - 2026-09-07 · article · [Stripe Brasil (home): portfólio, escala e caminhos de integração](article/2026-09-07_stripe-brasil-home-portfolio-escala-e-caminhos-de-integracao_63c27920a37d.md) · `stripe` `infraestrutura-de-pagamentos` `stripe-billing` `stripe-atlas` `mcp` `agentic-commerce` `assinaturas` `integracao-no-code` · media/baixa/alta · —
 - 2026-09-07 · article · [Preços da Stripe no Brasil: cartão, Pix, boleto, contestações e produtos adicionais](article/2026-09-07_precos-da-stripe-no-brasil-cartao-pix-boleto-contestacoes-e_ab375b3ea3cc.md) · `stripe` `taxas-de-transacao` `chargeback` `stripe-billing` `stripe-connect` `pix` `boleto` `pagamento-internacional` · alta/baixa/alta · —
