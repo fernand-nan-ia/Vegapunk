@@ -5,8 +5,8 @@ external_id: "7683264480263884050"
 canonical_url: "https://www.tiktok.com/@rodriguesdigital1/photo/7683264480263884050"
 channel: "rodriguesdigital1"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["venda-de-sites", "prospeccao-local", "google-maps", "escolha-de-nicho", "negociacao", "referencia-visual", "primeiro-cliente"]
 applicability:
   saas_pessoal: baixa

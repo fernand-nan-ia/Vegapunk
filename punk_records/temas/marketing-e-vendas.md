@@ -13,7 +13,7 @@ Lista corrida de ~20 erros de SEO: título repetido, duas páginas na mesma pala
 Print de venda de US$ 650 usado como prova para vender um guia de prospecção internacional (templates, prompts, e-mails, invoice).
 
 ## [Como vender o primeiro site: prospecção no Google Maps, nicho e fechamento](../tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md)
-2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual`
+2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `venda-de-sites` `prospeccao-local` `google-maps` `escolha-de-nicho` `negociacao` `referencia-visual`
 
 Método de primeira venda de site: prospectar no Google Maps fugindo de advogado e dentista, mirar salão de festas/buffet, reunião no Meet no mesmo dia e fechamento com desconto somado a benefício, sempre 50% adiantado.
 
