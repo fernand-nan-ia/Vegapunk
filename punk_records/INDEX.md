@@ -4,7 +4,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## Mapa de temas
 
-- 🤖 IA e agentes — 29 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
+- 🤖 IA e agentes — 30 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 62 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 36 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
@@ -17,6 +17,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🤖 IA e agentes
 
+- 2026-09-09 · tiktok · [ECC: pacote que instala 68 agentes e 286 skills no assistente de código](tiktok/2026-09-09_ecc-pacote-que-instala-68-agentes-e-286-skills-no-assistente_7683346049486015762.md) · `agentes-de-codigo` `claude-code` `npx-installer` `cadeia-de-agentes` `risco-de-supply-chain` `regras-de-agente` · media/baixa/alta · —
 - 2026-09-07 · article · [ECC (Everything Claude Code): 68 agentes, 286 skills e um sistema de engenharia inteiro](article/2026-09-07_ecc-everything-claude-code-68-agentes-286-skills-e-um-sistem_3429c7218e4f.md) · `ecc` `agent-harness` `agent-skills` `agentshield` `seguranca-de-agente` `claude-code` `colisao-de-metodologia` · baixa/baixa/media · archive
 - 2026-09-07 · article · [awesome-claude-code: 179 recursos do Claude Code organizados em 27 seções](article/2026-09-07_awesome-claude-code-179-recursos-do-claude-code-organizados_c7f7e9fbc46c.md) · `awesome-list` `claude-code` `catalogo` `agent-skills` `observabilidade` `design-e-ui` · media/baixa/media · archive
 - 2026-09-07 · article · [screenshot-to-code: aplicação self-hosted que converte print, Figma e gravação de tela em código](article/2026-09-07_screenshot-to-code-aplicacao-self-hosted-que-converte-print_c5264a1d16b4.md) · `screenshot-to-code` `design-para-codigo` `self-hosted` `tailwind` `figma` `custo-de-api` `prototipagem` · baixa/media/media · archive

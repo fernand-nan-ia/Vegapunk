@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [ECC: pacote que instala 68 agentes e 286 skills no assistente de código](../tiktok/2026-09-09_ecc-pacote-que-instala-68-agentes-e-286-skills-no-assistente_7683346049486015762.md)
+2026-09-09 · tiktok · SaaS media · cliente baixa · estudo alta · triagem — · `agentes-de-codigo` `claude-code` `npx-installer` `cadeia-de-agentes` `risco-de-supply-chain` `regras-de-agente`
+
+Pacote ECC promete instalar 68 agentes, 286 skills e 94 comandos num comando (`npx ecc-universal setup`), para o assistente seguir sempre plano→teste→código→revisão.
 
 ## [ECC (Everything Claude Code): 68 agentes, 286 skills e um sistema de engenharia inteiro](../article/2026-09-07_ecc-everything-claude-code-68-agentes-286-skills-e-um-sistem_3429c7218e4f.md)
 2026-09-07 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `ecc` `agent-harness` `agent-skills` `agentshield` `seguranca-de-agente` `claude-code`
