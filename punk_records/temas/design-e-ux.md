@@ -8,7 +8,7 @@ _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente
 Vinte itens de pré-lançamento: 404, CTAs, FAQ, robots.txt, títulos únicos, meta descriptions, marcação de negócio local, política de privacidade, alt text, Analytics e prova social real.
 
 ## [Sites animados com Claude: banco de referências visuais e prompt único que tira a cara de IA da página](../youtube/2026-09-08_sites-animados-com-claude-banco-de-referencias-visuais-e-pro_hCD7HhpszfA.md)
-2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem — · `claude-code` `sites-animados` `referencia-visual` `motion-design` `animacoes-css` `prompt-de-design`
+2026-09-08 · youtube · SaaS media · cliente alta · estudo media · triagem apply_client · `claude-code` `sites-animados` `referencia-visual` `motion-design` `animacoes-css` `prompt-de-design`
 
 Junhão mostra como tirar a cara de IA de um site feito no Claude: pegar um Hero animado pronto no motionsites.ai, apontar o Claude para um banco de mais de 60 animações CSS/JS e mandar tudo num prompt só, pedindo fluidez
 

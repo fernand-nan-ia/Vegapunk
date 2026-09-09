@@ -5,8 +5,8 @@ external_id: "hCD7HhpszfA"
 canonical_url: "https://www.youtube.com/watch?v=hCD7HhpszfA"
 channel: "Junhão Não Codei"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["claude-code", "sites-animados", "referencia-visual", "motion-design", "animacoes-css", "prompt-de-design", "venda-de-sites", "identidade-visual"]
 applicability:
   saas_pessoal: media
