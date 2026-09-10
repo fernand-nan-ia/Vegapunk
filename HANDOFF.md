@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-09-07 noite, sessão 10b — preço do serviço de sites, escopo desta pasta e publicidade médica do CFM)
+# HANDOFF — Vegapunk (atualizado em 2026-09-09 noite, sessão 11 — direito autoral, Princípio 0 e o clonador de sites)
 
 ## TL;DR — o que existe hoje
 
@@ -19,36 +19,41 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 9 (2026-09-05, pelo Fernando sozinho):** `9ef54f3` (16 itens novos — lote Akita, GTA 6 e lote LGPD) e `8737dbd` (**`capture.py --triage` e subcomando `triage`** — a triagem deixou de ser exclusiva do Telegram).
 
-## Estado atual (2026-09-07 noite, fim da sessão 10b)
+**Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
+
+## Estado atual (2026-09-09 noite, fim da sessão 11)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`a446561` pushado**, árvore limpa salvo este HANDOFF |
-| Repo FURY | **`3e9afc0` pushado**, limpo; espelho conferido contra a fonte (`vegapunk.md` e os 7 agentes idênticos) |
-| Container | `vegapunk-vegapunk-1` **de pé há 8h**, 7 bots online (subido à mão hoje — ver armadilha do exit 127) |
-| Testes | **144/144 verdes** |
-| Punk Records | **208 itens** (32 apply_saas · 19 apply_client · 132 archive · 15 discard) · **10 sem triagem** — lote de gateways de pagamento capturado pelo Fernando via Telegram, não triado porque ele não pediu |
-| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
-| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 e 10b |
+| Repo Vegapunk | **`67d380d` pushado**, árvore limpa salvo este HANDOFF |
+| Repo FURY | `3e9afc0` — **não tocado nas sessões 10b→11** (nenhum agente mudou; a regra dos dois repos não foi acionada) |
+| Container | `vegapunk-vegapunk-1` **de pé há 10h**, 7 bots online |
+| Testes | **144/144 verdes** (rodados em 09/09) |
+| Punk Records | **231 itens** (34 apply_saas · 39 apply_client · 135 archive · 15 discard) · **8 sem triagem** |
+| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) — o do Reddit de 09/09 foi descartado |
+| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10, 10b e 11 |
 
-⚠️ **Uma aceitação ficou em aberto:** o Shaka pediu que o Fernando colasse **um link no grupo** antes do release, para observar a Story 1d (captura pelo bot do dono + teclado à parte pelo leitor + clique funcionando). O release saiu antes disso. **Nada da 1d foi observado em produção — só testado.** Se o botão de triagem não responder no grupo, o culpado é o teclado ter saído pelo bot errado; conserto, não catástrofe (`VEGAPUNK_GROUP_ENABLED=false` cala tudo sem tocar em código).
+**Os 8 sem triagem são todos do lote de gateways de pagamento** (Asaas ×3, Stripe ×2, Mercado Pago ×2, gateway genérico ×1), capturados por ele via Telegram em 07 e 08/09. Continuam esperando porque ele não pediu.
 
-### Regra permanente: mexeu em agente, são DOIS repos
+## ⚠️ A correção da sessão 11 — leia antes de qualquer coisa sobre clonagem
 
-Sempre que um `.md` de Satélite ou `squads/vegapunk/` mudar, o FURY recebe a cópia (`scripts/sync_agents.sh`) e precisa de commit próprio:
+Durante a sessão 11 foi afirmado ao Fernando que **estrutura e layout de site não são protegidos** ("copie o esqueleto, não a pele"). **Isso está errado no Brasil**, e a correção veio dos próprios links que ele mandou:
 
-```bash
-git add -A && git commit -m "…" && git push                      # Vegapunk (fonte)
-git -C /home/crazu/projetos/FURY add -A \
-  && git -C /home/crazu/projetos/FURY commit -m "sync(vegapunk): …" \
-  && git -C /home/crazu/projetos/FURY push                        # espelho
-```
+- **Lei 9.610/98, art. 7º, XIII** protege obras que "por sua **seleção, organização ou disposição de seu conteúdo**, constituam uma criação intelectual". Disposição do conteúdo é o layout.
+- **Lei 9.609/98** protege o código-fonte com o regime das obras literárias. As duas proteções são **independentes**: copiar só o visual viola; copiar só o código viola.
+- **TJSP, Ap. Cível 122.616-4/6 (Mandic × Intervale)**: perícia achou o HTML reproduzido "**depois de algumas maquiagens que configuram a imitação**" → contrafação + concorrência desleal. A defesa das "maquiagens" é exatamente trocar texto/foto/logo mantendo a composição — e ela **perdeu**.
+- **TJSP, Ap. 0119580-83.2007.8.26.0000**: clínica odontológica copiou site de outra **do mesmo ramo** → retirada sob multa diária + dano moral *in re ipsa* (sem precisar provar prejuízo).
+- **Faixa de indenização (STJ)**: R$ 10 mil a R$ 20 mil de dano moral + danos materiais. Um site vendido por R$ 3 mil não paga isso.
 
-**Commite a FONTE primeiro** — o rsync não pergunta se o arquivo é rastreado, e já houve inversão (sessão 8) em que o espelho tinha o que a fonte não tinha. `.env`, `data/`, `tmp/` e `whisper-cache/` seguem no `.gitignore`. Commits `kb:` automáticos do bot depois do push são normais.
+**O que continua livre:** ideia, função e convenção genérica (hero, grid de cards, menu que encolhe no scroll). **O que não passa:** a composição reconhecível de um site específico.
+
+**Consequência operacional:** clonar o site do **próprio cliente** é migração autorizada e está 100% limpo. Clonar terceiro e publicar **não fica seguro só trocando conteúdo** — o clone serve como referência de estrutura, com a composição redesenhada.
+
+Fonte principal: [Copy paste de websites (Jusbrasil)](punk_records/article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md).
 
 ## Primeira coisa a fazer (aberto agora)
 
-🎯 **O Fernando está começando a vender sites.** Meta declarada em 07/09; o levantamento começou em 26/08 e hoje tem 19 itens `apply_client`. **Ele NÃO quer fechar escopo nem PRD aqui** — ver a regra de escopo logo abaixo.
+🎯 **O Fernando está começando a vender sites.** Meta declarada em 07/09; o levantamento começou em 26/08 e hoje tem **39 itens `apply_client`** (eram 19 em 07/09 — dobrou nas sessões 10b→11). **Ele NÃO quer fechar escopo nem PRD aqui** — ver a regra de escopo logo abaixo.
 
 ### ⚠️ REGRA DE ESCOPO (dita pelo Fernando em 07/09 — não violar)
 
@@ -69,16 +74,18 @@ Lá: código, deploy, domínio, revisões, o site.
 
 **Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
 
-### O que fazer quando ele voltar
+### O que fazer quando ele voltar (ordem sugerida, revista em 09/09)
 
-1. **Triar os 10 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago, checkout transparente) — capturados por ele via Telegram enquanto trabalhávamos. **York** já ofereceu comparar taxas e ele ainda não respondeu. Para um serviço de R$ 900 pago uma vez, a resposta provável é mais simples e barata que os três (Pix direto).
-2. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b abaixo.
-3. **`npx impeccable detect`** numa página pronta — custo zero, sem instalar nada, 61 regras determinísticas. Continua sendo o próximo passo mais barato para design.
-4. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*. Uma frase; protege as "Decisões fechadas" deste arquivo.
-5. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
-6. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
-7. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`), fundação do kit de distribuição. Shaka já deu o `*risk`.
-8. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
+1. 🎯 **Destravar o clonador — é o único item bloqueado por falta de peça.** O `ai-website-cloner-template` está instalado, com build verde e `npm audit` limpo, mas **a skill não roda sem MCP de navegador**. Duas saídas: `cd ~/projetos/ai-website-cloner-template && claude --chrome` (recomendado, é só a flag) ou `claude mcp add playwright npx @playwright/mcp@latest`. **Primeiro alvo já escolhido: o site atual da VDC** — é o único caso 100% limpo (migração autorizada pelo dono) e gera a terceira versão para comparar com Taste v5 (5 achados) e Impeccable v2 (0 achados).
+2. 💰 **Decidir a cláusula do contrato ANTES do primeiro cliente pagante.** Descoberta de 09/09: sem cláusula escrita, vender o site **cede os direitos patrimoniais** do layout, e o mesmo design não pode ser reaproveitado em outro cliente. Se a ideia é vender o mesmo modelo várias vezes, o contrato precisa dizer **licença de uso**, não cessão. Isso não tem conserto retroativo. Fonte: [Direito autoral para designers](punk_records/article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md).
+3. 📋 **O que perguntar ao cliente da VDC** (lista fechada, ver `~/projetos/testes-skills-design/HANDOFF.md`): endereço (Google e Facebook divergem), horário completo, originais em alta das 6 fotos — e **agora também autorização por escrito de uso das fotos**, porque o Guia do Senado deixou claro que **perfil aberto de rede social não dispensa autorização**. As 6 fotos atuais são screenshots do Instagram.
+4. **Triar os 8 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago). **York** já ofereceu comparar taxas e ele não respondeu. Para um serviço pago uma vez, a resposta provável é Pix direto.
+5. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b.
+6. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*.
+7. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
+8. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
+9. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
+10. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -514,6 +521,77 @@ Funcionou com 46k e 146k chars. **Atenção**: a URL já existe no banco como `e
 
 **Listas gigantes também não passam pelo trafilatura**: `awesome-mcp-servers` (1,5 MB de README) e `awesome-claude-code` devolveram só navegação do GitHub. Solução usada: baixar o README cru, condensar para o **mapa estrutural** (seções + contagem) e alimentar por `--text`. Guardar 3.793 links que mudam toda semana incharia o vault sem ganho.
 
+## Sessão 11 (2026-09-09) — direito autoral, Princípio 0 e o clonador de sites — **`67d380d` pushado**
+
+Dia inteiro pelo Claude Code, sem tocar em `src/`. Nenhuma tag nova, nenhum agente alterado (FURY não precisou de sync).
+
+### O que entrou no Punk Records: 17 itens
+
+**Bloco 1 — venda de sites (10 itens, todos `apply_client` salvo indicado):**
+
+| item | o que carrega |
+|---|---|
+| [Quatro formas de faturar com IA](punk_records/youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md) | faixa de mercado R$ 1.000–5.000 por site contra ~R$ 150/mês de custo; +R$ 10k sites, +R$ 8k dashboards, +R$ 6k automação |
+| [Parar de vender site](punk_records/youtube/2026-09-09_parar-de-vender-site-perguntar-a-dor-e-nao-dar-nome-a-soluca_bQeOZczf5q0.md) | **não dar nome à solução** — nomear a categoria (site, CRM, N8N) transfere a conversa de qualidade para preço. Escada real: LP R$ 500 → IA de atendimento R$ 2–2,5k → painel R$ 6k = +R$ 10k no mesmo cliente |
+| [Como vender o primeiro site](punk_records/tiktok/2026-09-09_como-vender-o-primeiro-site-prospeccao-no-google-maps-nicho_7683264480263884050.md) | Google Maps, fugir de advogado/dentista, 50% adiantado, desconto **somado a benefício** |
+| [Parar de mostrar portfólio](punk_records/tiktok/2026-09-09_parar-de-mostrar-portfolio-e-mandar-o-site-pronto-no-primeir_7683569617746496788.md) | filtrar por cidade e nicho **negócios que ainda não têm site** — a origem de lead que faltava |
+| [Sete repositórios open source](punk_records/tiktok/2026-09-09_sete-repositorios-open-source-para-implantar-e-cobrar-como-s_7681261206534917394.md) | modelo Red Hat; licenças conferidas; **changedetection.io** e **PaddleOCR** são os dois vendáveis a negócio local |
+| [Erros de SEO](punk_records/tiktok/2026-09-09_lista-de-erros-que-impedem-um-site-de-ser-encontrado-no-goog_7683300020581453074.md) | Google Meu Negócio abandonado e sem avaliações — atinge a VDC, cujo endereço no Google está errado |
+| [Clientes internacionais](punk_records/tiktok/2026-09-09_vender-sites-feitos-com-ia-para-clientes-internacionais-vend_7682823642698337557.md) | vitrine de infoproduto; só a tática de demo se aproveita |
+| [AI Website Cloner Template](punk_records/article/2026-09-09_ai-website-cloner-template-clonar-qualquer-site-em-next-js-p_2a59fbf9b429.md) | o repo que foi instalado — ver seção própria abaixo |
+| [5 testes de segurança sem código](punk_records/tiktok/2026-09-09_5-testes-de-seguranca-em-app-feito-com-ia-sem-escrever-codig_7682949171111922964.md) | **`apply_saas`** — checklist de 10 min: número na URL, 20 senhas erradas, `sk-` no F12, preço no inspetor, link de arquivo sem login |
+| [ECC — 68 agentes](punk_records/tiktok/2026-09-09_ecc-pacote-que-instala-68-agentes-e-286-skills-no-assistente_7683346049486015762.md) | **`archive`** — as 254k estrelas alegadas não conferem com a realidade; guardado como registro de um padrão que vai voltar |
+
+**Bloco 2 — direito autoral (7 itens, mandados por ele às 21h):** ver a seção "A correção da sessão 11" no topo. Os quatro que valem:
+[Jusbrasil](punk_records/article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md) (jurisprudência), [Guia do Senado](punk_records/article/2026-09-09_guia-de-direitos-autorais-do-senado-federal_61e4247615f8.md) (fonte oficial, imagem e banco de imagens), [Avctoris](punk_records/article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md) (cessão × licença no contrato), [VILAGE](punk_records/article/2026-09-09_direito-autoral-de-logotipo-criado-no-canva-quando-da-e-quan_74120014d534.md) (INPI não checa biblioteca do Canva — registro nasce anulável).
+Arquivados: [TermsFeed](punk_records/article/2026-09-09_website-copyright-law-protecao-de-sites-nos-eua-reino-unido_35e0191756a9.md) (lei estrangeira) e [Estadão/TecMundo](punk_records/article/2026-09-09_direito-autoral-para-designers-protecao-automatica-prova-de_c0a312e9a6ae.md) (publieditorial duplicado; guardado pela faixa do STJ). O link do Reddit foi **descartado** — Reddit serve JS e bloqueia extração.
+
+### A convergência que vale mais que qualquer item isolado
+
+**Quatro conteúdos independentes, capturados no mesmo dia, chegaram à mesma conclusão sem se conhecerem: construa a demo ANTES de conversar.** O vídeo do A Vizinhança, o TikTok do Code Nog, o guia "gringa" e o carrossel dos 7 repositórios. Isso deixou de ser dica de criador e virou convergência — o mais perto de evidência que este tipo de material chega. **E o Fernando já executa sem saber:** a landing da VDC existe antes de qualquer contrato.
+
+### O clonador instalado — `~/projetos/ai-website-cloner-template`
+
+`JCodesMore/ai-website-cloner-template`, MIT, 34.114 estrelas e 4.973 forks conferidos na API do GitHub em 09/09. Criado em 13/03/2026, último release v0.4.0 em 10/08, **13 contribuidores, 2 issues e 2 PRs abertos** — projeto viral com manutenção de uma pessoa só.
+
+| | |
+|---|---|
+| Estado | `npm install` feito, **build verde**, `npm audit` = **0 vulnerabilidades** |
+| Correção aplicada | Next.js **16.3.0 → 16.3.4** (patch). O 16.3.0 tinha RCE crítico não autenticado (servidor Windows e API de otimização de imagem com AVIF) |
+| **Bloqueio** | **não roda sem MCP de navegador** (Chrome MCP, Playwright MCP…). Nenhum está configurado — só `agentmemory` |
+| Saída | projeto **Next.js 16 + React 19 + Tailwind v4 + shadcn**, não HTML estático |
+| Git | clonado direto (o README pede "Use this template"); `origin` ainda aponta para o repo original. `git remote remove origin` resolve se incomodar |
+
+**Como funciona:** cinco fases — reconhecimento (prints em 3 tamanhos, tokens de design, varredura de interação) → fundação (CSS global, download de todos os ativos) → specs por componente com `getComputedStyle()` exato → construção paralela por agentes em **worktrees do git** → montagem com diff visual. A regra interna: se o builder precisar adivinhar uma cor, a extração falhou.
+
+**Três coisas a lembrar:**
+- **`SECURITY.md` avisa que projetos criados do template NÃO recebem correções.** O mantenedor do clone é o Fernando.
+- **O patrocinador está dentro das instruções do agente** (linha 257 do `SKILL.md`): fallback opcional de geração de imagem pela **Atlas Cloud**, exige `ATLASCLOUD_API_KEY` que ele não tem, vedado para logo/marca. Na prática não dispara. Registrado por transparência.
+- **Custo de token alto** — dispara vários agentes em paralelo, um por seção.
+
+### Princípio 0 gravado — ética por AVISO, não por bloqueio
+
+Gravado em **`~/.claude/CLAUDE.md`**, como primeira seção do arquivo, e na memória do projeto (`principio-0-etica-avisar-nao-bloquear.md`).
+
+**Decisão do Fernando, textual:** *"NUNCA EVITE, mas se acontecer de clonar objetos que atacam o princípio 0, avisar SEMPRE. Eu falo para não evitar, para não correr o risco de mexer no funcionamento da skill de clonagem."*
+
+Logo: a skill roda inteira, na fidelidade dela. O agente **reporta depois** o que veio protegido — textos/copy, fotos e ilustrações, logo e nome, composição visual distintiva — antes de publicar. A troca é decisão dele.
+
+⚠️ **Não escrever a regra dentro de `ai-website-cloner-template/`** (nem `SKILL.md`, nem `AGENTS.md`, nem `CLAUDE.md`). Qualquer texto ali é lido pelo agente durante a clonagem e pode alterar o comportamento — foi exatamente o que ele pediu para evitar.
+
+### Armadilhas novas descobertas nesta sessão
+
+- **Reddit não extrai.** Serve página em JavaScript; `.json`, `old.reddit` e strip de HTML falharam todos. Caminho: colar o texto e usar `--text`.
+- **`capture.py triage` recusa item com `status=extraction_failed`** ("Já triado"). Para descartar, é preciso escrever direto no banco: `update knowledge_items set triage_decision='discard', status='discarded' where id=...` e apagar o `.md` de `_pending/`.
+- **O schema do enrichment tem `topics` com máximo de 7.** Passar 8 dá erro Pydantic `too_long` sem dizer qual campo. `key_points` ≤ 10, `tags` ≤ 8, `tools` ≤ 10.
+- **A tabela `knowledge_items` não tem coluna `triage`** — o nome é `triage_decision`.
+
+### Estado do laboratório de design (pasta vizinha, não é deste repo)
+
+`~/projetos/testes-skills-design/` avançou em 09/09 **fora desta sessão** (ele trabalhou em paralelo): rodada 5 da Taste com a identidade visual da VDC (teal `#008096` + amber `#ffa300`, detector 6→5) e uma **versão Impeccable v2 "Placa de Obra" com 0 achados**. A skill Impeccable foi **desinstalada**, mas o detector foi salvo em `lab-taste/ferramentas/detector`. ⚠️ **A skill global `ui-ux-pro-max` continua desligada** em `~/.claude/skills-off/` — restaurar quando os testes acabarem.
+
+Com o clonador, a VDC passará a ter **três versões** pela mesma régua: Taste v5 (5), Impeccable v2 (0), clone (?).
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -593,6 +671,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Diários por pessoa** (decidido 2026-09-01): `squads/vegapunk/memory/<dono>/` — versionados (backup), sem mistura entre usuários (Story 2b).
 - **`apply_*` exige ação concreta e incondicional** (Shaka, 2026-09-07): item cuja aplicação depende de uma decisão ainda não tomada vai para `archive`, não para `apply_client`. Aplicação condicional é aplicação vaga, e é ela que faz a fila de `apply_*` perder o sentido. O item volta a ser candidato no dia em que a decisão for tomada.
 - **Link mandado no Claude Code é capturado pelo `*capture`, não pelo bot** (praticado desde 27/08, consolidado em 07/09): o resumo sai da sessão, custo de OpenRouter é zero, e o único gasto residual são os carrosséis de TikTok que passam pelo `read_slides()`. O bot do Telegram continua sendo o caminho para captura em movimento.
+- **Princípio 0 — ética por AVISO, nunca por bloqueio** (decidido 2026-09-09, gravado em `~/.claude/CLAUDE.md`): em clonagem de site, a ferramenta roda **inteira**, na fidelidade dela; o agente **avisa depois** o que veio protegido (textos, fotos, logo/nome, composição distintiva) antes de publicar. **Nunca escrever a regra dentro do repositório da ferramenta** — instrução ali é lida durante a execução e pode quebrar o comportamento. Palavras dele: "NUNCA EVITE, mas se acontecer (…) avisar SEMPRE".
+- **Layout de site É protegido no Brasil** (corrigido 2026-09-09, com jurisprudência): Lei 9.610/98 art. 7º XIII protege "seleção, organização ou disposição do conteúdo"; TJSP já condenou cópia de HTML "depois de algumas maquiagens". Clonar o site do **próprio cliente** é migração autorizada e está limpo; clonar terceiro e publicar não fica seguro só trocando conteúdo.
 
 ## Armadilhas conhecidas
 - **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.
@@ -606,6 +686,9 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - Apagar item do banco: `item_events` referencia `knowledge_items` (FK) — deletar os eventos ANTES do item, senão `IntegrityError`.
 - `pipeline.triage` só aceita item em status `enriched`: `extraction_failed` não tem caminho de descarte pelo bot — a saída é colar conteúdo em Notas manuais + `/reprocess`, ou delete manual (com a FK acima).
 - INDEX.md e `temas/` são regenerados INTEIROS a partir do banco a cada triagem/captura: item que existir só como arquivo (ex.: vindo de `git pull` de outra instalação) some do índice — é o furo que a Story 2a (importador) fecha.
+- **Reddit não extrai** (09/09): serve página em JavaScript; `.json`, `old.reddit` e strip de HTML falham todos. Caminho: colar o texto e usar `--text`.
+- **Descartar item `extraction_failed`**: `capture.py triage` responde "Já triado" e não faz nada. Escrever no banco: `update knowledge_items set triage_decision='discard', status='discarded', triaged_at=datetime('now') where id=...`, depois apagar o `.md` de `_pending/`. A coluna chama-se `triage_decision`, **não** `triage`.
+- **Limites do schema do enrichment**: `topics` ≤ **7**, `key_points` ≤ 10, `tags` ≤ 8, `tools` ≤ 10. Estourar dá erro Pydantic `too_long` **sem dizer qual campo** — conferir o `topics` primeiro.
 - **`normalize.TRACKING_PARAMS` não cobre os parâmetros novos do Google Ads** (`normalize.py:103` limpa `utm_`, `fbclid`, `gclid`, `igsh`, `si`, `ref`, `mc_cid`, `mc_eid`). **`gad_source`, `gad_campaignid` e `gbraid` sobrevivem** — e como o id do item é o sha1 da URL limpa, a MESMA página vinda de dois anúncios diferentes entra como dois itens. Visto em 07/09 no artigo da Hostinger (`a19b8d1384f3`), que ficou com os três na `canonical_url`.
 - **Container morre com `Exited (127)` sem uma linha de log quando o Docker Desktop sobe.** O `restart: unless-stopped` religa cedo demais, antes do ambiente estar pronto. Terceira ocorrência (sessões 4, 6 e 10). Sintoma: link mandado no Telegram não recebe nem o "capturei". Cura: `docker compose up -d` na mão. **Não é o exit 137**, que era o `stop_grace_period` e já foi resolvido.
 - **`Enrichment.topics` aceita no máximo 7 itens** (e `tools` 10, `key_points` 10, `tags` 8). Escrever o JSON do `*capture` com 8 tópicos falha no Pydantic DEPOIS da extração — nada se perde, mas custa uma rodada. Conferir antes de rodar `enrich`.
