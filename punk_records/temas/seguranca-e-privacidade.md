@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 39 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 40 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Copy paste de websites: violação ao direito do autor? (Jusbrasil)](../article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md)
 2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `copia-de-website` `lei-9610` `lei-9609` `concorrencia-desleal` `look-and-feel`
@@ -11,6 +11,11 @@ Sim, é violação — e por duas vias: o código pela Lei 9.609/98 e a 'seleç�
 2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `lei-9610` `direito-de-imagem` `banco-de-imagens` `licenciamento` `dominio-publico`
 
 Guia oficial do Senado sobre a Lei 9.610/98: a regra é pedir autorização.
+
+## [Direito autoral para designers: proteção automática, registro como prova e tipos de licença](../article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md)
+2026-09-09 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `direito-autoral` `design-grafico` `licenciamento` `prova-de-anterioridade` `contrato-de-cessao` `inpi`
+
+Design é protegido no ato da criação, mas sem registro você tem o direito e não tem a prova.
 
 ## [5 testes de segurança em app feito com IA, sem escrever código](../tiktok/2026-09-09_5-testes-de-seguranca-em-app-feito-com-ia-sem-escrever-codig_7682949171111922964.md)
 2026-09-09 · tiktok · SaaS alta · cliente media · estudo alta · triagem apply_saas · `seguranca-de-aplicacao` `idor` `rate-limiting` `chave-exposta` `validacao-no-servidor` `bucket-privado`

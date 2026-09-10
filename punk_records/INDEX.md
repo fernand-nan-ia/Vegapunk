@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 30 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 64 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 39 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 40 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 27 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -119,6 +119,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 2026-09-09 · article · [Copy paste de websites: violação ao direito do autor? (Jusbrasil)](article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md) · `direito-autoral` `copia-de-website` `lei-9610` `lei-9609` `concorrencia-desleal` `look-and-feel` `jurisprudencia-tjsp` `clone-de-site` · media/alta/alta · apply_client
 - 2026-09-09 · article · [Guia de Direitos Autorais do Senado Federal](article/2026-09-09_guia-de-direitos-autorais-do-senado-federal_61e4247615f8.md) · `direito-autoral` `lei-9610` `direito-de-imagem` `banco-de-imagens` `licenciamento` `dominio-publico` `senado` · media/alta/alta · apply_client
+- 2026-09-09 · article · [Direito autoral para designers: proteção automática, registro como prova e tipos de licença](article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md) · `direito-autoral` `design-grafico` `licenciamento` `prova-de-anterioridade` `contrato-de-cessao` `inpi` `canva` `registro-de-obra` · baixa/alta/alta · —
 - 2026-09-09 · tiktok · [5 testes de segurança em app feito com IA, sem escrever código](tiktok/2026-09-09_5-testes-de-seguranca-em-app-feito-com-ia-sem-escrever-codig_7682949171111922964.md) · `seguranca-de-aplicacao` `idor` `rate-limiting` `chave-exposta` `validacao-no-servidor` `bucket-privado` `vibe-coding` `checklist-pre-lancamento` · alta/media/alta · apply_saas
 - 2026-09-08 · tiktok · [O básico de LGPD para não tomar multa com um SaaS](tiktok/2026-09-08_o-basico-de-lgpd-para-nao-tomar-multa-com-um-saas_7668067412713032978.md) · `lgpd` `privacidade` `saas` `anonimizacao` `conformidade` `direitos-do-titular` · alta/baixa/media · apply_saas
 - 2026-09-08 · article · [Manual de Publicidade Médica do CFM — a norma aplicada, com exemplos visuais](article/2026-09-08_manual-de-publicidade-medica-do-cfm-a-norma-aplicada-com-exe_a4594ad45e45.md) · `cfm` `publicidade-medica` `manual-codame` `identificacao-do-medico` `restricao-de-design` `site-de-medico` `compliance` · baixa/alta/media · apply_client
