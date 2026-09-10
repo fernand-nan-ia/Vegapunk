@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 43 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 44 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Canva: quem detém os direitos autorais dos designs criados na plataforma](../article/2026-09-09_canva-quem-detem-os-direitos-autorais-dos-designs-criados-na_d935d7fa8233.md)
 2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem apply_client · `canva` `licenca-nao-exclusiva` `direito-autoral` `imagem-gerada-por-ia` `print-on-demand` `termos-de-uso`
@@ -26,6 +26,11 @@ Sim, é violação — e por duas vias: o código pela Lei 9.609/98 e a 'seleç�
 2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `lei-9610` `direito-de-imagem` `banco-de-imagens` `licenciamento` `dominio-publico`
 
 Guia oficial do Senado sobre a Lei 9.610/98: a regra é pedir autorização.
+
+## [Direito autoral para designers: proteção automática, prova de autoria e indenização no STJ](../article/2026-09-09_direito-autoral-para-designers-protecao-automatica-prova-de_c0a312e9a6ae.md)
+2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem — · `direito-autoral` `prova-de-anterioridade` `stj` `indenizacao` `autor-e-titular` `publieditorial`
+
+Obra nasce protegida sem registro, mas prova de autoria é outra história — arquivo no computador não sustenta.
 
 ## [Direito autoral para designers: proteção automática, registro como prova e tipos de licença](../article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md)
 2026-09-09 · article · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `design-grafico` `licenciamento` `prova-de-anterioridade` `contrato-de-cessao` `inpi`
