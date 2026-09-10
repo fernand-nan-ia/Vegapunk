@@ -5,8 +5,8 @@ external_id: "d935d7fa8233"
 canonical_url: "https://www.canva.com/pt_br/help/copyright-design-ownership"
 channel: "Canva"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["canva", "licenca-nao-exclusiva", "direito-autoral", "imagem-gerada-por-ia", "print-on-demand", "termos-de-uso"]
 applicability:
   saas_pessoal: baixa
