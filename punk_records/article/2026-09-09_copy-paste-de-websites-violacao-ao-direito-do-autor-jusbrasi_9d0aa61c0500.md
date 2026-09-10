@@ -5,8 +5,8 @@ external_id: "9d0aa61c0500"
 canonical_url: "https://www.jusbrasil.com.br/artigos/copy-paste-de-websites-violacao-ao-direito-do-autor/121943976"
 channel: "Vinicius Tini Garcia · Jusbrasil"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["direito-autoral", "copia-de-website", "lei-9610", "lei-9609", "concorrencia-desleal", "look-and-feel", "jurisprudencia-tjsp", "clone-de-site"]
 applicability:
   saas_pessoal: media
