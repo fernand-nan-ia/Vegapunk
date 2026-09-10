@@ -8,7 +8,7 @@ _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado aut
 Sim, é violação — e por duas vias: o código pela Lei 9.609/98 e a 'seleção, organização ou disposição do conteúdo' pela Lei 9.610/98, art.
 
 ## [Guia de Direitos Autorais do Senado Federal](../article/2026-09-09_guia-de-direitos-autorais-do-senado-federal_61e4247615f8.md)
-2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem — · `direito-autoral` `lei-9610` `direito-de-imagem` `banco-de-imagens` `licenciamento` `dominio-publico`
+2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `lei-9610` `direito-de-imagem` `banco-de-imagens` `licenciamento` `dominio-publico`
 
 Guia oficial do Senado sobre a Lei 9.610/98: a regra é pedir autorização.
 

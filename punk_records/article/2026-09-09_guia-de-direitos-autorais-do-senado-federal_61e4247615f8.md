@@ -5,8 +5,8 @@ external_id: "61e4247615f8"
 canonical_url: "https://www12.senado.leg.br/manualdecomunicacao/guia-de-direitos-autorais"
 channel: "www12.senado.leg.br"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["direito-autoral", "lei-9610", "direito-de-imagem", "banco-de-imagens", "licenciamento", "dominio-publico", "senado"]
 applicability:
   saas_pessoal: media
