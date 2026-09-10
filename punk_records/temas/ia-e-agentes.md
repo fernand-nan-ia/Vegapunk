@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Gauntlet Loop: construtor + três críticos independentes para design no Claude Code](../youtube/2026-09-10_gauntlet-loop-construtor-tres-criticos-independentes-para-de_jvfllKWDqRk.md)
-2026-09-10 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `gauntlet-loop` `agentes-criticos` `claude-design` `design-system` `custo-em-tokens` `claude-code-skill`
+2026-09-10 · youtube · SaaS media · cliente alta · estudo alta · triagem apply_client · `gauntlet-loop` `agentes-criticos` `claude-design` `design-system` `custo-em-tokens` `claude-code-skill`
 
 Um agente constrói, três críticos independentes avaliam — briefing, sistema e visual — e devolvem até passar.
 

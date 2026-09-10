@@ -5,8 +5,8 @@ external_id: "jvfllKWDqRk"
 canonical_url: "https://www.youtube.com/watch?v=jvfllKWDqRk"
 channel: "Felipe Borges - Fala IA!"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["gauntlet-loop", "agentes-criticos", "claude-design", "design-system", "custo-em-tokens", "claude-code-skill", "referencia-visual", "quality-gate"]
 applicability:
   saas_pessoal: media
