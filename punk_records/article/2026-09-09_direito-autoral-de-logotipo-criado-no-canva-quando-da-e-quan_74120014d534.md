@@ -5,8 +5,8 @@ external_id: "74120014d534"
 canonical_url: "https://www.vilage.com.br/blog/direito-autoral-logotipo-criado-no-canva"
 channel: "Patrícia Sá · VILAGE Marcas e Patentes"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["registro-de-marca", "inpi", "canva", "licenca-nao-exclusiva", "identidade-visual", "marca-nominativa", "direito-autoral", "logotipo"]
 applicability:
   saas_pessoal: baixa

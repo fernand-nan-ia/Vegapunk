@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 41 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Direito autoral de logotipo criado no Canva: quando dá e quando não dá para proteger](../article/2026-09-09_direito-autoral-de-logotipo-criado-no-canva-quando-da-e-quan_74120014d534.md)
-2026-09-09 · article · SaaS baixa · cliente alta · estudo media · triagem — · `registro-de-marca` `inpi` `canva` `licenca-nao-exclusiva` `identidade-visual` `marca-nominativa`
+2026-09-09 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `registro-de-marca` `inpi` `canva` `licenca-nao-exclusiva` `identidade-visual` `marca-nominativa`
 
 Canva não impede proteção; o que decide é a originalidade do arranjo.
 
