@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 41 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 42 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Canva: quem detém os direitos autorais dos designs criados na plataforma](../article/2026-09-09_canva-quem-detem-os-direitos-autorais-dos-designs-criados-na_d935d7fa8233.md)
+2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem — · `canva` `licenca-nao-exclusiva` `direito-autoral` `imagem-gerada-por-ia` `print-on-demand` `termos-de-uso`
+
+Design original feito por você é seu; o que vem da biblioteca do Canva é licença não exclusiva, não propriedade.
 
 ## [Direito autoral de logotipo criado no Canva: quando dá e quando não dá para proteger](../article/2026-09-09_direito-autoral-de-logotipo-criado-no-canva-quando-da-e-quan_74120014d534.md)
 2026-09-09 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `registro-de-marca` `inpi` `canva` `licenca-nao-exclusiva` `identidade-visual` `marca-nominativa`
