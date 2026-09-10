@@ -28,7 +28,7 @@ Sim, é violação — e por duas vias: o código pela Lei 9.609/98 e a 'seleç�
 Guia oficial do Senado sobre a Lei 9.610/98: a regra é pedir autorização.
 
 ## [Direito autoral para designers: proteção automática, prova de autoria e indenização no STJ](../article/2026-09-09_direito-autoral-para-designers-protecao-automatica-prova-de_c0a312e9a6ae.md)
-2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem — · `direito-autoral` `prova-de-anterioridade` `stj` `indenizacao` `autor-e-titular` `publieditorial`
+2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem archive · `direito-autoral` `prova-de-anterioridade` `stj` `indenizacao` `autor-e-titular` `publieditorial`
 
 Obra nasce protegida sem registro, mas prova de autoria é outra história — arquivo no computador não sustenta.
 

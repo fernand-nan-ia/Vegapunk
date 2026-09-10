@@ -5,8 +5,8 @@ external_id: "c0a312e9a6ae"
 canonical_url: "https://www.estadao.com.br/tecmundo/ciberseguranca/411985-direito-autoral-para-designers-o-que-voce-cria-ja-tem-protecao-mas-sera-que-voce-consegue-provar"
 channel: "Redação TecMundo · Estadão"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["direito-autoral", "prova-de-anterioridade", "stj", "indenizacao", "autor-e-titular", "publieditorial"]
 applicability:
   saas_pessoal: baixa
