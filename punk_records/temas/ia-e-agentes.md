@@ -1,6 +1,11 @@
 # 🤖 IA e agentes
 
-_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Gauntlet Loop: construtor + três críticos independentes para design no Claude Code](../youtube/2026-09-10_gauntlet-loop-construtor-tres-criticos-independentes-para-de_jvfllKWDqRk.md)
+2026-09-10 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `gauntlet-loop` `agentes-criticos` `claude-design` `design-system` `custo-em-tokens` `claude-code-skill`
+
+Um agente constrói, três críticos independentes avaliam — briefing, sistema e visual — e devolvem até passar.
 
 ## [ECC: pacote que instala 68 agentes e 286 skills no assistente de código](../tiktok/2026-09-09_ecc-pacote-que-instala-68-agentes-e-286-skills-no-assistente_7683346049486015762.md)
 2026-09-09 · tiktok · SaaS media · cliente baixa · estudo alta · triagem archive · `agentes-de-codigo` `claude-code` `npx-installer` `cadeia-de-agentes` `risco-de-supply-chain` `regras-de-agente`
