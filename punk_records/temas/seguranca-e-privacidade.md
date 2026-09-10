@@ -1,6 +1,6 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 42 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 43 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Canva: quem detém os direitos autorais dos designs criados na plataforma](../article/2026-09-09_canva-quem-detem-os-direitos-autorais-dos-designs-criados-na_d935d7fa8233.md)
 2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem apply_client · `canva` `licenca-nao-exclusiva` `direito-autoral` `imagem-gerada-por-ia` `print-on-demand` `termos-de-uso`
@@ -11,6 +11,11 @@ Design original feito por você é seu; o que vem da biblioteca do Canva é lice
 2026-09-09 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `registro-de-marca` `inpi` `canva` `licenca-nao-exclusiva` `identidade-visual` `marca-nominativa`
 
 Canva não impede proteção; o que decide é a originalidade do arranjo.
+
+## [Website Copyright Law: proteção de sites nos EUA, Reino Unido, Austrália e Canadá](../article/2026-09-09_website-copyright-law-protecao-de-sites-nos-eua-reino-unido_35e0191756a9.md)
+2026-09-09 · article · SaaS media · cliente baixa · estudo media · triagem — · `copyright` `direito-comparado` `convencao-de-berna` `termos-de-uso` `conteudo-gerado-por-usuario` `registro-de-copyright`
+
+Panorama internacional: site é obra protegida nos quatro países analisados, proteção automática na criação, registro só serve para litigar.
 
 ## [Copy paste de websites: violação ao direito do autor? (Jusbrasil)](../article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md)
 2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `copia-de-website` `lei-9610` `lei-9609` `concorrencia-desleal` `look-and-feel`
