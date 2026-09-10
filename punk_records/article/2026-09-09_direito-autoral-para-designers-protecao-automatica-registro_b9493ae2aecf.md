@@ -5,8 +5,8 @@ external_id: "b9493ae2aecf"
 canonical_url: "https://avctoris.com/direito-autoral-para-designers"
 channel: "Avctoris · avctoris.com"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["direito-autoral", "design-grafico", "licenciamento", "prova-de-anterioridade", "contrato-de-cessao", "inpi", "canva", "registro-de-obra"]
 applicability:
   saas_pessoal: baixa
