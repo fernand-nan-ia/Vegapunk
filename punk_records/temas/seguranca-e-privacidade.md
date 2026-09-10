@@ -13,7 +13,7 @@ Design original feito por você é seu; o que vem da biblioteca do Canva é lice
 Canva não impede proteção; o que decide é a originalidade do arranjo.
 
 ## [Website Copyright Law: proteção de sites nos EUA, Reino Unido, Austrália e Canadá](../article/2026-09-09_website-copyright-law-protecao-de-sites-nos-eua-reino-unido_35e0191756a9.md)
-2026-09-09 · article · SaaS media · cliente baixa · estudo media · triagem — · `copyright` `direito-comparado` `convencao-de-berna` `termos-de-uso` `conteudo-gerado-por-usuario` `registro-de-copyright`
+2026-09-09 · article · SaaS media · cliente baixa · estudo media · triagem archive · `copyright` `direito-comparado` `convencao-de-berna` `termos-de-uso` `conteudo-gerado-por-usuario` `registro-de-copyright`
 
 Panorama internacional: site é obra protegida nos quatro países analisados, proteção automática na criação, registro só serve para litigar.
 

@@ -5,8 +5,8 @@ external_id: "35e0191756a9"
 canonical_url: "https://www.termsfeed.com/blog/website-copyright-law"
 channel: "Jocelyn Mackie · TermsFeed"
 captured_at: 2026-09-09
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["copyright", "direito-comparado", "convencao-de-berna", "termos-de-uso", "conteudo-gerado-por-usuario", "registro-de-copyright", "wipo"]
 applicability:
   saas_pessoal: media
