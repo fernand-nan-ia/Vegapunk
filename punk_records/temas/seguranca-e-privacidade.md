@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 40 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 41 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Direito autoral de logotipo criado no Canva: quando dá e quando não dá para proteger](../article/2026-09-09_direito-autoral-de-logotipo-criado-no-canva-quando-da-e-quan_74120014d534.md)
+2026-09-09 · article · SaaS baixa · cliente alta · estudo media · triagem — · `registro-de-marca` `inpi` `canva` `licenca-nao-exclusiva` `identidade-visual` `marca-nominativa`
+
+Canva não impede proteção; o que decide é a originalidade do arranjo.
 
 ## [Copy paste de websites: violação ao direito do autor? (Jusbrasil)](../article/2026-09-09_copy-paste-de-websites-violacao-ao-direito-do-autor-jusbrasi_9d0aa61c0500.md)
 2026-09-09 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `direito-autoral` `copia-de-website` `lei-9610` `lei-9609` `concorrencia-desleal` `look-and-feel`
