@@ -1,6 +1,7 @@
 # Story: Kit 2a — Importador vault → banco (reinstalação e multi-máquina)
 **Projeto:** vegapunk   **Status:** pronta
 **Origem:** pedido do Fernando em 2026-09-01 (kit de distribuição: enviar a amigos, reinstalar em outra máquina, repo original como vault único compartilhado)
+**Atualização 2026-09-11:** o Fernando desistiu de compartilhar o vault com amigos. A story CONTINUA válida — caem só os cenários de multi-usuário; permanecem a reinstalação em outra máquina (agora crítica: o vault virou o único backup) e a correção do bug em que item vindo por `git pull` some na regeneração do INDEX.
 
 ## Objetivo (1 frase)
 Permitir reconstruir o banco a partir dos `.md` do `punk_records/` — para reinstalar o Vegapunk em outra máquina sem perder o catálogo, e para que itens que chegaram por `git pull` (commitados por outra instalação) entrem no banco local antes que uma regeneração do INDEX os derrube.
