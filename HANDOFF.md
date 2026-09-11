@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (atualizado em 2026-09-09 noite, sessão 11 — direito autoral, Princípio 0 e o clonador de sites)
+# HANDOFF — Vegapunk (checkpoint 2026-09-11 manhã, sessão 12 EM ANDAMENTO — lote de 8 links de venda/design)
 
 ## TL;DR — o que existe hoje
 
@@ -21,19 +21,19 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (2026-09-09 noite, fim da sessão 11)
+## Estado atual (checkpoint 2026-09-11 manhã — sessão 12 ainda aberta)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`67d380d` pushado**, árvore limpa salvo este HANDOFF |
-| Repo FURY | `3e9afc0` — **não tocado nas sessões 10b→11** (nenhum agente mudou; a regra dos dois repos não foi acionada) |
-| Container | `vegapunk-vegapunk-1` **de pé há 10h**, 7 bots online |
-| Testes | **144/144 verdes** (rodados em 09/09) |
-| Punk Records | **231 itens** (34 apply_saas · 39 apply_client · 135 archive · 15 discard) · **8 sem triagem** |
-| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) — o do Reddit de 09/09 foi descartado |
-| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10, 10b e 11 |
+| Repo Vegapunk | **`d58b88b` pushado**, árvore limpa |
+| Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
+| Container | `vegapunk-vegapunk-1` Up (subido à mão hoje — Docker Desktop estava fechado) |
+| Testes | **144/144 verdes** (rodados em 11/09) |
+| Punk Records | **239 itens** (34 apply_saas · 44 apply_client · 138 archive · 15 discard) · **8 sem triagem** |
+| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
+| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10, 10b, 11 e 12 |
 
-**Os 8 sem triagem são todos do lote de gateways de pagamento** (Asaas ×3, Stripe ×2, Mercado Pago ×2, gateway genérico ×1), capturados por ele via Telegram em 07 e 08/09. Continuam esperando porque ele não pediu.
+Os 8 sem triagem continuam sendo o lote de gateways de pagamento (Asaas, Stripe, Mercado Pago), de 07–08/09. Esperando porque ele não pediu.
 
 ## ⚠️ A correção da sessão 11 — leia antes de qualquer coisa sobre clonagem
 
@@ -592,6 +592,36 @@ Logo: a skill roda inteira, na fidelidade dela. O agente **reporta depois** o qu
 
 Com o clonador, a VDC passará a ter **três versões** pela mesma régua: Taste v5 (5), Impeccable v2 (0), clone (?).
 
+## Sessão 12 (2026-09-11, EM ANDAMENTO) — lote de 8 links de venda e design — **`d58b88b` pushado**
+
+Checkpoint tirado de manhã; a sessão continua. Nenhuma linha de `src/` tocada.
+
+### O que entrou: 8 itens (5 apply_client, 3 archive)
+
+| item | o que carrega |
+|---|---|
+| [Gauntlet Loop](punk_records/youtube/2026-09-10_o-design-do-claude-acaba-de-ficar-10-x-melhor-e-e-perfeito_jvfllKWDqRk.md) | **o mais valioso do lote** — construtor + 3 críticos independentes (briefing, sistema, visual). Skill gratuita. Custo medido: US$ 3,19 num HTML, US$ 7,54 num site |
+| [Claude Design em 5 níveis](punk_records/youtube/2026-09-10_o-guia-completo-do-claude-design-em-5-niveis-iniciante-ao-av_BKt3WKwAk8U.md) | o nível 3 (design system exportável) é o que o Fernando ainda não tem |
+| [IA de atendimento no WhatsApp](punk_records/youtube/2026-09-10_como-criar-e-vender-agentes-de-ia-no-whatsapp-com-n8n-e-clau_jjMnQDAc5Mo.md) | R$ 2.500–7.000/instalação, custo R$ 250/mês **no CNPJ do cliente**, skill Genesis grátis. ⚠️ Notas manuais têm o alerta CFM+LGPD para a psiquiatra |
+| [Script de cold call](punk_records/tiktok/2026-09-10_script-de-cold-calling-para-venda-de-sites-no-mercado-intern_7683167461994220808.md) | o roteiro da ligação em 7 passos, destrinchado nas Notas manuais |
+| [Checklist pós-lançamento](punk_records/tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) | Open Graph, metadados, Search Console |
+| 3 itens "vender pra gringa" | **archive** — vitrine de infoproduto; aplicação depende de decisão não tomada |
+
+### O que mudou no entendimento
+
+**O Gauntlet Loop fecha o buraco apontado na análise do "prompt mestre"** (feita na sessão 11, a pedido do Fernando): um agente constrói, três críticos independentes avaliam — um checa fidelidade ao pedido, outro cor/fonte/identidade, o terceiro compara com a referência. O modelo deixa de julgar o próprio trabalho. É a automação das cinco rodadas manuais da landing da VDC, e dá para medir contra a régua que já existe (`lab-taste/ferramentas/detector`).
+
+⚠️ O vídeo do Gauntlet Loop **usa o site da Apple como referência** e defende textualmente copiar o que já funciona — exatamente o que a jurisprudência da sessão 11 condena. Usar a técnica, trocar o alvo.
+
+**Falta o design system da VDC.** A identidade (teal `#008096`, amber `#ffa300`) está em prosa neste HANDOFF, não num arquivo exportável. O nível 3 do Claude Design resolve em ~5 min e vira insumo do crítico de sistema do loop.
+
+**Confirmação independente da paleta:** na sessão 11, o Playwright mediu o header do vdcsolar.com em `rgb(0,128,150)` = `#008096` — exatamente o teal que o Fernando havia extraído do logo por medição de pixel. Duas medições, caminhos diferentes, mesmo valor.
+
+### Pendências abertas desta sessão
+
+- O clonador (`~/projetos/ai-website-cloner-template`) segue **pronto e não usado**. Playwright verificado funcionando no vdcsolar.com (título, stack WordPress+Elementor, hero com PNG tingido). Falta rodar `/clone-website`.
+- O Fernando disse que ia clonar **outro site**, não a VDC — alvo ainda não informado. Quando informar: se não for site de cliente dele, aplicar o Princípio 0 (avisar antes e depois o que veio protegido).
+
 ## Os 7 Satélites — mapa completo
 
 | Satélite | Faceta | Funções originais (vault) | Absorvido do FURY | Comandos absorvidos |
@@ -689,6 +719,8 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Reddit não extrai** (09/09): serve página em JavaScript; `.json`, `old.reddit` e strip de HTML falham todos. Caminho: colar o texto e usar `--text`.
 - **Descartar item `extraction_failed`**: `capture.py triage` responde "Já triado" e não faz nada. Escrever no banco: `update knowledge_items set triage_decision='discard', status='discarded', triaged_at=datetime('now') where id=...`, depois apagar o `.md` de `_pending/`. A coluna chama-se `triage_decision`, **não** `triage`.
 - **Limites do schema do enrichment**: `topics` ≤ **7**, `key_points` ≤ 10, `tags` ≤ 8, `tools` ≤ 10. Estourar dá erro Pydantic `too_long` **sem dizer qual campo** — conferir o `topics` primeiro.
+- **Fila pendente + `docker compose up` = o bot enriquece tudo sozinho E AVISA NO TELEGRAM** (11/09): ao subir o container com itens em `extracted`, a pipeline drena a fila via OpenRouter, os resumos saem do Gemini em vez do Claude Code, **e cada item dispara mensagem dos Satélites no Telegram** — gasta crédito e enche o celular do Fernando à toa. (O silêncio padrão vale para o `*capture` feito daqui; a pipeline do bot tem comportamento próprio.) — e aí `capture.py enrich` recusa ("só itens 'extracted' recebem enriquecimento manual"). Antes de subir o container, rodar `capture.py pending`; se houver fila, enriquecer local primeiro (**o enrich NÃO precisa do container**, só o extract precisa). Recuperação sem refazer: escrever o cruzamento em `## Notas manuais`, que é editável à mão e sobrevive à regeneração.
+- **Docker Desktop fechado no Windows derruba o container com exit 127** e o `docker` some do WSL ("could not be found in this WSL 2 distro"). Não é bug do projeto: abrir o Docker Desktop e `docker compose up -d`.
 - **`normalize.TRACKING_PARAMS` não cobre os parâmetros novos do Google Ads** (`normalize.py:103` limpa `utm_`, `fbclid`, `gclid`, `igsh`, `si`, `ref`, `mc_cid`, `mc_eid`). **`gad_source`, `gad_campaignid` e `gbraid` sobrevivem** — e como o id do item é o sha1 da URL limpa, a MESMA página vinda de dois anúncios diferentes entra como dois itens. Visto em 07/09 no artigo da Hostinger (`a19b8d1384f3`), que ficou com os três na `canonical_url`.
 - **Container morre com `Exited (127)` sem uma linha de log quando o Docker Desktop sobe.** O `restart: unless-stopped` religa cedo demais, antes do ambiente estar pronto. Terceira ocorrência (sessões 4, 6 e 10). Sintoma: link mandado no Telegram não recebe nem o "capturei". Cura: `docker compose up -d` na mão. **Não é o exit 137**, que era o `stop_grace_period` e já foi resolvido.
 - **`Enrichment.topics` aceita no máximo 7 itens** (e `tools` 10, `key_points` 10, `tags` 8). Escrever o JSON do `*capture` com 8 tópicos falha no Pydantic DEPOIS da extração — nada se perde, mas custa uma rodada. Conferir antes de rodar `enrich`.
