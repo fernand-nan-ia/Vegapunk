@@ -61,3 +61,15 @@ Ah, claro, o clássico 'ganhe 6 mil por mês dormindo' embalado num cupom de afi
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+### Cruzamento com os projetos do Fernando (Claude Code, 11/09)
+
+**Números declarados no vídeo:** cobrança de **R$ 2.500 a R$ 7.000** por instalação; custo recorrente de **R$ 250–280/mês** (VPS ~R$ 45 + ManyChat Pro R$ 150 + créditos), **no nome do cliente, não no do fornecedor**. Setup ~7 dias, quase todo consumido pela verificação da Business Manager do Facebook com CNPJ do cliente.
+
+**Onde encaixa:** é o segundo degrau da escada de serviços que o vault já registra do mesmo canal — landing barata para entrar, automação depois. Deixar o custo recorrente no CNPJ do cliente é a mesma decisão já fechada para o domínio e para o Google Meu Negócio.
+
+⚠️ **NÃO aplicar na psiquiatra sem passar pelo Shaka.** Atendimento automatizado em contexto médico esbarra na Resolução CFM 2.336/2023 e em **dado sensível de saúde** sob a LGPD. A decisão de não ter formulário no site foi tomada justamente para não coletar nada — um robô conversando sobre sintoma desfaz isso inteiro. Para a VDC (energia solar) não há esse impedimento; a pergunta a fazer ao cliente é se há volume de WhatsApp fora do horário comercial.
+
+⚠️ **Conflito de interesse:** o vídeo é patrocinado pela Hostinger, com cupom do canal. A recomendação de VPS tem incentivo comercial — a pilha funciona em qualquer VPS.
+
+**Skill Genesis** é gratuita e está na descrição do vídeo, sem cadastro. Revogar a chave de API do N8N depois de cada uso (o próprio autor alerta: ela dá acesso total ao fluxo).

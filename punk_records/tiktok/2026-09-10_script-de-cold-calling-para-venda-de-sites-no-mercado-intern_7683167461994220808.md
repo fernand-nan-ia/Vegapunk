@@ -44,3 +44,18 @@ Grr, o script é direto ao ponto, tipo montar uma engrenagem sem enrolação! Pa
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+### Cruzamento com os projetos do Fernando (Claude Code, 11/09)
+
+**O valor deste item é o roteiro da ligação, na ordem em que ele é falado:**
+1. Pede 2 minutos, promete ser rápido.
+2. **Elogia específico** — "pesquisei sobre o seu salão, vocês têm ótimas avaliações e parecem bem estabelecidos".
+3. Aponta a lacuna sem ofender — "não têm presença online forte / site profissional".
+4. **Revela que o site já está pronto**, sem compromisso, e pede só uma reunião curta.
+5. Dá o preço na ligação: **US$ 600, pagamento único**.
+6. **Ancora no diferencial**: "sem mensalidade — não cobramos todo mês só para o site continuar no ar".
+7. Fecha marcando dia — "segunda funciona para você?"
+
+**Por que isso importa aqui:** é a quinta fonte independente no vault a chegar na tática de **demo pronta antes do contato**. E o argumento do passo 6 é reaproveitável direto no Brasil, porque o concorrente típico do Fernando (Wix, agência local) cobra mensalidade — "site seu, sem aluguel" é diferencial real, não retórica.
+
+**O que NÃO se aproveita:** a tese de vender para fora depende de uma decisão que o Fernando ainda não tomou. O roteiro, porém, funciona igual em português para negócio local.
