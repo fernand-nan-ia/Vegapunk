@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 44 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 45 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Moni Naor — o criptógrafo que teve a ideia do CAPTCHA antes do CAPTCHA existir](../article/2026-09-11_moni-naor-o-criptografo-que-teve-a-ideia-do-captcha-antes-do_6ff294c5147c.md)
+2026-09-11 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `criptografia` `captcha` `moni-naor` `manuel-blum` `criptografia-visual` `traitor-tracing`
+
+Biografia do israelense Moni Naor (Weizmann), aluno de Manuel Blum.
 
 ## [Canva: quem detém os direitos autorais dos designs criados na plataforma](../article/2026-09-09_canva-quem-detem-os-direitos-autorais-dos-designs-criados-na_d935d7fa8233.md)
 2026-09-09 · article · SaaS baixa · cliente media · estudo media · triagem apply_client · `canva` `licenca-nao-exclusiva` `direito-autoral` `imagem-gerada-por-ia` `print-on-demand` `termos-de-uso`
