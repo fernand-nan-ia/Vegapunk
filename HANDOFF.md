@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (checkpoint 2026-09-11 manhã, sessão 12 EM ANDAMENTO — lote de 8 links de venda/design)
+# HANDOFF — Vegapunk (checkpoint 2026-09-11 tarde, fim da sessão 12 — Cofre de Abordagens + dado de campo do mercado)
 
 ## TL;DR — o que existe hoje
 
@@ -19,19 +19,22 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 9 (2026-09-05, pelo Fernando sozinho):** `9ef54f3` (16 itens novos — lote Akita, GTA 6 e lote LGPD) e `8737dbd` (**`capture.py --triage` e subcomando `triage`** — a triagem deixou de ser exclusiva do Telegram).
 
+**Sessão 12 (2026-09-11):** dois documentos grandes entraram no vault. De manhã, **8 links** de venda e design (Gauntlet Loop é o mais valioso). De tarde, o **Cofre de Abordagens** comprado do Mazzeo — 50 mensagens de prospecção, 100 fichas de nicho, íntegra de 111 páginas — e um **compilado de 4.000 mensagens de um grupo de 679 vendedores de site**, que é o primeiro dado de PREÇO REAL de mercado que existe no Punk Records. Decisão revertida: **o vault é de uso exclusivo do Fernando**.
+
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (checkpoint 2026-09-11 manhã — sessão 12 ainda aberta)
+## Estado atual (checkpoint 2026-09-11 tarde — fim da sessão 12)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`d58b88b` pushado**, árvore limpa |
+| Repo Vegapunk | **`14ba7fe`** — 2 commits à frente do remoto, **falta `git push`** |
 | Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
 | Container | `vegapunk-vegapunk-1` Up (subido à mão hoje — Docker Desktop estava fechado) |
 | Testes | **144/144 verdes** (rodados em 11/09) |
-| Punk Records | **239 itens** (34 apply_saas · 44 apply_client · 138 archive · 15 discard) · **8 sem triagem** |
+| Punk Records | **241 itens** · **8 sem triagem** (gateways de pagamento, 07–08/09) |
 | `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
 | Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10, 10b, 11 e 12 |
+| Não commitado | `tmp/compartilhar/` (material para o grupo) — é `tmp/`, não vai ao git |
 
 Os 8 sem triagem continuam sendo o lote de gateways de pagamento (Asaas, Stripe, Mercado Pago), de 07–08/09. Esperando porque ele não pediu.
 
@@ -79,13 +82,16 @@ Lá: código, deploy, domínio, revisões, o site.
 1. 🎯 **Destravar o clonador — é o único item bloqueado por falta de peça.** O `ai-website-cloner-template` está instalado, com build verde e `npm audit` limpo, mas **a skill não roda sem MCP de navegador**. Duas saídas: `cd ~/projetos/ai-website-cloner-template && claude --chrome` (recomendado, é só a flag) ou `claude mcp add playwright npx @playwright/mcp@latest`. **Primeiro alvo já escolhido: o site atual da VDC** — é o único caso 100% limpo (migração autorizada pelo dono) e gera a terceira versão para comparar com Taste v5 (5 achados) e Impeccable v2 (0 achados).
 2. 💰 **Decidir a cláusula do contrato ANTES do primeiro cliente pagante.** Descoberta de 09/09: sem cláusula escrita, vender o site **cede os direitos patrimoniais** do layout, e o mesmo design não pode ser reaproveitado em outro cliente. Se a ideia é vender o mesmo modelo várias vezes, o contrato precisa dizer **licença de uso**, não cessão. Isso não tem conserto retroativo. Fonte: [Direito autoral para designers](punk_records/article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md).
 3. 📋 **O que perguntar ao cliente da VDC** (lista fechada, ver `~/projetos/testes-skills-design/HANDOFF.md`): endereço (Google e Facebook divergem), horário completo, originais em alta das 6 fotos — e **agora também autorização por escrito de uso das fotos**, porque o Guia do Senado deixou claro que **perfil aberto de rede social não dispensa autorização**. As 6 fotos atuais são screenshots do Instagram.
-4. **Triar os 8 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago). **York** já ofereceu comparar taxas e ele não respondeu. Para um serviço pago uma vez, a resposta provável é Pix direto.
-5. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b.
-6. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*.
-7. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
-8. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
-9. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
-10. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
+4. 💰 **Usar a tabela de preço real antes de fechar o primeiro cliente pagante.** O item do [Grupo Code Makers](punk_records/document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md) tem vendas confirmadas por nicho. Lembrar que os dois primeiros clientes (VDC e psiquiatra) foram decididos a **preço de custo** de propósito — a tabela vale do terceiro em diante.
+5. 🎯 **Avaliar o nicho de construção civil** (marmoraria, vidraçaria, serralheria, construtora). É o encaixe mais forte que apareceu até hoje, porque a formação do Fernando é argumento de venda. Ninguém pediu ainda — **não abrir escopo sem ele pedir** (regra de escopo acima).
+6. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, citado como passo 1 do próprio produto: escolher os pentes que casam com os nichos dele e deixar os `[CAMPOS]` preenchidos. Vira munição imediata de prospecção.
+7. **Triar os 8 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago). **York** já ofereceu comparar taxas e ele não respondeu. Para um serviço pago uma vez, a resposta provável é Pix direto.
+8. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b.
+9. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*.
+10. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
+11. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
+12. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
+13. **Reprocessar os 3 itens de `_pending/`** · **reler Stories 2b e 2c** sob a decisão de vault solo e investigar os US$ 8,58 da chave OpenRouter.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -621,6 +627,36 @@ Checkpoint tirado de manhã; a sessão continua. Nenhuma linha de `src/` tocada.
 
 - O clonador (`~/projetos/ai-website-cloner-template`) segue **pronto e não usado**. Playwright verificado funcionando no vdcsolar.com (título, stack WordPress+Elementor, hero com PNG tingido). Falta rodar `/clone-website`.
 - O Fernando disse que ia clonar **outro site**, não a VDC — alvo ainda não informado. Quando informar: se não for site de cliente dele, aplicar o Princípio 0 (avisar antes e depois o que veio protegido).
+
+### Tarde: o Cofre de Abordagens e o dado de campo do mercado
+
+Entraram **dois documentos** que mudam o patamar do que o vault tem sobre venda de sites.
+
+**1. [Cofre de Abordagens (MazyOS)](punk_records/document/2026-09-11_cofre-de-abordagens-mazyos-50-mensagens-de-prospeccao-100-fi_16284fb93b86.md)** — produto pago, comprado pelo Fernando. Guardado **com texto integral** (210 mil caracteres, 111 páginas). Conferido peça por peça: 55 códigos de mensagem (WA 13/13, FU 8/8, GK 5/5, DM 9/9, EM 6/6, OBJ 9/9, AU 5/5) e **100/100 fichas de nicho**, mais 157 blocos "COPIE DAQUI", combos por setor, Top 10, regra de ouro, limites anti-ban e Plano de 14 Dias.
+
+⚠️ **O PDF trunca em 150 mil caracteres na extração.** Os 39.509 caracteres finais (parte dos setores 9/10, tabela de Combos e Plano de 14 Dias) foram recuperados do texto bruto e **colados na íntegra dentro de `## Notas manuais`**, com aviso. Por isso "Plano de 14 Dias" aparece duas vezes no arquivo — não é duplicata por erro.
+
+**2. [Grupo Code Makers](punk_records/document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md)** — destilação de ~4.000 mensagens de um grupo de WhatsApp com 679 vendedores de site, janela de 08 a 11/09. **É o primeiro dado de preço praticado que o vault tem**, e é auto-relato de quem vendeu, não opinião de criador de conteúdo.
+
+O que ficou registrado: vendas fechadas de R$ 120 a **R$ 1.890** (energia solar, presencial, primeira abordagem), consenso de **R$ 500–800** para landing simples, e o dado mais consistente de todos — **teto de 30 a 50 disparos/dia no WhatsApp**, com o gatilho do ban sendo a *mensagem repetida*, não o volume. Funil médio: 30 mensagens → 1 a 2 vendas.
+
+⚠️ **O anexo chegou só no contexto, não em disco.** Foi gravada a destilação em 8 blocos, não o chat bruto. Se o Fernando quiser o dump literal um dia, precisa reenviar o arquivo.
+
+**A descoberta que vale mais que o preço:** o grupo apontou, sem saber com quem falava, que **marmoraria, vidraçaria e serralheria** são o melhor nicho — *"um trabalho deles paga um site bom"*. O Fernando é **engenheiro civil**: fala a linguagem técnica desses clientes. É a única vantagem dele que nenhum dos 679 consegue copiar, e não depende de preço.
+
+### Material entregue ao grupo (não commitado)
+
+Ele pediu um resumo para devolver à comunidade. Gerados em **`tmp/compartilhar/`**: `code-makers-resumo.md` (11 KB) e `.txt` (12 KB), mesmo conteúdo em 9 seções. **Escritos sem citar nome, sem print e sem julgar ninguém** — pedido explícito dele, em maiúsculas. Os avisos de segurança (extensões maliciosas, LGPD, referência × cópia) foram enquadrados como proteção do próprio vendedor, nunca como sermão.
+
+Está em `tmp/` de propósito: é entregável pontual, não faz parte do repo.
+
+### Decisão fechada nesta sessão
+
+**O vault é de uso exclusivo do Fernando** (reverte a decisão de 01/09 de compartilhar com amigos). Consequências registradas em "Decisões fechadas": (a) produto pago pode ser guardado com texto integral, porque não há redistribuição; (b) a **Story 2a NÃO foi suspensa** — perdeu a razão "amigos commitando", mantém "reinstalar em outra máquina" (agora crítica: o vault virou o único backup) e o bug do INDEX; (c) **Stories 2b e 2c precisam ser relidas** sob essa ótica antes de entrarem na fila — nasceram do mesmo pedido de 01/09 e não foram abertas.
+
+### Armadilha nova
+
+**`git push` com produto pago dentro é barrado pelo classificador do Claude Code.** Aconteceu duas vezes (motivo `[Out-of-Place Publication]`), porque o commit levava ~200 KB do texto integral de um produto comprado para um remoto GitHub. **A saída é o Fernando rodar o `git push` ele mesmo** — é a regra do projeto de qualquer forma. Não insistir, não tentar contornar: passar o comando e explicar.
 
 ## Os 7 Satélites — mapa completo
 
