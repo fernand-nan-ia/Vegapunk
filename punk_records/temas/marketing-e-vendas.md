@@ -18,7 +18,7 @@ Guia rápido sobre como fechar clientes de desenvolvimento web utilizando prospe
 Apresentação de um fluxo de prospecção nos EUA combinando raspagem de leads, redação de e-mails por IA e geração de sites via Lovable.
 
 ## [Prospecção e venda de sites para negócios locais nos EUA](../tiktok/2026-09-10_prospeccao-e-venda-de-sites-para-negocios-locais-nos-eua_7681851703607463188.md)
-2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-ativa` `venda-de-sites` `freelance-internacional` `cold-outreach` `mercado-exterior`
+2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem archive · `prospeccao-ativa` `venda-de-sites` `freelance-internacional` `cold-outreach` `mercado-exterior`
 
 Demonstração em slides de prospecção ativa de pequenas empresas nos EUA pelo Google Maps para venda de sites em dólar.
 
