@@ -5,8 +5,8 @@ external_id: "739f9436c388"
 canonical_url: "grupo-code-makers.txt"
 channel: "02# Code Makers | Pré-Lançamento"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["prospeccao-fria", "preco-de-mercado", "venda-de-sites", "negocio-local", "ban-whatsapp", "dado-de-campo", "objecoes", "hospedagem-dominio"]
 applicability:
   saas_pessoal: baixa
