@@ -1,6 +1,6 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Checklist básico de pós-lançamento de landing page: Open Graph, metadados e Search Console](../tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md)
 2026-09-10 · tiktok · SaaS media · cliente alta · estudo media · triagem — · `landing-page` `seo` `open-graph` `metadados` `google-search-console`
@@ -16,6 +16,11 @@ Guia rápido sobre como fechar clientes de desenvolvimento web utilizando prospe
 2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-ativa` `cold-email` `lead-generation` `web-scraping` `freelance-internacional` `lovable`
 
 Apresentação de um fluxo de prospecção nos EUA combinando raspagem de leads, redação de e-mails por IA e geração de sites via Lovable.
+
+## [Prospecção e venda de sites para negócios locais nos EUA](../tiktok/2026-09-10_prospeccao-e-venda-de-sites-para-negocios-locais-nos-eua_7681851703607463188.md)
+2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-ativa` `venda-de-sites` `freelance-internacional` `cold-outreach` `mercado-exterior`
+
+Demonstração em slides de prospecção ativa de pequenas empresas nos EUA pelo Google Maps para venda de sites em dólar.
 
 ## [Parar de mostrar portfólio e mandar o site pronto no primeiro contato](../tiktok/2026-09-09_parar-de-mostrar-portfolio-e-mandar-o-site-pronto-no-primeir_7683569617746496788.md)
 2026-09-09 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `prospeccao-fria` `demo-antes-do-contato` `leads-sem-site` `venda-de-sites` `nicho-local` `portfolio`
