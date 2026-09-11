@@ -5,8 +5,8 @@ external_id: "7683906887502433556"
 canonical_url: "https://www.tiktok.com/@webnova___sites/photo/7683906887502433556"
 channel: "W E B N O V A"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["prospeccao-ativa", "cold-email", "lead-generation", "web-scraping", "freelance-internacional", "lovable"]
 applicability:
   saas_pessoal: baixa

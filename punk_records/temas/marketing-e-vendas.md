@@ -13,7 +13,7 @@ Três etapas indispensáveis após criar uma landing page: configurar imagem de 
 Guia rápido sobre como fechar clientes de desenvolvimento web utilizando prospecção ativa por ligação direta.
 
 ## [Fluxo de prospecção internacional e criação de sites com IA](../tiktok/2026-09-10_fluxo-de-prospeccao-internacional-e-criacao-de-sites-com-ia_7683906887502433556.md)
-2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem — · `prospeccao-ativa` `cold-email` `lead-generation` `web-scraping` `freelance-internacional` `lovable`
+2026-09-10 · tiktok · SaaS baixa · cliente media · estudo baixa · triagem archive · `prospeccao-ativa` `cold-email` `lead-generation` `web-scraping` `freelance-internacional` `lovable`
 
 Apresentação de um fluxo de prospecção nos EUA combinando raspagem de leads, redação de e-mails por IA e geração de sites via Lovable.
 
