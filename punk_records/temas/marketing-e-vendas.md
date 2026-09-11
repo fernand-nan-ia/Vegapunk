@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Três etapas indispensáveis após criar uma landing page: configurar imagem de preview para compartilhamentos, definir tags de título e descrição para SEO e indexar a URL no Google Search Console.
 
 ## [Estratégia de Prospecção Ativa e Venda Diária de Websites](../tiktok/2026-09-10_estrategia-de-prospeccao-ativa-e-venda-diaria-de-websites_7683977350891326741.md)
-2026-09-10 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `cold-call` `prospeccao-ativa` `venda-de-sites` `aquisicao-de-clientes` `freelance` `webdesign`
+2026-09-10 · tiktok · SaaS baixa · cliente alta · estudo media · triagem archive · `cold-call` `prospeccao-ativa` `venda-de-sites` `aquisicao-de-clientes` `freelance` `webdesign`
 
 Guia rápido sobre como fechar clientes de desenvolvimento web utilizando prospecção ativa por ligação direta.
 

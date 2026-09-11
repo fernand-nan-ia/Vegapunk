@@ -5,8 +5,8 @@ external_id: "7683977350891326741"
 canonical_url: "https://www.tiktok.com/@victorsyrion/photo/7683977350891326741"
 channel: "Bueno | Coder"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["cold-call", "prospeccao-ativa", "venda-de-sites", "aquisicao-de-clientes", "freelance", "webdesign"]
 applicability:
   saas_pessoal: baixa
