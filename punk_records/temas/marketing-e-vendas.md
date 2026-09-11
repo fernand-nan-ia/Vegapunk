@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 35 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [TikTok (MXC Digital): site bonito feito só com IA sem sitemap, robots.txt e llms.txt é vitrine escondida](../tiktok/2026-09-11_tiktok-mxc-digital-site-bonito-feito-so-com-ia-sem-sitemap-r_7679994027420208391.md)
+2026-09-11 · tiktok · SaaS media · cliente alta · estudo baixa · triagem — · `seo-tecnico` `sitemap-xml` `robots-txt` `llms-txt` `site-gerado-por-ia` `indexacao-google`
+
+Peça de venda da MXC Digital com um ponto técnico verdadeiro: site gerado por IA costuma sair sem sitemap.xml, robots.txt e llms.txt, e sem isso não é indexado — bonito, mas invisível no Google e para as IAs.
 
 ## [Grupo Code Makers (WhatsApp, 679 membros): preços praticados, limite de disparo e abordagens que converteram](../document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md)
 2026-09-11 · document · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `prospeccao-fria` `preco-de-mercado` `venda-de-sites` `negocio-local` `ban-whatsapp` `dado-de-campo`
