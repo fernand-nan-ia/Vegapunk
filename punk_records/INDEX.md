@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 64 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 44 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 27 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 28 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 13 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -175,6 +175,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-10 · tiktok · [Checklist básico de pós-lançamento de landing page: Open Graph, metadados e Search Console](tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) · `landing-page` `seo` `open-graph` `metadados` `google-search-console` · media/alta/media · —
 - 2026-09-09 · tiktok · [Parar de mostrar portfólio e mandar o site pronto no primeiro contato](tiktok/2026-09-09_parar-de-mostrar-portfolio-e-mandar-o-site-pronto-no-primeir_7683569617746496788.md) · `prospeccao-fria` `demo-antes-do-contato` `leads-sem-site` `venda-de-sites` `nicho-local` `portfolio` · baixa/alta/media · apply_client
 - 2026-09-09 · youtube · [Parar de vender site: perguntar a dor e não dar nome à solução](youtube/2026-09-09_parar-de-vender-site-perguntar-a-dor-e-nao-dar-nome-a-soluca_bQeOZczf5q0.md) · `posicionamento-de-servico` `fuga-da-commodity` `venda-consultiva` `demo-antes-do-contrato` `precificacao-por-valor` `escada-de-servicos` `automacao-whatsapp` `painel-de-gestao` · media/alta/alta · apply_client
 - 2026-09-09 · tiktok · [Lista de erros que impedem um site de ser encontrado no Google](tiktok/2026-09-09_lista-de-erros-que-impedem-um-site-de-ser-encontrado-no-goog_7683300020581453074.md) · `seo-tecnico` `indexacao` `google-meu-negocio` `seo-local` `performance-mobile` `canibalizacao-de-palavra-chave` `robots-txt` · baixa/alta/media · apply_client
