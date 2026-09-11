@@ -1,11 +1,16 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 46 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 47 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [captcha.net — o site oficial do CAPTCHA: aplicações, diretrizes de segurança e o que não fazer](../article/2026-09-11_captcha-net-o-site-oficial-do-captcha-aplicacoes-diretrizes_57f98e6b71e3.md)
 2026-09-11 · article · SaaS media · cliente baixa · estudo media · triagem — · `captcha` `recaptcha` `anti-bot` `spam` `acessibilidade` `replay-attack`
 
 Site oficial do CAPTCHA (CMU, 2000).
+
+## [CAPTCHA: Using Hard AI Problems for Security (Eurocrypt 2003) — o paper que formalizou o CAPTCHA](../article/2026-09-11_captcha-using-hard-ai-problems-for-security-eurocrypt-2003-o_75b293707f6f.md)
+2026-09-11 · article · SaaS baixa · cliente nenhuma · estudo alta · triagem — · `captcha` `problemas-dificeis-de-ia` `criptografia` `esteganografia` `teste-de-turing` `anti-bot`
+
+Paper do Eurocrypt 2003 (von Ahn, Blum, Hopper, Langford) que formaliza o CAPTCHA: usar problema aberto de IA como premissa de segurança, no lugar de fatoração.
 
 ## [Moni Naor — o criptógrafo que teve a ideia do CAPTCHA antes do CAPTCHA existir](../article/2026-09-11_moni-naor-o-criptografo-que-teve-a-ideia-do-captcha-antes-do_6ff294c5147c.md)
 2026-09-11 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `criptografia` `captcha` `moni-naor` `manuel-blum` `criptografia-visual` `traitor-tracing`
