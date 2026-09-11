@@ -606,8 +606,8 @@ Checkpoint tirado de manhã; a sessão continua. Nenhuma linha de `src/` tocada.
 
 | item | o que carrega |
 |---|---|
-| [Gauntlet Loop](punk_records/youtube/2026-09-10_o-design-do-claude-acaba-de-ficar-10-x-melhor-e-e-perfeito_jvfllKWDqRk.md) | **o mais valioso do lote** — construtor + 3 críticos independentes (briefing, sistema, visual). Skill gratuita. Custo medido: US$ 3,19 num HTML, US$ 7,54 num site |
-| [Claude Design em 5 níveis](punk_records/youtube/2026-09-10_o-guia-completo-do-claude-design-em-5-niveis-iniciante-ao-av_BKt3WKwAk8U.md) | o nível 3 (design system exportável) é o que o Fernando ainda não tem |
+| [Gauntlet Loop](punk_records/youtube/2026-09-10_gauntlet-loop-construtor-tres-criticos-independentes-para-de_jvfllKWDqRk.md) | **o mais valioso do lote** — construtor + 3 críticos independentes (briefing, sistema, visual). Skill gratuita. Custo medido: US$ 3,19 num HTML, US$ 7,54 num site |
+| [Claude Design em 5 níveis](punk_records/youtube/2026-09-10_claude-design-em-5-niveis-do-prompt-solto-ao-design-system-r_BKt3WKwAk8U.md) | o nível 3 (design system exportável) é o que o Fernando ainda não tem |
 | [IA de atendimento no WhatsApp](punk_records/youtube/2026-09-10_como-criar-e-vender-agentes-de-ia-no-whatsapp-com-n8n-e-clau_jjMnQDAc5Mo.md) | R$ 2.500–7.000/instalação, custo R$ 250/mês **no CNPJ do cliente**, skill Genesis grátis. ⚠️ Notas manuais têm o alerta CFM+LGPD para a psiquiatra |
 | [Script de cold call](punk_records/tiktok/2026-09-10_script-de-cold-calling-para-venda-de-sites-no-mercado-intern_7683167461994220808.md) | o roteiro da ligação em 7 passos, destrinchado nas Notas manuais |
 | [Checklist pós-lançamento](punk_records/tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) | Open Graph, metadados, Search Console |

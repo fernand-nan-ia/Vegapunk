@@ -12,6 +12,7 @@
 - 2026-08-28 · Fernando fechou as 3 decisões do PRD multi-bot: privacy OFF só no bot leitor, roteador decide por contexto (sem exceção para a York), janela de continuidade de 10 min (ele mesmo subiu de 5 para 10)
 - 2026-08-28 · Story 1 do PRD não cabia numa sessão de Atlas: dividida em 1a (roteador), 1b (dois bots), 1c (cascata); só a 1a foi entregue pronta
 - 2026-08-28 · Regra nova do Fernando: link enviado aqui para leitura vai SEMPRE para o Punk Records via *capture, sem perguntar, salvo pedido contrário (aprendido depois de eu ler 3 páginas do Telegram e só perguntar se capturava)
+- 2026-09-11 · Fernando está assistindo o curso do Mazzeo e clonou o MazyOS em ~/projetos/mazyos só para estudar o funcionamento — não vai salvar nem versionar nada ali; é pasta descartável, não projeto
 - 2026-09-01 · Fernando quer o kit de distribuição: repo privado único como vault compartilhado com amigos de confiança (bots e chaves próprios de cada um), reinstalação sem perda, e instalação fácil só das skills. Decidiu: diários por pessoa (memory/fernando/). Stories 2a/2b/2c escritas; 2a pronta para Atlas.
 
 ## Sincronizações
