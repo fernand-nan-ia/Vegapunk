@@ -176,7 +176,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
-- 2026-09-10 · tiktok · [Checklist básico de pós-lançamento de landing page: Open Graph, metadados e Search Console](tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) · `landing-page` `seo` `open-graph` `metadados` `google-search-console` · media/alta/media · —
+- 2026-09-10 · tiktok · [Checklist básico de pós-lançamento de landing page: Open Graph, metadados e Search Console](tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) · `landing-page` `seo` `open-graph` `metadados` `google-search-console` · media/alta/media · apply_client
 - 2026-09-10 · tiktok · [Estratégia de Prospecção Ativa e Venda Diária de Websites](tiktok/2026-09-10_estrategia-de-prospeccao-ativa-e-venda-diaria-de-websites_7683977350891326741.md) · `cold-call` `prospeccao-ativa` `venda-de-sites` `aquisicao-de-clientes` `freelance` `webdesign` · baixa/alta/media · —
 - 2026-09-10 · tiktok · [Fluxo de prospecção internacional e criação de sites com IA](tiktok/2026-09-10_fluxo-de-prospeccao-internacional-e-criacao-de-sites-com-ia_7683906887502433556.md) · `prospeccao-ativa` `cold-email` `lead-generation` `web-scraping` `freelance-internacional` `lovable` · baixa/media/baixa · —
 - 2026-09-10 · tiktok · [Prospecção e venda de sites para negócios locais nos EUA](tiktok/2026-09-10_prospeccao-e-venda-de-sites-para-negocios-locais-nos-eua_7681851703607463188.md) · `prospeccao-ativa` `venda-de-sites` `freelance-internacional` `cold-outreach` `mercado-exterior` · baixa/media/baixa · —
