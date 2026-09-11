@@ -23,7 +23,7 @@ Apresentação de um fluxo de prospecção nos EUA combinando raspagem de leads,
 Demonstração em slides de prospecção ativa de pequenas empresas nos EUA pelo Google Maps para venda de sites em dólar.
 
 ## [Script de Cold Calling para Venda de Sites no Mercado Internacional](../tiktok/2026-09-10_script-de-cold-calling-para-venda-de-sites-no-mercado-intern_7683167461994220808.md)
-2026-09-10 · tiktok · SaaS baixa · cliente alta · estudo media · triagem — · `cold-calling` `prospeccao-ativa` `vendas-freelance` `clientes-internacionais` `web-development`
+2026-09-10 · tiktok · SaaS baixa · cliente alta · estudo media · triagem apply_client · `cold-calling` `prospeccao-ativa` `vendas-freelance` `clientes-internacionais` `web-development`
 
 Script prático de prospecção fria para vender sites a pequenos negócios internacionais por valor fechado único.
 

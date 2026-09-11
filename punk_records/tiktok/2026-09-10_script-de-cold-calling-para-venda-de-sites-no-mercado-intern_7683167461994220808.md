@@ -5,8 +5,8 @@ external_id: "7683167461994220808"
 canonical_url: "https://www.tiktok.com/@code.nog/video/7683167461994220808"
 channel: "Code Nog"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["cold-calling", "prospeccao-ativa", "vendas-freelance", "clientes-internacionais", "web-development"]
 applicability:
   saas_pessoal: baixa
