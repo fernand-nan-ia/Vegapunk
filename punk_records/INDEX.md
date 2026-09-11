@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 64 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 35 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -179,6 +179,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-11 · youtube · [Vagner Mazzeo: Google Ads de cliente real montado do zero com Claude Code (site + ads por R$ 5.000)](youtube/2026-09-11_vagner-mazzeo-google-ads-de-cliente-real-montado-do-zero-com_KUf-vS_gSZo.md) · `google-ads` `claude-code` `dataforseo` `landing-page-por-anuncio` `palavras-chave` `google-ads-editor` `gtm-conversao` `precificacao-servico` · baixa/alta/alta · —
 - 2026-09-11 · tiktok · [TikTok (MXC Digital): site bonito feito só com IA sem sitemap, robots.txt e llms.txt é vitrine escondida](tiktok/2026-09-11_tiktok-mxc-digital-site-bonito-feito-so-com-ia-sem-sitemap-r_7679994027420208391.md) · `seo-tecnico` `sitemap-xml` `robots-txt` `llms-txt` `site-gerado-por-ia` `indexacao-google` `agencia-digital` · media/alta/baixa · —
 - 2026-09-11 · document · [Grupo Code Makers (WhatsApp, 679 membros): preços praticados, limite de disparo e abordagens que converteram](document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md) · `prospeccao-fria` `preco-de-mercado` `venda-de-sites` `negocio-local` `ban-whatsapp` `dado-de-campo` `objecoes` `hospedagem-dominio` · baixa/alta/alta · apply_client
 - 2026-09-11 · document · [Cofre de Abordagens (MazyOS): 50 mensagens de prospecção, 100 fichas de nicho e o plano de 14 dias](document/2026-09-11_cofre-de-abordagens-mazyos-50-mensagens-de-prospeccao-100-fi_16284fb93b86.md) · `prospeccao-fria` `negocio-local` `scripts-de-abordagem` `follow-up` `objecoes` `cold-email` `instagram-dm` `cadencia-multicanal` · baixa/alta/alta · apply_client
