@@ -5,8 +5,8 @@ external_id: "16284fb93b86"
 canonical_url: "cofre-de-abordagens.pdf"
 channel: "documento pdf"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["prospeccao-fria", "negocio-local", "scripts-de-abordagem", "follow-up", "objecoes", "cold-email", "instagram-dm", "cadencia-multicanal"]
 applicability:
   saas_pessoal: baixa

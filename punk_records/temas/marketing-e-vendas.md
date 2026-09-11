@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Cofre de Abordagens (MazyOS): 50 mensagens de prospecção, 100 fichas de nicho e o plano de 14 dias](../document/2026-09-11_cofre-de-abordagens-mazyos-50-mensagens-de-prospeccao-100-fi_16284fb93b86.md)
-2026-09-11 · document · SaaS baixa · cliente alta · estudo alta · triagem — · `prospeccao-fria` `negocio-local` `scripts-de-abordagem` `follow-up` `objecoes` `cold-email`
+2026-09-11 · document · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `prospeccao-fria` `negocio-local` `scripts-de-abordagem` `follow-up` `objecoes` `cold-email`
 
 111 páginas de munição de prospecção: 50 mensagens codificadas em 6 canais, 100 fichas de nicho com dor, ticket e rota pronta, e um plano de 14 dias.
 
