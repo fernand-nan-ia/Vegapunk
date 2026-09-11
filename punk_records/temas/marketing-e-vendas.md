@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Grupo Code Makers (WhatsApp, 679 membros): preços praticados, limite de disparo e abordagens que converteram](../document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md)
+2026-09-11 · document · SaaS baixa · cliente alta · estudo alta · triagem — · `prospeccao-fria` `preco-de-mercado` `venda-de-sites` `negocio-local` `ban-whatsapp` `dado-de-campo`
+
+Dado de campo de 679 vendedores de site: vendas reais de R$ 120 a R$ 1.890, consenso em R$ 500-800 para LP simples e teto de 30-50 disparos/dia no WhatsApp.
 
 ## [Cofre de Abordagens (MazyOS): 50 mensagens de prospecção, 100 fichas de nicho e o plano de 14 dias](../document/2026-09-11_cofre-de-abordagens-mazyos-50-mensagens-de-prospeccao-100-fi_16284fb93b86.md)
 2026-09-11 · document · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `prospeccao-fria` `negocio-local` `scripts-de-abordagem` `follow-up` `objecoes` `cold-email`
