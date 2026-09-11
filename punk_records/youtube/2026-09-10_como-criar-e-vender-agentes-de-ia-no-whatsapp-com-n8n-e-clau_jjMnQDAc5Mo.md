@@ -5,8 +5,8 @@ external_id: "jjMnQDAc5Mo"
 canonical_url: "https://www.youtube.com/watch?v=jjMnQDAc5Mo"
 channel: "A Vizinhança"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["n8n", "whatsapp-api", "manychat", "openai", "agentes-ia", "vps-hosting", "ia-atendimento", "redis"]
 applicability:
   saas_pessoal: baixa

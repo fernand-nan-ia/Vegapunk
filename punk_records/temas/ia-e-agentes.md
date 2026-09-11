@@ -3,7 +3,7 @@
 _LLMs, Claude Code, agentes, MCP, prompts, benchmarks de modelos._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Como criar e vender agentes de IA no WhatsApp com n8n e Claude](../youtube/2026-09-10_como-criar-e-vender-agentes-de-ia-no-whatsapp-com-n8n-e-clau_jjMnQDAc5Mo.md)
-2026-09-10 · youtube · SaaS baixa · cliente alta · estudo media · triagem — · `n8n` `whatsapp-api` `manychat` `openai` `agentes-ia` `vps-hosting`
+2026-09-10 · youtube · SaaS baixa · cliente alta · estudo media · triagem apply_client · `n8n` `whatsapp-api` `manychat` `openai` `agentes-ia` `vps-hosting`
 
 Tutorial ensina a montar agentes de atendimento para WhatsApp usando n8n, ManyChat Pro e OpenAI, orquestrados por uma skill no Claude.
 
