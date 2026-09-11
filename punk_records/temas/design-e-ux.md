@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 13 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Claude Design em 5 níveis: do prompt solto ao design system reutilizável](../youtube/2026-09-10_claude-design-em-5-niveis-do-prompt-solto-ao-design-system-r_BKt3WKwAk8U.md)
-2026-09-10 · youtube · SaaS media · cliente alta · estudo alta · triagem — · `claude-design` `design-system` `referencia-visual` `iteracao` `ai-slop` `precificacao`
+2026-09-10 · youtube · SaaS media · cliente alta · estudo alta · triagem apply_client · `claude-design` `design-system` `referencia-visual` `iteracao` `ai-slop` `precificacao`
 
 Cinco níveis: prompt solto (AI slop), referência + iteração, design system reutilizável, ferramentas externas para imagem e por fim motion.
 

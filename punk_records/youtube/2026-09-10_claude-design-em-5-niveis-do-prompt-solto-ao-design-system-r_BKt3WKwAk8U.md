@@ -5,8 +5,8 @@ external_id: "BKt3WKwAk8U"
 canonical_url: "https://www.youtube.com/watch?v=BKt3WKwAk8U"
 channel: "Felipe Borges - Fala IA!"
 captured_at: 2026-09-10
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["claude-design", "design-system", "referencia-visual", "iteracao", "ai-slop", "precificacao", "motion-design", "identidade-visual"]
 applicability:
   saas_pessoal: media
