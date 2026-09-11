@@ -10,7 +10,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 34 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
-- 🎨 Design e UX — 13 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
+- 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
 - 📚 Carreira e aprendizado — 3 item(ns) → [temas/carreira-e-aprendizado.md](temas/carreira-e-aprendizado.md)
@@ -245,6 +245,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🎨 Design e UX
 
+- 2026-09-11 · tiktok · [TikTok: banco gratuito de elementos visuais prontos com botão de copiar direto para a IA](tiktok/2026-09-11_tiktok-banco-gratuito-de-elementos-visuais-prontos-com-botao_7671643736924835093.md) · `componentes-ui` `animacao-web` `landing-page` `claude-code` `ferramenta-gratuita` `biblioteca-de-efeitos` · media/alta/baixa · —
 - 2026-09-10 · youtube · [Claude Design em 5 níveis: do prompt solto ao design system reutilizável](youtube/2026-09-10_claude-design-em-5-niveis-do-prompt-solto-ao-design-system-r_BKt3WKwAk8U.md) · `claude-design` `design-system` `referencia-visual` `iteracao` `ai-slop` `precificacao` `motion-design` `identidade-visual` · media/alta/alta · apply_client
 - 2026-09-08 · tiktok · [Checklist de 20 itens para pedir ao Claude antes de publicar um site](tiktok/2026-09-08_checklist-de-20-itens-para-pedir-ao-claude-antes-de-publicar_7679462516988087559.md) · `venda-de-sites` `checklist` `seo` `landing-page` `pre-lancamento` `claude-code` `conversao` · media/alta/media · apply_client
 - 2026-09-08 · youtube · [Sites animados com Claude: banco de referências visuais e prompt único que tira a cara de IA da página](youtube/2026-09-08_sites-animados-com-claude-banco-de-referencias-visuais-e-pro_hCD7HhpszfA.md) · `claude-code` `sites-animados` `referencia-visual` `motion-design` `animacoes-css` `prompt-de-design` `venda-de-sites` `identidade-visual` · media/alta/media · apply_client
