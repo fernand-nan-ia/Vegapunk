@@ -2925,3 +2925,761 @@ Dor nº1, na língua do dono: "Reserva por Wh
 ## Notas manuais
 
 <!-- PRESERVADO EM REGENERAÇÃO: tudo abaixo desta linha é mantido. Anote livremente. -->
+
+
+### O ENSINAMENTO DESTILADO (Claude Code, 11/09/2026)
+
+O que é transferível do Cofre, separado do que é vitrine do produto.
+
+**As cinco linhas que regem toda mensagem**
+1. **Curto** — cabe numa tela de celular. Balão grande dispara o "olfato de vendedor" antes da primeira palavra ser lida.
+2. **Humano** — zero travessão, zero emoji decorativo, zero lista simétrica. Esta é a definição operacional de "sem cara de IA": não é estilo, é a ausência desses três traços.
+3. **Uma pergunta só** — mensagem que pede duas coisas não recebe nenhuma.
+4. **O negócio dele, nunca a sua ferramenta** — o dono paga o resultado e o tempo devolvido; como você produz é assunto seu.
+5. **A primeira mensagem nunca vende** — ela abre conversa. A venda acontece na call ou na visita.
+
+**A separação atirador × alvo.** O que é seu (nome, cidade, WhatsApp, "sua área em 3 palavras", 2–3 presets de oferta) se preenche UMA vez e nunca mais. A cada envio mudam só `[NOME]`, `[NEGOCIO]` e a `[OBSERVACAO]`. A observação é o único campo impossível de pré-salvar, leva 30 segundos, e é literalmente o que separa abordagem de disparo. Sem ela, é spam com nome trocado.
+
+**"Sua área em 3 palavras" nunca cita ferramenta.** Calibragens do próprio produto: "sites que vendem", "presença digital de bairro", "agenda cheia no WhatsApp". É a mesma tese do vídeo do A Vizinhança já no vault — *não dar nome à solução* — chegando por outro caminho: quem nomeia a categoria vira cotação.
+
+**Limites anti-ban, que são teto e não meta.** 20 a 30 abordagens novas por dia, uma a uma, adaptadas. Cinco bem feitas valem mais que trinta coladas. Nada de lista comprada nem disparo em massa — é o volume cego que devolve zero resposta e custa o número. E-mail só B2B, endereço comercial, identificação real, parar quando pedirem. Espalhar os envios ao longo do dia e responder rápido quem responde: número que conversa é número que o WhatsApp confia.
+
+**A armadilha nomeada (OBJ-07).** À pergunta "o que exatamente você faz?", responder com lista de serviços mata a conversa. A saída: vender o resultado numa frase, admitir que a entrega "depende do caso" — verdade que gera respeito — e devolver a pergunta, porque quem faz a próxima pergunta conduz. *"Quanto maior a lista, menor a confiança."*
+
+**Objeção é corrimão, não parede.** É nela que o dono se segura enquanto decide se confia em você. Responder curto, devolver pergunta, conduzir para a conversa. E ler a objeção provável do setor ANTES de abordar — sem recitá-la antes de ela existir.
+
+**Áudio.** 30 a 45 segundos, em pé, sorrindo de leve (muda a voz de verdade), uma tomada só, sem ler palavra por palavra. Passou de um minuto, regravar. Só depois de um "pode mandar" ou dentro de conversa aberta — áudio surpresa para número gelado é loteria. O argumento: ninguém acredita que um robô gravou.
+
+**A anatomia de uma ficha de nicho** (o formato vale mais que as 100 fichas): dor nº1 **na língua literal do dono**, não em jargão de marketing · a oferta de entrada específica daquele nicho ("venda primeiro") · faixa de ticket · onde achar em volume · facilidade de acesso ao decisor de 1/3 a 3/3 · **sinal de quente**, o comportamento observável que prova que a dor está acontecendo agora · e a rota em códigos.
+
+**O que o produto declara que NÃO faz.** Não ensina a conduzir a call nem a montar proposta — isso é o Kit de Prospecção e a Trilha, produtos separados do mesmo autor. Não é disparador. Não reabre cliente já atendido. Não garante resposta. O que ele elimina é a página em branco.
+
+**A frase que o próprio produto elege:** *"copiar é permitido, colar sem adaptar é proibido."*
+
+---
+
+### ⚠️ Texto integral truncado em 150.000 caracteres
+
+A extração cortou no meio do Setor 9 (Educação & Cursos). Ficaram de fora do bloco acima: o restante dos nichos dos setores 9 e 10, a tabela de **Combos por Setor** e o **Plano de 14 Dias**. O trecho faltante (39.509 caracteres) está reproduzido na íntegra ao final desta seção, para o registro ficar completo.
+
+**O que há de ensinamento no trecho cortado:**
+
+*Combos por setor* — tabela que cruza os 10 setores com: abrir com / sequência de vácuo / objeção típica / e-mail alternativo. A coluna de objeção é descrita como **vacina**. Saúde abre em WA-04 (ou GK-01 se a secretária atender), objeção OBJ-01. Estética abre em DM-01/DM-03, objeção OBJ-02. Serviços Profissionais abre em EM-02, objeção OBJ-07. Automotivo abre em WA-13, porque visita presencial rende muito. Comércio de Nicho: objeção típica OBJ-09.
+
+*Plano de 14 Dias* — cadência multicanal por alvo: **D1** primeira mensagem no canal principal · **D3** toque leve no segundo canal (seguir, curtir, responder um story com algo genuíno) · **D5** primeiro follow-up (FU-01) · **D9** novo ângulo, dado do nicho ou prova social real (FU-02/FU-03) · **D14** a última mensagem, digna (FU-05). Três regras: um alvo por canal de cada vez, mas 10 a 20 em paralelo em dias diferentes, dentro do limite anti-ban; **o segundo canal não repete a mensagem do primeiro** — ele só te torna familiar, porque ninguém compra de estranho e em dois toques você já não é um; e depois do D14, silêncio de verdade, com reabertura só por motivo novo (FU-06) e nunca antes de 30 dias. Respondeu em qualquer dia? Sai do plano e vai para a conversa.
+
+---
+
+### Trecho faltante, na íntegra
+
+```
+atsApp na mão: dupla marca, desmarca
+em cima da hora, e a quadra fica vazia sem eu nem saber." Venda primeiro: agenda de
+reservas online com confirmação (horário desmarcado volta pro ar sozinho).
+← sumário
+N-067 — Escola de dança
+← sumário
+N-068 — Arena de beach tennis / societyN I C H O S  —  S E T O R  7 :  F I T N E S S  &  E S P O R T E  ( N - 0 6 1  A  N - 0 7 0 )
+MAZYOS ·Cofre de Abordagens 90 / 111
+◆     C O P I E  D A Q U I
+Sua quadra não fica vazia por falta de jogador, fica vazia por burocracia: o 
+horário desmarcado às 16h50 morre no seu WhatsApp em vez de voltar pro ar. 
+Reserva manual é dinheiro evaporando por mensagem.
+Ticket de entrada: R$ 800 a R$ 2.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (beach tennis explodiu em toda cidade), arenas novas em terrenos de avenida,
+grupos de jogadores. Facilidade de entrada: 3/3 (dono novo no ramo, aberto a ideia).
+Sinal de quente: planilha ou caderno de reservas aparecendo em story. Comece com:
+WA-04; se vácuo, FU-01. Objeção provável: OBJ-09.
+◆
+Dor nº1, na língua do dono: "O pai cancela porque não vê o filho evoluindo. Ele deixa
+o menino aqui e vai embora, aí no fim do mês acha que é só recreação." Venda
+primeiro: canal de comunicação com os pais (fotos, evolução, agenda de jogos) + página
+de matrícula.
+◆     C O P I E  D A Q U I
+O pai não cancela porque o filho parou de gostar. Cancela porque ELE p arou 
+de ver valor: quem não recebe notícia da evolução do filho acha que paga p or 
+recreação. Mostrar a evolução é reter a mensalidade.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+campos society e clubes de bairro, Instagram local, grupos de pais e de bairro.
+Facilidade de entrada: 3/3 (o professor-dono no campo, fim de treino). Sinal de
+quente: dezenas de alunos e comunicação com os pais só no grupo bagunçado de avisos.
+Comece com: WA-11 (pai de aluno é a ponte natural); se vácuo, FU-03. Objeção
+provável: OBJ-02.
+◆
+← sumário
+N-069 — Escola de futebol infantilN I C H O S  —  S E T O R  7 :  F I T N E S S  &  E S P O R T E  ( N - 0 6 1  A  N - 0 7 0 )
+MAZYOS ·Cofre de Abordagens 91 / 111
+Dor nº1, na língua do dono: "Todo mundo diz que precisa de yoga. Quase ninguém
+aparece: a pessoa adia a primeira aula pra quando a vida acalmar." Venda primeiro:
+página com aula experimental em horários visíveis e primeira semana guiada (o
+empurrão que a boa intenção precisa).
+◆     C O P I E  D A Q U I
+Seu aluno não falta por desinteresse, falta por adiamento: "quando a v ida 
+acalmar, eu começo". A vida não acalma. Uma primeira aula marcável em dois 
+cliques vence o adiamento que sua arte não vence.
+Ticket de entrada: R$ 400 a R$ 1.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (yoga + cidade), espaços de bem-estar compartilhados, parques (aulas abertas
+são vitrine). Facilidade de entrada: 3/3. Sinal de quente: engajamento alto em
+conteúdo inspiracional e agenda de aulas escondida. Comece com: DM-03; se vácuo,
+FU-01. Objeção provável: OBJ-06.
+◆
+Gate do setor conferido: 10 dores distintas (comparação de matrícula no celular,
+distribuição de horário, porta de entrada inexistente, régua de preço errada, pergunta
+repetida de vaga, vergonha do iniciante, plateia que não converte, reserva manual que
+evapora, pai sem notícia, adiamento do aluno) e ganchos de estruturas variadas.
+← sumário
+N-070 — Estúdio de yogaMAZYOS ·Cofre de Abordagens 92 / 111
+Setor de vínculo emocional (o cliente decide como "mãe e pai de pet", não como
+consumidor) e recorrência natural. Regra do setor: quem prova cuidado e constância
+fica com o cliente pra sempre; sua entrada é quase sempre organizar recorrência e
+confiança.
+◆
+Dor nº1, na língua do dono: "O cliente que devia ser semanal vem quando lembra.
+Terça e quarta minha banheira fica ociosa." Venda primeiro: agendamento com plano
+semanal ou quinzenal e lembrete automático (a recorrência que o caderno não sustenta).
+◆     C O P I E  D A Q U I
+Banho de cachorro é o serviço mais recorrente do comércio, e sua agenda vi ve 
+de improviso: o cliente "semanal" que vem quando lembra é uma assinatura q ue 
+ninguém formalizou.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps (todo bairro tem três), Instagram local, ruas comerciais residenciais.
+Facilidade de entrada: 3/3 (dono no balcão). Sinal de quente: movimento
+concentrado no sábado e ociosidade visível no meio da semana. Comece com: WA-01;
+se vácuo, FU-01. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "O tutor some até o bicho adoecer. Vacina atrasada aqui
+é rotina, e a consulta de prevenção quase não existe." Venda primeiro: cadastro de
+pacientes com lembrete de vacina e retorno + página de agendamento.
+Nichos — Setor 8: Pet (N-071 a N-080)
+← sumário
+N-071 — Pet shop com banho e tosa
+← sumário
+N-072 — Clínica veterináriaN I C H O S  —  S E T O R  8 :  P E T  ( N - 0 7 1  A  N - 0 8 0 )
+MAZYOS ·Cofre de Abordagens 93 / 111
+◆     C O P I E  D A Q U I
+Sua agenda depende de emergência porque a prevenção não tem quem puxe: 
+nenhum tutor anota a próxima vacina, e a clínica que lembra por ele fatura o 
+ano inteiro, não só a doença.
+Ticket de entrada: R$ 1.000 a R$ 2.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps, Instagram local, parcerias visíveis com pet shops e ONGs. Facilidade de
+entrada: 2/3 (recepção filtra; o veterinário dono decide). Sinal de quente: clínica
+cheia de emergência e nenhum sistema de retorno programado. Comece com: WA-04;
+se vácuo, GK-01. Objeção provável: OBJ-01.
+◆
+Dor nº1, na língua do dono: "O tutor quer foto, vídeo, prova de que o bicho tá bem.
+Minha equipe passa o dia mandando WhatsApp em vez de cuidar." Venda primeiro:
+página de transparência (rotina do dia, atualização organizada pros tutores) + reserva
+online.
+◆     C O P I E  D A Q U I
+Seu cliente não compra hospedagem, compra a certeza de que o filho dele tá  
+bem. Hoje essa certeza custa sua equipe inteira pendurada no WhatsApp. 
+Rotina publicada acalma tutor sem parar sua operação.
+Ticket de entrada: R$ 800 a R$ 1.800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (creche pet + cidade), Google Maps, bairros de classe média alta. Facilidade
+de entrada: 3/3. Sinal de quente: feriado com fila de espera e reserva anotada em
+planilha. Comece com: DM-03; se vácuo, FU-02. Objeção provável: OBJ-06.
+◆
+Dor nº1, na língua do dono: "Só me chamam quando o cachorro já destruiu a casa.
+Ninguém me procura antes do problema." Venda primeiro: página que reposiciona o
+serviço (educação de filhote, não conserto de emergência) + agendamento de avaliação.
+← sumário
+N-073 — Hotel e creche pet
+← sumário
+N-074 — AdestradorN I C H O S  —  S E T O R  8 :  P E T  ( N - 0 7 1  A  N - 0 8 0 )
+MAZYOS ·Cofre de Abordagens 94 / 111
+◆     C O P I E  D A Q U I
+Você é chamado como bombeiro e deveria ser contratado como escola: o t utor 
+não sabe que adestramento começa no filhote, então te procura depois d o so fá 
+destruído, pechinchando o conserto.
+Ticket de entrada: R$ 400 a R$ 1.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (adestramento + cidade), parcerias com vets e pet shops, grupos de
+condomínio. Facilidade de entrada: 3/3. Sinal de quente: vídeos de resultado
+impressionantes e agenda vivendo de indicação avulsa. Comece com: DM-01; se vácuo,
+FU-03. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "Vivo de passeio avulso. O cliente contrata hoje, some
+amanhã, e minha renda nunca vira fixa." Venda primeiro: página de pacotes mensais
+por frequência (a assinatura que transforma bico em renda).
+◆     C O P I E  D A Q U I
+Passeio avulso é bico; pacote mensal é salário. O tutor até pagaria o mês 
+fechado, mas ninguém ofereceu: sem pacote publicado, ele te chama como chama 
+um freela, quando sobra.
+Ticket de entrada: R$ 400 a R$ 800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+grupos de condomínio, Instagram de bairro, parques (eles se conhecem entre si).
+Facilidade de entrada: 3/3. Sinal de quente: agenda cheia em semana de sol e vazia
+na chuva (sintoma do avulso). Comece com: WA-11; se vácuo, FU-01. Objeção provável:
+OBJ-02.
+◆
+Dor nº1, na língua do dono: "O cliente compra comigo uma vez e no mês seguinte
+pede no aplicativo grandão, porque esqueceu que eu existo." Venda primeiro:
+assinatura de recompra (a ração chega antes de acabar) + canal de pedido fixo.
+← sumário
+N-075 — Dog walker (passeador)
+← sumário
+N-076 — Delivery de raçãoN I C H O S  —  S E T O R  8 :  P E T  ( N - 0 7 1  A  N - 0 8 0 )
+MAZYOS ·Cofre de Abordagens 95 / 111
+◆     C O P I E  D A Q U I
+Você não perde cliente pro preço do e-commerce, perde pro esquecimento: 
+ração acaba na quarta à noite e o app tá na mão dele. Assinatura que c hega 
+antes de acabar tira o gigante da jogada.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+pet shops de bairro com entrega, Google Maps, grupos de bairro. Facilidade de
+entrada: 3/3. Sinal de quente: moto de entrega própria e pedidos chegando por três
+canais bagunçados. Comece com: WA-02; se vácuo, FU-02. Objeção provável: OBJ-09.
+◆
+Dor nº1, na língua do dono: "Explicar o que é banho móvel toma mais tempo que o
+banho. O cliente não entende como funciona até ver." Venda primeiro: página que
+mostra o serviço em 30 segundos (fotos do trailer, como funciona, área de atendimento)
++ agenda por região.
+◆     C O P I E  D A Q U I
+Seu serviço é o mais cômodo do mercado pet e o menos compreendido: todo 
+primeiro contato vira aula de "como funciona". Uma página com o trailer 
+aberto em fotos faz essa aula por você, de graça.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram local, condomínios fechados (o habitat natural do serviço), indicação de
+síndicos. Facilidade de entrada: 3/3. Sinal de quente: rota desorganizada (hoje
+longe, amanhã perto) por falta de agenda por região. Comece com: WA-08; se vácuo,
+FU-04. Objeção provável: OBJ-04.
+◆
+Dor nº1, na língua do dono: "O tutor que mais precisa de mim, o de gato estressado,
+o idoso sem carro, é o que não sabe que atendimento em casa existe." Venda primeiro:
+página da modalidade (pra quem é, como funciona, área) + Google presença em
+"veterinário em casa".
+← sumário
+N-077 — Banho e tosa móvel
+← sumário
+N-078 — Veterinário em domicílioN I C H O S  —  S E T O R  8 :  P E T  ( N - 0 7 1  A  N - 0 8 0 )
+MAZYOS ·Cofre de Abordagens 96 / 111
+◆     C O P I E  D A Q U I
+Tem tutor deixando de vacinar o gato porque a viagem de caixinha é uma 
+guerra, e ele não sabe que você vai até a sala dele. Sua modalidade não te m 
+concorrência, tem desconhecimento.
+Ticket de entrada: R$ 800 a R$ 1.800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (vet + cidade), grupos de tutores de gato (comunidade fervorosa),
+condomínios. Facilidade de entrada: 3/3. Sinal de quente: agenda vivendo de
+indicação de cliente antigo, sem canal de entrada novo. Comece com: DM-01; se vácuo,
+FU-02. Objeção provável: OBJ-05.
+◆
+Dor nº1, na língua do dono: "Vivo de corrida avulsa de emergência. As clínicas do
+bairro precisam de transporte todo dia e a gente nunca formaliza nada." Venda
+primeiro: página B2B pra clínicas e pet shops (tabela de rotas, horários fixos) + canal
+de agendamento.
+◆     C O P I E  D A Q U I
+Enquanto você espera o tutor avulso, a clínica da esquina improvisa 
+transporte todo santo dia com o carro do funcionário. Seu melhor cliente é  
+uma empresa, e ela nunca recebeu uma proposta sua.
+Ticket de entrada: R$ 400 a R$ 900 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+clínicas veterinárias e pet shops (o prospect é o parceiro), grupos de pet da cidade.
+Facilidade de entrada: 3/3. Sinal de quente: carro adesivado rodando e nenhuma
+parceria fixa fechada. Comece com: WA-13 (visite as clínicas); se vácuo, FU-03.
+Objeção provável: OBJ-06.
+◆
+Dor nº1, na língua do dono: "O tutor lembra que eu existo três dias antes de viajar. Aí
+fecha desesperado com qualquer um, ou desiste da viagem." Venda primeiro: página
+de reserva antecipada (datas de feriado com agenda visível) + cadastro de clientes
+← sumário
+N-079 — Táxi dog
+← sumário
+N-080 — Pet sitterN I C H O S  —  S E T O R  8 :  P E T  ( N - 0 7 1  A  N - 0 8 0 )
+MAZYOS ·Cofre de Abordagens 97 / 111
+recorrentes.
+◆     C O P I E  D A Q U I
+Seu cliente decide a viagem com um mês de antecedência e procura pet s itter 
+na véspera. Quem aparece pra ele ANTES do feriado fecha a agenda inteira 
+enquanto os outros disputam o desespero de última hora.
+Ticket de entrada: R$ 400 a R$ 800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+grupos de tutores e condomínios, Instagram de bairro, parcerias com hotéis pet lotados
+(transbordo). Facilidade de entrada: 3/3. Sinal de quente: stories de "agenda do
+feriado fechada" (demanda maior que organização). Comece com: DM-02; se vácuo,
+FU-01. Objeção provável: OBJ-02.
+◆
+Gate do setor conferido: 10 dores distintas (assinatura não formalizada, prevenção
+sem puxador, prova de cuidado que consome equipe, bombeiro em vez de escola, avulso
+que não vira renda, esquecimento na recompra, serviço incompreendido, modalidade
+desconhecida, cliente B2B ignorado, procura de véspera) e ganchos sem estrutura
+repetida.MAZYOS ·Cofre de Abordagens 98 / 111
+Setor de matrícula (decisão comparada, quase sempre da família) e calendário forte:
+janeiro/fevereiro e julho/agosto são as janelas de ouro pra abordar, um mês ANTES da
+corrida de matrículas.
+◆
+Dor nº1, na língua do dono: "O aluno acha que aplicativo grátis substitui aula. Eu
+perco matrícula pro Duolingo e pra rede grande ao mesmo tempo." Venda primeiro:
+página de matrícula com método, turmas e prova de resultado local (o que nem o app
+nem a rede mostram).
+◆     C O P I E  D A Q U I
+Você não disputa aluno com a rede grande, disputa com a desistência: q uem 
+"estuda pelo aplicativo" é aluno adiado, não aluno perdido. Ele só precisa 
+ver um caminho com hora marcada e gente de verdade.
+Ticket de entrada: R$ 800 a R$ 2.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps, avenidas de bairro, Instagram local. Facilidade de entrada: 2/3
+(coordenador atende; dono decide). Sinal de quente: escola de anos de tradição com
+site que parece da fundação. Comece com: WA-06; se vácuo, FU-02. Objeção provável:
+OBJ-02.
+◆
+Dor nº1, na língua do dono: "O pai me procura depois do boletim, desesperado.
+Quando a nota sobe, some, até o próximo boletim." Venda primeiro: página de
+acompanhamento contínuo (pacote mensal, não SOS) + canal de contato fácil pra época
+de prova.
+Nichos — Setor 9: Educação & Cursos Locais
+(N-081 a N-090)
+← sumário
+N-081 — Escola de idiomas local
+← sumário
+N-082 — Reforço escolar / explicadoraN I C H O S  —  S E T O R  9 :  E D U C A Ç Ã O  &  C U R S O S  L O C A I S  ( N - 0 8 1  A  N - 0 9 0 )
+MAZYOS ·Cofre de Abordagens 99 / 111
+◆     C O P I E  D A Q U I
+Você é contratada como pronto-socorro e demitida como plano de saúde: o pai 
+paga o desespero do boletim e corta o acompanhamento que evitaria o próximo. 
+O pacote mensal se vende no dia da nota vermelha.
+Ticket de entrada: R$ 400 a R$ 1.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+grupos de pais e de bairro, portas de escola, Instagram local. Facilidade de entrada:
+3/3. Sinal de quente: agenda lotada em semana de prova e vazia no resto do bimestre.
+Comece com: WA-11 (pai de aluno indica); se vácuo, FU-01. Objeção provável: OBJ-06.
+◆
+Dor nº1, na língua do dono: "Todo mundo liga perguntando preço, como se
+autoescola fosse tudo igual. Aí escolhe a mais barata e se arrepende." Venda primeiro:
+página que mostra a diferença (aprovação, instrutores, carro, agenda flexível) antes do
+preço.
+◆     C O P I E  D A Q U I
+Enquanto sua recepção responde "quanto custa a primeira habilitação", o 
+aluno já ligou pra outras três. Preço por telefone é leilão; quem mostra a  
+diferença antes do preço sai do leilão.
+Ticket de entrada: R$ 800 a R$ 1.800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps, região do Detran, avenidas centrais. Facilidade de entrada: 2/3. Sinal
+de quente: recepção repetindo tabela de preço por telefone o dia inteiro. Comece com:
+WA-04; se vácuo, FU-02. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "O aluno compra o sonho, desiste no terceiro mês,
+quando a empolgação acaba e o calo aparece." Venda primeiro: jornada do aluno
+visível (níveis, apresentações, próximos marcos) + página de matrícula.
+← sumário
+N-083 — Autoescola
+← sumário
+N-084 — Escola de músicaN I C H O S  —  S E T O R  9 :  E D U C A Ç Ã O  &  C U R S O S  L O C A I S  ( N - 0 8 1  A  N - 0 9 0 )
+MAZYOS ·Cofre de Abordagens 100 / 111
+◆     C O P I E  D A Q U I
+Seu aluno não desiste da música, desiste no meio da travessia sem enxergar a 
+outra margem: quem vê o próximo marco (a primeira música inteira, a 
+apresentação) atravessa o mês do calo.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram local, lojas de instrumento (parceria de balcão), igrejas (celeiro de músicos).
+Facilidade de entrada: 3/3 (o professor-dono). Sinal de quente: entra aluno todo
+mês e sai aluno todo mês (balde furado). Comece com: DM-01; se vácuo, FU-03.
+Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "O aluno pergunta 'e depois do curso, arruma emprego?'
+e a gente responde no improviso." Venda primeiro: página de resultado (onde os
+formados estão, empresas parceiras, depoimentos autorizados) + matrícula.
+◆     C O P I E  D A Q U I
+Seu aluno não compra aula, compra a vida depois dela. Se a resposta pra "e  
+depois, arruma emprego?" vive no improviso da recepção, sua melhor 
+propaganda tá desempregada.
+Ticket de entrada: R$ 800 a R$ 2.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+centros comerciais populares, Google Maps, Instagram local. Facilidade de entrada:
+2/3. Sinal de quente: ex-alunos empregados de verdade e nenhum registro disso em
+lugar nenhum. Comece com: WA-08; se vácuo, FU-02. Objeção provável: OBJ-05.
+◆
+Dor nº1, na língua do dono: "A mãe pesquisa a escola inteira online antes de
+aparecer. Quem não mostra a rotina não recebe nem visita." Venda primeiro: página
+de apresentação com rotina, espaço e proposta pedagógica + agendamento de visita.
+← sumário
+N-085 — Curso técnico e profissionalizante local
+← sumário
+N-086 — Escola infantil particular (educação infantil e berçário)N I C H O S  —  S E T O R  9 :  E D U C A Ç Ã O  &  C U R S O S  L O C A I S  ( N - 0 8 1  A  N - 0 9 0 )
+MAZYOS ·Cofre de Abordagens 101 / 111
+◆     C O P I E  D A Q U I
+A decisão da matrícula começa às 23h, no celular da mãe, semanas antes da 
+visita. Escola que não mostra rotina online não perde a matrícula: perde a  
+chance de ser considerada.
+Ticket de entrada: R$ 1.200 a R$ 2.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+bairros residenciais, Google Maps, grupos de mães (onde a indicação nasce). Facilidade
+de entrada: 2/3 (diretora-dona; recepção agenda). Sinal de quente: estrutura boa e
+Instagram com 3 posts de festa junina por ano. Comece com: WA-06; se vácuo, GK-01.
+Objeção provável: OBJ-01.
+◆
+Dor nº1, na língua do dono: "Concorro com cursinho online de 30 reais por mês.
+Minha vantagem é o acompanhamento de perto, e ninguém fica sabendo." Venda
+primeiro: página que vende o acompanhamento (turma pequena, cobrança de rotina,
+simulados corrigidos) contra o mar de videoaula.
+◆     C O P I E  D A Q U I
+O aluno não rodou no concurso por falta de videoaula, sobrou videoaula. 
+Rodou por falta de cobrança. Acompanhamento de perto é exatamente o que o  
+online de 30 reais não entrega, e o seu tá escondido.
+Ticket de entrada: R$ 800 a R$ 1.800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+centros das cidades, Google Maps, grupos de concurseiros locais. Facilidade de
+entrada: 2/3. Sinal de quente: aprovados reais no mural da parede e nada disso na
+internet. Comece com: WA-04; se vácuo, FU-03. Objeção provável: OBJ-09.
+◆
+Dor nº1, na língua do dono: "O pai acha que é aula de joguinho. Matricula só quem já
+entendeu o valor, e quase ninguém entende sozinho." Venda primeiro: página que
+traduz o valor pro pai (o que a criança constrói, mostra de projetos) + aula experimental.
+← sumário
+N-087 — Preparatório para concursos e ENEM
+← sumário
+N-088 — Escola de robótica e programação infantilN I C H O S  —  S E T O R  9 :  E D U C A Ç Ã O  &  C U R S O S  L O C A I S  ( N - 0 8 1  A  N - 0 9 0 )
+MAZYOS ·Cofre de Abordagens 102 / 111
+◆     C O P I E  D A Q U I
+Você não vende aula de robótica, vende o filho apresentando um projeto que 
+ele construiu. Enquanto a página não mostrar isso ao pai, você seguirá 
+explicando "que não é videogame" um por um.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram local, colégios particulares (parceria extracurricular), shoppings com espaços
+kids. Facilidade de entrada: 3/3 (dono operador, geralmente da área tech). Sinal de
+quente: projetos incríveis das crianças morrendo no grupo interno dos pais. Comece
+com: WA-08; se vácuo, FU-04. Objeção provável: OBJ-04.
+◆
+Dor nº1, na língua do dono: "A turma de sábado abre com quatro alunas e cancela.
+Divulgo no desespero da semana anterior, toda vez." Venda primeiro: página de
+agenda de turmas com inscrição antecipada (lotação construída com semanas, não com
+véspera).
+◆     C O P I E  D A Q U I
+Sua turma não cancela por falta de interesse, cancela por falta de 
+antecedência: a aluna que fecharia o quórum ficou sabendo na quarta-feira. 
+Agenda publicada com um mês enche a cozinha.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (gastronomia + cidade), cozinhas-escola e espaços gastronômicos, lojas de
+confeitaria (mural). Facilidade de entrada: 3/3. Sinal de quente: stories de "últimas
+vagas pra sábado!" na quinta-feira (o desespero em flagrante). Comece com: DM-03; se
+vácuo, FU-01. Objeção provável: OBJ-06.
+◆
+Dor nº1, na língua do dono: "Toda matrícula nova vem por amiguinha. E a gente
+nunca organizou isso: a indicação acontece por sorte." Venda primeiro: programa de
+indicação simples (página + benefício claro pra quem indica) + matrícula online.
+← sumário
+N-089 — Cursos livres de culinária e confeitaria
+← sumário
+N-090 — Escola de artes para crianças (ballet, teatro, artes)N I C H O S  —  S E T O R  9 :  E D U C A Ç Ã O  &  C U R S O S  L O C A I S  ( N - 0 8 1  A  N - 0 9 0 )
+MAZYOS ·Cofre de Abordagens 103 / 111
+◆     C O P I E  D A Q U I
+Sua melhor vendedora é uma aluna de 7 anos chamando a amiguinha, e ela 
+trabalha de graça e sem meta. Estruturar a indicação que já acontece p or 
+sorte é dobrar a matrícula sem gastar um real em anúncio.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+bairros residenciais, grupos de mães, festivais e apresentações locais. Facilidade de
+entrada: 3/3 (a dona dá aula e administra). Sinal de quente: lista de espera informal
+numa modalidade e vagas sobrando em outra. Comece com: WA-11; se vácuo, FU-01.
+Objeção provável: OBJ-02.
+◆
+Gate do setor conferido: 10 dores distintas (aluno adiado pelo app, pronto-socorro do
+boletim, leilão de preço por telefone, desistência do terceiro mês, empregabilidade no
+improviso, pesquisa noturna da mãe, acompanhamento invisível, valor não traduzido
+pro pai, quórum de véspera, indicação por sorte) e ganchos de estruturas variadas.MAZYOS ·Cofre de Abordagens 104 / 111
+Setor de balcão: o dono está na loja, o concorrente é a internet inteira, e a vantagem
+local (pegar hoje, confiar em quem atende) quase nunca está comunicada. Regra do
+setor: visite (WA-13 rende), compre algo pequeno e observe o balcão antes de abordar.
+◆
+Dor nº1, na língua do dono: "Cliente reserva a peça pelo story e não aparece. A peça
+fica presa três dias e a venda morre duas vezes." Venda primeiro: catálogo com reserva
+paga ou por tempo limitado + vitrine organizada fora do story de 24h.
+◆     C O P I E  D A Q U I
+Toda "reserva pelo story" sem compromisso é uma peça presa no estoque e um a 
+cliente real dispensada. Reserva de verdade tem prazo e sinal, e quem 
+organiza isso vende a mesma peça uma vez só, pra quem leva.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (boutique + cidade), ruas de comércio de bairro, galerias de moda.
+Facilidade de entrada: 3/3 (a dona no caixa e no direct). Sinal de quente: story de
+"reservado ✔ " seguido de story de "voltou pra loja" (o ciclo da peça presa). Comece
+com: DM-03; se vácuo, FU-01. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "Quem sai do oftalmologista com a receita na mão fecha
+na primeira ótica que facilitar. Eu nem fico sabendo que a pessoa existia." Venda
+primeiro: presença no momento da receita (Google + página "traga sua receita" com
+orçamento por foto).
+Nichos — Setor 10: Comércio Local de Nicho
+(N-091 a N-100)
+← sumário
+N-091 — Boutique de roupas feminina
+← sumário
+N-092 — ÓticaN I C H O S  —  S E T O R  1 0 :  C O M É R C I O  L O C A L  D E  N I C H O  ( N - 0 9 1  A  N - 1 0 0 )
+MAZYOS ·Cofre de Abordagens 105 / 111
+◆     C O P I E  D A Q U I
+Seu cliente nasce dentro do consultório, com uma receita na mão e pressa d e 
+resolver. Nessa hora ele pesquisa "ótica perto de mim" uma única vez. Ou 
+você aparece ali, ou nunca soube que ele existiu.
+Ticket de entrada: R$ 800 a R$ 1.800 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps, entorno de clínicas oftalmológicas, centros comerciais. Facilidade de
+entrada: 2/3 (gerente ou dono no balcão). Sinal de quente: ótica tradicional a uma
+quadra do oftalmo sem nenhuma presença digital. Comece com: WA-02; se vácuo, FU-
+02. Objeção provável: OBJ-05.
+◆
+Dor nº1, na língua do dono: "O cliente pesquisa tudo online e só visita as lojas que
+apareceram. Meu showroom virou segredo do bairro." Venda primeiro: vitrine online
+dos ambientes (fotos boas por ambiente, faixa de preço) + WhatsApp de atendimento.
+◆     C O P I E  D A Q U I
+Ninguém mais "dá uma passada" pra conhecer loja de móveis: a visita é 
+agendada no sofá, véspera, pelo celular. Showroom que não existe online nã o 
+tá perdendo cliente, tá fora da lista de visitas.
+Ticket de entrada: R$ 1.000 a R$ 2.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+avenidas de decoração, Google Maps, Instagram local. Facilidade de entrada: 2/3.
+Sinal de quente: showroom caprichado e perfil com foto escura tirada contra a vitrine.
+Comece com: WA-06; se vácuo, FU-03. Objeção provável: OBJ-06.
+◆
+Dor nº1, na língua do dono: "Fora de data comemorativa, a loja hiberna. Flor virou
+produto de dia das mães." Venda primeiro: canal de ocasiões (lembrete de datas do
+cliente: aniversário, bodas) + pedido com entrega no mesmo dia.
+← sumário
+N-093 — Loja de móveis e decoração
+← sumário
+N-094 — FloriculturaN I C H O S  —  S E T O R  1 0 :  C O M É R C I O  L O C A L  D E  N I C H O  ( N - 0 9 1  A  N - 1 0 0 )
+MAZYOS ·Cofre de Abordagens 106 / 111
+◆     C O P I E  D A Q U I
+Flor não é produto de data, é produto de ocasião, e ocasião tem toda s emana: 
+aniversário, desculpa, saudade. Seu cliente não compra no resto do ano 
+porque ninguém lembra por ele.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Google Maps, entorno de hospitais e cartórios, Instagram local. Facilidade de
+entrada: 3/3. Sinal de quente: fila no dia das mães e silêncio absoluto nas outras 51
+semanas. Comece com: WA-08; se vácuo, FU-01. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "Cliente tem trauma de semijoia que descasca. Compra a
+primeira vez desconfiada, e se ninguém garantir nada, não volta." Venda primeiro:
+página com garantia explícita (banho, prazo, troca) e catálogo de presentes por ocasião.
+◆     C O P I E  D A Q U I
+Quem vende semijoia não disputa com outra loja, disputa com o trauma d a pe ça 
+que escureceu. Garantia escrita e visível transforma a desconfiada de hoje 
+na cliente de todas as datas.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+Instagram (semijoias + cidade, nicho grande de revendedoras), galerias, feiras de moda.
+Facilidade de entrada: 3/3. Sinal de quente: peças lindas no feed e política de
+garantia inexistente ou escondida. Comece com: DM-01; se vácuo, FU-04. Objeção
+provável: OBJ-04.
+◆
+Dor nº1, na língua do dono: "O cliente manda foto de uma lista rabiscada pra cinco
+lojas. Quem responde o orçamento primeiro leva a obra inteira." Venda primeiro:
+canal de orçamento rápido (lista por foto com resposta em prazo definido) + página com
+entrega.
+← sumário
+N-095 — Joalheria e semijoias
+← sumário
+N-096 — Loja de materiais de construçãoN I C H O S  —  S E T O R  1 0 :  C O M É R C I O  L O C A L  D E  N I C H O  ( N - 0 9 1  A  N - 1 0 0 )
+MAZYOS ·Cofre de Abordagens 107 / 111
+◆     C O P I E  D A Q U I
+A lista rabiscada que chegou no seu WhatsApp está em outras quatro lojas 
+agora. Nessa corrida não ganha o mais barato, ganha o primeiro orçamento 
+completo. Sua resposta demora quanto?
+Ticket de entrada: R$ 800 a R$ 2.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+avenidas de bairro em expansão, Google Maps, regiões com obras (a caçamba denuncia).
+Facilidade de entrada: 2/3 (dono ou gerente de balcão). Sinal de quente: balcão
+cheio e orçamentos de lista respondidos "quando dá". Comece com: WA-13; se vácuo,
+FU-02. Objeção provável: OBJ-09.
+◆
+Dor nº1, na língua do dono: "Cliente acha que caneca personalizada sai em uma hora.
+Encomenda em cima do prazo e a culpa do atraso vira minha." Venda primeiro:
+catálogo de personalizados com prazo real por item + encomenda com data combinada.
+◆     C O P I E  D A Q U I
+Seu problema não é o prazo da produção, é o prazo na cabeça do cliente: el e 
+encomenda quarta pra festa de sexta porque nada, em lugar nenhum, avisou o  
+contrário. Prazo publicado é briga que não acontece.
+Ticket de entrada: R$ 400 a R$ 1.000 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+ruas de comércio de bairro, Instagram (personalizados + cidade), grupos de festa e
+maternidade. Facilidade de entrada: 3/3. Sinal de quente: avisos de "não aceitamos
+encomendas pra esta semana" colados no balcão. Comece com: WA-04; se vácuo, FU-
+01. Objeção provável: OBJ-02.
+◆
+Dor nº1, na língua do dono: "O cliente pergunta qual whey tomar, eu dou aula de
+vinte minutos, e ele compra no site por dez reais a menos." Venda primeiro: canal de
+recompra fixa (o suplemento do mês chega antes de acabar) + página com kits por
+objetivo.
+← sumário
+N-097 — Papelaria e presentes personalizados
+← sumário
+N-098 — Loja de suplementosN I C H O S  —  S E T O R  1 0 :  C O M É R C I O  L O C A L  D E  N I C H O  ( N - 0 9 1  A  N - 1 0 0 )
+MAZYOS ·Cofre de Abordagens 108 / 111
+◆     C O P I E  D A Q U I
+Você forma o cliente e o site fatura o aluno. A revanche não é baixar preço, 
+é estar no "acabou": suplemento acaba todo mês, e quem chega primeiro nesse 
+momento leva a recompra do ano.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+entorno de academias, Google Maps, Instagram fitness local. Facilidade de entrada:
+3/3. Sinal de quente: balcão consultivo forte e nenhum sistema de recompra ou
+lembrete. Comece com: WA-01; se vácuo, FU-02. Objeção provável: OBJ-09.
+◆
+Dor nº1, na língua do dono: "O cliente morre de medo de deixarem o celular: os
+dados, as fotos, o banco. E precisa do aparelho pra ontem." Venda primeiro: página de
+confiança (quem conserta, lacre, prazo por conserto, aparelho acompanhado) +
+orçamento por foto.
+◆     C O P I E  D A Q U I
+Seu cliente não compara preço de tela, compara medo: quem vai mexer no 
+aparelho dele e quanto tempo ele fica sem o banco e as fotos. Quem responde 
+esses dois medos por escrito cobra melhor que a banca do centro.
+Ticket de entrada: R$ 500 a R$ 1.200 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+galerias e bancas de centro, Google Maps, Instagram local. Facilidade de entrada:
+3/3. Sinal de quente: técnico bom com fama no bairro e zero explicação de processo
+em lugar nenhum. Comece com: WA-02; se vácuo, FU-01. Objeção provável: OBJ-04.
+◆
+Dor nº1, na língua do dono: "O grupo de pedal da cidade decide onde todo mundo
+compra e revisa. Eu fico esperando cliente avulso na loja." Venda primeiro: presença
+nos grupos (página de revisão com agendamento + condição de grupo) e parceria com os
+pedais locais.
+← sumário
+N-099 — Assistência técnica de celular
+← sumário
+N-100 — Bike shop (loja e oficina de bicicletas)N I C H O S  —  S E T O R  1 0 :  C O M É R C I O  L O C A L  D E  N I C H O  ( N - 0 9 1  A  N - 1 0 0 )
+MAZYOS ·Cofre de Abordagens 109 / 111
+◆     C O P I E  D A Q U I
+Na sua cidade, a decisão de onde revisar a bike é tomada em grupo, no meio 
+do pedal de domingo. A loja que participa da conversa leva o grupo inteiro; 
+a que espera no balcão leva o furo de pneu.
+Ticket de entrada: R$ 600 a R$ 1.500 · o dono paga o resultado e o tempo devolvido,
+não as linhas de prompt; a faixa é piso de realidade, não teto. Onde achar em volume:
+grupos e coletivos de pedal, Instagram (bike + cidade), parques no fim de semana.
+Facilidade de entrada: 3/3 (dono pedala; fale a língua). Sinal de quente: oficina
+lotada pós-domingo e agendamento inexistente. Comece com: WA-11 (a cena é toda de
+indicação); se vácuo, FU-03. Objeção provável: OBJ-06.
+◆
+Gate do setor conferido: 10 dores distintas (peça presa por reserva, cliente que nasce
+no consultório, showroom fora da lista, ocasião esquecida, trauma da peça que descasca,
+corrida do orçamento de lista, prazo na cabeça do cliente, aluno formado que compra no
+site, medo de entregar o aparelho, decisão tomada em grupo) e ganchos sem estrutura
+repetida.MAZYOS ·Cofre de Abordagens 110 / 111
+Pra quem ainda tá no "eu nem sei o que eu tô vendendo, se é sistema, se é página": aqui a
+jogada já vem montada. Escolha o setor do seu alvo, abra com a mensagem indicada,
+siga a sequência se vier vácuo, e entre na conversa já sabendo qual objeção vai aparecer.
+Cada código abre a peça correspondente nos Pentes 1 a 6.
+SETOR ABRIR COM SE VIER
+VÁCUO
+OBJEÇÃO TÍPICA
+DO SETOR
+E-MAIL
+ALTERNATIVO
+1. Saúde &
+Clínicas
+WA-04 (GK-01 se a
+secretária atender)
+FU-01 →  FU-
+03 →  FU-05
+OBJ-01 (tudo por
+texto)
+EM-01 (pós-
+gatekeeper)
+2. Estética &
+Beleza
+DM-01 ou DM-03 FU-01 →  FU-
+04 →  FU-05
+OBJ-02 (tá caro) EM-05
+3. Alimentação WA-04 (WA-13 se
+for da sua região)
+FU-01 →  FU-
+02 →  FU-05
+OBJ-02 (tá caro) EM-05
+4. Serviços
+Profissionais
+EM-02 (WA-01 se
+tiver o número
+direto)
+FU-01 →  FU-
+02 →  FU-05
+OBJ-07 (o que
+você faz?)
+EM-06 (sequência
+3 toques)
+5. Casa &
+Reforma
+WA-01 (WA-09 com
+presente pronto)
+FU-01 →  FU-
+03 →  FU-05
+OBJ-02 (tá caro) EM-03
+6. Automotivo WA-13 (visita
+presencial rende
+muito)
+FU-02 →  FU-
+03 →  FU-05
+OBJ-05 (não
+tenho interesse)
+EM-05
+7. Fitness &
+Esporte
+DM-03 ou DM-01 FU-01 →  FU-
+02 →  FU-05
+OBJ-02 (tá caro) EM-05
+8. Pet WA-01 (DM-01 se o
+Instagram for forte)
+FU-01 →  FU-
+02 →  FU-05
+OBJ-02 (tá caro) EM-03
+9. Educação &
+Cursos
+WA-06 ou WA-08 FU-02 →  FU-
+03 →  FU-05
+OBJ-06 (me
+chama depois)
+EM-03
+10. Comércio de
+Nicho
+WA-13 (DM-03 pra
+quem vive de story)
+FU-01 →  FU-
+02 →  FU-05
+OBJ-09 (faço eu
+mesmo com IA)
+EM-05
+Combos Prontos — a jogada montada por
+setor
+← sumário
+A tabela dos 10 setoresC O M B O S  P R O N T O S  —  A  J O G A D A  M O N T A D A  P O R  S E T O R
+MAZYOS ·Cofre de Abordagens 111 / 111
+Como ler: a ficha do nicho (Parte 2) sempre manda; a linha do setor é o padrão pra
+quando você estiver sem a ficha na frente. A coluna de objeção é a vacina: releia a
+resposta ANTES de abordar, porque metade das vezes você consegue desarmá-la já na
+primeira conversa (sem recitar a resposta antes da objeção existir).
+◆
+Pra UM alvo, do primeiro contato ao encerramento digno. Respondeu em qualquer dia?
+Sai do plano e vai pra conversa (e da conversa pra call ou visita).
+DIA AÇÃO PEÇA
+D1 Primeira mensagem no canal principal do combo WA-xx ou DM-xx
+do setor
+D3 Toque leve no SEGUNDO canal (seguir o perfil, curtir um post,
+responder um story com algo genuíno)
+DM-02 ou DM-03
+D5 Primeiro follow-up no canal principal FU-01
+D9 Novo ângulo (dado do nicho ou prova social, o que você tiver de verdade) FU-02 ou FU-03
+D14 A última mensagem, digna FU-05
+Três regras do plano:
+1. Um alvo entra no plano de cada vez POR CANAL, mas você pode rodar 10 a 20 alvos
+em paralelo em dias diferentes (dentro do limite anti-ban da página "Leia isso antes").
+2. O segundo canal (D3) não repete a mensagem do primeiro; ele só te torna familiar.
+Ninguém compra de estranho, e em 2 toques você já não é um.
+3. Depois do D14, silêncio de verdade. O alvo só volta ao jogo pela reabertura com
+motivo novo (FU-06), nunca antes de 30 dias.
+◆
+O Cofre te leva até a conversa aberta e as objeções respondidas (Pente 6). Conduzir a call,
+montar proposta e fechar é o território do método: Kit de Prospecção e Trilha, dentro do
+MazyOS. Aqui é a munição; a anatomia da venda mora lá.
+← sumário
+O Plano de 14 Dias (a cadência multicanal completa)
+← sumário
+E depois que respondem?
+```
