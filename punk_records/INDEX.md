@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 64 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 44 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 32 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 33 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 26 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 13 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -176,6 +176,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 📣 Marketing e vendas
 
+- 2026-09-11 · document · [Cofre de Abordagens (MazyOS): 50 mensagens de prospecção, 100 fichas de nicho e o plano de 14 dias](document/2026-09-11_cofre-de-abordagens-mazyos-50-mensagens-de-prospeccao-100-fi_16284fb93b86.md) · `prospeccao-fria` `negocio-local` `scripts-de-abordagem` `follow-up` `objecoes` `cold-email` `instagram-dm` `cadencia-multicanal` · baixa/alta/alta · —
 - 2026-09-10 · tiktok · [Checklist básico de pós-lançamento de landing page: Open Graph, metadados e Search Console](tiktok/2026-09-10_checklist-basico-de-pos-lancamento-de-landing-page-open-grap_7678514322129063186.md) · `landing-page` `seo` `open-graph` `metadados` `google-search-console` · media/alta/media · apply_client
 - 2026-09-10 · tiktok · [Estratégia de Prospecção Ativa e Venda Diária de Websites](tiktok/2026-09-10_estrategia-de-prospeccao-ativa-e-venda-diaria-de-websites_7683977350891326741.md) · `cold-call` `prospeccao-ativa` `venda-de-sites` `aquisicao-de-clientes` `freelance` `webdesign` · baixa/alta/media · archive
 - 2026-09-10 · tiktok · [Fluxo de prospecção internacional e criação de sites com IA](tiktok/2026-09-10_fluxo-de-prospeccao-internacional-e-criacao-de-sites-com-ia_7683906887502433556.md) · `prospeccao-ativa` `cold-email` `lead-generation` `web-scraping` `freelance-internacional` `lovable` · baixa/media/baixa · archive
