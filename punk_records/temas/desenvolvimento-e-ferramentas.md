@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 67 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 68 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — como funcionam os deploys: atômicos, skew protection, contextos e permalinks](../article/2026-09-12_netlify-como-funcionam-os-deploys-atomicos-skew-protection-c_6069be7da79f.md)
+2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn`
+
+Deploy no Netlify é atômico: sobe só o que mudou e nada vai ao ar antes de tudo estar pronto.
 
 ## [Netlify Observability — o que dá para ver, por plano, e onde ele mente sobre tráfego](../article/2026-09-12_netlify-observability-o-que-da-para-ver-por-plano-e-onde-ele_d67398ab59a7.md)
 2026-09-12 · article · SaaS media · cliente media · estudo alta · triagem — · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain`
