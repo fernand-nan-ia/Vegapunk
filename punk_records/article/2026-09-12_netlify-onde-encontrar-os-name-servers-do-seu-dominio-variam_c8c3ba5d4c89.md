@@ -5,8 +5,8 @@ external_id: "c8c3ba5d4c89"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/netlify-name-servers"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["name-servers", "netlify-dns", "delegacao-de-dominio"]
 applicability:
   saas_pessoal: baixa
