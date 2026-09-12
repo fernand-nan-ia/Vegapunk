@@ -48,7 +48,7 @@ Um site pode ter vários domínios: um primário e o resto como alias, em Domain
 Ligar o Netlify DNS é Options > Set up Netlify DNS no domínio do site, ou, para domínio de fora, trocar os name servers no registrador depois de copiar os registros existentes.
 
 ## [Netlify DNS — por que usar, e por que NÃO usar quando já existem muitos registros](../article/2026-09-12_netlify-dns-por-que-usar-e-por-que-nao-usar-quando-ja-existe_fcf041b1e085.md)
-2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify-dns` `ssl-wildcard` `branch-deploy` `subdominio-autonomo` `dns-externo` `migracao-de-dns`
+2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `netlify-dns` `ssl-wildcard` `branch-deploy` `subdominio-autonomo` `dns-externo` `migracao-de-dns`
 
 Netlify DNS dá SSL wildcard automático, subdomínio por branch e prévia com domínio próprio.
 

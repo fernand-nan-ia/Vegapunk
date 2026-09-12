@@ -5,8 +5,8 @@ external_id: "fcf041b1e085"
 canonical_url: "https://docs.netlify.com/manage/domains/why-netlify-dns"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify-dns", "ssl-wildcard", "branch-deploy", "subdominio-autonomo", "dns-externo", "migracao-de-dns"]
 applicability:
   saas_pessoal: media
