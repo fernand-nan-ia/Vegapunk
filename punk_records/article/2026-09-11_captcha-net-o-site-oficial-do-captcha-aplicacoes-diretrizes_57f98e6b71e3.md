@@ -5,8 +5,8 @@ external_id: "57f98e6b71e3"
 canonical_url: "http://www.captcha.net/"
 channel: "captcha.net"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["captcha", "recaptcha", "anti-bot", "spam", "acessibilidade", "replay-attack", "seguranca-web", "formularios"]
 applicability:
   saas_pessoal: media
