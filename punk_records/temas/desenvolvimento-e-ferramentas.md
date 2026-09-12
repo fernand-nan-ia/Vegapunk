@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 71 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Netlify — como desligar o selo 'Powered by Netlify' (Project configuration > General)](../article/2026-09-12_netlify-como-desligar-o-selo-powered-by-netlify-project-conf_26c67ef0e45d.md)
-2026-09-12 · article · SaaS media · cliente alta · estudo media · triagem — · `netlify` `powered-by-netlify` `marca-de-terceiro` `site-de-cliente` `plano-free` `script-injetado-na-borda`
+2026-09-12 · article · SaaS media · cliente alta · estudo media · triagem apply_client · `netlify` `powered-by-netlify` `marca-de-terceiro` `site-de-cliente` `plano-free` `script-injetado-na-borda`
 
 O selo Powered by Netlify vem ligado em projeto público novo no plano Free e se desliga em Project configuration > General > Powered by Netlify badge, sem redeploy.
 

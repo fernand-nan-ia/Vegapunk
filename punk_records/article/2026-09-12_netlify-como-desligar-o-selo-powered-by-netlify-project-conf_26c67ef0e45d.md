@@ -5,8 +5,8 @@ external_id: "26c67ef0e45d"
 canonical_url: "https://docs.netlify.com/manage/projects/powered-by-netlify-badge"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "powered-by-netlify", "marca-de-terceiro", "site-de-cliente", "plano-free", "script-injetado-na-borda", "white-label"]
 applicability:
   saas_pessoal: media
