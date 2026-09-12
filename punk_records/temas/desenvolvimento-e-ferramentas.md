@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 76 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 77 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — subdomínio automático de deploy: prévia com o domínio do cliente, não com netlify.app](../article/2026-09-12_netlify-subdominio-automatico-de-deploy-previa-com-o-dominio_c9842eb6b8f7.md)
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `deploy-preview` `subdominio-de-deploy` `branch-deploy` `aprovacao-de-cliente` `netlify-dns`
+
+Troca deploy-preview-42--meusite.netlify.app por deploy-preview-42.empresa.com em todas as prévias.
 
 ## [Netlify — trazer domínio já registrado: adicionar ao site, apontar o DNS, esperar até 48h](../article/2026-09-12_netlify-trazer-dominio-ja-registrado-adicionar-ao-site-apont_db0f157d9556.md)
 2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns`

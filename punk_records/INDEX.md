@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 76 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 77 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — subdomínio automático de deploy: prévia com o domínio do cliente, não com netlify.app](article/2026-09-12_netlify-subdominio-automatico-de-deploy-previa-com-o-dominio_c9842eb6b8f7.md) · `netlify` `deploy-preview` `subdominio-de-deploy` `branch-deploy` `aprovacao-de-cliente` `netlify-dns` · baixa/alta/media · —
 - 2026-09-12 · article · [Netlify — trazer domínio já registrado: adicionar ao site, apontar o DNS, esperar até 48h](article/2026-09-12_netlify-trazer-dominio-ja-registrado-adicionar-ao-site-apont_db0f157d9556.md) · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns` · baixa/alta/media · —
 - 2026-09-12 · article · [Netlify — domain alias: vários domínios apontando para o mesmo site](article/2026-09-12_netlify-domain-alias-varios-dominios-apontando-para-o-mesmo_d5645f913d35.md) · `netlify` `domain-alias` `dominio-primario` `redirecionamento-de-dominio` · baixa/media/baixa · —
 - 2026-09-12 · article · [Netlify — ativar o Netlify DNS: pelo site já configurado ou delegando name servers](article/2026-09-12_netlify-ativar-o-netlify-dns-pelo-site-ja-configurado-ou-del_16dbdfda644f.md) · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador` · baixa/alta/media · —
