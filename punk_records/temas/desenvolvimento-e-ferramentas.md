@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 80 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 81 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — ativar IPv6 (só com Netlify DNS, e vem desligado)](../article/2026-09-12_netlify-ativar-ipv6-so-com-netlify-dns-e-vem-desligado_ba06f0207096.md)
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `ipv6` `netlify-dns` `configuracao-de-dominio`
+
+IPv6 vem desligado por padrão e só pode ser ativado em domínio sob Netlify DNS, no painel de DNS do domínio.
 
 ## [Netlify DNS — tipos de registro suportados e como adicionar (inclusive MX de e-mail)](../article/2026-09-12_netlify-dns-tipos-de-registro-suportados-e-como-adicionar-in_4dc8456d476a.md)
 2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `dns-records` `mx` `txt` `spf` `caa` `netlify-dns`
