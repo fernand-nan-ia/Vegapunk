@@ -5,8 +5,8 @@ external_id: "KUf-vS_gSZo"
 canonical_url: "https://www.youtube.com/watch?v=KUf-vS_gSZo"
 channel: "Vagner Mazzeo"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["google-ads", "claude-code", "dataforseo", "landing-page-por-anuncio", "palavras-chave", "google-ads-editor", "gtm-conversao", "precificacao-servico"]
 applicability:
   saas_pessoal: baixa

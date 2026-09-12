@@ -3,7 +3,7 @@
 _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Vagner Mazzeo: Google Ads de cliente real montado do zero com Claude Code (site + ads por R$ 5.000)](../youtube/2026-09-11_vagner-mazzeo-google-ads-de-cliente-real-montado-do-zero-com_KUf-vS_gSZo.md)
-2026-09-11 · youtube · SaaS baixa · cliente alta · estudo alta · triagem — · `google-ads` `claude-code` `dataforseo` `landing-page-por-anuncio` `palavras-chave` `google-ads-editor`
+2026-09-11 · youtube · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `google-ads` `claude-code` `dataforseo` `landing-page-por-anuncio` `palavras-chave` `google-ads-editor`
 
 Mazzeo monta ao vivo o Google Ads de um cliente real de climatização com Claude Code: contexto do cliente em pasta, skill própria, validação de volume no DataForSEO (US$ 0,18) e subagentes gerando uma landing page por an
 
