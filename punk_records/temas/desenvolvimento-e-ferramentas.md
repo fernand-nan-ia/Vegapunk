@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 74 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 75 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — domain alias: vários domínios apontando para o mesmo site](../article/2026-09-12_netlify-domain-alias-varios-dominios-apontando-para-o-mesmo_d5645f913d35.md)
+2026-09-12 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `netlify` `domain-alias` `dominio-primario` `redirecionamento-de-dominio`
+
+Um site pode ter vários domínios: um primário e o resto como alias, em Domain management > Production domains.
 
 ## [Netlify — ativar o Netlify DNS: pelo site já configurado ou delegando name servers](../article/2026-09-12_netlify-ativar-o-netlify-dns-pelo-site-ja-configurado-ou-del_16dbdfda644f.md)
 2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador`
