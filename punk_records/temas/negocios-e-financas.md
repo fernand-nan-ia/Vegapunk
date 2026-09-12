@@ -33,7 +33,7 @@ Asaas sem mensalidade nem adesão: Pix e boleto R$ 1,99 (R$ 0,99 nos 3 primeiros
 Asaas é uma plataforma financeira brasileira (Joinville, 2010, irmãos Contezini) voltada a cobrança automatizada de PMEs: Pix, boleto, cartão, conta PJ e ERP grátis, maquininha no celular, antecipação e nota fiscal.
 
 ## [Checkout Transparente do Mercado Pago: 10 benefícios e como se compara ao Checkout Pro](../article/2026-09-07_checkout-transparente-do-mercado-pago-10-beneficios-e-como-s_0ea26aecd6fc.md)
-2026-09-07 · article · SaaS alta · cliente media · estudo media · triagem — · `checkout-transparente` `mercado-pago` `checkout-pro` `conversao-de-checkout` `one-click-buy` `parcelamento`
+2026-09-07 · article · SaaS alta · cliente media · estudo media · triagem archive · `checkout-transparente` `mercado-pago` `checkout-pro` `conversao-de-checkout` `one-click-buy` `parcelamento`
 
 Checkout Transparente do Mercado Pago é uma API sem interface pronta: o pagamento acontece dentro do seu site, com a sua marca.
 

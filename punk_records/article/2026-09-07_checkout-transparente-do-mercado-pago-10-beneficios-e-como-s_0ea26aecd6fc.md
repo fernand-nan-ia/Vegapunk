@@ -5,8 +5,8 @@ external_id: "0ea26aecd6fc"
 canonical_url: "https://www.mercadopago.com.br/blog/checkout-transparente-mercado-pago"
 channel: "Equipe Mercado Pago · MercadoPago"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["checkout-transparente", "mercado-pago", "checkout-pro", "conversao-de-checkout", "one-click-buy", "parcelamento", "antifraude", "antecipacao-de-recebiveis"]
 applicability:
   saas_pessoal: alta
