@@ -5,8 +5,8 @@ external_id: "2c0de4366084"
 canonical_url: "https://www.asaas.com/precos-e-taxas"
 channel: "Asaas"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["asaas", "taxas-de-transacao", "pix", "boleto", "cartao-de-credito", "antecipacao-de-recebiveis", "custo-por-transacao", "nota-fiscal"]
 applicability:
   saas_pessoal: alta

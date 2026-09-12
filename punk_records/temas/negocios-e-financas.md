@@ -23,7 +23,7 @@ Home da Stripe Brasil: 135+ moedas e formas de pagamento, US$ 1,9 tri processado
 Stripe Brasil: 3,99% + R$ 0,39 por transação em cartão nacional, +2% em cartão internacional, boleto R$ 3,45 e Pix 1,19% (sob convite).
 
 ## [Preços e taxas do Asaas: Pix, boleto, cartão, Tap, antecipação e notificações](../article/2026-09-07_precos-e-taxas-do-asaas-pix-boleto-cartao-tap-antecipacao-e_2c0de4366084.md)
-2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `taxas-de-transacao` `pix` `boleto` `cartao-de-credito` `antecipacao-de-recebiveis`
+2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem apply_saas · `asaas` `taxas-de-transacao` `pix` `boleto` `cartao-de-credito` `antecipacao-de-recebiveis`
 
 Asaas sem mensalidade nem adesão: Pix e boleto R$ 1,99 (R$ 0,99 nos 3 primeiros meses), débito R$ 0,35 + 1,89%, crédito R$ 0,49 + 2,99% à vista (1,99% na promo) e até 3,29% em 13-21x.
 
