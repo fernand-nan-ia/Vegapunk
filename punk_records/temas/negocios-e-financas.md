@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 30 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — como os créditos funcionam: o limite rígido do Free tira o site do ar](../article/2026-09-12_netlify-como-os-creditos-funcionam-o-limite-rigido-do-free-t_b53e9d3c7168.md)
+2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify` `limite-rigido` `site-fora-do-ar` `recarga-automatica` `pacote-de-credito` `risco-operacional`
+
+Se o saldo de créditos zera, TODOS os projetos da conta são pausados e o visitante vê 'Site not available'.
 
 ## [Netlify — como os créditos funcionam nos planos Enterprise (mesma tabela dos planos self-serve)](../article/2026-09-12_netlify-como-os-creditos-funcionam-nos-planos-enterprise-mes_0d2c67bb789b.md)
 2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia`
