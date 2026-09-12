@@ -28,7 +28,7 @@ Dá para levar só docs.exemplo.com para o Netlify DNS e deixar exemplo.com onde
 Subdomínio aponta por CNAME para o endereço netlify.app; apex não aceita CNAME e usa ALIAS/ANAME/CNAME achatado para apex-loadbalancer.netlify.com, com registro A como alternativa pior.
 
 ## [Netlify — subdomínio automático de deploy: prévia com o domínio do cliente, não com netlify.app](../article/2026-09-12_netlify-subdominio-automatico-de-deploy-previa-com-o-dominio_c9842eb6b8f7.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `deploy-preview` `subdominio-de-deploy` `branch-deploy` `aprovacao-de-cliente` `netlify-dns`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem archive · `netlify` `deploy-preview` `subdominio-de-deploy` `branch-deploy` `aprovacao-de-cliente` `netlify-dns`
 
 Troca deploy-preview-42--meusite.netlify.app por deploy-preview-42.empresa.com em todas as prévias.
 

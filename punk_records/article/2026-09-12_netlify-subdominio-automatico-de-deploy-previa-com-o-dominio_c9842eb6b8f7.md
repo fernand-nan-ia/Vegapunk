@@ -5,8 +5,8 @@ external_id: "c9842eb6b8f7"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/configure-an-automatic-subdomain-for-deploys"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "deploy-preview", "subdominio-de-deploy", "branch-deploy", "aprovacao-de-cliente", "netlify-dns"]
 applicability:
   saas_pessoal: baixa
