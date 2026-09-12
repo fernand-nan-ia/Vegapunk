@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 70 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 71 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — como desligar o selo 'Powered by Netlify' (Project configuration > General)](article/2026-09-12_netlify-como-desligar-o-selo-powered-by-netlify-project-conf_26c67ef0e45d.md) · `netlify` `powered-by-netlify` `marca-de-terceiro` `site-de-cliente` `plano-free` `script-injetado-na-borda` `white-label` · media/alta/media · —
 - 2026-09-12 · article · [Netlify — caminhos para publicar um projeto, incluindo deploy vindo de ferramenta de IA](article/2026-09-12_netlify-caminhos-para-publicar-um-projeto-incluindo-deploy-v_3605bce190b0.md) · `netlify` `deploy` `git-deploy` `drag-and-drop` `netlify-cli` `agent-runners` `site-gerado-por-ia` · baixa/alta/media · apply_client
 - 2026-09-12 · article · [Netlify — acompanhar builds do time: fila, prioridade e minutos gastos](article/2026-09-12_netlify-acompanhar-builds-do-time-fila-prioridade-e-minutos_62f1f3b4fc7c.md) · `netlify` `build-minutes` `fila-de-build` `builds-concorrentes` `audit-log` `custo-de-build` · baixa/media/media · archive
 - 2026-09-12 · article · [Netlify — como funcionam os deploys: atômicos, skew protection, contextos e permalinks](article/2026-09-12_netlify-como-funcionam-os-deploys-atomicos-skew-protection-c_6069be7da79f.md) · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn` `log-de-deploy` · baixa/alta/alta · apply_client
