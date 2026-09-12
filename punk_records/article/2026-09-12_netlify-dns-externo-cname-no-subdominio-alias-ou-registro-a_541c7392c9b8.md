@@ -5,8 +5,8 @@ external_id: "541c7392c9b8"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["dns-externo", "cname", "registro-a", "apex-loadbalancer", "dominio-apex", "propagacao-de-dns"]
 applicability:
   saas_pessoal: baixa
