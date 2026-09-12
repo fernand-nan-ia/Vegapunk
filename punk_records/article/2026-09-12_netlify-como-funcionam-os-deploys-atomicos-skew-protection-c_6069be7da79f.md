@@ -5,8 +5,8 @@ external_id: "6069be7da79f"
 canonical_url: "https://docs.netlify.com/deploy/deploy-overview"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "deploy-atomico", "skew-protection", "deploy-preview", "branch-deploy", "cache-de-cdn", "log-de-deploy"]
 applicability:
   saas_pessoal: baixa

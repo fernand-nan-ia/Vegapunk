@@ -13,7 +13,7 @@ Assistente de entrada do Netlify: começar com agente de IA, template ou framewo
 Aba Builds do time: fila, capacidade concorrente, priorização com Build next e histórico de minutos por dia e por site, atualizado de hora em hora.
 
 ## [Netlify — como funcionam os deploys: atômicos, skew protection, contextos e permalinks](../article/2026-09-12_netlify-como-funcionam-os-deploys-atomicos-skew-protection-c_6069be7da79f.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn`
 
 Deploy no Netlify é atômico: sobe só o que mudou e nada vai ao ar antes de tudo estar pronto.
 
