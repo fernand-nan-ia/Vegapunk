@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 Mazzeo monta ao vivo o Google Ads de um cliente real de climatização com Claude Code: contexto do cliente em pasta, skill própria, validação de volume no DataForSEO (US$ 0,18) e subagentes gerando uma landing page por an
 
 ## [TikTok (MXC Digital): site bonito feito só com IA sem sitemap, robots.txt e llms.txt é vitrine escondida](../tiktok/2026-09-11_tiktok-mxc-digital-site-bonito-feito-so-com-ia-sem-sitemap-r_7679994027420208391.md)
-2026-09-11 · tiktok · SaaS media · cliente alta · estudo baixa · triagem — · `seo-tecnico` `sitemap-xml` `robots-txt` `llms-txt` `site-gerado-por-ia` `indexacao-google`
+2026-09-11 · tiktok · SaaS media · cliente alta · estudo baixa · triagem apply_client · `seo-tecnico` `sitemap-xml` `robots-txt` `llms-txt` `site-gerado-por-ia` `indexacao-google`
 
 Peça de venda da MXC Digital com um ponto técnico verdadeiro: site gerado por IA costuma sair sem sitemap.xml, robots.txt e llms.txt, e sem isso não é indexado — bonito, mas invisível no Google e para as IAs.
 
