@@ -3,7 +3,7 @@
 _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 70 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Netlify — caminhos para publicar um projeto, incluindo deploy vindo de ferramenta de IA](../article/2026-09-12_netlify-caminhos-para-publicar-um-projeto-incluindo-deploy-v_3605bce190b0.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `deploy` `git-deploy` `drag-and-drop` `netlify-cli` `agent-runners`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `netlify` `deploy` `git-deploy` `drag-and-drop` `netlify-cli` `agent-runners`
 
 Assistente de entrada do Netlify: começar com agente de IA, template ou framework; publicar de repositório Git com deploy automático a cada push, ou arrastar a pasta.
 

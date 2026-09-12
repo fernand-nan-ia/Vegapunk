@@ -5,8 +5,8 @@ external_id: "3605bce190b0"
 canonical_url: "https://docs.netlify.com/start/choose-your-path"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "deploy", "git-deploy", "drag-and-drop", "netlify-cli", "agent-runners", "site-gerado-por-ia"]
 applicability:
   saas_pessoal: baixa
