@@ -5,8 +5,8 @@ external_id: "7154b381be80"
 canonical_url: "https://docs.netlify.com/manage/monitoring/overview"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["netlify", "observability", "monitoramento", "indice-de-documentacao"]
 applicability:
   saas_pessoal: baixa

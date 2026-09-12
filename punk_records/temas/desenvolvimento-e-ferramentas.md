@@ -23,7 +23,7 @@ Deploy no Netlify é atômico: sobe só o que mudou e nada vai ao ar antes de tu
 Painel de requisições cruas do Netlify em produção: 404s, bots, crawler de IA, banda e funções.
 
 ## [Netlify — Observability: página de entrada do monitoramento de produção](../article/2026-09-12_netlify-observability-pagina-de-entrada-do-monitoramento-de_7154b381be80.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `netlify` `observability` `monitoramento` `indice-de-documentacao`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem discard · `netlify` `observability` `monitoramento` `indice-de-documentacao`
 
 Página-índice do monitoramento do Netlify.
 
