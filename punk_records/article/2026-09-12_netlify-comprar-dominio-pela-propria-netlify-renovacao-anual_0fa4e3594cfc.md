@@ -5,8 +5,8 @@ external_id: "0fa4e3594cfc"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/register-and-buy-a-domain"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "registro-de-dominio", "renovacao-de-dominio", "expiracao-de-dominio", "certificado-wildcard", "dns-gerenciado"]
 applicability:
   saas_pessoal: media

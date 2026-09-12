@@ -3,7 +3,7 @@
 _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Netlify — comprar domínio pela própria Netlify: renovação anual, e a janela de 60 dias se expirar](../article/2026-09-12_netlify-comprar-dominio-pela-propria-netlify-renovacao-anual_0fa4e3594cfc.md)
-2026-09-12 · article · SaaS media · cliente alta · estudo media · triagem — · `netlify` `registro-de-dominio` `renovacao-de-dominio` `expiracao-de-dominio` `certificado-wildcard` `dns-gerenciado`
+2026-09-12 · article · SaaS media · cliente alta · estudo media · triagem apply_client · `netlify` `registro-de-dominio` `renovacao-de-dominio` `expiracao-de-dominio` `certificado-wildcard` `dns-gerenciado`
 
 Comprar domínio pela Netlify já cria a zona DNS e o certificado wildcard sozinho.
 
