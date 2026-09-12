@@ -18,7 +18,7 @@ Aba Builds do time: fila, capacidade concorrente, priorização com Build next e
 Deploy no Netlify é atômico: sobe só o que mudou e nada vai ao ar antes de tudo estar pronto.
 
 ## [Netlify Observability — o que dá para ver, por plano, e onde ele mente sobre tráfego](../article/2026-09-12_netlify-observability-o-que-da-para-ver-por-plano-e-onde-ele_d67398ab59a7.md)
-2026-09-12 · article · SaaS media · cliente media · estudo alta · triagem — · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain`
+2026-09-12 · article · SaaS media · cliente media · estudo alta · triagem archive · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain`
 
 Painel de requisições cruas do Netlify em produção: 404s, bots, crawler de IA, banda e funções.
 

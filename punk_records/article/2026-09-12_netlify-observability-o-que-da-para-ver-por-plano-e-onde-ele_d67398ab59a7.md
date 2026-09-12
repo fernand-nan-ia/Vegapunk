@@ -5,8 +5,8 @@ external_id: "d67398ab59a7"
 canonical_url: "https://docs.netlify.com/manage/monitoring/observability/overview"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "observability", "monitoramento-de-producao", "trafego-de-bot", "crawler-de-ia", "log-drain", "limites-por-plano", "404"]
 applicability:
   saas_pessoal: media
