@@ -5,8 +5,8 @@ external_id: "db0f157d9556"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/bring-a-domain-to-netlify"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "dominio-existente", "propagacao-de-dns", "registro-a", "dig", "verificacao-de-dns"]
 applicability:
   saas_pessoal: baixa

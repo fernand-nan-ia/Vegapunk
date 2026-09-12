@@ -33,7 +33,7 @@ Subdomínio aponta por CNAME para o endereço netlify.app; apex não aceita CNAM
 Troca deploy-preview-42--meusite.netlify.app por deploy-preview-42.empresa.com em todas as prévias.
 
 ## [Netlify — trazer domínio já registrado: adicionar ao site, apontar o DNS, esperar até 48h](../article/2026-09-12_netlify-trazer-dominio-ja-registrado-adicionar-ao-site-apont_db0f157d9556.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem apply_client · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns`
 
 Adicionar o domínio em Domain management > Add a domain you already own, depois criar o registro que a tela Pending DNS verification indicar no provedor atual.
 
