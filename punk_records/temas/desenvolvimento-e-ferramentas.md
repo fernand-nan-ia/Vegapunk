@@ -13,7 +13,7 @@ Não existe lista fixa de name servers da Netlify: eles variam por domínio e ap
 IPv6 vem desligado por padrão e só pode ser ativado em domínio sob Netlify DNS, no painel de DNS do domínio.
 
 ## [Netlify DNS — tipos de registro suportados e como adicionar (inclusive MX de e-mail)](../article/2026-09-12_netlify-dns-tipos-de-registro-suportados-e-como-adicionar-in_4dc8456d476a.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `dns-records` `mx` `txt` `spf` `caa` `netlify-dns`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `dns-records` `mx` `txt` `spf` `caa` `netlify-dns`
 
 Netlify DNS aceita A, AAAA, CAA, CNAME, MX, NS, SPF (obsoleto, use TXT), SRV e TXT.
 

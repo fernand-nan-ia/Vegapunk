@@ -5,8 +5,8 @@ external_id: "4dc8456d476a"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/dns-records"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["dns-records", "mx", "txt", "spf", "caa", "netlify-dns", "email-no-dominio"]
 applicability:
   saas_pessoal: baixa
