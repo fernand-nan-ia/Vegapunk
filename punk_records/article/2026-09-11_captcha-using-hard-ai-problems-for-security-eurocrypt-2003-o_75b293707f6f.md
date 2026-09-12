@@ -5,8 +5,8 @@ external_id: "75b293707f6f"
 canonical_url: "https://www.cs.princeton.edu/~chazelle/courses/BIB/captcha-eurocrypt.pdf"
 channel: "von Ahn, Blum, Hopper, Langford — CMU / Princeton BIB"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["captcha", "problemas-dificeis-de-ia", "criptografia", "esteganografia", "teste-de-turing", "anti-bot", "prova-de-seguranca", "eurocrypt-2003"]
 applicability:
   saas_pessoal: baixa

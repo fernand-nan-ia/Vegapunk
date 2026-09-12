@@ -8,7 +8,7 @@ _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado aut
 Site oficial do CAPTCHA (CMU, 2000).
 
 ## [CAPTCHA: Using Hard AI Problems for Security (Eurocrypt 2003) — o paper que formalizou o CAPTCHA](../article/2026-09-11_captcha-using-hard-ai-problems-for-security-eurocrypt-2003-o_75b293707f6f.md)
-2026-09-11 · article · SaaS baixa · cliente nenhuma · estudo alta · triagem — · `captcha` `problemas-dificeis-de-ia` `criptografia` `esteganografia` `teste-de-turing` `anti-bot`
+2026-09-11 · article · SaaS baixa · cliente nenhuma · estudo alta · triagem archive · `captcha` `problemas-dificeis-de-ia` `criptografia` `esteganografia` `teste-de-turing` `anti-bot`
 
 Paper do Eurocrypt 2003 (von Ahn, Blum, Hopper, Langford) que formaliza o CAPTCHA: usar problema aberto de IA como premissa de segurança, no lugar de fatoração.
 
