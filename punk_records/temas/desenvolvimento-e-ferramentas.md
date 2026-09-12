@@ -28,7 +28,7 @@ Painel de requisições cruas do Netlify em produção: 404s, bots, crawler de I
 Página-índice do monitoramento do Netlify.
 
 ## [Netlify — status badges de deploy (não é o selo 'Powered by Netlify')](../article/2026-09-12_netlify-status-badges-de-deploy-nao-e-o-selo-powered-by-netl_ebdd96b3133c.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `status-badge` `deploy-status` `readme` `ci-cd` `monitoramento-de-deploy`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `netlify` `status-badge` `deploy-status` `readme` `ci-cd` `monitoramento-de-deploy`
 
 Status badge é a imagem de estado do deploy para colar no README, gerada em Project configuration > General > Status badges.
 

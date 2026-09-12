@@ -5,8 +5,8 @@ external_id: "ebdd96b3133c"
 canonical_url: "https://docs.netlify.com/manage/monitoring/status-badges"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "status-badge", "deploy-status", "readme", "ci-cd", "monitoramento-de-deploy"]
 applicability:
   saas_pessoal: baixa
