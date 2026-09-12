@@ -5,8 +5,8 @@ external_id: "c6afc775e393"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/delegate-a-standalone-subdomain"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify-dns", "subdominio-autonomo", "registro-ns", "delegacao-de-subdominio", "ssl-wildcard"]
 applicability:
   saas_pessoal: baixa

@@ -18,7 +18,7 @@ IPv6 vem desligado por padrão e só pode ser ativado em domínio sob Netlify DN
 Netlify DNS aceita A, AAAA, CAA, CNAME, MX, NS, SPF (obsoleto, use TXT), SRV e TXT.
 
 ## [Netlify — delegar só um subdomínio, mantendo o domínio principal onde está](../article/2026-09-12_netlify-delegar-so-um-subdominio-mantendo-o-dominio-principa_c6afc775e393.md)
-2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard`
+2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem archive · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard`
 
 Dá para levar só docs.exemplo.com para o Netlify DNS e deixar exemplo.com onde está, desde que o registrador do apex aceite registros NS para subdomínio.
 
