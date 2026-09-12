@@ -5,8 +5,8 @@ external_id: "3d00cb12d6ba"
 canonical_url: "https://docs.netlify.com/manage/domains/get-started-with-domains"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "dominio-personalizado", "dns", "apex-vs-subdominio", "arvore-de-decisao"]
 applicability:
   saas_pessoal: baixa

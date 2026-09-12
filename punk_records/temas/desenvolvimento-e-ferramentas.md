@@ -53,7 +53,7 @@ Ligar o Netlify DNS é Options > Set up Netlify DNS no domínio do site, ou, par
 Netlify DNS dá SSL wildcard automático, subdomínio por branch e prévia com domínio próprio.
 
 ## [Netlify — assistente de domínios: as perguntas que definem o caminho de configuração](../article/2026-09-12_netlify-assistente-de-dominios-as-perguntas-que-definem-o-ca_3d00cb12d6ba.md)
-2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify` `dominio-personalizado` `dns` `apex-vs-subdominio` `arvore-de-decisao`
+2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem archive · `netlify` `dominio-personalizado` `dns` `apex-vs-subdominio` `arvore-de-decisao`
 
 Assistente que organiza as decisões de domínio: já registrado ou não, DNS da Netlify ou externo, apex ou www, e se o provedor externo suporta CNAME no apex.
 
