@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 65 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 66 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — Observability: página de entrada do monitoramento de produção](../article/2026-09-12_netlify-observability-pagina-de-entrada-do-monitoramento-de_7154b381be80.md)
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `netlify` `observability` `monitoramento` `indice-de-documentacao`
+
+Página-índice do monitoramento do Netlify.
 
 ## [Netlify — status badges de deploy (não é o selo 'Powered by Netlify')](../article/2026-09-12_netlify-status-badges-de-deploy-nao-e-o-selo-powered-by-netl_ebdd96b3133c.md)
 2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `status-badge` `deploy-status` `readme` `ci-cd` `monitoramento-de-deploy`
