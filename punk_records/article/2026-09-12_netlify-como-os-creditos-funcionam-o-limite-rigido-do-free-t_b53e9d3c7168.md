@@ -5,8 +5,8 @@ external_id: "b53e9d3c7168"
 canonical_url: "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "limite-rigido", "site-fora-do-ar", "recarga-automatica", "pacote-de-credito", "risco-operacional", "site-de-cliente"]
 applicability:
   saas_pessoal: media
