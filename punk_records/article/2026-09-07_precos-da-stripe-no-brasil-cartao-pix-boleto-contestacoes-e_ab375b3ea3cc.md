@@ -5,8 +5,8 @@ external_id: "ab375b3ea3cc"
 canonical_url: "https://stripe.com/br/pricing"
 channel: "Stripe"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["stripe", "taxas-de-transacao", "chargeback", "stripe-billing", "stripe-connect", "pix", "boleto", "pagamento-internacional"]
 applicability:
   saas_pessoal: alta

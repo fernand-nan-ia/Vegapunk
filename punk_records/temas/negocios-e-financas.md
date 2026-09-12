@@ -18,7 +18,7 @@ Túlio do DevPleno mostra como cobra nos SaaS dele com o Asaas, evoluindo por es
 Home da Stripe Brasil: 135+ moedas e formas de pagamento, US$ 1,9 tri processados em 2025, 99,999% de uptime e 200 mi de assinaturas no Billing.
 
 ## [Preços da Stripe no Brasil: cartão, Pix, boleto, contestações e produtos adicionais](../article/2026-09-07_precos-da-stripe-no-brasil-cartao-pix-boleto-contestacoes-e_ab375b3ea3cc.md)
-2026-09-07 · article · SaaS alta · cliente baixa · estudo alta · triagem — · `stripe` `taxas-de-transacao` `chargeback` `stripe-billing` `stripe-connect` `pix`
+2026-09-07 · article · SaaS alta · cliente baixa · estudo alta · triagem apply_saas · `stripe` `taxas-de-transacao` `chargeback` `stripe-billing` `stripe-connect` `pix`
 
 Stripe Brasil: 3,99% + R$ 0,39 por transação em cartão nacional, +2% em cartão internacional, boleto R$ 3,45 e Pix 1,19% (sob convite).
 
