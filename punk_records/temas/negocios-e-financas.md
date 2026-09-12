@@ -28,7 +28,7 @@ Stripe Brasil: 3,99% + R$ 0,39 por transação em cartão nacional, +2% em cart�
 Asaas sem mensalidade nem adesão: Pix e boleto R$ 1,99 (R$ 0,99 nos 3 primeiros meses), débito R$ 0,35 + 1,89%, crédito R$ 0,49 + 2,99% à vista (1,99% na promo) e até 3,29% em 13-21x.
 
 ## [Asaas: quem é, história e o que a plataforma oferece](../article/2026-09-07_asaas-quem-e-historia-e-o-que-a-plataforma-oferece_afcfa36e4e97.md)
-2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem — · `asaas` `conta-digital-pj` `cobranca-recorrente` `instituicao-de-pagamento` `pix` `boleto`
+2026-09-07 · article · SaaS alta · cliente alta · estudo media · triagem archive · `asaas` `conta-digital-pj` `cobranca-recorrente` `instituicao-de-pagamento` `pix` `boleto`
 
 Asaas é uma plataforma financeira brasileira (Joinville, 2010, irmãos Contezini) voltada a cobrança automatizada de PMEs: Pix, boleto, cartão, conta PJ e ERP grátis, maquininha no celular, antecipação e nota fiscal.
 

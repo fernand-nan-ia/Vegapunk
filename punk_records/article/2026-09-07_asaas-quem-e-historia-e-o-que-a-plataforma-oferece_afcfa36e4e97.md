@@ -5,8 +5,8 @@ external_id: "afcfa36e4e97"
 canonical_url: "https://www.asaas.com/sobre-nos"
 channel: "Diego B Contezini; Piero Contezini · Asaas"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["asaas", "conta-digital-pj", "cobranca-recorrente", "instituicao-de-pagamento", "pix", "boleto", "antecipacao-de-recebiveis", "pme"]
 applicability:
   saas_pessoal: alta
