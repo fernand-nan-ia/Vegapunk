@@ -6,7 +6,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
 - 🛠 Desenvolvimento e ferramentas — 74 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
-- 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
+- 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 31 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
@@ -129,6 +129,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🔐 Segurança e privacidade
 
+- 2026-09-12 · article · [Netlify — travar o domínio contra takeover por outra conta](article/2026-09-12_netlify-travar-o-dominio-contra-takeover-por-outra-conta_f213c53433ba.md) · `netlify` `travamento-de-dominio` `domain-takeover` `seguranca-de-dominio` `suporte` · baixa/baixa/media · —
 - 2026-09-11 · article · [captcha.net — o site oficial do CAPTCHA: aplicações, diretrizes de segurança e o que não fazer](article/2026-09-11_captcha-net-o-site-oficial-do-captcha-aplicacoes-diretrizes_57f98e6b71e3.md) · `captcha` `recaptcha` `anti-bot` `spam` `acessibilidade` `replay-attack` `seguranca-web` `formularios` · media/baixa/media · archive
 - 2026-09-11 · article · [CAPTCHA: Using Hard AI Problems for Security (Eurocrypt 2003) — o paper que formalizou o CAPTCHA](article/2026-09-11_captcha-using-hard-ai-problems-for-security-eurocrypt-2003-o_75b293707f6f.md) · `captcha` `problemas-dificeis-de-ia` `criptografia` `esteganografia` `teste-de-turing` `anti-bot` `prova-de-seguranca` `eurocrypt-2003` · baixa/nenhuma/alta · archive
 - 2026-09-11 · article · [Moni Naor — o criptógrafo que teve a ideia do CAPTCHA antes do CAPTCHA existir](article/2026-09-11_moni-naor-o-criptografo-que-teve-a-ideia-do-captcha-antes-do_6ff294c5147c.md) · `criptografia` `captcha` `moni-naor` `manuel-blum` `criptografia-visual` `traitor-tracing` `broadcast-encryption` `historia-da-computacao` · baixa/baixa/media · archive

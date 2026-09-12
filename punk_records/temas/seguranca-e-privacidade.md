@@ -1,6 +1,11 @@
 # 🔐 Segurança e privacidade
 
-_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 47 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 48 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — travar o domínio contra takeover por outra conta](../article/2026-09-12_netlify-travar-o-dominio-contra-takeover-por-outra-conta_f213c53433ba.md)
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `travamento-de-dominio` `domain-takeover` `seguranca-de-dominio` `suporte`
+
+Domínio travado não pode ser usado, aliasado ou ter zona DNS criada por nenhuma outra conta Netlify.
 
 ## [captcha.net — o site oficial do CAPTCHA: aplicações, diretrizes de segurança e o que não fazer](../article/2026-09-11_captcha-net-o-site-oficial-do-captcha-aplicacoes-diretrizes_57f98e6b71e3.md)
 2026-09-11 · article · SaaS media · cliente baixa · estudo media · triagem archive · `captcha` `recaptcha` `anti-bot` `spam` `acessibilidade` `replay-attack`
