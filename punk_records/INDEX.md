@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 28 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 29 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
@@ -225,6 +225,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-09-12 · article · [Netlify — como os créditos funcionam nos planos Enterprise (mesma tabela dos planos self-serve)](article/2026-09-12_netlify-como-os-creditos-funcionam-nos-planos-enterprise-mes_0d2c67bb789b.md) · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia` · baixa/baixa/media · —
 - 2026-09-12 · article · [Netlify — página de preços: níveis de crédito do Pro e regra de troca de plano (extração parcial)](article/2026-09-12_netlify-pagina-de-precos-niveis-de-credito-do-pro-e-regra-de_cf02dcb43e3a.md) · `netlify` `plano-pro` `rollover-de-credito` `troca-de-plano` `extracao-parcial` · baixa/baixa/baixa · —
 - 2026-09-12 · article · [Netlify — planos por crédito (Free 300, Personal US$ 9, Pro US$ 20) e o que cada recurso consome](article/2026-09-12_netlify-planos-por-credito-free-300-personal-us-9-pro-us-20_ef74dd3069e1.md) · `netlify` `precificacao-por-credito` `custo-de-hospedagem` `plano-free` `deploy-de-producao` `banda` `limite-rigido` `custo-por-cliente` · media/alta/alta · —
 - 2026-09-09 · youtube · [Quatro formas de faturar com IA: sites, dashboards, automação de WhatsApp e solução sob medida](youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md) · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente` `prospeccao-por-entrega` · media/alta/alta · apply_client

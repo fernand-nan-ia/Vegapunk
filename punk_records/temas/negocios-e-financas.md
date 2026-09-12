@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 28 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 29 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — como os créditos funcionam nos planos Enterprise (mesma tabela dos planos self-serve)](../article/2026-09-12_netlify-como-os-creditos-funcionam-nos-planos-enterprise-mes_0d2c67bb789b.md)
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia`
+
+No Enterprise a tabela de consumo é a mesma dos planos self-serve: 15 créditos por deploy de produção, 20 por GB de banda, 2 a cada 10 mil requisições.
 
 ## [Netlify — página de preços: níveis de crédito do Pro e regra de troca de plano (extração parcial)](../article/2026-09-12_netlify-pagina-de-precos-niveis-de-credito-do-pro-e-regra-de_cf02dcb43e3a.md)
 2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `netlify` `plano-pro` `rollover-de-credito` `troca-de-plano` `extracao-parcial`
