@@ -5,8 +5,8 @@ external_id: "63c27920a37d"
 canonical_url: "https://stripe.com/br"
 channel: "Kurtis Moyer; Gerente Líder de Produto de Pagamentos da Mindbody · Stripe"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["stripe", "infraestrutura-de-pagamentos", "stripe-billing", "stripe-atlas", "mcp", "agentic-commerce", "assinaturas", "integracao-no-code"]
 applicability:
   saas_pessoal: media

@@ -13,7 +13,7 @@ Quatro linhas de serviço com IA e quanto cada uma rendeu: sites/LP (+R$ 10k), d
 Túlio do DevPleno mostra como cobra nos SaaS dele com o Asaas, evoluindo por estágios: 1-5 clientes sem integração nenhuma, 5-10 com assinatura criada à mão e um único GET para listar cobranças, e só depois cron de cobra
 
 ## [Stripe Brasil (home): portfólio, escala e caminhos de integração](../article/2026-09-07_stripe-brasil-home-portfolio-escala-e-caminhos-de-integracao_63c27920a37d.md)
-2026-09-07 · article · SaaS media · cliente baixa · estudo alta · triagem — · `stripe` `infraestrutura-de-pagamentos` `stripe-billing` `stripe-atlas` `mcp` `agentic-commerce`
+2026-09-07 · article · SaaS media · cliente baixa · estudo alta · triagem archive · `stripe` `infraestrutura-de-pagamentos` `stripe-billing` `stripe-atlas` `mcp` `agentic-commerce`
 
 Home da Stripe Brasil: 135+ moedas e formas de pagamento, US$ 1,9 tri processados em 2025, 99,999% de uptime e 200 mi de assinaturas no Billing.
 
