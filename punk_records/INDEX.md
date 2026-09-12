@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 81 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 82 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — onde encontrar os name servers do seu domínio (variam por domínio)](article/2026-09-12_netlify-onde-encontrar-os-name-servers-do-seu-dominio-variam_c8c3ba5d4c89.md) · `name-servers` `netlify-dns` `delegacao-de-dominio` · baixa/media/baixa · —
 - 2026-09-12 · article · [Netlify — ativar IPv6 (só com Netlify DNS, e vem desligado)](article/2026-09-12_netlify-ativar-ipv6-so-com-netlify-dns-e-vem-desligado_ba06f0207096.md) · `ipv6` `netlify-dns` `configuracao-de-dominio` · baixa/baixa/baixa · —
 - 2026-09-12 · article · [Netlify DNS — tipos de registro suportados e como adicionar (inclusive MX de e-mail)](article/2026-09-12_netlify-dns-tipos-de-registro-suportados-e-como-adicionar-in_4dc8456d476a.md) · `dns-records` `mx` `txt` `spf` `caa` `netlify-dns` `email-no-dominio` · baixa/alta/alta · —
 - 2026-09-12 · article · [Netlify — delegar só um subdomínio, mantendo o domínio principal onde está](article/2026-09-12_netlify-delegar-so-um-subdominio-mantendo-o-dominio-principa_c6afc775e393.md) · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard` · baixa/media/media · —

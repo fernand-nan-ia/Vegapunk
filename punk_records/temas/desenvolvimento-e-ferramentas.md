@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 81 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 82 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — onde encontrar os name servers do seu domínio (variam por domínio)](../article/2026-09-12_netlify-onde-encontrar-os-name-servers-do-seu-dominio-variam_c8c3ba5d4c89.md)
+2026-09-12 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `name-servers` `netlify-dns` `delegacao-de-dominio`
+
+Não existe lista fixa de name servers da Netlify: eles variam por domínio e aparecem no painel de DNS depois que o domínio é adicionado, no formato dns1.p01.nsone.net.
 
 ## [Netlify — ativar IPv6 (só com Netlify DNS, e vem desligado)](../article/2026-09-12_netlify-ativar-ipv6-so-com-netlify-dns-e-vem-desligado_ba06f0207096.md)
 2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `ipv6` `netlify-dns` `configuracao-de-dominio`
