@@ -5,8 +5,8 @@ external_id: "cf02dcb43e3a"
 canonical_url: "https://www.netlify.com/pricing"
 channel: "Netlify"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "plano-pro", "rollover-de-credito", "troca-de-plano", "extracao-parcial"]
 applicability:
   saas_pessoal: baixa

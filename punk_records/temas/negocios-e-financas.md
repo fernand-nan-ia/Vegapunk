@@ -13,7 +13,7 @@ Se o saldo de créditos zera, TODOS os projetos da conta são pausados e o visit
 No Enterprise a tabela de consumo é a mesma dos planos self-serve: 15 créditos por deploy de produção, 20 por GB de banda, 2 a cada 10 mil requisições.
 
 ## [Netlify — página de preços: níveis de crédito do Pro e regra de troca de plano (extração parcial)](../article/2026-09-12_netlify-pagina-de-precos-niveis-de-credito-do-pro-e-regra-de_cf02dcb43e3a.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `netlify` `plano-pro` `rollover-de-credito` `troca-de-plano` `extracao-parcial`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem archive · `netlify` `plano-pro` `rollover-de-credito` `troca-de-plano` `extracao-parcial`
 
 Fragmento da página de preços: Pro vai de 3.000 a 20.000 créditos por preço fixo, com rollover só acima de 3.000.
 
