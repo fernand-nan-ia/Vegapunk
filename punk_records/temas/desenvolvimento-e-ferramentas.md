@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 64 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 65 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — status badges de deploy (não é o selo 'Powered by Netlify')](../article/2026-09-12_netlify-status-badges-de-deploy-nao-e-o-selo-powered-by-netl_ebdd96b3133c.md)
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `status-badge` `deploy-status` `readme` `ci-cd` `monitoramento-de-deploy`
+
+Status badge é a imagem de estado do deploy para colar no README, gerada em Project configuration > General > Status badges.
 
 ## [AI Website Cloner Template — clonar qualquer site em Next.js por um comando](../article/2026-09-09_ai-website-cloner-template-clonar-qualquer-site-em-next-js-p_2a59fbf9b429.md)
 2026-09-09 · article · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `clone-de-site` `nextjs-16` `claude-code-skill` `browser-mcp` `git-worktree` `engenharia-reversa-de-ui`
