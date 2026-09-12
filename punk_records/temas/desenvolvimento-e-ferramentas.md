@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 78 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 79 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — delegar só um subdomínio, mantendo o domínio principal onde está](../article/2026-09-12_netlify-delegar-so-um-subdominio-mantendo-o-dominio-principa_c6afc775e393.md)
+2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard`
+
+Dá para levar só docs.exemplo.com para o Netlify DNS e deixar exemplo.com onde está, desde que o registrador do apex aceite registros NS para subdomínio.
 
 ## [Netlify — DNS externo: CNAME no subdomínio, ALIAS ou registro A no apex](../article/2026-09-12_netlify-dns-externo-cname-no-subdominio-alias-ou-registro-a_541c7392c9b8.md)
 2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `dns-externo` `cname` `registro-a` `apex-loadbalancer` `dominio-apex` `propagacao-de-dns`

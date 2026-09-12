@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 78 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 79 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — delegar só um subdomínio, mantendo o domínio principal onde está](article/2026-09-12_netlify-delegar-so-um-subdominio-mantendo-o-dominio-principa_c6afc775e393.md) · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard` · baixa/media/media · —
 - 2026-09-12 · article · [Netlify — DNS externo: CNAME no subdomínio, ALIAS ou registro A no apex](article/2026-09-12_netlify-dns-externo-cname-no-subdominio-alias-ou-registro-a_541c7392c9b8.md) · `dns-externo` `cname` `registro-a` `apex-loadbalancer` `dominio-apex` `propagacao-de-dns` · baixa/alta/alta · —
 - 2026-09-12 · article · [Netlify — subdomínio automático de deploy: prévia com o domínio do cliente, não com netlify.app](article/2026-09-12_netlify-subdominio-automatico-de-deploy-previa-com-o-dominio_c9842eb6b8f7.md) · `netlify` `deploy-preview` `subdominio-de-deploy` `branch-deploy` `aprovacao-de-cliente` `netlify-dns` · baixa/alta/media · —
 - 2026-09-12 · article · [Netlify — trazer domínio já registrado: adicionar ao site, apontar o DNS, esperar até 48h](article/2026-09-12_netlify-trazer-dominio-ja-registrado-adicionar-ao-site-apont_db0f157d9556.md) · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns` · baixa/alta/media · —
