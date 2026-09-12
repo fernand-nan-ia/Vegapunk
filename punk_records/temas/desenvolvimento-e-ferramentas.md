@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 66 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 67 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify Observability — o que dá para ver, por plano, e onde ele mente sobre tráfego](../article/2026-09-12_netlify-observability-o-que-da-para-ver-por-plano-e-onde-ele_d67398ab59a7.md)
+2026-09-12 · article · SaaS media · cliente media · estudo alta · triagem — · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain`
+
+Painel de requisições cruas do Netlify em produção: 404s, bots, crawler de IA, banda e funções.
 
 ## [Netlify — Observability: página de entrada do monitoramento de produção](../article/2026-09-12_netlify-observability-pagina-de-entrada-do-monitoramento-de_7154b381be80.md)
 2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `netlify` `observability` `monitoramento` `indice-de-documentacao`

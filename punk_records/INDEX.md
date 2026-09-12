@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 66 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 67 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify Observability — o que dá para ver, por plano, e onde ele mente sobre tráfego](article/2026-09-12_netlify-observability-o-que-da-para-ver-por-plano-e-onde-ele_d67398ab59a7.md) · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain` `limites-por-plano` `404` · media/media/alta · —
 - 2026-09-12 · article · [Netlify — Observability: página de entrada do monitoramento de produção](article/2026-09-12_netlify-observability-pagina-de-entrada-do-monitoramento-de_7154b381be80.md) · `netlify` `observability` `monitoramento` `indice-de-documentacao` · baixa/baixa/baixa · —
 - 2026-09-12 · article · [Netlify — status badges de deploy (não é o selo 'Powered by Netlify')](article/2026-09-12_netlify-status-badges-de-deploy-nao-e-o-selo-powered-by-netl_ebdd96b3133c.md) · `netlify` `status-badge` `deploy-status` `readme` `ci-cd` `monitoramento-de-deploy` · baixa/baixa/media · —
 - 2026-09-09 · article · [AI Website Cloner Template — clonar qualquer site em Next.js por um comando](article/2026-09-09_ai-website-cloner-template-clonar-qualquer-site-em-next-js-p_2a59fbf9b429.md) · `clone-de-site` `nextjs-16` `claude-code-skill` `browser-mcp` `git-worktree` `engenharia-reversa-de-ui` `demo-antes-do-contato` `licenca-mit` · baixa/alta/alta · apply_client
