@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 75 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 76 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — trazer domínio já registrado: adicionar ao site, apontar o DNS, esperar até 48h](../article/2026-09-12_netlify-trazer-dominio-ja-registrado-adicionar-ao-site-apont_db0f157d9556.md)
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify` `dominio-existente` `propagacao-de-dns` `registro-a` `dig` `verificacao-de-dns`
+
+Adicionar o domínio em Domain management > Add a domain you already own, depois criar o registro que a tela Pending DNS verification indicar no provedor atual.
 
 ## [Netlify — domain alias: vários domínios apontando para o mesmo site](../article/2026-09-12_netlify-domain-alias-varios-dominios-apontando-para-o-mesmo_d5645f913d35.md)
 2026-09-12 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `netlify` `domain-alias` `dominio-primario` `redirecionamento-de-dominio`
