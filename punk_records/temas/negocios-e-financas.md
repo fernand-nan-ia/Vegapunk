@@ -38,7 +38,7 @@ Asaas é uma plataforma financeira brasileira (Joinville, 2010, irmãos Contezin
 Checkout Transparente do Mercado Pago é uma API sem interface pronta: o pagamento acontece dentro do seu site, com a sua marca.
 
 ## [Gateway de pagamento: o que é, como funciona e como escolher (Mercado Pago)](../article/2026-09-07_gateway-de-pagamento-o-que-e-como-funciona-e-como-escolher-m_8b0041f7afd5.md)
-2026-09-07 · article · SaaS alta · cliente media · estudo alta · triagem — · `gateway-de-pagamento` `mercado-pago` `subadquirente` `pci-dss` `split-de-pagamento` `checkout-transparente`
+2026-09-07 · article · SaaS alta · cliente media · estudo alta · triagem archive · `gateway-de-pagamento` `mercado-pago` `subadquirente` `pci-dss` `split-de-pagamento` `checkout-transparente`
 
 Mercado Pago explica gateway de pagamento: o que faz, PCI DSS, split, recorrência e link de pagamento.
 

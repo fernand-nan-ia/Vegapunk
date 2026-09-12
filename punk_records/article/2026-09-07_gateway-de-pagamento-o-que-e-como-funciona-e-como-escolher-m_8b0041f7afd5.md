@@ -5,8 +5,8 @@ external_id: "8b0041f7afd5"
 canonical_url: "https://www.mercadopago.com.br/blog/o-que-e-gateway"
 channel: "MercadoPago"
 captured_at: 2026-09-07
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["gateway-de-pagamento", "mercado-pago", "subadquirente", "pci-dss", "split-de-pagamento", "checkout-transparente", "taxas-de-transacao", "link-de-pagamento"]
 applicability:
   saas_pessoal: alta
