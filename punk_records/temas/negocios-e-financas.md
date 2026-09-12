@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 26 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 27 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — planos por crédito (Free 300, Personal US$ 9, Pro US$ 20) e o que cada recurso consome](../article/2026-09-12_netlify-planos-por-credito-free-300-personal-us-9-pro-us-20_ef74dd3069e1.md)
+2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify` `precificacao-por-credito` `custo-de-hospedagem` `plano-free` `deploy-de-producao` `banda`
+
+Free dá 300 créditos/mês com limite rígido; Personal US$ 9 dá 1.000 e Pro US$ 20 dá 3.000, ambos com recarga.
 
 ## [Quatro formas de faturar com IA: sites, dashboards, automação de WhatsApp e solução sob medida](../youtube/2026-09-09_quatro-formas-de-faturar-com-ia-sites-dashboards-automacao-d_Qoe61lzBQSk.md)
 2026-09-09 · youtube · SaaS media · cliente alta · estudo alta · triagem apply_client · `monetizacao-com-ia` `precificacao-por-valor` `venda-de-sites` `automacao-whatsapp` `dashboard-crm` `servico-recorrente`
