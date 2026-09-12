@@ -23,20 +23,23 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (checkpoint 2026-09-11 noite — fim da sessão 13)
+## Estado atual (2026-09-12 manhã — sessão 14 em curso)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`266d567`** — limpo e **sincronizado com o remoto** (dois pushes feitos hoje à noite) |
+| Repo Vegapunk | **`e564d12`** — limpo e **sincronizado com o remoto** (`266d567..e564d12`, 16 commits, push em 12/09 de manhã) |
 | Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
-| Container | `vegapunk-vegapunk-1` Up 15h |
-| Testes | **144/144 verdes** (rodados duas vezes em 11/09, antes de cada push) |
-| Punk Records | **247 itens** · **14 sem triagem** (8 gateways de 07–08/09 + os 6 de hoje) |
-| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) — os mesmos de sempre |
-| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 a 13 |
+| Container | **PARADO** — `docker` não responde no WSL (Docker Desktop fechado). Nada entra no Punk Records enquanto isso |
+| Testes | **144/144 verdes** (rodados em 12/09, antes do push) |
+| Punk Records | **247 itens** · **fila de triagem ZERADA** (147 archive · 48 cliente · 37 SaaS · 15 discard) |
+| `_pending/` | **vazio** — os 3 presos foram descartados em 12/09 a pedido do Fernando |
+| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 a 14 |
 | Não commitado | nada |
+| OpenRouter | Fernando comprou créditos novos em 12/09; com o container parado, nada está sendo consumido |
 
-Os 14 sem triagem: o lote antigo de gateways de pagamento (Asaas, Stripe, Mercado Pago) mais os 6 itens capturados hoje à noite. Esperando porque ele não pediu.
+**Triagem dos 14 (12/09, Shaka):** `apply_saas` para o lote que decide o gateway do SaaS — [Asaas preços](punk_records/article/), [Stripe preços](punk_records/article/) e o [método do DevPleno](punk_records/youtube/) (NF embutida a ~R$ 1 desempata contra a Stripe); `apply_client` para o [Mazzeo/Google Ads](punk_records/youtube/) e para o ponto técnico da MXC (site gerado por IA sai sem `sitemap.xml`, `robots.txt` e `llms.txt` → invisível no Google); `archive` para as 4 páginas institucionais de gateway, a API de assinaturas do Asaas e o lote CAPTCHA inteiro. **Nenhum descarte novo.** O TikTok do banco de componentes ficou em `archive` e não em `discard` por um detalhe: o nome da ferramenta só aparece na tela do vídeo — um minuto de vídeo o transforma em material de trabalho.
+
+**Descarte dos 3 presos (12/09):** tiktok/7665842308864085255 (ERR-003), sebrae.com.br/subsites/lgpd e mpf.mp.br/servicos/lgpd (ERR-004), nenhum com nota manual. Backup do banco em `data/vegapunk.db.bak-descarte-20260912`. **Armadilha encontrada:** a máquina de estados em `src/vegapunk/db.py:17-25` não tem caminho de `extraction_failed` para `discarded` (só de volta para `normalized`), então os três foram marcados por SQL direto, fora do fluxo. Descartar item preso deveria ser decisão legítima — story de uma linha para Atlas.
 
 ## ⚠️ A correção da sessão 11 — leia antes de qualquer coisa sobre clonagem
 
@@ -77,20 +80,21 @@ Lá: código, deploy, domínio, revisões, o site.
 
 **Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
 
-### O que fazer quando ele voltar (ordem sugerida, revista em 11/09 à noite)
+### O que está aberto (revisto em 12/09 de manhã)
 
-**Ele encerrou a sessão 13 dizendo: "amanhã começamos a colocar a mão na massa."** O trabalho de amanhã é o site — e, pela regra de escopo acima, **ele acontece em diretório próprio, não aqui**. Esta pasta continua sendo estudo.
+**Ele começou a criação do site em 12/09, em diretório próprio** — como manda a regra de escopo. Esta pasta continua sendo estudo, e o que sobrou aqui é o que está listado abaixo.
 
-1. 🎯 **Abrir o diretório do projeto do site** (fora daqui) e levar na bagagem: a ficha N-025 (cafeteria), a mensagem de abordagem já escrita, e a condição da Lilith. Aqui não se cria arquivo de projeto de cliente.
-2. 🔍 **A condição da Lilith, antes de qualquer mensagem ao Jardins Café:** abrir `dmsys.app.br/jardinscafe/cardapio` e comparar com o que o Fernando comeu (preços, buffet de R$ 65, logo). O logo do dmsys é um círculo colorido "café·café·café"; o do Jardins de Conquista é serifa preta sobre branco. **Forte indício de que é outro Jardins, de Fortaleza (DDD 85)** — e, se for, a observação principal da abordagem morre. Cinco minutos decidem.
-3. ✍️ **Usar a versão-pergunta da abordagem, não a versão-afirmação.** "Achei um cardápio com o nome Jardins com endereço de Fortaleza. Esse é de vocês ou tem outro Jardins por aí?" — não existe resposta que derrube essa mensagem. A afirmativa morre se o dono for outro.
+1. 🔍 **A condição da Lilith, antes de qualquer mensagem ao Jardins Café:** abrir `dmsys.app.br/jardinscafe/cardapio` e comparar com o que o Fernando comeu (preços, buffet de R$ 65, logo). O logo do dmsys é um círculo colorido "café·café·café"; o do Jardins de Conquista é serifa preta sobre branco. **Forte indício de que é outro Jardins, de Fortaleza (DDD 85)** — e, se for, a observação principal da abordagem morre. Cinco minutos decidem.
+2. ✍️ **Usar a versão-pergunta da abordagem, não a versão-afirmação.** "Achei um cardápio com o nome Jardins com endereço de Fortaleza. Esse é de vocês ou tem outro Jardins por aí?" — não existe resposta que derrube essa mensagem. A afirmativa morre se o dono for outro.
+3. 🔎 **Checar `sitemap.xml`, `robots.txt` e `llms.txt` no site que ele está construindo** — triado `apply_client` em 12/09. Site gerado por IA costuma sair sem os três e não é indexado: bonito e invisível.
 4. 💰 **Decidir a cláusula do contrato continua PENDENTE, e ele decidiu adiar** (ver Decisões fechadas). O risco que sobra e que ele controla hoje: **não entregar a prévia completa de graça**.
 5. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, passo 1 do próprio produto. Vira munição imediata.
-6. **Triar os 14 itens sem triagem** (8 gateways + os 6 de hoje). Shaka faz a fila inteira num passe.
+6. 🎬 **Abrir o TikTok do banco de componentes** (`tiktok/7671643736924835093`) e anotar o nome da ferramenta em `## Notas manuais` — o nome só aparece na tela do vídeo, e sem ele o item não serve para nada. Um minuto.
 7. **Destravar o clonador** quando voltar a interessar: `cd ~/projetos/ai-website-cloner-template && claude --chrome`. Continua bloqueado por falta de MCP de navegador.
 8. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
 9. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
-10. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
+10. **Atlas (nova, 12/09): permitir descartar item preso pelo fluxo normal** — `db.TRANSITIONS` não liga `extraction_failed`/`enrichment_failed` a `discarded`, e `pipeline.triage` exige `status == "enriched"`. Hoje só dá para fazer por SQL direto.
+11. **Subir o container quando o Docker Desktop voltar** (`docker compose up -d`) e conferir a fila antes — o bot ficou parado a partir de 11/09 à noite.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
