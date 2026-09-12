@@ -8,7 +8,7 @@ _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automati
 Não existe lista fixa de name servers da Netlify: eles variam por domínio e aparecem no painel de DNS depois que o domínio é adicionado, no formato dns1.p01.nsone.net.
 
 ## [Netlify — ativar IPv6 (só com Netlify DNS, e vem desligado)](../article/2026-09-12_netlify-ativar-ipv6-so-com-netlify-dns-e-vem-desligado_ba06f0207096.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem — · `ipv6` `netlify-dns` `configuracao-de-dominio`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo baixa · triagem discard · `ipv6` `netlify-dns` `configuracao-de-dominio`
 
 IPv6 vem desligado por padrão e só pode ser ativado em domínio sob Netlify DNS, no painel de DNS do domínio.
 

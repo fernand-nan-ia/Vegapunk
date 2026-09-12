@@ -5,8 +5,8 @@ external_id: "ba06f0207096"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/enable-ipv6"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: discarded
+triage: discard
 tags: ["ipv6", "netlify-dns", "configuracao-de-dominio"]
 applicability:
   saas_pessoal: baixa
