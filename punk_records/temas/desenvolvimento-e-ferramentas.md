@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 79 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 80 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify DNS — tipos de registro suportados e como adicionar (inclusive MX de e-mail)](../article/2026-09-12_netlify-dns-tipos-de-registro-suportados-e-como-adicionar-in_4dc8456d476a.md)
+2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `dns-records` `mx` `txt` `spf` `caa` `netlify-dns`
+
+Netlify DNS aceita A, AAAA, CAA, CNAME, MX, NS, SPF (obsoleto, use TXT), SRV e TXT.
 
 ## [Netlify — delegar só um subdomínio, mantendo o domínio principal onde está](../article/2026-09-12_netlify-delegar-so-um-subdominio-mantendo-o-dominio-principa_c6afc775e393.md)
 2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify-dns` `subdominio-autonomo` `registro-ns` `delegacao-de-subdominio` `ssl-wildcard`
