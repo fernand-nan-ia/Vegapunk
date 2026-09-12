@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (checkpoint 2026-09-11 tarde, fim da sessão 12 — Cofre de Abordagens + dado de campo do mercado)
+# HANDOFF — Vegapunk (checkpoint 2026-09-11 noite, fim da sessão 13 — CAPTCHA, o método do Mazzeo e o primeiro alvo real de venda)
 
 ## TL;DR — o que existe hoje
 
@@ -23,20 +23,20 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (checkpoint 2026-09-11 tarde — fim da sessão 12)
+## Estado atual (checkpoint 2026-09-11 noite — fim da sessão 13)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`14ba7fe`** — 2 commits à frente do remoto, **falta `git push`** |
+| Repo Vegapunk | **`266d567`** — limpo e **sincronizado com o remoto** (dois pushes feitos hoje à noite) |
 | Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
-| Container | `vegapunk-vegapunk-1` Up (subido à mão hoje — Docker Desktop estava fechado) |
-| Testes | **144/144 verdes** (rodados em 11/09) |
-| Punk Records | **241 itens** · **8 sem triagem** (gateways de pagamento, 07–08/09) |
-| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) |
-| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10, 10b, 11 e 12 |
-| Não commitado | `tmp/compartilhar/` (material para o grupo) — é `tmp/`, não vai ao git |
+| Container | `vegapunk-vegapunk-1` Up 15h |
+| Testes | **144/144 verdes** (rodados duas vezes em 11/09, antes de cada push) |
+| Punk Records | **247 itens** · **14 sem triagem** (8 gateways de 07–08/09 + os 6 de hoje) |
+| `_pending/` | **3 itens presos** (1 de 04/09, 2 de 05/09) — os mesmos de sempre |
+| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 a 13 |
+| Não commitado | nada |
 
-Os 8 sem triagem continuam sendo o lote de gateways de pagamento (Asaas, Stripe, Mercado Pago), de 07–08/09. Esperando porque ele não pediu.
+Os 14 sem triagem: o lote antigo de gateways de pagamento (Asaas, Stripe, Mercado Pago) mais os 6 itens capturados hoje à noite. Esperando porque ele não pediu.
 
 ## ⚠️ A correção da sessão 11 — leia antes de qualquer coisa sobre clonagem
 
@@ -56,7 +56,7 @@ Fonte principal: [Copy paste de websites (Jusbrasil)](punk_records/article/2026-
 
 ## Primeira coisa a fazer (aberto agora)
 
-🎯 **O Fernando está começando a vender sites.** Meta declarada em 07/09; o levantamento começou em 26/08 e hoje tem **39 itens `apply_client`** (eram 19 em 07/09 — dobrou nas sessões 10b→11). **Ele NÃO quer fechar escopo nem PRD aqui** — ver a regra de escopo logo abaixo.
+🎯 **O Fernando está começando a vender sites.** Meta declarada em 07/09; o levantamento começou em 26/08 e hoje tem **46 itens `apply_client`** (eram 19 em 07/09). **Ele NÃO quer fechar escopo nem PRD aqui** — ver a regra de escopo logo abaixo.
 
 ### ⚠️ REGRA DE ESCOPO (dita pelo Fernando em 07/09 — não violar)
 
@@ -77,21 +77,20 @@ Lá: código, deploy, domínio, revisões, o site.
 
 **Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
 
-### O que fazer quando ele voltar (ordem sugerida, revista em 09/09)
+### O que fazer quando ele voltar (ordem sugerida, revista em 11/09 à noite)
 
-1. 🎯 **Destravar o clonador — é o único item bloqueado por falta de peça.** O `ai-website-cloner-template` está instalado, com build verde e `npm audit` limpo, mas **a skill não roda sem MCP de navegador**. Duas saídas: `cd ~/projetos/ai-website-cloner-template && claude --chrome` (recomendado, é só a flag) ou `claude mcp add playwright npx @playwright/mcp@latest`. **Primeiro alvo já escolhido: o site atual da VDC** — é o único caso 100% limpo (migração autorizada pelo dono) e gera a terceira versão para comparar com Taste v5 (5 achados) e Impeccable v2 (0 achados).
-2. 💰 **Decidir a cláusula do contrato ANTES do primeiro cliente pagante.** Descoberta de 09/09: sem cláusula escrita, vender o site **cede os direitos patrimoniais** do layout, e o mesmo design não pode ser reaproveitado em outro cliente. Se a ideia é vender o mesmo modelo várias vezes, o contrato precisa dizer **licença de uso**, não cessão. Isso não tem conserto retroativo. Fonte: [Direito autoral para designers](punk_records/article/2026-09-09_direito-autoral-para-designers-protecao-automatica-registro_b9493ae2aecf.md).
-3. 📋 **O que perguntar ao cliente da VDC** (lista fechada, ver `~/projetos/testes-skills-design/HANDOFF.md`): endereço (Google e Facebook divergem), horário completo, originais em alta das 6 fotos — e **agora também autorização por escrito de uso das fotos**, porque o Guia do Senado deixou claro que **perfil aberto de rede social não dispensa autorização**. As 6 fotos atuais são screenshots do Instagram.
-4. 💰 **Usar a tabela de preço real antes de fechar o primeiro cliente pagante.** O item do [Grupo Code Makers](punk_records/document/2026-09-11_grupo-code-makers-whatsapp-679-membros-precos-praticados-lim_739f9436c388.md) tem vendas confirmadas por nicho. Lembrar que os dois primeiros clientes (VDC e psiquiatra) foram decididos a **preço de custo** de propósito — a tabela vale do terceiro em diante.
-5. 🎯 **Avaliar o nicho de construção civil** (marmoraria, vidraçaria, serralheria, construtora). É o encaixe mais forte que apareceu até hoje, porque a formação do Fernando é argumento de venda. Ninguém pediu ainda — **não abrir escopo sem ele pedir** (regra de escopo acima).
-6. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, citado como passo 1 do próprio produto: escolher os pentes que casam com os nichos dele e deixar os `[CAMPOS]` preenchidos. Vira munição imediata de prospecção.
-7. **Triar os 8 itens de gateway de pagamento** (Asaas, Stripe, Mercado Pago). **York** já ofereceu comparar taxas e ele não respondeu. Para um serviço pago uma vez, a resposta provável é Pix direto.
-8. **Aplicar a Resolução CFM na landing da psiquiatra**, quando ele abrir o diretório dela. As três regras que quebram uma landing gerada por IA estão na seção 10b.
-9. **Acrescentar ao `CLAUDE.md` a regra de contradição de spec**: *pedido novo que contradiz decisão registrada → o agente PARA e avisa antes de alterar*.
-10. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
-11. **Provar a voz nova dos Satélites em produção** (risco de 04/09, nunca observado) e **colar um link no GRUPO** para a aceitação pendente da Story 1d.
-12. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
-13. **Reprocessar os 3 itens de `_pending/`** · **reler Stories 2b e 2c** sob a decisão de vault solo e investigar os US$ 8,58 da chave OpenRouter.
+**Ele encerrou a sessão 13 dizendo: "amanhã começamos a colocar a mão na massa."** O trabalho de amanhã é o site — e, pela regra de escopo acima, **ele acontece em diretório próprio, não aqui**. Esta pasta continua sendo estudo.
+
+1. 🎯 **Abrir o diretório do projeto do site** (fora daqui) e levar na bagagem: a ficha N-025 (cafeteria), a mensagem de abordagem já escrita, e a condição da Lilith. Aqui não se cria arquivo de projeto de cliente.
+2. 🔍 **A condição da Lilith, antes de qualquer mensagem ao Jardins Café:** abrir `dmsys.app.br/jardinscafe/cardapio` e comparar com o que o Fernando comeu (preços, buffet de R$ 65, logo). O logo do dmsys é um círculo colorido "café·café·café"; o do Jardins de Conquista é serifa preta sobre branco. **Forte indício de que é outro Jardins, de Fortaleza (DDD 85)** — e, se for, a observação principal da abordagem morre. Cinco minutos decidem.
+3. ✍️ **Usar a versão-pergunta da abordagem, não a versão-afirmação.** "Achei um cardápio com o nome Jardins com endereço de Fortaleza. Esse é de vocês ou tem outro Jardins por aí?" — não existe resposta que derrube essa mensagem. A afirmativa morre se o dono for outro.
+4. 💰 **Decidir a cláusula do contrato continua PENDENTE, e ele decidiu adiar** (ver Decisões fechadas). O risco que sobra e que ele controla hoje: **não entregar a prévia completa de graça**.
+5. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, passo 1 do próprio produto. Vira munição imediata.
+6. **Triar os 14 itens sem triagem** (8 gateways + os 6 de hoje). Shaka faz a fila inteira num passe.
+7. **Destravar o clonador** quando voltar a interessar: `cd ~/projetos/ai-website-cloner-template && claude --chrome`. Continua bloqueado por falta de MCP de navegador.
+8. **Corrigir `normalize.TRACKING_PARAMS`** (`src/vegapunk/normalize.py:103`): `gad_source`, `gad_campaignid` e `gbraid` não são removidos — mesma página vinda de dois anúncios entra como dois itens.
+9. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
+10. **Reprocessar os 3 itens de `_pending/`** e investigar os US$ 8,58 da chave OpenRouter.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
@@ -598,9 +597,9 @@ Logo: a skill roda inteira, na fidelidade dela. O agente **reporta depois** o qu
 
 Com o clonador, a VDC passará a ter **três versões** pela mesma régua: Taste v5 (5), Impeccable v2 (0), clone (?).
 
-## Sessão 12 (2026-09-11, EM ANDAMENTO) — lote de 8 links de venda e design — **`d58b88b` pushado**
+## Sessão 12 (2026-09-11, manhã/tarde) — lote de 8 links de venda e design — **`d58b88b` pushado**
 
-Checkpoint tirado de manhã; a sessão continua. Nenhuma linha de `src/` tocada.
+Nenhuma linha de `src/` tocada.
 
 ### O que entrou: 8 itens (5 apply_client, 3 archive)
 
@@ -657,6 +656,41 @@ Está em `tmp/` de propósito: é entregável pontual, não faz parte do repo.
 ### Armadilha nova
 
 **`git push` com produto pago dentro é barrado pelo classificador do Claude Code.** Aconteceu duas vezes (motivo `[Out-of-Place Publication]`), porque o commit levava ~200 KB do texto integral de um produto comprado para um remoto GitHub. **A saída é o Fernando rodar o `git push` ele mesmo** — é a regra do projeto de qualquer forma. Não insistir, não tentar contornar: passar o comando e explicar.
+
+## Sessão 13 (2026-09-11, noite) — CAPTCHA, o método do Mazzeo e o primeiro alvo real de venda — **`266d567` pushado**
+
+Sessão de captura e de estratégia de venda. **Nenhuma linha de `src/` tocada**; dois pushes de conteúdo (`36b72e1` e `266d567`), 144/144 verdes antes de cada um.
+
+### O que entrou: 6 itens (241 → 247)
+
+**Lote 1 — CAPTCHA (4 links, 3 itens).** [Moni Naor](punk_records/article/2026-09-11_moni-naor-o-criptografo-que-teve-a-ideia-do-captcha-antes-do_6ff294c5147c.md), [captcha.net](punk_records/article/2026-09-11_captcha-net-o-site-oficial-do-captcha-aplicacoes-diretrizes_57f98e6b71e3.md) e o [paper do Eurocrypt 2003](punk_records/article/2026-09-11_captcha-using-hard-ai-problems-for-security-eurocrypt-2003-o_75b293707f6f.md). O quarto link era o mesmo paper em PDF local e **não virou item duplicado**.
+
+**Lote 2 — venda de sites (3 links, 3 itens).** O pesado é o [vídeo do Vagner Mazzeo](punk_records/youtube/2026-09-11_vagner-mazzeo-google-ads-de-cliente-real-montado-do-zero-com_KUf-vS_gSZo.md) — o mesmo autor do Cofre — montando o Google Ads de um cliente real de climatização com Claude Code, pacote **site + Ads por R$ 5.000**. Mais dois TikToks: [MXC sobre sitemap/robots/llms.txt](punk_records/tiktok/2026-09-11_tiktok-mxc-digital-site-bonito-feito-so-com-ia-sem-sitemap-r_7679994027420208391.md) e [banco de elementos visuais com copiar-para-IA](punk_records/tiktok/2026-09-11_tiktok-banco-gratuito-de-elementos-visuais-prontos-com-botao_7671643736924835093.md) (lacuna marcada: **o vídeo não diz o nome da ferramenta**, só mostra na tela).
+
+### O achado do vídeo do Mazzeo (vale para o nicho de construção civil)
+
+A IA gerou 52 sementes de palavra-chave; a validação com dado real (DataForSEO, **US$ 0,18 a consulta inteira**) derrubou quase todas — **inclusive a de maior volume**. "Instalação de ar-condicionado" tem 3.600 buscas/mês e traz residencial de 12.000 BTU procurando serviço de R$ 500, para uma empresa que faz obra com ART. "Retrofit" e "alto padrão": **zero busca**. O mercado digita **termo técnico**, não nome de segmento. Sobraram PMOC, VRF/VRV e dutado (~900 buscas/mês, CPC R$ 5). Outras peças do método: pasta por cliente com o contexto da empresa em arquivo, **uma landing page por anúncio gerada por subagentes** (ele chama de "o ouro"), CSV → Google Ads Editor, e conversão no GTM **antes** de ativar.
+
+### A virada de nicho: do diploma para a rua
+
+A recomendação inicial (vidraçaria, serralheria, climatização, laudos — onde a formação de engenheiro é argumento) **foi revista pelo próprio Fernando**: ele mora em **Vitória da Conquista (BA)**, onde há muita cafeteria, lanchonete e açaiteria, e quer começar por quem consegue **observar**. Isso não contraria o Cofre — **aplica a regra dele**: *"comece pelo nicho que você consegue observar hoje; observação real vale mais que nicho perfeito."* Duas das três escolhas dele estão no **Top 10 do próprio Cofre** (hamburgueria nº 2, confeitaria nº 3), e as fichas são N-021, N-024 (açaíteria) e N-025 (cafeteria), todas **acesso 3/3**, ticket R$ 500–1.500.
+
+Tensão registrada entre as fontes: o Grupo Code Makers marca "comércio de comida" como nicho que **trava**. O motivo importa — travam porque chegam vendendo **site**, e o dono já tem Instagram e iFood. Vendendo **canal próprio sem comissão** (hamburgueria) ou **cliente que volta no dia frio** (açaiteria), a dor existe. Regra do setor: **abordar fora do pico, 15h–17h é a janela de ouro**; objeção típica **OBJ-02 "tá caro"**.
+
+### O primeiro alvo real: Jardins Café (Vitória da Conquista)
+
+Fernando foi ao local, **pagou R$ 65 no buffet livre** e trouxe prints. O que os prints provam: **não têm site próprio** (o botão "Site" do Google aponta para o Pop Pedidos, plataforma de terceiro), o **Google não tem o telefone deles**, e o negócio é forte — **32,6 mil seguidores, 621 posts, 429 avaliações com 4,5★**, pico sexta às 18h.
+
+**A Lilith atacou a abordagem (a pedido dele, com fim educativo) e derrubou os dois achados principais:**
+
+1. **O cardápio "com telefone de Fortaleza" provavelmente não é deles.** Logo diferente (círculo "café·café·café" contra a serifa do Jardins), rua de Fortaleza, DDD 85, cardápio de pizzas e massas. É **outro Jardins Café**, e o Google embaralhou. Se ele afirmar que o cardápio é deles e não for, a abordagem morre no primeiro balão.
+2. **Os "quatro endereços divergentes" são provavelmente dois.** O print de satélite mostra o Jardins **na esquina de Av. Oscar Silva com Av. Olívia Flores** — prédio de esquina tem duas faces. Sobra divergência de um número (704 × 705), que é erro de agregador, não dor de dono.
+
+Outros modos de falha listados: a dor da ficha N-025 não se aplica a quem tem 32 mil seguidores locais; as artes profissionais do feed indicam **agência ou social media já contratado** (OBJ-03); o Pop Pedidos pode ser contrato pago e ativo; e prévia completa entregue de graça, sem nada adiantado e sem contrato, é desenho que fica com o cliente.
+
+**O que sobreviveu ao ataque:** ele é cliente pagante e foi lá (credencial que nenhum dos 679 do grupo tem); eles realmente não têm site próprio (fato verificável); e a **versão-pergunta** da abordagem — *"esse cardápio é de vocês ou tem outro Jardins por aí?"* — não tem resposta que a derrube.
+
+**A lição transferível, que é o que ele pediu levar:** toda observação de abordagem tem um **dono presumido**. Antes de enviar, perguntar *"e se este achado não for dele?"*. Se a mensagem morre com essa resposta, reescrever como pergunta. **Achado forte com dono errado é pior que achado fraco** — o fraco não desmente ninguém.
 
 ## Os 7 Satélites — mapa completo
 
@@ -741,7 +775,13 @@ As tasks foram **escritas do zero** (condensadas dos agentes FURY, que só tinha
 - **Layout de site É protegido no Brasil** (corrigido 2026-09-09, com jurisprudência): Lei 9.610/98 art. 7º XIII protege "seleção, organização ou disposição do conteúdo"; TJSP já condenou cópia de HTML "depois de algumas maquiagens". Clonar o site do **próprio cliente** é migração autorizada e está limpo; clonar terceiro e publicar não fica seguro só trocando conteúdo.
 - **Vault é de uso exclusivo do Fernando** (decidido 2026-09-11, REVERTE a decisão de 01/09): ele desistiu de compartilhar o Punk Records com amigos. O repositório segue privado e sem collaborators. **Consequências:** (a) produto pago pode ser guardado com texto integral, porque não há redistribuição — foi o caso do Cofre de Abordagens; (b) a **Story 2a NÃO é suspensa** — ela perdeu só a razão "amigos", e mantém as outras duas: reinstalar em outra máquina sem perder o catálogo (agora mais importante, porque o vault virou o único backup) e fechar o bug de design em que item vindo por `git pull` some na regeneração do INDEX; (c) as Stories 2b e 2c devem ser relidas sob essa ótica antes de entrarem na fila.
 
+- **Sem contrato por ora; Pix e acerto por mensagem** (decidido 2026-09-11): o Fernando avaliou a cláusula licença × cessão e decidiu **adiar**, por considerar complicação excessiva no início. A pendência continua real (vender sem cláusula cede os direitos do layout e impede reaproveitar o mesmo modelo) e **não tem conserto retroativo** — mas a decisão é dele, foi tomada com a informação na mão, e não se reabre sem pedido. O risco que resta sob controle dele: **não entregar a prévia completa de graça**.
+- **Nicho inicial: alimentação local em Vitória da Conquista** (decidido 2026-09-11, revendo a sugestão de construção civil): cafeteria, lanchonete e açaiteria, porque ele consegue **observar** o negócio pessoalmente — e observação real é a matéria-prima da abordagem. Construção civil (vidraçaria, serralheria, marcenaria, laudos) fica como **segunda onda**, quando o diploma virar argumento de venda. Venda para fora da cidade vem depois, com os casos na mão.
+
 ## Armadilhas conhecidas
+- **PDF antigo gerado por `dvips` não tem texto extraível** (descoberto 2026-09-11 com o paper do CAPTCHA de 2003): fontes Type3 com codificação própria e sem mapa Unicode — o extrator do bot devolve ERR-004 e o `pdftotext` devolve lixo (`/BV/BT/C8`). **Saída que funcionou:** procurar outra cópia do mesmo documento em outro servidor (a da CMU extraiu limpo), converter com `pdftotext` e alimentar com `capture.py extract <url-original> --text arquivo.txt`, **mantendo a URL que o Fernando mandou** como fonte. O item `extraction_failed` é reaproveitado automaticamente e o arquivo de `_pending/` some sozinho.
+- **Campo do `Topic` no JSON de enriquecimento é `detail`, não `description`** (errado duas vezes em 11/09): o Pydantic rejeita com `topics.N.detail Field required`. O contrato impresso em `tmp/capture/<id>.md` mostra o schema completo — conferir ali antes de escrever.
+- **Observação de abordagem tem dono presumido** (Lilith, 2026-09-11): antes de mandar qualquer achado a um prospect, perguntar "e se isto não for dele?". Perfil, cardápio ou anúncio com o mesmo nome pode ser de outro estabelecimento em outra cidade. Achado forte com dono errado desmente a mensagem no primeiro balão; a saída é reescrever a afirmação como pergunta.
 - **`.env`: NUNCA comentário na mesma linha do valor** (Docker `env_file` não trata `#`; foi a causa do 403 do TikTok). Se aparecer `# cookies.txt (Netscape)...` na raiz, é esse bug.
 - TikTok "Unable to extract universal data for rehydration" é intermitente (~40%) → 6 tentativas com espera crescente.
 - YouTube legendas: só manuais (pt/en/es) ou auto ORIGINAL (`*-orig`); nunca `pt` de auto-caption (429 → 33 min de Whisper).
