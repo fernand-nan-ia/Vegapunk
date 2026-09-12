@@ -43,7 +43,7 @@ Adicionar o domínio em Domain management > Add a domain you already own, depois
 Um site pode ter vários domínios: um primário e o resto como alias, em Domain management > Production domains.
 
 ## [Netlify — ativar o Netlify DNS: pelo site já configurado ou delegando name servers](../article/2026-09-12_netlify-ativar-o-netlify-dns-pelo-site-ja-configurado-ou-del_16dbdfda644f.md)
-2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador`
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem archive · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador`
 
 Ligar o Netlify DNS é Options > Set up Netlify DNS no domínio do site, ou, para domínio de fora, trocar os name servers no registrador depois de copiar os registros existentes.
 
