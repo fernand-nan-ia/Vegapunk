@@ -5,8 +5,8 @@ external_id: "f213c53433ba"
 canonical_url: "https://docs.netlify.com/manage/domains/lock-your-domain"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "travamento-de-dominio", "domain-takeover", "seguranca-de-dominio", "suporte"]
 applicability:
   saas_pessoal: baixa

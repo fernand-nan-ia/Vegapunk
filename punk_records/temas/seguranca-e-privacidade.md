@@ -3,7 +3,7 @@
 _LGPD, proteção de dados, vulnerabilidades, auditoria, compliance._ Gerado automaticamente a partir do Punk Records — 48 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Netlify — travar o domínio contra takeover por outra conta](../article/2026-09-12_netlify-travar-o-dominio-contra-takeover-por-outra-conta_f213c53433ba.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `travamento-de-dominio` `domain-takeover` `seguranca-de-dominio` `suporte`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `netlify` `travamento-de-dominio` `domain-takeover` `seguranca-de-dominio` `suporte`
 
 Domínio travado não pode ser usado, aliasado ou ter zona DNS criada por nenhuma outra conta Netlify.
 
