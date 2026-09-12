@@ -13,7 +13,7 @@ Template Next.js + skill `/clone-website` que reconstrói um site alvo com agent
 Modelo Red Hat aplicado a sete repositórios abertos: você não vende o código (que é grátis), vende implantação, configuração, integração e suporte.
 
 ## [Assinaturas na API do Asaas: template de cobrança, tokenização de cartão e emissão automática de NF](../youtube/2026-09-08_assinaturas-na-api-do-asaas-template-de-cobranca-tokenizacao_m-ahYNfK_UU.md)
-2026-09-08 · youtube · SaaS alta · cliente media · estudo media · triagem — · `asaas` `api-de-assinaturas` `cobranca-recorrente` `tokenizacao-de-cartao` `nota-fiscal-automatica` `webhook`
+2026-09-08 · youtube · SaaS alta · cliente media · estudo media · triagem archive · `asaas` `api-de-assinaturas` `cobranca-recorrente` `tokenizacao-de-cartao` `nota-fiscal-automatica` `webhook`
 
 Vídeo dev do Asaas sobre a API de assinaturas: é um template que gera uma cobrança por ciclo, diferente de parcelamento.
 

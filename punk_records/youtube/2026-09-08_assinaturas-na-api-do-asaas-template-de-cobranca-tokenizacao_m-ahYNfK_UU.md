@@ -5,8 +5,8 @@ external_id: "m-ahYNfK_UU"
 canonical_url: "https://www.youtube.com/watch?v=m-ahYNfK_UU"
 channel: "Asaas"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["asaas", "api-de-assinaturas", "cobranca-recorrente", "tokenizacao-de-cartao", "nota-fiscal-automatica", "webhook", "reajuste-de-preco", "integracao-de-pagamento"]
 applicability:
   saas_pessoal: alta
