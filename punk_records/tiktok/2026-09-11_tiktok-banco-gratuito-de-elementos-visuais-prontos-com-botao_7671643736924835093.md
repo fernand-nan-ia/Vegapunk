@@ -5,8 +5,8 @@ external_id: "7671643736924835093"
 canonical_url: "https://www.tiktok.com/@lucasflame.ai/video/7671643736924835093"
 channel: "lucasflame.ai"
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["componentes-ui", "animacao-web", "landing-page", "claude-code", "ferramenta-gratuita", "biblioteca-de-efeitos"]
 applicability:
   saas_pessoal: media

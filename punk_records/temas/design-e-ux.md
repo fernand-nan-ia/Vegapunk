@@ -3,7 +3,7 @@
 _UI, UX, identidade visual, componentes, acessibilidade._ Gerado automaticamente a partir do Punk Records — 14 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [TikTok: banco gratuito de elementos visuais prontos com botão de copiar direto para a IA](../tiktok/2026-09-11_tiktok-banco-gratuito-de-elementos-visuais-prontos-com-botao_7671643736924835093.md)
-2026-09-11 · tiktok · SaaS media · cliente alta · estudo baixa · triagem — · `componentes-ui` `animacao-web` `landing-page` `claude-code` `ferramenta-gratuita` `biblioteca-de-efeitos`
+2026-09-11 · tiktok · SaaS media · cliente alta · estudo baixa · triagem archive · `componentes-ui` `animacao-web` `landing-page` `claude-code` `ferramenta-gratuita` `biblioteca-de-efeitos`
 
 Banco gratuito de elementos visuais (backgrounds interativos, animações, scroll com desfoque, animação de texto) com botão para copiar o componente direto para o Claude Code, sem login.
 
