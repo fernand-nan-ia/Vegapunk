@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 72 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 73 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify DNS — por que usar, e por que NÃO usar quando já existem muitos registros](../article/2026-09-12_netlify-dns-por-que-usar-e-por-que-nao-usar-quando-ja-existe_fcf041b1e085.md)
+2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify-dns` `ssl-wildcard` `branch-deploy` `subdominio-autonomo` `dns-externo` `migracao-de-dns`
+
+Netlify DNS dá SSL wildcard automático, subdomínio por branch e prévia com domínio próprio.
 
 ## [Netlify — assistente de domínios: as perguntas que definem o caminho de configuração](../article/2026-09-12_netlify-assistente-de-dominios-as-perguntas-que-definem-o-ca_3d00cb12d6ba.md)
 2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify` `dominio-personalizado` `dns` `apex-vs-subdominio` `arvore-de-decisao`
