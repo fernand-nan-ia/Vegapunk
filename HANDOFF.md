@@ -27,19 +27,46 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 | | |
 |---|---|
-| Repo Vegapunk | **`e564d12`** — limpo e **sincronizado com o remoto** (`266d567..e564d12`, 16 commits, push em 12/09 de manhã) |
+| Repo Vegapunk | **`53493bc`** — limpo e **sincronizado**; tag **v1.8.1** (correção do `normalize`) e 48 commits `kb:` da tarde |
 | Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
-| Container | **PARADO** — `docker` não responde no WSL (Docker Desktop fechado). Nada entra no Punk Records enquanto isso |
-| Testes | **144/144 verdes** (rodados em 12/09, antes do push) |
-| Punk Records | **247 itens** · **fila de triagem ZERADA** (147 archive · 48 cliente · 37 SaaS · 15 discard) |
+| Container | **Up** — subido em 12/09 à tarde. Atenção: depois que o Docker Desktop reinicia, `docker compose restart` FALHA no bind-mount de `~/.gitconfig`; o certo é `docker compose up -d --force-recreate` |
+| Testes | **148/148 verdes** (2 testes novos do `normalize`) |
+| Punk Records | **271 itens** · **fila de triagem ZERADA** — 24 itens novos em 12/09, todos de documentação do Netlify (badge, planos por crédito, domínios e DNS), capturados pelo `*capture` com zero OpenRouter |
 | `_pending/` | **vazio** — os 3 presos foram descartados em 12/09 a pedido do Fernando |
-| Sem tag nova | nenhuma linha de `src/` mudou nas sessões 10 a 14 |
+| Tag | **v1.8.1** em `8df569b` — primeira mudança de `src/` desde a sessão 9 |
 | Não commitado | nada |
 | OpenRouter | Fernando comprou créditos novos em 12/09; com o container parado, nada está sendo consumido |
 
 **Triagem dos 14 (12/09, Shaka):** `apply_saas` para o lote que decide o gateway do SaaS — [Asaas preços](punk_records/article/), [Stripe preços](punk_records/article/) e o [método do DevPleno](punk_records/youtube/) (NF embutida a ~R$ 1 desempata contra a Stripe); `apply_client` para o [Mazzeo/Google Ads](punk_records/youtube/) e para o ponto técnico da MXC (site gerado por IA sai sem `sitemap.xml`, `robots.txt` e `llms.txt` → invisível no Google); `archive` para as 4 páginas institucionais de gateway, a API de assinaturas do Asaas e o lote CAPTCHA inteiro. **Nenhum descarte novo.** O TikTok do banco de componentes ficou em `archive` e não em `discard` por um detalhe: o nome da ferramenta só aparece na tela do vídeo — um minuto de vídeo o transforma em material de trabalho.
 
 **Descarte dos 3 presos (12/09):** tiktok/7665842308864085255 (ERR-003), sebrae.com.br/subsites/lgpd e mpf.mp.br/servicos/lgpd (ERR-004), nenhum com nota manual. Backup do banco em `data/vegapunk.db.bak-descarte-20260912`. **Armadilha encontrada:** a máquina de estados em `src/vegapunk/db.py:17-25` não tem caminho de `extraction_failed` para `discarded` (só de volta para `normalized`), então os três foram marcados por SQL direto, fora do fluxo. Descartar item preso deveria ser decisão legítima — story de uma linha para Atlas.
+
+## O site do Jardins Café (sessão 14, 12/09) — o que já existe e o que falta
+
+O Fernando **construiu o site em diretório próprio** e publicou em `https://jardinscafe.netlify.app/` (Astro, páginas `/`, `/cardapio`, `/sobre`, `/contato`). Aqui só o estudo, como manda a regra de escopo.
+
+**A condição da Lilith está fechada e ela estava certa:** o site traz (77) 98100-6740 e Av. Olívia Flores, 705, Candeias. O cardápio do `dmsys` é DDD 85, **outro Jardins, de Fortaleza**. Aquele achado morreu — não usar nem como afirmação nem como pergunta.
+
+**A ficha N-025 (cafeteria) NÃO serve neste alvo.** A dor dela é "quem passa na porta entra, quem não passa nunca fica sabendo que a gente existe", e a oferta é Google Meu Negócio + one-page. O Jardins tem 4,5 estrelas com 429 avaliações e Instagram ativo: ele já é achado. A observação verdadeira é que o Fernando comeu lá e pagou R$ 65.
+
+**Mensagens aprovadas** (enviar para (77) 98100-6740, depois de um "boa tarde" e da apresentação com "moro aqui em Conquista mesmo"): a primeira mostra o site e fecha com "sem compromisso"; a segunda oferece cardápio com pedido caindo direto no WhatsApp e carrega a única pergunta — "Hoje vocês recebem pedido por esse número mesmo do WhatsApp?". O botão "Faça seu pedido" aponta para `poppedidos.com.br` de propósito, espelhando o que o Google Meu Negócio deles já faz. **Quem é o dono do cliente que faz o pedido** é o argumento guardado para a negociação, não para a mensagem.
+
+**Checklist técnico pendente no site:**
+- ✅ selo "Powered by Netlify" desligado (Project configuration > General > Powered by Netlify badge; sem redeploy)
+- ❌ **sem `noindex`** — `robots.txt` está `Allow: /` e declara um `sitemap-index.xml` que dá 404
+- ❌ **`sitemap.xml` e `llms.txt` dão 404** (item `apply_client` triado em 12/09)
+- ❌ **a página bloqueia copiar e colar** (`document.addEventListener('copy', e => e.preventDefault())`): o cliente não consegue copiar endereço nem telefone
+- ⚠️ o botão aponta para a raiz de `poppedidos.com.br`, não para a loja do Jardins
+- ⚠️ o Netlify ainda injeta comentário HTML com UTM para `netlify.new` e as metatags `hosting-provider`/`netlify-deploy`; isso não sai no plano Free
+
+**O que a documentação do Netlify decidiu (24 itens novos no vault):**
+- **Publicar custa 15 créditos; o Free dá 300/mês.** São 20 deploys de produção por mês. **Deploy Preview e branch deploy custam ZERO** — errar em preview é de graça.
+- **O Free tem limite RÍGIDO.** Zerou o saldo, **todos os projetos da conta são pausados** e o visitante vê "Site not available". Um cliente derruba os outros. Saídas: Personal a US$ 9/mês com recarga automática, ou uma conta por cliente.
+- **Proteção por senha só existe no Pro** — prévia trancada não é opção no plano atual.
+- **A Netlify não importa zona DNS.** Cliente com e-mail no domínio: NÃO migrar o DNS, só criar um registro (CNAME no subdomínio, ALIAS/ANAME para `apex-loadbalancer.netlify.com` no apex). Apex não aceita CNAME.
+- **Domínio comprado pela Netlify que expira:** DNS morre na hora, 30 dias de socorro pelo suporte, 30 de limbo, **dia 60 vai a leilão público**. Decidir em nome de quem fica o domínio.
+- **Dá para delegar só um subdomínio** (`site.empresa.com.br`) e deixar o domínio do cliente intacto — depende de o registrador dele aceitar NS de subdomínio.
+- Propagação de DNS leva **até 48 horas**; avisar antes, não depois.
 
 ## ⚠️ A correção da sessão 11 — leia antes de qualquer coisa sobre clonagem
 
