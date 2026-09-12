@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 73 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 74 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — ativar o Netlify DNS: pelo site já configurado ou delegando name servers](../article/2026-09-12_netlify-ativar-o-netlify-dns-pelo-site-ja-configurado-ou-del_16dbdfda644f.md)
+2026-09-12 · article · SaaS baixa · cliente alta · estudo media · triagem — · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador`
+
+Ligar o Netlify DNS é Options > Set up Netlify DNS no domínio do site, ou, para domínio de fora, trocar os name servers no registrador depois de copiar os registros existentes.
 
 ## [Netlify DNS — por que usar, e por que NÃO usar quando já existem muitos registros](../article/2026-09-12_netlify-dns-por-que-usar-e-por-que-nao-usar-quando-ja-existe_fcf041b1e085.md)
 2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify-dns` `ssl-wildcard` `branch-deploy` `subdominio-autonomo` `dns-externo` `migracao-de-dns`

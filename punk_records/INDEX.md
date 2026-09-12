@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 73 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 74 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — ativar o Netlify DNS: pelo site já configurado ou delegando name servers](article/2026-09-12_netlify-ativar-o-netlify-dns-pelo-site-ja-configurado-ou-del_16dbdfda644f.md) · `netlify-dns` `delegacao-de-dominio` `name-servers` `migracao-de-dns` `registrador` · baixa/alta/media · —
 - 2026-09-12 · article · [Netlify DNS — por que usar, e por que NÃO usar quando já existem muitos registros](article/2026-09-12_netlify-dns-por-que-usar-e-por-que-nao-usar-quando-ja-existe_fcf041b1e085.md) · `netlify-dns` `ssl-wildcard` `branch-deploy` `subdominio-autonomo` `dns-externo` `migracao-de-dns` · media/alta/alta · —
 - 2026-09-12 · article · [Netlify — assistente de domínios: as perguntas que definem o caminho de configuração](article/2026-09-12_netlify-assistente-de-dominios-as-perguntas-que-definem-o-ca_3d00cb12d6ba.md) · `netlify` `dominio-personalizado` `dns` `apex-vs-subdominio` `arvore-de-decisao` · baixa/media/media · —
 - 2026-09-12 · article · [Netlify — como desligar o selo 'Powered by Netlify' (Project configuration > General)](article/2026-09-12_netlify-como-desligar-o-selo-powered-by-netlify-project-conf_26c67ef0e45d.md) · `netlify` `powered-by-netlify` `marca-de-terceiro` `site-de-cliente` `plano-free` `script-injetado-na-borda` `white-label` · media/alta/media · apply_client
