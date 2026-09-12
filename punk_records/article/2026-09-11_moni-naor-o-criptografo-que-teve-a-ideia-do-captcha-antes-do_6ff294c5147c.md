@@ -5,8 +5,8 @@ external_id: "6ff294c5147c"
 canonical_url: "https://en.wikipedia.org/wiki/Moni_Naor"
 channel: "Authority control databases · Wikimedia Foundation, Inc."
 captured_at: 2026-09-11
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["criptografia", "captcha", "moni-naor", "manuel-blum", "criptografia-visual", "traitor-tracing", "broadcast-encryption", "historia-da-computacao"]
 applicability:
   saas_pessoal: baixa

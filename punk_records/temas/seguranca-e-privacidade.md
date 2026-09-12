@@ -13,7 +13,7 @@ Site oficial do CAPTCHA (CMU, 2000).
 Paper do Eurocrypt 2003 (von Ahn, Blum, Hopper, Langford) que formaliza o CAPTCHA: usar problema aberto de IA como premissa de segurança, no lugar de fatoração.
 
 ## [Moni Naor — o criptógrafo que teve a ideia do CAPTCHA antes do CAPTCHA existir](../article/2026-09-11_moni-naor-o-criptografo-que-teve-a-ideia-do-captcha-antes-do_6ff294c5147c.md)
-2026-09-11 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `criptografia` `captcha` `moni-naor` `manuel-blum` `criptografia-visual` `traitor-tracing`
+2026-09-11 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `criptografia` `captcha` `moni-naor` `manuel-blum` `criptografia-visual` `traitor-tracing`
 
 Biografia do israelense Moni Naor (Weizmann), aluno de Manuel Blum.
 
