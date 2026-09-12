@@ -5,8 +5,8 @@ external_id: "ef74dd3069e1"
 canonical_url: "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["netlify", "precificacao-por-credito", "custo-de-hospedagem", "plano-free", "deploy-de-producao", "banda", "limite-rigido", "custo-por-cliente"]
 applicability:
   saas_pessoal: media

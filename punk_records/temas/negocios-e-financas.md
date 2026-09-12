@@ -18,7 +18,7 @@ No Enterprise a tabela de consumo é a mesma dos planos self-serve: 15 créditos
 Fragmento da página de preços: Pro vai de 3.000 a 20.000 créditos por preço fixo, com rollover só acima de 3.000.
 
 ## [Netlify — planos por crédito (Free 300, Personal US$ 9, Pro US$ 20) e o que cada recurso consome](../article/2026-09-12_netlify-planos-por-credito-free-300-personal-us-9-pro-us-20_ef74dd3069e1.md)
-2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem — · `netlify` `precificacao-por-credito` `custo-de-hospedagem` `plano-free` `deploy-de-producao` `banda`
+2026-09-12 · article · SaaS media · cliente alta · estudo alta · triagem apply_client · `netlify` `precificacao-por-credito` `custo-de-hospedagem` `plano-free` `deploy-de-producao` `banda`
 
 Free dá 300 créditos/mês com limite rígido; Personal US$ 9 dá 1.000 e Pro US$ 20 dá 3.000, ambos com recarga.
 
