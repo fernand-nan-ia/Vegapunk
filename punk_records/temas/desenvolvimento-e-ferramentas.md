@@ -8,7 +8,7 @@ _código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automati
 Assistente de entrada do Netlify: começar com agente de IA, template ou framework; publicar de repositório Git com deploy automático a cada push, ou arrastar a pasta.
 
 ## [Netlify — acompanhar builds do time: fila, prioridade e minutos gastos](../article/2026-09-12_netlify-acompanhar-builds-do-time-fila-prioridade-e-minutos_62f1f3b4fc7c.md)
-2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify` `build-minutes` `fila-de-build` `builds-concorrentes` `audit-log` `custo-de-build`
+2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem archive · `netlify` `build-minutes` `fila-de-build` `builds-concorrentes` `audit-log` `custo-de-build`
 
 Aba Builds do time: fila, capacidade concorrente, priorização com Build next e histórico de minutos por dia e por site, atualizado de hora em hora.
 

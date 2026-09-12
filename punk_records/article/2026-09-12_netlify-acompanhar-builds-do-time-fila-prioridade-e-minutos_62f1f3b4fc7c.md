@@ -5,8 +5,8 @@ external_id: "62f1f3b4fc7c"
 canonical_url: "https://docs.netlify.com/manage/monitoring/monitor-builds"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "build-minutes", "fila-de-build", "builds-concorrentes", "audit-log", "custo-de-build"]
 applicability:
   saas_pessoal: baixa
