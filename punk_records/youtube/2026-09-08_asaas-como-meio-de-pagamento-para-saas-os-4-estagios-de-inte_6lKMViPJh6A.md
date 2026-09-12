@@ -5,8 +5,8 @@ external_id: "6lKMViPJh6A"
 canonical_url: "https://www.youtube.com/watch?v=6lKMViPJh6A"
 channel: "DevPleno"
 captured_at: 2026-09-08
-status: enriched
-triage: null
+status: applied_saas
+triage: apply_saas
 tags: ["asaas", "meio-de-pagamento-saas", "nota-fiscal-automatica", "cobranca-recorrente", "cobranca-por-uso", "webhook", "multitenant", "integracao-minima"]
 applicability:
   saas_pessoal: alta

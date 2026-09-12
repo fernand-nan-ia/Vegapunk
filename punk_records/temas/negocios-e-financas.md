@@ -8,7 +8,7 @@ _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticament
 Quatro linhas de serviço com IA e quanto cada uma rendeu: sites/LP (+R$ 10k), dashboard e CRM (+R$ 8k), automação de WhatsApp (+R$ 6k em 30 dias) e solução sob medida, precificada pelo problema resolvido.
 
 ## [Asaas como meio de pagamento para SaaS: os 4 estágios de integração, nota fiscal automática e custo real por cobrança](../youtube/2026-09-08_asaas-como-meio-de-pagamento-para-saas-os-4-estagios-de-inte_6lKMViPJh6A.md)
-2026-09-08 · youtube · SaaS alta · cliente media · estudo alta · triagem — · `asaas` `meio-de-pagamento-saas` `nota-fiscal-automatica` `cobranca-recorrente` `cobranca-por-uso` `webhook`
+2026-09-08 · youtube · SaaS alta · cliente media · estudo alta · triagem apply_saas · `asaas` `meio-de-pagamento-saas` `nota-fiscal-automatica` `cobranca-recorrente` `cobranca-por-uso` `webhook`
 
 Túlio do DevPleno mostra como cobra nos SaaS dele com o Asaas, evoluindo por estágios: 1-5 clientes sem integração nenhuma, 5-10 com assinatura criada à mão e um único GET para listar cobranças, e só depois cron de cobra
 
