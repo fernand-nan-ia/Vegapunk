@@ -1,6 +1,11 @@
 # 🛠 Desenvolvimento e ferramentas
 
-_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 68 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_código, arquitetura, bibliotecas, infra, Docker, bancos, CLI._ Gerado automaticamente a partir do Punk Records — 69 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Netlify — acompanhar builds do time: fila, prioridade e minutos gastos](../article/2026-09-12_netlify-acompanhar-builds-do-time-fila-prioridade-e-minutos_62f1f3b4fc7c.md)
+2026-09-12 · article · SaaS baixa · cliente media · estudo media · triagem — · `netlify` `build-minutes` `fila-de-build` `builds-concorrentes` `audit-log` `custo-de-build`
+
+Aba Builds do time: fila, capacidade concorrente, priorização com Build next e histórico de minutos por dia e por site, atualizado de hora em hora.
 
 ## [Netlify — como funcionam os deploys: atômicos, skew protection, contextos e permalinks](../article/2026-09-12_netlify-como-funcionam-os-deploys-atomicos-skew-protection-c_6069be7da79f.md)
 2026-09-12 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn`

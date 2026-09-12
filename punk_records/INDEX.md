@@ -5,7 +5,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## Mapa de temas
 
 - 🤖 IA e agentes — 32 item(ns) → [temas/ia-e-agentes.md](temas/ia-e-agentes.md)
-- 🛠 Desenvolvimento e ferramentas — 68 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
+- 🛠 Desenvolvimento e ferramentas — 69 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 47 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 36 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
@@ -52,6 +52,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 🛠 Desenvolvimento e ferramentas
 
+- 2026-09-12 · article · [Netlify — acompanhar builds do time: fila, prioridade e minutos gastos](article/2026-09-12_netlify-acompanhar-builds-do-time-fila-prioridade-e-minutos_62f1f3b4fc7c.md) · `netlify` `build-minutes` `fila-de-build` `builds-concorrentes` `audit-log` `custo-de-build` · baixa/media/media · —
 - 2026-09-12 · article · [Netlify — como funcionam os deploys: atômicos, skew protection, contextos e permalinks](article/2026-09-12_netlify-como-funcionam-os-deploys-atomicos-skew-protection-c_6069be7da79f.md) · `netlify` `deploy-atomico` `skew-protection` `deploy-preview` `branch-deploy` `cache-de-cdn` `log-de-deploy` · baixa/alta/alta · —
 - 2026-09-12 · article · [Netlify Observability — o que dá para ver, por plano, e onde ele mente sobre tráfego](article/2026-09-12_netlify-observability-o-que-da-para-ver-por-plano-e-onde-ele_d67398ab59a7.md) · `netlify` `observability` `monitoramento-de-producao` `trafego-de-bot` `crawler-de-ia` `log-drain` `limites-por-plano` `404` · media/media/alta · —
 - 2026-09-12 · article · [Netlify — Observability: página de entrada do monitoramento de produção](article/2026-09-12_netlify-observability-pagina-de-entrada-do-monitoramento-de_7154b381be80.md) · `netlify` `observability` `monitoramento` `indice-de-documentacao` · baixa/baixa/baixa · —
