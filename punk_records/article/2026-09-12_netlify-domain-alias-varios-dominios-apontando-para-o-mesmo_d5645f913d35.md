@@ -5,8 +5,8 @@ external_id: "d5645f913d35"
 canonical_url: "https://docs.netlify.com/manage/domains/configure-domains/add-a-domain-alias"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "domain-alias", "dominio-primario", "redirecionamento-de-dominio"]
 applicability:
   saas_pessoal: baixa

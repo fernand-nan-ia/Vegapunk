@@ -38,7 +38,7 @@ Troca deploy-preview-42--meusite.netlify.app por deploy-preview-42.empresa.com e
 Adicionar o domínio em Domain management > Add a domain you already own, depois criar o registro que a tela Pending DNS verification indicar no provedor atual.
 
 ## [Netlify — domain alias: vários domínios apontando para o mesmo site](../article/2026-09-12_netlify-domain-alias-varios-dominios-apontando-para-o-mesmo_d5645f913d35.md)
-2026-09-12 · article · SaaS baixa · cliente media · estudo baixa · triagem — · `netlify` `domain-alias` `dominio-primario` `redirecionamento-de-dominio`
+2026-09-12 · article · SaaS baixa · cliente media · estudo baixa · triagem archive · `netlify` `domain-alias` `dominio-primario` `redirecionamento-de-dominio`
 
 Um site pode ter vários domínios: um primário e o resto como alias, em Domain management > Production domains.
 
