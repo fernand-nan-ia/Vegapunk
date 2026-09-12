@@ -100,7 +100,24 @@ def normalize(url: str, resolver=resolve_redirect) -> Normalized:
     return normalize_article(url)
 
 
-TRACKING_PARAMS = ("utm_", "fbclid", "gclid", "igsh", "si", "ref", "mc_cid", "mc_eid")
+# Rastreadores removidos antes do sha1: a MESMA página vinda de dois anúncios tem que dar o mesmo id.
+# Prefixo SÓ para famílias em que o nome inteiro é sempre rastreador (utm_source, gad_campaignid);
+# o resto é nome exato, senão "si" engole "site" e "ref" engole "refresh" — e aí duas páginas
+# DIFERENTES viram o mesmo item, que é pior que duplicata.
+# Fora daqui de propósito (Lilith, verify de 12/09): "campaignid", "adgroupid", "adid" e "matchtype"
+# são conteúdo dentro de plataforma de anúncio, e "ref" é o branch no GitHub. O caso real do Google
+# Ads já cai no prefixo gad_.
+TRACKING_PREFIXES = ("utm_", "gad_", "pk_", "matomo_", "hsa_", "vero_")
+TRACKING_EXACT = frozenset({
+    "fbclid", "gclid", "gclsrc", "dclid", "gbraid", "wbraid",  # Google/Meta
+    "msclkid", "ttclid", "twclid", "yclid", "epik", "li_fat_id", "igshid", "igsh",  # Bing, TikTok, X, Yandex, Pinterest, LinkedIn, Instagram
+    "mkt_tok", "_gl", "irclickid", "s_kwcid", "mc_cid", "mc_eid", "si", "ref_src", "ref_url",
+})
+
+
+def _is_tracking(key: str) -> bool:
+    k = key.lower()
+    return k in TRACKING_EXACT or k.startswith(TRACKING_PREFIXES)
 
 
 def normalize_article(url: str) -> Normalized:
@@ -108,8 +125,9 @@ def normalize_article(url: str) -> Normalized:
     parsed = urlparse(url)
     if parsed.scheme not in ("http", "https") or not parsed.hostname:
         return Normalized("other", None, url)
-    query = [(k, v) for k, v in parse_qs(parsed.query, keep_blank_values=True).items()
-             if not k.lower().startswith(TRACKING_PARAMS)]
+    # ordenado: ?a=1&b=2 e ?b=2&a=1 são a mesma página e têm que dar o mesmo id
+    query = sorted((k, v) for k, v in parse_qs(parsed.query, keep_blank_values=True).items()
+                   if not _is_tracking(k))
     clean = urlunparse((parsed.scheme, parsed.hostname.lower() + (f":{parsed.port}" if parsed.port else ""),
                         parsed.path.rstrip("/") or "/", "", urlencode(query, doseq=True), ""))
     return Normalized("article", hashlib.sha1(clean.encode()).hexdigest()[:12], clean)

@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.8.1 — 2026-09-12
+### Corrigido
+- **`normalize` deixava a mesma página entrar duas vezes**: `gad_source`, `gad_campaignid`, `gbraid`, `wbraid`, `msclkid`, `ttclid` e companhia sobreviviam ao sha1, então a mesma página vinda de dois anúncios virava dois itens. Visto em 07/09 no artigo da Hostinger.
+- **Casamento por prefixo cego fundia páginas DIFERENTES** (pior que duplicata): `startswith(("si", "ref", …))` engolia `site=`, `refresh=`, `reference=`. Agora são duas listas — `TRACKING_PREFIXES` só para famílias em que o nome inteiro é sempre rastreador (`utm_`, `gad_`, `pk_`, `matomo_`, `hsa_`, `vero_`) e `TRACKING_EXACT` para o resto.
+- **Ordem dos parâmetros criava dois ids** para a mesma página: `?a=1&b=2` e `?b=2&a=1` agora dão o mesmo item (query ordenada antes do hash).
+- Os 2 itens que já estavam no vault com rastreador na `canonical_url` (Hostinger `a19b8d1384f3` → `6d3eb9ebcf08`, Shopify `a795094ef99d` → `f30966ea0cdb`) foram recalculados, com `.md` renomeado e índice regravado. Backup: `data/vegapunk.db.bak-normalize-20260912`.
+
+### Mudado
+- `campaignid`, `adgroupid`, `adid`, `matchtype` e `ref` ficaram **de fora** da lista de rastreadores de propósito: dentro de plataforma de anúncio o id da campanha é conteúdo, e `?ref=` no GitHub é o branch. Derrubá-los fundiria páginas diferentes. O caso real do Google Ads já cai no prefixo `gad_`.
+
+### Dívida registrada (Lilith, MÉDIO, não bloqueante)
+- `http` vs `https` vs `www.` ainda geram ids diferentes para a mesma página. Consertar exige separar a chave de deduplicação da URL de busca — a `canonical_url` hoje serve às duas coisas, e forçar `https` quebraria o fetch de páginas http de verdade (captcha.net está no vault).
+- `platform="other"` (canal, playlist, perfil) tem `external_id = None` e nunca deduplica — 0 itens afetados hoje.
+- `db.TRANSITIONS` não liga `extraction_failed`/`enrichment_failed` a `discarded`: descartar item preso só por SQL direto.
+
+### Gate: Shaka PASS · Verify: Lilith 10 findings, 2 ALTOs tratados, 2ª passada limpa · Testes: 148/148
+
 ## v1.8.0 — 2026-08-31
 ### Adicionado
 - **A cascata do grupo (Story 1c)**: `router.decide()` compõe as camadas 1–3 numa função só — `@menção` responde sem roteador, mensagem sem nome e fora da janela não custa nada, e só então o roteador decide. Não existe caminho no `bot.py` até `route()` que pule `mentions()` (há teste que lê o arquivo e falha se alguém tentar).

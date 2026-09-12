@@ -42,7 +42,7 @@ Checkout Transparente do Mercado Pago é uma API sem interface pronta: o pagamen
 
 Mercado Pago explica gateway de pagamento: o que faz, PCI DSS, split, recorrência e link de pagamento.
 
-## [Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)](../article/2026-09-07_como-vender-um-site-avaliacao-por-multiplo-marketplaces-e-co_a19b8d1384f3.md)
+## [Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)](../article/2026-09-07_como-vender-um-site-avaliacao-por-multiplo-marketplaces-e-co_6d3eb9ebcf08.md)
 2026-09-07 · article · SaaS alta · cliente baixa · estudo media · triagem apply_saas · `venda-de-ativo-digital` `valuation-por-multiplo` `marketplace-de-sites` `corretagem` `due-diligence` `relatorio-financeiro`
 
 Trata de vender o site como ativo, não de vender site para cliente.

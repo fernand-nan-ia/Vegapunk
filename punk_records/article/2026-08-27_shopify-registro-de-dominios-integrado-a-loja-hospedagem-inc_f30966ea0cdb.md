@@ -1,8 +1,8 @@
 ---
 item_id: "0a01824d-ac0b-4b46-9063-e1619d648b65"
 platform: article
-external_id: "a795094ef99d"
-canonical_url: "https://www.shopify.com/br/dominios?term=registro+br&adid=692294252840&campaignid=21054976722&bucket=domain_PTBR&matchtype=b&network=g&gad_source=1&gad_campaignid=21054976722&gbraid=0AAAAADiv1Ik1UQUyoeoUey-v97LA7hGFM"
+external_id: "f30966ea0cdb"
+canonical_url: "https://www.shopify.com/br/dominios?adid=692294252840&bucket=domain_PTBR&campaignid=21054976722&matchtype=b&network=g&term=registro+br"
 channel: "Shopify"
 captured_at: 2026-08-27
 status: discarded
@@ -19,7 +19,7 @@ content_type: article
 
 # Shopify — registro de domínios integrado à loja (hospedagem inclusa, DNS automático)
 
-🔗 https://www.shopify.com/br/dominios?term=registro+br&adid=692294252840&campaignid=21054976722&bucket=domain_PTBR&matchtype=b&network=g&gad_source=1&gad_campaignid=21054976722&gbraid=0AAAAADiv1Ik1UQUyoeoUey-v97LA7hGFM
+🔗 https://www.shopify.com/br/dominios?adid=692294252840&bucket=domain_PTBR&campaignid=21054976722&matchtype=b&network=g&term=registro+br
 
 ## Resumo
 

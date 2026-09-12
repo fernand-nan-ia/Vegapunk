@@ -1,8 +1,8 @@
 ---
 item_id: "249670ad-a5ed-4e9d-a776-b47091762654"
 platform: article
-external_id: "a19b8d1384f3"
-canonical_url: "https://www.hostinger.com/br/tutoriais/como-vender-um-site?gad_source=1&gad_campaignid=20417074995&gbraid=0AAAAADMy-ha4LywJ6IeeactcEZZu1M2JL"
+external_id: "6d3eb9ebcf08"
+canonical_url: "https://www.hostinger.com/br/tutoriais/como-vender-um-site"
 channel: "Bruno Santana · Hostinger Tutoriais"
 captured_at: 2026-09-07
 status: applied_saas
@@ -19,7 +19,7 @@ content_type: article
 
 # Como vender um site: avaliação por múltiplo, marketplaces e corretores (Hostinger)
 
-🔗 https://www.hostinger.com/br/tutoriais/como-vender-um-site?gad_source=1&gad_campaignid=20417074995&gbraid=0AAAAADMy-ha4LywJ6IeeactcEZZu1M2JL
+🔗 https://www.hostinger.com/br/tutoriais/como-vender-um-site
 
 ## Resumo
 
