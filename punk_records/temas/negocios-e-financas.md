@@ -8,7 +8,7 @@ _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticament
 Se o saldo de créditos zera, TODOS os projetos da conta são pausados e o visitante vê 'Site not available'.
 
 ## [Netlify — como os créditos funcionam nos planos Enterprise (mesma tabela dos planos self-serve)](../article/2026-09-12_netlify-como-os-creditos-funcionam-nos-planos-enterprise-mes_0d2c67bb789b.md)
-2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem — · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia`
+2026-09-12 · article · SaaS baixa · cliente baixa · estudo media · triagem archive · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia`
 
 No Enterprise a tabela de consumo é a mesma dos planos self-serve: 15 créditos por deploy de produção, 20 por GB de banda, 2 a cada 10 mil requisições.
 

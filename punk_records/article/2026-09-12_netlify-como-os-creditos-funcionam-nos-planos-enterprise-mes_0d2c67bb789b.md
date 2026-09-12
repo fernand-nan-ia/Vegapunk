@@ -5,8 +5,8 @@ external_id: "0d2c67bb789b"
 canonical_url: "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work-for-enterprise-plans"
 channel: "Netlify Docs"
 captured_at: 2026-09-12
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["netlify", "plano-enterprise", "medidores-de-credito", "agent-runners", "custo-de-ia"]
 applicability:
   saas_pessoal: baixa
