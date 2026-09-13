@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (checkpoint 2026-09-11 noite, fim da sessão 13 — CAPTCHA, o método do Mazzeo e o primeiro alvo real de venda)
+# HANDOFF — Vegapunk (checkpoint 2026-09-12, fim da sessão 14 — o site do Jardins existe, a abordagem está escrita e o Netlify entrou no vault)
 
 ## TL;DR — o que existe hoje
 
@@ -23,7 +23,7 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (2026-09-12 manhã — sessão 14 em curso)
+## Estado atual (checkpoint 2026-09-12 — fim da sessão 14)
 
 | | |
 |---|---|
@@ -107,21 +107,34 @@ Lá: código, deploy, domínio, revisões, o site.
 
 **Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
 
-### O que está aberto (revisto em 12/09 de manhã)
+### O que fazer quando ele voltar (revisto em 12/09, fim da sessão)
 
-**Ele começou a criação do site em 12/09, em diretório próprio** — como manda a regra de escopo. Esta pasta continua sendo estudo, e o que sobrou aqui é o que está listado abaixo.
+**Ele construiu o site do Jardins Café hoje e parou aqui com a abordagem pronta para enviar.** A mensagem não foi enviada até o fim da sessão. Esta pasta continua sendo estudo; o site vive em diretório próprio.
 
-1. 🔍 **A condição da Lilith, antes de qualquer mensagem ao Jardins Café:** abrir `dmsys.app.br/jardinscafe/cardapio` e comparar com o que o Fernando comeu (preços, buffet de R$ 65, logo). O logo do dmsys é um círculo colorido "café·café·café"; o do Jardins de Conquista é serifa preta sobre branco. **Forte indício de que é outro Jardins, de Fortaleza (DDD 85)** — e, se for, a observação principal da abordagem morre. Cinco minutos decidem.
-2. ✍️ **Usar a versão-pergunta da abordagem, não a versão-afirmação.** "Achei um cardápio com o nome Jardins com endereço de Fortaleza. Esse é de vocês ou tem outro Jardins por aí?" — não existe resposta que derrube essa mensagem. A afirmativa morre se o dono for outro.
-3. 🔎 **Checar `sitemap.xml`, `robots.txt` e `llms.txt` no site que ele está construindo** — triado `apply_client` em 12/09. Site gerado por IA costuma sair sem os três e não é indexado: bonito e invisível.
-4. 💰 **Decidir a cláusula do contrato continua PENDENTE, e ele decidiu adiar** (ver Decisões fechadas). O risco que sobra e que ele controla hoje: **não entregar a prévia completa de graça**.
-5. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, passo 1 do próprio produto. Vira munição imediata.
-6. 🎬 **Abrir o TikTok do banco de componentes** (`tiktok/7671643736924835093`) e anotar o nome da ferramenta em `## Notas manuais` — o nome só aparece na tela do vídeo, e sem ele o item não serve para nada. Um minuto.
-7. **Destravar o clonador** quando voltar a interessar: `cd ~/projetos/ai-website-cloner-template && claude --chrome`. Continua bloqueado por falta de MCP de navegador.
-8. ✅ **RESOLVIDO em 12/09 (v1.8.1)** — `TRACKING_PARAMS` virou `TRACKING_PREFIXES` + `TRACKING_EXACT`, query ordenada antes do hash, 2 itens sujos recalculados. Ver CHANGELOG.
+1. 📱 **Enviar a abordagem** para (77) 98100-6740 — um "boa tarde" com a apresentação e o "moro aqui em Conquista mesmo", esperar a resposta, e então as duas mensagens coladas (estão na seção do Jardins Café, acima). Janela boa: entre 15h e 16h30, depois que o café reabre. Vácuo de 24h não é não: mande a primeira mesmo assim.
+2. 🔧 **Os quatro do checklist técnico do site**, todos rápidos: `noindex` na prévia, `sitemap.xml` (hoje 404 e ainda declarado no `robots.txt`), `llms.txt`, e tirar o bloqueio de copiar/colar (`document.addEventListener('copy', …)`) que impede o cliente de copiar endereço e telefone. Story para a Atlas, se ele quiser.
+3. 🔗 **Corrigir o botão "Faça seu pedido"**: aponta para a raiz de `poppedidos.com.br`, não para a loja do Jardins. Se a URL da loja existir, usar ela; senão o dono clica e não se acha.
+4. 💰 **Decidir onde o site do cliente vai morar antes de cobrar**: Free tem limite rígido e um projeto que estoure pausa TODOS os da conta com um "Site not available". Personal a US$ 9/mês, ou uma conta por cliente.
+5. 💰 **A cláusula do contrato continua PENDENTE e ele decidiu adiar.** O risco que ele controla hoje: não entregar a prévia completa de graça.
+6. 📋 **Montar a ficha de presets do Cofre** — 4 minutos, passo 1 do próprio produto.
+7. 🎬 **Abrir o TikTok do banco de componentes** (`tiktok/7671643736924835093`) e anotar o nome da ferramenta em `## Notas manuais`: o nome só aparece na tela do vídeo, e sem ele o item não vale nada. Um minuto.
+8. **Destravar o clonador** quando voltar a interessar: `cd ~/projetos/ai-website-cloner-template && claude --chrome`. Bloqueado por falta de MCP de navegador.
 9. **Atlas: Story 2a** (`squads/vegapunk/stories/2026-09-01-kit-2a-importador.md`). Shaka já deu o `*risk`.
-10. **Atlas (nova, 12/09): permitir descartar item preso pelo fluxo normal** — `db.TRANSITIONS` não liga `extraction_failed`/`enrichment_failed` a `discarded`, e `pipeline.triage` exige `status == "enriched"`. Hoje só dá para fazer por SQL direto.
-11. **Subir o container quando o Docker Desktop voltar** (`docker compose up -d`) e conferir a fila antes — o bot ficou parado a partir de 11/09 à noite.
+10. **Atlas (nova, 12/09): descartar item preso pelo fluxo normal** — `db.TRANSITIONS` não liga `extraction_failed`/`enrichment_failed` a `discarded`, e `pipeline.triage` exige `status == "enriched"`. Hoje só por SQL direto.
+11. **Dívida da v1.8.1, registrada pela Lilith como MÉDIO:** `http` vs `https` vs `www.` ainda geram ids diferentes para a mesma página; consertar exige separar a chave de deduplicação da URL de busca, porque forçar `https` quebraria o fetch de páginas http de verdade (captcha.net está no vault). E `platform="other"` nunca deduplica — 0 itens afetados hoje.
+
+### Resolvido na sessão 14
+
+- ✅ Checkpoint da sessão 13 commitado, `_pending/` esvaziado (3 itens descartados a pedido dele) e a fila de triagem zerada duas vezes no mesmo dia.
+- ✅ **v1.8.1** — `normalize` não deixa mais a mesma página entrar duas vezes, e o casamento por prefixo cego (que fundia páginas DIFERENTES) acabou.
+- ✅ Selo "Powered by Netlify" desligado no site do Jardins.
+- ✅ Container de pé, com a armadilha do `restart` documentada.
+
+### ⚠️ Armadilhas novas descobertas hoje
+
+- **`docker compose restart` FALHA depois que o Docker Desktop reinicia** — o bind-mount de `~/.gitconfig` aponta para um snapshot que sumiu. O certo é `docker compose up -d --force-recreate`.
+- **Achado forte com dono errado é pior que achado fraco.** A Lilith provou duas vezes em dois dias: primeiro no cardápio do Jardins, depois na correção do `normalize`, onde a Atlas cometeu na mesma linha o pecado que ela própria havia denunciado. Verificar o dono antes de montar o diagnóstico.
+- **Ficha de nicho não substitui olhar o alvo.** A N-025 foi aplicada a um café com 429 avaliações cuja dor declarada é "ninguém sabe que existo". Ler a ficha depois de olhar o negócio, nunca antes.
 
 ## Sessão 4 (2026-08-27) — cânone da wiki incorporado aos 7 Satélites
 
