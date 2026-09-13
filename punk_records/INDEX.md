@@ -8,7 +8,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🛠 Desenvolvimento e ferramentas — 82 item(ns) → [temas/desenvolvimento-e-ferramentas.md](temas/desenvolvimento-e-ferramentas.md)
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
-- 📣 Marketing e vendas — 38 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
+- 📣 Marketing e vendas — 39 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
 - 💰 Negócios e finanças — 31 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
@@ -199,6 +199,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 ## 📣 Marketing e vendas
 
 - 2026-09-13 · article · [Como evitar o bloqueio do número no WhatsApp: como a Meta mede reputação, 7 causas e 8 práticas (Dito)](article/2026-09-13_como-evitar-o-bloqueio-do-numero-no-whatsapp-como-a-meta-med_ed2febfa7eea.md) · `bloqueio-whatsapp` `reputacao-do-numero` `opt-in` `disparo-em-massa` `api-oficial-whatsapp` `prospeccao-fria` `aquecimento-de-numero` `conteudo-de-fornecedor` · baixa/alta/alta · —
+- 2026-09-13 · article · [O que acontece quando você bloqueia alguém no WhatsApp — seis efeitos práticos (TechTudo, 2022)](article/2026-09-13_o-que-acontece-quando-voce-bloqueia-alguem-no-whatsapp-seis_44e5a3deb86d.md) · `bloqueio-whatsapp` `bloqueio-entre-usuarios` `tique-cinza` `privacidade-whatsapp` `grupos` `prospeccao-por-whatsapp` `conteudo-de-2022` · nenhuma/media/media · —
 - 2026-09-13 · document · [Networking e indicação como canal principal de clientes (post de Gustavo Chotti em comunidade)](document/2026-09-13_networking-e-indicacao-como-canal-principal-de-clientes-post_2f278833fa17.md) · `networking` `indicacao` `aquisicao-de-clientes` `venda-consultiva` `prospeccao-fria` `canal-de-vendas` `opiniao-sem-dados` `negocio-local` · baixa/media/media · —
 - 2026-09-11 · youtube · [Vagner Mazzeo: Google Ads de cliente real montado do zero com Claude Code (site + ads por R$ 5.000)](youtube/2026-09-11_vagner-mazzeo-google-ads-de-cliente-real-montado-do-zero-com_KUf-vS_gSZo.md) · `google-ads` `claude-code` `dataforseo` `landing-page-por-anuncio` `palavras-chave` `google-ads-editor` `gtm-conversao` `precificacao-servico` · baixa/alta/alta · apply_client
 - 2026-09-11 · tiktok · [TikTok (MXC Digital): site bonito feito só com IA sem sitemap, robots.txt e llms.txt é vitrine escondida](tiktok/2026-09-11_tiktok-mxc-digital-site-bonito-feito-so-com-ia-sem-sitemap-r_7679994027420208391.md) · `seo-tecnico` `sitemap-xml` `robots-txt` `llms-txt` `site-gerado-por-ia` `indexacao-google` `agencia-digital` · media/alta/baixa · apply_client

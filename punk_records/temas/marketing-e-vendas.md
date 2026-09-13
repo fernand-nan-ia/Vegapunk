@@ -1,11 +1,16 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 38 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 39 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
 
 ## [Como evitar o bloqueio do número no WhatsApp: como a Meta mede reputação, 7 causas e 8 práticas (Dito)](../article/2026-09-13_como-evitar-o-bloqueio-do-numero-no-whatsapp-como-a-meta-med_ed2febfa7eea.md)
 2026-09-13 · article · SaaS baixa · cliente alta · estudo alta · triagem — · `bloqueio-whatsapp` `reputacao-do-numero` `opt-in` `disparo-em-massa` `api-oficial-whatsapp` `prospeccao-fria`
 
 A Meta pontua o número pelo comportamento acumulado: quantos bloqueiam, quantos denunciam, quantos respondem.
+
+## [O que acontece quando você bloqueia alguém no WhatsApp — seis efeitos práticos (TechTudo, 2022)](../article/2026-09-13_o-que-acontece-quando-voce-bloqueia-alguem-no-whatsapp-seis_44e5a3deb86d.md)
+2026-09-13 · article · SaaS nenhuma · cliente media · estudo media · triagem — · `bloqueio-whatsapp` `bloqueio-entre-usuarios` `tique-cinza` `privacidade-whatsapp` `grupos` `prospeccao-por-whatsapp`
+
+Bloqueio no WhatsApp não avisa a pessoa e não bloqueia ligação comum nem SMS.
 
 ## [Networking e indicação como canal principal de clientes (post de Gustavo Chotti em comunidade)](../document/2026-09-13_networking-e-indicacao-como-canal-principal-de-clientes-post_2f278833fa17.md)
 2026-09-13 · document · SaaS baixa · cliente media · estudo media · triagem — · `networking` `indicacao` `aquisicao-de-clientes` `venda-consultiva` `prospeccao-fria` `canal-de-vendas`
