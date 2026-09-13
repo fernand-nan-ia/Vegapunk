@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 36 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 37 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [Networking e indicação como canal principal de clientes (post de Gustavo Chotti em comunidade)](../document/2026-09-13_networking-e-indicacao-como-canal-principal-de-clientes-post_2f278833fa17.md)
+2026-09-13 · document · SaaS baixa · cliente media · estudo media · triagem — · `networking` `indicacao` `aquisicao-de-clientes` `venda-consultiva` `prospeccao-fria` `canal-de-vendas`
+
+Post de comunidade defendendo networking e indicação em vez de prospecção fria: ir a eventos, não vender de cara, cultivar o relacionamento até a indicação virar cadeia.
 
 ## [Vagner Mazzeo: Google Ads de cliente real montado do zero com Claude Code (site + ads por R$ 5.000)](../youtube/2026-09-11_vagner-mazzeo-google-ads-de-cliente-real-montado-do-zero-com_KUf-vS_gSZo.md)
 2026-09-11 · youtube · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `google-ads` `claude-code` `dataforseo` `landing-page-por-anuncio` `palavras-chave` `google-ads-editor`
