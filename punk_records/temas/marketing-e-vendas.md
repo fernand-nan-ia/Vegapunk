@@ -13,7 +13,7 @@ A Meta pontua o número pelo comportamento acumulado: quantos bloqueiam, quantos
 Bloqueio no WhatsApp não avisa a pessoa e não bloqueia ligação comum nem SMS.
 
 ## [Networking e indicação como canal principal de clientes (post de Gustavo Chotti em comunidade)](../document/2026-09-13_networking-e-indicacao-como-canal-principal-de-clientes-post_2f278833fa17.md)
-2026-09-13 · document · SaaS baixa · cliente media · estudo media · triagem — · `networking` `indicacao` `aquisicao-de-clientes` `venda-consultiva` `prospeccao-fria` `canal-de-vendas`
+2026-09-13 · document · SaaS baixa · cliente media · estudo media · triagem archive · `networking` `indicacao` `aquisicao-de-clientes` `venda-consultiva` `prospeccao-fria` `canal-de-vendas`
 
 Post de comunidade defendendo networking e indicação em vez de prospecção fria: ir a eventos, não vender de cara, cultivar o relacionamento até a indicação virar cadeia.
 

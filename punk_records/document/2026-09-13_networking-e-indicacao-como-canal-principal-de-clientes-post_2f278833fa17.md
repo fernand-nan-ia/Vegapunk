@@ -5,8 +5,8 @@ external_id: "2f278833fa17"
 canonical_url: "chotti-networking.txt"
 channel: "documento txt"
 captured_at: 2026-09-13
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["networking", "indicacao", "aquisicao-de-clientes", "venda-consultiva", "prospeccao-fria", "canal-de-vendas", "opiniao-sem-dados", "negocio-local"]
 applicability:
   saas_pessoal: baixa
