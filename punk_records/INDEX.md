@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 40 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 31 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 32 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
@@ -241,6 +241,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-09-14 · article · [InfinitePay — Maquininha de cartão: taxas decrescentes e crédito por faturamento](article/2026-09-14_infinitepay-maquininha-de-cartao-taxas-decrescentes-e-credit_cbe007f671e3.md) · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento` · nenhuma/media/media · —
 - 2026-09-12 · article · [Netlify — comprar domínio pela própria Netlify: renovação anual, e a janela de 60 dias se expirar](article/2026-09-12_netlify-comprar-dominio-pela-propria-netlify-renovacao-anual_0fa4e3594cfc.md) · `netlify` `registro-de-dominio` `renovacao-de-dominio` `expiracao-de-dominio` `certificado-wildcard` `dns-gerenciado` · media/alta/media · apply_client
 - 2026-09-12 · article · [Netlify — como os créditos funcionam: o limite rígido do Free tira o site do ar](article/2026-09-12_netlify-como-os-creditos-funcionam-o-limite-rigido-do-free-t_b53e9d3c7168.md) · `netlify` `limite-rigido` `site-fora-do-ar` `recarga-automatica` `pacote-de-credito` `risco-operacional` `site-de-cliente` · media/alta/alta · apply_client
 - 2026-09-12 · article · [Netlify — como os créditos funcionam nos planos Enterprise (mesma tabela dos planos self-serve)](article/2026-09-12_netlify-como-os-creditos-funcionam-nos-planos-enterprise-mes_0d2c67bb789b.md) · `netlify` `plano-enterprise` `medidores-de-credito` `agent-runners` `custo-de-ia` · baixa/baixa/media · archive

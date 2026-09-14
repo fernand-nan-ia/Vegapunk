@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 31 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [InfinitePay — Maquininha de cartão: taxas decrescentes e crédito por faturamento](../article/2026-09-14_infinitepay-maquininha-de-cartao-taxas-decrescentes-e-credit_cbe007f671e3.md)
+2026-09-14 · article · SaaS nenhuma · cliente media · estudo media · triagem — · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento`
+
+Maquininha da InfinitePay: taxa cai sozinha com o volume de vendas, sem mensalidade, R$199 o aparelho, Pix grátis e crédito liberado pelo faturamento.
 
 ## [Netlify — comprar domínio pela própria Netlify: renovação anual, e a janela de 60 dias se expirar](../article/2026-09-12_netlify-comprar-dominio-pela-propria-netlify-renovacao-anual_0fa4e3594cfc.md)
 2026-09-12 · article · SaaS media · cliente alta · estudo media · triagem apply_client · `netlify` `registro-de-dominio` `renovacao-de-dominio` `expiracao-de-dominio` `certificado-wildcard` `dns-gerenciado`
