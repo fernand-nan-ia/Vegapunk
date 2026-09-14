@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 32 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [InfinitePay — Documentação do Checkout: link de pagamento para vender no site](../article/2026-09-14_infinitepay-documentacao-do-checkout-link-de-pagamento-para_374adadce779.md)
+2026-09-14 · article · SaaS nenhuma · cliente alta · estudo media · triagem — · `infinitepay` `checkout` `link-de-pagamento` `venda-online` `sem-carrinho`
+
+Link de pagamento pronto da InfinitePay: cola no site ou manda por mensagem, cliente paga em 12x sem cadastro, lojista recebe na hora ou em 1 dia útil.
 
 ## [InfinitePay — Maquininha de cartão: taxas decrescentes e crédito por faturamento](../article/2026-09-14_infinitepay-maquininha-de-cartao-taxas-decrescentes-e-credit_cbe007f671e3.md)
 2026-09-14 · article · SaaS nenhuma · cliente media · estudo media · triagem — · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento`
