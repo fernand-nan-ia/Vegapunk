@@ -1,6 +1,11 @@
 # 📣 Marketing e vendas
 
-_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 39 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automaticamente a partir do Punk Records — 40 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [FAQ do MazyOS: instalação, planos do Claude, hospedagem, galerias de referência, venda de sites e integrações](../article/2026-09-14_faq-do-mazyos-instalacao-planos-do-claude-hospedagem-galeria_9ae37bed516d.md)
+2026-09-14 · article · SaaS media · cliente alta · estudo media · triagem — · `mazyos` `claude-code` `venda-de-sites` `galerias-de-referencia` `hospedagem-de-site` `recorrencia-de-site`
+
+FAQ da comunidade MazyOS: erro clássico da pasta aninhada, Pro até o primeiro cliente, Vercel/Netlify com domínio na Hostinger, mais de vinte galerias de referência e GSAP grátis, recorrência de 2% a 5% ao mês e API ofic
 
 ## [Como evitar o bloqueio do número no WhatsApp: como a Meta mede reputação, 7 causas e 8 práticas (Dito)](../article/2026-09-13_como-evitar-o-bloqueio-do-numero-no-whatsapp-como-a-meta-med_ed2febfa7eea.md)
 2026-09-13 · article · SaaS baixa · cliente alta · estudo alta · triagem apply_client · `bloqueio-whatsapp` `reputacao-do-numero` `opt-in` `disparo-em-massa` `api-oficial-whatsapp` `prospeccao-fria`
