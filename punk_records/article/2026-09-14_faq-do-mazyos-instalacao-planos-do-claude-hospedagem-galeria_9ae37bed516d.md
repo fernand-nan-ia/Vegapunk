@@ -5,8 +5,8 @@ external_id: "9ae37bed516d"
 canonical_url: "https://mazyos.com.br/duvidasfrequentes"
 channel: "mazyos.com.br"
 captured_at: 2026-09-14
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["mazyos", "claude-code", "venda-de-sites", "galerias-de-referencia", "hospedagem-de-site", "recorrencia-de-site", "kaptar", "whatsapp-api-oficial"]
 applicability:
   saas_pessoal: media
