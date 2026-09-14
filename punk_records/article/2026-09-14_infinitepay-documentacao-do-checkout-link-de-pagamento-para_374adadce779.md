@@ -5,8 +5,8 @@ external_id: "374adadce779"
 canonical_url: "https://www.infinitepay.io/checkout-documentacao"
 channel: "InfinitePay"
 captured_at: 2026-09-14
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["infinitepay", "checkout", "link-de-pagamento", "venda-online", "sem-carrinho"]
 applicability:
   saas_pessoal: nenhuma

@@ -8,7 +8,7 @@ _preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticament
 Confirmação oficial: integrar pagamento (presencial por aproximação ou checkout online) na InfinitePay não tem custo de implementação, só a taxa de transação de sempre.
 
 ## [InfinitePay — Documentação do Checkout: link de pagamento para vender no site](../article/2026-09-14_infinitepay-documentacao-do-checkout-link-de-pagamento-para_374adadce779.md)
-2026-09-14 · article · SaaS nenhuma · cliente alta · estudo media · triagem — · `infinitepay` `checkout` `link-de-pagamento` `venda-online` `sem-carrinho`
+2026-09-14 · article · SaaS nenhuma · cliente alta · estudo media · triagem apply_client · `infinitepay` `checkout` `link-de-pagamento` `venda-online` `sem-carrinho`
 
 Link de pagamento pronto da InfinitePay: cola no site ou manda por mensagem, cliente paga em 12x sem cadastro, lojista recebe na hora ou em 1 dia útil.
 
