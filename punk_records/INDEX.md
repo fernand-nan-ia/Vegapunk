@@ -9,7 +9,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 - 🔐 Segurança e privacidade — 48 item(ns) → [temas/seguranca-e-privacidade.md](temas/seguranca-e-privacidade.md)
 - 🚀 Produto e SaaS — 7 item(ns) → [temas/produto-e-saas.md](temas/produto-e-saas.md)
 - 📣 Marketing e vendas — 40 item(ns) → [temas/marketing-e-vendas.md](temas/marketing-e-vendas.md)
-- 💰 Negócios e finanças — 33 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
+- 💰 Negócios e finanças — 34 item(ns) → [temas/negocios-e-financas.md](temas/negocios-e-financas.md)
 - 🎨 Design e UX — 14 item(ns) → [temas/design-e-ux.md](temas/design-e-ux.md)
 - 🏗 Engenharia civil — 4 item(ns) → [temas/engenharia-civil.md](temas/engenharia-civil.md)
 - 🎮 Jogos e entretenimento — 14 item(ns) → [temas/jogos-e-entretenimento.md](temas/jogos-e-entretenimento.md)
@@ -241,6 +241,7 @@ Gerado automaticamente. Itens agrupados por tema; dentro do tema, mais novos pri
 
 ## 💰 Negócios e finanças
 
+- 2026-09-14 · article · [InfinitePay — Página de Desenvolvedores: InfiniteTap e Checkout Integrado](article/2026-09-14_infinitepay-pagina-de-desenvolvedores-infinitetap-e-checkout_e60142153799.md) · `infinitepay` `cloudwalk` `infinitetap` `checkout-integrado` `api-de-pagamento` `integracao-gratuita` · nenhuma/alta/media · —
 - 2026-09-14 · article · [InfinitePay — Documentação do Checkout: link de pagamento para vender no site](article/2026-09-14_infinitepay-documentacao-do-checkout-link-de-pagamento-para_374adadce779.md) · `infinitepay` `checkout` `link-de-pagamento` `venda-online` `sem-carrinho` · nenhuma/alta/media · —
 - 2026-09-14 · article · [InfinitePay — Maquininha de cartão: taxas decrescentes e crédito por faturamento](article/2026-09-14_infinitepay-maquininha-de-cartao-taxas-decrescentes-e-credit_cbe007f671e3.md) · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento` · nenhuma/media/media · —
 - 2026-09-12 · article · [Netlify — comprar domínio pela própria Netlify: renovação anual, e a janela de 60 dias se expirar](article/2026-09-12_netlify-comprar-dominio-pela-propria-netlify-renovacao-anual_0fa4e3594cfc.md) · `netlify` `registro-de-dominio` `renovacao-de-dominio` `expiracao-de-dominio` `certificado-wildcard` `dns-gerenciado` · media/alta/media · apply_client

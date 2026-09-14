@@ -1,6 +1,11 @@
 # 💰 Negócios e finanças
 
-_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 33 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+_preço, receita, custos, orçamento, contratos, gestão._ Gerado automaticamente a partir do Punk Records — 34 item(ns). Para aproveitar este tema em outro projeto, leia esta página; abra o item só quando precisar do detalhe.
+
+## [InfinitePay — Página de Desenvolvedores: InfiniteTap e Checkout Integrado](../article/2026-09-14_infinitepay-pagina-de-desenvolvedores-infinitetap-e-checkout_e60142153799.md)
+2026-09-14 · article · SaaS nenhuma · cliente alta · estudo media · triagem — · `infinitepay` `cloudwalk` `infinitetap` `checkout-integrado` `api-de-pagamento` `integracao-gratuita`
+
+Confirmação oficial: integrar pagamento (presencial por aproximação ou checkout online) na InfinitePay não tem custo de implementação, só a taxa de transação de sempre.
 
 ## [InfinitePay — Documentação do Checkout: link de pagamento para vender no site](../article/2026-09-14_infinitepay-documentacao-do-checkout-link-de-pagamento-para_374adadce779.md)
 2026-09-14 · article · SaaS nenhuma · cliente alta · estudo media · triagem — · `infinitepay` `checkout` `link-de-pagamento` `venda-online` `sem-carrinho`
