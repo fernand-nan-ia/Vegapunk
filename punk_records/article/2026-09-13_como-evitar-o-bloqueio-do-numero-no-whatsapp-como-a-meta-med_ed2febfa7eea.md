@@ -5,8 +5,8 @@ external_id: "ed2febfa7eea"
 canonical_url: "https://blog.dito.com.br/como-evitar-bloqueio-no-whatsapp"
 channel: "Pedro Ivo Martins · Blog Dito"
 captured_at: 2026-09-13
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["bloqueio-whatsapp", "reputacao-do-numero", "opt-in", "disparo-em-massa", "api-oficial-whatsapp", "prospeccao-fria", "aquecimento-de-numero", "conteudo-de-fornecedor"]
 applicability:
   saas_pessoal: baixa
