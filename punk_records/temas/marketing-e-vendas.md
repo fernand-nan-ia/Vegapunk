@@ -8,7 +8,7 @@ _landing pages, SEO, tráfego, prospecção, copy, redes sociais._ Gerado automa
 A Meta pontua o número pelo comportamento acumulado: quantos bloqueiam, quantos denunciam, quantos respondem.
 
 ## [O que acontece quando você bloqueia alguém no WhatsApp — seis efeitos práticos (TechTudo, 2022)](../article/2026-09-13_o-que-acontece-quando-voce-bloqueia-alguem-no-whatsapp-seis_44e5a3deb86d.md)
-2026-09-13 · article · SaaS nenhuma · cliente media · estudo media · triagem — · `bloqueio-whatsapp` `bloqueio-entre-usuarios` `tique-cinza` `privacidade-whatsapp` `grupos` `prospeccao-por-whatsapp`
+2026-09-13 · article · SaaS nenhuma · cliente media · estudo media · triagem archive · `bloqueio-whatsapp` `bloqueio-entre-usuarios` `tique-cinza` `privacidade-whatsapp` `grupos` `prospeccao-por-whatsapp`
 
 Bloqueio no WhatsApp não avisa a pessoa e não bloqueia ligação comum nem SMS.
 

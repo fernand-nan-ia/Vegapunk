@@ -5,8 +5,8 @@ external_id: "44e5a3deb86d"
 canonical_url: "https://www.techtudo.com.br/listas/2022/07/whatsapp-o-que-acontece-quando-bloqueio-alguem-veja-6-curiosidades.ghtml"
 channel: "TechTudo"
 captured_at: 2026-09-13
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["bloqueio-whatsapp", "bloqueio-entre-usuarios", "tique-cinza", "privacidade-whatsapp", "grupos", "prospeccao-por-whatsapp", "conteudo-de-2022"]
 applicability:
   saas_pessoal: nenhuma
