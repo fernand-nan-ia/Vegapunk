@@ -13,7 +13,7 @@ Confirmação oficial: integrar pagamento (presencial por aproximação ou check
 Link de pagamento pronto da InfinitePay: cola no site ou manda por mensagem, cliente paga em 12x sem cadastro, lojista recebe na hora ou em 1 dia útil.
 
 ## [InfinitePay — Maquininha de cartão: taxas decrescentes e crédito por faturamento](../article/2026-09-14_infinitepay-maquininha-de-cartao-taxas-decrescentes-e-credit_cbe007f671e3.md)
-2026-09-14 · article · SaaS nenhuma · cliente media · estudo media · triagem — · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento`
+2026-09-14 · article · SaaS nenhuma · cliente media · estudo media · triagem archive · `infinitepay` `maquininha-de-cartao` `taxas-de-cartao` `conta-pj` `pagamento-presencial` `credito-por-faturamento`
 
 Maquininha da InfinitePay: taxa cai sozinha com o volume de vendas, sem mensalidade, R$199 o aparelho, Pix grátis e crédito liberado pelo faturamento.
 

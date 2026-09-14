@@ -5,8 +5,8 @@ external_id: "cbe007f671e3"
 canonical_url: "https://www.infinitepay.io/maquina-cartao"
 channel: "InfinitePay"
 captured_at: 2026-09-14
-status: enriched
-triage: null
+status: archived
+triage: archive
 tags: ["infinitepay", "maquininha-de-cartao", "taxas-de-cartao", "conta-pj", "pagamento-presencial", "credito-por-faturamento"]
 applicability:
   saas_pessoal: nenhuma
