@@ -1,4 +1,4 @@
-# HANDOFF — Vegapunk (checkpoint 2026-09-12, fim da sessão 14 — o site do Jardins existe, a abordagem está escrita e o Netlify entrou no vault)
+# HANDOFF — Vegapunk (checkpoint 2026-09-13, fim da sessão 15 — teste de identidade visual contra o ChatGPT, divisão de trabalho decidida, repos sincronizados)
 
 ## TL;DR — o que existe hoje
 
@@ -23,23 +23,35 @@ Stories 1a, 1b, 1c e 1d **entregues e no GitHub**: tag **v1.8.0** em `2f48130`, 
 
 **Sessão 11 (2026-09-09):** dia inteiro de captura e uma virada de entendimento. **17 itens novos** no Punk Records (10 de venda de sites, 7 de direito autoral), o **`ai-website-cloner-template` instalado** em `~/projetos/ai-website-cloner-template`, e o **Princípio 0** gravado em `~/.claude/CLAUDE.md`. A descoberta que muda decisão: **layout de site É protegido no Brasil** — ver "A correção da sessão 11" abaixo, é a primeira coisa a ler.
 
-## Estado atual (checkpoint 2026-09-12 — fim da sessão 14)
+## Estado atual (checkpoint 2026-09-13 — fim da sessão 15)
 
 | | |
 |---|---|
-| Repo Vegapunk | **`53493bc`** — limpo e **sincronizado**; tag **v1.8.1** (correção do `normalize`) e 48 commits `kb:` da tarde |
-| Repo FURY | `3e9afc0` — não tocado desde a sessão 10b (nenhum agente mudou) |
-| Container | **Up** — subido em 12/09 à tarde. Atenção: depois que o Docker Desktop reinicia, `docker compose restart` FALHA no bind-mount de `~/.gitconfig`; o certo é `docker compose up -d --force-recreate` |
-| Testes | **148/148 verdes** (2 testes novos do `normalize`) |
-| Punk Records | **271 itens** · **fila de triagem ZERADA** — 24 itens novos em 12/09, todos de documentação do Netlify (badge, planos por crédito, domínios e DNS), capturados pelo `*capture` com zero OpenRouter |
-| `_pending/` | **vazio** — os 3 presos foram descartados em 12/09 a pedido do Fernando |
-| Tag | **v1.8.1** em `8df569b` — primeira mudança de `src/` desde a sessão 9 |
-| Não commitado | nada |
-| OpenRouter | Fernando comprou créditos novos em 12/09; com o container parado, nada está sendo consumido |
+| Repo Vegapunk | **`c74e730`** — limpo e **sincronizado** (12 commits pushados em 13/09: 11 `kb:` do bot + memória da Stella); ainda sem checkpoint commitado desta sessão |
+| Repo FURY | **`dda7a8f`** — sincronizado; ganhou a skill **`apurar-leads`** (`.claude/skills/apurar-leads/`: Kaptar → ficha do Google Maps via Playwright → pontuação → artifact com fila de abordagem). Sem segredos no `config.exemplo.json` |
+| Container | **desconhecido** — `docker` não está no PATH do WSL (Docker Desktop fechado ou sem integração). Subir com `docker compose up -d --force-recreate`, não `restart` |
+| Testes | **148/148 verdes** (rodados em 13/09) |
+| Punk Records | **275 itens** (+4: sessão 15 da Stella no Telegram; 1 `apply_client` sobre bloqueio no WhatsApp) · **fila de triagem ZERADA** · **59 itens `apply_client`** |
+| `_pending/` | **5 presos** (ERR-004): `faq.whatsapp.com`, `whatsapp.com/legal` e Reddit não são extraíveis daqui (Meta devolve erro a não-navegador; Reddit exige login). Rota: Fernando cola o texto → `capture.py extract <url> --text` |
+| Tag | **v1.8.1** em `8df569b` — `src/` não mudou nesta sessão |
+| Não commitado | só este HANDOFF |
+| Artefatos | 4 boards do Jardins **apagados** a pedido dele; o da **Vianzo** continua publicado (privado) |
 
 **Triagem dos 14 (12/09, Shaka):** `apply_saas` para o lote que decide o gateway do SaaS — [Asaas preços](punk_records/article/), [Stripe preços](punk_records/article/) e o [método do DevPleno](punk_records/youtube/) (NF embutida a ~R$ 1 desempata contra a Stripe); `apply_client` para o [Mazzeo/Google Ads](punk_records/youtube/) e para o ponto técnico da MXC (site gerado por IA sai sem `sitemap.xml`, `robots.txt` e `llms.txt` → invisível no Google); `archive` para as 4 páginas institucionais de gateway, a API de assinaturas do Asaas e o lote CAPTCHA inteiro. **Nenhum descarte novo.** O TikTok do banco de componentes ficou em `archive` e não em `discard` por um detalhe: o nome da ferramenta só aparece na tela do vídeo — um minuto de vídeo o transforma em material de trabalho.
 
 **Descarte dos 3 presos (12/09):** tiktok/7665842308864085255 (ERR-003), sebrae.com.br/subsites/lgpd e mpf.mp.br/servicos/lgpd (ERR-004), nenhum com nota manual. Backup do banco em `data/vegapunk.db.bak-descarte-20260912`. **Armadilha encontrada:** a máquina de estados em `src/vegapunk/db.py:17-25` não tem caminho de `extraction_failed` para `discarded` (só de volta para `normalized`), então os três foram marcados por SQL direto, fora do fluxo. Descartar item preso deveria ser decisão legítima — story de uma linha para Atlas.
+
+## Sessão 15 (2026-09-13) — identidade visual: o teste contra o ChatGPT e a divisão de trabalho
+
+**O que aconteceu.** Fernando testou a captura de identidade visual aqui, com o mesmo insumo que deu ao ChatGPT (prints do Instagram do Jardins Café, depois da Vianzo Cafés Especiais + ficha do Google). Cinco entregas: Jardins v1 (captura fiel), v2 e v3 (reinvenções com a taste skill, Forest e Oliva+Tijolo), v4 (identidade preservada + análise + design system + estrutura + mockups + spec para o Claude Code, no fluxo das instruções de projeto dele) e Vianzo (mesmo padrão da v4). Boards em artifact com PNGs renderizados por Chromium headless; fotos livres do Wikimedia Commons (CC0/CC BY) com crédito.
+
+**Veredito dele:** o ChatGPT saiu mais "orgânico" — board fiel à marca, fotos coerentes (ele gera imagem), mockup do site. Aqui: (1) a taste skill me fez **derrubar a marca do cliente** duas vezes quando o pedido era "capte"; (2) na Vianzo, **redesenhei o logo de memória** a partir do avatar de 150 px e saiu errado (duas cunhas em diagonal, virou um Z; o real é uma ampulheta); (3) fotos livres não batem com a luz da marca. **Decisão dele: identidade visual sai do ChatGPT; o Claude Code entra na construção do site a partir do board.** A skill do fluxo (Referências → Análise → UX/UI → Design system → Estrutura → Spec → Claude Code → Screenshots → Correções → Revisão) fica para depois de mais um teste; ele pediu para não criar ainda.
+
+**Três memórias novas** em `~/.claude/projects/-home-crazu-projetos-vegapunk/memory/`: `captar-identidade-e-preservar-nao-reinventar`, `identidade-visual-fidelidade-logo-do-cliente` (logo entra como arquivo do cliente, nunca redesenhado; Princípio 0 **não** se aplica à identidade do próprio cliente ou prospect), `divisao-gpt-identidade-claude-site`.
+
+**Vianzo como prospect (dados reais, para a abordagem):** Av. Arthur Seixas, 16B, Candeias; (77) 99867-3189; 4,7 em 23 avaliações; R$ 40 a 60; 110 posts, 5.859 seguidores. **Ficha do Google sem site e bio sem link** — é o argumento. **Horário de segunda diverge**: Instagram 14h às 21h, Google "abre seg. às 09:00". Ficha N-025 (cafeteria) e rota WA-02 estão no `config.exemplo.json` da skill `apurar-leads`.
+
+**Também nesta sessão:** Stella no Telegram capturou 3 itens (Chotti/networking → archive; Dito/bloqueio no WhatsApp → `apply_client`, muda a conduta da abordagem: número novo + mensagem repetida + lista é o que a Meta pune; TechTudo → archive) e 5 links ficaram presos. Skill `apurar-leads` apareceu no FURY (feita pelo Fernando fora daqui) e foi commitada. Os dois repos pushados.
 
 ## O site do Jardins Café (sessão 14, 12/09) — o que já existe e o que falta
 
@@ -107,9 +119,17 @@ Lá: código, deploy, domínio, revisões, o site.
 
 **Ele decidiu não haver formulário no site** — só botão `wa.me`. Isso resolve a LGPD do lado dele: sem coleta, sem dado armazenado. A conversa no WhatsApp é responsabilidade da médica, que já tem sigilo profissional. **O Decreto 7.962/2013 não se aplica** a nenhum dos dois (não vendem online) — a pergunta que ficou aberta o dia todo está respondida.
 
-### O que fazer quando ele voltar (revisto em 12/09, fim da sessão)
+### O que fazer quando ele voltar (revisto em 13/09, fim da sessão 15)
 
-**Ele construiu o site do Jardins Café hoje e parou aqui com a abordagem pronta para enviar.** A mensagem não foi enviada até o fim da sessão. Esta pasta continua sendo estudo; o site vive em diretório próprio.
+**Novo em 13/09, na frente da lista antiga:**
+- 🎨 **Quando chegar um board do ChatGPT** (Vianzo ou o próximo), tratá-lo como especificação e ir direto para construção **em diretório próprio** (`~/projetos/sites-clientes/<cliente>/`): tokens em CSS, componentes, responsividade, screenshots comparados ao board, correções. **Não refazer a identidade; logo entra como arquivo dele.**
+- 📋 **Mais um teste antes de criar a skill do fluxo** de sites (ele pediu para esperar). Quando criar: `.claude/skills/` em `sites-clientes` **e** espelho no FURY.
+- 📱 **Vianzo**: abordagem ainda não escrita. Argumento pronto: ficha do Google sem site; conflito de horário de segunda (IG 14h × Google 9h) é a pergunta que abre conversa.
+- 📎 **5 links presos em `_pending/`** (Meta/Reddit): ele cola o texto, eu reinjeto com `capture.py extract <url> --text`.
+- 🐳 **Container**: `docker` sumiu do PATH do WSL — conferir Docker Desktop antes de qualquer coisa que dependa do bot.
+- 🗑️ Artefato da Vianzo continua publicado; apagar se ele não quiser guardar.
+
+**Ainda vale da sessão 14 (não confirmado se a abordagem ao Jardins foi enviada):** Esta pasta continua sendo estudo; o site vive em diretório próprio.
 
 1. 📱 **Enviar a abordagem** para (77) 98100-6740 — um "boa tarde" com a apresentação e o "moro aqui em Conquista mesmo", esperar a resposta, e então as duas mensagens coladas (estão na seção do Jardins Café, acima). Janela boa: entre 15h e 16h30, depois que o café reabre. Vácuo de 24h não é não: mande a primeira mesmo assim.
 2. 🔧 **Os quatro do checklist técnico do site**, todos rápidos: `noindex` na prévia, `sitemap.xml` (hoje 404 e ainda declarado no `robots.txt`), `llms.txt`, e tirar o bloqueio de copiar/colar (`document.addEventListener('copy', …)`) que impede o cliente de copiar endereço e telefone. Story para a Atlas, se ele quiser.
