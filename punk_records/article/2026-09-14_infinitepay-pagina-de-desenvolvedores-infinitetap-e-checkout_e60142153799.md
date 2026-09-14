@@ -5,8 +5,8 @@ external_id: "e60142153799"
 canonical_url: "https://www.infinitepay.io/desenvolvedores"
 channel: "InfinitePay"
 captured_at: 2026-09-14
-status: enriched
-triage: null
+status: applied_client
+triage: apply_client
 tags: ["infinitepay", "cloudwalk", "infinitetap", "checkout-integrado", "api-de-pagamento", "integracao-gratuita"]
 applicability:
   saas_pessoal: nenhuma
